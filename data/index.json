@@ -1006,6 +1006,26 @@
       "file": "articles/Charles-Duhigg-Supercommunicators-高质量沟通方法论.json"
     },
     {
+      "id": "Charles-Duhigg-The-Power-of-Habit-习惯的力量-习惯科学完整方法论",
+      "category": "心理学",
+      "title": "Charles Duhigg《The Power of Habit: Why We Do What We Do in Life and Business》习惯的力量-习惯科学完整方法论",
+      "keywords": [
+        "The Power of Habit",
+        "Charles Duhigg",
+        "习惯的力量",
+        "习惯回路",
+        "Cue-Routine-Reward",
+        "黄金法则",
+        "核心习惯",
+        "Keystone Habits"
+      ],
+      "summary": "**核心主题**：人的行为中约 40%-45% 是习惯而非有意识决定。习惯由三要素回路（Cue→Routine→Reward）驱动，通过理解并操控这个回路，任何人都可以改变自己的习惯。从个人习惯重塑到组织习惯管理，习惯科学揭示了行为改变的底层逻辑。",
+      "importance": 5,
+      "learned_at": "2026-05-19",
+      "source": "Charles Duhigg《The Power of Habit: Why We Do What We Do in Life and Business》(2012) — Random House",
+      "file": "articles/Charles-Duhigg-The-Power-of-Habit-习惯的力量-习惯科学完整方法论.json"
+    },
+    {
       "id": "Charles-Duhigg-习惯的力量-行为改变科学方法论",
       "category": "心理学",
       "title": "《习惯的力量》完整方法论文档",
@@ -1502,6 +1522,27 @@
       "learned_at": "2026-05-10",
       "source": "《The Compound Effect》复利效应方法论",
       "file": "articles/Darren-Hardy-The-Compound-Effect-复利效应-小行动大结果方法论.json"
+    },
+    {
+      "id": "David-Aaker-Building-Strong-Brands-品牌资产方法论",
+      "category": "营销",
+      "title": "David Aaker《Building Strong Brands》品牌资产方法论",
+      "keywords": [
+        "David Aaker",
+        "Building Strong Brands",
+        "品牌资产",
+        "Brand Equity",
+        "Brand Identity System",
+        "品牌识别系统",
+        "Brand Portfolio",
+        "品牌延伸",
+        "品牌定位"
+      ],
+      "summary": "核心主题：品牌不是靠广告打出来的，而是通过品牌识别系统（Brand Identity System）的系统性构建与管理，形成差异化的品牌资产，驱动持续竞争优势。",
+      "importance": 5,
+      "learned_at": "2026-05-19",
+      "source": "David A. Aaker《Building Strong Brands》(1996, Free Press)；《Managing Brand Equity》(1991)；《Brand Leadership》(2000)",
+      "file": "articles/David-Aaker-Building-Strong-Brands-品牌资产方法论.json"
     },
     {
       "id": "David-D-Burns-Feeling-Good-认知行为疗法-CBT-情绪管理方法论",
@@ -2061,6 +2102,48 @@
       "file": "articles/Ethan-Mollick-Co-Intelligence-AI协作实战完整方法论.json"
     },
     {
+      "id": "Eugene-Schwartz-Breakthrough-Advertising-突破式广告方法论",
+      "category": "营销",
+      "title": "Eugene Schwartz《Breakthrough Advertising》突破式广告方法论",
+      "keywords": [
+        "Eugene Schwartz",
+        "Breakthrough Advertising",
+        "突破式广告",
+        "Copywriting",
+        "Stages of Awareness",
+        "Sophistication of Market",
+        "广告文案",
+        "直接反应营销"
+      ],
+      "summary": "核心主题：广告的有效性不取决于文案技巧，而取决于对消费者意识阶段和市场成熟度的精准判断。广告不创造欲望，只把既有欲望引向特定产品。",
+      "importance": 5,
+      "learned_at": "2026-05-19",
+      "source": "Eugene M. Schwartz《Breakthrough Advertising》(1966/2004 reprint)",
+      "file": "articles/Eugene-Schwartz-Breakthrough-Advertising-突破式广告方法论.json"
+    },
+    {
+      "id": "Felienne-Hermans-The-Programmers-Brain-程序员认知科学方法论",
+      "category": "技术",
+      "title": "Felienne Hermans《The Programmer's Brain》程序员认知科学方法论",
+      "keywords": [
+        "Felienne Hermans",
+        "The Programmer's Brain",
+        "程序员认知科学",
+        "Cognitive Load",
+        "Code Comprehension",
+        "Reading Code",
+        "程序设计思维",
+        "认知负荷",
+        "代码阅读",
+        "调试心理学"
+      ],
+      "summary": "核心主题：程序员在阅读、理解、调试和编写代码时，大脑如何工作——以及如何利用认知科学原理让自己成为更高效的程序员。",
+      "importance": 5,
+      "learned_at": "2026-05-19",
+      "source": "Felienne Hermans《The Programmer's Brain: What Every Programmer Needs to Know About Cognition》(2021, Manning Publications)",
+      "file": "articles/Felienne-Hermans-The-Programmers-Brain-程序员认知科学方法论.json"
+    },
+    {
       "id": "Frank-Slootman-Amp-It-Up-超增长领导力方法论",
       "category": "创业",
       "title": "Frank Slootman《Amp It Up》超增长领导力方法论",
@@ -2295,6 +2378,28 @@
       "learned_at": "2026-05-10",
       "source": "Platform Revolution",
       "file": "articles/Geoffrey-Parker-Marshall-Van-Alstyne-Sangeet-Choudary-Platform-Revolution-平台商业模式革命方法论.json"
+    },
+    {
+      "id": "George-Clason-The-Richest-Man-in-Babylon-巴比伦最富有的人-理财七原则方法论",
+      "category": "理财",
+      "title": "George S. Clason《The Richest Man in Babylon》巴比伦最富有的人 — 理财七原则方法论",
+      "keywords": [
+        "The Richest Man in Babylon",
+        "George Clason",
+        "巴比伦最富有的人",
+        "理财七原则",
+        "Arkad",
+        "储蓄1/10",
+        "投资",
+        "预算",
+        "财务智慧",
+        "巴比伦"
+      ],
+      "summary": "**核心主题**：通过古巴比伦的寓言故事，揭示跨越时间的基本理财法则——存钱、预算、投资、规避风险、让金钱为你工作。财富增长不是靠运气，而是靠遵守不变的金钱定律。",
+      "importance": 5,
+      "learned_at": "2026-05-19",
+      "source": "George S. Clason《The Richest Man in Babylon》(1926/1955完整版)",
+      "file": "articles/George-Clason-The-Richest-Man-in-Babylon-巴比伦最富有的人-理财七原则方法论.json"
     },
     {
       "id": "George-Leonard-Mastery-精通之道-技能获取方法论",
@@ -2905,7 +3010,7 @@
         "Distinctive Brand Assets",
         "品牌增长"
       ],
-      "summary": "**核心主题**：品牌增长主要来自更多买家而非更深忠诚；增长杠杆不是“说服少数人更爱你”，而是系统性提升心智可得性、物理可得性与识别资产覆盖，让品牌在更多购买情境下更容易被想到、被找到、被买到。",
+      "summary": "**核心主题**：品牌增长主要来自更多买家而非更深忠诚；增长杠杆不是说服少数人更爱你，而是系统性提升心智可得性、物理可得性与识别资产覆盖。Part 2 将框架从快消品扩展至服务业、耐用品、B2B、奢侈品领域，并给出 CEP 与识别资产的实操度量方法。15层深度拆解：新增对比矩阵、12个案例库、十大误区、五套工具、30天计划。",
       "importance": 5,
       "learned_at": "2026-05-14",
       "source": "Jenni Romaniuk and Byron Sharp《How Brands Grow Part 2: Revised Edition》；Ehrenberg-Bass Institute 官方 books 页面；Oxford University Press 公开书介",
@@ -3163,6 +3268,47 @@
       "learned_at": "2026-05-18",
       "source": "Crucial Learning《Crucial Conversations》公开资源页；Crucial Learning 2021 年第三版发布新闻稿；McGraw-Hill《Crucial Conversations: Tools for Talking When Stakes are High, Third Edition》公开书介。",
       "file": "articles/Joseph-Grenny-Kerry-Patterson-Ron-McMillan-Al-Switzler-Emily-Gregory-Crucial-Conversations-关键对话方法论.json"
+    },
+    {
+      "id": "Joseph-Sugarman-Adweek-Copywriting-Handbook-广告文案说服力方法论",
+      "category": "营销",
+      "title": "Joseph Sugarman《The Adweek Copywriting Handbook》广告文案说服力方法论",
+      "keywords": [
+        "Joseph Sugarman",
+        "Adweek Copywriting Handbook",
+        "Copywriting",
+        "Direct Response",
+        "Slippery Slide",
+        "文案说服公式",
+        "直复营销",
+        "广告文案",
+        "心理触发"
+      ],
+      "summary": "**核心主题**：广告文案不是文字创作，而是心理说服工程。核心公式：文案说服力 = 注意力 x 情感共鸣 x 独特卖点 x 行动召唤 x 信任消除 x 紧迫感。",
+      "importance": 5,
+      "learned_at": "2026-05-24",
+      "source": "Joseph Sugarman《The Adweek Copywriting Handbook》(2006)",
+      "file": "articles/Joseph-Sugarman-Adweek-Copywriting-Handbook-广告文案说服力方法论.json"
+    },
+    {
+      "id": "Jurgen-Appelo-Management-3.0-敏捷管理领导力方法论",
+      "category": "项目管理",
+      "title": "Jurgen Appelo《Management 3.0: Leading Agile Developers, Developing Agile Leaders》敏捷管理领导力方法论",
+      "keywords": [
+        "Management 3.0",
+        "Jurgen Appelo",
+        "敏捷管理",
+        "Agile Management",
+        "复杂适应系统",
+        "赋能团队",
+        "持续改进",
+        "领导力模型"
+      ],
+      "summary": "**核心主题**: 融合复杂系统科学、敏捷开发和现代管理理论，提出管理 3.0 框架——管理不是控制，而是设计系统、赋能人民、持续改进的复杂适应系统管理方法。",
+      "importance": 5,
+      "learned_at": "2026-05-19",
+      "source": "Jurgen Appelo《Management 3.0: Leading Agile Developers, Developing Agile Leaders》(2010, Addison-Wesley)",
+      "file": "articles/Jurgen-Appelo-Management-3.0-敏捷管理领导力方法论.json"
     },
     {
       "id": "Kai-Fu-Lee-AI-Superpowers-AI·未来-中美AI竞争与人类共存方法论",
@@ -4156,6 +4302,28 @@
       "file": "articles/N-Gregory-Mankiw-Principles-of-Economics-经济学原理奠基方法论.json"
     },
     {
+      "id": "Nadia-Eghbal-Working-in-Public-开源软件生态方法论",
+      "category": "技术",
+      "title": "Nadia Eghbal《Working in Public》开源软件生态方法论",
+      "keywords": [
+        "Nadia Eghbal",
+        "Working in Public",
+        "开源软件",
+        "Open Source",
+        "Digital Public Goods",
+        "开发者生态",
+        "数字公共品",
+        "平台经济",
+        "开源维护者",
+        "GitHub经济"
+      ],
+      "summary": "核心主题：开源软件从自由软件运动的理想主义时代，演变为以平台（GitHub）为中心、创作者与消费者严重失衡的数字公共品生态——理解这个生态系统的经济学、社会学和治理逻辑。",
+      "importance": 5,
+      "learned_at": "2026-05-19",
+      "source": "Nadia Eghbal《Working in Public: The Making and Maintenance of Open Source Software》(2020, Stripe Press)",
+      "file": "articles/Nadia-Eghbal-Working-in-Public-开源软件生态方法论.json"
+    },
+    {
       "id": "Neel-Mehta-Parth-Detroja-Aditya-Agashe-Product-Managements-Sacred-Seven-PM七大技能方法论",
       "category": "产品设计",
       "title": "Neel Mehta, Parth Detroja & Aditya Agashe《Product Management's Sacred Seven》PM七大技能方法论",
@@ -4330,6 +4498,26 @@
       "file": "articles/PRINCE2-项目管理方法论-受控环境项目管理框架.json"
     },
     {
+      "id": "Patrick-Lencioni-The-Advantage-组织健康优势方法论",
+      "category": "创业",
+      "title": "Patrick Lencioni《The Advantage: Why Organizational Health Trumps Everything Else In Business》组织健康优势方法论",
+      "keywords": [
+        "Patrick Lencioni",
+        "The Advantage",
+        "组织健康",
+        "Organizational Health",
+        "领导团队",
+        "五大行为",
+        "团队信任",
+        "会议系统"
+      ],
+      "summary": "核心公式：组织健康 = 最小化内耗。五大行为模型 + 四大纪律。组织健康是唯一不可复制的竞争优势。",
+      "importance": 5,
+      "learned_at": "2026-05-19",
+      "source": "Patrick Lencioni《The Advantage: Why Organizational Health Trumps Everything Else In Business》(2012)",
+      "file": "articles/Patrick-Lencioni-The-Advantage-组织健康优势方法论.json"
+    },
+    {
       "id": "Paul-Daugherty-HJames-Wilson-Human-Machine-AI时代人机协作方法论",
       "category": "技术",
       "title": "《Human + Machine: Reimagining Work in the Age of AI》AI时代人机协作方法论",
@@ -4396,6 +4584,40 @@
       "learned_at": "2026-05-10",
       "source": "Paul Watzlawick",
       "file": "articles/Paul-Watzlawick-Change-改变-问题形成与解决原则方法论.json"
+    },
+    {
+      "id": "Pauline-Cullen-Cambridge-Vocabulary-for-IELTS-雅思词汇方法论",
+      "category": "雅思",
+      "title": "Pauline Cullen《Cambridge Vocabulary for IELTS》雅思词汇方法论",
+      "keywords": [
+        "Pauline Cullen",
+        "Cambridge Vocabulary for IELTS",
+        "雅思词汇",
+        "Academic Word List",
+        "collocation"
+      ],
+      "summary": "**核心主题**：以话题为单位的雅思词汇系统学习法，覆盖20大高频话题词汇，强调在语境中学习搭配而非孤立背单词。",
+      "importance": 5,
+      "learned_at": "2026-05-19",
+      "source": "Pauline Cullen《Cambridge Vocabulary for IELTS》(2008)；Cambridge University Press",
+      "file": "articles/Pauline-Cullen-Cambridge-Vocabulary-for-IELTS-雅思词汇方法论.json"
+    },
+    {
+      "id": "Pauline-Cullen-The-Official-Cambridge-Guide-to-IELTS-雅思全科方法论",
+      "category": "雅思",
+      "title": "Pauline Cullen《The Official Cambridge Guide to IELTS》雅思全科方法论",
+      "keywords": [
+        "Pauline Cullen",
+        "The Official Cambridge Guide to IELTS",
+        "雅思全科",
+        "剑桥官方指南",
+        "IELTS preparation"
+      ],
+      "summary": "**核心主题**：剑桥官方出品的雅思全科备考方法论，覆盖听力、阅读、写作、口语四项技能的系统性提升策略，以及从目标分数设定到考前冲刺的完整备考路径。",
+      "importance": 5,
+      "learned_at": "2026-05-19",
+      "source": "Pauline Cullen, Amanda French, Vanessa Jakeman《The Official Cambridge Guide to IELTS》(2014)；Cambridge University Press",
+      "file": "articles/Pauline-Cullen-The-Official-Cambridge-Guide-to-IELTS-雅思全科方法论.json"
     },
     {
       "id": "Peter Brown-认知天性-高效学习方法论",
@@ -4930,6 +5152,24 @@
       "file": "articles/Robert-Hagstrom-巴菲特之道-The-Warren-Buffett-Way-投资哲学方法论.json"
     },
     {
+      "id": "Robert-Shiller-Irrational-Exuberance-非理性繁荣-市场泡沫分析方法论",
+      "category": "理财",
+      "title": "Robert J. Shiller《Irrational Exuberance》非理性繁荣 — 市场泡沫分析与行为金融方法论文档",
+      "keywords": [
+        "Robert Shiller",
+        "Irrational Exuberance",
+        "非理性繁荣",
+        "Market Bubbles",
+        "Behavioral Finance",
+        "CAPE Ratio"
+      ],
+      "summary": "核心主题：金融市场中的非理性繁荣不是偶发现象，而是心理锚定、社交传染、反馈循环与结构性因素共同驱动的系统性现象。",
+      "importance": 5,
+      "learned_at": "2026-05-19",
+      "source": "Robert J. Shiller《Irrational Exuberance》(3rd Edition, 2015); Princeton University Press.",
+      "file": "articles/Robert-Shiller-Irrational-Exuberance-非理性繁荣-市场泡沫分析方法论.json"
+    },
+    {
       "id": "Robert-Sutton-Huggy-Rao-The-Friction-Project-组织摩擦治理方法论",
       "category": "项目管理",
       "title": "Robert Sutton & Huggy Rao《The Friction Project》组织摩擦治理方法论",
@@ -4963,6 +5203,29 @@
       "learned_at": "2026-05-10",
       "source": "谈判力",
       "file": "articles/Roger-Fisher-William-Ury-谈判力-原则性谈判方法论.json"
+    },
+    {
+      "id": "Roger-Martin-The-Design-of-Business-设计思维竞争优势方法论",
+      "category": "产品设计",
+      "title": "Roger Martin《The Design of Business》设计思维如何成为竞争优势方法论",
+      "keywords": [
+        "The Design of Business",
+        "Roger Martin",
+        "Design Thinking",
+        "设计思维",
+        "知识漏斗",
+        "整合思维",
+        "Integrative Thinking",
+        "abductive reasoning",
+        "商业设计",
+        "竞争优势",
+        "溯因推理"
+      ],
+      "summary": "核心主题: 设计思维不是艺术家的专利, 而是企业下一波竞争优势的源泉——通过整合思维(Integrative Thinking)、溯因推理(Abductive Reasoning)和知识漏斗(Knowledge Funnel), 在分析型管理和直觉型创新之间找到第三条道路。",
+      "importance": 5,
+      "learned_at": "2026-05-24",
+      "source": "Roger Martin《The Design of Business: Why Design Thinking is the Next Competitive Advantage》(2009), Harvard Business Review Press",
+      "file": "articles/Roger-Martin-The-Design-of-Business-设计思维竞争优势方法论.json"
     },
     {
       "id": "Rory-Sutherland-Alchemy-营销心理炼金术方法论",
@@ -5170,6 +5433,25 @@
       "file": "articles/Scott-Young-超级学习者-Ultralearning-激进学习策略方法论.json"
     },
     {
+      "id": "Seth-Godin-Purple-Cow-紫牛-卓越营销方法论",
+      "category": "营销",
+      "title": "Seth Godin《Purple Cow: Transform Your Business by Being Remarkable》紫牛-卓越营销方法论",
+      "keywords": [
+        "Purple Cow",
+        "Seth Godin",
+        "紫牛",
+        "Remarkable",
+        "卓越营销",
+        "差异化",
+        "紫牛理论"
+      ],
+      "summary": "**核心主题**：在信息过载与商品同质化的时代，唯一能获得关注与增长的方式，是做一只「紫牛」——创造真正值得被谈论的、卓越的、与众不同的事物。从产品本身开始，用「卓越」撬动口碑，让营销回归产品本质。",
+      "importance": 5,
+      "learned_at": "2026-05-19",
+      "source": "Seth Godin《Purple Cow: Transform Your Business by Being Remarkable》(2003, updated 2009) — Portfolio / Penguin Random House",
+      "file": "articles/Seth-Godin-Purple-Cow-紫牛-卓越营销方法论.json"
+    },
+    {
       "id": "Seth-Godin-This-Is-Marketing-现代营销方法论",
       "category": "营销",
       "title": "Seth Godin《This Is Marketing》现代营销方法论",
@@ -5235,6 +5517,26 @@
       "learned_at": "2026-05-10",
       "source": "Sheldon Natenberg",
       "file": "articles/Sheldon-Natenberg-Option-Volatility-and-Pricing-期权波动率与定价方法论.json"
+    },
+    {
+      "id": "Simon-Sinek-Leaders-Eat-Last-团队安全感领导力方法论",
+      "category": "创业",
+      "title": "Simon Sinek《Leaders Eat Last: Why Some Teams Pull Together and Others Don't》团队安全感领导力方法论",
+      "keywords": [
+        "Simon Sinek",
+        "Leaders Eat Last",
+        "Circle of Safety",
+        "团队安全感",
+        "领导力",
+        "信任",
+        "催产素",
+        "组织文化"
+      ],
+      "summary": "核心公式：团队效能 = 圈内安全度 × 对外协作能力。领导力的本质不是指挥和控制，而是创造一个让团队感到安全的生态系统——让催产素主导、皮质醇可控。领导者最后吃饭，不是口号，是每一天的选择。",
+      "importance": 5,
+      "learned_at": "2026-05-19",
+      "source": "Simon Sinek《Leaders Eat Last: Why Some Teams Pull Together and Others Don't》(2014)",
+      "file": "articles/Simon-Sinek-Leaders-Eat-Last-团队安全感领导力方法论.json"
     },
     {
       "id": "Simon-Sinek-从为什么开始-黄金圈法则方法论",
@@ -5480,6 +5782,28 @@
       "file": "articles/The-Mom-Test-客户访谈方法论.json"
     },
     {
+      "id": "Thomas-Stanley-William-Danko-The-Millionaire-Next-Door-邻家的百万富翁-节俭致富方法论",
+      "category": "理财",
+      "title": "Thomas J. Stanley & William D. Danko《The Millionaire Next Door》邻家的百万富翁 — 节俭致富方法论",
+      "keywords": [
+        "The Millionaire Next Door",
+        "Thomas Stanley",
+        "William Danko",
+        "邻家的百万富翁",
+        "节俭致富",
+        "财富积累",
+        "PAW",
+        "UAW",
+        "经济门诊照顾",
+        "节俭"
+      ],
+      "summary": "**核心主题**：真正积累财富的人往往不是高消费的高收入者，而是那些收入适中但严守财务纪律的「邻家百万富翁」。财富 = 收入 + 投资 - 消费，节俭与纪律比高收入更重要。",
+      "importance": 5,
+      "learned_at": "2026-05-19",
+      "source": "Thomas J. Stanley & William D. Danko《The Millionaire Next Door: The Surprising Secrets of America's Wealthy》(1996)",
+      "file": "articles/Thomas-Stanley-William-Danko-The-Millionaire-Next-Door-邻家的百万富翁-节俭致富方法论.json"
+    },
+    {
       "id": "Tim-Koller-McKinsey-Valuation-企业估值方法论",
       "category": "创业",
       "title": "麦肯锡《估值：衡量和管理公司价值》方法论",
@@ -5511,6 +5835,26 @@
       "learned_at": "2026-05-10",
       "source": "Timothy Ferriss《每周工作4小时》生活方式设计方法论",
       "file": "articles/Timothy-Ferriss-The-4-Hour-Workweek-每周工作4小时-生活方式设计方法论.json"
+    },
+    {
+      "id": "Tom-DeMarco-The-Deadline-项目管理小说方法论",
+      "category": "项目管理",
+      "title": "Tom DeMarco《The Deadline: A Novel About Project Management》项目管理小说方法论",
+      "keywords": [
+        "The Deadline",
+        "Tom DeMarco",
+        "项目管理小说",
+        "Deadline Game",
+        "Peopleware",
+        "软件项目估算",
+        "风险管理",
+        "团队动力学"
+      ],
+      "summary": "**核心主题**: 用小说的形式，通过虚构的联邦调查局项目经理汤普金斯的故事，揭示软件项目管理中最本质的真理——人比过程重要，沟通比文档重要，估算比计划重要，风险比进度重要。",
+      "importance": 5,
+      "learned_at": "2026-05-19",
+      "source": "Tom DeMarco《The Deadline: A Novel About Project Management》(1997, Dorset House)",
+      "file": "articles/Tom-DeMarco-The-Deadline-项目管理小说方法论.json"
     },
     {
       "id": "Tom-DeMarco-Timothy-Lister-人件-Peopleware-软件团队管理方法论",
@@ -5736,6 +6080,24 @@
       "learned_at": "2026-05-18",
       "source": "Stripe Press《An Elegant Puzzle》公开书介；Will Larson 公开作者介绍页；Staff Engineer 官方书籍页面。",
       "file": "articles/Will-Larson-An-Elegant-Puzzle-工程管理系统方法论.json"
+    },
+    {
+      "id": "William-Bernstein-Four-Pillars-of-Investing-投资四支柱方法论",
+      "category": "理财",
+      "title": "William J. Bernstein《The Four Pillars of Investing》投资四支柱方法论",
+      "keywords": [
+        "William Bernstein",
+        "Four Pillars of Investing",
+        "投资四支柱",
+        "资产配置",
+        "现代投资组合理论",
+        "行为金融"
+      ],
+      "summary": "核心主题：成功投资建立在四大支柱之上——投资理论、投资历史、投资心理学、投资产业。",
+      "importance": 5,
+      "learned_at": "2026-05-19",
+      "source": "William J. Bernstein《The Four Pillars of Investing》(2nd Edition, 2023); McGraw-Hill.",
+      "file": "articles/William-Bernstein-Four-Pillars-of-Investing-投资四支柱方法论.json"
     },
     {
       "id": "William-Lidwell-Kritina-Holden-Jill-Butler-Universal-Principles-of-Design-通用设计原则完整方法论",
@@ -9254,347 +9616,6 @@
       "learned_at": "2026-05-10",
       "source": "鲁道夫·阿恩海姆",
       "file": "articles/鲁道夫·阿恩海姆-视觉思维方法论.json"
-    },
-    {
-      "id": "Pauline-Cullen-The-Official-Cambridge-Guide-to-IELTS-雅思全科方法论",
-      "category": "雅思",
-      "title": "Pauline Cullen《The Official Cambridge Guide to IELTS》雅思全科方法论",
-      "keywords": [
-        "Pauline Cullen",
-        "The Official Cambridge Guide to IELTS",
-        "雅思全科",
-        "剑桥官方指南",
-        "IELTS preparation"
-      ],
-      "summary": "**核心主题**：剑桥官方出品的雅思全科备考方法论，覆盖听力、阅读、写作、口语四项技能的系统性提升策略，以及从目标分数设定到考前冲刺的完整备考路径。",
-      "importance": 5,
-      "learned_at": "2026-05-19",
-      "source": "Pauline Cullen, Amanda French, Vanessa Jakeman《The Official Cambridge Guide to IELTS》(2014)；Cambridge University Press",
-      "file": "articles/Pauline-Cullen-The-Official-Cambridge-Guide-to-IELTS-雅思全科方法论.json"
-    },
-    {
-      "id": "Pauline-Cullen-Cambridge-Vocabulary-for-IELTS-雅思词汇方法论",
-      "category": "雅思",
-      "title": "Pauline Cullen《Cambridge Vocabulary for IELTS》雅思词汇方法论",
-      "keywords": [
-        "Pauline Cullen",
-        "Cambridge Vocabulary for IELTS",
-        "雅思词汇",
-        "Academic Word List",
-        "collocation"
-      ],
-      "summary": "**核心主题**：以话题为单位的雅思词汇系统学习法，覆盖20大高频话题词汇，强调在语境中学习搭配而非孤立背单词。",
-      "importance": 5,
-      "learned_at": "2026-05-19",
-      "source": "Pauline Cullen《Cambridge Vocabulary for IELTS》(2008)；Cambridge University Press",
-      "file": "articles/Pauline-Cullen-Cambridge-Vocabulary-for-IELTS-雅思词汇方法论.json"
-    },
-    {
-      "id": "Seth-Godin-Purple-Cow-紫牛-卓越营销方法论",
-      "category": "营销",
-      "title": "Seth Godin《Purple Cow: Transform Your Business by Being Remarkable》紫牛-卓越营销方法论",
-      "keywords": [
-        "Purple Cow",
-        "Seth Godin",
-        "紫牛",
-        "Remarkable",
-        "卓越营销",
-        "差异化",
-        "紫牛理论"
-      ],
-      "summary": "**核心主题**：在信息过载与商品同质化的时代，唯一能获得关注与增长的方式，是做一只「紫牛」——创造真正值得被谈论的、卓越的、与众不同的事物。从产品本身开始，用「卓越」撬动口碑，让营销回归产品本质。",
-      "importance": 5,
-      "learned_at": "2026-05-19",
-      "source": "Seth Godin《Purple Cow: Transform Your Business by Being Remarkable》(2003, updated 2009) — Portfolio / Penguin Random House",
-      "file": "articles/Seth-Godin-Purple-Cow-紫牛-卓越营销方法论.json"
-    },
-    {
-      "id": "Charles-Duhigg-The-Power-of-Habit-习惯的力量-习惯科学完整方法论",
-      "category": "心理学",
-      "title": "Charles Duhigg《The Power of Habit: Why We Do What We Do in Life and Business》习惯的力量-习惯科学完整方法论",
-      "keywords": [
-        "The Power of Habit",
-        "Charles Duhigg",
-        "习惯的力量",
-        "习惯回路",
-        "Cue-Routine-Reward",
-        "黄金法则",
-        "核心习惯",
-        "Keystone Habits"
-      ],
-      "summary": "**核心主题**：人的行为中约 40%-45% 是习惯而非有意识决定。习惯由三要素回路（Cue→Routine→Reward）驱动，通过理解并操控这个回路，任何人都可以改变自己的习惯。从个人习惯重塑到组织习惯管理，习惯科学揭示了行为改变的底层逻辑。",
-      "importance": 5,
-      "learned_at": "2026-05-19",
-      "source": "Charles Duhigg《The Power of Habit: Why We Do What We Do in Life and Business》(2012) — Random House",
-      "file": "articles/Charles-Duhigg-The-Power-of-Habit-习惯的力量-习惯科学完整方法论.json"
-    },
-    {
-      "id": "Felienne-Hermans-The-Programmers-Brain-程序员认知科学方法论",
-      "category": "技术",
-      "title": "Felienne Hermans《The Programmer's Brain》程序员认知科学方法论",
-      "keywords": [
-        "Felienne Hermans",
-        "The Programmer's Brain",
-        "程序员认知科学",
-        "Cognitive Load",
-        "Code Comprehension",
-        "Reading Code",
-        "程序设计思维",
-        "认知负荷",
-        "代码阅读",
-        "调试心理学"
-      ],
-      "summary": "核心主题：程序员在阅读、理解、调试和编写代码时，大脑如何工作——以及如何利用认知科学原理让自己成为更高效的程序员。",
-      "importance": 5,
-      "learned_at": "2026-05-19",
-      "source": "Felienne Hermans《The Programmer's Brain: What Every Programmer Needs to Know About Cognition》(2021, Manning Publications)",
-      "file": "articles/Felienne-Hermans-The-Programmers-Brain-程序员认知科学方法论.json"
-    },
-    {
-      "id": "Nadia-Eghbal-Working-in-Public-开源软件生态方法论",
-      "category": "技术",
-      "title": "Nadia Eghbal《Working in Public》开源软件生态方法论",
-      "keywords": [
-        "Nadia Eghbal",
-        "Working in Public",
-        "开源软件",
-        "Open Source",
-        "Digital Public Goods",
-        "开发者生态",
-        "数字公共品",
-        "平台经济",
-        "开源维护者",
-        "GitHub经济"
-      ],
-      "summary": "核心主题：开源软件从自由软件运动的理想主义时代，演变为以平台（GitHub）为中心、创作者与消费者严重失衡的数字公共品生态——理解这个生态系统的经济学、社会学和治理逻辑。",
-      "importance": 5,
-      "learned_at": "2026-05-19",
-      "source": "Nadia Eghbal《Working in Public: The Making and Maintenance of Open Source Software》(2020, Stripe Press)",
-      "file": "articles/Nadia-Eghbal-Working-in-Public-开源软件生态方法论.json"
-    },
-    {
-      "id": "Thomas-Stanley-William-Danko-The-Millionaire-Next-Door-邻家的百万富翁-节俭致富方法论",
-      "category": "理财",
-      "title": "Thomas J. Stanley & William D. Danko《The Millionaire Next Door》邻家的百万富翁 — 节俭致富方法论",
-      "keywords": [
-        "The Millionaire Next Door",
-        "Thomas Stanley",
-        "William Danko",
-        "邻家的百万富翁",
-        "节俭致富",
-        "财富积累",
-        "PAW",
-        "UAW",
-        "经济门诊照顾",
-        "节俭"
-      ],
-      "summary": "**核心主题**：真正积累财富的人往往不是高消费的高收入者，而是那些收入适中但严守财务纪律的「邻家百万富翁」。财富 = 收入 + 投资 - 消费，节俭与纪律比高收入更重要。",
-      "importance": 5,
-      "learned_at": "2026-05-19",
-      "source": "Thomas J. Stanley & William D. Danko《The Millionaire Next Door: The Surprising Secrets of America's Wealthy》(1996)",
-      "file": "articles/Thomas-Stanley-William-Danko-The-Millionaire-Next-Door-邻家的百万富翁-节俭致富方法论.json"
-    },
-    {
-      "id": "George-Clason-The-Richest-Man-in-Babylon-巴比伦最富有的人-理财七原则方法论",
-      "category": "理财",
-      "title": "George S. Clason《The Richest Man in Babylon》巴比伦最富有的人 — 理财七原则方法论",
-      "keywords": [
-        "The Richest Man in Babylon",
-        "George Clason",
-        "巴比伦最富有的人",
-        "理财七原则",
-        "Arkad",
-        "储蓄1/10",
-        "投资",
-        "预算",
-        "财务智慧",
-        "巴比伦"
-      ],
-      "summary": "**核心主题**：通过古巴比伦的寓言故事，揭示跨越时间的基本理财法则——存钱、预算、投资、规避风险、让金钱为你工作。财富增长不是靠运气，而是靠遵守不变的金钱定律。",
-      "importance": 5,
-      "learned_at": "2026-05-19",
-      "source": "George S. Clason《The Richest Man in Babylon》(1926/1955完整版)",
-      "file": "articles/George-Clason-The-Richest-Man-in-Babylon-巴比伦最富有的人-理财七原则方法论.json"
-    },
-    {
-      "id": "Tom-DeMarco-The-Deadline-项目管理小说方法论",
-      "category": "项目管理",
-      "title": "Tom DeMarco《The Deadline: A Novel About Project Management》项目管理小说方法论",
-      "keywords": [
-        "The Deadline",
-        "Tom DeMarco",
-        "项目管理小说",
-        "Deadline Game",
-        "Peopleware",
-        "软件项目估算",
-        "风险管理",
-        "团队动力学"
-      ],
-      "summary": "**核心主题**: 用小说的形式，通过虚构的联邦调查局项目经理汤普金斯的故事，揭示软件项目管理中最本质的真理——人比过程重要，沟通比文档重要，估算比计划重要，风险比进度重要。",
-      "importance": 5,
-      "learned_at": "2026-05-19",
-      "source": "Tom DeMarco《The Deadline: A Novel About Project Management》(1997, Dorset House)",
-      "file": "articles/Tom-DeMarco-The-Deadline-项目管理小说方法论.json"
-    },
-    {
-      "id": "Jurgen-Appelo-Management-3.0-敏捷管理领导力方法论",
-      "category": "项目管理",
-      "title": "Jurgen Appelo《Management 3.0: Leading Agile Developers, Developing Agile Leaders》敏捷管理领导力方法论",
-      "keywords": [
-        "Management 3.0",
-        "Jurgen Appelo",
-        "敏捷管理",
-        "Agile Management",
-        "复杂适应系统",
-        "赋能团队",
-        "持续改进",
-        "领导力模型"
-      ],
-      "summary": "**核心主题**: 融合复杂系统科学、敏捷开发和现代管理理论，提出管理 3.0 框架——管理不是控制，而是设计系统、赋能人民、持续改进的复杂适应系统管理方法。",
-      "importance": 5,
-      "learned_at": "2026-05-19",
-      "source": "Jurgen Appelo《Management 3.0: Leading Agile Developers, Developing Agile Leaders》(2010, Addison-Wesley)",
-      "file": "articles/Jurgen-Appelo-Management-3.0-敏捷管理领导力方法论.json"
-    },
-    {
-      "id": "Simon-Sinek-Leaders-Eat-Last-团队安全感领导力方法论",
-      "category": "创业",
-      "title": "Simon Sinek《Leaders Eat Last: Why Some Teams Pull Together and Others Don't》团队安全感领导力方法论",
-      "keywords": [
-        "Simon Sinek",
-        "Leaders Eat Last",
-        "Circle of Safety",
-        "团队安全感",
-        "领导力",
-        "信任",
-        "催产素",
-        "组织文化"
-      ],
-      "summary": "核心公式：团队效能 = 圈内安全度 × 对外协作能力。领导力的本质不是指挥和控制，而是创造一个让团队感到安全的生态系统——让催产素主导、皮质醇可控。领导者最后吃饭，不是口号，是每一天的选择。",
-      "importance": 5,
-      "learned_at": "2026-05-19",
-      "source": "Simon Sinek《Leaders Eat Last: Why Some Teams Pull Together and Others Don't》(2014)",
-      "file": "articles/Simon-Sinek-Leaders-Eat-Last-团队安全感领导力方法论.json"
-    },
-    {
-      "id": "Patrick-Lencioni-The-Advantage-组织健康优势方法论",
-      "category": "创业",
-      "title": "Patrick Lencioni《The Advantage: Why Organizational Health Trumps Everything Else In Business》组织健康优势方法论",
-      "keywords": [
-        "Patrick Lencioni",
-        "The Advantage",
-        "组织健康",
-        "Organizational Health",
-        "领导团队",
-        "五大行为",
-        "团队信任",
-        "会议系统"
-      ],
-      "summary": "核心公式：组织健康 = 最小化内耗。五大行为模型 + 四大纪律。组织健康是唯一不可复制的竞争优势。",
-      "importance": 5,
-      "learned_at": "2026-05-19",
-      "source": "Patrick Lencioni《The Advantage: Why Organizational Health Trumps Everything Else In Business》(2012)",
-      "file": "articles/Patrick-Lencioni-The-Advantage-组织健康优势方法论.json"
-    },
-    {
-      "id": "Robert-Shiller-Irrational-Exuberance-非理性繁荣-市场泡沫分析方法论",
-      "category": "理财",
-      "title": "Robert J. Shiller《Irrational Exuberance》非理性繁荣 — 市场泡沫分析与行为金融方法论文档",
-      "keywords": [
-        "Robert Shiller",
-        "Irrational Exuberance",
-        "非理性繁荣",
-        "Market Bubbles",
-        "Behavioral Finance",
-        "CAPE Ratio"
-      ],
-      "summary": "核心主题：金融市场中的非理性繁荣不是偶发现象，而是心理锚定、社交传染、反馈循环与结构性因素共同驱动的系统性现象。",
-      "importance": 5,
-      "learned_at": "2026-05-19",
-      "source": "Robert J. Shiller《Irrational Exuberance》(3rd Edition, 2015); Princeton University Press.",
-      "file": "articles/Robert-Shiller-Irrational-Exuberance-非理性繁荣-市场泡沫分析方法论.json"
-    },
-    {
-      "id": "William-Bernstein-Four-Pillars-of-Investing-投资四支柱方法论",
-      "category": "理财",
-      "title": "William J. Bernstein《The Four Pillars of Investing》投资四支柱方法论",
-      "keywords": [
-        "William Bernstein",
-        "Four Pillars of Investing",
-        "投资四支柱",
-        "资产配置",
-        "现代投资组合理论",
-        "行为金融"
-      ],
-      "summary": "核心主题：成功投资建立在四大支柱之上——投资理论、投资历史、投资心理学、投资产业。",
-      "importance": 5,
-      "learned_at": "2026-05-19",
-      "source": "William J. Bernstein《The Four Pillars of Investing》(2nd Edition, 2023); McGraw-Hill.",
-      "file": "articles/William-Bernstein-Four-Pillars-of-Investing-投资四支柱方法论.json"
-    },
-    {
-      "id": "David-Aaker-Building-Strong-Brands-品牌资产方法论",
-      "category": "营销",
-      "title": "David Aaker《Building Strong Brands》品牌资产方法论",
-      "keywords": [
-        "David Aaker",
-        "Building Strong Brands",
-        "品牌资产",
-        "Brand Equity",
-        "Brand Identity System",
-        "品牌识别系统",
-        "Brand Portfolio",
-        "品牌延伸",
-        "品牌定位"
-      ],
-      "summary": "核心主题：品牌不是靠广告打出来的，而是通过品牌识别系统（Brand Identity System）的系统性构建与管理，形成差异化的品牌资产，驱动持续竞争优势。",
-      "importance": 5,
-      "learned_at": "2026-05-19",
-      "source": "David A. Aaker《Building Strong Brands》(1996, Free Press)；《Managing Brand Equity》(1991)；《Brand Leadership》(2000)",
-      "file": "articles/David-Aaker-Building-Strong-Brands-品牌资产方法论.json"
-    },
-    {
-      "id": "Eugene-Schwartz-Breakthrough-Advertising-突破式广告方法论",
-      "category": "营销",
-      "title": "Eugene Schwartz《Breakthrough Advertising》突破式广告方法论",
-      "keywords": [
-        "Eugene Schwartz",
-        "Breakthrough Advertising",
-        "突破式广告",
-        "Copywriting",
-        "Stages of Awareness",
-        "Sophistication of Market",
-        "广告文案",
-        "直接反应营销"
-      ],
-      "summary": "核心主题：广告的有效性不取决于文案技巧，而取决于对消费者意识阶段和市场成熟度的精准判断。广告不创造欲望，只把既有欲望引向特定产品。",
-      "importance": 5,
-      "learned_at": "2026-05-19",
-      "source": "Eugene M. Schwartz《Breakthrough Advertising》(1966/2004 reprint)",
-      "file": "articles/Eugene-Schwartz-Breakthrough-Advertising-突破式广告方法论.json"
-    },
-    {
-      "id": "Roger-Martin-The-Design-of-Business-设计思维竞争优势方法论",
-      "category": "产品设计",
-      "title": "Roger Martin《The Design of Business》设计思维如何成为竞争优势方法论",
-      "keywords": [
-        "The Design of Business",
-        "Roger Martin",
-        "Design Thinking",
-        "设计思维",
-        "知识漏斗",
-        "整合思维",
-        "Integrative Thinking",
-        "abductive reasoning",
-        "商业设计",
-        "竞争优势",
-        "溯因推理"
-      ],
-      "summary": "核心主题: 设计思维不是艺术家的专利, 而是企业下一波竞争优势的源泉——通过整合思维(Integrative Thinking)、溯因推理(Abductive Reasoning)和知识漏斗(Knowledge Funnel), 在分析型管理和直觉型创新之间找到第三条道路。",
-      "importance": 5,
-      "learned_at": "2026-05-24",
-      "source": "Roger Martin《The Design of Business: Why Design Thinking is the Next Competitive Advantage》(2009), Harvard Business Review Press",
-      "file": "articles/Roger-Martin-The-Design-of-Business-设计思维竞争优势方法论.json"
     }
   ],
   "SUMMARY": {

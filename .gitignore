@@ -36,6 +36,13 @@ yarn-error.log*
 # vercel
 .vercel
 
+# temp scripts
+*.bak-ui
+*.bak
+expand_quit.py
+gen_article.py
+generate_design_business.py
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
