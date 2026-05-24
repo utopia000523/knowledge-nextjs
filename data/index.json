@@ -9572,6 +9572,29 @@
       "learned_at": "2026-05-19",
       "source": "Eugene M. Schwartz《Breakthrough Advertising》(1966/2004 reprint)",
       "file": "articles/Eugene-Schwartz-Breakthrough-Advertising-突破式广告方法论.json"
+    },
+    {
+      "id": "Roger-Martin-The-Design-of-Business-设计思维竞争优势方法论",
+      "category": "产品设计",
+      "title": "Roger Martin《The Design of Business》设计思维如何成为竞争优势方法论",
+      "keywords": [
+        "The Design of Business",
+        "Roger Martin",
+        "Design Thinking",
+        "设计思维",
+        "知识漏斗",
+        "整合思维",
+        "Integrative Thinking",
+        "abductive reasoning",
+        "商业设计",
+        "竞争优势",
+        "溯因推理"
+      ],
+      "summary": "核心主题: 设计思维不是艺术家的专利, 而是企业下一波竞争优势的源泉——通过整合思维(Integrative Thinking)、溯因推理(Abductive Reasoning)和知识漏斗(Knowledge Funnel), 在分析型管理和直觉型创新之间找到第三条道路。",
+      "importance": 5,
+      "learned_at": "2026-05-24",
+      "source": "Roger Martin《The Design of Business: Why Design Thinking is the Next Competitive Advantage》(2009), Harvard Business Review Press",
+      "file": "articles/Roger-Martin-The-Design-of-Business-设计思维竞争优势方法论.json"
     }
   ],
   "SUMMARY": {

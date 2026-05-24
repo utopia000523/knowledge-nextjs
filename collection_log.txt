@@ -1,40 +1,31 @@
-2026-05-19 18:04 UTC — Cron Job Collection Run
+2026-05-24 17:20 UTC — Cron Job Collection Run
 =============================================
 
-=== TASK 1: 收录新书 (2本) — 营销 ===
-1. David Aaker《Building Strong Brands》品牌资产方法论 (营销, importance=5)
-   - 核心命题: 品牌不是靠广告打出来的，而是通过品牌识别系统（Brand Identity System）的系统性构建与管理，形成差异化的品牌资产
-   - 关键框架: Brand Identity System × 品牌资产四支柱 × 品牌延伸 × 品牌组合 × 品牌领导力
-   - 3个正面案例(星巴克/耐克/宝洁) + 3个反面案例(柯达/Harley延伸/老字号) + 10大误区
-   - 5套工具模板(诊断画布/健康检查/延伸评估/追踪报告/定位声明)
-   - 方法论对比矩阵(Aaker/Keller/Kapferer/Sharp/Interbrand) + 30天计划 + 12条金句
-   - 文件: David-Aaker-Building-Strong-Brands-品牌资产方法论.json (35.6KB, 11层)
-
-2. Eugene Schwartz《Breakthrough Advertising》突破式广告方法论 (营销, importance=5)
-   - 核心命题: 广告的有效性不取决于文案技巧，而取决于对消费者意识阶段和市场成熟度的精准判断
-   - 关键框架: 意识阶段五层模型 × 市场成熟度演进 × 欲望-机制组合 × Golden Thread原则
-   - 3个正面案例(Lazy Man's Way/Segway/iPod) + 3个反面案例 + 10大误区
-   - 5套工具模板(意识阶段诊断/市场成熟度评估/欲望-机制工作表/Golden Thread检查/A-B测试)
-   - 方法论对比(Schwartz/Hopkins/Caples/Ogilvy/Cialdini) + 30天技能计划 + 12条金句
-   - 文件: Eugene-Schwartz-Breakthrough-Advertising-突破式广告方法论.json (38.7KB, 12层)
+=== TASK 1: 收录新书 (1本) — 产品设计 ===
+1. Roger Martin《The Design of Business》设计思维如何成为竞争优势方法论 (产品设计, importance=5)
+   - 核心命题: 设计思维不是艺术家的专利，而是企业下一波竞争优势的源泉
+   - 关键框架: 知识漏斗(Knowledge Funnel)四阶段 × 设计思维三驱动轮(观察-框架-实验) × 溯因推理(Abductive Reasoning) × 整合思维(Integrative Thinking) × 商业设计师四项能力
+   - 17层深度拆解: 概念定义、知识漏斗详解、三驱动轮、溯因推理、组织知识漏斗管理、整合思维四阶段、商业设计师能力、成熟度五级、正面案例(宝洁/IDEO)、反面案例(5种失败模式)、十大误区、方法论对比(精益创业/设计冲刺/TRIZ/蓝海战略)、五套工具模板、30天计划、12条金句、AI时代分析
+   - 文件: Roger-Martin-The-Design-of-Business-设计思维竞争优势方法论.json (29.7KB, 17层)
 
 === TASK 2: 扩写已有文章 (1篇) ===
-- Purna Virji《High-Impact Content Marketing》高影响力内容方法论 (营销, importance: 5)
-  - 扩写前: 70行, 10264 bytes (8层基础结构, 简单概念+案例+清单)
-  - 扩写后: 96行, 46407 bytes (4.5x扩写, 12层深度结构)
+- Annie Duke《Quit》战略性退出与止损决策方法论 (心理学, importance=5)
+  - 扩写前: 10.3KB, 9层基础结构
+  - 扩写后: 34.0KB, 19层深度结构 (3.3x扩写)
   - 新增内容:
-    * Why Now背景与概念全景表(10+概念定义及常见误区对照)
-    * 五公式体系(影响力乘数/业务价值/内容效率/复用率/ROI模型)
-    * 五模块深度拆解: 受众人类学5维度+实操方法 / 内容-目标匹配矩阵 / 叙事设计6要素 / 分发策略4层次+节奏设计 / 复盘5层面+工作流
-    * 4个深度正面案例(B2B SaaS内容转型/研究报告内容资产化/销售赋能内容/Case C) + 3个反面案例
-    * 12大误区深度剖析 + 5套工具模板(受众人类学画布/内容-目标矩阵/单篇策划画布/五层绩效复盘/季度审计框架)
-    * 方法论对比矩阵(7种方法: Virji/Pulizzi/Handley/Rose/Crestodina/Scott/Kessler) + 集成应用
-    * 30天启动计划 + 15条金句 + AI时代意义分析 + 团队配备建议
+    * Quit Contract深度框架(触发条件/检查频率/执行机制/保护条款)
+    * 期望值思维数学基础(EV公式/机会成本/动态更新)
+    * 六种认知偏差深度分析(现状偏见/损失厌恶/承诺升级/确认偏误/乐观偏误/社会认同)及去偏策略
+    * 与六大决策框架对比矩阵(思考快与慢/原则/原子习惯/反脆弱/精要主义)
+    * 12个经典案例库(4正面: 亚马逊Fire Phone/Netflix转型/SaaS创业/职业转型; 6反面: 柯达/诺基亚/WeWork/创业者/补仓/科研; 1极端)
+    * 十大误区与纠偏对照
+    * 五套工具模板(Fresh Start Test/Quit Contract/机会成本表/退出复盘/团队讨论框架)
+    * 30天技能启动计划
+    * 作者深度背景分析(扑克→心理学→商业的迁移路径)
 
 === 统计更新 ===
-- 总文章: 581 -> 583
-- 营销分类: 47 -> 49
-- David-Aaker-Building-Strong-Brands: 新增 (35.6KB, 11层)
-- Eugene-Schwartz-Breakthrough-Advertising: 新增 (38.7KB, 12层)
-- Purna-Virji-High-Impact-Content-Marketing: 大幅扩写 (10KB -> 46KB, 70行->96行 JSON布局)
+- 总文章: 583 -> 584
+- 产品设计分类: 91 -> 92
+- Roger-Martin-The-Design-of-Business: 新增 (29.7KB, 17层)
+- Annie-Duke-Quit: 大幅扩写 (10.3KB -> 34.0KB, 9层 -> 19层)
 - 所有文件已同步到 public/data/

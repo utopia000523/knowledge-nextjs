@@ -47,6 +47,7 @@ export default function Home() {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedArticle, setSelectedArticle] = useState<Article | null>(null);
   const [settingsOpen, setSettingsOpen] = useState(false);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
   const [readStatus, setReadStatus] = useState<Record<string, boolean>>(() => {
     if (typeof window === 'undefined') return {};
     return getReadStatus();
@@ -125,9 +126,30 @@ export default function Home() {
         activeCategory={activeCategory}
         onCategoryChange={setActiveCategory}
         articleCount={data.articles.length}
+        isOpen={sidebarOpen}
+        onToggle={() => setSidebarOpen(!sidebarOpen)}
       />
 
-      <main className="relative z-10 ml-[320px] min-h-screen px-8 py-8 lg:px-10">
+      {/* 移动端顶栏 */}
+      <header className="fixed left-0 top-0 z-20 flex h-14 w-full items-center justify-between border-b border-white/10 bg-[rgba(7,12,24,0.9)] px-4 backdrop-blur-2xl lg:hidden">
+        <button
+          type="button"
+          onClick={() => setSidebarOpen(true)}
+          className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/5 text-base text-slate-300 hover:text-white"
+        >
+          ☰
+        </button>
+        <span className="text-sm font-medium text-slate-200">个人知识库</span>
+        <button
+          type="button"
+          onClick={() => setSettingsOpen((prev) => !prev)}
+          className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/5 text-base text-slate-300 hover:text-white"
+        >
+          ⚙
+        </button>
+      </header>
+
+      <main className="relative z-10 min-h-screen px-4 pt-20 pb-24 lg:ml-[320px] lg:px-8 lg:pt-8 xl:px-10">
         <div className="mx-auto max-w-7xl space-y-6">
           <section className="kb-panel overflow-hidden p-3 lg:p-3.5">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(129,140,248,0.18),transparent_28%),radial-gradient(circle_at_bottom_left,rgba(56,189,248,0.12),transparent_24%)]" />
@@ -147,7 +169,7 @@ export default function Home() {
                 )}
               </div>
 
-              <div className="grid gap-2 sm:grid-cols-2 xl:grid-cols-5">
+              <div className="grid gap-2 grid-cols-2 sm:grid-cols-3 xl:grid-cols-5">
                 <div className="kb-stat-card">
                   <span className="kb-stat-label">总量</span>
                   <strong className="kb-stat-value">{data.articles.length}</strong>
@@ -189,7 +211,8 @@ export default function Home() {
         </div>
       </main>
 
-      <div className="fixed bottom-6 left-6 z-30 flex flex-col items-start gap-3">
+      {/* 桌面端设置按钮 */}
+      <div className="fixed bottom-6 left-6 z-30 hidden flex-col items-start gap-3 lg:flex">
         {settingsOpen && (
           <div className="w-[280px] rounded-[28px] border border-white/10 bg-slate-950/90 p-5 text-sm text-slate-200 shadow-[0_24px_60px_rgba(2,6,23,0.55)] backdrop-blur-2xl">
             <div className="flex items-start justify-between gap-3">

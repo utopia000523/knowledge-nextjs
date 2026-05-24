@@ -139,6 +139,28 @@ body {
 /* Markdown prose 样式 */
 .prose {
   line-height: 1.8;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 640px) {
+  .prose {
+    font-size: 0.88rem;
+    line-height: 1.7;
+  }
+  .prose h1 {
+    font-size: 1.3rem;
+  }
+  .prose h2 {
+    font-size: 1.1rem;
+  }
+  .prose table {
+    min-width: auto;
+    font-size: 0.82rem;
+  }
+  .prose td,
+  .prose th {
+    padding: 0.5rem;
+  }
 }
 
 .prose h1,
