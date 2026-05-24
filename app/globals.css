@@ -294,6 +294,7 @@ body {
 
 .kb-table-wrap {
   margin-bottom: 1rem;
+  max-width: 100%;
   overflow-x: auto;
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 1rem;
@@ -306,6 +307,7 @@ body {
 
 .kb-mermaid {
   margin-bottom: 1rem;
+  max-width: 100%;
   overflow-x: auto;
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 1rem;
@@ -324,6 +326,38 @@ body {
 .kb-mermaid-fallback {
   margin: 0;
   white-space: pre-wrap;
+}
+
+.kb-markdown {
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
+.kb-markdown > *,
+.kb-markdown section {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.kb-markdown pre {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.kb-markdown code {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 640px) {
+  .kb-markdown table {
+    min-width: 520px;
+  }
+
+  .kb-mermaid svg {
+    min-width: 520px;
+  }
 }
 
 .prose th {

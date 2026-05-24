@@ -50,26 +50,42 @@ interface SelectionDraft {
 }
 
 function getReviews(): Record<string, ReviewEntry> {
-  const stored = localStorage.getItem('knowledge_reviews');
-  return stored ? JSON.parse(stored) : {};
+  try {
+    const stored = localStorage.getItem('knowledge_reviews');
+    return stored ? JSON.parse(stored) : {};
+  } catch {
+    return {};
+  }
 }
 
 function saveReviews(reviews: Record<string, ReviewEntry>) {
-  localStorage.setItem('knowledge_reviews', JSON.stringify(reviews));
+  try {
+    localStorage.setItem('knowledge_reviews', JSON.stringify(reviews));
+  } catch {}
 }
 
 function getHighlights(): Record<string, HighlightEntry[]> {
-  const stored = localStorage.getItem('knowledge_highlights');
-  return stored ? JSON.parse(stored) : {};
+  try {
+    const stored = localStorage.getItem('knowledge_highlights');
+    return stored ? JSON.parse(stored) : {};
+  } catch {
+    return {};
+  }
 }
 
 function saveHighlights(highlights: Record<string, HighlightEntry[]>) {
-  localStorage.setItem('knowledge_highlights', JSON.stringify(highlights));
+  try {
+    localStorage.setItem('knowledge_highlights', JSON.stringify(highlights));
+  } catch {}
 }
 
 function getBilingualPreference(): boolean {
-  const stored = localStorage.getItem('knowledge_bilingual_enabled');
-  return stored === 'true';
+  try {
+    const stored = localStorage.getItem('knowledge_bilingual_enabled');
+    return stored === 'true';
+  } catch {
+    return false;
+  }
 }
 
 function countWords(text: string): number {
@@ -377,6 +393,11 @@ export default function ArticleDetail({ article, isRead, onToggleRead, onClose }
   const [loading, setLoading] = useState(true);
   const [activeSection, setActiveSection] = useState<string | null>(null);
   const [showReviewEditor, setShowReviewEditor] = useState(false);
+  const [mobileTocOpen, setMobileTocOpen] = useState(false);
+  const [isMobileViewport, setIsMobileViewport] = useState(() => {
+    if (typeof window === 'undefined') return false;
+    return window.matchMedia('(max-width: 639px)').matches;
+  });
   const [reviewContent, setReviewContent] = useState('');
   const [reviews, setReviews] = useState<Record<string, ReviewEntry>>(() => {
     if (typeof window === 'undefined') return {};
@@ -403,19 +424,40 @@ export default function ArticleDetail({ article, isRead, onToggleRead, onClose }
   );
 
   const articleHighlights = useMemo(() => highlights[article.id] || [], [article.id, highlights]);
-  const displayLanguage = bilingualEnabled
+  const bilingualActive = bilingualEnabled && !isMobileViewport;
+  const displayLanguage = bilingualActive
     ? articleLanguageIsChinese
       ? 'en'
       : 'zh-CN'
     : articleLanguageIsChinese
       ? 'zh-CN'
       : 'en';
-  const renderedContent = bilingualEnabled && translatedContent ? translatedContent : content;
+  const renderedContent = bilingualActive && translatedContent ? translatedContent : content;
 
   useEffect(() => {
     document.body.style.overflow = 'hidden';
     return () => {
       document.body.style.overflow = '';
+    };
+  }, []);
+
+  useEffect(() => {
+    const mobileQuery = window.matchMedia('(max-width: 639px)');
+    const updateMobileViewport = () => setIsMobileViewport(mobileQuery.matches);
+
+    updateMobileViewport();
+    if (mobileQuery.addEventListener) {
+      mobileQuery.addEventListener('change', updateMobileViewport);
+    } else {
+      mobileQuery.addListener(updateMobileViewport);
+    }
+
+    return () => {
+      if (mobileQuery.removeEventListener) {
+        mobileQuery.removeEventListener('change', updateMobileViewport);
+      } else {
+        mobileQuery.removeListener(updateMobileViewport);
+      }
     };
   }, []);
 
@@ -428,6 +470,7 @@ export default function ArticleDetail({ article, isRead, onToggleRead, onClose }
     setReviewContent(loadedReviews[article.id]?.content || '');
     setLoading(true);
     setActiveSection(null);
+    setMobileTocOpen(false);
     setSelectionDraft(null);
     setTranslationError('');
     setTranslatedContent(null);
@@ -542,7 +585,7 @@ export default function ArticleDetail({ article, isRead, onToggleRead, onClose }
   useEffect(() => {
     if (loading || !content) return;
 
-    if (!bilingualEnabled) {
+    if (!bilingualActive) {
       setTranslatedContent(null);
       setTranslationLoading(false);
       setTranslationError('');
@@ -606,7 +649,7 @@ export default function ArticleDetail({ article, isRead, onToggleRead, onClose }
     return () => {
       cancelled = true;
     };
-  }, [article.id, articleLanguageIsChinese, bilingualEnabled, content, loading]);
+  }, [article.id, articleLanguageIsChinese, bilingualActive, content, loading]);
 
   useEffect(() => {
     const root = contentRef.current;
@@ -638,6 +681,7 @@ export default function ArticleDetail({ article, isRead, onToggleRead, onClose }
 
   const scrollToSection = (key: string) => {
     setActiveSection(key);
+    setMobileTocOpen(false);
     const el = document.getElementById(key);
     if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
@@ -708,14 +752,16 @@ export default function ArticleDetail({ article, isRead, onToggleRead, onClose }
   const toggleBilingual = () => {
     const next = !bilingualEnabled;
     setBilingualEnabled(next);
-    localStorage.setItem('knowledge_bilingual_enabled', String(next));
+    try {
+      localStorage.setItem('knowledge_bilingual_enabled', String(next));
+    } catch {}
   };
 
   const wordCount = countWords(reviewContent);
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center overflow-hidden bg-slate-950/88 p-6 backdrop-blur-md"
+      className="fixed inset-0 z-50 flex items-center justify-center overflow-hidden bg-slate-950/88 p-2 backdrop-blur-md sm:p-6"
       onClick={(e) => {
         if (e.target === e.currentTarget) {
           setSelectionDraft(null);
@@ -723,7 +769,7 @@ export default function ArticleDetail({ article, isRead, onToggleRead, onClose }
         }
       }}
     >
-      <div className="relative flex max-h-[92vh] w-full max-w-7xl overflow-hidden rounded-[32px] border border-white/10 bg-[linear-gradient(180deg,rgba(7,12,24,0.98),rgba(8,14,28,0.94))] shadow-[0_32px_120px_rgba(2,6,23,0.72)]">
+      <div className="relative flex max-h-[96vh] w-full min-w-0 max-w-7xl overflow-hidden rounded-[24px] border border-white/10 bg-[linear-gradient(180deg,rgba(7,12,24,0.98),rgba(8,14,28,0.94))] shadow-[0_32px_120px_rgba(2,6,23,0.72)] sm:max-h-[92vh] sm:rounded-[32px]">
         {tocItems.length > 0 && (
           <aside className="hidden w-[240px] shrink-0 border-r border-white/10 bg-white/[0.03] p-5 xl:block">
             <p className="text-xs uppercase tracking-[0.24em] text-slate-500">目录导航</p>
@@ -745,18 +791,62 @@ export default function ArticleDetail({ article, isRead, onToggleRead, onClose }
           </aside>
         )}
 
-        <div className="relative flex-1 overflow-y-auto">
-          <div className="sticky top-0 z-10 border-b border-white/10 bg-[rgba(7,12,24,0.88)] px-6 py-5 backdrop-blur-xl">
+        <div className="relative min-w-0 flex-1 overflow-x-hidden overflow-y-auto">
+          <div className="sticky top-0 z-10 border-b border-white/10 bg-[rgba(7,12,24,0.88)] px-4 py-4 backdrop-blur-xl sm:px-6 sm:py-5">
+            <div className="mb-3 flex items-center justify-between gap-2 sm:hidden">
+              <button
+                onClick={() => {
+                  setSelectionDraft(null);
+                  onClose();
+                }}
+                className="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-sm text-slate-300 transition hover:border-white/20 hover:text-white"
+              >
+                返回
+              </button>
+              {tocItems.length > 0 && (
+                <button
+                  type="button"
+                  onClick={() => setMobileTocOpen((open) => !open)}
+                  className={`rounded-full border px-3 py-1.5 text-sm transition ${
+                    mobileTocOpen
+                      ? 'border-indigo-400/20 bg-indigo-500/15 text-indigo-100'
+                      : 'border-white/10 bg-white/5 text-slate-300'
+                  }`}
+                >
+                  目录
+                </button>
+              )}
+            </div>
+
+            {mobileTocOpen && tocItems.length > 0 && (
+              <div className="mb-3 max-h-[38vh] overflow-y-auto rounded-2xl border border-white/10 bg-black/20 p-2 sm:hidden">
+                {tocItems.map((item) => (
+                  <button
+                    key={item.key}
+                    type="button"
+                    onClick={() => scrollToSection(item.key)}
+                    className={`block w-full rounded-xl px-3 py-2 text-left text-sm transition ${
+                      activeSection === item.key
+                        ? 'bg-indigo-500/15 text-indigo-100'
+                        : 'text-slate-300 hover:bg-white/[0.06] hover:text-white'
+                    }`}
+                  >
+                    <span className={item.level > 1 ? 'block pl-3 text-[13px]' : 'block'}>{item.title}</span>
+                  </button>
+                ))}
+              </div>
+            )}
+
             <button
               onClick={() => {
                 setSelectionDraft(null);
                 onClose();
               }}
-              className="absolute right-5 top-5 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-sm text-slate-300 transition hover:border-white/20 hover:text-white"
+              className="absolute right-5 top-5 hidden rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-sm text-slate-300 transition hover:border-white/20 hover:text-white sm:block"
             >
               关闭
             </button>
-            <div className="absolute right-24 top-5 flex items-center gap-2">
+            <div className="absolute right-24 top-5 hidden items-center gap-2 sm:flex">
               <button
                 onClick={toggleBilingual}
                 className={`rounded-full border px-3 py-1.5 text-sm transition ${
@@ -770,7 +860,7 @@ export default function ArticleDetail({ article, isRead, onToggleRead, onClose }
                   : `切换到${articleLanguageIsChinese ? '英文版' : '中文版'}`}
               </button>
             </div>
-            <div className="max-w-4xl pr-44">
+            <div className="hidden max-w-4xl sm:block sm:pr-44">
               <div className="flex flex-wrap items-center gap-2 text-xs">
                 <span className="rounded-full border border-yellow-400/15 bg-yellow-500/10 px-2.5 py-1 text-yellow-200">
                   {importanceStars(article.importance)}
@@ -800,13 +890,13 @@ export default function ArticleDetail({ article, isRead, onToggleRead, onClose }
                     划词评论 {articleHighlights.length}
                   </span>
                 )}
-                {bilingualEnabled && (
+                {bilingualActive && (
                   <span className="rounded-full border border-cyan-400/15 bg-cyan-500/10 px-2.5 py-1 text-cyan-200">
                     {articleLanguageIsChinese ? '英文版' : '中文版'}
                   </span>
                 )}
               </div>
-              <h2 className="mt-4 text-3xl font-semibold leading-tight text-white">{article.title}</h2>
+              <h2 className="mt-4 text-2xl font-semibold leading-tight text-white sm:text-3xl">{article.title}</h2>
               <p className="mt-3 max-w-3xl text-sm leading-7 text-slate-400">{article.summary}</p>
               <div className="mt-4 flex flex-wrap gap-2">
                 {article.keywords.map((kw, idx) => (
@@ -821,7 +911,7 @@ export default function ArticleDetail({ article, isRead, onToggleRead, onClose }
             </div>
           </div>
 
-          <div className="mx-auto max-w-4xl px-6 py-6">
+          <div className="mx-auto min-w-0 max-w-4xl px-4 py-5 sm:px-6 sm:py-6">
             <div className="mb-6 flex flex-wrap items-center gap-3">
               <button
                 onClick={() => onToggleRead(article.id)}
@@ -846,14 +936,14 @@ export default function ArticleDetail({ article, isRead, onToggleRead, onClose }
               <span className="text-xs text-slate-500">来源：{article.source}</span>
             </div>
 
-            {(translationLoading || translationError || articleHighlights.length > 0) && (
+            {((bilingualActive && (translationLoading || translationError)) || articleHighlights.length > 0) && (
               <div className="mb-6 space-y-3">
-                {translationLoading && (
+                {bilingualActive && translationLoading && (
                   <div className="rounded-2xl border border-cyan-400/10 bg-cyan-500/[0.06] px-4 py-3 text-sm text-cyan-100">
                     {articleLanguageIsChinese ? '英文版生成中...' : '中文版生成中...'}
                   </div>
                 )}
-                {translationError && (
+                {bilingualActive && translationError && (
                   <div className="rounded-2xl border border-red-400/10 bg-red-500/[0.06] px-4 py-3 text-sm text-red-200">
                     {translationError}
                   </div>
@@ -891,7 +981,7 @@ export default function ArticleDetail({ article, isRead, onToggleRead, onClose }
             {loading ? (
               <div className="rounded-3xl border border-white/8 bg-white/[0.03] p-8 text-sm text-slate-400">加载中...</div>
             ) : (
-              <div ref={contentRef} className="space-y-5 selection:bg-cyan-400/25 selection:text-white">
+              <div ref={contentRef} className="min-w-0 space-y-5 selection:bg-cyan-400/25 selection:text-white">
                 {renderContent(renderedContent, 0, displayLanguage)}
               </div>
             )}

@@ -6,10 +6,13 @@ import Sidebar from '@/components/Sidebar';
 import SearchBar from '@/components/SearchBar';
 import CardList from '@/components/CardList';
 import ArticleDetail from '@/components/ArticleDetail';
+import initialDataJson from '@/public/data/index.json';
 
 const SplashCursor = dynamic(() => import('@/components/animations/SplashCursor'), {
   ssr: false,
 });
+
+const ARTICLE_BATCH_SIZE = 24;
 
 interface Article {
   id: string;
@@ -22,6 +25,8 @@ interface Article {
   source: string;
   file: string;
 }
+
+const initialData = initialDataJson as { categories: string[]; articles: Article[] };
 
 function getReadStatus(): Record<string, boolean> {
   try {
@@ -54,12 +59,13 @@ function saveUiSettings(settings: { enableCursorEffect: boolean }) {
 }
 
 export default function Home() {
-  const [data, setData] = useState<{ categories: string[]; articles: Article[] } | null>(null);
+  const [data] = useState<{ categories: string[]; articles: Article[] }>(initialData);
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedArticle, setSelectedArticle] = useState<Article | null>(null);
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [visibleArticleCount, setVisibleArticleCount] = useState(ARTICLE_BATCH_SIZE);
   const [readStatus, setReadStatus] = useState<Record<string, boolean>>(() => {
     if (typeof window === 'undefined') return {};
     return getReadStatus();
@@ -80,11 +86,6 @@ export default function Home() {
     } else {
       desktopQuery.addListener(applyCursorPreference);
     }
-
-    fetch('/data/index.json')
-      .then((r) => r.json())
-      .then((d) => setData(d))
-      .catch(() => {});
 
     return () => {
       if (desktopQuery.removeEventListener) {
@@ -129,6 +130,16 @@ export default function Home() {
     });
   }, [activeCategory, data, searchQuery, readStatus]);
 
+  useEffect(() => {
+    setVisibleArticleCount(ARTICLE_BATCH_SIZE);
+  }, [activeCategory, searchQuery]);
+
+  const visibleArticles = useMemo(() => {
+    return filteredArticles.slice(0, visibleArticleCount);
+  }, [filteredArticles, visibleArticleCount]);
+
+  const hasMoreArticles = visibleArticles.length < filteredArticles.length;
+
   const toggleRead = (articleId: string) => {
     const newStatus = { ...readStatus, [articleId]: !readStatus[articleId] };
     setReadStatus(newStatus);
@@ -145,17 +156,6 @@ export default function Home() {
   };
 
   const completionRate = (data?.articles?.length ?? 0) === 0 ? 0 : Math.round((readCount / (data?.articles?.length ?? 1)) * 100);
-
-  if (!data) {
-    return (
-      <div className="flex min-h-screen items-center justify-center bg-[#07111f] text-slate-400">
-        <div className="text-center">
-          <div className="mb-4 text-4xl">📚</div>
-          <p>加载知识库中...</p>
-        </div>
-      </div>
-    );
-  }
 
   return (
     <div className="kb-shell relative min-h-screen overflow-hidden text-white">
@@ -200,7 +200,7 @@ export default function Home() {
 
       <main className="relative z-10 min-h-screen px-4 pt-20 pb-24 lg:ml-[320px] lg:px-8 lg:pt-8 xl:px-10">
         <div className="mx-auto max-w-7xl space-y-6">
-          <section className="kb-panel overflow-hidden p-3 lg:p-3.5">
+          <section className="kb-panel hidden overflow-hidden p-3 lg:block lg:p-3.5">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(129,140,248,0.18),transparent_28%),radial-gradient(circle_at_bottom_left,rgba(56,189,248,0.12),transparent_24%)]" />
             <div className="relative space-y-2">
               <div className="flex flex-wrap items-center gap-1.5 text-[11px]">
@@ -251,11 +251,22 @@ export default function Home() {
           <section className="space-y-6">
             <SearchBar onSearch={setSearchQuery} />
             <CardList
-              articles={filteredArticles}
+              articles={visibleArticles}
               readStatus={readStatus}
               onArticleClick={(article) => setSelectedArticle(article)}
               onToggleRead={toggleRead}
             />
+            {hasMoreArticles && (
+              <div className="flex justify-center">
+                <button
+                  type="button"
+                  onClick={() => setVisibleArticleCount((count) => count + ARTICLE_BATCH_SIZE)}
+                  className="rounded-full border border-white/10 bg-white/5 px-5 py-3 text-sm text-slate-200 transition hover:border-indigo-400/30 hover:bg-indigo-500/10 hover:text-white"
+                >
+                  加载更多（已显示 {visibleArticles.length}/{filteredArticles.length}）
+                </button>
+              </div>
+            )}
           </section>
         </div>
       </main>
