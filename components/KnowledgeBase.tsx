@@ -25,6 +25,7 @@ interface Data {
 export default function KnowledgeBase({ initialData }: { initialData: Data }) {
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
+  const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const categories = initialData.categories;
   const allArticles = initialData.articles;
@@ -62,8 +63,10 @@ export default function KnowledgeBase({ initialData }: { initialData: Data }) {
         activeCategory={activeCategory}
         onCategoryChange={setActiveCategory}
         articleCount={allArticles.length}
+        isOpen={sidebarOpen}
+        onToggle={() => setSidebarOpen((open) => !open)}
       />
-      <main className="ml-[280px] min-h-screen p-8">
+      <main className="min-h-screen p-8 lg:ml-[320px]">
         <div className="max-w-4xl mx-auto">
           <SearchBar onSearch={setSearchQuery} />
           <p className="text-sm text-gray-500 mb-4">显示 {filteredArticles.length} 篇文章</p>
