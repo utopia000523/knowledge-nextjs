@@ -1,0 +1,114 @@
+{
+  "id": "Alex-Xu-System-Design-Interview-系统设计面试方法论",
+  "category": "技术",
+  "title": "Alex Xu《System Design Interview - An Insider's Guide》系统设计面试方法论",
+  "keywords": [
+    "System Design Interview",
+    "Alex Xu",
+    "系统设计面试",
+    "系统设计",
+    "Capacity Estimation",
+    "Load Balancer",
+    "Database Sharding",
+    "Consistent Hashing",
+    "CDN",
+    "Message Queue",
+    "Microservices",
+    "Caching"
+  ],
+  "summary": "**核心主题**: 系统设计面试不是考算法，而是考架构决策能力——如何在大流量、高可用、可扩展的约束下，做出合理的技术选择并清晰沟通。核心框架：四步法（需求澄清 x 容量估算 x 高层设计 x 深度优化）x 15+ 真实系统设计。",
+  "importance": 5,
+  "learned_at": "2026-05-24",
+  "source": "Alex Xu《System Design Interview - An Insider's Guide》(Volume 1, 2nd Edition, 2021) — ByteMonkey 出版",
+  "content": {
+    "core_formula": "系统设计面试表现 = 需求澄清（Requirement Clarification）x 容量估算（Capacity Estimation）x 高层设计（High-Level Design）x 深度优化（Deep Dive）x 沟通质量（Communication）\n\n核心原则：不要直接跳到方案，先确认范围。设计不是选最优方案，而是在约束条件下做最合理的取舍。",
+    "layers": [
+      {
+        "level": 1,
+        "title": "概念定义",
+        "content": "**《System Design Interview - An Insider's Guide》是 Alex Xu 基于自己在大型科技公司（Twitter、Apple、eBay、Zynga）的系统设计经验编写的面试指南。** 与传统的系统设计教科书不同，这本书直接以面试场景为切入点，提供了一套可重复的四步应答框架，覆盖了互联网公司最常考的 15+ 经典系统设计题。\n\n| 概念 | 定义 | 面试意义 |\n|------|------|----------|\n| **需求澄清** | 先问清楚功能需求和非功能需求，明确设计范围 | 避免答非所问，展示思考框架 |\n| **容量估算** | 基于用户量/traffic/data 做粗略的 QPS、存储、带宽计算 | 证明设计可以落地，有数字支撑 |\n| **高层设计** | 勾勒系统核心组件及其交互关系 | 展示全局视野和架构能力 |\n| **深度优化** | 在高层设计基础上深入细节（数据库 schema、API、瓶颈、解决方条） | 证明你有工程实现能力 |\n| **权衡与取舍** | 讨论不同方案的 trade-off | 展示成熟度——没有银弹 |\n\n**一句话定义**：\n> 系统设计面试不是考你知道多少组件，而是考你在真实约束下如何做架构决策——什么时候用 cache、什么时候 shard、什么时候用 queue、取舍的根据是什么。"
+      },
+      {
+        "level": 1,
+        "title": "四步应答框架：从模糊问题到清晰系统",
+        "content": "```text\nStep 1: 需求澄清（3-5分钟）\n  - 功能需求：系统核心功能是什么？\n  - 非功能需求：延迟、可用性、一致性、可扩展性要求？\n  - 规模假设：MAU、DAU、QPS、数据量级？\n        |\nStep 2: 容量估算（3-5分钟）\n  - Traffic 估算：QPS（peak）、存储量（每天/每月）\n  - 带宽估算：写吞吐 / 读吞吐\n  - Cache 估算：热数据量、缓存命中率假设\n        |\nStep 3: 高层设计（10-15分钟）\n  - 画架构图：Client -> LB -> Server -> DB\n  - 讨论核心组件选择：DNS、CDN、Load Balancer、API Gateway\n  - 数据流图：写操作流程、读操作流程\n        |\nStep 4: 深度优化（10-15分钟）\n  - 数据库设计：schema、索引、分片策略\n  - 瓶颈分析：哪里的延迟最高？哪里的负载最大？\n  - 扩展方案：读写分离、缓存层、异步处理、一致性保障\n```\n\n**评分潜规则**：\n- Step 1-2 做得好 = 你在解决对的问题（60% 面试者忽略这一步）\n- Step 3 做得好 = 你有架构视野（30% 面试者能做好）\n- Step 4 做得好 = 你有工程深度（10% 面试者能做好）"
+      },
+      {
+        "level": 1,
+        "title": "子维度拆解：关键技术组件决策矩阵",
+        "content": "| 组件 | 解决的问题 | 常见方案 | 取舍点 |\n|------|-----------|----------|--------|\n| **DNS** | 域名解析与流量分布 | Route 53 / CloudDNS | 延迟 vs 自治权 |\n| **CDN** | 静态内容加速、降源站负载 | CloudFront / Cloudflare / Akamai | 成本 vs 延迟 |\n| **Load Balancer** | 流量分发、健康检查、SSL termination | Nginx / HAProxy / ELB Layer 4 vs 7 | 灵活性 vs 性能 |\n| **API Gateway** | 统一入口、限流、认证、路由 | Kong / AWS API Gateway / Zuul | 延迟 vs 可管理性 |\n| **Cache** | 降低读延迟、保护数据库 | Redis / Memcached / CDN | 一致性 vs 性能（TTL策略） |\n| **Message Queue** | 异步解耦、削峰填谷、事件驱动 | Kafka / RabbitMQ / SQS | 持久性 vs 吞吐量 |\n| **Database** | 持久化存储 | SQL vs NoSQL（Cassandra / DynamoDB / MongoDB） | 一致性 vs 可扩展性 |\n| **Blob Storage** | 图片/视频等大文件存储 | S3 / GCS / Azure Blob | 延迟 vs 成本 |\n| **Search** | 全文搜索与检索 | Elasticsearch / Solr | 实时性 vs 索引开销 |\n| **Monitoring** | 可观测性 | Prometheus / Grafana / Datadog | 精度 vs 存储成本 |\n| **CI/CD** | 持续集成与部署 | GitHub Actions / Jenkins / ArgoCD | 速度 vs 可靠性 |"
+      },
+      {
+        "level": 2,
+        "title": "容量估算（Capacity Estimation）—— 让方案落地的基础",
+        "content": "**核心概念**：容量估算不是追求精确，而是证明你的方案可以处理预期规模。面试官通过估算过程判断你是否理解系统的实际限制。\n\n**标准估算框架**：\n\n1. **假设用户规模**：\n   - 例如：设计 Twitter → 假设 3 亿 MAU，1.5 亿 DAU\n   - 每条推文平均 140 字符 ≈ 280 bytes + metadata ≈ 1KB\n   - 每日发推量：1.5 亿 DAU x 平均 2 条/天 = 3 亿条/天\n\n2. **QPS 计算**：\n   - 日均写 QPS（峰值 = 平均值 x 5-10）：(3 亿 / 86400) x 10 ≈ 35K write QPS peak\n   - 读 QPS 通常是写的 100x：3.5M read QPS peak\n\n3. **存储估算**：\n   - 每日新增：3 亿条 x 1KB = 300GB/天\n   - 年存储：300GB x 365 ≈ 110TB/年\n   - 含索引、副本（3x）：约 330TB/年\n\n4. **带宽估算**：\n   - 写带宽：35K QPS x 1KB ≈ 35MB/s\n   - 读带宽：3.5M QPS x 1KB ≈ 3.5GB/s\n\n**常用数字速记表**：\n| 量级 | 单位 | 说明 |\n|------|------|------|\n| 10^3 | 1K QPS | 小型服务的日常负载 |\n| 10^4 | 10K QPS | 中型服务（单机极限附近） |\n| 10^5 | 100K QPS | 大型服务，需要水平扩展 |\n| 10^6 | 1M QPS | 超大规模，全球 CDN + 多级缓存 |\n| 10^9 | 1B records | 数据库表的理想分片规模 |\n| 1TB | 1000 GB | 单机 HDD/SSD 合理容量 |\n| 1PB | 1000 TB | 大数据系统的典型规模 |\n\n**关键提醒**：不要花太多时间精确计算。给出合理范围（如 50K-100K QPS），展示思考过程即可。"
+      },
+      {
+        "level": 2,
+        "title": "数据库分片（Database Sharding）—— 水平扩展的核心技术",
+        "content": "**分片策略选择**：\n\n| 策略 | 原理 | 优点 | 缺点 |\n|------|------|------|------|\n| **Range-Based** | 按 ID 范围分段（1-10000 → shard 1） | 实现简单、范围查询友好 | 数据分布不均、热点问题 |\n| **Hash-Based** | 对 shard key 做 hash 分配到各分片 | 数据均分、避免热点 | 范围查询跨分片、reshard 困难 |\n| **Directory-Based** | 维护一个分片查询表（lookup table） | 灵活、易迁移 | 单点瓶颈、额外查询开销 |\n| **Consistent Hashing** | 哈希环 + 虚拟节点 | 增减节点只影响极少数据、分布均匀 | 实现复杂、查询需二倍寻址 |\n\n**一致性哈希（Consistent Hashing）详解**：\n- 将服务器和数据都映射到同一个哈希环上。\n- 每个数据逆时针找到第一个服务器节点。\n- 服务器增减时，只有环上相邻数据受影响（而非全部 reshuffle）。\n- 虚拟节点（vnodes）解决物理节点性能不均问题。\n- 实际应用：Amazon DynamoDB、Cassandra、Discord。\n\n**分片核心原则**：\n1. 选择不易变化的高基数属性作为 shard key（如 user_id）。\n2. 避免使用时间戳等连续值作为单一 shard key（热尾问题）。\n3. 考虑关联数据放在同一分片（减少跨分片 join 和分布式事务）。\n4. 设计时就规划 reshared/扩容策略（热分片拆分或翻倍扩容）。"
+      },
+      {
+        "level": 2,
+        "title": "缓存策略（Caching）—— 系统性能的第一杠杆",
+        "content": "**缓存层级**：\n1. **客户端缓存**：浏览器缓存、App 本地缓存\n2. **CDN**：全球静态/动态内容加速\n3. **反向代理缓存**：Nginx/Varnish 缓存 API 响应\n4. **应用层缓存**：Redis/Memcached 缓存数据库查询结果\n5. **数据库查询缓存**：MySQL Query Cache / InnoDB Buffer Pool\n\n**缓存模式**：\n\n| 模式 | 工作机制 | 适用场景 | 注意事项 |\n|------|---------|----------|----------|\n| **Cache Aside** | 应用代码先读缓存，miss 则读 DB 并回写缓存 | 最通用、灵活 | 需维护缓存一致性 |\n| **Read Through** | 缓存层自动从 DB 加载 | 读密集场景 | 对缓存中间件有要求 |\n| **Write Through** | 写数据时同时更新 DB 和缓存 | 写后立即读一致性要求高 | 写延迟增加 |\n| **Write Behind** | 写时只更新缓存，异步刷新到 DB | 写密集、可接受短暂不一致 | 数据丢失风险 |\n| **Write Around** | 直接写 DB，让缓存自然过期 | 写多读少场景 | 读延迟可能变高 |\n\n**缓存淘汰策略**：\n- LRU（最近最少使用）——最常用\n- LFU（最不经常使用）——注意频率随时间衰减\n- TTL（过期时间）——防止数据永久不一致\n- FIFO（先进先出）——简单但不考虑访问模式\n\n**缓存关键数字**：\n- 内存访问延迟：~100ns\n- SSD 访问延迟：~100μs （比内存慢 1000x）\n- 网络回压（Redis over network）：~1ms（比内存慢 10000x）\n- 缓存命中率目标：热数据 95%+，整体 85%+"
+      },
+      {
+        "level": 2,
+        "title": "CDN —— 全球加速的基础设施",
+        "content": "**CDN 工作原理**：\n- 把静态资源（图片、CSS、JS、视频）缓存到全球 Edge Server。\n- 用户访问时自动解析到最近的 Edge Server。\n- 源站只需为缓存 miss 服务。\n\n**CDN 决策要点**：\n1. **静态 vs 动态内容**：静态直接 CDN，动态可以 CDN + Edge Computing（CloudFlare Workers）。\n2. **缓存失效**：文件内容变化时需主动失效 CDN 缓存（Cache Invalidation / Purge）。\n3. **回源策略**：CDN miss 时从源站拉去，回源路径越短越好。\n4. **跨国场景**：全球部署多 Region，CDN 自动就近路由。\n\n**常见 CDN 服务商**：CloudFront（AWS）、Cloudflare、Akamai、Fastly、阿里云 CDN。\n\n**典型架构模式**：多级缓存链：Client -> CDN -> LB -> In-Memory Cache -> Database"
+      },
+      {
+        "level": 2,
+        "title": "消息队列（Message Queue）—— 异步解耦的艺术",
+        "content": "**MQ 核心价值**：\n1. **解耦**：生产者不需要知道消费者的存在。\n2. **削峰**：突发流量进入 MQ，消费者按能力处理。\n3. **异步**：不需要同步等待的操作可以放 MQ。\n4. **可靠性**：MQ 保证消息不丢失（至少一次 / 正好一次语义）。\n\n**常见 MQ 对比**：\n\n| 特性 | Kafka | RabbitMQ | AWS SQS | AWS SNS |\n|------|-------|----------|---------|---------|\n| 模型 | 发布-订阅 + 分区日志 | 队列 + Exchange | 队列 | 发布-订阅 |\n| 吞吐量 | 百万级 msg/s | 万级 msg/s | 万级 msg/s | 万级 msg/s |\n| 持久化 | 磁盘日志 | 内存/磁盘 | 自动 | 不持久 |\n| 消息顺序 | 分区内有序 | 单队列有序 | 尽力有序 | 不保证 |\n| 重试机制 | 手动 seek | Dead Letter | Visibility Timeout | - |\n| 适用场景 | 事件流、日志、数据管道 | 任务调度、消息路由 | 简单异步任务 | 通知推送 |\n\n**使用模式**：\n- Producer -> MQ -> Consumer（基本模式）\n- MQ -> Multiple Consumers（竞争消费者模式，横向扩展处理能力）\n- MQ -> Fan-out（同时分发到多个消费者组）\n- MQ + Dead Letter Queue（错误消息隔离 + 重试）"
+      },
+      {
+        "level": 1,
+        "title": "15个经典面试系统设计索引",
+        "content": "| # | 系统 | 核心挑战 | 关键组件 |\n|---|------|---------|----------|\n| 1 | 设计 TinyURL/短链接 | 唯一 ID 生成、高并发写 | Base62、分布式 ID 发号器、数据库分片 |\n| 2 | 设计 Pastebin | 大文本存储、过期策略 | S3 + CDN + Redis TTL |\n| 3 | 设计 Twitter Feed | 读写比例 100:1、粉丝分发 | Fan-out on Write vs Fan-out on Read |\n| 4 | 设计 News Feed系统 | 个性化排序、实时性 | Feed Generator、Ranking Service、Cache |\n| 5 | 设计聊天系统 | 实时性、消息顺序、多设备同步 | WebSocket、长轮询、消息同步表 |\n| 6 | 设计 YouTube | 视频上传+转码+流媒体 | 分段上传、异步转码、CDN 分发 |\n| 7 | 设计 Dropbox | 文件同步、冲突解决、增量上传 | 块存储 + 差异同步 + 版本控制 |\n| 8 | 设计搜索引擎 | 爬取、索引、排序 | Crawler -> Inverted Index -> Ranking |\n| 9 | 设计 Uber | 实时位置跟踪、匹配算法 | GeoHash、四叉树、位置数据库 |\n| 10 | 设计 Netflix | 推荐、流媒体、全球可用 | 微服务 + 个性化推荐 + CDN |\n| 11 | 设计 Web Crawler | 广度优先、去重、调度策略 | URL Frontier + Bloom Filter + 去重 |\n| 12 | 设计 Yelp/Nearby | 空间地理查询 | QuadTree / Geohash / Grid |\n| 13 | 设计 Ticketmaster | 高并发抢票、库存一致性 | 乐观锁 + 队列 + 分布式事务 |\n| 14 | 设计 Google Maps | 路线规划、实时导航 | A* / Dijkstra、瓦片地图、导航引擎 |\n| 15 | 设计分布式ID生成器 | 全局唯一、趋势递增、高可用 | Snowflake / UUID / Redis INCR |"
+      },
+      {
+        "level": 1,
+        "title": "常用设计模式速查",
+        "content": "### 1. 读写分离（Read-Write Split）\n- 主库写，从库读（多个从库读副本）\n- 适用场景：读远多于写的系统\n- 挑战：主从复制延迟导致读不一致\n\n### 2. 数据库水平切分（Horizontal Sharding）\n- 按 shard key 将数据分布到多个数据库实例\n- 适用场景：单库容量或写入 QPS 成为瓶颈\n- 挑战：跨 shard 查询/事务/join\n\n### 3. 读写缓存分层（Multi-Level Cache）\n- L1: 本地内存缓存（如 Guava Cache）→ 极低延迟\n- L2: 分布式缓存（如 Redis）→ 共享内存\n- L3: CDN（静态内容）→ 全球加速\n\n### 4. 异步处理（Async Processing）\n- 写请求 -> 确认立刻返回 -> MQ 异步处理\n- 适用场景：邮件发送、图片处理、推送通知\n\n### 5. 批量操作（Batch）\n- 合并多个请求一次处理\n- 适用场景：日志聚合、指标采集、大数据写入\n\n### 6. 一致性哈希（Consistent Hashing）\n- 缓存/数据库分片的弹性伸缩\n- 优点：增减节点影响最小\n\n### 7. 心跳检测（Heartbeat）\n- 检测服务健康状态\n- 搭配：Leader Election + Failover\n\n### 8. 断路保护（Circuit Breaker）\n- 检测下游故障 -> 快速失败 -> 恢复后再试\n- 搭配：Rate Limiting + Retry with Backoff\n\n### 9. 同城多活 / 异地多活（Multi-Region Active）\n- 跨数据中心部署，其中一个 Region 故障时切换\n- 挑战：数据一致性、DNS 切换、状态同步\n\n### 10. 最终一致性（Eventual Consistency）\n- 用于对一致性要求不高的场景\n- 通过异步对账或补偿机制保证最终一致"
+      },
+      {
+        "level": 1,
+        "title": "面试沟通技巧",
+        "content": "### 面试官真正在评估什么？\n1. **是否在解决对的问题**：你问需求了吗？还是直接开写？\n2. **是否能做出合理取舍**：你知道 trade-off 吗？\n3. **是否善于沟通**：你是否清晰地解释思路？是否回应了 prompts？\n4. **是否有工程判断力**：你知道什么是够好的设计吗？\n\n### 沟通四要四不要\n**要**：\n- ✅ 先说框架，再说细节（先画大图再深入）\n- ✅ 主动阐述取舍（用 X 不用 Y 因为...）\n- ✅ 承认未知（我不确定 Redis 精确的并发限制，但...）\n- ✅ 回应提示（面试官给出 hint 时及时调整方向）\n\n**不要**：\n- ❌ 直接跳到最复杂的方案\n- ❌ 假装什么都知道\n- ❌ 忽略非功能需求（可用性、延迟、一致性）\n- ❌ 在一个细节上纠结太久（遇到瓶颈先记下，继续前进）\n\n### 常见面试提示信号\n| 面试官说 | 真实含义 |\n|----------|----------|\n| 我们规模很大 | 请考虑分布式和扩展性问题 |\n| 你还有什么假设？ | 我故意留了模糊点让你澄清 |\n| 这个方案如果遇到...会怎么样？ | 有瓶颈，需要你识别和解决 |\n| 有没有替代方案？ | 我知道有更好的方案 |\n| 这个很好，但如果... | 你想到了好的，但我引导你深入 |"
+      },
+      {
+        "level": 1,
+        "title": "正反案例",
+        "content": "### 正面案例：设计 TinyURL 时的优秀回答\n面试者先说：我们先明确范围——用户发长 URL，返回短路径，读远大于写，每天 1 亿次重定向，需支持过期删除。接着估算 QPS（写 ~100/s，读 ~12K/s）。高层设计：API -> 唯一 ID 生成器 -> 数据库存储映射。深入讨论 Base62 编码、Snowflake ID、缓存策略。主动提出 MWRM（Read Replicas）解决读瓶颈。权衡：用发号器自增 ID 而非 hash（避免碰撞），用 Redis 做热数据缓存（命中率 90%+），用 Bloom Filter 防止无效短链回压。\n\n### 反面案例：设计 Twitter Feed 时的错误做法\n面试者听完题目后立刻开始画数据库 schema，没有确认读写比例。假设所有用户发推时都 fan-out write 到所有 follower 的时间线表，导致 1000 万粉丝的名人发一条推文产生 1000 万次写——完全不可行。没有提出 hot user 问题，也没谈 fan-out on read 作为替代方案。最终方案不能支持预期规模。\n\n### 正面与反面的核心差别\n- 正面：先确认范围，做估算，逐步深入，主动讨论取舍\n- 反面：急于写方案，忽略规模假设，不问需求，不讨论 trade-off"
+      },
+      {
+        "level": 1,
+        "title": "学习路径与推荐资源",
+        "content": "### 核心学习顺序\n1. **基础组件理解**：DNS / CDN / Load Balancer / API Gateway / Cache / MQ / Database\n2. **四步框架练习**：对着 15 个经典题做模板式练习\n3. **深度工程知识**：一致性哈希、分布式事务、CAP 定理、Paxos/Raft\n4. **真实系统分析**：读技术博客关于实际系统的架构（Netflix Tech Blog、Uber Engineering）\n\n### 推荐资源\n- 《System Design Interview》Alex Xu（本书）—— 面试导向，覆盖 15+ 经典题\n- 《Designing Data-Intensive Applications》（DDIA）—— 深度理论\n- 《System Design Interview - Volume 2》Alex Xu & Sahn Lam —— 更多进阶题\n- Grokking the System Design Interview (Educative) —— 交互式学习\n- System Design Primer (GitHub, donnemartin) —— 开源社区版\n- High Scalability 博客 —— 真实世界大型系统案例\n\n### 练习节奏建议\n- 1-2 周：掌握基础组件 + 四步框架\n- 2-4 周：练习 10 个经典系统（每天 1 题）\n- 4-6 周：深入研究 3 个感兴趣的系统，写详细设计文档\n- 6-8 周：模拟面试，限时 45 分钟完整演练"
+      },
+      {
+        "level": 1,
+        "title": "原书金句",
+        "content": "1. Dont jump into the solution immediately. Start with requirement clarification.\n   —— 不要立刻跳到方案。从需求澄清开始。\n2. System design interviews are not about getting the exact design. They are about getting a reasonable design.\n   —— 系统设计面试不是要方案完全正确，而是要方案合理。\n3. A design that scales to millions of users is different from a design that scales to billions.\n   —— 服务于百万用户的方案与服务于十亿用户的方案本质不同。\n4. The best engineers dont just build systems that work; they build systems that can be maintained and extended.\n   —— 最好的工程师不仅构建能跑的系统，还构建可维护和可扩展的系统。\n5. Everything is a trade-off in system design. There is no perfect design.\n   —— 系统设计的一切都是取舍，没有完美的方案。\n6. Caching is the first line of defense for performance.\n   —— 缓存是性能的第一道防线。\n7. Your ability to identify the bottleneck and propose solutions is more important than knowing the exact technology stack.\n   —— 识别瓶颈并提出解决方案的能力，比知道某个具体技术栈更重要。\n8. Communication is key. A good design that is poorly communicated is worse than a mediocre design well communicated.\n   —— 沟通是关键。一个沟通糟糕的好设计不如一个沟得好的平庸设计。\n9. Start simple, then optimize. You cant optimize what you havent architected.\n   —— 从简单开始，然后再优化。没有架构的东西是无法优化的。\n10. Load balancing is not just about distributing traffic; its about building resilience.\n    —— 负载均衡不仅是分发流量，更是构建弹性。"
+      },
+      {
+        "level": 1,
+        "title": "30天技能启动计划",
+        "content": "### 第1周：基础组件精通\n- Day 1-2：Load Balancer（Layer 4 vs 7、算法、健康检查）\n- Day 3-4：Cache（Redis vs Memcached、淘汰策略、缓存模式）\n- Day 5-6：Database（SQL vs NoSQL、分片策略、读写分离）\n- Day 7：Message Queue（Kafka vs RabbitMQ vs SQS）\n\n### 第2周：框架+估算练习\n- Day 8-9：掌握四步框架 + 背诵常用数字表\n- Day 10：设计 TinyURL / Pastebin（专注 Step 1-2）\n- Day 11：设计 Twitter News Feed（专注 Step 3）\n- Day 12：设计聊天系统（专注 Step 4）\n- Day 13-14：复习 & 自我复盘\n\n### 第3周：深度系统模拟\n- Day 15-16：设计 YouTube / Netflix（视频流系统）\n- Day 17-18：设计 Uber（地理位置系统）\n- Day 19-20：设计 Ticketmaster（高并发订票系统）\n- Day 21：复习 CAP、一致性哈希、分布式 ID\n\n### 第4周：冲刺 + 模拟面试\n- Day 22-23：设计搜索引擎 / Web Crawler\n- Day 24：设计 Dropbox（存储同步系统）\n- Day 25-26：找朋友做模拟面试，限时 45 分钟\n- Day 27-28：针对弱点补强（如数据库一致性）\n- Day 29-30：写总结——你的系统设计 cheatsheet"
+      },
+      {
+        "level": 1,
+        "title": "更新日志",
+        "content": "| 日期 | 更新内容 |\n|------|----------|\n| 2026-05-24 | 新增《System Design Interview》系统设计面试方法论：四步框架、容量估算、技术组件决策矩阵、分片/缓存/队列/CDN 深度、15个经典系统索引、设计模式速查、面试沟通技巧、正反案例、学习路径、10条金句、30天计划 |"
+      }
+    ],
+    "updates": [
+      {
+        "date": "2026-05-24",
+        "note": "新建：收录 Alex Xu《System Design Interview - An Insider's Guide》，完整整理系统设计面试方法论"
+      }
+    ]
+  }
+}

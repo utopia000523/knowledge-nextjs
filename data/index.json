@@ -9667,19 +9667,68 @@
       "learned_at": "2026-05-24",
       "source": "Eric S. Raymond《The Cathedral and the Bazaar: Musings on Linux and Open Source by an Accidental Revolutionary》(1999, O'Reilly Media)",
       "file": "articles/Eric-Raymond-The-Cathedral-and-the-Bazaar-开源运动开发方法论.json"
+    },
+    {
+      "id": "Jonah-Berger-Contagious-STEPPS-传播方法论",
+      "category": "营销",
+      "title": "Jonah Berger《Contagious: Why Things Catch On》STEPPS传播方法论",
+      "keywords": [
+        "Contagious",
+        "Why Things Catch On",
+        "Jonah Berger",
+        "STEPPS",
+        "Social Currency",
+        "Triggers",
+        "Emotion",
+        "Public",
+        "Practical Value",
+        "Stories",
+        "病毒传播",
+        "口碑营销",
+        "社交传播"
+      ],
+      "summary": "**核心主题**: 产品、想法或行为能够流行的六大原则——STEPPS：Social Currency（社交货币）× Triggers（触发）× Emotion（情绪）× Public（公开）× Practical Value（实用价值）× Stories（故事）。",
+      "importance": 5,
+      "learned_at": "2026-05-24",
+      "source": "Jonah Berger《Contagious: Why Things Catch On》(2013) — Simon & Schuster",
+      "file": "articles/Jonah-Berger-Contagious-STEPPS-传播方法论.json"
+    },
+    {
+      "id": "Alex-Xu-System-Design-Interview-系统设计面试方法论",
+      "category": "技术",
+      "title": "Alex Xu《System Design Interview - An Insider's Guide》系统设计面试方法论",
+      "keywords": [
+        "System Design Interview",
+        "Alex Xu",
+        "系统设计面试",
+        "系统设计",
+        "Capacity Estimation",
+        "Load Balancer",
+        "Database Sharding",
+        "Consistent Hashing",
+        "CDN",
+        "Message Queue",
+        "Microservices",
+        "Caching"
+      ],
+      "summary": "**核心主题**: 系统设计面试不是考算法，而是考架构决策能力——如何在大流量、高可用、可扩展的约束下，做出合理的技术选择并清晰沟通。核心框架：四步法（需求澄清 x 容量估算 x 高层设计 x 深度优化）x 15+ 真实系统设计。",
+      "importance": 5,
+      "learned_at": "2026-05-24",
+      "source": "Alex Xu《System Design Interview - An Insider's Guide》(Volume 1, 2nd Edition, 2021) — ByteMonkey 出版",
+      "file": "articles/Alex-Xu-System-Design-Interview-系统设计面试方法论.json"
     }
   ],
   "SUMMARY": {
-    "total_articles": 585,
-    "last_updated": "2026-05-19",
+    "total_articles": 589,
+    "last_updated": "2026-05-24",
     "by_category": {
-      "产品设计": 91,
+      "产品设计": 92,
       "其他": 1,
       "创业": 91,
       "心理学": 160,
-      "技术": 42,
+      "技术": 44,
       "理财": 64,
-      "营销": 49,
+      "营销": 51,
       "雅思": 16,
       "项目管理": 71
     }

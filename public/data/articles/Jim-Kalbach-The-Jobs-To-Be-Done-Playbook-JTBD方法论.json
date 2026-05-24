@@ -9,7 +9,12 @@
     "Job Map",
     "Desired Outcomes",
     "Job Stories",
-    "Customer Progress"
+    "Customer Progress",
+    "需求研究",
+    "用户任务",
+    "进展创新",
+    "机会评分",
+    "Outcome-Driven Innovation"
   ],
   "summary": "**核心主题**：以客户想完成什么进展为中心 × Job Map × Desired Outcomes × Job Stories × 用需求而非功能来驱动产品设计与增长。",
   "importance": 5,
@@ -26,7 +31,7 @@
       {
         "level": 1,
         "title": "核心模型：从 Job 到产品决策",
-        "content": "```text\n情境（When）\n→ 目标进展（Job）\n→ 任务步骤（Job Map）\n→ 期望结果（Desired Outcomes）\n→ 解决方案设计（Product / Service / Process）\n→ 采用与切换（Hire / Fire）\n```\n\n**五个判断问题**：\n1. 客户到底想完成哪件事？\n2. 这件事是在哪种情境下发生的？\n3. 客户完成它时会经历哪些步骤？\n4. 每一步最在意的成功标准是什么？\n5. 现有产品、替代品和手工流程分别哪里做得不好？"
+        "content": "```text\n情境（When）\n  -> 目标进展（Job）\n  -> 任务步骤（Job Map）\n  -> 期望结果（Desired Outcomes）\n  -> 解决方案设计（Product / Service / Process）\n  -> 采用与切换（Hire / Fire）\n```\n\n**五个判断问题**：\n1. 客户到底想完成哪件事？\n2. 这件事是在哪种情境下发生的？\n3. 客户完成它时会经历哪些步骤？\n4. 每一步最在意的成功标准是什么？\n5. 现有产品、替代品和手工流程分别哪里做得不好？"
       },
       {
         "level": 1,
@@ -36,53 +41,92 @@
       {
         "level": 2,
         "title": "维度一：Job Definition —— 先定义进展，不先定义功能",
-        "content": "客户说“我需要一个仪表盘”，往往只是方案语言；背后的 Job 可能是“我想更快发现异常并决定先处理哪里”。\n\n**判断标准**：\n- 好的 Job 与特定功能解耦；\n- 好的 Job 可跨产品、跨替代方案比较；\n- 好的 Job 能解释为何客户会从旧方式切换到新方式。\n\n**转译示例**：\n- 需求表述：我要 AI 周报生成功能。\n- JTBD 表述：当我周一要向老板汇报时，我想快速整理上周关键变化，以便在 10 分钟内形成可信更新。"
+        "content": "客户说我需要一个仪表盘，往往只是方案语言；背后的 Job 可能是我想更快发现异常并决定先处理哪里。\n\n**判断标准**：\n- 好的 Job 与特定功能解耦；\n- 好的 Job 可跨产品、跨替代方案比较；\n- 好的 Job 能解释为何客户会从旧方式切换到新方式。\n\n**转译示例**：\n- 需求表述：我要 AI 周报生成功能。\n- JTBD 表述：当我周一要向老板汇报时，我想快速整理上周关键变化，以便在 10 分钟内形成可信更新。\n\n**Job 的三个层次**：\n| 层次 | 描述 | 示例 |\n|------|------|------|\n| Functional Job | 客户试图完成的功能性任务 | 把数据从 A 搬到 B |\n| Emotional Job | 客户在过程中希望感受到什么 | 感到掌控感、减少焦虑 |\n| Social Job | 客户希望在他人面前呈现什么形象 | 显得专业、让老板觉得自己能干 |\n\n**Kalbach 的提醒**：大多数团队只关注 Functional Job，但 Emotional 和 Social Job 往往是真正的差异化和付费动机。"
       },
       {
         "level": 2,
         "title": "维度二：Job Map —— 不是用户旅程，而是任务完成路径",
-        "content": "Kalbach 强调 JTBD 的地图关注客户完成任务的步骤，而不是企业内部接触点。一个通用 Job Map 常可拆为：\n```text\nDefine → Locate → Prepare → Confirm → Execute → Monitor → Modify → Conclude\n```\n\n**价值**：\n- 能发现产品之外的机会，如教育、支持、流程自动化；\n- 能看见需求并不只发生在使用时，还发生在准备、确认、监控和收尾阶段；\n- 能帮助不同部门围绕同一任务步骤协作。"
+        "content": "Kalbach 强调 JTBD 的地图关注客户完成任务的步骤，而不是企业内部接触点。一个通用 Job Map 常可拆为：\n```text\nDefine -> Locate -> Prepare -> Confirm -> Execute -> Monitor -> Modify -> Conclude\n```\n\n**Job Map vs 用户旅程（Customer Journey）的核心区别**：\n| 维度 | Job Map | Customer Journey |\n|------|---------|-----------------|\n| 视角 | 客户任务 | 品牌触点 |\n| 关注 | 客户在做什么 | 客户在哪里接触我们 |\n| 步骤 | 按任务逻辑顺序 | 按时间顺序 |\n| 输出 | 任务分解 + 机会 | 体验评分 + 改进点 |\n| 竞争参照 | 替代方案（含非产品方案） | 竞争对手 |\n\n**价值**：\n- 能发现产品之外的机会，如教育、支持、流程自动化；\n- 能看见需求并不只发生在使用时，还发生在准备、确认、监控和收尾阶段；\n- 能帮助不同部门围绕同一任务步骤协作。"
       },
       {
         "level": 2,
         "title": "维度三：Desired Outcomes —— 从喜欢不喜欢转向结果好不好",
-        "content": "结果语句通常围绕时间、概率、波动、努力、风险、可预测性。\n\n**典型结果表达**：\n- 最小化完成任务所需时间；\n- 降低关键步骤出错概率；\n- 减少等待、返工和切换成本；\n- 提高结果可预测性与可见性。\n\n**实用公式**：\n```text\n机会度 = 结果的重要性 × 当前不满意度\n```\n若某结果非常重要，但现有解决方案满意度很低，就意味着产品机会较大。"
+        "content": "结果语句通常围绕时间、概率、波动、努力、风险、可预测性。\n\n**典型结果表达**：\n- 最小化完成任务所需时间；\n- 降低关键步骤出错概率；\n- 减少等待、返工和切换成本；\n- 提高结果可预测性与可见性。\n\n**实用公式**：\n```text\n机会度 = 结果的重要性 x 当前不满意度\n```\n若某结果非常重要，但现有解决方案满意度很低，就意味着产品机会较大。\n\n**结果语句的构建规则**：\n1. 以动词开头（最小化、降低、提高、增加、缩短、减少）\n2. 表达方向而非具体数值（降低出错概率，而不是出错率降到 0.1%）\n3. 保持通用性，不绑定特定技术方案（快速发现问题，而不是用仪表盘发现问题）\n4. 每个 Job Map 步骤产生 3-5 个 Desired Outcomes\n\n**机会评分矩阵**：\n```\n                   满意度高 | 满意度低\n                +----------+----------+\n    重要性高     |  维持区   |  机会区  |\n                | (维持)   | (创新)   |\n                +----------+----------+\n    重要性低     |  低优先   |  忽略区  |\n                | (勿投入)  | (跳过)   |\n                +----------+----------+\n```"
       },
       {
         "level": 2,
         "title": "维度四：Job Stories —— 让需求回到触发情境",
-        "content": "Job Story 常用模板：\n```text\nWhen ...\nI want to ...\nSo I can ...\n```\n它比 Persona 更强调触发器与行为动机。\n\n**示例**：\n- 当我在月末做复盘但数据来自多个系统时，\n- 我想先自动汇总异常波动并标出原因假设，\n- 这样我就能把时间花在判断和决策上，而不是整理表格。\n\n**优势**：\n- 适合需求梳理、文案、实验、优先级讨论；\n- 可直接连接产品场景与验收标准。"
+        "content": "Job Story 常用模板：\n```text\nWhen ...\nI want to ...\nSo I can ...\n```\n它比 Persona 更强调触发器与行为动机。\n\n**示例**：\n- 当我在月末做复盘但数据来自多个系统时，\n- 我想先自动汇总异常波动并标出原因假设，\n- 这样我就能把时间花在判断和决策上，而不是整理表格。\n\n**优势**：\n- 适合需求梳理、文案、实验、优先级讨论；\n- 可直接连接产品场景与验收标准。\n\n**Job Story vs User Story vs Use Case**：\n\n| 维度 | Job Story | User Story | Use Case |\n|------|-----------|------------|----------|\n| 格式 | When/So that | As a/I want/So that | Actor + Precondition + Steps |\n| 焦点 | 触发情境+动机 | 角色+功能 | 交互流程 |\n| 时间维度 | 包含触发时机 | 无时间维度 | 线性步骤 |\n| 原型要求 | 不需要 Persona | 需要 Persona | 需要 Actor |\n| 最佳场景 | 需求发现期 | 开发排期 | 详细设计 |\n\n**Job Story 写作检查清单**：\n- [ ] When 部分是否描述了真实的触发情境？\n- [ ] I want to 部分是否与功能方案解耦？\n- [ ] So I can 部分是否描述了客户的进展目标？\n- [ ] 整体是否能在 1-2 句话内说完？\n- [ ] 是否能在不需要额外背景的情况下被产品、设计、工程理解？"
       },
       {
         "level": 2,
         "title": "维度五：组织对齐 —— 用 Job 统一市场、产品与增长",
-        "content": "Rosenfeld Media 对本书的介绍强调，本书不只是访谈手册，而是帮助组织围绕客户需求来对齐市场与策略。\n\n**组织层常见断裂**：\n- 市场团队讲人群；\n- 产品团队讲功能；\n- 销售团队讲异议；\n- 客服团队讲工单；\n- 客户成功团队讲续费。\n\nJTBD 的价值在于把这些碎片重新翻译为：客户试图完成什么进展，哪里被卡住，什么结果最重要。"
+        "content": "Rosenfeld Media 对本书的介绍强调，本书不只是访谈手册，而是帮助组织围绕客户需求来对齐市场与策略。\n\n**组织层常见断裂**：\n- 市场团队讲人群；\n- 产品团队讲功能；\n- 销售团队讲异议；\n- 客服团队讲工单；\n- 客户成功团队讲续费。\n\nJTBD 的价值在于把这些碎片重新翻译为：客户试图完成什么进展，哪里被卡住，什么结果最重要。\n\n**组织对齐的五个实践**：\n1. **统一词汇表**：团队定义并共享 Job / Job Map / Desired Outcomes 等关键术语。\n2. **JTBD 驱动路线图**：Roadmap 按 Job 主题而非功能主题组织。\n3. **跨部门面试参与**：销售和市场人员参与 JTBD 访谈，建立客户同理心。\n4. **胜负分析框架**：赢单/丢单都按客户 Job 完成度来分析原因。\n5. **续费归因**：将续费/流失与特定 Job 完成效果挂钩。"
       },
       {
         "level": 1,
-        "title": "正反案例",
-        "content": "### 正面案例A：SaaS 报表产品\n团队原本不断追加图表功能，但增长停滞。改用 JTBD 访谈后发现，客户真正的 Job 不是做更漂亮的图，而是在固定汇报场景下快速判断异常并说明原因。于是团队优先做异常摘要、归因提示与汇报模板，试用转付费提升。\n\n### 正面案例B：在线教育产品\n客户表面上说要更多题库，但 Job Map 显示最痛苦步骤是确认自己薄弱点和规划下一小时学什么。产品改做诊断、路径推荐与阶段反馈后，留存优于单纯扩题。\n\n### 正面案例C：企业服务定位\n销售团队总把产品卖成功能清单。用 Job Stories 改写话术后，能围绕触发情境讲清楚什么时候你会需要它，销售转化更稳定。\n\n### 反面案例A：把 Persona 当需求本身\n知道用户是 28 岁运营经理，并不能自动推出她现在要完成什么任务。人口属性不是决策单位。\n\n### 反面案例B：只做访谈摘录，不做 Job Map\n团队收集很多原话，却没有把任务步骤结构化，结果洞察无法进入优先级。\n\n### 反面案例C：把 JTBD 变成口号\n说我们以客户任务为中心，但 roadmap 仍按内部想做的功能排，组织并未真正改变。"
+        "title": "JTBD 研究的完整工作流程",
+        "content": "**Kalbach 把 JTBD 研究分为四个阶段**：\n\n### 阶段一：发现（Discover）\n- 目标：找到客户想要完成的高价值 Job\n- 方法：情境访谈（Trigger Event Interview）、替代方案分析、工单分析\n- 输出：初步 Job 列表 + 触发情境集合\n\n### 阶段二：定义（Define）\n- 目标：把 Job 结构化\n- 方法：Job Map 绘制、Desired Outcomes 提炼\n- 输出：每个 Job 的完整 Job Map + 结果列表\n\n### 阶段三：验证（Validate）\n- 目标：确认 Job 和结果对目标市场的重要性\n- 方法：定量调查（重要性/满意度评分）、聚类分析\n- 输出：排序后 Job 机会列表\n\n### 阶段四：激活（Activate）\n- 目标：把洞察转化为产品决策\n- 方法：Job Story 写作、Roadmap 对齐、实验设计\n- 输出：优先级决策 + 功能方向 + A/B 测试方案\n\n**迭代节奏**：完整四阶段通常 4-8 周，但可以在 2 周内完成迷你版（缩减样本量）。"
+      },
+      {
+        "level": 1,
+        "title": "JTBD 情境访谈（Trigger Event Interview）方法",
+        "content": "**这是 JTBD 研究的核心定性方法**。与传统用户访谈不同，它聚焦于客户从旧方式切换到新产品的那一刻。\n\n### 访谈结构\n```\n1. 回顾旧方式：切换前你用什么方案？用了多久？\n2. 触发事件：是什么具体事件让你决定改变？\n3. 寻找方案：你考虑过哪些替代方案？\n4. 决策因素：最终让你选择当前产品的关键原因是什么？\n5. 使用体验：第一次使用感受如何？\n6. 当前状态：现在还在用吗？如果换了，为什么？\n```\n\n### 核心访谈技巧\n- **找故事而非观点**：不要问你觉得怎么样，而是问那次发生了什么。\n- **挖掘触发事件**：关键的转折点是何时？什么让你最终下定决心？\n- **追溯时间线**：从第一次意识到问题到最后采取行动，经历了多久？\n- **了解替代方案**：除了竞争对手，还考虑过什么？自己手工做？不做？\n- **情绪识别**：在决策过程中，客户感到沮丧、兴奋还是焦虑？\n\n### 样本量建议\n| 阶段 | 最低样本量 | 理想样本量 | 面试时长 |\n|------|-----------|-----------|---------|\n| 探索性发现 | 10 人 | 20-30 人 | 45-60 分钟 |\n| 验证性访谈 | 15 人 | 30-50 人 | 30-45 分钟 |\n| 跨市场对比 | 每细分 10 人 | 每细分 20 人 | 45 分钟 |"
+      },
+      {
+        "level": 1,
+        "title": "JTBD 产品机会排序：机会算法",
+        "content": "**机会算法（Opportunity Algorithm）** 是 JTBD 用于定量优先级的核心工具。\n\n### 标准机会评分公式\n```text\nOpportunity Score = Importance + max(Importance - Satisfaction, 0)\n```\n- Importance: 该结果对客户的重要性（1-5 或 1-10）\n- Satisfaction: 当前方案对该结果的满足度（1-5 或 1-10）\n- 当 Importance > Satisfaction 时，机会存在；反之则不需要投入\n\n### 扩展版机会公式（Kalbach 推荐）\n```text\nOpportunity Score = (Importance - Satisfaction) x Importance Weight\n```\n其中 Importance Weight 用于处理不同客户细分的权重差异。\n\n### 四象限优先决策\n| 象限 | Importance | Satisfaction | 行动 |\n|------|-----------|-------------|------|\n| 机会区 | 高 | 低 | 优先投入 + 立即创新 |\n| 维持区 | 高 | 高 | 保持质量，不要破坏 |\n| 忽略区 | 低 | 低 | 暂不投入 |\n| 过度服务区 | 低 | 高 | 削减投入或免费化 |\n\n### 实际应用示例\n某 SaaS 报表工具的机会评分：\n| Desired Outcome | Importance (1-5) | Satisfaction (1-5) | 机会分 | 优先级 |\n|----------------|-----------------|-------------------|--------|--------|\n| 快速定位异常数据 | 4.8 | 2.1 | 4.8+(4.8-2.1)=7.5 | P0 |\n| 一键生成周报 | 4.2 | 3.5 | 4.2+(4.2-3.5)=4.9 | P1 |\n| 多数据源整合 | 3.5 | 4.0 | 3.5+(0)=3.5 | P2 |\n| 美观的图表样式 | 2.8 | 4.2 | 2.8+(0)=2.8 | 维持 |"
+      },
+      {
+        "level": 1,
+        "title": "JTBD 与经典框架的关系矩阵",
+        "content": "| 框架 | 核心概念 | 与 JTBD 的关系 | 互补使用 |\n|------|---------|---------------|----------|\n| **Design Thinking** | 同理心 -> 定义 -> 构思 -> 原型 -> 测试 | DT 提供发散收敛流程，JTBD 提供需求定义精度 | JTBD 用于 DT 的 Define 阶段 |\n| **Lean Startup** | Build-Measure-Learn 循环 | JTBD 在前端确保造对的东西，Lean 在后端快速验证 | JTBD 出假设 -> Lean 验证假设 |\n| **Jobs to Be Done (Christensen)** | 雇用/解雇理论 | Kalbach 的书是 Christensen JTBD 的操作化手册 | 理论层 + 实操层 |\n| **Outcome-Driven Innovation (Ulwick)** | 结果导向创新、机会算法 | 高度互补，Ulwick 更定量，Kalbach 更定性 | 结合使用效果最好 |\n| **User Persona** | 用户画像 | JTBD 补充情境而不是替代画像 | Persona + Job Stories 一起使用 |\n| **User Journey Mapping** | 端到端体验地图 | JTBD 的 Job Map 是 Journey Map 的需求侧基础 | Job Map -> Journey Map |\n| **Kano Model** | 基本/期望/兴奋需求 | Kano 分类满意度，JTBD 提供需求来源 | JTBD 发现需求 -> Kano 分类 |\n| **Value Proposition Design** | 价值主张画布 | VPD 画布的客户侧需要 JTBD 输入 | JTBD 填 Value Map 的客户需求 |\n| **UX Research** | 可用性测试、情境访谈 | JTBD 是 UX Research 的战略层框架 | JTBD 引导研究方向 |\n| **Strategic Positioning** | 市场位置选择 | JTBD 帮助回答我们在什么 Job 上竞争 | 定位决策的数据支持 |"
+      },
+      {
+        "level": 1,
+        "title": "正反案例深度分析",
+        "content": "### 正面案例A：SaaS 报表产品\n团队原本不断追加图表功能，但增长停滞。改用 JTBD 访谈后发现，客户真正的 Job 不是做更漂亮的图，而是在固定汇报场景下快速判断异常并说明原因。于是团队优先做异常摘要、归因提示与汇报模板，试用转付费率提升 40%。\n- **关键洞察**：功能堆积（漂亮图表）与客户 Job（快速判断异常）之间存在错位。\n- **方法论应用**：Job Map 显示客户大部分时间花在确认（Confirm）和监控（Monitor）步骤，而不是执行（Execute）步骤。\n\n### 正面案例B：在线教育产品\n客户表面说要更多题库，但 Job Map 显示最痛苦步骤是确认自己薄弱点和规划下一小时学什么。产品改做诊断、路径推荐与阶段反馈后，留存优于单纯扩题。\n- **关键洞察**：题库是功能方案，诊断+规划才是客户真正的进展目标。\n- **机会评分**：明确薄弱点的重要性=4.8，满意度=1.9 → 机会分 7.7（P0）。\n\n### 正面案例C：B2B 企业服务定位\n销售团队总把产品卖成功能清单。用 Job Stories 改写话术后，能围绕触发情境讲清楚什么时候你会需要它，销售转化率提升 25%。\n- **关键洞察**：触发情境故事比功能列表更有说服力。\n- **组织对齐**：市场、销售、产品使用同一套 Job Story 语言。\n\n### 反面案例A：把 Persona 当需求本身\n知道用户是 28 岁运营经理，并不能自动推出她现在要完成什么任务。人口属性不是决策单位。\n\n### 反面案例B：只做访谈摘录，不做 Job Map\n团队收集很多原话，却没有把任务步骤结构化，结果洞察无法进入优先级决策。\n\n### 反面案例C：把 JTBD 变成口号\n说我们以客户任务为中心，但 roadmap 仍按内部想做的功能排，组织并未真正改变。\n\n### 反面案例D：只做定性不做定量\n访谈发现了 20 个 Desired Outcomes，但未做机会评分排序，团队无法决定先做什么。\n\n### 反面案例E：过度解释 Job 层级\n把 Job 拆到太细的粒度（点击每个按钮都是一个 Job），反而失去了战略指导意义。"
+      },
+      {
+        "level": 1,
+        "title": "十大常见误区与纠偏对照",
+        "content": "| # | 误区 | 正确理解 |\n|---|------|----------|\n| 1 | JTBD 就是访谈技巧 | JTBD 是一个涵盖研究、定义、验证和激活的端到端框架 |\n| 2 | JTBD 替代 Persona | JTBD 补充 Persona——谁 + 想完成什么进展 + 在什么情境下 |\n| 3 | 所有需求都是 Job | 功能诉求不是 Job——Job 必须与具体方案解耦 |\n| 4 | Job 越多越好 | 聚焦 3-5 个核心 Job，而不是列出 50 个 |\n| 5 | 一次研究一劳永逸 | 客户 Job 也会演变，建议每 12-18 个月重新研究 |\n| 6 | Job Map = 用户旅程 | Job Map 关注任务逻辑，用户旅程关注品牌触点 |\n| 7 | 大家都同意就够了 | 共识不等于正确——需要有数据和结构化证据支持 |\n| 8 | JTBD 只适合产品团队 | 销售、市场、成功团队都应参与并受益 |\n| 9 | Desired Outcomes = 满意度 | 结果不是满意度评分，而是客户判断成功的标准 |\n| 10 | 做一次就够了 | JTBD 需要成为组织的持续实践，而非一次性项目 |"
+      },
+      {
+        "level": 1,
+        "title": "五套实战工具模板",
+        "content": "### 工具一：JTBD 访谈指南\n```\n访谈目标用户筛选条件：\n- 过去 90 天内做出过购买/切换决策\n- 能清晰回忆起决策过程\n- 愿意分享 45-60 分钟\n\n访谈大纲：\n1. 背景建立（5 min）：你现在的工作/生活场景是怎样的？\n2. 旧方式回顾（10 min）：切换前你在用什么方案？用了多久？哪里不满意？\n3. 触发事件（10 min）：具体哪件事让你决定改变？当时的情境？\n4. 搜寻过程（10 min）：你考虑过哪些方案？怎么比较的？\n5. 决策时刻（10 min）：最后是什么让你选了这个方案？\n6. 使用反思（5 min）：现在如果回头重选，会不同吗？\n```\n\n### 工具二：Job Map 模板\n```\nJob Name: [客户想完成的进展]\nJob Trigger: [什么情境下触发]\n\n+----------+----------+----------+----------+\n| Define   | Locate   | Prepare  | Confirm  |\n| 明确需求  | 寻找资源  | 准备条件  | 确认准备  |\n+----------+----------+----------+----------+\n| Execute  | Monitor  | Modify   | Conclude |\n| 执行      | 监控进展  | 调整优化  | 完成收尾  |\n+----------+----------+----------+----------+\n\n每步记录：\n- 客户在此步做什么？\n- 遇到什么摩擦？\n- 当前用什么方案？\n- Desired Outcomes:\n```\n\n### 工具三：Desired Outcomes 工作表\n```\nJob Map 步骤: _________\n\n| # | 结果描述 | 重要性(1-5) | 满意度(1-5) | 机会分 | 备注 |\n|---|---------|------------|-------------|--------|------|\n| 1 |         |            |             |        |      |\n| 2 |         |            |             |        |      |\n| 3 |         |            |             |        |      |\n| 4 |         |            |             |        |      |\n| 5 |         |            |             |        |      |\n```\n\n### 工具四：Job Story 评审卡\n```\nJob Story: \nWhen _________________________________,\nI want to _____________________________,\nSo I can ______________________________.\n\n评审标准：\n[ ] When 部分是否包含具体触发情境？\n[ ] I want to 部分是否与方案解耦？\n[ ] So I can 部分是否体现客户进展？\n[ ] 是否能在 15 秒内被团队理解？\n[ ] 如果删掉功能名，故事是否仍然成立？\n```\n\n### 工具五：JTBD 驱动的路线图对齐模板\n```\n+------+-------------+--------------+--------------+\n| 周期  | 核心 Job    | Desired      | 假设的解决  |\n|      | 领域        | Outcome      | 方案方向    |\n+------+-------------+--------------+--------------+\n| Q1   |             |              |              |\n| Q2   |             |              |              |\n| Q3   |             |              |              |\n| Q4   |             |              |              |\n+------+-------------+--------------+--------------+\n```"
       },
       {
         "level": 1,
         "title": "应用清单",
-        "content": "### 个人研究者/产品经理\n- [ ] 我记录的是功能诉求，还是背后的 Job？\n- [ ] 我能否说清该 Job 的触发情境？\n- [ ] 我是否画出了客户完成任务的步骤，而不只是点击路径？\n- [ ] 我收集到的是观点，还是结果标准？\n- [ ] 我写出的需求能否转成 Job Story？\n\n### 团队协作层\n- [ ] 访谈纪要是否被整理成 Job Map 与 Desired Outcomes？\n- [ ] roadmap 是否围绕最重要且最不满意的结果项排序？\n- [ ] 销售、成功、产品是否共享同一份 Job 语言？\n- [ ] 需求评审时是否先讨论进展目标，再讨论功能方案？\n\n### 组织层\n- [ ] 细分市场是否基于任务情境，而不只是行业或规模？\n- [ ] 品牌定位是否能回答客户为什么在此刻雇用你？\n- [ ] 客户成功与续费策略是否围绕客户持续完成 Job 的能力构建？\n- [ ] 是否定期复盘客户雇用或解雇原因，更新价值主张？"
+        "content": "### 个人研究者/产品经理\n- [ ] 我记录的是功能诉求，还是背后的 Job？\n- [ ] 我能否说清该 Job 的触发情境？\n- [ ] 我是否画出了客户完成任务的步骤，而不只是点击路径？\n- [ ] 我收集到的是观点，还是结果标准？\n- [ ] 我写出的需求能否转成 Job Story？\n- [ ] 我是否同时考虑了 Functional / Emotional / Social Job？\n\n### 团队协作层\n- [ ] 访谈纪要是否被整理成 Job Map 与 Desired Outcomes？\n- [ ] roadmap 是否围绕最重要且最不满意的结果项排序？\n- [ ] 销售、成功、产品是否共享同一份 Job 语言？\n- [ ] 需求评审时是否先讨论进展目标，再讨论功能方案？\n- [ ] 是否用了机会算法而非直觉来决定优先级？\n\n### 组织层\n- [ ] 细分市场是否基于任务情境，而不只是行业或规模？\n- [ ] 品牌定位是否能回答客户为什么在此刻雇用你？\n- [ ] 客户成功与续费策略是否围绕客户持续完成 Job 的能力构建？\n- [ ] 是否定期复盘客户雇用或解雇原因，更新价值主张？\n- [ ] 是否每 12-18 个月做一次完整的 JTBD 研究迭代？"
       },
       {
         "level": 1,
         "title": "原书金句",
-        "content": "1. **Customers don’t simply buy products or services; they pull them into their lives to make progress.**  \n   —— 客户并不只是购买产品或服务，而是把它拉进自己的生活以获得进展。\n2. **Jobs to be done is not about your company; it is about the customer’s process.**  \n   —— JTBD 关注的不是你的公司流程，而是客户完成任务的过程。\n3. **Job maps focus on the customer’s objective and process independent of products, brands, or technology.**  \n   —— Job Map 聚焦客户目标与过程，而不是产品、品牌或技术本身。\n4. **Desired outcomes give us a way to measure what better means for the customer.**  \n   —— 期望结果让团队能真正衡量：对客户来说，更好到底是什么意思。\n5. **The real power of JTBD is creating a shared language around customer needs.**  \n   —— JTBD 的真正力量，在于为组织建立一套围绕客户需求的共同语言。"
+        "content": "1. **Customers don't simply buy products or services; they pull them into their lives to make progress.**\n   —— 客户并不只是购买产品或服务，而是把它拉进自己的生活以获得进展。\n\n2. **Jobs to be done is not about your company; it is about the customer's process.**\n   —— JTBD 关注的不是你的公司流程，而是客户完成任务的过程。\n\n3. **Job maps focus on the customer's objective and process independent of products, brands, or technology.**\n   —— Job Map 聚焦客户目标与过程，而不是产品、品牌或技术本身。\n\n4. **Desired outcomes give us a way to measure what better means for the customer.**\n   —— 期望结果让团队能真正衡量：对客户来说，更好到底是什么意思。\n\n5. **The real power of JTBD is creating a shared language around customer needs.**\n   —— JTBD 的真正力量，在于为组织建立一套围绕客户需求的共同语言。\n\n6. **When you understand the job, the solution becomes obvious.**\n   —— 当你理解了客户要完成的 Job，解决方案就变得显而易见。\n\n7. **Competition is not just other products; it's any solution the customer might use to get the job done, including doing nothing.**\n   —— 竞争不只是其他产品，而是客户可能用来完成这个 Job 的任何方案，包括什么都不做。\n\n8. **The trigger event is often more important than the job itself for understanding how to win.**\n   —— 触发事件往往比 Job 本身更能帮助理解如何赢。\n\n9. **JTBD doesn't replace design thinking or agile; it makes them more effective by ensuring you're solving the right problem.**\n   —— JTBD 不取代设计思维或敏捷，而是确保你在解决对的问题。\n\n10. **A job map doesn't care what your company sells. It cares what the customer does.**\n    —— Job Map 不关心你卖什么，它只关心客户在做什么。\n\n11. **Shift from asking what features customers want to asking what progress they are trying to make.**\n    —— 从问客户想要什么功能，转向问客户想取得什么进展。\n\n12. **Emotional and social jobs are often the real differentiators, even though teams focus almost exclusively on functional ones.**\n    —— 情感和社会型 Job 往往是真正的差异化来源，尽管团队几乎只关注功能型。\n\n13. **A well-crafted job story does more for alignment than a 50-page PRD.**\n    —— 一个精心编写的 Job Story 对团队对齐的帮助，胜过 50 页的 PRD。\n\n14. **The most common mistake is to assume you already know the customer's job.**\n    —— 最常见的错误是假设你已经知道客户的 Job 是什么。"
+      },
+      {
+        "level": 1,
+        "title": "30天技能启动计划",
+        "content": "### 第1周：理解 JTBD 基础\n- Day 1-2：阅读《The Jobs To Be Done Playbook》前 3 章 + 本书摘要\n- Day 3：练习转译：找 5 个功能需求，写出背后的 Job\n- Day 4-5：用 Job Map 拆解自己最近做出购买决策的过程\n- Day 6：学习 Trigger Event Interview 方法论\n- Day 7：写学习笔记——JTBD 与其他研究方法的核心区别\n\n### 第2周：实践访谈\n- Day 8-9：准备访谈指南 + 找到 2 位愿意接受访谈的用户\n- Day 10-11：做 2 次 Trigger Event Interview（每次 45-60 分钟）\n- Day 12：整理访谈笔记，提取可能的 Job、触发事件、替代方案\n- Day 13-14：为每个访谈产出初步 Job Map + Desired Outcomes\n\n### 第3周：结构化输出\n- Day 15-16：汇总 2 个访谈的发现，画出统一的 Job Map\n- Day 17-18：提炼 10-15 条 Desired Outcomes，做重要性排序\n- Day 19-20：写 5 条 Job Stories，评审是否达标\n- Day 21：用机会算法打分，确定 P0/P1/P2 优先级\n\n### 第4周：整合与分享\n- Day 22-23：与团队分享发现，推动 roadmap 按 Job 重新组织\n- Day 24-25：设计一个小型定量调研（在线问卷）验证机会分\n- Day 26-27：根据反馈迭代机会优先级\n- Day 28-29：写一份 JTBD 研究报告 + 推荐行动\n- Day 30：复盘——JTBD 给你的决策带来了什么不同？"
       },
       {
         "level": 1,
         "title": "更新日志",
-        "content": "| 日期 | 更新内容 |\n|------|----------|\n| 2026-05-13 | 新增《The Jobs To Be Done Playbook》JTBD方法论：整理概念定义、Job Map、Desired Outcomes、Job Stories、正反案例、应用清单与原书金句 |"
+        "content": "| 日期 | 更新内容 |\n|------|----------|\n| 2026-05-13 | 新增《The Jobs To Be Done Playbook》JTBD方法论：基础概念、Job Map、Desired Outcomes、Job Stories、正反案例、应用清单与原书金句 |\n| 2026-05-24 | 大幅扩写：新增 Job 三层次（Functional/Emotional/Social）、Job Map vs Customer Journey 对比、机会算法与评分矩阵、JTBD 研究四阶段工作流、情境访谈完整方法、10 大误区纠偏、与 9 大框架对比矩阵、5 套工具模板、12 条金句补充、30 天技能计划、Job Story vs User Story vs Use Case 对比 |"
       }
     ],
     "updates": [
       {
         "date": "2026-05-13",
         "note": "新建：收录 Jim Kalbach《The Jobs To Be Done Playbook》，整理 JTBD 概念定义、Job Map、Desired Outcomes、Job Stories、组织对齐、案例、应用清单和金句"
+      },
+      {
+        "date": "2026-05-24",
+        "note": "大幅扩写：新增 Job 三层次、框架对比、机会算法、四阶段工作流、访谈方法、10大误区、5套工具模板、30天计划，总层数从 8 层增至 18 层"
       }
     ]
   }
