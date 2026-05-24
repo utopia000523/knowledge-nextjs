@@ -1,0 +1,159 @@
+{
+  "id": "Robert C. Martin-代码整洁之道-Clean Code方法论",
+  "category": "技术",
+  "title": "《代码整洁之道》方法论",
+  "keywords": [
+    "代码整洁之道",
+    "方法论"
+  ],
+  "summary": "**作者**: Robert C. Martin (Uncle Bob)",
+  "importance": 5,
+  "learned_at": "2026-05-10",
+  "source": "《代码整洁之道》方法论",
+  "content": {
+    "core_formula": "可维护性 = f(可读性, 简洁性, 测试覆盖, 一致性)",
+    "layers": [
+      {
+        "level": 2,
+        "title": "第一部分：整洁代码",
+        "content": "1. **整洁代码** - 什么是整洁代码，为何重要\n2. **有意义的命名** - 命名即文档"
+      },
+      {
+        "level": 2,
+        "title": "第二部分：函数",
+        "content": "3. **函数** - 函数设计的核心原则\n4. **注释** - 注释的利与弊\n5. **格式** - 代码格式的视觉组织"
+      },
+      {
+        "level": 2,
+        "title": "第三部分：数据结构",
+        "content": "6. **数据抽象** - 隐藏实现细节\n7. **错误处理** - 优雅处理异常"
+      },
+      {
+        "level": 2,
+        "title": "第四部分：边界与结构",
+        "content": "8. **边界** - 第三方代码的集成\n9. **单元测试** - TDD 与测试质量\n10. **类** - 类的组织与设计"
+      },
+      {
+        "level": 2,
+        "title": "第五部分：系统与演进",
+        "content": "11. **系统** - 系统级架构思考\n12. **迭进** - 代码的逐步改进\n13. **并发编程** - 多线程与并发"
+      },
+      {
+        "level": 2,
+        "title": "第六部分：实践",
+        "content": "14. **逐步改进** - 重构案例\n15. **JUnit 内幕** - 实战分析\n16. **重构 SerialDate** - 完整重构流程"
+      },
+      {
+        "level": 2,
+        "title": "第七部分：气味与启发",
+        "content": "17. **代码气味与启发** - 问题识别清单"
+      },
+      {
+        "level": 2,
+        "title": "代码质量公式",
+        "content": "```\n可维护性 = f(可读性, 简洁性, 测试覆盖, 一致性)\n```"
+      },
+      {
+        "level": 2,
+        "title": "函数长度公式",
+        "content": "```\n最佳函数长度 = 4~20 行\n极限长度 = ≤ 50 行（必须拆分）\n```"
+      },
+      {
+        "level": 2,
+        "title": "命名成本公式",
+        "content": "```\n命名时间成本 << 后期理解成本 × 修改次数\n```"
+      },
+      {
+        "level": 2,
+        "title": "技术债务公式",
+        "content": "```\n维护成本 = 初始开发成本 + 债务累积 × 时间\n```"
+      },
+      {
+        "level": 2,
+        "title": "代码腐烂定律",
+        "content": "```\n代码质量 ∝ 1 / (修改次数 × 不规范程度)\n```"
+      },
+      {
+        "level": 2,
+        "title": "维度一：有意义的命名 (Meaningful Names)",
+        "content": "#### 核心原则\n| 原则 | 说明 | 示例 |\n|------|------|------|\n| 名副其实 | 名字应表达意图 | `daysSinceModification` > `d` |\n| 避免误导 | 不用保留字、相似词 | 不用 `accountList` 除非真是 List |\n| 有意义的区分 | 不用 number series | `copy(source, dest)` > `copy(a1, a2)` |\n| 可读的名称 | 使用人类语言 | `generationTimestamp` > `genymdhms` |\n| 可搜索的名称 | 便于查找替换 | 用常量代替魔法数 |\n#### 命名层级\n```\n类名 → 名词短语 (Customer, WikiPage)\n方法名 → 动词短语 (postPayment, deletePage)\n变量名 → 名词 (accountGroup, blockToCopy)\n常量名 → 全大写+下划线 (MAX_CONNECTIONS)\n```\n#### 命名反模式\n```c\n// 反模式\nint d;  // 无意义\nString[] list;  // 非List却叫list\nvoid process();  // 无动作信息\nint xyz1, xyz2;  // 无区分\n// 正确模式\nint elapsedTimeInDays;\nString[] customerNames;\nvoid processCustomerPayment();\nint sourceX, destinationX;\n```"
+      },
+      {
+        "level": 2,
+        "title": "维度二：函数 (Functions)",
+        "content": "#### 函数设计原则\n**1. 短小精悍**\n```\n理想长度: 4-20 行\n原则: 一个函数只做一件事\n判断标准: 能否用一句话描述函数做了什么\n```\n**2. 只做一件事**\n```c\n// 反模式 - 多件事\nvoid processCustomer() {\n    validateCustomer();\n    calculateDiscount();\n    sendEmail();\n}\n// 正确模式 - 分离职责\nvoid processCustomer() {\n    Customer customer = validateCustomer();\n    Discount discount = calculateDiscount(customer);\n    sendConfirmationEmail(customer, discount);\n}\n```\n**3. 同一抽象层级**\n```c\n// 混杂层级 - 差\nvoid setup() {\n    initHardware();        // 高层级\n    REG_PORTA = 0xFF;       // 低层级 - 混入\n    startServices();        // 高层级\n}\n// 统一层级 - 好\nvoid setup() {\n    initHardware();\n    configurePorts();\n    startServices();\n}\n```\n**4. 函数参数**\n| 参数数量 | 规则 | 原因 |\n|---------|------|------|\n| 0 参数 | 最佳 | 最简单 |\n| 1 参数 | 可接受 | 单输入 |\n| 2 参数 | 谨慎使用 | 需要记住顺序 |\n| 3 参数 | 尽量避免 | 难以理解 |\n| >3 参数 | 禁止 | 重构为对象 |\n```c\n// 参数优化\n// 差\nCircle makeCircle(double x, double y, double radius);\n// 好\nCircle makeCircle(Point center, double radius);\n```\n**5. 无副作用**\n```c\n// 副作用示例 - 检查时修改状态\nbool checkPassword(String username, String password) {\n    User user = getUser(username);\n    if (user == null) return false;\n    String codedPhrase = user.getPhrase();\n    String phrase = decrypt(codedPhrase);\n    boolean matched = (phrase.equals(password));\n    if (matched) {\n        Session.initialize();  // 副作用！\n    }\n    return matched;\n}\n// 重构 - 分离关注点\nbool checkPassword(String username, String password) {\n    return validateCredentials(username, password);\n}\nvoid loginUser(String username) {\n    if (checkPassword(username, getPassword())) {\n        Session.initialize();\n    }\n}\n```"
+      },
+      {
+        "level": 2,
+        "title": "维度三：注释 (Comments)",
+        "content": "#### 注释原则\n```\n好代码是自文档的\n注释是失败的标志\n最好的注释是不需要注释\n```\n#### 好注释 vs 坏注释\n| 好注释 | 坏注释 |\n|--------|--------|\n| 法律信息 | 重复代码 |\n| 提供信息 | 解释混乱代码 |\n| 解释意图 | 误导性注释 |\n| 阐明复杂逻辑 | 位置标记 |\n| TODO 注释 | 闭括号注释 |\n| 放大重要性 | 注释掉的代码 |\n```c\n// 坏注释\ni++; // increment i\n// 循环结束 (完全不需要)\n}\n// 好注释\n// 我们使用快速排序而非归并排序，因为内存受限\n// 内存在此嵌入式系统中仅 64KB\nvoid sortBuffer() { ... }\n// TODO: 需要在下个版本中优化算法\n// 目前 O(n²) 复杂度在大数据量下可能有问题\n```"
+      },
+      {
+        "level": 2,
+        "title": "维度四：格式 (Formatting)",
+        "content": "#### 格式目的\n```\n代码格式 = 沟通工具\n格式影响可读性\n格式体现专业态度\n```\n#### 格式原则\n**1. 垂直格式**\n```\n文件长度: 200-500 行为佳\n原则: 从上到下阅读\n关系: 密切相关的代码放在一起\n```\n**2. 横向格式**\n```\n行长度: ≤ 120 字符（80-100 最佳）\n缩进: 一致的缩进风格\n空格: 运算符两侧空格，逗号后空格\n```\n**3. 概念分组**\n```c\n// 高层概念在前\n#include <stdio.h>\n#include \"config.h\"\n#define MAX_BUFFER 1024\ntypedef struct {\n    int id;\n    char name[32];\n} Device;\n// 函数按调用顺序排列\nvoid init(void) { ... }\nvoid process(void) { ... }\nvoid cleanup(void) { ... }\nint main(void) {\n    init();\n    process();\n    cleanup();\n    return 0;\n}\n```"
+      },
+      {
+        "level": 2,
+        "title": "维度五：对象与数据结构",
+        "content": "#### 对象 vs 数据结构\n| 对象 (Objects) | 数据结构 (Data Structures) |\n|----------------|---------------------------|\n| 隐藏实现 | 暴露数据 |\n| 行为主体 | 被动数据 |\n| 易于添加新类型 | 易于添加新行为 |\n| 多态 | 过程式 |\n```c\n// 数据结构风格\ntypedef struct {\n    double x;\n    double y;\n} Point;\ndouble calculateArea(Shape* shape) {\n    if (shape->type == CIRCLE) {\n        return 3.14159 * shape->radius * shape->radius;\n    } else if (shape->type == SQUARE) {\n        return shape->side * shape->side;\n    }\n}\n// 对象风格\ntypedef struct Shape {\n    double (*area)(struct Shape* self);\n} Shape;\ntypedef struct {\n    Shape base;\n    double radius;\n} Circle;\ndouble circleArea(Shape* self) {\n    Circle* circle = (Circle*)self;\n    return 3.14159 * circle->radius * circle->radius;\n}\n```\n#### 得墨忒耳定律 (Law of Demeter)\n```\n模块不应了解它所操作对象的内部细节\n对象可以调用:\n- 自身的方法\n- 传入参数的方法\n- 自身创建对象的方法\n- 自身直接持有的组件方法\n```"
+      },
+      {
+        "level": 2,
+        "title": "维度六：错误处理",
+        "content": "#### 错误处理原则\n**1. 使用异常而非返回码**\n```c\n// 返回码风格 - 差\nint readConfig() {\n    int result = openFile();\n    if (result != SUCCESS) return result;\n    result = readData();\n    if (result != SUCCESS) {\n        closeFile();\n        return result;\n    }\n    return process();\n}\n// 异常风格 - 好\nvoid readConfig() {\n    try {\n        openFile();\n        readData();\n        process();\n    } finally {\n        closeFile();\n    }\n}\n```\n**2. 先写 Try-Catch-Finally**\n```\n异常处理决定了范围\n先定义边界，再填充细节\n异常应该讲述完整故事\n```\n**3. 给出异常上下文**\n```c\n// 差\nthrow new DeviceException(\"Error\");\n// 好\nthrow new DeviceException(\n    String.format(\n        \"Failed to initialize device %s at address 0x%02X\",\n        deviceName, address\n    )\n);\n```\n**4. 不要返回 Null**\n```c\n// 返回 null 的危害\nList<Item> items = getItems();\nif (items != null) {  // 每次都要检查\n    for (Item item : items) { ... }\n}\n// 返回空集合\nList<Item> getItems() {\n    List<Item> result = database.query();\n    return result != null ? result : new ArrayList<>();\n}\n```"
+      },
+      {
+        "level": 2,
+        "title": "维度七：单元测试",
+        "content": "#### F.I.R.S.T 原则\n| 原则 | 含义 | 说明 |\n|------|------|------|\n| **F**ast | 快速 | 测试应快速执行 |\n| **I**ndependent | 独立 | 测试不依赖彼此 |\n| **R**epeatable | 可重复 | 任何环境都能运行 |\n| **S**elf-validating | 自验证 | 通过或失败，无歧义 |\n| **T**imely | 及时 | 测试在代码前编写 |\n#### 测试代码质量\n```\n测试代码与生产代码同等重要\n测试需要整洁、可读、可维护\n每个测试一个断言（理想状态）\n测试命名应描述场景\n```\n```c\n// 测试命名模式\nvoid test_givenCondition_whenAction_thenResult() { ... }\n// 示例\nvoid test_givenEmptyBuffer_whenAddItem_thenSizeIsOne() {\n    Buffer buffer = createBuffer();\n    buffer.add(item);\n    assertEqual(1, buffer.size());\n}\n```"
+      },
+      {
+        "level": 2,
+        "title": "维度八：类",
+        "content": "#### 类的组织原则\n**1. 类应该小**\n```\n类的职责应该单一\n一个类一个改变理由\n测量标准: 能否用一句话描述类\n```\n**2. 单一职责原则 (SRP)**\n```c\n// 违反 SRP\nclass UserManager {\n    void addUser() { ... }\n    void removeUser() { ... }\n    void sendEmail() { ... }      // 不属于用户管理\n    void generateReport() { ... }   // 不属于用户管理\n}\n// 遵循 SRP\nclass UserManager {\n    void addUser() { ... }\n    void removeUser() { ... }\n}\nclass EmailService {\n    void sendEmail() { ... }\n}\nclass ReportGenerator {\n    void generate() { ... }\n}\n```\n**3. 内聚性**\n```\n高内聚 = 类中方法操作相同的变量\n低内聚 = 类中方法操作不同的变量\n内聚度 = (操作相同变量的方法数) / (总方法数)\n目标: 内聚度 → 1\n```"
+      },
+      {
+        "level": 2,
+        "title": "维度九：系统",
+        "content": "#### 系统级思考\n**1. 分离构造与使用**\n```c\n// 构造与使用混在一起\nvoid process() {\n    Service service = new Service();  // 构造\n    service.doWork();                  // 使用\n}\n// 分离关注点\nvoid process(Service service) {  // 注入依赖\n    service.doWork();            // 只使用\n}\n// 在 main 或工厂中构造\nint main() {\n    Service service = createService();\n    processor.process(service);\n}\n```\n**2. 依赖注入**\n```\n不自己创建依赖\n依赖从外部注入\n便于测试和替换\n```\n**3. 扩展而非修改**\n```\n开闭原则 (OCP):\n对扩展开放\n对修改关闭\n新增功能 = 新代码，不改旧代码\n```"
+      },
+      {
+        "level": 2,
+        "title": "维度十：并发编程",
+        "content": "#### 并发原则\n**1. 并发防御原则**\n```\n分离并发代码与其他代码\n限制数据作用域\n使用数据的副本\n线程应尽可能独立\n```\n**2. 同步区域**\n```c\n// 差 - 过大同步区\nsynchronized(lock) {\n    doHeavyCalculation();  // 不需要同步\n    updateSharedState();   // 需要同步\n}\n// 好 - 最小同步区\ndoHeavyCalculation();\nsynchronized(lock) {\n    updateSharedState();\n}\n```\n**3. 死锁预防**\n```\n避免嵌套锁\n保持锁时间最短\n按固定顺序获取锁\n使用超时机制\n```"
+      },
+      {
+        "level": 2,
+        "title": "嵌入式/固件开发应用",
+        "content": "**命名规范**\n```c\n// 硬件寄存器命名\n#define REG_GPIOA_MODER    (*((volatile uint32_t*)0x40020000))\n#define REG_GPIOA_OTYPER   (*((volatile uint32_t*)0x40020004))\n// 中断处理函数\nvoid EXTI0_IRQHandler(void);  // 清晰的中断源\n// 设备驱动结构体\ntypedef struct {\n    uint32_t base_address;\n    uint8_t irq_number;\n    void (*init)(struct Device* self);\n    int (*read)(struct Device* self, uint8_t* buffer, size_t len);\n    int (*write)(struct Device* self, const uint8_t* data, size_t len);\n} DeviceDriver;\n```\n**函数设计**\n```c\n// 硬件初始化 - 单一职责\nvoid initGpio(void) {\n    enableGpioClock();\n    configurePins();\n    setDefaultState();\n}\n// 数据处理 - 明确命名\nint parseSensorData(const uint8_t* rawBuffer, \n                    SensorData* output, \n                    size_t maxSamples) {\n    // 函数体 < 20 行\n    // 单一抽象层级\n    // 无副作用\n}\n```\n**错误处理**\n```c\n// 定义错误码\ntypedef enum {\n    ERR_OK = 0,\n    ERR_INVALID_PARAM,\n    ERR_TIMEOUT,\n    ERR_HARDWARE_FAULT,\n    ERR_BUFFER_OVERFLOW\n} ErrorCode;\n// 带上下文的错误返回\nErrorCode readDeviceRegister(Device* dev, uint8_t reg, uint8_t* value) {\n    if (dev == NULL || value == NULL) {\n        logError(\"readDeviceRegister: null pointer, dev=%p\", dev);\n        return ERR_INVALID_PARAM;\n    }\n    // ... 实际读取\n}\n```"
+      },
+      {
+        "level": 2,
+        "title": "日常编码检查清单",
+        "content": "#### 写代码前\n- [ ] 理解需求和边界条件\n- [ ] 设计好函数/类的职责\n- [ ] 考虑命名方案\n#### 写代码时\n- [ ] 函数不超过 20 行\n- [ ] 参数不超过 3 个\n- [ ] 命名清晰表达意图\n- [ ] 同一抽象层级\n- [ ] 无副作用\n#### 写代码后\n- [ ] 是否可以提取子函数\n- [ ] 是否有重复代码\n- [ ] 注释是否必要\n- [ ] 测试是否覆盖\n#### 代码审查时\n- [ ] 命名是否清晰\n- [ ] 函数是否过长\n- [ ] 是否遵循格式规范\n- [ ] 错误处理是否完善"
+      },
+      {
+        "level": 1,
+        "title": "💬 金句摘录",
+        "content": "> \"代码是写给人看的，只是顺便让机器执行。\" —— Grady Booch\n> \"整洁代码是简单直接的。整洁代码如同优美的散文。整洁代码从不隐藏设计者的意图，充满了干净利落的抽象和直截了当的控制语句。\" —— Bjarne Stroustrup\n> \"整洁代码总是看起来像是某人在乎它。\" —— Michael Feathers\n> \"如果每个例程都让你感到深合己意，那就是整洁代码。\" —— Ward Cunningham\n> \"一个函数应该只做一件事，做好这件事，只做这件事。\"\n> \"函数的第一规则是要短小。第二条规则是还要更短小。\"\n> \"最好的注释是不需要注释。\"\n> \"注释是失败的标志。我们没法用代码表达，才用注释。\"\n> \"命名是程序员最难做的事之一。\"\n> \"代码格式是沟通工具。格式影响可读性。\"\n> \"一个类的职责应该单一。一个类只有一个改变的理由。\"\n> \"测试代码与生产代码同等重要。它需要被思考、设计和维护。\"\n> \"并发会让事情变得复杂，但如果需要，就得面对。\"\n> \"技术债务就像金融债务：借得越多，利息越高。\""
+      },
+      {
+        "level": 1,
+        "title": "🔄 更新日志",
+        "content": "| 日期 | 版本 | 更新内容 |\n|------|------|----------|\n| 2026-04-28 | v1.0 | 初始版本，整理核心方法论 |"
+      },
+      {
+        "level": 1,
+        "title": "📖 延伸阅读",
+        "content": "- 《代码大全》- Steve McConnell\n- 《重构》- Martin Fowler\n- 《设计模式》- GoF\n- 《程序员的职业素养》- Robert C. Martin\n- 《架构整洁之道》- Robert C. Martin\n> **方法论标签**: #代码质量 #软件工程 #最佳实践 #嵌入式开发 #固件开发\n> **适用场景**: 固件开发、硬件驱动编写、技术团队规范制定、代码审查、新人培训"
+      }
+    ],
+    "updates": [
+      {
+        "date": "2026-05-10",
+        "note": "从智慧库导入"
+      }
+    ]
+  }
+}

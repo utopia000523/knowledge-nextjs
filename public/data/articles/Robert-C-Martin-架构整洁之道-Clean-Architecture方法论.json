@@ -1,0 +1,162 @@
+{
+  "id": "Robert-C-Martin-架构整洁之道-Clean-Architecture方法论",
+  "category": "技术",
+  "title": "Robert C. Martin - 架构整洁之道 (Clean Architecture) 方法论",
+  "keywords": [
+    "Robert",
+    "Martin",
+    "架构整洁之道",
+    "Clean",
+    "Architecture"
+  ],
+  "summary": "**核心命题**：软件架构的目标是最小化构建和维护系统所需的人力资源，核心原则是依赖关系只能由外向内。",
+  "importance": 5,
+  "learned_at": "2026-05-10",
+  "source": "Robert C. Martin",
+  "content": {
+    "core_formula": "架构价值 = 系统生命周期总成本 - 开发成本\n         = 维护成本最小化 + 延迟决策最大化",
+    "layers": [
+      {
+        "level": 2,
+        "title": "第一部分：引言",
+        "content": "- 什么是架构\n- 架构的价值\n- 架构师的角色"
+      },
+      {
+        "level": 2,
+        "title": "第二部分：从组件开始",
+        "content": "- 编程范式与架构的关系\n- 设计原则（SOLID）\n- 组件原则"
+      },
+      {
+        "level": 2,
+        "title": "第三部分：架构原则",
+        "content": "- 组件划分\n- 边界划分\n- 业务边界划分策略\n- 服务边界划分"
+      },
+      {
+        "level": 2,
+        "title": "第四部分：架构细节",
+        "content": "- 数据库边界\n- Web边界\n- 框架边界\n- 洁净架构层次\n- 测试边界\n- 整洁架构案例"
+      },
+      {
+        "level": 2,
+        "title": "第五部分：附录",
+        "content": "- 架构考古学"
+      },
+      {
+        "level": 2,
+        "title": "🎯 架构价值公式",
+        "content": "```\n架构价值 = 系统生命周期总成本 - 开发成本\n         = 维护成本最小化 + 延迟决策最大化\n```\n**解读**：好的架构不是让你快速上线，而是让你在整个生命周期内以最低成本运行。"
+      },
+      {
+        "level": 2,
+        "title": "🔄 依赖规则（核心公理）",
+        "content": "```\n依赖方向 = 外层 → 内层\n         = 稳定度低 → 稳定度高\n         = 变化频率高 → 变化频率低\n```\n**铁律**：源代码依赖关系只能指向内部，内层不知道外层的任何东西。"
+      },
+      {
+        "level": 2,
+        "title": "📊 组件稳定性公式",
+        "content": "```\n稳定性 I = Fan-out / (Fan-in + Fan-out)\n         = 依赖数量 / (被依赖数量 + 依赖数量)\nI = 0 → 最稳定（被依赖，不依赖其他）\nI = 1 → 最不稳定（不被依赖，依赖其他）\n```"
+      },
+      {
+        "level": 2,
+        "title": "🎪 抽象度公式",
+        "content": "```\n抽象度 A = N_a / N_c\n         = 抽象类数量 / 总类数量\nA = 0 → 完全具体\nA = 1 → 完全抽象\n```"
+      },
+      {
+        "level": 2,
+        "title": "⚖️ 理想组件位置",
+        "content": "```\n距离主序列线 D = |A + I - 1|\nD = 0 → 理想位置（抽象度与稳定性平衡）\nD = 1 → 最远离理想（过度具体或过度抽象）\n```"
+      },
+      {
+        "level": 2,
+        "title": "3.1 架构四层模型",
+        "content": "| 层次 | 名称 | 职责 | 变化频率 | 依赖方向 |\n|------|------|------|----------|----------|\n| **第一层** | Entities 实体 | 核心业务规则 | 极低 | 无外部依赖 |\n| **第二层** | Use Cases 用例 | 应用业务规则 | 较低 | 依赖实体层 |\n| **第三层** | Interface Adapters 接口适配 | 数据转换 | 中等 | 依赖用例层 |\n| **第四层** | Frameworks & Drivers 框架驱动 | 外部工具集成 | 高 | 依赖适配层 |\n#### 实体层（Entities）\n**定义**：封装企业级核心业务规则的对象\n**特征**：\n- 独立于任何外部框架\n- 不依赖UI、数据库、任何外部代理\n- 可以是任意形式：对象、函数、数据结构\n- 没有任何外部依赖\n**案例**：银行系统的\"贷款利息计算\"实体\n```typescript\n// 实体层：核心业务规则\nclass LoanInterestCalculator {\n  calculateInterest(principal: number, rate: number, days: number): number {\n    return principal * rate * days / 365; // 核心公式\n  }\n  validateLoan(principal: number): boolean {\n    return principal > 0 && principal <= MAX_LOAN_AMOUNT;\n  }\n}\n```\n#### 用例层（Use Cases）\n**定义**：包含应用特定的业务规则， orchestrate 实体的行为\n**特征**：\n- 定义系统如何完成用户需求\n- 控制实体间的交互\n- 不依赖UI、数据库等外部\n- 通过接口（Interface）与外部通信\n**案例**：银行系统的\"申请贷款\"用例\n```typescript\n// 用例层：应用业务规则\nclass ApplyLoanUseCase {\n  constructor(\n    private loanRepo: ILoanRepository,      // 接口，由外层实现\n    private notification: INotification,    // 接口\n    private calculator: LoanInterestCalculator // 实体\n  ) {}\n  async execute(request: LoanRequest): LoanResponse {\n    // 1. 验证（调用实体）\n    if (!this.calculator.validateLoan(request.amount)) {\n      throw new InvalidLoanError();\n    }\n    // 2. 计算利息（调用实体）\n    const interest = this.calculator.calculateInterest(\n      request.amount, request.rate, request.termDays\n    );\n    // 3. 保存（通过接口，由外层实现具体逻辑）\n    const loan = await this.loanRepo.save({\n      applicant: request.applicant,\n      amount: request.amount,\n      interest\n    });\n    // 4. 通知（通过接口）\n    await this.notification.send(loan.applicant, 'Loan approved');\n    return { loanId: loan.id, total: loan.amount + interest };\n  }\n}\n```\n#### 接口适配层（Interface Adapters）\n**定义**：将数据从最便于用例和实体使用的格式转换为最便于外部代理使用的格式\n**职责**：\n- Presenters、Controllers、Gateways\n- 数据转换（DTO ↔ Entity）\n- 实现接口层定义的接口\n```typescript\n// 接口适配层：实现接口\nclass SqlLoanRepository implements ILoanRepository {\n  constructor(private db: Database) {}\n  async save(loanData: LoanData): LoanRecord {\n    // 将实体数据转换为数据库格式\n    const record = {\n      id: generateUUID(),\n      applicant_id: loanData.applicant.id,\n      amount: loanData.amount,\n      interest_amount: loanData.interest,\n      created_at: new Date()\n    };\n    return this.db.insert('loans', record);\n  }\n}\nclass EmailNotification implements INotification {\n  async send(userId: string, message: string): void {\n    // 将消息转换为邮件格式并发送\n    const user = await this.getUser(userId);\n    await this.emailService.send(user.email, message);\n  }\n}\n```\n#### 框架与驱动层（Frameworks & Drivers）\n**定义**：包含框架和工具，如数据库、Web框架等\n**特征**：\n- 最外层，细节最多\n- 变化频率最高\n- 不做任何业务逻辑\n- 为内层提供实现\n```typescript\n// 框架驱动层：Express控制器\nimport { Router } from 'express';\nimport { LoanController } from '../adapters/controllers';\nconst router = Router();\nconst loanController = new LoanController(applyLoanUseCase);\nrouter.post('/loans/apply', (req, res) => {\n  loanController.handle(req, res); // 调用适配层\n});\n```"
+      },
+      {
+        "level": 2,
+        "title": "3.2 SOLID原则在架构中的应用",
+        "content": "#### S - 单一职责原则（SRP）\n**架构应用**：每个组件/模块只服务于一个\"Actor\"（利益相关者）\n```\n错误示例：Order类同时服务于：\n- 订单管理（销售部门）\n- 订单报表（财务部门）\n- 订单配送（物流部门）\n正确示例：拆分为三个组件\n- OrderManagement\n- OrderReporting\n- OrderShipping\n```\n#### O - 开放封闭原则（OCP）\n**架构应用**：架构设计应允许行为扩展，而无需修改现有代码\n```\n实现方式：\n- 使用接口隔离变化点\n- 通过依赖注入注入具体实现\n- 使用策略模式、插件架构\n案例：支付系统架构\n- PaymentProcessor（接口）\n- CreditCardPayment（实现）\n- PayPalPayment（实现）\n- 新增支付方式无需修改核心代码\n```\n#### L - 里氏替换原则（LSP）\n**架构应用**：子类型必须能够替换其基类型而不破坏系统\n```\n架构意义：\n- 接口的一致性约束\n- 组件替换的前提条件\n- 多态架构的基础\n反例：Square继承Rectangle\n- Rectangle: setWidth(w), setHeight(h)\n- Square: setWidth(w)会同时改变height\n- 破坏了Rectangle的行为契约\n```\n#### I - 接口隔离原则（ISP）\n**架构应用**：不应强迫客户依赖它不使用的方法\n```\n架构体现：\n- 接口要小而专\n- 每个接口服务于一个特定的Actor\n- 避免\"胖接口\"\n错误：IUserOperations包含所有用户操作\n正确：拆分为\n- IUserCreation（创建用户）\n- IUserQuery（查询用户）\n- IUserUpdate（更新用户）\n```\n#### D - 依赖倒置原则（DIP）\n**架构应用**：高层模块不应依赖低层模块，两者都应依赖抽象\n```\n架构核心：\n- 内层定义接口\n- 外层实现接口\n- 所有跨边界依赖都指向内部\n实现：\ninterface IDataSource {  // 内层定义\n  save(data: Data): void;\n}\nclass SqlDataSource implements IDataSource {  // 外层实现\n  save(data: Data): void { ... }\n}\nclass UseCase {  // 内层使用接口\n  constructor(private source: IDataSource) {}\n}\n```"
+      },
+      {
+        "level": 2,
+        "title": "3.3 组件原则",
+        "content": "#### 组件内聚原则\n| 原则 | 英文 | 含义 | 优先级 |\n|------|------|------|--------|\n| **REP** | Reuse/Release Equivalence | 可重用组件必须可独立发布 | 高 |\n| **CCP** | Common Closure Principle | 同修改的类放同一组件 | 中 |\n| **CRP** | Common Reuse Principle | 同使用的类放同一组件 | 低 |\n**张力分析**：\n- REP + CCP：组件过大，发布成本高\n- CCP + CRP：组件过于分散，修改需改多个组件\n- REP + CRP：组件变更频繁\n**平衡策略**：根据项目阶段调整\n- **开发阶段**：优先CCP（便于修改）\n- **成熟阶段**：优先REP（便于重用）\n#### 组件耦合原则\n| 原则 | 英文 | 含义 |\n|------|------|------|\n| **ADP** | Acyclic Dependencies | 无环依赖 |\n| **SDP** | Stable Dependencies | 依赖更稳定的组件 |\n| **SAP** | Stable Abstractions | 稳定组件应更抽象 |\n**无环依赖（ADP）**：\n```\n错误：A → B → C → A（环）\n修正：抽取共同部分D，变为 A → B → C → D，A → D\n检测方法：组件依赖图构建\n修复方法：DIP原则打破环\n```"
+      },
+      {
+        "level": 2,
+        "title": "3.4 边界划分策略",
+        "content": "#### 边界划分维度\n| 维度 | 划分依据 | 边界类型 |\n|------|----------|----------|\n| **变化率** | 变化频率不同 | 变化边界 |\n| **职责** | 不同Actor | 职责边界 |\n| **层次** | 技术层次不同 | 层次边界 |\n| **部署** | 部署单元不同 | 部署边界 |\n#### 边界划分决策矩阵\n```\n系统规模 → 边界数量\n├── 小型系统：单体架构，少量边界\n├── 中型系统：模块化单体，若干边界\n├── 大型系统：服务化架构，大量边界\n变化率 → 边界强度\n├── 变化率相近：软边界（编译依赖）\n├── 变化率悬殊：硬边界（进程/服务边界）\n```\n#### 边界类型对比\n| 类型 | 通信方式 | 成本 | 适用场景 |\n|------|----------|------|----------|\n| **源码边界** | 函数调用 | 低 | 开发初期、变化率相近 |\n| **动态链接边界** | 动态加载 | 中 | 模块化部署 |\n| **进程边界** | IPC/共享内存 | 高 | 性能敏感、需隔离 |\n| **服务边界** | HTTP/RPC | 最高 | 团队独立、部署独立 |"
+      },
+      {
+        "level": 2,
+        "title": "3.5 洁净架构实现要素",
+        "content": "#### 用例（Use Case）\n**结构**：\n```\nUseCase类\n├── 输入请求（Request Model）\n├── 输出响应（Response Model）\n├── 执行方法（execute）\n├── 业务规则验证\n├── 实体交互编排\n└── 接口调用（通过依赖注入）\n```\n**设计要点**：\n- 用例不关心数据来源\n- 用例不关心数据呈现方式\n- 用例只知道实体和接口\n#### 实体（Entity）\n**两种类型**：\n1. **业务实体**：封装关键业务规则\n2. **数据实体**：纯数据结构，无行为\n**选择依据**：\n- 有复杂业务规则 → 业务实体\n- 简单数据传递 → 数据实体\n#### 接口（Interface）\n**方向**：\n- 内层定义接口\n- 外层实现接口\n- 依赖关系指向内层\n**命名约定**：\n```typescript\n// 内层定义\ninterface ILoanRepository {\n  save(loan: LoanData): Promise<Loan>;\n  findById(id: string): Promise<Loan | null>;\n}\n// 外层实现\nclass SqlLoanRepository implements ILoanRepository { }\nclass MongoLoanRepository implements ILoanRepository { }\n```"
+      },
+      {
+        "level": 2,
+        "title": "✅ 正面案例：电商订单系统",
+        "content": "#### 架构分层\n```\n┌─────────────────────────────────────────────────┐\n│  Frameworks & Drivers                            │\n│  ├── Express.js (Web框架)                       │\n│  ├── PostgreSQL (数据库)                        │\n│  ├── Redis (缓存)                               │\n│  ├── RabbitMQ (消息队列)                        │\n└─────────────────────────────────────────────────┘\n          ↓ (依赖方向)\n┌─────────────────────────────────────────────────┐\n│  Interface Adapters                              │\n│  ├── OrderController                            │\n│  ├── OrderRepository (implements IRepository)   │\n│  ├── OrderPresenter                             │\n│  ├── RabbitMQPublisher                          │\n└─────────────────────────────────────────────────┘\n          ↓\n┌─────────────────────────────────────────────────┐\n│  Use Cases                                       │\n│  ├── CreateOrderUseCase                         │\n│  ├── CancelOrderUseCase                         │\n│  ├── GetOrderUseCase                            │\n└─────────────────────────────────────────────────┘\n          ↓\n┌─────────────────────────────────────────────────┐\n│  Entities                                        │\n│  ├── Order (业务规则)                           │\n│  ├── OrderValidator                             │\n│  ├── PricingCalculator                         │\n└─────────────────────────────────────────────────┘\n```\n#### 实体层代码\n```typescript\n// entities/order.ts\nexport class Order {\n  private status: OrderStatus = 'pending';\n  constructor(\n    public readonly id: string,\n    public readonly customerId: string,\n    public readonly items: OrderItem[],\n    public readonly createdAt: Date\n  ) {}\n  // 核心业务规则：计算总价\n  calculateTotal(): Money {\n    return this.items.reduce((sum, item) => \n      sum.add(item.price.multiply(item.quantity)), \n      Money.zero()\n    );\n  }\n  // 核心业务规则：取消订单\n  canCancel(): boolean {\n    return this.status === 'pending' && \n           Date.now() - this.createdAt.getTime() < CANCEL_WINDOW_MS;\n  }\n  cancel(): void {\n    if (!this.canCancel()) throw new CannotCancelError();\n    this.status = 'cancelled';\n  }\n}\n```\n#### 用例层代码\n```typescript\n// usecases/create-order.ts\nexport class CreateOrderUseCase {\n  constructor(\n    private orderRepo: IOrderRepository,\n    private productRepo: IProductRepository,\n    private eventBus: IEventBus\n  ) {}\n  async execute(request: CreateOrderRequest): CreateOrderResponse {\n    // 1. 验证产品存在\n    const products = await this.validateProducts(request.items);\n    // 2. 创建订单实体\n    const order = new Order(\n      generateId(),\n      request.customerId,\n      request.items.map(item => ({\n        productId: item.productId,\n        quantity: item.quantity,\n        price: products.find(p => p.id === item.productId).price\n      })),\n      new Date()\n    );\n    // 3. 保存（通过接口）\n    await this.orderRepo.save(order);\n    // 4. 发布事件（通过接口）\n    await this.eventBus.publish('order.created', { orderId: order.id });\n    return { orderId: order.id, total: order.calculateTotal() };\n  }\n}\n```\n#### 适配层代码\n```typescript\n// adapters/controllers/order-controller.ts\nexport class OrderController {\n  constructor(private createOrderUseCase: CreateOrderUseCase) {}\n  async handle(req: Request, res: Response) {\n    // 转换HTTP请求为用例请求\n    const request = {\n      customerId: req.user.id,\n      items: req.body.items\n    };\n    // 调用用例\n    const result = await this.createOrderUseCase.execute(request);\n    // 转换响应为HTTP响应\n    res.json({\n      order_id: result.orderId,\n      total_amount: result.total.amount,\n      currency: result.total.currency\n    });\n  }\n}\n// adapters/repositories/sql-order-repository.ts\nexport class SqlOrderRepository implements IOrderRepository {\n  constructor(private db: Database) {}\n  async save(order: Order): Promise<void> {\n    // 实体数据 → 数据库格式\n    await this.db.insert('orders', {\n      id: order.id,\n      customer_id: order.customerId,\n      status: order.status,\n      total: order.calculateTotal().amount,\n      created_at: order.createdAt\n    });\n    await this.db.insertBatch('order_items', order.items.map(item => ({\n      order_id: order.id,\n      product_id: item.productId,\n      quantity: item.quantity,\n      price: item.price.amount\n    })));\n  }\n}\n```"
+      },
+      {
+        "level": 2,
+        "title": "❌ 反面案例：过度架构",
+        "content": "#### 问题：边界过多\n```\n错误架构：\n├── order-service (服务边界)\n├── payment-service (服务边界)\n├── inventory-service (服务边界)\n├── notification-service (服务边界)\n├── logging-service (服务边界)\n├── config-service (服务边界)\n问题：\n- 小团队维护6个服务\n- 每次修改跨多个服务\n- 网络调用开销巨大\n- 部署复杂度高\n```\n**教训**：项目初期不要过早划分服务边界，应从单体开始，按需拆分。\n#### 问题：依赖倒置不足\n```typescript\n// 错误：用例直接依赖具体实现\nclass CreateOrderUseCase {\n  constructor(private postgresRepo: PostgresOrderRepository) {}  // 错误！\n  async execute(request) {\n    await this.postgresRepo.save(order);  // 绑定了具体数据库\n  }\n}\n// 正确：用例依赖接口\nclass CreateOrderUseCase {\n  constructor(private orderRepo: IOrderRepository) {}  // 正确！\n  async execute(request) {\n    await this.orderRepo.save(order);  // 可替换任何实现\n  }\n}\n```\n#### 问题：实体贫血\n```typescript\n// 错误：实体只是数据容器\nclass Order {\n  id: string;\n  customerId: string;\n  items: OrderItem[];\n  status: string;\n  // 没有任何业务规则！\n}\n// 业务规则分散在各处\nclass OrderService {\n  canCancel(order: Order): boolean { ... }  // 应在Order实体中\n  calculateTotal(order: Order): Money { ... }  // 应在Order实体中\n}\n// 正确：实体封装业务规则\nclass Order {\n  // ... 数据\n  canCancel(): boolean {  // 业务规则在实体中\n    return this.status === 'pending' && ...;\n  }\n  calculateTotal(): Money {  // 业务规则在实体中\n    return this.items.reduce(...);\n  }\n}\n```"
+      },
+      {
+        "level": 2,
+        "title": "📋 架构设计步骤",
+        "content": "#### Step 1: 确定核心业务规则（实体）\n```\n1. 梳理业务领域\n2. 识别不变的核心规则\n3. 定义实体接口\n4. 实体无外部依赖\n```\n#### Step 2: 定义用例\n```\n1. 分析用户操作流程\n2. 定义用例输入输出\n3. 编排实体交互\n4. 通过接口连接外部\n```\n#### Step 3: 设计接口边界\n```\n1. 确定需要的外部能力\n2. 定义接口（内层）\n3. 确定数据流向\n4. 保持依赖向内\n```\n#### Step 4: 实现适配层\n```\n1. 实现接口\n2. 数据格式转换\n3. 控制器、Presenter\n4. 不含业务逻辑\n```\n#### Step 5: 选择框架与工具\n```\n1. 数据库选择\n2. Web框架选择\n3. 消息队列选择\n4. 确保框架在边界之外\n```"
+      },
+      {
+        "level": 2,
+        "title": "🔧 嵌入式/IoT系统架构应用",
+        "content": "#### 特殊考量\n| 因素 | 影响 | 应对策略 |\n|------|------|----------|\n| **资源限制** | 内存、计算受限 | 简化层次，减少抽象 |\n| **实时性要求** | 响应时间约束 | 边界避免进程通信 |\n| **硬件依赖** | GPIO、传感器驱动 | 硬件抽象层（HAL） |\n| **部署不可变** | OTA升级受限 | 核心逻辑在可升级部分 |\n#### 嵌入式Clean Architecture\n```\n┌─────────────────────────────────────────────────┐\n│  Drivers & Hardware                             │\n│  ├── GPIO Driver                               │\n│  ├── Sensor Driver                             │\n│  ├── Network Stack                             │\n│  ├── RTOS (FreeRTOS/ThreadX)                   │\n└─────────────────────────────────────────────────┘\n          ↓\n┌─────────────────────────────────────────────────┐\n│  HAL (Hardware Abstraction Layer)               │\n│  ├── IGPIO (接口)                              │\n│  ├── ISensor (接口)                            │\n│  ├── INetwork (接口)                           │\n└─────────────────────────────────────────────────┘\n          ↓\n┌─────────────────────────────────────────────────┐\n│  Use Cases                                      │\n│  ├── ReadSensorUseCase                         │\n│  ├── ControlMotorUseCase                       │\n│  ├── SendDataUseCase                           │\n└─────────────────────────────────────────────────┘\n          ↓\n┌─────────────────────────────────────────────────┐\n│  Entities                                       │\n│  ├── SensorData                                │\n│  ├── MotorController                           │\n│  ├── DeviceState                               │\n└─────────────────────────────────────────────────┘\n```\n#### HAL层设计\n```c\n// entities/sensor.h - 核心业务规则\ntypedef struct {\n    float temperature;\n    float humidity;\n    timestamp_t timestamp;\n} SensorData;\n// hal/isensor.h - 硬件抽象接口\ntypedef struct ISensor {\n    int (*read)(struct ISensor* self, SensorData* data);\n    int (*configure)(struct ISensor* self, const SensorConfig* config);\n} ISensor;\n// usecases/read_sensor.c - 用例\nint ReadSensorUseCase_Execute(ISensor* sensor, SensorData* result) {\n    int status = sensor->read(sensor, result);\n    if (status == 0) {\n        result->timestamp = get_current_time();\n        // 业务规则处理\n    }\n    return status;\n}\n// drivers/dht22_driver.c - 具体驱动实现\ntypedef struct {\n    ISensor base;\n    int gpio_pin;\n} DHT22Driver;\nstatic int DHT22_Read(ISensor* self, SensorData* data) {\n    DHT22Driver* driver = (DHT22Driver*)self;\n    // 具体硬件操作\n    return read_dht22(driver->gpio_pin, data);\n}\n```"
+      },
+      {
+        "level": 2,
+        "title": "📊 产品经理视角：架构决策的影响",
+        "content": "#### 架构决策矩阵\n| 决策点 | 影响范围 | 延迟策略 | 决策时机 |\n|--------|----------|----------|----------|\n| **数据库选择** | 存储层 | 使用接口隔离 | 需要时确定 |\n| **Web框架** | UI层 | 用例不依赖 | 开发中期 |\n| **部署方式** | 运维层 | 边界可调 | 运维规划时 |\n| **服务划分** | 团队结构 | 从单体开始 | 团队扩大时 |\n#### 产品迭代与架构演进\n```\n阶段1: MVP（单体）\n├── 快速验证\n├── 最少边界\n├── 源码级分离\n└── 无服务边界\n阶段2: 增长期（模块化）\n├── 按职责分模块\n├── 增加边界清晰度\n├── 依赖规则严格执行\n└── 准备拆分点\n阶段3: 成熟期（服务化）\n├── 热点模块拆服务\n├── 团队独立部署\n├── 服务边界固化\n└── 保留核心单体\n```"
+      },
+      {
+        "level": 2,
+        "title": "核心观点",
+        "content": "> \"好的软件架构使系统易于理解、易于开发、易于维护、易于部署。\"\n> \"架构的目标是最小化构建和维护系统所需的人力资源。\"\n> \"架构师的主要职责是确保系统架构能够支持系统的全生命周期。\"\n> \"源代码依赖关系只能指向内部，内层不知道外层的任何东西。\"\n> \"好的架构允许你推迟决策，越久越好。\"\n> \"细节应该依赖抽象，抽象不应该依赖细节。\"\n> \"业务规则是系统的核心价值，架构应该围绕业务规则构建。\"\n> \"框架作者的目标是让你绑定到他们的框架，你的目标是保持独立。\"\n> \"数据库只是实现细节，不是架构元素。\"\n> \"Web只是实现细节，不是架构元素。\"\n> \"测试不应该依赖任何东西，因为它们是系统的最外层。\""
+      },
+      {
+        "level": 2,
+        "title": "SOLID原则总结",
+        "content": "> \"SOLID原则的目标是创建中层软件结构，使其能够容忍变化。\"\n> \"单一职责不是关于函数只做一件事，而是关于组件只服务于一个Actor。\"\n> \"开放封闭原则告诉我们应该通过扩展而非修改来应对变化。\"\n> \"依赖倒置是Clean Architecture的核心实现机制。\""
+      },
+      {
+        "level": 2,
+        "title": "✅ 架构审查清单",
+        "content": "| 检查项 | 标准 | 检查方法 |\n|--------|------|----------|\n| **依赖方向** | 全部向内 | 依赖图分析 |\n| **实体独立性** | 无外部依赖 | import检查 |\n| **用例纯粹性** | 只调用实体和接口 | 代码审查 |\n| **接口在内层** | 内层定义，外层实现 | 目录结构检查 |\n| **边界清晰** | 层次分明 | 架构图绘制 |\n| **框架隔离** | 框架在边界外 | 框架依赖位置 |\n| **数据库隔离** | 数据库在边界外 | Repository位置 |\n| **测试隔离** | 测试可独立运行 | 测试结构检查 |"
+      },
+      {
+        "level": 2,
+        "title": "✅ 重构检查清单",
+        "content": "| 场景 | 重构动作 | 时机 |\n|------|----------|------|\n| **业务规则散落** | 集中到实体 | 发现时立即 |\n| **用例依赖具体实现** | 引入接口 | 发现时立即 |\n| **组件循环依赖** | 打破循环 | 每次构建 |\n| **框架绑定过度** | 增加适配层 | 框架升级前 |\n| **数据库绑定** | Repository抽象 | 数据库迁移前 |"
+      },
+      {
+        "level": 1,
+        "title": "八、与其他方法论的关系",
+        "content": "| 方法论 | 与Clean Architecture关系 |\n|--------|--------------------------|\n| **DDD领域驱动设计** | 实体对应领域模型，用例对应应用服务 |\n| **六边形架构** | 同心圆替代六边形，本质相同 |\n| **洋葱架构** | Clean Architecture的前身 |\n| **微服务架构** | Clean Architecture可作为服务内架构 |\n| **分层架构** | Clean Architecture的严格版 |\n| **MVC/MVVM** | 属于接口适配层的具体实现 |"
+      },
+      {
+        "level": 1,
+        "title": "更新日志",
+        "content": "| 日期 | 版本 | 更新内容 |\n|------|------|----------|\n| 2026-04-29 | v1.0 | 初始版本，完整方法论文档 |"
+      },
+      {
+        "level": 1,
+        "title": "参考资源",
+        "content": "- **原书**：《Clean Architecture: A Craftsman's Guide to Software Structure and Design》 - Robert C. Martin\n- **相关书籍**：《Clean Code》- 同作者，代码层面整洁之道\n- **前置阅读**：SOLID原则详解\n- **实践参考**：clean-code-javascript (GitHub)"
+      }
+    ],
+    "updates": [
+      {
+        "date": "2026-05-10",
+        "note": "从智慧库导入"
+      }
+    ]
+  }
+}

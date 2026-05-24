@@ -1,0 +1,79 @@
+{
+  "id": "Clayton-Christensen-Taddy-Hall-Karen-Dillon-David-Duncan-Competing-Against-Luck-JTBD创新方法论",
+  "category": "产品设计",
+  "title": "Clayton Christensen 等《Competing Against Luck》JTBD创新方法论",
+  "keywords": [
+    "Competing Against Luck",
+    "Jobs to Be Done",
+    "JTBD",
+    "Clayton Christensen",
+    "Taddy Hall",
+    "创新",
+    "用户需求",
+    "milkshake case"
+  ],
+  "summary": "**核心主题**：Jobs to Be Done × 用户“雇佣”产品的进步逻辑 × 情境驱动需求识别 × Big Hire / Little Hire × 非消费机会 × 创新成功率提升",
+  "importance": 5,
+  "learned_at": "2026-05-13",
+  "source": "Clayton M. Christensen, Taddy Hall, Karen Dillon, David S. Duncan《Competing Against Luck: The Story of Innovation and Customer Choice》(2016)",
+  "content": {
+    "core_formula": "创新命中率 = 真实待办任务清晰度 × 情境理解深度 × 解决方案契合度 × 使用体验完整度\n客户选择 = 功能表现 × 情境适配 × 情感收益 × 社会收益 > 替代方案",
+    "layers": [
+      {
+        "level": 1,
+        "title": "第一层: 核心概念——Jobs to Be Done 理论全景",
+        "content": "### 1.1 这本书在讲什么\n\n《Competing Against Luck》试图把创新从「撞运气」变成「可解释、可验证、可复制」的工作。Christensen 团队认为:企业之所以不断推出失败产品,不是缺少数据,而是缺少一种能解释客户为什么在某个情境下会「雇佣」某个方案的理论。\n\n### 1.2 Jobs to Be Done 的核心定义\n\n书中的核心命题是:**客户不是买产品,而是在特定情境下雇佣产品来完成一个进步任务(make progress)**。\n\n| 概念 | 定义 | 关键问题 | 方法含义 |\n|------|------|----------|----------|\n| Job | 用户想完成的进步,不只是任务动作 | 用户想从什么状态走向什么状态? | 需求分析从人群画像转向情境与进步 |\n| Hire | 客户选择某产品/服务 | 为什么是现在、为什么是这个方案? | 竞争对象是所有替代方案,不只是同类竞品 |\n| Fire | 客户放弃、流失、替换方案 | 为什么不用了? | 流失分析比拉新分析更能暴露错配 |\n| Non-consumption | 还没有使用任何方案的空白需求 | 用户为什么一直没行动? | 常是新创新机会来源 |\n| Progress | 用户想获得的功能、情感、社会改善 | 用户真正想变得更好的是什么? | 创新目标不只是加功能 |\n\n### 1.3 JTBD 的四大特征\n\n1. **功能性 (Functional)**: 用户表面想要完成的具体任务(如「把墙打一个洞」)\n2. **情感性 (Emotional)**: 用户使用过程中的感受(如「感觉自己很能干」)\n3. **社会性 (Social)**: 用户希望别人如何看待自己(如「邻居会觉得我很会装修」)\n4. **情境驱动性 (Circumstantial)**: 同样的任务在不同情境下需要完全不同的方案\n\n### 1.4 为什么作者批评传统细分\n\n传统用户细分常按年龄、收入、行业、地区切分,但这些标签往往无法解释「为什么此刻做出这个选择」。JTBD 更关心:\n1. 触发场景是什么\n2. 用户正在挣扎什么\n3. 替代方案有哪些\n4. 成功标准是什么\n\n### 1.5 作者背景\n\n- **Clayton Christensen**:哈佛商学院教授,破坏式创新理论代表人物,著有《The Innovator's Dilemma》\n- **Taddy Hall**:长期推动 JTBD 实践的创新顾问,曾与 Nielsen 和多家财富500强合作\n- **Karen Dillon**:前《哈佛商业评论》编辑,负责把理论翻成管理实践\n- **David S. Duncan**:创新与战略实践者,曾任 Innosight 高级合伙人"
+      },
+      {
+        "level": 1,
+        "title": "第二层: 核心模型与公式",
+        "content": "### 2.1 JTBD 决策模型\n\n用户的选择不是功能比较,而是一个多维度的决策:\n\n```\n客户选择 = 功能收益 + 情感收益 + 社会收益 + 情境便利性\n         - 切换成本 - 学习成本 - 风险焦虑\n```\n\n这个公式说明:即使你的功能远超对手,如果用户有高切换成本或焦虑,他们仍然不会选择你。\n\n### 2.2 创新命中率公式\n\n```\n创新命中率 = 真实任务清晰度 × 关键情境识别度 × 方案契合度 × 体验闭环完整度\n```\n\n每一个维度都是乘数关系——其中任何一个为零,结果都为零。\n\n### 2.3 Big Hire / Little Hire 模型\n\n- **Big Hire**:客户第一次决定采用你的方案(第一次购买/注册)\n- **Little Hire**:客户之后每一次继续使用你的方案(持续使用/续费)\n\n这意味着:拉新成功不等于留存成功。很多产品在 Big Hire 上做得很好(广告吸引人),但 Little Hire 上一塌糊涂(产品体验差)。\n\n### 2.4 竞争边界重画\n\nJTBD 要求你重新定义「谁是你的竞争对手」:\n\n```\n真正竞争 = 同类产品 + 旧习惯 + 手工替代 + 不作为 + 其他任务绕路方案\n```\n\n例如:Uber 的竞争对手不仅是出租车,还包括走路、开自己的车、请朋友送、甚至不出门。\n\n### 2.5 任务地图(Job Journey)\n\n一个完整的 Job 可以拆解为七个阶段:\n\n1. **触发**:什么情境让用户意识到需要改变?\n2. **搜索**:用户通过什么渠道寻找解决方案?\n3. **比较**:用户用什么标准评估不同方案?\n4. **试用**:试用期间什么决定是否转化?\n5. **使用**:使用中什么决定是否满意?\n6. **复购/传播**:什么驱动用户回来或推荐?\n7. **放弃/替换**:什么导致用户离开?\n\n### 2.6 JTBD 与现有理论的对比\n\n| 维度 | JTBD | 传统用户画像 | 需求谱系法 |\n|------|------|-------------|-----------|\n| 分析单位 | 待办任务(Job) | 用户画像(Persona) | 功能需求 |\n| 核心问题 | 用户想完成什么进步? | 用户是谁? | 用户想要什么功能? |\n| 情境角色 | 核心 | 次要 | 忽略 |\n| 竞争定义 | 所有替代方案 | 同品类竞品 | 同功能产品 |\n| 创新方向 | 创造新任务的解决方案 | 满足已知用户群 | 增加功能 |\n| 局限 | 执行成本高,需要深度调研 | 无法解释购买决策 | 容易功能膨胀 |"
+      },
+      {
+        "level": 1,
+        "title": "第三层: 实践框架——完整 JTBD 分析流程",
+        "content": "### 3.1 JTBD 访谈方法论\n\nJTBD 访谈与传统调研的根本区别:不问「你喜欢什么」,而是「告诉我当时发生了什么」。\n\n**JTBD 访谈核心问题清单**:\n\n| 问题类型 | 示例问题 | 目的 |\n|----------|----------|------|\n| 触发类 | 当时是什么让你意识到需要改变? | 识别情境触发因素 |\n| 搜索类 | 你从哪里开始找解决方案?试过什么? | 了解用户的信息路径 |\n| 比较类 | 你拿我的方案和什么比较?为什么选了它? | 发现真正的竞争维度 |\n| 使用类 | 第一次用的时候感觉怎么样? | 评估 Little Hire 体验 |\n| 流失类 | 是什么让你决定不再用了? | 分析 Fire 原因 |\n\n**JTBD 访谈「三不」原则**:\n1. 不问「如果...你会...?」(假设性问题不可靠)\n2. 不问「你觉得怎么样?」(感受不等于行为)\n3. 不问「你最喜欢什么?」(无法解释实际选择)\n\n**JTBD 访谈「三要」原则**:\n1. 要问「当时发生了什么?」(过去式,具体事件)\n2. 要问「你尝试了哪些替代方案?」(行为证据)\n3. 要问「具体是什么让你决定改变?」(寻找触发点)\n\n### 3.2 Job Statement 写作法\n\n一个好的 Job Statement 格式:\n\n```\n当[情境]时,我想[完成某进步],这样我就能[获得某结果/感受]\n```\n\n示例:\n- ❌ 「想要更健康的早餐」(太模糊)\n- ✅ 「当我在通勤路上只有15分钟时,我想吃一顿不迟到的早餐,这样我就能既填饱肚子又不耽误工作」\n\n- ❌ 「想管理时间」(太模糊)\n- ✅ 「当我在多个项目之间切换感到失控时,我想把所有待办事项放到一个我能信任的系统里,这样我就能停止焦虑、专注于做重要的事」\n\n### 3.3 四步 JTBD 分析流程\n\n**Step 1: 收集故事(Collect Stories)**\n- 访谈 10-20 位真实用户/流失用户\n- 关注「第一次」和「最后一次」的关键时刻\n- 记录每个决策点的情境和替代方案\n\n**Step 2: 提炼任务(Identify Jobs)**\n- 从故事中提取重复出现的模式\n- 用 Job Statement 格式写出每个任务\n- 区分 Big Hire 和 Little Hire 的任务\n\n**Step 3: 绘制任务地图(Map the Journey)**\n- 画出用户完成该任务的完整旅程\n- 标注每个节点的阻碍和焦虑\n- 标注现有方案的不足之处\n\n**Step 4: 设计解决方案(Design the Solution)**\n- 针对未被满足的 Job 设计创新的切入点\n- 优先解决高频、高阻力的任务环节\n- 确保 Big Hire 和 Little Hire 体验一致\n\n### 3.4 非消费分析(Non-consumption Analysis)\n\n当用户没有采用任何方案时,往往不是需求不存在,而是现有方案太贵、太复杂、太慢或太麻烦。\n\n非消费的三个类型:\n1. **价格非消费**:用户愿意但买不起\n2. **技能非消费**:用户需要但不会用\n3. **情境非消费**:用户在特定情境下无法使用现有方案\n\n每个类型都代表一个创新机会。Christensen 指出:非消费是破坏式创新的最常见切入点。"
+      },
+      {
+        "level": 1,
+        "title": "第四层: 五维深度分析——从情境到体验闭环",
+        "content": "### 维度一:情境——JTBD 最重要的概念\n\nJTBD 最重要的不是「谁」,而是「在什么情况下」。同一个人,在不同时间、地点、压力和约束下,会雇佣完全不同的方案。\n\n情境包含的要素:\n- **时间压力**:紧急 vs 从容\n- **物理环境**:在家/在办公室/在路上\n- **社交环境**:独自/与同事/与家人在一起\n- **情绪状态**:焦虑/开心/疲倦/无聊\n- **可用资源**:有钱/没钱,有工具/没工具\n\n情境分析的实践方法:\n1. 让用户描述最近一次「需要完成这个任务」的场景\n2. 记录场景中的所有环境因素\n3. 对比不同场景下的选择差异\n\n### 维度二:进步——用户真正想要的改变\n\nJob 不是一串功能清单,而是用户想从当前不满意状态走向更理想状态的进步。\n\n进步的三个层次:\n- **功能进步**:从做不了到能做到(如从写不了代码到用 AI 辅助)\n- **情感进步**:从焦虑到安心(如从担心数据丢失到信任云端备份)\n- **社会进步**:从被看不起到被尊重(如从用便宜工具到用专业工具)\n\n问用户:如果你用了这个方案,你希望生活有什么不同?\n\n### 维度三:焦虑与阻力——为什么用户不切换\n\n即使新方案更好,用户也可能因为不确定性、学习成本、组织惯性而不切换。\n\n常见的五种阻力:\n1. **学习成本**:需要花时间学会怎么用\n2. **切换成本**:从旧方案迁移到新方案的工作量\n3. **绩效焦虑**:担心新方案不如旧的可靠\n4. **社会风险**:用新方案会不会被同事/朋友嘲笑?\n5. **后悔焦虑**:如果选错了怎么办?\n\n### 维度四:替代方案——重新定义竞争\n\n替代方案不仅包括直接竞品,还包括「先凑合」「人工处理」「交给别人做」「暂时不做」。\n\n替代方案分析表:\n| 替代类型 | 示例 | 优势 | 劣势 |\n|----------|------|------|------|\n| 直接竞品 | 同类产品 | 已知可靠 | 同样的问题 |\n| 手工方案 | 自己做/手动处理 | 灵活可控 | 效率低 |\n| 不做 | 暂时不管/推迟 | 零成本 | 问题还在 |\n| 外包 | 雇人/请朋友帮忙 | 快速解决 | 不可持续/成本高 |\n| 绕路方案 | 用完全不同的方式达到类似目的 | 创造性解决 | 可能不完美 |\n\n### 维度五:体验闭环——购买 + 使用 + 服务 全流程\n\n客户不是单纯雇佣一个产品特性,而是在雇佣整个购买、交付、使用、支持过程。\n\n| 维度 | 应问的问题 | 常见误区 |\n|------|------------|----------|\n| 情境 | 这个 Job 在什么时刻被触发? | 只看用户画像 |\n| 进步 | 用户真正想改善什么? | 把表面需求当本质需求 |\n| 焦虑 | 用户担心什么会出错? | 只谈价值不谈切换阻力 |\n| 替代 | 现在用户用什么应付? | 只盯同类竞品 |\n| 闭环 | 购买到使用哪里断裂? | 产品好但落地体验差 |"
+      },
+      {
+        "level": 1,
+        "title": "第五层: 正反案例深度分析",
+        "content": "### 经典案例A:Mikshake 奶昔案例\n\nChristensen 团队受麦当劳委托研究如何提高奶昔销量。传统的调研方式会问用户「你喜欢奶昔的什么口感?」「要不要更甜?」「更浓?」——但这样得不到有意义的洞察。\n\n他们发现了一个关键模式:**大量奶昔在早上 8:30-10:00 之间被卖出**。\n\n深度访谈后发现:\n- 买家是独自通勤的人\n- 他们需要一个能在车上吃一小时不脏手的早餐\n- 奶昔比百吉饼更容易吃(不会掉渣)\n- 奶昔比咖啡更管饱(撑到中午)\n- 奶昔比香蕉更有「喝」的感觉(通勤时一只手控制方向盘)\n\n**关键洞察**:他们不是在买「更好喝的奶昔」,而是在雇佣一个「能单手吃完、不弄脏车、撑过通勤时段的可接受的早餐方案」。\n\n竞争对手不是其他奶昔品牌,而是「香蕉、百吉饼、咖啡、干脆不吃早餐」。\n\n**对产品设计的启示**:\n- 当用户说「要更浓」时,可能不是真的—他们想要的是「撑更久」\n- 加入水果块听起来健康,但用户会担心「还要嚼」(增加驾驶难度)\n- 保持吸管口径不变(太大了反而容易洒)\n- 核心不是在口味上竞争,而是在「通勤场景」上优化\n\n### 经典案例B:Intuit QuickBooks\n\nIntuit 用 JTBD 方法重新定义了小企业财务管理软件:\n- 传统认知:小企业主需要「做账软件」\n- JTBD 洞察:小企业主的真实 Job 是「让我明白我的钱到底去了哪里,并且确保我不漏交税」\n\n这个 Job 洞察导致 QuickBooks 从功能臃肿的会计软件变成:\n- 简化的仪表板:一眼看清现金流\n- 自动分类:银行交易自动匹配\n- 税务估算:随时知道该存多少钱交税\n\n结果:Intuit 成为小企业财务软件的绝对领导者。\n\n### 经典案例C:Snapchat\n\nSnapchat 诞生的洞察来自 JTBD 思维:\n- 传统社交网络(如 Facebook)的核心 Job:记录和分享生活\n- Snapchat 发现了另一个 Job:让朋友看到我现在的状态,但不用担心永久记录\n\nSnapchat 不是更好的照片分享工具,而是「完成不同 Job」的产品——让用户放松分享,不用考虑「形象管理」和「事后删帖」。\n\n这个洞察解释了为什么「增加阅后即焚功能的 Instagram」并不会削弱 Snapchat——因为 Instagram 的核心 Job 是「好看的照片墙」,不是「随意分享不留痕迹」。\n\n### 反面案例A:Foursquare 的迷失\n\nFoursquare 初期成功源于完成了明确的 Job:「让我找到附近最有意思的地方」。但之后产品不断加入功能(点评、攻略、社交游戏、积分排名),逐渐偏离了核心 Job。\n\n结果是用户不知道 Foursquare 到底是干什么的——是用来签到?找餐厅?还是玩游戏?\n\n### 反面案例B:Google Wave\n\nGoogle Wave 的失败可以归结为 JTBD 缺失:它试图同时完成「邮件、即时通讯、文档协作、项目管理」等多个 Job,但没有一个 Job 被完成得很好。用户不知道自己应该在什么情境下、为了解决什么问题而使用 Wave。\n\n### 反面案例C:传统汽车的触摸屏\n\n很多汽车厂商把大屏幕功能简单堆砌到仪表盘上,试图完成「科技感」这个表象需求,却没有考虑到用户在驾驶情境下的真实 Job:「安全、快速地获取我需要的信息」。\n\n结果是驾驶者需要花 3-5 秒在菜单里找空调开关——这在 60 迈的时速下是非常危险的。物理按钮看似「过时」,但在驾驶情境下完成了「盲操作」这个核心 Job。"
+      },
+      {
+        "level": 1,
+        "title": "第六层: JTBD 与其他方法论的关系与集成",
+        "content": "### JTBD × 用户画像(Persona)\n\n两者不是替代关系而是互补关系:\n- **Persona 回答**:用户是谁?\n- **JTBD 回答**:用户在什么情境下试图完成什么进步?\n\n最佳实践:在 Persona 中加入「典型 Job 场景」维度。例如「28 岁的城市白领 Alice」是不够的,加「当 Alice 加班到晚上 9 点、没吃晚饭、还想赶最后一班地铁时,她的 Job 是什么?」\n\n### JTBD × 用户体验地图(UX Journey)\n\nJTBD 给 UX Journey 注入「为什么」:\n- UX Journey 展示用户做了什么\n- JTBD 解释用户为什么在那个时候做那件事\n\n结合方法:在体验地图的每个阶段标注「背后的 Job」和「替代方案」。\n\n### JTBD × OKR\n\nJTBD 可以帮助团队写出更好的 OKR:\n- ❌ Object:提高用户留存率(太宏观)\n- ✅ Object:让通勤用户在工作日早晨顺利「雇佣」我们的产品完成早餐 Job\n\n### JTBD × 精益创业(Lean Startup)\n\n- 精益创业提供验证方法(Build-Measure-Learn)\n- JTBD 提供验证内容(什么 Job 值得被解决)\n- 结合:先用 JTBD 确定最有价值的 Job,再用精益创业快速验证解决方案\n\n### JTBD × 蓝海战略(Blue Ocean)\n\n- 蓝海战略寻找「没有竞争的空白市场」\n- JTBD 的「非消费(Non-consumption)」分析正好指向蓝海机会\n- 结合:用 JTBD 访谈找到大量「用户凑合着用」的情境,再用蓝海工具设计差异化的价值曲线\n\n### JTBD × Design Thinking\n\n| 设计思维阶段 | JTBD 注入 |\n|-------------|-----------|\n| 同理心(Empathize) | 用 JTBD 访谈替代泛泛的田野调查 |\n| 定义(Define) | 用 Job Statement 替代 POV 陈述 |\n| 构思(Ideate) | 围绕「如何更好完成 Job」而非「如何增加功能」 |\n| 原型(Prototype) | 在关键 Job 环节集中测试 |\n| 测试(Test) | 评估用户是否能更顺畅地完成 Job,而非评估功能满意度 |\n\n### JTBD × 数据产品分析\n\n关键指标映射:\n- Big Hire 完成率 = 用户首次达成核心 Job 的比例\n- Little Hire 频率 = 用户回头完成 Job 的频率\n- Job Completion Time = 完成 Job 所需时间\n- Fire 率 = 用户放弃使用你的方案的比例\n- 替代方案对比得分 = 相比替代方案用户完成 Job 的满意度"
+      },
+      {
+        "level": 1,
+        "title": "第七层: 应用清单——个人/团队/组织",
+        "content": "### 个人层面\n\n- [ ] **思维转变**:把「我的目标用户是谁」改为「用户在我的产品中想完成什么进步」\n- [ ] **Job Statement 练习**:选一个你的产品核心功能,写出一句完整的 Job Statement\n- [ ] **替代方案日记**:每天记录自己「凑合着用」的替代方案(为什么不用正式方案?)\n- [ ] **情境记录**:在使用你的产品时,记录用户当时的情境因素(地点/时间/情绪/环境)\n- [ ] **学习资源**:阅读 Christensen 的经典论文《The Milk Shake Case》(HBR, 2007)\n\n### 团队层面\n\n- [ ] **JTBD 访谈计划**:每周访谈 2 位用户,用 JTBD 问题清单代替功能反馈问卷\n- [ ] **Job Wall**:在团队墙上挂一个「Jobs Wall」,每次迭代评审时检查:这个功能服务的 Job 是什么?\n- [ ] **Big Hire / Little Hire 指标**:为每个新功能定义 Big Hire 成功标准和 Little Hire 成功标准\n- [ ] **竞争边界重画**:每季度做一次「替代方案审计」,列出用户现在用哪些替代方案替代你的产品\n- [ ] **流失分析改造**:不要把流失用户简单地归类为「不活跃」,而要追问「他们解雇了我们产品的什么 Job?」\n- [ ] **功能减负**:定期检查产品中的功能,砍掉那些「不服务于核心 Job」的功能\n- [ ] **JTBD 评审**:在 PRD 评审时增加「这个功能服务哪个 Job?」环节\n\n### 组织层面\n\n- [ ] **产品规划**:在做产品 Roadmap 时,以 Job 而不是 Feature 为单位排列优先级\n- [ ] **跨部门语言**:把市场、产品、销售、客服的沟通统一为 JTBD 语言——大家都在谈「用户要完成的进步」\n- [ ] **收购评估**:用 JTBD 分析潜在收购标的:它服务什么 Job?这个 Job 大不大?和我们互补吗?\n- [ ] **创新评审**:对每个创新项目,先用 JTBD 验证 Job 是否真实存在,再投入资源做方案开发\n- [ ] **JTBD 认知普及**:培养团队 80% 的成员能自己写出一份合格的 Job Statement\n- [ ] **JTBD 与 NPS 结合**:NPS 问「你会推荐吗?」,JTBD 追问「推荐或不推荐是因为你帮用户完成了/没完成什么 Job?」\n\n### JTBD 实践常见陷阱\n\n| 陷阱 | 表现 | 纠正方法 |\n|------|------|----------|\n| Job 写得太抽象 | 「我的 Job 是让客户快乐」 | 加情境:什么时候、什么条件下 |\n| Job 和 Feature 混淆 | 「我的 Job 是上传照片」 | Job 是进步目的,不是操作动作 |\n| 只做一次访谈 | 访谈后从未更新 Job | Job 会随市场和竞争变化 |\n| 忽略情感 Job | 只关注功能不关注感受 | 在 Job Statement 加入情感结果 |\n| Big Hire 和 Little Hire 不分 | 拉新策略和留存策略相同 | 为两个阶段设计不同的体验 |\n| 把 JTBD 当教条 | 「JTBD 说用户就是来完成 Job 的」 | JTBD 是思维框架,不是绝对真理 |"
+      },
+      {
+        "level": 1,
+        "title": "第八层: 原书金句",
+        "content": "01. \"Customers don't buy products or services; they pull them into their lives to make progress.\" (客户不购买产品或服务；他们把产品拉进他们的生活来帮助他们进步。)\n\n02. \"The job, not the customer, is the fundamental unit of analysis.\" (分析的基本单位是任务,不是客户。)\n\n03. \"If you understand the job, you can predict innovation success much more reliably.\" (如果你理解了任务,你就能更可靠地预测创新的成功。)\n\n04. \"The critical question is not what product to make, but what job customers are trying to get done.\" (关键问题不是做什么产品,而是客户想完成什么任务。)\n\n05. \"Competing against luck means understanding causality, not just correlation.\" (与运气竞争意味着理解因果关系,而不仅仅是相关性。)\n\n06. \"The competitors we most often overlook are the ones who serve the same job in a different way.\" (我们最常忽视的竞争对手,是那些以不同方式完成同一任务的人。)\n\n07. \"Non-consumption is the land of opportunity for innovation.\" (非消费是创新的机会之地。)\n\n08. \"The functional job is what the customer is trying to accomplish. The emotional job is how they want to feel.\" (功能性任务是客户想完成的事。情感性任务是客户想感受到的感觉。)\n\n09. \"Innovation is not about making a better product; it's about solving a customer's problem more completely.\" (创新不是做出更好的产品；而是更彻底地解决客户的问题。)\n\n10. \"When you understand the job, causality clarifies.What works? What doesn't? And why?\" (当你理解了任务,因果关系就清楚了。什么有效?什么无效?以及为什么?)\n\n11. \"Big Hire = the moment a customer decides to use your product. Little Hire = every time they choose to use it again.\" (Big Hire = 客户决定用你产品的那一刻。Little Hire = 他们每次选择再次使用的那一刻。)\n\n12. \"The most dangerous assumption in business is that we know what our customers want.\" (商业中最危险的假设是:我们以为我们知道客户想要什么。)\n\n13. \"Segmentation by product category is a trap. Segmentation by job reveals truth.\" (按产品类别做细分是个陷阱。按任务做细分揭示了真相。)\n\n14. \"The Milk Shake case taught us: if you ask customers what they want, they'll tell you what they think they should want.\" (奶昔案例教会我们:如果你问客户想要什么,他们会告诉你他们认为应该想要的东西。)\n\n15. \"Innovation success rate is not about the quality of the solution, but about how well it helps the customer complete their job.\" (创新成功率不取决于解决方案的质量,而取决于它在多大程度上帮助客户完成他们的任务。)\n\n16. \"Every job has a history. People have been trying to solve this problem before your product existed. Learn from their struggles.\" (每个任务都有历史。在你的产品出现之前,人们一直在试图解决这个问题。从他们的挣扎中学习。)\n\n17. \"The product is not the experience. The experience is the full journey of hiring and using the product to get the job done.\" (产品不是体验。体验是雇佣和使用产品来完成任务的完整旅程。)\n\n18. \"If your innovation fails, it's not because the market rejected your solution. It's because your solution didn't solve a real job.\" (如果你的创新失败了,不是因为市场拒绝了你的方案。而是因为你的方案没有解决一个真正的任务。)"
+      },
+      {
+        "level": 1,
+        "title": "第九层: 更新日志",
+        "content": "| 版本 | 时间 | 更新内容 |\n|------|------|----------|\n| v1.0 | 2026-05-13 | 初版创建:基于 HBS / Jobs to Be Done 理论整理核心模型、概念定义、五维任务拆解、正反案例、应用清单与金句 |\n| v2.0 | 2026-05-19 | 大幅扩写:新增 JTBD 访谈方法论(三不三要原则 + 问题清单)、Job Statement 写作法、四步分析流程、非消费分析框架、五维深度分析(含焦虑分析/替代方案分析表)、三大经典案例深度解析(Milkshake/Intuit/Snapchat) + 三大反面案例(Foursquare/Google Wave/车载触摸屏)、JTBD 与七大方法论集成指南(Persona/UX Journey/OKR/Lean Startup/Blue Ocean/Design Thinking/数据分析)、JTBD 实践陷阱辨析 + 扩写到 18 条原书金句"
+      }
+    ],
+    "updates": [
+      {
+        "date": "2026-05-13",
+        "note": "初版创建：收录 Clayton Christensen 等《Competing Against Luck》，整理 JTBD、Big Hire/Little Hire、milkshake 案例与产品创新应用"
+      },
+      {
+        "date": "2026-05-19",
+        "note": "v2.0: 大幅扩写——新增 JTBD 访谈方法论、Job Statement 写作法、非消费分析框架、五维深度分析、六大经典案例分析、JTBD 与其他七大方法论的集成指南、实践陷阱辨析及 18 条完整原书金句"
+      }
+    ]
+  }
+}

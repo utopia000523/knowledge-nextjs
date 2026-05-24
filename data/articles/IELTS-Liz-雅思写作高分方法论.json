@@ -1,0 +1,165 @@
+{
+  "id": "IELTS-Liz-雅思写作高分方法论",
+  "category": "雅思",
+  "title": "IELTS Liz 雅思写作高分方法论",
+  "keywords": [
+    "IELTS",
+    "Liz",
+    "雅思写作高分方法论"
+  ],
+  "summary": "来源：IELTS Liz (ieltsliz.com) - 全球最受欢迎的免费IELTS学习资源",
+  "importance": 4,
+  "learned_at": "2026-05-10",
+  "source": "",
+  "content": {
+    "core_formula": "总分 = (TR + CC + LR + GR) ÷ 4\n\nTR = Task Response/Task Achievement（任务回应）\nCC = Coherence & Cohesion（连贯与衔接）\nLR = Lexical Resource（词汇资源）\nGR = Grammatical Range & Accuracy（语法范围与准确度）\n\n每项权重 = 25%",
+    "layers": [
+      {
+        "level": 2,
+        "title": "写作测试基本信息",
+        "content": "- **总时间**：1小时（需自主分配时间）\n- **Task 1**：20分钟，≥150词（报告/信件）\n- **Task 2**：40分钟，≥250词（议论文）\n- **权重**：Task 2 ≈ 66% 总分"
+      },
+      {
+        "level": 2,
+        "title": "Task 1 类型",
+        "content": "| Academic | General Training |\n|----------|------------------|\n| 图表描述（线图、柱图、饼图、表格） | 信件（个人、半正式、正式） |\n| 流程图描述 | 情境回应 |\n| 地图对比 | 请求/解释/投诉 |"
+      },
+      {
+        "level": 2,
+        "title": "Task 2 五种题型",
+        "content": "1. **Opinion Essay**（观点型）- 同意/不同意/部分同意\n2. **Discussion Essay**（讨论型）- 双方观点讨论\n3. **Advantage/Disadvantage Essay**（优缺点型）- 包含 Outweigh 变体\n4. **Solution Essay**（解决方案型）- 问题-解决/原因-结果\n5. **Direct Questions Essay**（直接问题型）- 单/双/三问"
+      },
+      {
+        "level": 2,
+        "title": "📊 分数计算公式",
+        "content": "```\n总分 = (TR + CC + LR + GR) ÷ 4\nTR = Task Response/Task Achievement（任务回应）\nCC = Coherence & Cohesion（连贯与衔接）\nLR = Lexical Resource（词汇资源）\nGR = Grammatical Range & Accuracy（语法范围与准确度）\n每项权重 = 25%\n```"
+      },
+      {
+        "level": 2,
+        "title": "🎯 Band Score 进阶公式",
+        "content": "| Band | 核心差异 |\n|------|----------|\n| 5 → 6 | 减少错误密度，改善段落结构 |\n| 6 → 7 | 全部回应任务要求，段落清晰，词汇多样化 |\n| 7 → 8 | 极低错误率，复杂句式，精准词汇 |"
+      },
+      {
+        "level": 2,
+        "title": "⚠️ 扣分项",
+        "content": "- **字数不足**：直接扣分（Task 1 < 150词，Task 2 < 250词）\n- **格式错误**：段落分隔不当、缩进混乱\n- **偏题**：未回应所有问题要素"
+      },
+      {
+        "level": 2,
+        "title": "3.1 Task Response / Task Achievement",
+        "content": "#### Task 2 标准（议论文）\n| Band | 特征 |\n|------|------|\n| **5** | 部分回应任务，观点不清晰，论证不充分 |\n| **6** | 回应所有部分但展开不充分，观点清晰但论证薄弱 |\n| **7** | 完全回应任务，观点清晰且充分展开，逻辑连贯 |\n| **8** | 完全且充分回应，观点清晰深入，论证全面 |\n**提分策略：**\n- ✅ 关注题目中的**所有**问题要素\n- ✅ 针对**具体问题**而非泛泛话题\n- ✅ 计划支撑论点，避免跑题\n- ✅ 字数必须 > 250\n#### Task 1 标准（图表/信件）\n| Band | 特征 |\n|------|------|\n| **5** | 细节不准确，缺少概述，数据支持不足 |\n| **6** | 概述存在但不够突出，数据支持有限 |\n| **7** | 清晰概述关键特征，数据充分支持 |\n| **8** | 完美概述，关键特征全部呈现，数据精准 |\n**提分策略：**\n- ✅ 识别并**概述**所有关键特征\n- ✅ 概述必须**突出**（单独段落）\n- ✅ 用数据支撑细节（数字、日期）\n- ✅ 避免**个人观点**（保持客观报告风格）\n- ✅ 字数必须 > 150"
+      },
+      {
+        "level": 2,
+        "title": "3.2 Coherence & Cohesion（连贯与衔接）",
+        "content": "| Band | 特征 |\n|------|------|\n| **5** | 信息组织不当，段落使用有限，连接词错误 |\n| **6** | 信息安排连贯，段落使用合理，连接词有错误 |\n| **7** | 逻辑清晰，段落有效，连接词范围多样且准确 |\n| **8** | 信息完美组织，段落衔接流畅，连接词自然 |\n**提分策略：**\n- ✅ Task 2：**4-5段**结构（开头+2-3主体+结尾）\n- ✅ Task 1：**4段**结构（开头+概述+2细节）\n- ✅ 每段**单一中心主题**\n- ✅ 使用**多样连接词**（避免重复）\n- ✅ 使用**指代**（this, it, these）\n- ✅ 避免**连接词错误**"
+      },
+      {
+        "level": 2,
+        "title": "3.3 Lexical Resource（词汇资源）",
+        "content": "| Band | 特征 |\n|------|------|\n| **5** | 词汇有限，拼写错误频繁，词汇不恰当 |\n| **6** | 词汇足够但有限，拼写错误存在，尝试复杂词汇但出错 |\n| **7** | 词汇范围广，搭配准确，拼写错误稀少，使用话题相关词汇 |\n| **8** | 词汇精准丰富，搭配完美，拼写极少错误，使用高级词汇自然 |\n**提分策略：**\n- ✅ 关注**词组搭配**（动词+名词）\n- ✅ **小心改写**避免错误\n- ✅ 使用**话题相关词汇**\n- ✅ **拼写正确**（错误直接降分）\n- ✅ 避免**错误**（错误密度决定分数）\n- ✅ 避免**非正式语言**"
+      },
+      {
+        "level": 2,
+        "title": "3.4 Grammatical Range & Accuracy（语法范围与准确度）",
+        "content": "| Band | 特征 |\n|------|------|\n| **5** | 句式简单，时态错误频繁，语法错误多 |\n| **6** | 混合简单复杂句，语法错误存在但不妨碍理解 |\n| **7** | 多样句式，语法错误极少，时态控制良好 |\n| **8** | 广泛复杂句式，语法近乎完美，时态精准 |\n**提分策略：**\n- ✅ 使用**不同时态**（条件句、完成时、被动语态）\n- ✅ 注意**词序**（形容词+名词，动词+副词）\n- ✅ 使用**多样句式**（简单、复合、复杂）\n- ✅ **标点正确**（句号、逗号）\n- ✅ 避免**语法错误**（冠词、复数、不可数名词）\n- ✅ Task 1 用**图表对应时态**"
+      },
+      {
+        "level": 2,
+        "title": "Task 2：Band 5 vs Band 8",
+        "content": "| 维度 | Band 5（反面） | Band 8（正面） |\n|------|---------------|---------------|\n| **任务回应** | 只回答一半问题，观点模糊，论证浅薄 | 全部回答，观点清晰深入，论证全面充分 |\n| **连贯衔接** | 段落混乱，连接词用错，主题跳跃 | 逻辑严密，段落流畅，衔接自然 |\n| **词汇** | 词汇重复，拼写错5+处，搭配错误 | 词汇丰富精准，搭配完美，拼写无错 |\n| **语法** | 句式单一，语法错10+处，时态混乱 | 句式多样复杂，语法近乎完美，时态精准 |"
+      },
+      {
+        "level": 2,
+        "title": "Task 1：Band 5 vs Band 8",
+        "content": "| 维度 | Band 5（反面） | Band 8（正面） |\n|------|---------------|---------------|\n| **任务完成** | 细节错误，缺少概述，数据缺失 | 细节精准，概述完美，数据充分 |\n| **连贯衔接** | 信息混乱，段落不当，连接词错 | 信息有序，段落清晰，衔接自然 |\n| **词汇** | 词汇单一，改写错误，数据表达差 | 词汇精准，改写自然，数据表达丰富 |\n| **语法** | 时态错误，句式简单，标点混乱 | 时态精准，句式多样，标点正确 |"
+      },
+      {
+        "level": 2,
+        "title": "✅ Task 2 备考清单",
+        "content": "1. **题型识别**\n   - 练习识别五种题型\n   - 每种题型掌握对应结构\n2. **结构模板**\n   - Opinion：开头+2主体（同意/不同意）+结尾\n   - Discussion：开头+2主体（双方）+结尾（观点）\n   - Advantages：开头+2主体（优/劣）+结尾\n   - Solution：开头+2主体（原因+解决）+结尾\n   - Direct Questions：开头+各问题主体段+结尾\n3. **时间分配**\n   - 计划：3-5分钟\n   - 写作：30-35分钟\n   - 检查：2-3分钟\n4. **内容要素**\n   - 开头：改写题目+表明立场\n   - 主体：主题句+解释+例证\n   - 结尾：总结+重申观点\n5. **话题准备**\n   - 教育、科技、环境、健康、社会、犯罪、政府\n   - 每话题准备10+相关词汇"
+      },
+      {
+        "level": 2,
+        "title": "✅ Task 1 备考清单",
+        "content": "1. **图表类型**\n   - 线图：趋势词汇（rise, fall, fluctuate）\n   - 柱图：比较词汇（highest, lowest, more than）\n   - 饆图：比例词汇（account for, constitute）\n   - 表格：数据表达（increase by, decrease to）\n   - 流程图：顺序词汇（first, then, finally）\n   - 地图：方位词汇（located, situated, north of）\n2. **结构模板**\n   - 开头：改写题目\n   - 概述：关键特征总结（必须突出）\n   - 细节1：数据支撑段落\n   - 细节2：数据支撑段落\n3. **时态规则**\n   - 过去时间：过去时\n   - 无时间标注：现在时\n   - 未来预测：将来时\n4. **数据表达**\n   - 避免：The number was 50\n   - 推荐：The figure stood at 50, reached a peak of"
+      },
+      {
+        "level": 2,
+        "title": "✅ GT Task 1 信件清单",
+        "content": "1. **信件类型**\n   - Personal（朋友）：非正式语气\n   - Semi-Formal（熟人）：半正式\n   - Formal（机构）：正式语气\n2. **结构**\n   - 开头：Dear [name],\n   - 正文：回应三个要点\n   - 结尾：适当署名\n3. **语气控制**\n   - Personal：Hey, Love, Cheers\n   - Semi-Formal：Dear, Best regards\n   - Formal：Dear Sir/Madam, Yours faithfully"
+      },
+      {
+        "level": 1,
+        "title": "六、金句摘录",
+        "content": "> \"Success in IELTS writing task 2 is based on using the right techniques.\"\n> \"Language only counts for about 50% of your marks, the rest is IELTS essay writing techniques.\"\n> \"Don't just read the band score you want. Read all the band score descriptions to learn how you lose marks and how you gain marks.\"\n> \"IELTS will not tell you which type of essay you are given. You must identify the essay type yourself.\"\n> \"The biggest mistake for an opinion essay is not giving a clear opinion.\"\n> \"Your opinion must be clear and remain the same opinion throughout the entire essay.\"\n> \"A balanced view does not mean you agree with both sides fully.\"\n> \"For Task 1, you must write a factual report. Avoid giving an opinion.\"\n> \"You manage the time yourself in IELTS writing. No one will tell you when to move from task 1 to task 2.\"\n> \"Errors will lower your score - see the tables above to learn how mistakes affect your score.\""
+      },
+      {
+        "level": 2,
+        "title": "教育话题",
+        "content": "- curriculum, academic performance, qualification\n- higher education, vocational training, distance learning\n- critical thinking, problem-solving skills"
+      },
+      {
+        "level": 2,
+        "title": "科技话题",
+        "content": "- technological advancement, artificial intelligence\n- automation, digital revolution, innovation\n- breakthrough, cutting-edge technology"
+      },
+      {
+        "level": 2,
+        "title": "环境话题",
+        "content": "- environmental degradation, climate change\n- carbon emissions, renewable energy, sustainability\n- ecological balance, conservation"
+      },
+      {
+        "level": 2,
+        "title": "社会话题",
+        "content": "- social inequality, poverty alleviation\n- urbanization, demographic change\n- social cohesion, community engagement"
+      },
+      {
+        "level": 2,
+        "title": "健康话题",
+        "content": "- public health, healthcare system\n- lifestyle disease, preventive measures\n- mental health, wellbeing"
+      },
+      {
+        "level": 2,
+        "title": "Task 2 Band 7 标准",
+        "content": "- ✅ TR：完全回应任务，观点清晰充分展开\n- ✅ CC：逻辑清晰，段落有效，连接词多样准确\n- ✅ LR：词汇范围广，搭配准确，错误稀少\n- ✅ GR：多样句式，语法错误极少"
+      },
+      {
+        "level": 2,
+        "title": "Task 1 Band 7 标准",
+        "content": "- ✅ TA：清晰概述关键特征，数据充分支持\n- ✅ CC：信息组织清晰，段落有效，衔接自然\n- ✅ LR：词汇范围广，数据表达精准\n- ✅ GR：时态正确，句式多样，错误极少"
+      },
+      {
+        "level": 2,
+        "title": "Task 2 示例评分",
+        "content": "- Task Response: Band 6\n- Coherence & Cohesion: Band 7\n- Grammar: Band 6\n- Vocabulary: Band 6\n**计算**：(6 + 7 + 6 + 6) ÷ 4 = 6.25 → **最终：6.5**"
+      },
+      {
+        "level": 2,
+        "title": "Task 1 示例评分",
+        "content": "- Task Achievement: Band 7\n- Coherence & Cohesion: Band 8\n- Grammar: Band 6\n- Vocabulary: Band 7\n**计算**：(7 + 8 + 6 + 7) ÷ 4 = 7 → **最终：7**"
+      },
+      {
+        "level": 2,
+        "title": "官方资源",
+        "content": "- [IELTS Writing Band Descriptors (PDF)](https://ieltsliz.com/wp-content/uploads/2024/07/ielts_writing_band_descriptors-1.pdf)\n- [IELTS Speaking Band Descriptors](https://www.ielts.org/-/media/pdfs/speaking-band-descriptors.ashx)"
+      },
+      {
+        "level": 2,
+        "title": "IELTS Liz 推荐学习路径",
+        "content": "1. 理解评分标准（四个维度）\n2. 掌握题型识别技巧\n3. 学习结构模板\n4. 练习话题词汇\n5. 写作 + 反复修改"
+      },
+      {
+        "level": 1,
+        "title": "更新日志",
+        "content": "| 时间 | 更新内容 |\n|------|----------|\n| 2026-04-27 | 初版创建，整合IELTS Liz方法论核心内容 |\n> **核心理念总结**：IELTS写作不是单纯的语言能力测试，而是技巧+语言的综合考试。理解评分标准、掌握题型技巧、减少错误密度，三者缺一不可。Band 7+ 的关键：清晰回应任务、逻辑连贯、词汇丰富、语法准确。"
+      }
+    ],
+    "updates": [
+      {
+        "date": "2026-05-10",
+        "note": "从智慧库导入"
+      }
+    ]
+  }
+}

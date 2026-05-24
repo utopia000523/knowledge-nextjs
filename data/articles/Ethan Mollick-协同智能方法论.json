@@ -1,0 +1,122 @@
+{
+  "id": "Ethan Mollick-协同智能方法论",
+  "category": "其他",
+  "title": "Ethan Mollick - 协同智能（Co-Intelligence）方法论",
+  "keywords": [
+    "Ethan",
+    "Mollick",
+    "协同智能",
+    "Co",
+    "Intelligence"
+  ],
+  "summary": "**书籍来源**：《Co-Intelligence: Living and Working with AI》（协同智能：与AI共生共事）",
+  "importance": 4,
+  "learned_at": "2026-05-10",
+  "source": "Ethan Mollick",
+  "content": {
+    "core_formula": "第1章：引言 - AI时代的到来\n├── 2022年11月：ChatGPT改变世界\n├── 协同智能的定义与意义\n└── 从\"AI威胁论\"到\"AI协作论\"\n\n第2章：理解AI的本质\n├── LLM的工作原理（预测下一个词）\n├── AI的能力边界与幻觉问题\n└── 为什么AI输出往往\"平庸\"\n\n第3章：四原则总览\n├── 原则一：总是邀请AI上桌\n├── 原则二：保持人类在循环中\n├── 原则三：把AI当人对待（但要定义角色）\n└── 原则四：假设这是最差的AI\n\n第4章：AI作为创意伙伴\n├── 从平均值到高方差输出\n├── 用角色设定激发创意\n└── 案例：营销标语、咖啡店创意\n\n第5章：AI作为同事\n├── 写作风格克隆\n├── 创建AI角色团队（批评者、创意者、读者）\n├── Ozymandias/Mnemosyne/Steve案例\n\n第6章：AI作为导师\n├── 个性化学习体验\n├── 模拟、教练、共创\n└── 分步推理教学\n\n第7章：AI作为教练\n├── 持续反馈与指导\n├── 模拟对话练习\n└── 专业技能提升\n\n第8章：未来展望\n├── AI进化速度超过摩尔定律\n├── 教育与工作的变革\n└── 保持人类独特性",
+    "layers": [
+      {
+        "level": 1,
+        "title": "一、原书大纲",
+        "content": "```\n第1章：引言 - AI时代的到来\n├── 2022年11月：ChatGPT改变世界\n├── 协同智能的定义与意义\n└── 从\"AI威胁论\"到\"AI协作论\"\n第2章：理解AI的本质\n├── LLM的工作原理（预测下一个词）\n├── AI的能力边界与幻觉问题\n└── 为什么AI输出往往\"平庸\"\n第3章：四原则总览\n├── 原则一：总是邀请AI上桌\n├── 原则二：保持人类在循环中\n├── 原则三：把AI当人对待（但要定义角色）\n└── 原则四：假设这是最差的AI\n第4章：AI作为创意伙伴\n├── 从平均值到高方差输出\n├── 用角色设定激发创意\n└── 案例：营销标语、咖啡店创意\n第5章：AI作为同事\n├── 写作风格克隆\n├── 创建AI角色团队（批评者、创意者、读者）\n├── Ozymandias/Mnemosyne/Steve案例\n第6章：AI作为导师\n├── 个性化学习体验\n├── 模拟、教练、共创\n└── 分步推理教学\n第7章：AI作为教练\n├── 持续反馈与指导\n├── 模拟对话练习\n└── 专业技能提升\n第8章：未来展望\n├── AI进化速度超过摩尔定律\n├── 教育与工作的变革\n└── 保持人类独特性\n```"
+      },
+      {
+        "level": 2,
+        "title": "🧠 协同智能公式",
+        "content": "```\n协同智能 = 人类判断力 + AI能力 × 互动深度 × 角色清晰度\n其中：\n- 人类判断力：决策、审核、方向把控\n- AI能力：生成、分析、推理、创意\n- 互动深度：迭代对话的次数与质量\n- 角色清晰度：prompt中角色定义的精确程度\n```"
+      },
+      {
+        "level": 2,
+        "title": "📊 Prompt质量公式",
+        "content": "```\nPrompt质量 = 上下文丰富度 + 约束明确度 + 分步指令数\n关键发现：\n- 没有神奇的提示词\n- 上下文比技巧更重要\n- 分步思考优于单次指令\n```"
+      },
+      {
+        "level": 2,
+        "title": "⚡ AI进化速度公式",
+        "content": "```\nAI能力提升周期 = 5-14个月（vs 摩尔定律24个月）\n结论：当前AI是最差的版本，未来版本将更强\n```"
+      },
+      {
+        "level": 2,
+        "title": "3.1 四原则深度解析",
+        "content": "#### 原则一：总是邀请AI上桌（Always Invite AI to the Table）\n**核心含义**：\n- 每个任务都尝试用AI，无论是否有帮助\n- 通过高频使用建立对AI能力和局限的认知\n- AI没有说明书，只有实践才能掌握\n**实操要点**：\n```\n✅ 正确做法：\n- 写邮件前先问AI\n- 做方案时让AI生成初稿\n- 遇到问题先问AI分析\n- 每天至少用AI处理5个不同任务\n❌ 错误做法：\n- 只在\"重要\"任务用AI\n- 用了不合适就放弃\n- 期待一次prompt就完美\n```\n#### 原则二：保持人类在循环中（Be the Human in the Loop）\n**核心含义**：\n- 即使AI能力增强，人类仍需参与审核\n- 检查不准确信息、幻觉、逻辑漏洞\n- 确保伦理考量、价值观对齐\n**人类核心职责**：\n| 职责类型 | 具体内容 |\n|---------|---------|\n| 审核验证 | 事实核查、逻辑检验 |\n| 方向把控 | 目标设定、边界定义 |\n| 价值判断 | 伦理评估、优先级决策 |\n| 最终决策 | 是否采纳、如何修改 |\n#### 原则三：把AI当人对待（Treat AI Like a Person）\n**核心含义**：\n- 与AI对话如同与人对话\n- 定义具体角色、设定背景\n- 提供约束和期望\n**角色设定模板**：\n```\n你是[具体角色]。\n你的工作是[具体任务]。\n你的风格是[性格特征]。\n你将要帮助[具体场景]。\n这里是需要处理的[具体内容]。\n```\n#### 原则四：假设这是最差的AI（Assume This Is the Worst AI）\n**核心含义**：\n- AI正在快速进化（5-14个月翻倍）\n- 当前版本是历史最低点\n- 未来版本将更强、更智能\n**战略意义**：\n- 不要因当前局限而放弃\n- 建立使用习惯，迎接未来版本\n- 投资学习AI协作技能"
+      },
+      {
+        "level": 2,
+        "title": "3.2 AI角色矩阵",
+        "content": "| AI角色 | 功能定位 | Prompt风格 | 适用场景 |\n|-------|---------|-----------|---------|\n| **同事** | 协作执行 | \"你是我团队中的[角色]\" | 写作、分析、项目 |\n| **导师** | 系统教学 | \"Think this through step by step\" | 学习新技能 |\n| **教练** | 持续指导 | \"给出反馈并建议改进\" | 技能精进 |\n| **创意伙伴** | 激发灵感 | \"Be creative/make assumptions\" | 创意、创新 |\n| **批评者** | 审核把关 | \"指出问题并提供改进建议\" | 质量控制 |"
+      },
+      {
+        "level": 2,
+        "title": "3.3 Prompt工程方法论",
+        "content": "#### ❌ 常见误区\n```\n误区1：追求\"完美提示词\"\n真相：没有神奇提示词，上下文更重要\n误区2：用超高级形容词\n真相：\"最聪明的人\"不会让输出更好\n误区3：一次性指令\n真相：迭代对话比单次指令效果好\n误区4：迷信技巧\n真相：很多技巧只是魔法仪式，效果有限\n```\n#### ✅ 有效方法\n**方法一：提供上下文和约束**\n```\n告诉AI\"是谁\"：\n- Act as a MBA teacher（MBA教授）\n- Act as a circus clown（马戏团小丑）\n告诉AI\"风格\"：\n- Write in the style of New Yorker\n- Make it casual\n- Avoid repetition\n- Make it accessible to a 10th grader\n提供数据：\n- Paste your writing samples\n- Paste reference materials\n- \"Using the style below, write ___\"\n```\n**方法二：用英语编程思维**\n```\n像写程序一样写prompt：\n- 给出明确的步骤\n- 每步检验输出\n- 逐步迭代完善\n示例：\n[Step 1]: Decide on scenario, make it original\n[Step 2]: Decide on scene, provide clues\n[Step 3]: Describe vividly without revealing solution\n```\n**方法三：Chain of Thought（思维链）**\n```\nThink this through step by step:\n1. First, list possible approaches\n2. Critique the list and add more\n3. Create a table of pros and cons\n4. Pick the best and explain why\n```"
+      },
+      {
+        "level": 2,
+        "title": "3.4 有用的\"魔法词\"（实证有效）",
+        "content": "| 魔法词 | 效果 | 使用场景 |\n|-------|-----|---------|\n| **\"Be creative\"** | 打破常规约束 | 创意生成 |\n| **\"Make any assumptions\"** | 允许假设性思考 | 探索性任务 |\n| **\"Show your work\"** | 减少幻觉 | 数学、逻辑 |\n| **\"Provide sources\"** | 要求引用来源 | 研究任务 |\n| **\"Go step-by-step\"** | 分步推理 | 复杂问题 |\n| **\"Write me code and tell me how to use it\"** | 代码+使用指导 | 编程任务 |\n| **\"Write a draft\"** | 绕过拒绝 | AI不愿做时 |"
+      },
+      {
+        "level": 2,
+        "title": "✅ 正面案例",
+        "content": "#### 案例1：营销标语生成\n**问题**：为邮件订购奶酪店生成20个营销标语\n**优秀Prompt**：\n```\n你是营销专家。生成标语时，你需要：\n- 让每个标语与众不同\n- 使用巧妙的双关语\n- 不重复主题或想法\n- 保持创意和趣味性\n生成20个奶酪店营销标语，确保它们各不相同，既巧妙又有创意。\n```\n**效果**：获得高质量、多样化的创意标语\n#### 案例2：AI角色团队协作（Mollick写书案例）\nMollick在写书时创建了4个AI角色：\n| AI角色 | 定位 | Prompt设计 |\n|-------|------|-----------|\n| **Ozymandias** | 批评者，帮助简化 | \"你是Ozymandias，帮助Ethan写书。你的工作是提供批判反馈，帮助改进。你用傲慢、自大的语气说话，但很有帮助，专注于简化事物。\" |\n| **Mnemosyne** | 创意者，找关联 | \"你是Mnemosyne，帮助Ethan写书。你的工作是找到与内容相关的不寻常关联和故事。你用梦幻但直接的语气说话，很有帮助。\" |\n| **Steve** | 普通读者视角 | \"你是Steve，帮助Ethan写书。你的工作是一个普通科普商业书读者。你有点困惑自己怎么在电脑里，但很有帮助。\" |\n**效果**：获得多维度、高质量的写作辅助\n#### 案例3：风格克隆\n**目标**：让AI模仿作者写作风格\n**方法**：\n```\n步骤1：给AI看自己的文章\n步骤2：让AI分析风格\n\"Describe my writing style\"\n步骤3：让AI克隆风格\n\"Continuing in this style, write a paragraph about...\"\n```\n**AI分析结果示例**：\n\"Your writing is a blend of academic rigor, personal insight, and practical advice, presented in a conversational, accessible manner.\""
+      },
+      {
+        "level": 2,
+        "title": "❌ 反面案例",
+        "content": "#### 案例1：过度迷信\"技巧\"\n**错误做法**：\n```\nAct as the smartest person ever\nAct as a genius writer\nUse your maximum intelligence\n```\n**真相**：这些超高级形容词不会让输出更好。Mollick的Twitter投票测试证明：告诉AI是\"天才\"还是\"普通\"差别不大。\n#### 案例2：一次性指令期待完美\n**错误做法**：\n- 写一个复杂的单次prompt\n- 期待AI一次给出完美输出\n- 不满意就放弃\n**正确做法**：\n```\n1. 先让AI给出初步版本\n2. 要求修改：\"Make it more [具体要求]\"\n3. 继续迭代：\"Now focus on [具体方面]\"\n4. 最终调整：\"Ensure [具体标准]\"\n```\n#### 案例3：不定义角色\n**错误做法**：\n```\nGenerate 10 business ideas\n```\n**结果**：获得平庸、通用的想法\n**正确做法**：\n```\n你是创业专家和问题解决者。\n生成商业想法时，你提供新颖、有创意的想法。\n告诉我10个超级英雄可能如何制作浓缩咖啡的方法，\n以及如何推测性地在新产品中获得相同效果。\n```"
+      },
+      {
+        "level": 2,
+        "title": "📋 个人工作场景",
+        "content": "| 场景 | AI角色 | 推荐Prompt模式 |\n|-----|-------|--------------|\n| **邮件撰写** | 同事 | \"帮我起草邮件，风格是[具体风格]，重点强调[具体内容]\" |\n| **方案制作** | 同事+批评者 | 先让AI生成初稿，再创建批评者角色审核 |\n| **学习新技能** | 导师 | \"Think this through step by step, teach me [技能]\" |\n| **创意 brainstorming** | 创意伙伴 | \"Be creative, generate 20 ideas for [主题]，make them different\" |\n| **写作润色** | 教练 | \"这是我写的[内容]，给出具体改进建议\" |\n| **决策分析** | 分析师 | \"分析[问题]，列出pros and cons，给出推荐并解释原因\" |"
+      },
+      {
+        "level": 2,
+        "title": "📋 产品经理专属应用",
+        "content": "#### 1. 需求文档撰写\n```\n你是资深产品经理，擅长撰写清晰的需求文档。\n帮我为[功能名称]写PRD，包括：\n1. 功能概述\n2. 用户场景\n3. 功能描述\n4. 验收标准\n5. 风险评估\n风格：简洁、专业、可执行\n```\n#### 2. 用户访谈模拟\n```\n你是[目标用户画像]。\n我将向你进行用户访谈，请真实回答问题。\n你的背景：[具体背景]\n你的痛点：[具体痛点]\n你目前使用的解决方案：[具体方案]\n```\n#### 3. 竞品分析\n```\n你是市场分析专家。\n分析[竞品名称]，从以下维度：\n1. 产品定位\n2. 核心功能\n3. 用户痛点\n4. 商业模式\n5. 我们的差异化机会\n请给出详细分析，并指出我们可能的切入点。\n```\n#### 4. 产品命名\n```\n你是品牌命名专家。\n为[产品描述]生成20个产品名称。\n要求：\n- 简短易记（不超过3个字）\n- 传达核心价值\n- 各不相同\n- 有创意和辨识度\n```"
+      },
+      {
+        "level": 2,
+        "title": "📋 团队协作应用",
+        "content": "#### 创建AI评审团\n```\n场景：重要决策需要多视角评审\n角色1（乐观派）：\"你是乐观主义者，找出这个方案的潜在机会和积极因素\"\n角色2（悲观派）：\"你是风险意识强的人，指出潜在问题和风险\"\n角色3（中立分析师）：\"你是数据分析师，要求具体证据支撑每个观点\"\n流程：\n1. 分别获得三个角色的输出\n2. 人工整合三种视角\n3. 做出最终决策\n```"
+      },
+      {
+        "level": 2,
+        "title": "🎯 核心金句",
+        "content": "> **\"There are no secret prompts.\"**\n> 没有神奇的提示词。\n> **\"The best way to use AI systems is not to craft the perfect prompt, but rather to use it interactively.\"**\n> 使用AI的最佳方式不是追求完美提示词，而是迭代互动。\n> **\"Co-intelligence is about humans and AI working together, each leveraging their strengths to achieve better outcomes.\"**\n> 协同智能的核心是人类与AI共同工作，各自发挥优势以获得更好结果。\n> **\"Always Invite AI to the Table.\"**\n> 总是邀请AI上桌——每个任务都尝试用AI。\n> **\"Assume This Is the Worst AI You Will Ever Use.\"**\n> 假设这是你用过的最差的AI——未来版本会更强。\n> **\"Nothing beats practice.\"**\n> 没有什么比练习更重要——用AI越多，越擅长。"
+      },
+      {
+        "level": 2,
+        "title": "💡 洞察金句",
+        "content": "> **\"AI is great at summarizing and simplifying, so I wanted to get some advice on where I could do the same.\"**\n> AI擅长总结和简化，让它帮我们找出可以简化的地方。\n> **\"We need to push the AI from an average answer to a high-variance, weird one.\"**\n> 我们需要把AI从平均值推向高方差、独特的答案。\n> **\"The secret is practice.\"**\n> 秘诀就是练习——不断使用AI，形成自己的风格。\n> **\"You can use AI as your partner and your teacher.\"**\n> 把AI当作伙伴和老师——它会帮助你学习和改进。"
+      },
+      {
+        "level": 1,
+        "title": "七、更新日志",
+        "content": "| 更新时间 | 更新内容 | 备注 |\n|---------|---------|------|\n| 2026-04-22 | 初版创建 | 基于《Co-Intelligence》及Mollick博客文章整理 |\n| - | 待补充：行业应用案例 | 可根据实际使用积累案例 |\n| - | 待补充：中国本土AI工具适配 | ChatGLM、DeepSeek等适配方法 |"
+      },
+      {
+        "level": 2,
+        "title": "相关书籍（智慧库已有）",
+        "content": "- 《曾鸣-智能商业方法论》- AI时代的商业模式\n- 《AI产品经理方法论-四阶十二步法》- AI产品设计\n- 《卡尼曼-思考快与慢方法论》- 人类决策心理学\n- 《成甲-好好学习方法论》- 高效学习方法"
+      },
+      {
+        "level": 2,
+        "title": "Mollick资源",
+        "content": "- **博客**：[One Useful Thing](https://www.oneusefulthing.org)\n- **论文**：《Instructors as Innovators: A future-focused approach to new AI learning opportunities》\n- **播客/访谈**：多处AI主题访谈"
+      },
+      {
+        "level": 1,
+        "title": "九、方法论总结图",
+        "content": "```\n                    协同智能方法论\n        ┌─────────────────────────────────┐\n        │         四原则核心框架           │\n        ├─────────────────────────────────┤\n        │ ① 总是邀请AI上桌                 │\n        │    → 高频使用建立认知             │\n        │ ② 保持人类在循环                 │\n        │    → 审核验证+价值判断           │\n        │ ③ 把AI当人对待                   │\n        │    → 定义角色+提供约束           │\n        │ ④ 假设这是最差AI                 │\n        │    → 建立习惯迎接进化            │\n        └─────────────────────────────────┘\n        ┌─────────────────────────────────┐\n        │        AI角色矩阵                │\n        ├─────────────────────────────────┤\n        │ 同事 → 执行协作 → 角色定义        │\n        │ 导师 → 系统教学 → 分步推理        │\n        │ 教练 → 持续指导 → 反馈改进        │\n        │ 创意 → 激发灵感 → 高方差输出      │\n        │ 批评者 → 审核把关 → 问题指出      │\n        └─────────────────────────────────┘\n        ┌─────────────────────────────────┐\n        │       Prompt工程要点             │\n        ├─────────────────────────────────┤\n        │ ❌ 没有神奇提示词                 │\n        │ ✅ 上下文 > 技巧                  │\n        │ ✅ 迭代对话 > 单次指令            │\n        │ ✅ 分步思考 > 一气呵成            │\n        │ ✅ 角色设定 → 风格控制            │\n        └─────────────────────────────────┘\n```\n> **方法论核心**：协同智能不是关于AI取代人类，而是关于人类与AI如何各自发挥优势，通过迭代互动获得超越单独工作的成果。秘诀是练习——使用AI越多，越能建立自己的协作风格。\n*文档生成时间：2026-04-22 UTC 07:06*\n*来源：Ethan Mollick《Co-Intelligence: Living and Working with AI》及相关博客文章*"
+      }
+    ],
+    "updates": [
+      {
+        "date": "2026-05-10",
+        "note": "从智慧库导入"
+      }
+    ]
+  }
+}

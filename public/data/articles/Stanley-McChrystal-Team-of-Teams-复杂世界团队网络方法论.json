@@ -1,0 +1,65 @@
+{
+  "id": "Stanley-McChrystal-Team-of-Teams-复杂世界团队网络方法论",
+  "category": "项目管理",
+  "title": "Stanley McChrystal 等《Team of Teams》复杂世界团队网络方法论",
+  "keywords": [
+    "Stanley McChrystal",
+    "Team of Teams",
+    "Shared Consciousness",
+    "Empowered Execution",
+    "Common Purpose",
+    "Trust",
+    "复杂世界",
+    "组织协作"
+  ],
+  "summary": "**核心主题**：在高复杂、高变化环境里，传统层级组织往往因信息迟滞和集中决策而失速；要想获得类似小团队的敏捷性，大组织必须建立共享意识、共同目标、信任与授权执行，形成 team of teams 式的网络化协作。",
+  "importance": 5,
+  "learned_at": "2026-05-17",
+  "source": "Penguin Random House《Team of Teams》官方书页；McChrystal Group Team of Teams 官方框架介绍（Trust / Common Purpose / Shared Consciousness / Empowered Execution）。",
+  "content": {
+    "core_formula": "组织适应力 = 共享意识 x 共同目标 x 信任密度 x 授权执行速度\n复杂环境绩效 = 信息透明度 x 决策下放程度 x 跨团队连接质量\n层级失速 = 环境复杂度 x 信息滞后 x 决策集中",
+    "layers": [
+      {
+        "level": 1,
+        "title": "概念定义",
+        "content": "Penguin Random House 对《Team of Teams》的公开简介把它概括成：帮助领导者让团队在变化中变得 **more adaptable, agile, and unified**。McChrystal Group 官方框架进一步把它压缩为四个构件：**Trust、Common Purpose、Shared Consciousness、Empowered Execution**。\n\n| 概念 | 定义 | 不是什麽 | 方法论意义 |\n|------|------|----------|------------|\n| **Team of Teams** | 让大组织像一张高连接网络，而不只是层级命令链 | 不是取消组织结构 | 目标是同时获得规模与敏捷性 |\n| **Shared Consciousness** | 让各团队尽可能共享情境、信息和上下文 | 大家都抄送邮件 | 核心是共同态势感知 |\n| **Empowered Execution** | 把执行决策权下放给最接近问题的人 | 无边界放权 | 必须建立在方向清晰与高信任上 |\n| **Common Purpose** | 各团队理解并认同更高层级的共同任务 | 口号化愿景 | 没有共同目标，授权只会变成分裂 |\n| **Trust** | 跨团队之间相信彼此会为共同目标负责 | 私交好 | 信任是共享信息和快速执行的基础 |\n\n**一句话总结**：\n> 《Team of Teams》不是教组织更快地下命令，而是教组织如何让信息更快流动、判断更靠近现场、行动更像网络而非管道。"
+      },
+      {
+        "level": 1,
+        "title": "子维度拆解",
+        "content": "### 维度一：共享意识\n复杂系统里，最大的风险常常不是没人努力，而是每个小组只看见局部。共享意识要求让更多人理解整体态势。\n\n### 维度二：共同目标\n如果团队只围绕局部 KPI 行动，即便每个人都高效，系统也可能彼此掣肘。\n\n### 维度三：信任网络\n没有信任，信息会被囤积；没有信任，授权会被怀疑；没有信任，协作速度就上不来。\n\n### 维度四：授权执行\n复杂环境变化太快，所有决定都回到中心会造成严重延迟，因此必须让前线在共享理解下快速行动。\n\n### 维度五：连接机制\nTeam of Teams 不是抽象哲学，而是通过固定节奏、跨团队接口、透明信息流和联络角色把网络连起来。\n\n| 维度 | 高质量表现 | 低质量表现 | 管理动作 |\n|------|------------|------------|----------|\n| 共享意识 | 多团队理解同一局势 | 各自只见局部 | 建共同态势更新机制 |\n| 共同目标 | 决策围绕总任务 | 各自优化本地目标 | 强化 mission 统一 |\n| 信任网络 | 信息愿意开放共享 | 知识囤积、互相防御 | 建跨团队长期互动 |\n| 授权执行 | 前线快速判断响应 | 所有事都等批示 | 明确决策边界与意图 |\n| 连接机制 | 节奏清晰、接口顺畅 | 只靠临时拉会 | 建例行连接点与联络角色 |"
+      },
+      {
+        "level": 1,
+        "title": "核心模型：从层级效率到网络适应力",
+        "content": "```\n传统层级逻辑：\n中心收集信息 -> 中心判断 -> 中心下令 -> 末端执行\n\nTeam of Teams 逻辑：\n广泛共享情境 -> 围绕共同目标对齐 -> 前线在授权边界内执行 -> 结果再快速回流\n```\n\nMcChrystal Group 的 Team of Teams 框架强调：组织要通过更高的 speed, inclusion, and transparency 来建立 teaming-based model。核心不是把层级抹掉，而是让网络连接弥补层级在复杂环境中的迟缓。"
+      },
+      {
+        "level": 1,
+        "title": "正反案例",
+        "content": "### 正面案例A：多团队应急响应\n面对快速变化事件，前线、后勤、技术、沟通等团队通过共享态势和共同目标协同，而不是层层等待批示。\n\n### 正面案例B：大型产品组织处理跨域故障\n基础设施、应用、客服、销售支持若共享同一 incident 情境并在边界内快速处置，系统恢复速度通常快于集中审批模式。\n\n### 正面案例C：跨国业务团队统一任务意图\n当地团队在明确共同目标后，能结合本地条件自主调整执行方式，既保留一致性，也保留灵活性。\n\n### 反面案例A：信息全回中心\n所有信号都先上报、再解释、再批示，导致前线行动窗口已经过去。\n\n### 反面案例B：授权但没有共享意识\n各团队被要求“自主”，但缺少共同情境和目标，结果变成方向分裂。\n\n### 反面案例C：共享会议很多，但没有执行权下放\n大家都知道发生了什么，却仍必须逐级批准，组织只获得了更多会议，没有获得更快反应。"
+      },
+      {
+        "level": 1,
+        "title": "应用清单：个人 / 团队 / 组织",
+        "content": "### 个人层\n- [ ] 先理解更高层任务意图，而不是只守自己的局部职责。\n- [ ] 主动共享对整体态势有价值的信息。\n- [ ] 在授权边界内快速行动，不把所有判断都上推。\n\n### 团队层\n- [ ] 建立与邻近团队的固定连接点和接口人。\n- [ ] 例会同时同步“发生了什么、意味着什么、谁可立即行动”。\n- [ ] 让前线知道哪些决策可以自行处理、哪些必须升级。\n\n### 组织层\n- [ ] 用共同任务、共享态势和透明节奏替代纯命令链治理。\n- [ ] 设计跨团队信任建设与信息共享机制。\n- [ ] 把授权执行写进角色职责、流程和演练，而不只停留在口号。\n- [ ] 对复杂高变环境优先优化连接速度，而不是只优化汇报完美度。\n\n### Team of Teams 落地口诀\n```\n先共享情境，\n再统一意图；\n先建立信任，\n再下放执行；\n先优化连接，\n再追求规模速度。\n```"
+      },
+      {
+        "level": 1,
+        "title": "原书金句（基于官方书页与框架介绍可支持的关键表述）",
+        "content": "1. **Team of Teams helps leaders make organizations more adaptable, agile, and unified in the midst of change.**\n2. **Shared consciousness and empowered execution are the two central operating principles.**\n3. **Organizations can create a hybrid, teaming-based model if they communicate with greater speed, inclusion, and transparency.**\n4. **Trust and common purpose are prerequisites for empowered execution.**\n5. **Complex environments punish slow, centralized decision cycles.**\n\n**中文提炼**：\n- 复杂世界里，组织最大的敌人常常不是能力不足，而是反应太慢。\n- 共享意识解决“看不见整体”，授权执行解决“来不及行动”。\n- 没有信任与共同目标，放权不会带来敏捷，只会带来混乱。"
+      },
+      {
+        "level": 1,
+        "title": "更新日志",
+        "content": "| 日期 | 版本 | 更新内容 |\n|------|------|----------|\n| 2026-05-17 | v1.0 | 新收录：基于 Penguin Random House 与 McChrystal Group 官方资料整理《Team of Teams》复杂世界团队网络方法论，覆盖核心概念、四大构件、正反案例、应用清单与关键引语。 |"
+      }
+    ],
+    "updates": [
+      {
+        "date": "2026-05-17",
+        "note": "首次收录：新增《Team of Teams》复杂世界团队网络方法论。"
+      }
+    ]
+  }
+}

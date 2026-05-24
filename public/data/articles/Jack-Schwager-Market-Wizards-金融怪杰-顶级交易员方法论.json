@@ -1,0 +1,216 @@
+{
+  "id": "Jack-Schwager-Market-Wizards-金融怪杰-顶级交易员方法论",
+  "category": "理财",
+  "title": "Market Wizards：金融怪杰 - 顶级交易员方法论",
+  "keywords": [
+    "Market",
+    "Wizards",
+    "金融怪杰",
+    "顶级交易员方法论"
+  ],
+  "summary": "**作者**：Jack D. Schwager",
+  "importance": 5,
+  "learned_at": "2026-05-10",
+  "source": "Market Wizards：金融怪杰",
+  "content": {
+    "core_formula": "单笔最大风险 = 总资金 × 风险比例（1-2%）\n\n总风险暴露 = Σ(单笔风险) ≤ 总资金 × 最大暴露比例（10-20%）\n\n期望收益 = 胜率 × 平均盈利 - (1-胜率) × 平均亏损",
+    "layers": [
+      {
+        "level": 2,
+        "title": "第一部分：期货与商品交易员",
+        "content": "| 章节 | 人物 | 交易风格 | 核心贡献 |\n|------|------|----------|----------|\n| 1 | Michael Marcus | 趋势跟随 + 基本面 | 复利增长典范，10年250倍回报 |\n| 2 | Bruce Kovner | 全球宏观 + 货币 | 风险控制大师，全球视野 |\n| 3 | Ed Seykota | 系统化趋势跟随 | 计算机交易先驱，心理洞见 |\n| 4 | Larry Hite | 系统化交易 | 风险管理公式创始人 |\n| 5 | Marty Schwartz | 技术分析 + 日内 | 从亏损到盈利的转型典范 |\n| 6 | Jim Rogers | 宏观 + 长周期 | 基本面驱动，逆向投资 |"
+      },
+      {
+        "level": 2,
+        "title": "第二部分：外汇与全球市场",
+        "content": "| 章节 | 人物 | 交易风格 | 核心贡献 |\n|------|------|----------|----------|\n| 7 | Bill Lipschutz | 外汇专注 | \"外汇之王\"，流动性洞察 |\n| 8 | Randy McKay | 外汇 + 新兴市场 | 早期外汇交易者，波动利用 |\n| 9 | Tom Baldwin | T-Bond期货 | 极端专注，大规模交易 |"
+      },
+      {
+        "level": 2,
+        "title": "第三部分：股票与多元化",
+        "content": "| 章节 | 人物 | 交易风格 | 核心贡献 |\n|------|------|----------|----------|\n| 10 | Paul Tudor Jones | 宏观 + 技术 | 逆向操作，市场转折捕捉 |\n| 11 | Stanley Druckenmiller | 宏观 + 股票 | George Soros搭档，多资产协同 |\n| 12 | William Eckhardt | 量化 + 数学 | Turtle Trainer系统设计者 |"
+      },
+      {
+        "level": 2,
+        "title": "第四部分：方法论总结",
+        "content": "| 章节 | 内容 |\n|------|------|\n| 13 | 交易共性提炼 |\n| 14 | 心理学洞见整合 |\n| 15 | 不同风格对比分析 |"
+      },
+      {
+        "level": 2,
+        "title": "公式1：风险控制公式（Larry Hite）",
+        "content": "```\n单笔最大风险 = 总资金 × 风险比例（1-2%）\n总风险暴露 = Σ(单笔风险) ≤ 总资金 × 最大暴露比例（10-20%）\n期望收益 = 胜率 × 平均盈利 - (1-胜率) × 平均亏损\n```\n**解读**：Larry Hite提出\"不破产原则\"——只要不破产，就有翻身机会。风险控制是生存的前提。"
+      },
+      {
+        "level": 2,
+        "title": "公式2：复利增长公式（Michael Marcus）",
+        "content": "```\n复利终值 = 初始本金 × (1 + 年化收益率)^年限\n关键约束：\n- 年化收益率稳定性 > 单年高收益\n- 最大回撤控制 < 20%\n- 复利周期越长，指数效应越强\n```\n**案例**：Michael Marcus 10年实现250倍回报，年化约60%，但关键是回撤控制在15%以内。"
+      },
+      {
+        "level": 2,
+        "title": "公式3：系统化交易效果公式（Ed Seykota）",
+        "content": "```\n系统盈利能力 = (期望值 × 交易次数) - 执行偏差成本\n其中：\n- 期望值 = 系统设计质量\n- 交易次数 = 市场识别能力\n- 执行偏差成本 = 情绪干扰 + 犹豫延迟 + 过度调整\n```\n**洞见**：系统本身决定了理论收益上限，但执行偏差侵蚀实际收益。"
+      },
+      {
+        "level": 2,
+        "title": "公式4：心理素质评分（Schwager总结）",
+        "content": "```\n心理得分 = 情绪稳定度 × 自我认知深度 × 学习能力 × 执行纪律\n权重分配：\n- 情绪稳定度：30%\n- 自我认知深度：25%\n- 学习能力：20%\n- 执行纪律：25%\n```"
+      },
+      {
+        "level": 2,
+        "title": "3.1 风险管理方法论",
+        "content": "#### 层级结构\n```\n第一层：单笔风险\n├── 仓位大小控制（1-2%原则）\n├── 止损点位设计\n└── 入场时机选择\n第二层：组合风险\n├── 相关性控制\n├── 分散化配置\n└── 最大总暴露限制（10-20%）\n第三层：系统性风险\n├── 黑天鹅预案\n├── 流动性应急\n└── 心理崩溃预案\n```\n#### 关键原则\n| 原则 | 提出者 | 内容 |\n|------|--------|------|\n| 生存优先 | Larry Hite | 不破产原则，生存比盈利重要 |\n| 预设止损 | Ed Seykota | 入场前设好止损，不事后修改 |\n| 风险收益比 | Bruce Kovner | 每笔交易风险收益比≥3:1 |\n| 隔夜风险 | Marty Schwartz | 隔夜持仓风险加倍评估 |\n| 爆仓距离 | Paul Tudor Jones | 爆仓距离=最大可承受亏损×2 |"
+      },
+      {
+        "level": 2,
+        "title": "3.2 交易心理学方法论",
+        "content": "#### 心理陷阱分类\n| 陷阱类型 | 表现 | 解决方案 |\n|----------|------|----------|\n| 过度自信 | 连续盈利后放大仓位 | 强制仓位上限，盈利后减仓 |\n| 恐惧亏损 | 不敢入场或过早止损 | 系统化执行，预设规则 |\n| 确认偏见 | 只看支持自己观点的信息 | 主动寻找反证，逆向检验 |\n| 错失焦虑 | 不想错过任何机会 | 定义机会标准，过滤噪音 |\n| 报复交易 | 亏损后急于挽回 | 强制暂停，冷静期规则 |\n| 锚定效应 | 被历史价格锚定 | 关注当前市场状态，忽略历史 |\n#### 心理训练方法（Ed Seykota洞见）\n```\n心理训练四步法：\nStep 1：自我观察\n- 记录每次交易的情绪状态\n- 识别情绪触发点\n- 建立情绪-行为对应表\nStep 2：情绪命名\n- 给情绪贴标签（恐惧/贪婪/焦虑/兴奋）\n- 明确情绪来源（亏损/盈利/等待/仓位）\nStep 3：行为干预\n- 预设干预规则（情绪触发→强制行为）\n- 例如：恐惧触发→检查止损是否到位\n- 例如：兴奋触发→减仓50%\nStep 4：长期内化\n- 情绪管理成为习惯\n- 自动化反应替代冲动反应\n```"
+      },
+      {
+        "level": 2,
+        "title": "3.3 交易风格分类",
+        "content": "| 风格类型 | 代表人物 | 核心方法 | 适用条件 |\n|----------|----------|----------|----------|\n| 趋势跟随 | Ed Seykota, Michael Marcus | 顺势而为，突破入场，长期持有 | 有明确趋势的市场 |\n| 宏观交易 | Bruce Kovner, Paul Tudor Jones | 全球视野，基本面驱动，事件催化 | 宏观变量明确的市场 |\n| 技术分析 | Marty Schwartz | 图表分析，技术指标，日内交易 | 高流动性市场 |\n| 系统化 | Larry Hite, William Eckhardt | 量化模型，自动化执行 | 可量化的市场模式 |\n| 逆向投资 | Jim Rogers | 逆向思维，长期持有，基本面验证 | 极端行情转折点 |\n| 价差套利 | 多位 | 相关资产价差，均值回归 | 相关性稳定的市场 |"
+      },
+      {
+        "level": 2,
+        "title": "3.4 学习方法论",
+        "content": "#### 从亏损到盈利的转型路径（Marty Schwartz案例）\n```\n转型五阶段：\n阶段1：亏损期\n- 问题：方法错误 + 情绪干扰\n- 特征：连续亏损，信心崩溃\n- 对策：暂停交易，复盘分析\n阶段2：觉察期\n- 问题识别：找到核心错误\n- 方法：详细记录每笔交易\n- 结果：发现系统性问题\n阶段3：调整期\n- 方法调整：修正交易系统\n- 心理调整：建立情绪管理\n- 验证：小仓位试运行\n阶段4：稳定期\n- 方法稳定：系统验证有效\n- 心理稳定：情绪可控\n- 规则：严格执行，不偏离\n阶段5：优化期\n- 持续优化：边际改进\n- 规范化：建立手册\n- 扩展：识别新机会\n```\n#### 失败案例学习\n| 失败原因 | 具体表现 | 教训 |\n|----------|----------|------|\n| 过度杠杆 | 仓位过大，小幅波动爆仓 | 生存优先，杠杆克制 |\n| 方法不一致 | 多种方法混用，无法评估 | 坚持单一方法，稳定评估 |\n| 情绪干扰 | 亏损放大，盈利减仓 | 逆向心理，预设规则 |\n| 无止损观念 | 等待反弹，越亏越多 | 预设止损，严格执行 |\n| 过度交易 | 交易过多，质量下降 | 质量优于数量，过滤机会 |"
+      },
+      {
+        "level": 2,
+        "title": "正面案例1：Michael Marcus的复利奇迹",
+        "content": "**背景**：从1000美元起步，10年实现250倍回报\n**方法**：\n- 趋势跟随 + 基本面确认\n- 严格风险控制（单笔≤1%）\n- 复利思维：稳定增长 > 激进爆发\n- 趋势识别：等待确认，不预判\n**关键决策**：\n```\n决策1：早期专注于商品期货（流动性好，趋势明确）\n决策2：发现趋势后，耐心持有，不频繁操作\n决策3：回撤时减仓而非加仓（与直觉相反）\n决策4：盈利时适度加仓，但控制在安全范围\n```\n**结果**：年化约60%，最大回撤15%，实现复利奇迹"
+      },
+      {
+        "level": 2,
+        "title": "正面案例2：Ed Seykota的系统化革命",
+        "content": "**背景**：计算机交易先驱，系统化趋势跟随\n**方法**：\n- 开发自动化交易系统\n- 严格执行，不受情绪干扰\n- 长期持有趋势，不追逐短期波动\n- 持续优化系统，但不频繁修改\n**心理洞见**：\n```\n\"The elements of good trading are: \n(1) cutting losses, \n(2) cutting losses, and \n(3) cutting losses. \nIf you can follow these three rules, you may have a chance.\"\n\"Everybody gets what they want from the market. \nSome people like to lose, so they win by losing.\"\n```\n**系统哲学**：\n- 系统比人稳定\n- 执行比系统重要\n- 简单比复杂有效"
+      },
+      {
+        "level": 2,
+        "title": "正面案例3：Paul Tudor Jones的逆向转折",
+        "content": "**背景**：1987年股市崩盘前预判并做空\n**方法**：\n- 宏观分析：识别市场脆弱性\n- 技术确认：等待技术信号\n- 逆向操作：与主流观点相反\n- 快速反应：信号出现立即行动\n**关键洞察**：\n```\n\"I'm always concerned that I might be wrong, \nso I test my positions constantly.\"\n```\n**风控原则**：\n- 每天假设自己错了，持续检验\n- 逆风向时加倍谨慎\n- 确认后敢于大规模行动"
+      },
+      {
+        "level": 2,
+        "title": "反面案例1：过度杠杆的教训",
+        "content": "**背景**：多位交易员因过度杠杆失败\n**问题**：\n- 仓位超出风险承受能力\n- 小幅波动导致大幅亏损\n- 心理崩溃，无法理性决策\n**教训**：\n```\n教训1：杠杆不是放大收益的工具，是放大风险的工具\n教训2：市场波动无法预测，必须留足安全边际\n教训3：爆仓是永久性损失，无法恢复\n教训4：生存比盈利更重要\n```"
+      },
+      {
+        "level": 2,
+        "title": "反面案例2：情绪主导的交易",
+        "content": "**背景**：情绪干扰导致系统性亏损\n**问题**：\n- 亏损后报复交易，放大仓位\n- 盈利后过度自信，降低标准\n- 等待期间焦虑，频繁调整\n- 确认后犹豫不决，错过机会\n**教训**：\n```\n教训1：情绪是交易的最大敌人\n教训2：系统化执行是情绪管理的最佳工具\n教训3：预设规则比现场决策更可靠\n教训4：暂停机制是情绪崩溃的最后一道防线\n```"
+      },
+      {
+        "level": 2,
+        "title": "反面案例3：方法不一致的失败",
+        "content": "**背景**：频繁更换方法，无法建立稳定体系\n**问题**：\n- 亏损后立即换方法\n- 多种方法混用，无法评估\n- 追逐热点，缺乏深度\n- 无长期验证，频繁放弃\n**教训**：\n```\n教训1：单一方法需要足够验证时间（至少100笔）\n教训2：方法切换成本高，需要重新学习\n教训3：深度优于广度，专业化胜过多元化\n教训4：坚持一种方法，找到它的适用边界\n```"
+      },
+      {
+        "level": 2,
+        "title": "5.1 交易系统设计",
+        "content": "```\n系统设计三步法：\nStep 1：定义入场条件\n├── 趋势确认方法（技术指标/基本面）\n├── 入场信号标准（具体可执行）\n└── 仓位计算公式（基于风险预算）\nStep 2：定义出场条件\n├── 止损触发规则（价位/时间/信号）\n├── 止盈触发规则（目标价位/趋势反转）\n└── 持仓时间限制（最大持仓周期）\nStep 3：定义执行纪律\n├── 入场执行规则（立即/等待确认）\n├── 出场执行规则（触及立即执行）\n└── 情绪触发规则（强制暂停机制）\n```"
+      },
+      {
+        "level": 2,
+        "title": "5.2 风险管理框架",
+        "content": "```\n风险管理五层防护：\nLayer 1：单笔风险控制\n├── 最大仓位 = 总资金 × 1-2%\n├── 止损距离 = 入场价 × 允许波动范围\n└── 单笔最大亏损 = 仓位 × 止损距离\nLayer 2：组合风险控制\n├── 总暴露 ≤ 总资金 × 10-20%\n├── 相关性控制（避免同向风险叠加）\n└── 分散化配置（多品种/多市场）\nLayer 3：日内风险控制\n├── 日内最大亏损限额\n├── 连续亏损触发暂停\n└── 异常波动减仓规则\nLayer 4：隔夜风险控制\n├── 隔夜仓位上限\n├── 隔夜风险加倍评估\n└── 重大事件前清仓规则\nLayer 5：系统性风险控制\n├── 黑天鹅预案（极端行情应对）\n├── 流动性应急（无法平仓预案）\n└── 心理崩溃预案（强制休假规则）\n```"
+      },
+      {
+        "level": 2,
+        "title": "5.3 心理管理工具",
+        "content": "```\n情绪管理三工具：\n工具1：交易日志\n├── 每笔交易记录（理由/结果/情绪）\n├── 每日复盘分析（成功/失败模式）\n└── 周期性总结（月度/季度）\n工具2：情绪触发表\n├── 情绪类型 → 触发场景 → 强制行为\n├── 例如：恐惧 → 连续亏损 → 检查止损是否到位\n├── 例如：兴奋 → 连续盈利 → 减仓50%\n└── 例如：焦虑 → 等待确认 → 写下预期，不操作\n工具3：强制暂停机制\n├── 单日亏损上限触发暂停（例如-2%）\n├── 连续亏损次数触发暂停（例如3次）\n├── 异常情绪触发暂停（例如无法冷静）\n└── 暂停期间禁止交易，强制复盘\n```"
+      },
+      {
+        "level": 2,
+        "title": "5.4 学习路径设计",
+        "content": "```\n交易学习四阶段：\n阶段1：理论学习（1-3个月）\n├── 市场基础知识\n├── 交易方法分类\n├── 风险管理原理\n└── 心理学基础\n阶段2：模拟练习（3-6个月）\n├── 系统设计实践\n├── 模拟交易验证\n├── 复盘分析方法\n└── 心理观察训练\n阶段3：实盘起步（6-12个月）\n├── 小仓位实盘（≤总资金1%）\n├── 单一方法验证\n├── 严格执行纪律\n└── 详细记录复盘\n阶段4：稳定优化（12个月以上）\n├── 方法稳定运行\n├── 心理状态稳定\n├── 边际改进\n└── 规范化手册\n```"
+      },
+      {
+        "level": 2,
+        "title": "5.5 决策框架",
+        "content": "```\n交易决策四问法：\nQuestion 1：这是什么机会？（机会分类）\n├── 趋势机会 → 趋势跟随策略\n├── 反转机会 → 逆向操作策略\n├── 价差机会 → 套利策略\n└── 无机会 → 不交易\nQuestion 2：风险收益比如何？（风险评估）\n├── 风险收益比≥3:1 → 可交易\n├── 风险收益比<3:1 → 暂停\n├── 无法评估 → 不交易\nQuestion 3：我能承受多大亏损？（仓位计算）\n├── 最大亏损 = 总资金 × 1-2%\n├── 止损距离确定\n└── 仓位 = 最大亏损 / 止损距离\nQuestion 4：执行计划是什么？（执行规则）\n├── 入场时机 → 信号确认后立即执行\n├── 止损位置 → 预设价位，触及立即执行\n├── 止盈策略 → 目标价位或趋势反转信号\n└── 情绪预案 → 触发强制行为\n```"
+      },
+      {
+        "level": 2,
+        "title": "关于风险",
+        "content": "> \"The elements of good trading are: cutting losses, cutting losses, and cutting losses. If you can follow these three rules, you may have a chance.\"  \n> **— Ed Seykota**\n> \"Risk control is the most important thing in trading.\"  \n> **— Bruce Kovner**\n> \"I'm more concerned about controlling the downside. Learn to take the losses. The rest will take care of itself.\"  \n> **— Paul Tudor Jones**"
+      },
+      {
+        "level": 2,
+        "title": "关于心理",
+        "content": "> \"Everybody gets what they want from the market. Some people like to lose, so they win by losing.\"  \n> **— Ed Seykota**\n> \"The most important thing is to control your emotions. If you can't control your emotions, you can't trade.\"  \n> **— Marty Schwartz**\n> \"I learned that I could handle losing. I learned that I could handle the emotional pain of losing. Once I learned that, trading became much easier.\"  \n> **— Marty Schwartz**"
+      },
+      {
+        "level": 2,
+        "title": "关于方法",
+        "content": "> \"You don't need to be right 60% of the time to make money. You just need to cut your losses and let your winners run.\"  \n> **— Larry Hite**\n> \"The key to trading is not being right all the time, but being right enough of the time and cutting losses quickly when you're wrong.\"  \n> **— Michael Marcus**\n> \"I don't predict. I react.\"  \n> **— Ed Seykota**"
+      },
+      {
+        "level": 2,
+        "title": "关于学习",
+        "content": "> \"I learned more from my losses than from my wins.\"  \n> **— Marty Schwartz**\n> \"The best way to learn is to lose. Losing teaches you what doesn't work.\"  \n> **— Jim Rogers**\n> \"If you're not making mistakes, you're not learning.\"  \n> **— Paul Tudor Jones**"
+      },
+      {
+        "level": 2,
+        "title": "关于系统化",
+        "content": "> \"Systems don't need to be complex. They need to be followed.\"  \n> **— Larry Hite**\n> \"A trading system is a set of rules that defines your behavior in all possible market situations.\"  \n> **— Ed Seykota**\n> \"The simpler the system, the more likely it will work.\"  \n> **— William Eckhardt**"
+      },
+      {
+        "level": 2,
+        "title": "与《Thinking in Systems》的关系",
+        "content": "| 对应维度 | 系统思维视角 | Market Wizards视角 |\n|----------|--------------|-------------------|\n| 整体结构 | 交易系统是反馈回路 | 系统设计需考虑回路延迟 |\n| 杠杆点 | 止损是最小干预杠杆点 | 预设止损实现杠杆效应 |\n| 增强回路 | 复利增长是增强回路 | 正向增强需控制负向（亏损） |\n| 调节回路 | 风险控制是调节回路 | 限制仓位实现调节 |\n| 延迟 | 市场反馈有延迟 | 等待确认，不预判 |"
+      },
+      {
+        "level": 2,
+        "title": "与《Superforecasting》的关系",
+        "content": "| 对应维度 | 超级预测视角 | Market Wizards视角 |\n|----------|--------------|-------------------|\n| 概率思维 | 用概率表达预测 | 用仓位表达置信度 |\n| 更新机制 | 贝叶斯更新 | 根据新信息调整仓位 |\n| 多视角 | 蜻蜓眼视角 | 多维度确认信号 |\n| 粒度思维 | 精确概率估计 | 精确风险收益比计算 |\n| 持续训练 | 持续评估改进 | 复盘分析优化系统 |"
+      },
+      {
+        "level": 2,
+        "title": "与《Noise》的关系",
+        "content": "| 对应维度 | 噪声视角 | Market Wizards视角 |\n|----------|----------|-------------------|\n| 决策噪声 | 情绪波动是噪声来源 | 系统化减少情绪噪声 |\n| 水平噪声 | 不同交易员风格差异 | 找到适合自己的风格 |\n| 模式噪声 | 个人偏好干扰 | 自我认知，识别偏见 |\n| 减噪策略 | 决策卫生 | 预设规则，强制执行 |"
+      },
+      {
+        "level": 2,
+        "title": "与《Mindset》的关系",
+        "content": "| 对应维度 | 心态视角 | Market Wizards视角 |\n|----------|----------|-------------------|\n| 固定心态 | 成功是天生的 | 成功是学习的结果（Marty Schwartz案例） |\n| 成长心态 | 失败是学习机会 | 从亏损中学习是关键能力 |\n| 挑战应对 | 视挑战为成长机会 | 连续亏损后调整而非放弃 |\n| 反馈利用 | 反馈是改进依据 | 复盘分析，持续优化 |"
+      },
+      {
+        "level": 2,
+        "title": "适用场景",
+        "content": "| 场景 | 应用方式 |\n|------|----------|\n| 系统设计 | 建立完整交易系统，定义入场/出场/仓位规则 |\n| 风险管理 | 多层级风险控制，生存优先原则 |\n| 心理训练 | 情绪识别、触发机制、强制暂停 |\n| 学习规划 | 四阶段学习路径，从理论到稳定实盘 |\n| 复盘分析 | 详细记录，识别成功/失败模式 |"
+      },
+      {
+        "level": 2,
+        "title": "方法边界",
+        "content": "| 边界类型 | 具体限制 |\n|----------|----------|\n| 市场类型 | 更适用于流动性好、趋势性强的市场 |\n| 时间周期 | 中长期趋势方法，不适于高频交易 |\n| 方法深度 | 需要足够验证时间，不适用快速切换 |\n| 心理基础 | 需要一定心理承受能力，不适用极端敏感者 |\n| 资金规模 | 小资金需更高杠杆风险，大资金更稳定 |"
+      },
+      {
+        "level": 2,
+        "title": "九大共性（Schwager总结）",
+        "content": "| 共性 | 内容 | 关键词 |\n|------|------|--------|\n| 1. 风险控制 | 生存优先，风险收益比 | 生存 |\n| 2. 方法独立 | 各有方法，不互相模仿 | 独立 |\n| 3. 情绪管理 | 情绪可控，不影响决策 | 自控 |\n| 4. 学习能力 | 从亏损学习，持续改进 | 学习 |\n| 5. 系统化 | 有明确规则，不随意偏离 | 系统 |\n| 6. 专注 | 深度优于广度，专业化 | 专注 |\n| 7. 自我认知 | 知道自己优势劣势 |自知 |\n| 8. 适应性 | 方法适应市场变化 | 适应 |\n| 9. 长期视角 | 长期稳定优于短期爆发 | 长期 |"
+      },
+      {
+        "level": 2,
+        "title": "核心差异",
+        "content": "| 维度 | 差异表现 |\n|------|----------|\n| 时间偏好 | 日内 vs 长期持有 |\n| 方法类型 | 技术分析 vs 基本面 vs 系统化 |\n| 市场偏好 | 单一市场 vs 多市场 |\n| 仓位风格 | 集中 vs 分散 |\n| 逆向程度 | 顺势 vs 逆向 |\n**结论**：共性是成功基础，差异是个人适应。找到适合自己的方法是关键。"
+      },
+      {
+        "level": 1,
+        "title": "十、更新日志",
+        "content": "| 版本 | 日期 | 更新内容 |\n|------|------|----------|\n| v1.0 | 2026-05-04 | 初版创建，覆盖全书核心方法论 |"
+      },
+      {
+        "level": 1,
+        "title": "参考资源",
+        "content": "- 原书：Market Wizards: Interviews with Top Traders (Jack D. Schwager, 1989)\n- 续作：The New Market Wizards (1992), Stock Market Wizards (2001)\n- 相关：Superforecasting (Tetlock), Thinking in Systems (Meadows), Noise (Kahneman)"
+      }
+    ],
+    "updates": [
+      {
+        "date": "2026-05-10",
+        "note": "从智慧库导入"
+      }
+    ]
+  }
+}

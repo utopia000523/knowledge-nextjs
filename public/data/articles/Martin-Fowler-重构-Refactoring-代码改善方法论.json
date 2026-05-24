@@ -1,0 +1,150 @@
+{
+  "id": "Martin-Fowler-重构-Refactoring-代码改善方法论",
+  "category": "技术",
+  "title": "《重构：改善既有代码的设计》方法论",
+  "keywords": [
+    "重构",
+    "改善既有代码的设计",
+    "方法论"
+  ],
+  "summary": "**作者**：Martin Fowler（软件工程思想家、企业架构专家）",
+  "importance": 4,
+  "learned_at": "2026-05-10",
+  "source": "《重构：改善既有代码的设计》方法论",
+  "content": {
+    "core_formula": "重构收益 = (代码质量提升 × 开发效率增益 × 维护成本降低)\n重构成本 = (重构时间 + 测试时间 + 风险成本)\n\n决策：重构收益 > 重构成本 → 执行重构",
+    "layers": [
+      {
+        "level": 2,
+        "title": "第一部分：重构原理",
+        "content": "1. **重构的定义**：在不改变代码外在行为的前提下，改善其内部结构\n2. **为何重构**：改善设计、提高可读性、帮助找bug、加速开发\n3. **何时重构**：三次法则、添加功能时、修复bug时、代码审查时\n4. **重构的挑战**：数据库问题、接口修改、性能顾虑"
+      },
+      {
+        "level": 2,
+        "title": "第二部分：重构原则",
+        "content": "1. **小步前进**：每次只做一个小改动，测试后再做下一个\n2. **保持行为不变**：重构不改变功能，只改变结构\n3. **频繁测试**：每一步重构后都要运行测试\n4. **版本控制**：将重构与功能修改分开提交"
+      },
+      {
+        "level": 2,
+        "title": "第三部分：代码坏味道",
+        "content": "识别需要重构的信号：\n- 重复代码（Duplicated Code）\n- 过长函数（Long Method）\n- 过大类（Large Class）\n- 过长参数列表（Long Parameter List）\n- 发散式变化（Divergent Change）\n-  shotgun修改（Shotgun Surgery）\n- 特性依恋（Feature Envy）\n- 数据泥团（Data Clumps）\n- 基本类型偏执（Primitive Obsession）\n- switch语句（Switch Statements）\n- 平行继承体系（Parallel Inheritance Hierarchies）\n- 拒绝委托（Refused Bequest）\n- 注释过多（Comments）"
+      },
+      {
+        "level": 2,
+        "title": "第四部分：重构技术（66种）",
+        "content": "1. **组合方法**（Composing Methods）\n2. **组织数据**（Organizing Data）\n3. **简化条件表达式**（Simplifying Conditional Expressions）\n4. **简化方法调用**（Simplifying Method Calls）\n5. **处理概括关系**（Dealing with Generalization）"
+      },
+      {
+        "level": 2,
+        "title": "重构决策公式",
+        "content": "```\n重构收益 = (代码质量提升 × 开发效率增益 × 维护成本降低)\n重构成本 = (重构时间 + 测试时间 + 风险成本)\n决策：重构收益 > 重构成本 → 执行重构\n```"
+      },
+      {
+        "level": 2,
+        "title": "三次法则（Rule of Three）",
+        "content": "```\n第一次：直接写代码\n第二次：复制代码（允许）\n第三次：重构（消除重复）\n触发阈值：重复出现 ≥ 3 次 → 必须重构\n```"
+      },
+      {
+        "level": 2,
+        "title": "重构步骤公式",
+        "content": "```\n标准重构流程 = 识别坏味道 → 选择重构技术 → 小步实施 → 测试验证 → 提交\n每个步骤 = (代码修改 + 单元测试 + 验证行为不变)\n```"
+      },
+      {
+        "level": 2,
+        "title": "技术债务量化公式",
+        "content": "```\n技术债务 = (修复时间 × 复杂度系数) / 团队人数\n债务利息 = 每次修改额外耗时 × 修改频率\n决策阈值：债务利息 > 原始修复时间 → 立即重构\n```"
+      },
+      {
+        "level": 2,
+        "title": "维度1：代码坏味道识别体系",
+        "content": "| 坏味道类型 | 识别标准 | 严重程度 | 重构优先级 |\n|-----------|---------|---------|-----------|\n| 重复代码 | 相同逻辑出现2+次 | 高 | P0 |\n| 过长函数 | 超过20行 | 中 | P1 |\n| 过大类 | 超过50个方法 | 高 | P0 |\n| 参数过长 | 超过4个参数 | 中 | P1 |\n| 特性依恋 | 方法大量调用其他类 | 中 | P2 |\n| 数据泥团 | 多处出现相同数据组合 | 低 | P2 |"
+      },
+      {
+        "level": 2,
+        "title": "维度2：重构技术分类体系",
+        "content": "**A. 组合方法类（降低复杂度）**\n| 技术名称 | 适用场景 | 效果 |\n|---------|---------|------|\n| Extract Method | 逻辑片段可独立命名 | 提高可读性 |\n| Inline Method | 方法体比方法名更清晰 | 减少间接层 |\n| Extract Variable | 复杂表达式 | 提高可读性 |\n| Replace Temp with Query | 临时变量只用一次 | 提高灵活性 |\n| Split Temporary Variable | 变量承担多种职责 | 提高清晰度 |\n| Remove Assignments to Parameters | 对参数赋值 | 避免混淆 |\n**B. 组织数据类（改善数据结构）**\n| 技术名称 | 适用场景 | 效果 |\n|---------|---------|------|\n| Replace Magic Number with Symbolic Constant | 魔法数字 | 提高可读性 |\n| Change Value to Reference | 多个对象代表同一实体 | 减少重复 |\n| Change Reference to Value | 对象不可变且简单 | 简化设计 |\n| Replace Array with Object | 数组元素含义不同 | 提高可读性 |\n| Replace Data Value with Object | 数据需要额外行为 | 增强封装 |\n**C. 简化条件表达式类**\n| 技术名称 | 适用场景 | 效果 |\n|---------|---------|------|\n| Decompose Conditional | 复杂条件逻辑 | 提高可读性 |\n| Consolidate Conditional Expression | 多个条件得到相同结果 | 减少重复 |\n| Consolidate Duplicate Conditional Fragments | 条件分支重复代码 | 消除重复 |\n| Remove Control Flag | 控制标志变量 | 简化逻辑 |\n| Replace Nested Conditional with Guard Clauses | 深层嵌套条件 | 提高清晰度 |\n**D. 简化方法调用类**\n| 技术名称 | 适用场景 | 效果 |\n|---------|---------|------|\n| Rename Method | 方法名不清晰 | 提高可读性 |\n| Add Parameter | 方法需要额外信息 | 扩展功能 |\n| Remove Parameter | 参数不再使用 | 简化接口 |\n| Separate Query from Modifier | 方法既查又改 | 明确意图 |\n| Parameterize Method | 多个方法类似 | 消除重复 |\n| Introduce Parameter Object | 参数过多 | 简化接口 |\n**E. 处理概括关系类**\n| 技术名称 | 适用场景 | 效果 |\n|---------|---------|------|\n| Pull Up Field | 子类有相同字段 | 减少重复 |\n| Pull Up Method | 子类有相同方法 | 减少重复 |\n| Pull Up Constructor Body | 子类构造器相似 | 减少重复 |\n| Push Down Method | 父类方法只被部分子类使用 | 提高精确性 |\n| Extract Subclass | 类的部分特性只被部分实例使用 | 提高精确性 |\n| Extract Superclass | 两个类有相似特性 | 减少重复 |"
+      },
+      {
+        "level": 2,
+        "title": "维度3：重构时机判断矩阵",
+        "content": "| 触发场景 | 重构类型 | 时间窗口 | 风险等级 |\n|---------|---------|---------|---------|\n| 添加新功能 | 改善周边代码 | 功能开发前 | 低 |\n| 修复bug | 清理相关代码 | bug修复后 | 低 |\n| 代码审查 | 发现坏味道 | 审查后立即 | 中 |\n| 性能优化 | 重构后优化 | 先重构再优化 | 高 |\n| 技术债务清理 | 专项重构 | 预留专门时间 | 中 |"
+      },
+      {
+        "level": 2,
+        "title": "维度4：重构风险控制框架",
+        "content": "**风险类型与应对策略**\n| 风险类型 | 发生概率 | 应对策略 |\n|---------|---------|---------|\n| 破坏现有功能 | 中 | 频繁测试、小步前进 |\n| 性能下降 | 低 | 重构后再优化 |\n| 团队阻力 | 高 | 教育引导、小试点 |\n| 时间压力 | 高 | 预留重构时间、技术债务量化 |\n| 接口不兼容 | 中 | 逐步过渡、版本控制 |"
+      },
+      {
+        "level": 2,
+        "title": "正面案例：电商订单系统重构",
+        "content": "**背景**：订单处理类超过500行，包含计算、验证、通知等多种职责\n**重构过程**：\n1. **Extract Class**：分离 OrderCalculator、OrderValidator、OrderNotifier\n2. **Extract Method**：每个职责分解为独立方法\n3. **Replace Parameter with Method**：计算逻辑内聚到各自类中\n4. **Move Method**：相关方法移动到对应职责类\n**效果**：\n- 代码行数：500 → 150（主类）\n- 可测试性：单元测试覆盖率从30%提升到85%\n- 维护成本：新功能开发时间缩短40%"
+      },
+      {
+        "level": 2,
+        "title": "正面案例：条件表达式简化",
+        "content": "**原始代码**：\n```java\nif (customer.getAge() > 18 && customer.hasLicense() && !customer.hasAccident()) {\n    // 复杂逻辑\n}\n```\n**重构后**：\n```java\nif (canRentCar(customer)) {\n    // 复杂逻辑\n}\nprivate boolean canRentCar(Customer customer) {\n    return customer.getAge() > 18 \n        && customer.hasLicense() \n        && !customer.hasAccident();\n}\n```\n**效果**：意图清晰、可复用、易于测试"
+      },
+      {
+        "level": 2,
+        "title": "反面案例：过度重构",
+        "content": "**问题**：\n- 10行代码提取5个方法\n- 每个变量都提取为独立方法\n- 简单逻辑过度抽象\n**后果**：\n- 代码跳转层级过深\n- 理解成本增加\n- 调试困难\n**教训**：重构要适度，复杂度与抽象度平衡"
+      },
+      {
+        "level": 2,
+        "title": "反面案例：无测试重构",
+        "content": "**问题**：\n- 没有单元测试直接重构\n- 大范围修改后才发现问题\n- 无法验证行为不变\n**后果**：\n- 引入新bug\n- 重构信心不足\n- 回滚困难\n**教训**：测试是重构的前提条件"
+      },
+      {
+        "level": 2,
+        "title": "个人开发者重构清单",
+        "content": "1. **每日重构**：提交前检查是否有重复代码\n2. **功能开发前**：改善将要修改的代码\n3. **bug修复后**：清理相关代码\n4. **代码审查**：识别坏味道并记录"
+      },
+      {
+        "level": 2,
+        "title": "团队重构清单",
+        "content": "1. **重构日**：每周预留2-4小时专项重构\n2. **技术债务记录**：维护坏味道清单\n3. **重构代码审查**：专门审查重构代码\n4. **重构度量**：跟踪代码质量指标"
+      },
+      {
+        "level": 2,
+        "title": "重构前检查清单",
+        "content": "- [ ] 是否有足够的测试覆盖\n- [ ] 是否明确了重构范围\n- [ ] 是否选择了合适的重构技术\n- [ ] 是否准备好了小步前进的步骤\n- [ ] 是否与团队成员沟通"
+      },
+      {
+        "level": 2,
+        "title": "重构后验证清单",
+        "content": "- [ ] 所有测试通过\n- [ ] 功能行为不变\n- [ ] 代码质量提升（可读性、可维护性）\n- [ ] 提交记录清晰（重构与功能分开）\n- [ ] 文档更新（如有需要）"
+      },
+      {
+        "level": 2,
+        "title": "重构技术选择指南",
+        "content": "| 坏味道 | 推荐重构技术 | 替代方案 |\n|-------|-------------|---------|\n| 重复代码 | Extract Method | Form Template Method |\n| 过长函数 | Extract Method | Replace Method with Method Object |\n| 过大类 | Extract Class | Extract Subclass |\n| 参数过长 | Introduce Parameter Object | Preserve Whole Object |\n| 特性依恋 | Move Method | Extract Method |\n| 数据泥团 | Extract Class | Introduce Parameter Object |\n| switch语句 | Replace Conditional with Polymorphism | Extract Method |\n| 平行继承 | Move Field/Method | 合并继承体系 |"
+      },
+      {
+        "level": 1,
+        "title": "六、金句摘录",
+        "content": "> \"重构是在不改变代码外在行为的前提下，改善其内部结构。\"\n> \"三次法则：第一次做时直接写，第二次类似情况时复制，第三次出现时重构。\"\n> \"重构不是为了改变行为，而是为了更容易改变行为。\"\n> \"任何傻瓜都能写出计算机能理解的代码。优秀的程序员写人能理解的代码。\"\n> \"重构的本质是一系列小改动，每个改动都不会改变程序的整体行为。\"\n> \"当你发现需要为程序添加一个特性，而代码结构使你无法方便地达成目的，那就先重构那个程序。\"\n> \"测试是重构的氧气，没有测试就无法安全地重构。\"\n> \"重构不是为了性能，而是为了清晰。先重构，再优化。\"\n> \"坏味道是重构的起点，消除坏味道是重构的目标。\"\n> \"重构的最高境界是让代码自己说话，让注释变得多余。\""
+      },
+      {
+        "level": 1,
+        "title": "七、与其他方法的关联",
+        "content": "| 关联方法 | 关系描述 | 结合应用 |\n|---------|---------|---------|\n| TDD测试驱动开发 | 重构的前提条件 | TDD → 测试 → 重构 → 测试 |\n| Clean Code代码整洁 | 重构的目标状态 | Clean Code标准指导重构方向 |\n| Design Patterns设计模式 | 重构的终极形态 | 重构向设计模式演进 |\n| SOLID原则 | 重构的评价标准 | SOLID验证重构效果 |\n| 持续集成CI | 重构的安全保障 | 每次重构提交触发CI验证 |"
+      },
+      {
+        "level": 1,
+        "title": "八、更新日志",
+        "content": "| 日期 | 版本 | 更新内容 |\n|-----|-----|---------|\n| 2026-05-02 | v1.0 | 初版创建，整理重构核心方法论 |"
+      },
+      {
+        "level": 1,
+        "title": "九、延伸阅读",
+        "content": "1. **《重构手册》** - William C. Wake（重构技术详解）\n2. **《代码整洁之道》** - Robert C. Martin（重构目标标准）\n3. **《设计模式》** - GoF（重构终极形态）\n4. **《Working Effectively with Legacy Code》** - Michael Feathers（遗留代码重构）\n5. **《Clean Architecture》** - Robert C. Martin（架构重构）\n*本方法论文档基于 Martin Fowler《重构：改善既有代码的设计》核心思想整理，适用于软件开发团队的日常代码改进实践。*"
+      }
+    ],
+    "updates": [
+      {
+        "date": "2026-05-10",
+        "note": "从智慧库导入"
+      }
+    ]
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "id": "David-Swensen-Pioneering-Portfolio-Management-耶鲁模式资产配置方法论",
+  "category": "创业",
+  "title": "David Swensen - 耶鲁模式资产配置方法论",
+  "keywords": [
+    "David",
+    "Swensen",
+    "耶鲁模式资产配置方法论"
+  ],
+  "summary": "**核心主张**：资产配置决定90%的投资收益，长期成功的投资需要正确的理念、正确的结构、正确的人员。个人投资者应使用指数基金实现分散化，机构投资者应利用流动性折价获取超额收益。",
+  "importance": 4,
+  "learned_at": "2026-05-10",
+  "source": "David Swensen",
+  "content": {
+    "core_formula": "总收益贡献 = 资产配置贡献 (90%) + 选股贡献 (5%) + 择时贡献 (5%)\n\n耶鲁模式六大资产配置比例（经典版）：\n┌────────────────────┬───────────┬─────────────────────┐\n│ 资产类别           │ 目标比例  │ 特点                │\n├────────────────────┼───────────┼─────────────────────┤\n│ 绝对回报           │ 25%       │ 对冲基金，市场中性  │\n│ 国内股票           │ 20%       │ 美国上市公司        │\n│ 国际股票           │ 15%       │ 发达+新兴市场       │\n│ 私募股权           │ 20%       │ LBO+VC              │\n│ 房地产             │ 10%       │ 实物资产            │\n│ 自然资源           │ 5%        │ 石油/天然气/林木    │\n│ 债券/现金          │ 5%        │ 流动性缓冲          │\n└────────────────────┴───────────┴─────────────────────┘",
+    "layers": [
+      {
+        "level": 2,
+        "title": "《Pioneering Portfolio Management》结构",
+        "content": "**Part I: Investment Philosophy**\n- 1. The Investment Process\n- 2. Asset Allocation\n- 3. Market Efficiency and Inefficiency\n**Part II: Asset Classes**\n- 4. Domestic Equity\n- 5. Foreign Equity\n- 6. Fixed Income\n- 7. Absolute Return\n- 8. Private Equity\n- 9. Real Assets\n**Part III: Investment Management**\n- 10. Selecting Investment Managers\n- 11. Portfolio Management\n- 12. Performance Measurement\n**Part IV: Organization**\n- 13. The Investment Office\n- 14. Governance"
+      },
+      {
+        "level": 2,
+        "title": "《Unconventional Success》结构（个人投资者版）",
+        "content": "- 1. Core Principles for Individual Investors\n- 2. Asset Allocation Framework\n- 3. Index Fund Strategy\n- 4. Avoiding Pitfalls"
+      },
+      {
+        "level": 2,
+        "title": "📊 资产配置权重公式",
+        "content": "```\n总收益贡献 = 资产配置贡献 (90%) + 选股贡献 (5%) + 择时贡献 (5%)\n耶鲁模式六大资产配置比例（经典版）：\n┌────────────────────┬───────────┬─────────────────────┐\n│ 资产类别           │ 目标比例  │ 特点                │\n├────────────────────┼───────────┼─────────────────────┤\n│ 绝对回报           │ 25%       │ 对冲基金，市场中性  │\n│ 国内股票           │ 20%       │ 美国上市公司        │\n│ 国际股票           │ 15%       │ 发达+新兴市场       │\n│ 私募股权           │ 20%       │ LBO+VC              │\n│ 房地产             │ 10%       │ 实物资产            │\n│ 自然资源           │ 5%        │ 石油/天然气/林木    │\n│ 债券/现金          │ 5%        │ 流动性缓冲          │\n└────────────────────┴───────────┴─────────────────────┘\n```"
+      },
+      {
+        "level": 2,
+        "title": "🎯 耶鲁模式核心方程",
+        "content": "```\n长期收益 = Σ(资产权重 × 资产预期收益)\n         = 分散化收益 + 流动性折价收益 + 主动管理增值\n风险控制 = Σ(资产权重² × 资产方差) + ΣΣ(资产权重i × 资产权重j × 协方差)\n         → 通过低相关性资产降低组合风险\n```"
+      },
+      {
+        "level": 2,
+        "title": "📈 个人投资者简化公式（Unconventional Success）",
+        "content": "```\n个人投资者资产配置（五大核心资产）：\n┌────────────────────┬───────────┬─────────────────────┐\n│ 资产类别           │ 建议比例  │ 实现方式            │\n├────────────────────┼───────────┼─────────────────────┤\n│ 国内股票           │ 30%       │ 低成本指数基金      │\n│ 国际发达市场       │ 20%       │ 国际指数基金        │\n│ 国际新兴市场       │ 10%       │ 新兴市场指数基金    │\n│ 房地产REITs        │ 15%       │ REIT指数基金        │\n│ 国债               │ 15%       │ 美国国债            │\n│ 债券/现金          │ 10%       │ 公司债/现金缓冲     │\n└────────────────────┴───────────┴─────────────────────┘\n```"
+      },
+      {
+        "level": 2,
+        "title": "1️⃣ 资产配置决策体系",
+        "content": "| 维度 | 内容 | 关键要点 |\n|------|------|----------|\n| **资产类别选择** | 选择6-8个低相关性资产类别 | 国内股票、国际股票、私募股权、绝对回报、房地产、自然资源、债券 |\n| **权重配置** | 根据风险收益特征分配权重 | 高风险高收益资产权重较高，债券权重较低（仅5%） |\n| **再平衡规则** | 定期回归目标权重 | 通常每年一次，或偏差超过阈值时触发 |\n| **长期视角** | 跨越多个市场周期 | 10-20年投资周期，不受短期波动影响 |"
+      },
+      {
+        "level": 2,
+        "title": "2️⃣ 流动性折价策略",
+        "content": "| 维度 | 内容 | 关键要点 |\n|------|------|----------|\n| **流动性偏好** | 偏好流动性差的资产 | 私募股权、房地产、自然资源 |\n| **折价原理** | 流动性差的资产有价格折价 | 投资者愿意为流动性支付溢价，流动性差资产有超额收益潜力 |\n| **锁定期管理** | 接受3-10年锁定期 | 利用锁定期换取更高预期收益 |\n| **现金流匹配** | 流动性资产覆盖支出需求 | 5%债券+现金确保日常支出，其余资金投向流动性差资产 |"
+      },
+      {
+        "level": 2,
+        "title": "3️⃣ 主动管理策略（机构版）",
+        "content": "| 维度 | 内容 | 关键要点 |\n|------|------|----------|\n| **外部经理选择** | 选择顶级外部投资经理 | 寻找\"绝对最高质量的人\"建立关系 |\n| **经理评估** | 定性+定量评估 | 投资理念、历史业绩、团队稳定性、激励机制 |\n| **激励机制** | 与经理利益绑定 | 股权激励、绩效分成、共同投资 |\n| **长期关系** | 维持10年+合作关系 | 不因短期业绩更换经理，关注长期一致性 |"
+      },
+      {
+        "level": 2,
+        "title": "4️⃣ 被动管理策略（个人版）",
+        "content": "| 维度 | 内容 | 关键要点 |\n|------|------|----------|\n| **指数基金选择** | 低成本宽基指数基金 | Vanguard、iShares等低成本ETF |\n| **成本控制** | 费率低于0.2% | 主动基金费率1-2%，指数基金0.05-0.20% |\n| **分散化实现** | 一只基金覆盖市场 | 总股市指数基金覆盖全市场 |\n| **避免择时** | 定期投入，不做市场预测 | 每月定额投资，忽略市场涨跌 |"
+      },
+      {
+        "level": 2,
+        "title": "5️⃣ 组织与治理体系",
+        "content": "| 维度 | 内容 | 关键要点 |\n|------|------|----------|\n| **投资委员会** | 监督投资决策 | 制定政策、监督执行、评估业绩 |\n| **内部团队** | 小规模高素质团队 | Yale投资办公室仅约30人 |\n| **薪酬激励** | 与长期业绩挂钩 | 市场化薪酬留住优秀人才 |\n| **决策流程** | 制度化而非随意 | 投资政策声明书明确规则 |"
+      },
+      {
+        "level": 2,
+        "title": "✅ 正面案例",
+        "content": "| 案例 | 背景 | 应用方法 | 结果 |\n|------|------|----------|------|\n| **耶鲁捐赠基金** | Swensen 1985-2021掌舵 | 资产配置分散化、流动性折价策略、顶级外部经理 | 从1.3亿增长到312亿，年化收益11.8%，36年无一亏损 |\n| **MIT捐赠基金** | Seth Alexander借鉴耶鲁模式 | 类似资产配置框架 | 年化收益12%+，成为顶尖大学捐赠基金 |\n| **哈佛捐赠基金** | 早期采用耶鲁模式 | 重仓私募股权和绝对回报 | 曾长期领先同行（后期内部化失败） |\n| **普通投资者A** | 使用指数基金组合 | 五大资产类别分散化 | 10年年化收益7-8%，成本低于0.1% |"
+      },
+      {
+        "level": 2,
+        "title": "❌ 反面案例",
+        "content": "| 案例 | 问题 | 原因 | 后果 |\n|------|------|------|------|\n| **哈佛内部化** | 2000年代后期内部管理 | 照搬耶鲁模式但缺乏Swensen的人才网络 | 业绩下滑，2010年代被迫重组 |\n| **追逐热点基金** | 投资热门主题基金 | 违背分散化原则，追高买入 | 热点过后大幅亏损 |\n| **高费率主动基金** | 投资费率1.5%+的主动基金 | 成本侵蚀收益，多数主动基金跑输指数 | 长期收益落后指数2-3% |\n| **择时交易者** | 试图预测市场顶底 | 市场不可预测，择时成功率极低 | 错失最佳投资时机，收益显著低于持有人 |"
+      },
+      {
+        "level": 2,
+        "title": "🔄 转化案例",
+        "content": "| 案例 | 初始状态 | 转化方法 | 最终状态 |\n|------|----------|----------|----------|\n| **传统债券主导基金** | 60%债券+40%股票 | 引入私募股权、绝对回报等低相关性资产 | 收益提升，风险降低 |\n| **主动基金投资者** | 持有多只高费率主动基金 | 逐步转换为指数基金组合 | 节省费用1%+，收益持平或提升 |\n| **择时投资者** | 频繁买卖股票 | 转为定期定额投资指数基金 | 收益稳定，心理压力减轻 |"
+      },
+      {
+        "level": 2,
+        "title": "📋 对于机构投资者",
+        "content": "**1. 建立资产配置框架**\n- 识别适合的资产类别（6-8个）\n- 确定各资产类别目标权重\n- 制定再平衡规则（年度或阈值触发）\n- 编写投资政策声明书\n**2. 寻找外部投资经理**\n- 建立经理筛选标准（理念、业绩、团队、激励）\n- 深度访谈和尽职调查\n- 建立长期合作关系（10年+）\n- 定期评估但不轻易更换\n**3. 管理流动性**\n- 流动性资产覆盖3-5年支出需求\n- 非流动性资产比例控制在可接受范围\n- 监控锁定期和现金流\n**4. 组织建设**\n- 小规模高素质内部团队\n- 市场化薪酬激励\n- 清晰的决策流程和治理结构"
+      },
+      {
+        "level": 2,
+        "title": "📋 对于个人投资者",
+        "content": "**1. 确定资产配置**\n- 评估风险承受能力和时间跨度\n- 选择五大核心资产类别\n- 确定各资产权重（如30/20/10/15/15/10）\n- 定期再平衡（每年一次）\n**2. 选择指数基金**\n- 国内股票：Vanguard Total Stock Market ETF (VTI)\n- 国际发达：Vanguard Total International Stock ETF (VTI)\n- 国际新兴：Vanguard FTSE Emerging Markets ETF (VWO)\n- 房地产REITs：Vanguard Real Estate ETF (VNQ)\n- 国债：Vanguard Intermediate-Term Treasury ETF (VGIT)\n**3. 执行策略**\n- 定期定额投资（每月/每季度）\n- 不做市场预测\n- 市场下跌时继续投资（甚至加码）\n- 保持耐心（10年+视角）\n**4. 避免陷阱**\n- 不追逐热门基金\n- 不投资高费率主动基金\n- 不频繁择时交易\n- 不因短期波动改变策略"
+      },
+      {
+        "level": 2,
+        "title": "📋 对于投资管理从业者",
+        "content": "**1. 理解耶鲁模式原理**\n- 资产配置是核心\n- 流动性折价有价值\n- 人和关系是关键\n- 长期视角胜过短期\n**2. 学习经理评估方法**\n- 投资理念一致性\n- 过程优于结果\n- 团队稳定性\n- 激励机制设计\n**3. 掌握组合管理技能**\n- 再平衡操作\n- 风险监控\n- 业绩归因分析\n- 流动性管理"
+      },
+      {
+        "level": 2,
+        "title": "🎯 资产配置",
+        "content": "> \"Asset allocation decisions are the most important decisions in the investment process.\"  \n> **资产配置决策是投资过程中最重要的决策。**\n> \"In the long run, asset allocation dominates portfolio returns.\"  \n> **长期来看，资产配置决定了组合收益的大部分。**\n> \"Diversification is the foundation of prudent portfolio construction.\"  \n> **分散化是构建审慎投资组合的基础。**"
+      },
+      {
+        "level": 2,
+        "title": "👥 人与关系",
+        "content": "> \"What's the real secret? People, people, people. The real secret is relationships with the absolute highest quality people.\"  \n> **真正的秘密是什么？人，人，人。真正的秘密是与绝对最高质量的人建立关系。**\n> \"Successful investing requires the right philosophy, the right structure, and the right people.\"  \n> **成功的投资需要正确的理念、正确的结构、正确的人员。**"
+      },
+      {
+        "level": 2,
+        "title": "🕐 长期视角",
+        "content": "> \"Time is the friend of the wonderful company, the enemy of the mediocre.\"  \n> **时间是好公司的朋友，平庸公司的敌人。**\n> \"Long-term investment success requires adherence to sound investment principles.\"  \n> **长期投资成功需要坚守正确的投资原则。**\n> \"Do not let short-term considerations interfere with the execution of long-term strategies.\"  \n> **不要让短期考虑妨碍长期策略的执行。**"
+      },
+      {
+        "level": 2,
+        "title": "💰 成本与效率",
+        "content": "> \"Cost matters. High fees are a huge drag on returns.\"  \n> **成本很重要。高费用是收益的巨大拖累。**\n> \"For individual investors, index funds offer the best combination of low cost and broad diversification.\"  \n> **对于个人投资者，指数基金提供了低成本和广泛分散化的最佳组合。**"
+      },
+      {
+        "level": 2,
+        "title": "🚫 避免陷阱",
+        "content": "> \"Market timing is a recipe for failure.\"  \n> **市场择时是失败的配方。**\n> \"Chasing performance leads to buying high and selling low.\"  \n> **追逐业绩导致高买低卖。**\n> \"Complexity does not equal sophistication.\"  \n> **复杂性不等于专业性。**"
+      },
+      {
+        "level": 2,
+        "title": "🔗 与理财兴趣的关联",
+        "content": "**1. 个人资产配置实践**\n- 使用耶鲁模式个人版五大资产框架\n- 每月定额投资指数基金组合\n- 年度再平衡回归目标权重\n- 10年+长期视角\n**2. 理财知识学习重点**\n- 资产配置原理（而非选股择时）\n- 指数基金选择（低成本、宽基）\n- 分散化实现方法\n- 成本控制的重要性\n**3. 与其他理财书的关联**\n- 与格雷厄姆《聪明的投资者》：分散化、安全边际\n- 与马尔基尔《漫步华尔街》：指数投资\n- 与博格《共同基金常识》：成本控制\n- 与霍塞尔《金钱心理学》：长期耐心"
+      },
+      {
+        "level": 2,
+        "title": "🔗 与硬件/IoT/产品经理工作的关联",
+        "content": "**1. 项目投资决策**\n- 研发项目作为\"投资组合\"管理\n- 分散投资于多个项目（而非押注单一项目）\n- 长期项目视角（而非追逐短期热点）\n- 项目评估方法借鉴经理评估\n**2. 资源配置管理**\n- 资产配置 → 项目资源配置\n- 再平衡 → 项目资源动态调整\n- 流动性折价 → 长期研发项目的额外收益潜力\n- 人和关系 → 供应商、合作伙伴关系管理\n**3. 风险管理**\n- 分散化 → 产品线分散化（不依赖单一产品）\n- 长期视角 → 研发周期管理\n- 成本控制 → 项目成本管理"
+      },
+      {
+        "level": 1,
+        "title": "八、更新日志",
+        "content": "| 日期 | 更新内容 | 版本 |\n|------|----------|------|\n| 2026-05-08 | 初版创建，基于耶鲁投资模式和Pioneering Portfolio Management核心方法论 | v1.0 |"
+      },
+      {
+        "level": 2,
+        "title": "核心著作",
+        "content": "- David F. Swensen, **Pioneering Portfolio Management: An Unconventional Approach to Institutional Investment** (2000)\n- David F. Swensen, **Unconventional Success: A Fundamental Approach to Personal Investment** (2005)"
+      },
+      {
+        "level": 2,
+        "title": "相关文献",
+        "content": "- Yale Investments Office, **The Yale Endowment** (年度报告)\n- Ibbotson & Kaplan, \"Does Asset Allocation Policy Explain 40, 90, or 100 Percent of Performance?\" (2000)\n- Brinson, Hood, Beebower, \"Determinants of Portfolio Performance\" (1986)"
+      },
+      {
+        "level": 2,
+        "title": "扩展阅读",
+        "content": "- William Bernstein, **The Four Pillars of Investing**\n- John Bogle, **The Little Book of Common Sense Investing**\n- Burton Malkiel, **A Random Walk Down Wall Street**\n- Howard Marks, **The Most Important Thing**\n> **学习价值**：耶鲁模式揭示了投资成功的真正秘密——不是选股或择时，而是资产配置、长期耐心、与优秀的人建立关系。对个人投资者而言，指数基金组合是最简单有效的实现方式；对机构投资者而言，利用流动性折价和顶级外部经理是超额收益来源。这套方法论可延伸应用于项目资源配置、研发投资决策等企业管理场景。"
+      }
+    ],
+    "updates": [
+      {
+        "date": "2026-05-10",
+        "note": "从智慧库导入"
+      }
+    ]
+  }
+}

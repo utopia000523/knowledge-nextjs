@@ -1,0 +1,40 @@
+2026-05-19 18:04 UTC — Cron Job Collection Run
+=============================================
+
+=== TASK 1: 收录新书 (2本) — 营销 ===
+1. David Aaker《Building Strong Brands》品牌资产方法论 (营销, importance=5)
+   - 核心命题: 品牌不是靠广告打出来的，而是通过品牌识别系统（Brand Identity System）的系统性构建与管理，形成差异化的品牌资产
+   - 关键框架: Brand Identity System × 品牌资产四支柱 × 品牌延伸 × 品牌组合 × 品牌领导力
+   - 3个正面案例(星巴克/耐克/宝洁) + 3个反面案例(柯达/Harley延伸/老字号) + 10大误区
+   - 5套工具模板(诊断画布/健康检查/延伸评估/追踪报告/定位声明)
+   - 方法论对比矩阵(Aaker/Keller/Kapferer/Sharp/Interbrand) + 30天计划 + 12条金句
+   - 文件: David-Aaker-Building-Strong-Brands-品牌资产方法论.json (35.6KB, 11层)
+
+2. Eugene Schwartz《Breakthrough Advertising》突破式广告方法论 (营销, importance=5)
+   - 核心命题: 广告的有效性不取决于文案技巧，而取决于对消费者意识阶段和市场成熟度的精准判断
+   - 关键框架: 意识阶段五层模型 × 市场成熟度演进 × 欲望-机制组合 × Golden Thread原则
+   - 3个正面案例(Lazy Man's Way/Segway/iPod) + 3个反面案例 + 10大误区
+   - 5套工具模板(意识阶段诊断/市场成熟度评估/欲望-机制工作表/Golden Thread检查/A-B测试)
+   - 方法论对比(Schwartz/Hopkins/Caples/Ogilvy/Cialdini) + 30天技能计划 + 12条金句
+   - 文件: Eugene-Schwartz-Breakthrough-Advertising-突破式广告方法论.json (38.7KB, 12层)
+
+=== TASK 2: 扩写已有文章 (1篇) ===
+- Purna Virji《High-Impact Content Marketing》高影响力内容方法论 (营销, importance: 5)
+  - 扩写前: 70行, 10264 bytes (8层基础结构, 简单概念+案例+清单)
+  - 扩写后: 96行, 46407 bytes (4.5x扩写, 12层深度结构)
+  - 新增内容:
+    * Why Now背景与概念全景表(10+概念定义及常见误区对照)
+    * 五公式体系(影响力乘数/业务价值/内容效率/复用率/ROI模型)
+    * 五模块深度拆解: 受众人类学5维度+实操方法 / 内容-目标匹配矩阵 / 叙事设计6要素 / 分发策略4层次+节奏设计 / 复盘5层面+工作流
+    * 4个深度正面案例(B2B SaaS内容转型/研究报告内容资产化/销售赋能内容/Case C) + 3个反面案例
+    * 12大误区深度剖析 + 5套工具模板(受众人类学画布/内容-目标矩阵/单篇策划画布/五层绩效复盘/季度审计框架)
+    * 方法论对比矩阵(7种方法: Virji/Pulizzi/Handley/Rose/Crestodina/Scott/Kessler) + 集成应用
+    * 30天启动计划 + 15条金句 + AI时代意义分析 + 团队配备建议
+
+=== 统计更新 ===
+- 总文章: 581 -> 583
+- 营销分类: 47 -> 49
+- David-Aaker-Building-Strong-Brands: 新增 (35.6KB, 11层)
+- Eugene-Schwartz-Breakthrough-Advertising: 新增 (38.7KB, 12层)
+- Purna-Virji-High-Impact-Content-Marketing: 大幅扩写 (10KB -> 46KB, 70行->96行 JSON布局)
+- 所有文件已同步到 public/data/

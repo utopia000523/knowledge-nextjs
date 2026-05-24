@@ -1,0 +1,127 @@
+{
+  "id": "Raymond-Murphy-English-Grammar-in-Use-雅思语法方法论",
+  "category": "雅思",
+  "title": "《English Grammar in Use》方法论",
+  "keywords": [
+    "English",
+    "Grammar",
+    "in",
+    "Use",
+    "方法论"
+  ],
+  "summary": "**作者**：Raymond Murphy（剑桥大学出版社）",
+  "importance": 5,
+  "learned_at": "2026-05-10",
+  "source": "《English Grammar in Use》方法论",
+  "content": {
+    "core_formula": "语法精通 = 规则理解 × 语境应用 × 错误纠正 × 循环巩固",
+    "layers": [
+      {
+        "level": 1,
+        "title": "原书大纲",
+        "content": "《English Grammar in Use》是全球最畅销的英语语法参考书，分为三个版本：\n- **红书（Essential）**：初级语法，145个单元\n- **蓝书（Intermediate）**：中级语法，145个单元（最常用）\n- **绿书（Advanced）**：高级语法，120个单元"
+      },
+      {
+        "level": 2,
+        "title": "结构特点",
+        "content": "| 部分 | 内容 | 特点 |\n|------|------|------|\n| **左侧** | 语法规则讲解 | 简洁、清晰、配图说明 |\n| **右侧** | 练习题 | 即学即练、渐进难度 |\n| **附录** | 不规则动词表、拼写规则 | 快速查阅 |\n| **补充练习** | 额外练习题 | 巩固薄弱点 |"
+      },
+      {
+        "level": 2,
+        "title": "核心单元分类",
+        "content": "**时态系统（Units 1-24）**\n- 现在时态：Present Simple / Present Continuous / Present Perfect\n- 过去时态：Past Simple / Past Continuous / Past Perfect\n- 未来时态：Future forms / Future Perfect / Future Continuous\n**句型结构（Units 25-48）**\n- 被动语态：Passive Voice、被动与主动转换\n- 疑问句：Question forms、间接疑问句\n- 条件句：If-clauses、Zero/First/Second/Third Conditional\n- 情态动词：Can/Could/May/Might/Must/Should\n**名词与冠词（Units 49-72）**\n- 冠词：a/an/the 的使用规则\n- 可数/不可数名词：Countable/Uncountable\n- 名词短语：所有格、复合名词\n**形容词与副词（Units 73-88）**\n- 比较级：Comparative/Superlative\n- 形容词位置：Attributive/Predicative\n- 副词类型：Adverbs of frequency/manner/place/time\n**从句与连接词（Units 89-120）**\n- 定语从句：Relative Clauses（defining/non-defining）\n- 状语从句：Adverbial Clauses\n- 连接词：Conjunctions、Transitions\n**特殊表达（Units 121-145）**\n- 间接引语：Reported Speech\n- 倒装句：Inversion\n- 强调结构：Emphasis、Cleft sentences\n- 动词短语：Phrasal Verbs\n## 核心公式"
+      },
+      {
+        "level": 2,
+        "title": "公式一：语法学习闭环",
+        "content": "```\n语法精通 = 规则理解 × 语境应用 × 错误纠正 × 循环巩固\n```\n**四要素详解**：\n| 要素 | 内容 | 方法 |\n|------|------|------|\n| **规则理解** | 掌握语法规则的核心逻辑 | 左侧页面精读，理解\"为什么\" |\n| **语境应用** | 在真实语境中使用语法 | 右侧练习题，造句练习 |\n| **错误纠正** | 发现并修正语法错误 | 自测、纠错、分析原因 |\n| **循环巩固** | 间隔重复强化记忆 | 周回顾、月回顾、季度回顾 |"
+      },
+      {
+        "level": 2,
+        "title": "公式二：语法效率公式",
+        "content": "```\n学习效率 = 单元数 × 练习完成率 × 错题纠正率 × 记忆留存率\n```\n**效率指标**：\n- **单元数**：每天学习1-2个单元\n- **练习完成率**：右侧练习100%完成\n- **错题纠正率**：错题100%分析原因并记录\n- **记忆留存率**：一周后复测正确率>80%"
+      },
+      {
+        "level": 2,
+        "title": "公式三：语法优先级矩阵",
+        "content": "```\n优先级 = (雅思频率 × 个人薄弱度 × 产出难度) / 学习时间\n```\n**优先级排序**：\n| 语法类别 | 雅思频率 | 优先级 |\n|----------|----------|--------|\n| **时态系统** | 极高（写作/口语核心） | 🔴 最高 |\n| **条件句** | 高（Task 2必备） | 🔴 最高 |\n| **被动语态** | 高（写作多样表达） | 🟠 高 |\n| **定语从句** | 高（复杂句必备） | 🟠 高 |\n| **冠词** | 中（基础准确性） | 🟡 中 |\n| **情态动词** | 中（观点表达） | 🟡 中 |"
+      },
+      {
+        "level": 2,
+        "title": "维度一：时态系统（雅思核心）",
+        "content": "#### 1.1 现在时态对比\n| 时态 | 用法 | 雅思应用 | 典型例句 |\n|------|------|----------|----------|\n| **Present Simple** | 习惯、事实、普遍真理 | Task 2陈述观点、数据描述 | \"The graph shows that...\" |\n| **Present Continuous** | 正在进行、临时状态 | 描述过程变化 | \"The situation is becoming worse.\" |\n| **Present Perfect** | 过去发生但与现在有关 | 强调变化结果 | \"The population has increased significantly.\" |\n| **Present Perfect Continuous** | 从过去持续到现在 | 强调持续性 | \"Scientists have been studying this phenomenon.\" |\n#### 1.2 过去时态对比\n| 时态 | 用法 | 雅思应用 | 典型例句 |\n|------|------|----------|----------|\n| **Past Simple** | 过去特定时间发生 | Task 1数据描述（过去年份） | \"In 2010, the number was...\" |\n| **Past Continuous** | 过去某时刻正在发生 | 描述过程 | \"While the economy was growing...\" |\n| **Past Perfect** | 过去某动作之前发生 | 强调先后顺序 | \"Before the policy was introduced, the situation had been...\" |\n#### 1.3 时态选择决策树\n```\n时间参照点：\n├── 现在 → Present Simple（事实）或 Present Continuous（过程）\n├── 过去特定时间 → Past Simple\n├── 过去到现在的联系 → Present Perfect\n├── 过去某动作之前 → Past Perfect\n└── 未来 → Future forms（will/going to）\n```"
+      },
+      {
+        "level": 2,
+        "title": "维度二：条件句系统（Task 2必备）",
+        "content": "#### 2.1 四种条件句对比\n| 类型 | 结构 | 用法 | 雅思应用 |\n|------|------|------|----------|\n| **Zero Conditional** | If + Present, Present | 科学事实、普遍规律 | \"If temperatures rise, ice melts.\" |\n| **First Conditional** | If + Present, will + V | 可能发生的未来情况 | \"If the government takes action, emissions will reduce.\" |\n| **Second Conditional** | If + Past, would + V | 假设性情况、建议 | \"If I were the minister, I would invest more in education.\" |\n| **Third Conditional** | If + Past Perfect, would have + V | 过去未发生的事 | \"If they had acted earlier, the crisis would have been avoided.\" |\n#### 2.2 条件句在雅思Task 2的应用\n**场景一：提出解决方案**\n- First Conditional：\"If governments implement stricter regulations, pollution levels will decrease.\"\n- Second Conditional：\"If more funding were allocated to research, breakthroughs would occur.\"\n**场景二：分析因果关系**\n- Zero Conditional：\"If children lack education, they face limited opportunities.\"\n- First Conditional：\"If urbanization continues, housing demand will increase.\"\n**场景三：讨论假设情况**\n- Second Conditional：\"If renewable energy became cheaper, fossil fuel use would decline.\"\n- Third Conditional：\"If the policy had been implemented ten years ago, the results would have been better.\""
+      },
+      {
+        "level": 2,
+        "title": "维度三：被动语态（写作多样性）",
+        "content": "#### 3.1 被动语态结构\n| 时态 | 被动结构 | 例句 |\n|------|----------|------|\n| **Present Simple** | am/is/are + V-ed | \"The report is published annually.\" |\n| **Past Simple** | was/were + V-ed | \"The law was passed in 2015.\" |\n| **Present Perfect** | have/has been + V-ed | \"The policy has been implemented.\" |\n| **Future** | will be + V-ed | \"The project will be completed soon.\" |\n| **Modal** | modal + be + V-ed | \"The data must be analyzed carefully.\" |\n#### 3.2 被动语态使用场景\n| 场景 | 主动语态 | 被动语态 | 雅思适用 |\n|------|----------|----------|----------|\n| **强调动作执行者** | \"The government passed the law.\" | \"The law was passed by the government.\" | ❌ 不必要 |\n| **动作执行者不重要** | \"Someone stole the data.\" | \"The data was stolen.\" | ✅ 推荐 |\n| **客观陈述** | \"We collected the samples.\" | \"The samples were collected.\" | ✅ 学术风格 |\n| **强调结果** | \"They built the bridge.\" | \"The bridge was built.\" | ✅ Task 1描述 |"
+      },
+      {
+        "level": 2,
+        "title": "维度四：复杂句结构（高阶写作）",
+        "content": "#### 4.1 定语从句\n| 类型 | 结构 | 用法 | 例句 |\n|------|------|------|------|\n| **Defining（限制性）** | 无逗号，关系词可省略 | 必要信息 | \"The policy that was introduced last year...\" |\n| **Non-defining（非限制性）** | 有逗号，关系词不可省略 | 补充信息 | \"London, which is the capital of the UK,...\" |\n**关系词选择**：\n| 关系词 | 用法 | 例句 |\n|------|------|------|\n| **who** | 指人 | \"The scientist who discovered this...\" |\n| **which** | 指物/事 | \"The theory which explains this...\" |\n| **that** | 限制性从句 | \"The result that surprised everyone...\" |\n| **where** | 指地点 | \"The region where this occurs...\" |\n| **when** | 指时间 | \"The era when this happened...\" |\n#### 4.2 名词性从句\n| 类型 | 结构 | 用法 | 例句 |\n|------|------|------|------|\n| **Subject Clause** | What/That + 从句作主语 | \"What matters is...\" | \"What the data shows is a clear trend.\" |\n| **Object Clause** | 动词 + that/what 从句 | \"Studies show that...\" | \"Research indicates that the method works.\" |\n| **Appositive Clause** | 名词 + that从句 | 解释名词 | \"The fact that temperatures are rising...\" |"
+      },
+      {
+        "level": 2,
+        "title": "正面案例：雅思写作7分语法结构",
+        "content": "**Task 2范文片段（语法多样性）**：\n```\n\"The graph [present simple] shows a significant increase in renewable energy usage. \nIn 2010, solar power accounted [past simple] for only 2% of total energy production, \nbut by 2020, this figure had risen [past perfect emphasis] to 15%. \nIf this trend continues [first conditional], renewable sources will soon become [will + become] \nthe dominant energy providers. \nThe policy that was introduced [passive + relative clause] in 2015 has been credited [present perfect passive] \nwith accelerating this transition. Researchers have been arguing [present perfect continuous] \nthat government support is essential, and what matters most [noun clause as subject] \nis consistent investment over time.\"\n```\n**语法分析**：\n- ✅ 时态多样：present simple / past simple / past perfect / present perfect\n- ✅ 条件句：first conditional\n- ✅ 被动语态：两处被动\n- ✅ 从句：relative clause + noun clause\n- ✅ 情态动词：will become"
+      },
+      {
+        "level": 2,
+        "title": "反面案例：语法单一导致分数限制",
+        "content": "**问题写作（语法单一）**：\n```\n\"The graph shows that solar energy is 2% in 2010. Then it becomes 15% in 2020. \nThis is good. The government does this. People think this is important.\"\n```\n**问题分析**：\n- ❌ 全用Present Simple，缺乏时态变化\n- ❌ 无复杂句结构\n- ❌ 无被动语态\n- ❌ 无条件句表达假设\n- ❌ 简单句堆砌，无法展示语言能力"
+      },
+      {
+        "level": 2,
+        "title": "正面案例：口语Part 3语法应用",
+        "content": "**高分回答（语法多样性）**：\n```\n\"I believe [opinion] that technology has fundamentally changed [present perfect] \nhow we communicate. In the past, people had to wait [past obligation] \nfor days to receive letters, but now we can send [modal + present] \nmessages instantly. If I had lived [third conditional] in that era, \nI would have found [would have + found] it quite frustrating. \nWhat impresses me most [noun clause] is how quickly these changes have occurred [present perfect].\"\n```\n**语法亮点**：\n- ✅ Present Perfect强调变化\n- ✅ Past obligation（had to）\n- ✅ Modal ability（can）\n- ✅ Third Conditional（假设过去）\n- ✅ Noun clause作为主语"
+      },
+      {
+        "level": 2,
+        "title": "雅思写作语法自检清单",
+        "content": "#### Task 1（图表描述）\n| 检查项 | 要求 | 自检 |\n|------|------|------|\n| **时态正确** | 过去年份用Past Simple | ✅/❌ |\n| **时态变化** | 至少2种时态 | ✅/❌ |\n| **被动语态** | 至少1处被动 | ✅/❌ |\n| **比较结构** | Comparative/Superlative | ✅/❌ |\n| **定语从句** | 至少1处Relative Clause | ✅/❌ |\n| **连接词** | 合理使用Transitions | ✅/❌ |\n#### Task 2（议论文）\n| 检查项 | 要求 | 自检 |\n|------|------|------|\n| **条件句** | 至少1处Conditional | ✅/❌ |\n| **被动语态** | 至少2处被动 | ✅/❌ |\n| **复杂句** | 至少3处从句结构 | ✅/❌ |\n| **情态动词** | 表达观点（should/must） | ✅/❌ |\n| **名词性从句** | What-clause/That-clause | ✅/❌ |\n| **强调结构** | It is...that.../What...is... | ✅/❌ |"
+      },
+      {
+        "level": 2,
+        "title": "学习计划（12周）",
+        "content": "#### 第1-2周：时态系统\n| 日期 | 单元 | 内容 | 练习 |\n|------|------|------|------|\n| Day 1-2 | Units 1-2 | Present Simple vs Continuous | 练习+造句 |\n| Day 3-4 | Units 3-6 | Present Perfect系列 | 练习+纠错 |\n| Day 5-6 | Units 7-10 | Past时态系列 | 练习+写作应用 |\n| Day 7 | Review | 时态综合测试 | 自测+错题分析 |\n#### 第3-4周：条件句与被动\n| 日期 | 单元 | 内容 | 练习 |\n|------|------|------|------|\n| Day 1-2 | Units 25-28 | Conditionals | 练习+Task2写作 |\n| Day 3-4 | Units 29-32 | 被动语态 | 练习+改写 |\n| Day 5-6 | Units 33-36 | 复合被动 | 练习+分析 |\n| Day 7 | Review | 综合+应用 | 写作练习 |\n#### 第5-6周：从句系统\n| 日期 | 单元 | 内容 | 练习 |\n|------|------|------|------|\n| Day 1-2 | Units 89-92 | Relative Clauses | 练习+造句 |\n| Day 3-4 | Units 93-96 | 状语从句 | 练习+分析 |\n| Day 5-6 | Units 97-100 | 名词性从句 | 练习+写作 |\n| Day 7 | Review | 从句综合 | Task2写作 |\n#### 第7-8周：情态动词与冠词\n| 日期 | 单元 | 内容 | 练习 |\n|------|------|------|------|\n| Day 1-2 | Units 37-40 | Modal Verbs | 练习+口语应用 |\n| Day 3-4 | Units 49-52 | Articles | 练习+纠错 |\n| Day 5-6 | Units 53-56 | Countable/Uncountable | 练习+写作 |\n| Day 7 | Review | 综合 | 自测 |\n#### 第9-10周：形容词副词\n| 日期 | 单元 | 内容 | 练习 |\n|------|------|------|------|\n| Day 1-2 | Units 73-76 | Comparative/Superlative | 练习+Task1 |\n| Day 3-4 | Units 77-80 | Adverbs | 练习+造句 |\n| Day 5-6 | Units 81-84 | 形容词位置 | 练习+纠错 |\n| Day 7 | Review | 综合 | 写作练习 |\n#### 第11-12周：特殊结构与综合\n| 日期 | 单元 | 内容 | 练习 |\n|------|------|------|------|\n| Day 1-2 | Units 121-124 | Reported Speech | 练习+口语 |\n| Day 3-4 | Units 125-128 | Inversion/Emphasis | 练习+写作 |\n| Day 5-6 | Units 129-132 | Phrasal Verbs | 练习+应用 |\n| Day 7 | Final Review | 全书综合 | 自测+写作 |"
+      },
+      {
+        "level": 2,
+        "title": "每日学习模板",
+        "content": "#### 早晨（30分钟）\n- **复习**：回顾前一天的单元（5分钟）\n- **新学**：学习1个新单元（15分钟）\n- **练习**：完成右侧练习题（10分钟）\n#### 晚间（15分钟）\n- **纠错**：分析练习题错误（5分钟）\n- **造句**：用新语法造3个雅思相关句子（10分钟）\n#### 周末（1小时）\n- **自测**：完成补充练习\n- **写作**：写一篇短文应用本周语法\n- **分析**：检查语法多样性"
+      },
+      {
+        "level": 2,
+        "title": "原书金句（翻译）",
+        "content": "1. **\"Grammar is not just rules; it's a tool for communication.\"**\n   - 语法不只是规则，是沟通的工具。\n2. **\"The key to mastering grammar is using it in context.\"**\n   - 掌握语法的秘诀是在语境中使用。\n3. **\"Mistakes are your best teachers—if you learn from them.\"**\n   - 错误是最好的老师——前提是你要从中学到东西。\n4. **\"One rule at a time, one day at a time.\"**\n   - 一天一个规则，一步一个脚印。\n5. **\"Understanding why is more important than memorizing how.\"**\n   - 理解\"为什么\"比记住\"怎么做\"更重要。"
+      },
+      {
+        "level": 2,
+        "title": "雅思语法应用金句",
+        "content": "1. **\"雅思写作不是语法考试，但语法是表达思想的工具。\"**\n2. **\"时态多样=思维复杂=分数提升。\"**\n3. **\"条件句是议论文的灵魂，展示假设推理能力。\"**\n4. **\"被动语态让描述更客观，从句让表达更精确。\"**\n5. **\"语法多样性=语言控制力=Band 7+。\"**"
+      },
+      {
+        "level": 1,
+        "title": "更新日志",
+        "content": "| 日期 | 更新内容 |\n|------|----------|\n| 2026-04-29 | 创建完整方法论文档，包含原书大纲、核心公式、四维度拆解（时态、条件句、被动、复杂句）、正反案例、12周学习计划、每日学习模板、雅思应用清单 |"
+      },
+      {
+        "level": 1,
+        "title": "参考资料",
+        "content": "- **原书**：English Grammar in Use (Raymond Murphy, Cambridge University Press)\n- **辅助**：IELTS Liz Grammar Guide\n- **应用**：剑桥雅思真题系列语法分析"
+      }
+    ],
+    "updates": [
+      {
+        "date": "2026-05-10",
+        "note": "从智慧库导入"
+      }
+    ]
+  }
+}

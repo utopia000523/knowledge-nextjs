@@ -1,0 +1,132 @@
+{
+  "id": "SDD开发指南",
+  "category": "其他",
+  "title": "Spec-Driven Development (SDD) 开发指南",
+  "keywords": [
+    "Spec",
+    "Driven",
+    "Development",
+    "SDD",
+    "开发指南"
+  ],
+  "summary": "Google Antigravity 的规范驱动开发方法论",
+  "importance": 3,
+  "learned_at": "2026-05-10",
+  "source": "Spec",
+  "content": {
+    "core_formula": "请阅读 doc/features/my-new-feature-spec.md 规范，\n并按照其中的要求在项目中实现该功能。\n请先生成 implementation_plan.md 供我 Review。",
+    "layers": [
+      {
+        "level": 2,
+        "title": "核心定义",
+        "content": "**SDD = 先写规范，再让 AI 生成代码**\n• 传统开发：开发者直接编写代码\n• SDD开发：开发者写规范，AI 生成实现"
+      },
+      {
+        "level": 2,
+        "title": "角色转变",
+        "content": "| 传统开发 | SDD开发 |\n|----------|---------|\n| 开发者 = 程序员 | 开发者 = 架构师 + 产品经理 |\n| 关注\"怎么写代码\" | 关注\"要实现什么功能\" |\n| 手写每一行代码 | 写规范，AI 实现 |"
+      },
+      {
+        "level": 2,
+        "title": "Step 1：构思与需求整理",
+        "content": "• 不要急于打开代码\n• 打开空白 Markdown 文档\n• 明确要解决的问题或添加的功能"
+      },
+      {
+        "level": 2,
+        "title": "Step 2：编写规范文档",
+        "content": "**规范 = .md 文件，包含以下部分：**\n| 章节 | 内容 |\n|------|------|\n| 目标与背景 | 这个功能的目的是什么 |\n| 架构设计 | 核心模块、数据结构、接口协议 |\n| 具体需求 | 核心功能、边界条件、异常处理 |\n| 验收标准 | 如何证明做完了、做对了 |"
+      },
+      {
+        "level": 2,
+        "title": "Step 3：交给 Antigravity",
+        "content": "**提示词模板：**\n```\n请阅读 doc/features/my-new-feature-spec.md 规范，\n并按照其中的要求在项目中实现该功能。\n请先生成 implementation_plan.md 供我 Review。\n```"
+      },
+      {
+        "level": 2,
+        "title": "Step 4：评审实施计划",
+        "content": "**Antigravity 会输出：** `implementation_plan.md`\n**你要检查：**\n- 它理解对了吗？\n- 打算修改的文件和设计的类合理吗？\n**如果不对** → 直接指出修改意见\n**如果没问题** → 批准继续"
+      },
+      {
+        "level": 2,
+        "title": "Step 5：AI 自动执行与验证",
+        "content": "**Antigravity 自动完成：**\n1. 进入 EXECUTION 模式，书写代码\n2. 进入 VERIFICATION 模式，运行测试\n3. 生成 `walkthrough.md`，汇报修改细节和验证结果"
+      },
+      {
+        "level": 2,
+        "title": "Step 6：人工代码审查与合并",
+        "content": "- 检查生成的代码质量\n- 运行自己的测试\n- 提交（Commit）"
+      },
+      {
+        "level": 2,
+        "title": "核心原则",
+        "content": "> **Garbage in, garbage out**\n> \n> 输入质量决定输出质量"
+      },
+      {
+        "level": 2,
+        "title": "四个技巧",
+        "content": "| 技巧 | 说明 |\n|------|------|\n| **适度具体** | 不写伪代码让 AI 照抄，也别太抽象（如只写\"做一个登录功能\"） |\n| **提供上下文** | 明确依赖的已有文件（如\"参考 src/utils/auth.h 中的接口\"） |\n| **分解复杂任务** | 大 Spec 拆成 3 个子任务，一步步做 |\n| **定义不做什** | 防止 AI 发散思维，修改不相关文件 |"
+      },
+      {
+        "level": 2,
+        "title": "配置文件 = 项目的\"宪法\"",
+        "content": "**在配置文件中声明：**\n- 微控制器型号\n- 代码规范\n- 构建方式\n**在 Spec 中只需关注业务逻辑**"
+      },
+      {
+        "level": 2,
+        "title": "示例",
+        "content": "**配置文件声明：**\n```json\n{\n  \"hardware_context\": {\n    \"mcu_family\": \"WCH-CH32V317\"\n  },\n  \"coding_standard\": {\n    \"style_guide\": \"Linux_Kernel\",\n    \"mandatory_header\": \"/* (c) 2026 OrayOS-Tiny. All rights reserved. */\"\n  },\n  \"build_settings\": {\n    \"build_firmware\": \"make firmware\"\n  }\n}\n```\n**Spec 中只需写：**\n```\n创建一个串口接收驱动模块 uart_driver.c\n```\n**Antigravity 自动补全：**\n- 引入 `<ch32v30x.h>` 头文件\n- 使用 Linux Kernel 缩进风格\n- 自动添加版权信息\n- 执行 `make firmware` 编译验证"
+      },
+      {
+        "level": 2,
+        "title": "案例：4G 模块 AT 指令交互系统",
+        "content": "**错误做法**：一个 Prompt 让 AI 写整个系统\n**正确做法**：拆成 3 个递进的独立规范\n| 阶段 | 规范文件 | 目标 |\n|------|----------|------|\n| 第一阶段 | `specs/uart-dma-spec.md` | 基于 DMA 实现串口收发模块 |\n| 第二阶段 | `specs/at-parser-spec.md` | AT 指令解析器（纯逻辑，无硬件依赖） |\n| 第三阶段 | `specs/4g-business-spec.md` | 业务层集成进程 |\n**执行顺序：**\n1. 先让 Antigravity 完成第一阶段，Code Review\n2. 再执行第二阶段\n3. 最后第三阶段"
+      },
+      {
+        "level": 2,
+        "title": "反面模式（传统 Prompt）",
+        "content": "```\n用 LwIP 写一个 NTP 客户端。\n```\n**问题：**\n- AI 乱抄网上代码片段\n- 没考虑项目现有目录结构\n- 命名不符合项目规范\n- 没处理超时等边界情况"
+      },
+      {
+        "level": 2,
+        "title": "正面模式（SDD 规范）",
+        "content": "```markdown\n# 规范：OrayOS-Tiny NTP 客户端"
+      },
+      {
+        "level": 1,
+        "title": "目标",
+        "content": "实现一个后台任务，在网络连接成功后定期向 NTP 服务器请求时间，并更新系统的 RTC。"
+      },
+      {
+        "level": 1,
+        "title": "架构",
+        "content": "- 文件位置：`src/net/ntp_client.c` 和 `src/net/ntp_client.h`\n- 依赖：LwIP 的 UDP 模块和 OS RTC 接口"
+      },
+      {
+        "level": 1,
+        "title": "具体需求",
+        "content": "1. **初始化**：创建 FreeRTOS 任务，优先级 osPriorityNormal\n2. **服务器地址**：默认 pool.ntp.org，使用 LwIP DNS 解析\n3. **轮询机制**：启动时请求一次，之后每小时请求一次\n4. **异常处理**：\n   - DNS 解析失败：重试 3 次后休眠 1 小时\n   - 5 秒超时：记录日志并重试\n```\n**结果：** 一次性生成高质量可运行代码"
+      },
+      {
+        "level": 2,
+        "title": "Q：如果 Antigravity 代码写错了怎么办？",
+        "content": "**A：** 提供具体的错误日志、报错信息，指出逻辑缺陷\n```\n在某某文件中处理的边界条件不对，\n请参考规范中的 X 章节进行修正。\n```"
+      },
+      {
+        "level": 2,
+        "title": "Q：SDD 是否意味着我不需要看代码了？",
+        "content": "**A：绝对不是**\n- 你需要评估代码好坏、识别安全漏洞和架构问题\n- 减少了\"打字\"的时间，增加了\"Code Review\"的时间"
+      },
+      {
+        "level": 1,
+        "title": "八、一句话总结",
+        "content": "| 概念 | 定义 |\n|------|------|\n| **SDD** | 先写规范，再让 AI 生成代码 |\n| **规范** | Markdown 文档 = 架构师的设计图纸 |\n| **配置文件** | 项目宪法 = 隐式知识 |\n| **工作流** | 写规范 → AI 规划 → 评审 → AI 执行 → 人工审查 |\n*整理于 2026-03-30*\n*来源：Google Antigravity SSD 开发指南 v1.0*"
+      }
+    ],
+    "updates": [
+      {
+        "date": "2026-05-10",
+        "note": "从智慧库导入"
+      }
+    ]
+  }
+}

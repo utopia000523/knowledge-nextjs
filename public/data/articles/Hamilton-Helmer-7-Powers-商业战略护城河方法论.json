@@ -1,0 +1,134 @@
+{
+  "id": "Hamilton-Helmer-7-Powers-商业战略护城河方法论",
+  "category": "创业",
+  "title": "Hamilton Helmer《7 Powers》商业战略护城河方法论",
+  "keywords": [
+    "7 Powers",
+    "Hamilton Helmer",
+    "战略",
+    "竞争优势",
+    "护城河",
+    "Scale Economies",
+    "Network Economies",
+    "Counter-Positioning",
+    "Switching Costs",
+    "Branding",
+    "Cornered Resource",
+    "Process Power"
+  ],
+  "summary": "**核心主题**：用 Benefit x Barrier 框架识别可持续竞争优势；用七种 Power 解释企业如何获得持续超额收益。",
+  "importance": 5,
+  "learned_at": "2026-05-13",
+  "source": "Hamilton Helmer《7 Powers: The Foundations of Business Strategy》(2016) 及作者公开介绍、书籍公开摘要资料",
+  "content": {
+    "core_formula": "Power = Benefit x Barrier\n其中：Benefit = 更低成本或更高愿付价格；Barrier = 阻止竞争对手复制和套利的约束\n持续超额收益 = Power 的强度 x 持续时间",
+    "layers": [
+      {
+        "level": 1,
+        "title": "概念定义",
+        "content": "### 1. 什么是 Power\nHelmer 将战略的核心收束为 Power：一组能够带来持续性差异化收益的条件。它不是抽象愿景，而是既能创造经济价值、又不容易被竞争对手套利掉的真实结构。\n\n| 概念 | 定义 | 关键问题 |\n|------|------|----------|\n| **Benefit** | 企业获得的经济收益，通常体现为更低成本或更高价格能力 | 我们到底比别人多赚了什么？ |\n| **Barrier** | 阻止现有或潜在竞争对手复制这份收益的约束 | 别人为什么不能马上学会？ |\n| **Power** | Benefit 与 Barrier 同时存在时形成的可持续优势 | 优势能否穿越时间持续？ |\n| **Strategy** | 围绕获得、放大、维护 Power 的一系列选择 | 我们该押哪种护城河？ |\n\n核心公式：\n```\nPower = Benefit x Barrier\n若 Benefit > 0 但 Barrier 约等于 0，优势会被迅速套利\n若 Barrier 强但 Benefit 弱，护城河存在但经济价值有限\n```\n\n### 2. 7 Powers 的七类来源\n1. Scale Economies\n2. Network Economies\n3. Counter-Positioning\n4. Switching Costs\n5. Branding\n6. Cornered Resource\n7. Process Power"
+      },
+      {
+        "level": 1,
+        "title": "作者背景",
+        "content": "Hamilton Helmer 是长期从事商业战略研究与投资实践的顾问、投资人和教师。公开资料普遍提到，他曾长期从事战略咨询、活跃股权投资，并在 Stanford 相关课程中教授战略。他在《7 Powers》中试图把战略从流行概念中抽离出来，回到为什么有些公司能够持续获得高于行业平均经济回报这个第一性问题。"
+      },
+      {
+        "level": 1,
+        "title": "核心模型：Benefit x Barrier",
+        "content": "Helmer 的独特之处，在于把好战略定义得非常经济学：如果一种优势不能转成更高毛利、更低获客成本、更高留存、更强定价权，或者不能抵抗竞争复制，那么它就不是完整的战略 Power。\n\n| 组成 | 典型体现 | 常见误判 |\n|------|----------|----------|\n| **Benefit** | 更低单位成本、更高 ARPU、更高毛利、更高愿付价格 | 把增长速度误当战略 |\n| **Barrier** | 学不来、抄不走、跟不起、切不进 | 把暂时领先误当护城河 |\n| **Power** | 利润与份额都能更持久 | 把短期爆发误当长期优势 |\n\n实用原则：Always look for the barrier first。很多公司能解释为什么今天做得不错，却说不清为什么别人明天学不会。"
+      },
+      {
+        "level": 1,
+        "title": "子维度拆解：七种 Power 总览",
+        "content": "| Power | Benefit 主要来源 | Barrier 主要来源 | 最常见行业 |\n|------|------------------|------------------|-----------|\n| **Scale Economies** | 单位成本随规模下降 | 后来者无法用相同成本竞争 | 制造、云计算、流媒体 |\n| **Network Economies** | 用户越多，产品对每个用户越有价值 | 新进入者冷启动困难 | 社交、支付、市场平台 |\n| **Counter-Positioning** | 用 incumbents 难以复制的新模式切入 | 旧玩家受既有商业模式束缚 | SaaS、低价零售、订阅制 |\n| **Switching Costs** | 老客户更难离开 | 替换成本高、迁移风险大 | 企业软件、金融服务 |\n| **Branding** | 用户愿意支付溢价或更愿选择 | 心智与信任难复制 | 消费品、B2C 服务 |\n| **Cornered Resource** | 拿到别人拿不到的关键资源 | 资源本身稀缺且不可复制 | IP、人才、渠道、专利 |\n| **Process Power** | 独特流程带来更低成本或更高质量 | 竞争者难以完整学会内隐流程 | 制造、供应链、运营型企业 |"
+      },
+      {
+        "level": 2,
+        "title": "Power 1：Scale Economies",
+        "content": "固定成本被更大规模摊薄，单位成本下降，使领先者能持续提供更低价格或更高利润。\n\n公式：\n```\n单位成本 = (固定成本 / 规模) + 边际成本\n规模越大 -> 单位成本越低\n```\n\n适用条件：固定成本高、边际成本相对低、市场足够大。\n误区：有规模不等于有规模经济；如果成本不会随着规模明显下降，就不构成 Power。"
+      },
+      {
+        "level": 2,
+        "title": "Power 2：Network Economies",
+        "content": "随着更多用户加入，产品或网络对每个用户都更有价值。\n\n公式：\n```\n用户价值 ~ 网络规模 x 连接密度 x 参与质量\n```\n\n关键点：不是所有平台都有网络效应；必须是新增用户真的提升既有用户价值，而不是只让 GMV 变大。"
+      },
+      {
+        "level": 2,
+        "title": "Power 3：Counter-Positioning",
+        "content": "新进入者采用 incumbents 理性上很难复制的新商业模式切入，因为一旦模仿，会伤害其既有利润结构。\n\n核心逻辑：\n```\n新模式收益 > 新进入者成本\n但对旧玩家：新模式收益 < 侵蚀既有业务损失\n```\n\n关键启发：最好的切入口之一，不是别人不会做，而是别人做了反而伤自己。"
+      },
+      {
+        "level": 2,
+        "title": "Power 4：Switching Costs",
+        "content": "客户一旦采用产品，迁移到替代方案会付出显著成本：数据迁移、流程重建、培训、风险、关系与中断成本。\n\n公式：\n```\n净迁移收益 = 新方案收益 - (迁移成本 + 中断风险 + 学习成本)\n当净迁移收益 < 0 -> 客户倾向留存\n```\n\n边界：转换成本不能只是把客户锁死，否则会被新范式打穿；最稳的转换成本通常建立在真正的工作流嵌入。"
+      },
+      {
+        "level": 2,
+        "title": "Power 5：Branding",
+        "content": "品牌让客户在面对不确定性时，愿意支付更高价格、给出更高信任，或更优先选择你。品牌不是 logo、广告或声量本身。只有当用户愿意稳定地支付溢价或在关键场景优先选择你时，Branding 才形成 Power。"
+      },
+      {
+        "level": 2,
+        "title": "Power 6：Cornered Resource",
+        "content": "企业占据了竞争者难以获得的关键资源，如独家 IP、稀缺人才、地理位置、许可证、供应关系、创始资源或专利。\n\n公式：\n```\n资源价值 = 稀缺性 x 不可替代性 x 占有期限\n```\n\n风险提醒：若资源可被替代、可被买到、或会随时间失效，则 Cornered Resource 会快速衰减。"
+      },
+      {
+        "level": 2,
+        "title": "Power 7：Process Power",
+        "content": "企业长期积累出的复杂流程、协同习惯和隐性 know-how，使其在成本、质量、速度或可靠性上持续领先，而对手很难完整复制。它不是一张 SOP，而是多年累积的组织配合、例外处理、流程细节与文化默契。"
+      },
+      {
+        "level": 1,
+        "title": "子维度拆解：七种 Power 的判断问题",
+        "content": "1. Scale Economies：规模扩大后，单位成本是否真的下降？\n2. Network Economies：新用户是否提升了老用户价值？\n3. Counter-Positioning：旧玩家复制你，是否会伤害其现有业务？\n4. Switching Costs：客户离开你要付出的真实代价是什么？\n5. Branding：客户是否愿意稳定支付溢价或优先选择你？\n6. Cornered Resource：你占据的资源别人能不能买到或绕开？\n7. Process Power：你的领先是流程复利，还是偶然好运？"
+      },
+      {
+        "level": 1,
+        "title": "企业阶段视角：Origination / Takeoff / Stability",
+        "content": "公开摘要常提到，7 Powers 与公司阶段有天然对应关系：\n\n| 阶段 | 更常见的 Power | 原因 |\n|------|----------------|------|\n| **Origination** | Counter-Positioning, Cornered Resource | 创业公司最容易从新模式或稀缺资源切入 |\n| **Takeoff** | Scale Economies, Network Economies, Switching Costs | 增长期更容易放大规模、网络和留存机制 |\n| **Stability** | Branding, Process Power | 成熟企业更能沉淀品牌与流程复利 |\n\n意义：战略不是七个选项平均挑，而是看你所处阶段最有可能孕育哪类 Power。"
+      },
+      {
+        "level": 1,
+        "title": "正面案例",
+        "content": "案例A：Netflix 的规模经济加 Counter-Positioning。早期流媒体模式对传统线下租赁与传统电视体系具有反向定位特征，而随着内容投入和订阅规模扩大，又形成明显规模经济。\n\n案例B：企业软件中的 Switching Costs。一旦系统嵌入审批、财务、数据、权限与培训流程，替换成本会显著增加，留存更像结构变量而不是客服变量。\n\n案例C：社交产品的 Network Economies。当用户加入后，老用户也获得更多连接和内容，产品价值随网络规模上升，这不是简单的用户变多，而是网络更有用。\n\n案例D：品牌消费品的 Branding。在高不确定性购买中，品牌降低决策成本，提高信任与溢价能力。"
+      },
+      {
+        "level": 1,
+        "title": "反面案例 / 常见误区",
+        "content": "误区A：把增长当成 Power。增长可能只是窗口期红利；如果没有 Barrier，竞争会很快把超额收益打回去。\n\n误区B：把功能领先当成护城河。单一功能往往最容易被复制。若不能转成切实经济收益并被保护，不能算 Power。\n\n误区C：把品牌声量当品牌力。投放带来的短期知名度，不等于用户愿付溢价。Branding 的核心是偏好与支付意愿。\n\n误区D：把客户惰性误判成 Switching Costs。如果客户留下只是因为今天太忙，明天有更好替代品仍会离开。\n\n误区E：把流程文件当 Process Power。别人看得见的 SOP 很容易抄；真正难抄的是长期协同形成的隐性流程能力。"
+      },
+      {
+        "level": 1,
+        "title": "应用清单：个人 / 团队 / 组织",
+        "content": "### 个人层\n- [ ] 不再只问这个产品长得快不快，而是问它的 Barrier 是什么。\n- [ ] 评估一个商业机会时，分别写出 Benefit 与 Barrier。\n- [ ] 对每个看似强势的公司，尝试判断它属于哪一种 Power。\n\n### 团队层\n- [ ] 做战略讨论时，先禁止只谈愿景，不谈护城河。\n- [ ] 画出当前业务真正形成经济收益的 1 到 2 个 Power。\n- [ ] 将产品 roadmap 与 Power 建设挂钩，而不只与功能堆叠挂钩。\n- [ ] 区分短期拉新动作和长期 Power 积累动作。\n\n### 组织层\n- [ ] 把战略会议从今年做什么升级成哪种 Power 正在形成。\n- [ ] 在预算里单列对 Barrier 的建设投入。\n- [ ] 用系统指标监控 Power 是否在增强：单位成本、留存、迁移阻力、网络活跃度。\n- [ ] 警惕把战术执行效率误认成战略优势。"
+      },
+      {
+        "level": 1,
+        "title": "战略诊断模板",
+        "content": "```text\n1. 我们的核心 Benefit 是什么？\n2. 这个 Benefit 如何体现为更低成本或更高定价权？\n3. 竞争对手为什么学不会、跟不起、切不进？\n4. 这个 Barrier 属于哪种 Power？\n5. 它处于形成期、放大期还是衰减期？\n6. 我们下一步动作是在加 Benefit 还是在加 Barrier？\n```\n\n管理提醒：很多战略讨论只在谈 Benefit，却没有回答 Barrier。没有 Barrier 的优势，通常只是暂时领先。"
+      },
+      {
+        "level": 1,
+        "title": "与其他方法论的关系",
+        "content": "| 方法论 | 关注点 | 与 7 Powers 的关系 |\n|--------|--------|-------------------|\n| **商业模式画布** | 价值创造、传递、获取结构 | 解释你如何做生意，但不一定解释你为何能长期赢 |\n| **定位理论** | 用户为何理解并选择你 | 更偏需求侧心智；7 Powers 更偏供给侧与竞争结构 |\n| **精益创业** | 如何验证需求、快速试错 | 更适合找到 PMF；7 Powers 更适合 PMF 之后思考护城河 |\n| **跨越鸿沟** | 如何从早期市场进入主流市场 | 解决市场扩张阶段问题；7 Powers 解决持续超额收益问题 |"
+      },
+      {
+        "level": 1,
+        "title": "原书金句（提炼）",
+        "content": "1. Power 是 Benefit 和 Barrier 的统一体。\n2. 战略的关键，不是今天做得好，而是明天别人为什么学不会。\n3. 没有 Barrier 的优势，很快会被竞争套利。\n4. Always look for the barrier first.\n5. 增长不等于战略，规模只有在降低单位成本时才形成 Scale Economies。\n6. 品牌不是知名度，而是稳定的支付意愿与优先选择。\n7. 最危险的误判，是把战术领先当成结构优势。"
+      },
+      {
+        "level": 1,
+        "title": "更新日志",
+        "content": "| 日期 | 内容 |\n|------|------|\n| 2026-05-13 | 初版创建：基于《7 Powers》公开摘要与作者公开介绍，整理 Benefit x Barrier 核心框架、七种 Power、企业阶段映射、正反案例与战略诊断模板 |"
+      }
+    ],
+    "updates": [
+      {
+        "date": "2026-05-13",
+        "note": "初版创建：新增 7 Powers 方法论文档，包含 Benefit x Barrier 框架、七种护城河、阶段映射、应用清单与更新日志"
+      }
+    ]
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "id": "BJ Fogg-福格行为模型-Tiny Habits方法论",
+  "category": "心理学",
+  "title": "BJ Fogg 福格行为模型方法论",
+  "keywords": [
+    "BJ",
+    "Fogg",
+    "福格行为模型方法论"
+  ],
+  "summary": "**核心公式：B = MAP**",
+  "importance": 4,
+  "learned_at": "2026-05-10",
+  "source": "",
+  "content": {
+    "core_formula": "Behavior = Motivation + Ability + Prompt\n行为 = 动机 + 能力 + 提示",
+    "layers": [
+      {
+        "level": 2,
+        "title": "书籍信息",
+        "content": "- **作者**：BJ Fogg（斯坦福大学行为科学家）\n- **主要著作**：《Tiny Habits: The Small Changes that Change Everything》（2020）\n- **理论起源**：2007年发现，斯坦福行为设计实验室20年研究结晶\n- **引用量**：超过1900篇学术论文引用福格行为模型"
+      },
+      {
+        "level": 2,
+        "title": "理论体系结构",
+        "content": "1. **福格行为模型（FBM）**：理解行为的通用框架\n2. **福格行为网格（Behavior Grid）**：15种行为类型分类\n3. **行为设计方法**：设计行为改变的实操步骤\n4. **Tiny Habits 方法**：快速建立习惯的ABC公式"
+      },
+      {
+        "level": 2,
+        "title": "核心章节",
+        "content": "1. 行为如何工作：B=MAP公式\n2. 动机的三种类型\n3. 能力的六个简化因素\n4. 提示的三种形式\n5. 从小习惯到大改变\n6. 庆祝的力量\n7. 行为设计实战"
+      },
+      {
+        "level": 2,
+        "title": "主公式：B = MAP",
+        "content": "```\nBehavior = Motivation + Ability + Prompt\n行为 = 动机 + 能力 + 提示\n```\n**关键洞察**：\n- 三要素必须**同时出现**，行为才会发生\n- 缺少任何一项，行为都不会发生\n- 动机和能力可以**相互补偿**（高动机可弥补低能力）\n- 这是**普适公式**，适用于所有文化、年龄、行为类型"
+      },
+      {
+        "level": 2,
+        "title": "Tiny Habits 公式：ABC",
+        "content": "```\nAnchor → Behavior → Celebration\n锚点 → 行为 → 庆祝\n```\n**执行要点**：\n- **Anchor**：现有习惯作为触发锚点（\"在我……之后\"）\n- **Behavior**：新行为要**足够小**（\"我会……\"）\n- **Celebration**：立即庆祝创造积极情绪（\"我会庆祝……\"）"
+      },
+      {
+        "level": 2,
+        "title": "行为设计方程式",
+        "content": "```\n目标行为成功率 = 动机水平 × 能力门槛 × 提示有效性\n```"
+      },
+      {
+        "level": 2,
+        "title": "1. 动机（Motivation）- 三大核心动机",
+        "content": "| 类型 | 正向 | 负向 | 特点 |\n|------|------|------|------|\n| **感知型** | Pleasure（快乐） | Pain（痛苦） | 即时、本能、无需思考 |\n| **预期型** | Hope（希望） | Fear（恐惧） | 对未来的期待或担忧 |\n| **社会型** | Acceptance（认同） | Rejection（排斥） | 社会归属感需求 |\n**动机特征**：\n- **波动性**：动机不是恒定的，会随时间、情绪、环境变化\n- **不可靠**：长期依赖高动机是危险策略\n- **补偿关系**：高动机可以弥补低能力"
+      },
+      {
+        "level": 2,
+        "title": "2. 能力（Ability）- 六个简化因素",
+        "content": "能力 = 任务的**简化程度**\n| 因素 | 说明 | 降低门槛的方法 |\n|------|------|----------------|\n| **Time（时间）** | 需要多少时间 | 缩短行为时长 |\n| **Money（金钱）** | 需要多少成本 | 降低经济门槛 |\n| **Physical Effort（体力）** | 需要多少体力消耗 | 减少体力负担 |\n| **Brain Cycle（脑力）** | 需要多少认知负担 | 简化决策流程 |\n| **Social Deviance（社会偏差）** | 是否违背社会常规 | 使行为符合常规 |\n| **Non-Routine（非常规）** | 是否需要打破习惯 | 使行为常规化 |\n**关键原则**：\n- **让行为变得足够小**：如果行为很小，能力门槛就很低\n- **简化比激励更有效**：提升能力（降低门槛）比提升动机更稳定\n- **优先降低门槛**：设计行为时，先让任务变得简单"
+      },
+      {
+        "level": 2,
+        "title": "3. 提示（Prompt）- 三种提示类型",
+        "content": "| 提示类型 | 适用场景 | 示例 |\n|----------|----------|------|\n| **Facilitator（促进型）** | 高动机 + 低能力 | \"现在做只需要2分钟\" |\n| **Signal（信号型）** | 高动机 + 高能力 | 通知提醒、闹钟 |\n| **Spark（火花型）** | 低动机 + 高能力 | 创造动机触发 |\n**提示来源**：\n- **外部提示**：通知、闹钟、他人的提醒\n- **内部提示**：情绪、想法、身体感受\n- **行动提示**：现有习惯作为锚点（Tiny Habits的核心）"
+      },
+      {
+        "level": 2,
+        "title": "分类维度",
+        "content": "- **时间维度**：Dot（一次性）、Span（一段时间）、Path（长期持续）\n- **频率维度**：New（新行为）、Increase（增加）、Decrease（减少）、Stop（停止）"
+      },
+      {
+        "level": 2,
+        "title": "15种行为类型矩阵",
+        "content": "| | New（新行为） | Increase（增加） | Decrease（减少） | Stop（停止） |\n|---|---|---|---|---|\n| **Dot（一次性）** | Green Dot | Blue Dot | Gray Dot | Black Dot |\n| **Span（一段时间）** | Green Span | Blue Span | Gray Span | Black Span |\n| **Path（长期持续）** | Green Path | Blue Path | Gray Path | Black Path |"
+      },
+      {
+        "level": 2,
+        "title": "行为类型解读",
+        "content": "| 类型 | 定义 | 典型案例 | 关键策略 |\n|------|------|----------|----------|\n| **Green Dot** | 一次性新行为 | 下载APP | 降低门槛+强提示 |\n| **Blue Dot** | 一次性增加行为 | 买一本书 | 动机激发+便利性 |\n| **Gray Dot** | 一次性减少行为 | 少看一次Netflix | 提供替代选择 |\n| **Black Dot** | 一次性停止行为 | 取消订阅 | 高动机+阻力设计 |\n| **Green Span** | 暂时性新行为 | 两周试吃素食 | 小承诺+社会支持 |\n| **Blue Span** | 暂时性增加行为 | 每天运动30天 | 游戏化+奖励 |\n| **Gray Span** | 暂时性减少行为 | 节食一个月 | 监控+反馈 |\n| **Black Span** | 暂时性停止行为 | 戒酒30天 | 支持+替代活动 |\n| **Green Path** | 长期新习惯 | 开始冥想 | Tiny Habits方法 |\n| **Blue Path** | 长期增加习惯 | 每日运动 | 习惯堆叠 |\n| **Gray Path** | 长期减少习惯 | 减少社交媒体 | 环境设计 |\n| **Black Path** | 期停止习惯 | 戒烟 forever | 身份转变+支持系统 |"
+      },
+      {
+        "level": 2,
+        "title": "正向案例：成功的行为设计",
+        "content": "#### 案例1：Duolingo 语言学习APP\n- **动机**：希望学会新语言（Hope）+ 社交竞争（Acceptance）\n- **能力**：每日仅需5分钟（低时间门槛）、游戏化界面（低脑力）\n- **提示**：每日提醒通知 + 连续打卡机制\n- **结果**：全球数亿用户坚持学习\n#### 案例2：Floss One Tooth（福格自己的案例）\n- **目标**：养成用牙线习惯\n- **设计**：每次只清洁一颗牙齿（极低能力门槛）\n- **锚点**：刷牙后（现有习惯）\n- **庆祝**：对自己说\"干得好\"\n- **结果**：3周后自动清洁全部牙齿\n#### 案例3：健身房发卡\n- **动机**：健康希望、社会认同\n- **能力**：发卡只需填表（低门槛）\n- **提示**：朋友邀请、促销信息\n- **结果**：获客成功（但后续留存需另外设计）"
+      },
+      {
+        "level": 2,
+        "title": "反向案例：失败的行为设计",
+        "content": "#### 案例1：新年决心式健身\n- **问题**：依赖高动机（新年决心），动机波动后行为消失\n- **缺失**：能力门槛高（需要1小时）、缺乏有效提示\n- **教训**：动机不可靠，应降低能力门槛\n#### 案例2：复杂APP注册流程\n- **问题**：多步骤注册（高脑力门槛）\n- **结果**：用户中途放弃\n- **教训**：每增加一个步骤，流失率上升\n#### 案例3：依赖提醒通知\n- **问题**：仅靠外部提示（Signal型），无动机和能力支撑\n- **结果**：用户忽略或关闭通知\n- **教训**：提示必须与动机、能力匹配"
+      },
+      {
+        "level": 2,
+        "title": "个人习惯养成应用",
+        "content": "#### 步骤1：明确目标行为\n- 具体化：不是\"多运动\"，而是\"每天早上做2个俯卧撑\"\n- 微量化：让行为足够小，确保能力门槛极低\n#### 步骤2：找到锚点\n- 选择现有习惯：刷牙后、起床后、吃饭后、睡觉前\n- 格式：\"在我[现有习惯]之后，我会[新行为]\"\n#### 步骤3：设计庆祝\n- 即时性：行为后立即庆祝\n- 简单化：微笑、说\"干得好\"、拍拍自己\n- 目的：创造积极情绪，强化行为记忆\n#### 步骤4：迭代优化\n- 观察行为是否发生\n- 若未发生，检查三要素缺失项\n- 通常降低能力门槛最有效"
+      },
+      {
+        "level": 2,
+        "title": "产品设计应用",
+        "content": "#### 步骤1：定义目标行为\n- 不是\"提升用户活跃度\"，而是\"用户每天打开APP查看一次\"\n#### 步骤2：分析三要素现状\n- **动机诊断**：用户为什么想做？动机强度如何？\n- **能力诊断**：行为需要多少时间/金钱/脑力？\n- **提示诊断**：现有提示类型是否匹配？\n#### 步骤3：针对性优化\n| 问题类型 | 优化策略 |\n|----------|----------|\n| 动机不足 | Spark型提示 + 身份认同设计 |\n| 能力不足 | Facilitator型提示 + 降门槛设计 |\n| 提示无效 | 换锚点 + 行动提示 |\n#### 步骤4：A/B测试验证\n- 测试不同提示类型效果\n- 测试不同简化程度影响\n- 关注行为发生率变化"
+      },
+      {
+        "level": 2,
+        "title": "团队管理应用",
+        "content": "#### 创建团队习惯\n- 会议前1分钟：所有人同步状态（Green Dot）\n- 每日站会：固定时间地点（锚点）\n- 完成任务后：团队庆祝（强化）\n#### 文化改变\n- 用Gray Path减少负面行为\n- 用Blue Path增加正面行为\n- 用Tiny Habits逐步推进"
+      },
+      {
+        "level": 2,
+        "title": "关于行为本质",
+        "content": "> \"Behavior happens when Motivation, Ability, and a Prompt come together at the same time.\"\n> 行为发生需要动机、能力、提示三要素同时出现。\n> \"When a behavior does not occur, at least one of those three elements is missing.\"\n> 当行为没有发生时，至少缺少了这三要素中的一个。"
+      },
+      {
+        "level": 2,
+        "title": "关于动机",
+        "content": "> \"Motivation is unreliable. If you rely on motivation alone, you will fail.\"\n> 动机是不可靠的。如果只依赖动机，你会失败。\n> \"Don't focus on motivation. Focus on ability.\"\n> 不要只关注动机，要关注能力（让行为变得简单）。"
+      },
+      {
+        "level": 2,
+        "title": "关于小习惯",
+        "content": "> \"Make the behavior tiny. So tiny that you're 100% confident you can do it.\"\n> 让行为变得足够小，小到你有100%信心能做到。\n> \"The best way to change behavior is to make it easy, not to create motivation.\"\n> 改变行为最好的方式是让它变得容易，而不是创造动机。"
+      },
+      {
+        "level": 2,
+        "title": "关于庆祝",
+        "content": "> \"Celebration creates positive emotion, and positive emotion wires in the habit.\"\n> 庆祝创造积极情绪，积极情绪把习惯固化下来。\n> \"You must celebrate immediately after the behavior, not later.\"\n> 你必须在行为后立即庆祝，而不是等以后。"
+      },
+      {
+        "level": 2,
+        "title": "关于行为设计",
+        "content": "> \"There are 15 distinct behavior types. Techniques differ depending on the type.\"\n> 有15种不同的行为类型，技术策略因类型而异。\n> \"Simplicity changes behavior. Complexity kills behavior.\"\n> 简单能改变行为，复杂会扼杀行为。"
+      },
+      {
+        "level": 2,
+        "title": "与HOOK模型的关系",
+        "content": "| 福格模型 | HOOK模型 | 关系说明 |\n|----------|----------|----------|\n| Prompt | Trigger | 触发/提示对应 |\n| Ability | Action（门槛） | 行动门槛对应 |\n| Motivation | Motivation | 直接对应 |\n| Celebration | Reward | 庆祝=即时奖励 |\n| - | Investment | 福格模型无对应 |"
+      },
+      {
+        "level": 2,
+        "title": "与习惯回路的关系",
+        "content": "| 福格模型 | 习惯回路 | 关系说明 |\n|----------|----------|----------|\n| Anchor | Cue（线索） | 锚点=习惯触发 |\n| Behavior | Routine（行为） | 直接对应 |\n| Celebration | Reward（奖励） | 庆祝=即时奖励 |"
+      },
+      {
+        "level": 2,
+        "title": "独特贡献",
+        "content": "1. **三要素同时性**：强调必须同时出现\n2. **动机-能力补偿**：揭示了可替代关系\n3. **15种行为分类**：提供精准的行为类型诊断\n4. **Tiny Habits方法**：提供实操的ABC公式"
+      },
+      {
+        "level": 2,
+        "title": "行为诊断检查表",
+        "content": "□ 目标行为是否具体化？\n□ 行为类型是否确定（15种中的哪一种）？\n□ 动机水平评估（高/中/低）？\n□ 能力门槛评估（六因素中哪个是瓶颈）？\n□ 提示类型是否匹配（Facilitator/Signal/Spark）？"
+      },
+      {
+        "level": 2,
+        "title": "Tiny Habits实施检查表",
+        "content": "□ 锚点是否是现有习惯？\n□ 新行为是否足够小（100%信心能完成）？\n□ 庆祝是否即时发生？\n□ ABC公式是否完整填写？"
+      },
+      {
+        "level": 2,
+        "title": "产品设计检查表",
+        "content": "□ 用户行为路径是否简化？\n□ 每个步骤的能力门槛是否足够低？\n□ 提示是否与动机/能力匹配？\n□ 是否有即时反馈/庆祝机制？"
+      },
+      {
+        "level": 1,
+        "title": "十、常见误区与纠正",
+        "content": "| 误区 | 正确理解 |\n|------|----------|\n| 以为动机最重要 | 动机不可靠，能力（简化）更关键 |\n| 以为提醒就能改变 | 提示必须匹配动机和能力水平 |\n| 以为大目标更有动力 | 小行为更容易成功，能积累自信 |\n| 以为惩罚能阻止行为 | 负面动机效果短暂，应降低能力 |\n| 以为习惯需要21天 | 习惯在成功发生后就开始固化 |"
+      },
+      {
+        "level": 1,
+        "title": "更新日志",
+        "content": "| 日期 | 更新内容 |\n|------|----------|\n| 2026-04-28 | 初版创建，基于斯坦福行为设计实验室官方资料及BJ Fogg《Tiny Habits》整理 |"
+      },
+      {
+        "level": 1,
+        "title": "参考资源",
+        "content": "- **官方网站**：https://behaviormodel.org\n- **斯坦福行为设计实验室**：https://behaviordesign.stanford.edu\n- **作者官网**：https://bjfogg.com\n- **核心论文**：《A Behavior Model for Persuasive Design》（2009）\n- **书籍**：《Tiny Habits: The Small Changes that Change Everything》（2020）\n- **学术引用**：Google Scholar超过1900篇引用\n> **一句话总结**：改变行为不需要意志力，只需要让行为变得足够简单，并在合适的时机用提示触发。"
+      }
+    ],
+    "updates": [
+      {
+        "date": "2026-05-10",
+        "note": "从智慧库导入"
+      }
+    ]
+  }
+}

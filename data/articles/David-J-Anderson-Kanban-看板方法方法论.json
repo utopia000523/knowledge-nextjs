@@ -1,0 +1,83 @@
+{
+  "id": "David-J-Anderson-Kanban-看板方法方法论",
+  "category": "项目管理",
+  "title": "David J. Anderson《Kanban: Successful Evolutionary Change》看板方法方法论",
+  "keywords": [
+    "Kanban",
+    "看板",
+    "David J. Anderson",
+    "看板方法",
+    "精益软件开发",
+    "Kanban Method",
+    "在制品限制",
+    "WIP Limit",
+    "流程可视化",
+    "拉动系统",
+    "累积流图",
+    "CFD",
+    "前置时间",
+    "吞吐量",
+    "服务类别",
+    "节拍管理",
+    "流程图",
+    "持续改进",
+    "看板系统",
+    "精益",
+    "敏捷项目管理"
+  ],
+  "summary": "核心主题: Kanban 看板方法是一种渐进式的变革管理方法，通过可视化工作流程、限制在制品(WIP)并管理流程节拍，帮助团队在不推翻现有流程的前提下实现持续改进。它不是一套全新的方法论，而是从精益生产理论中提取的、可叠加在现有流程之上的变革路径。",
+  "importance": 5,
+  "learned_at": "2026-05-19",
+  "source": "David J. Anderson《Kanban: Successful Evolutionary Change for Your Technology Business》(2010, Blue Hole Press) - 看板方法奠基之作，Anderson 在 Microsoft 和 Corbis 等公司的实践经验结晶",
+  "content": {
+    "core_formula": "核心公式: 组织改进 = 可视化流程 × 限制在制品 × 管理流程 × 显式化策略 × 建立反馈循环 × 协作改进\n\nKanban 本质: 看板方法不是一套新的开发方法论，而是一个变革管理方法。它从你现有的流程开始，通过渐进式的调整实现持续改进。\n\n核心转变: 从「推动(push)」到「拉动(pull)」——不是把工作推给团队，而是让团队在有能力时拉取工作。",
+    "layers": [
+      {
+        "level": 1,
+        "title": "第一层: 核心理念——Kanban 的六项实践与三个基础原则",
+        "content": "### 1.1 三个基础原则\n\nKanban 没有预设的流程或角色，而是基于三个非常基础的原则:\n\n1. **从现有流程开始 (Start with what you do now)**: 你不需要改变任何现有角色、职责或流程。Kanban 尊重现有流程，承认其存在的合理性。\n2. **同意进行渐进式的进化变革 (Agree to pursue incremental, evolutionary change)**: 团队认同现状需要改进，并愿意逐步调整而非推倒重来。\n3. **鼓励在所有层面进行领导力行为 (Encourage acts of leadership at every level)**: 改进不应该只来自管理层，任何层级的任何人都可以提出并推动改进。\n\n### 1.2 六项核心实践\n\n| 编号 | 实践 | 英文 | 核心含义 |\n|------|------|------|----------|\n| 1 | 可视化工作流 | Visualize | 把工作流程画出来，让看不见的工作变得可见。每个工作项用一张卡片表示，在流程列中移动 |\n| 2 | 限制在制品 | Limit WIP | 为流程的每个步骤设定最大工作项数量限制。这是 Kanban 最核心的杠杆点 |\n| 3 | 管理流程 | Manage Flow | 监控和优化工作项在流程中的流动效率，关注前置时间和吞吐量 |\n| 4 | 显式化策略 | Make Policies Explicit | 把团队运作的规则写下来，让每个人都知道何时可以拉取新工作、如何判断完成等 |\n| 5 | 建立反馈循环 | Implement Feedback Loops | 建立定期回顾、站会、服务交付评审和运营评审等反馈机制 |\n| 6 | 协作改进 | Improve Collaboratively | 用数据驱动的方法，让整个团队一起实验和调整流程 |\n\n### 1.3 Kanban 与传统管理的根本区别\n\n| 维度 | 传统方法 | Kanban 方法 |\n|------|----------|-------------|\n| 工作方式 | Push(推动): 计划决定给团队多少工作 | Pull(拉动): 团队决定什么时候拉取多少工作 |\n| 变化方式 | 大规模变革: 从A到B一刀切 | 渐进式变革: 从A到A'到A''...持续微调 |\n| 对流程的态度 | 重新设计流程 | 尊重现有流程，逐步改进 |\n| 角色定义 | 重新定义新角色和职责 | 保留现有角色，逐步演化 |\n| 导入阻力 | 高度(推翻原有工作方式) | 低度(叠加在现有流程之上) |\n| 数据驱动 | 可能缺乏数据支撑 | 用累积流图等指标量化呈现 |"
+      },
+      {
+        "level": 1,
+        "title": "第二层: Kanban 系统的设计要素",
+        "content": "### 2.1 看板墙的设计\n\nKanban 看板墙是工作流程的可视化表示，典型的看板墙包含:\n\n| 列 | 含义 | 示例状态 | WIP 限制 |\n|----|------|----------|----------|\n| 待办(Backlog) | 等待处理的工作项 | 需求池、缺陷列表 | 通常不设限 |\n| 分析/准备 | 正在分析的工作 | 需求澄清、技术评估 | 3-5 |\n| 开发/执行 | 正在实现的工作 | 编码中、设计中 | 3-5 |\n| 测试/验证 | 正在验证的工作 | 测试中、代码审查中 | 2-4 |\n| 完成/发布 | 已完成的工作 | 已部署、已验收 | 不设限 |\n\n关键设计原则:\n- 列的数量通常为 4-7 列，过多则复杂，过少则不足以展示流程\n- 每列必须有明确的「进入」和「退出」标准\n- WIP 限制(列中)指的是「同时处于该列的工作项数量上限」\n\n### 2.2 工作项卡片\n\n每个工作项用一张卡片表示，通常包含:\n- 标题/描述: 工作项的具体内容\n- 类型: 功能/缺陷/技术改进/风险等\n- 负责人: 当前负责该工作项的人\n- 阻塞标记: 是否有外部依赖导致阻塞\n- 期限: 如果有明确的截止日期\n- 卡片编号: 用于追踪和讨论\n\n### 2.3 WIP 限制的核心逻辑\n\nWIP 限制是 Kanban 区别于简单看板(如 Trello)的关键。有限制才叫 Kanban，没有限制只是可视化任务板。\n\n为什么 WIP 限制如此重要:\n- 多任务并行导致切换成本: 每次上下文切换损失约 20% 的效率\n- 在制品越多，前置时间越长: Little定律告诉我们 LT = WIP / Throughput\n- WIP 过高隐藏问题: 问题被积压在管道中，而不是被及时暴露\n- 限制 WIP 逼迫优先级: 团队必须做出取舍\n\n如何设定 WIP 限制:\n1. 初始值 = 团队人数 × 1.5 (粗略估算)\n2. 观察一个迭代后调整: 如果频繁超限则提高，如果很少达到则降低\n3. 理想状态: 每周有 1-2 次 WIP 被用满的情况\n\n### 2.4 服务类别\n\nAnderson 引入了三个服务类别，用于对不同优先级的工作项给不同的处理策略:\n\n| 服务类别 | 定义 | 处理方式 | WIP 处理 |\n|----------|------|----------|----------|\n| 标准(Standard) | 日常功能开发 | 常规队列 | 作为主要WIP计算 |\n| 紧急(Expedite) | 生产事故等危急事务 | 立即处理 | 不计入WIP(但应极少使用) |\n| 固定交付日(Fixed Date) | 有硬性截止日期的工作 | 监控前置时间 | 作为主要WIP但标记日期 |\n| 无形(Intangible) | 技术改进、学习等 | 利用空闲时间处理 | 按一定比例分配 |\n\n紧急类别使用规则: 1) 必须定义什么算紧急 2) 紧急项不超过总项 5% 3) 每次紧急项进入时，团队需回顾原因"
+      },
+      {
+        "level": 1,
+        "title": "第三层: 五层展开——从个人到组织的 Kanban 部署",
+        "content": "### Layer 1: 个人层面——从工作可视化开始\n\nKanban 对个人的价值:\n- 看清自己的工作负载，不被隐性压力驱动\n- 有明确的工作完成标准，减少「在做的项目太多」的焦虑\n- 基于数据而非感觉来谈工作量\n\n个人实践:\n1. 把自己的工作任务画在最简单的三列看板上: 待办/进行中/已完成\n2. 对自己设一个「手头最多同时做 2 件事」的限制\n3. 每天结束前检查: 我完成了什么? 什么被阻塞了?\n\n### Layer 2: 团队层面——协作流畅化\n\n团队引入 Kanban 的关键步骤:\n1. 画出现状流程图 - 和团队一起画出工作从开始到结束的所有步骤\n2. 确定入/出标准 - 每个步骤什么算进入、什么算完成\n3. 设定 WIP 限制 - 初始估算后逐步调整\n4. 建立站会规则 - 围绕看板而不围绕个人\n5. 实施回顾机制 - 每迭代回顾一次看板设计是否有效\n\nKanban 站会的独特之处:\n- 围绕看板走，而非轮流汇报\n- 只关注三点: 卡片有没有移动? 阻塞了什么? WIP 是否超标?\n- 通常不超过 15 分钟\n\n### Layer 3: 管理层面——从管控到领导\n\nKanban 对管理者的角色转变:\n- 从「分配工作的人」变成「优化流程的人」\n- 从「监督个体产出」变成「关注系统效率」\n- 从「要求更多产出的推动者」变成「移除瓶颈的拉动者」\n\n管理者需要关注的关键指标:\n- 前置时间 (Lead Time): 从工作项被请求到完成的总时间\n- 吞吐量 (Throughput): 单位时间内完成的工作项数量\n- 累积流图 (CFD): 用可视化方式呈现 WIP、前置时间和吞吐量的关系\n- 流程效率 (Process Efficiency): 处理时间 / 前置时间\n\n### Layer 4: 组织层面——渐进式变革管理\n\nKanban 作为变革管理工具的优势:\n- 低阻力: 不要求改变现有角色和流程\n- 早见效: 可视化本身就带来明显的改进\n- 可持续: 基于数据的小步改进不会引起反弹\n- 自演化: 系统在反馈循环中自我优化\n\n组织级 Kanban 实施的关键成功因素:\n1. 高层支持但不微观管理\n2. 从试点团队开始，用数据说话\n3. 跨部门协作依赖可视化\n4. 建立服务级别协议(SLA): 不同服务类别的前置时间目标\n\n### Layer 5: 企业系统层面——从项目到产品\n\nKanban 在大型企业中的演化路径:\n1. 团队级 Kanban: 单个团队的流程可视化\n2. 价值流级 Kanban: 端到端跨团队的流动管理\n3. 产品级 Kanban: 产品组合管理\n4. 企业级 Kanban: 战略执行与资源分配\n\nKanban 与组合管理:\n- 战略工作与战术工作在同一体系下管理\n- 用服务类别区分不同类型的工作\n- 用 WIP 限制确保战略级工作不被日常事务淹没"
+      },
+      {
+        "level": 1,
+        "title": "第四层: 正反案例与常见误区",
+        "content": "### 正面案例A: Microsoft 产品支持团队\n\nDavid J. Anderson 在 Microsoft 担任项目管理总监时，将 Kanban 应用于一个 20 人的产品支持团队。在导入之前，团队面临:\n- 工作积压严重，前置时间长达 3-4 周\n- 团队士气低落，频繁加班\n- 管理者无法看清团队实际工作量\n\n做法:\n1. 绘制端到端流程: 从客户提交问题到问题关闭的 7 个步骤\n2. 设定 WIP 限制: 每个步骤最多 3 项工作\n3. 仅三周: 前置时间从 3-4 周降到 3-4 天\n4. 六个月后: 吞吐量提升 200%\n\n### 正面案例B: Corbis 产品开发团队\n\nAnderson 从 Microsoft 去 Corbis 后，将 Kanban 应用到整个软件开发团队。关键做法:\n- 将需求、开发、测试全部纳入看板系统\n- 用累积流图可视化瓶颈\n- 基于数据而非直觉做流程调整\n\n结果:\n- 可预测性大幅提升: 团队第一次能准确预测发布时间\n- 前置时间缩短 70%\n- 团队满意度提升，人员流动率下降\n\n### 正面案例C: 某金融企业 IT 部门转型\n\n一家大型银行 IT 部门面临多个并发项目导致的交付失败。导入 Kanban 后:\n- 建立跨项目的资源看板，可视化所有团队在做什么\n- 对每个项目设定 WIP 限制，确保团队不会同时接太多项目\n- 三个月后: 按时交付率从 35% 提升到 85%\n\n### 反面案例A: 看板墙不等于 Kanban\n\n最常见的错误: 团队在墙上贴了「待办/进行中/已完成」三列，就认为自己「在用 Kanban」。实际上:\n- 没有设 WIP 限制 = 只是可视化看板，不是 Kanban\n- 没有显式策略 = 每个人按照自己的理解移动卡片\n- 没有流程改进 = 可视化只是展示问题，不是解决问题\n\n教训: 可视化只是第一步，WIP 限制和流程改进才是 Kanban 的核心。\n\n### 反面案例B: WIP 限制被无视\n\n有些团队设了 WIP 限制，但管理压力下不断打破限制:「这次是特殊情况」。结果:\n- WIP 限制形同虚设\n- 前置时间反弹到比实施前更长\n- 团队失去对系统的信任\n\n教训: WIP 限制是团队的「减速信号」——当它被触及时应去调查原因，而不是忽视它。\n\n### 反面案例C: Kanban 作为「全盘替代」\n\n一些团队以为 Kanban 可以完全替代 Scrum:\n- 去掉了迭代周期视图\n- 失去了时间盒的纪律\n- 结果: 工作项在待办区一放就是两月\n\n教训: Kanban 可以和 Scrum 结合(Scrumban)，而不是完全替代。\n\n### 常见误区\n\n| 误区 | 真相 |\n|------|------|\n| Kanban 就是看板墙 | 看板墙是可视化工具，Kanban 是包含 WIP 限制和流程管理的完整方法 |\n| Kanban 不需要迭代 | Kanban 可以没有固定迭代，但需要其他反馈循环(站会/回顾) |\n| Kanban 没有角色 | Kanban 保留现有角色，但改变行为方式 |\n| WIP 限制是惩罚 | WIP 限制是信号机制，告诉团队「系统有瓶颈了」 |\n| Kanban 就是精益 | Kanban 是精益思想的实践工具，但两者不是等同关系 |"
+      },
+      {
+        "level": 1,
+        "title": "第五层: 应用清单——从个人到组织的 Kanban 落地",
+        "content": "### 个人/小团队层面\n\n- [ ] 第一步: 画出现状流程图——把工作从「开始」到「结束」的每个步骤写下来(用便利贴)\n- [ ] 第二步: 制作看板墙——用白板或数字工具(Trello/Jira/物理白板)建立看板\n- [ ] 第三步: 定义每列的进入和退出标准——什么算「开始」?什么算「完成」?\n- [ ] 第四步: 设定初始 WIP 限制——团队人数 × 1.5 作为每列的 WIP 上限\n- [ ] 第五步: 运行两周后调整——观察 WIP 被触发的频率，调整限制值\n- [ ] 第六步: 引导站会围绕看板——每天 15 分钟，只看卡片的移动\n- [ ] 第七步: 标记阻塞——用红色标记在停住的卡片上，站会时讨论解堵方案\n- [ ] 第八步: 每周回顾——检查看板设计是否合理，WIP 限制是否恰当\n\n### 团队/部门层面\n\n- [ ] 定义服务类别: 标准/紧急/固定交付日/无形 四类\n- [ ] 建立服务级别目标: 标准项前置时间不超过 X 天，紧急项 Y 小时内响应\n- [ ] 引入累积流图(CFD): 每周生成一次，观察前置时间和 WIP 趋势\n- [ ] 建立运营评审会议: 每月一次，用数据驱动的方式讨论流程改进\n- [ ] 设定紧急类使用规则: 定义什么算紧急、紧急项占比监控\n- [ ] 跨团队依赖可视化: 在看板上标注跨团队依赖关系\n- [ ] 建立阻塞项管理流程: 阻塞超过 2 天自动升级到管理层\n- [ ] 实施流动性审查: 定期检查流程是否顺畅，队列是否过长\n\n### 组织层面\n\n- [ ] 建立价值流看板: 跨越多个团队的端到端价值流可视化\n- [ ] 实施组合看板: 把项目级别的决策纳入看板管理\n- [ ] 培训全员 Kanban 思维: 不仅是工具操作，更是对流动效率的认知\n- [ ] 建立改进板: 专门用于追踪流程改进项的 Kanban 看板\n- [ ] 设置管理者角色: 管理者从「分配工作」转向「优化系统」\n- [ ] 跨部门服务级别协议: 上下游团队之间明确交付预期\n- [ ] 建立 Kanban 教练体系: 培养内部的变革推动者\n- [ ] 数据驱动文化: 所有流程改进决策基于 CFD、前置时间、吞吐量等数据\n\n### Kanban 与 Scrum 的对比\n\n| 维度 | Scrum | Kanban |\n|------|-------|--------|\n| 迭代 | 固定时间盒(通常2周) | 持续流动，无固定迭代 |\n| 角色 | 产品负责人/Scrum Master/开发团队 | 保留现有角色 |\n| 计划 | 迭代开始时做计划 | 持续计划，按需拉取 |\n| 变更 | 迭代内不允许变更 | 任何时候可变更 |\n| WIP | 隐含在迭代承诺中 | 显式的 WIP 限制 |\n| 团队承诺 | 承诺完成迭代目标 | 无承诺，按能力拉取 |\n| 关键指标 | 速度(Velocity) | 前置时间/吞吐量 |\n| 适合场景 | 需求可预测、团队需纪律 | 需求不稳定、团队需灵活性 |\n| 变革方式 | 全盘采用Scrum | 渐进式叠加在现有流程上 |\n\n注意: Scrum 和 Kanban 不是二选一的关系。Scrumban 是一种融合实践——保留 Scrum 的迭代节奏和角色，同时引入 Kanban 的 WIP 限制和流程管理。"
+      },
+      {
+        "level": 1,
+        "title": "第六层: Kanban 的量化分析工具",
+        "content": "### 6.1 累积流图 (Cumulative Flow Diagram, CFD)\n\nCFD 是 Kanban 中最强大的可视化分析工具，它用一条「累积」曲线展示工作项在不同状态下的数量随时间的变化。\n\nCFD 解读:\n- 曲线之间的垂直距离 = 该环节的 WIP 数量\n- 曲线之间的水平距离 = 工作项在该环节的平均等待时间\n- 上曲线的斜率 = 吞吐量\n\n通过 CFD 你可以快速判断:\n- WIP 是否在增长(曲线距离拉宽)\n- 瓶颈在哪里(特定列曲线变平)\n- 吞吐量是否稳定(斜率是否一致)\n\n### 6.2 Little 定律\n\n核心公式: 前置时间 = WIP / 吞吐量\n\n含义:\n- 想知道前置时间? 控制 WIP 和控制吞吐量就行\n- 要缩短前置时间: 要么减少 WIP，要么增加吞吐量\n- 在不改变流程的情况下，WIP 和前置时间是线性关系\n\n### 6.3 前置时间直方图\n\n统计所有已完成项的前置时间分布，可以回答:\n- 80% 的工作在几天内完成?\n- 是否有异常的长尾项?\n- 前置时间的稳定性如何?\n\n### 6.4 流程效率分析\n\n流程效率 = 实际处理时间 / 前置时间\n\n典型状况:\n- 大多数团队的流程效率在 5-15% 之间\n- 意味着 85-95% 的时间工作项在等待而不是在处理\n- Kanban 的核心目标之一是提高流程效率\n\n### 6.5 控制图 (Control Chart)\n\n用统计过程控制(SPC)的方法，监控前置时间的变化:\n- 中心线: 平均前置时间\n- 上限: 平均 + 3σ (异常信号)\n- 超出上限的项需要特殊分析\n\n控制图帮助团队区分:\n- 常见原因变异(Common Cause): 系统固有噪声，需要系统性改进\n- 特殊原因变异(Special Cause): 异常事件，需要立即调查"
+      },
+      {
+        "level": 1,
+        "title": "第七层: 原书金句",
+        "content": "01. \"Start with what you do now. Kanban does not require any changes to your existing process.\" (从你正在做的事情开始。Kanban 不要求你改变现有流程中的任何东西。)\n\n02. \"Kanban is not a software development lifecycle methodology. It is a change management method.\" (Kanban 不是软件开发生命周期方法论。它是一个变革管理方法。)\n\n03. \"The most important signal in a Kanban system is not a green card moving from left to right, but a yellow card telling someone to stop sending more work.\" (Kanban 系统中最重要的信号不是一张绿卡从左移到右，而是一张黄卡告诉某人停止发送更多工作。)\n\n04. \"By limiting WIP, you force prioritization. You force conversations about what really matters.\" (通过限制在制品，你迫使其排列优先级。你迫使团队讨论什么才是真正重要的。)\n\n05. \"If you want to improve your process, don't start by changing it. Start by understanding it.\" (如果你想改进你的流程，不要从改变它开始。从理解它开始。)\n\n06. \"The purpose of a Kanban board is not to manage individuals but to manage the flow of work.\" (看板墙的目的不是管理个人，而是管理工作流。)\n\n07. \"Good data is essential to good decisions. Without metrics, you are flying blind.\" (好的数据对好的决策至关重要。没有指标，你就是在盲目飞行。)\n\n08. \"Respect the existing process. That is the key to low resistance to change.\" (尊重现有流程。这是低变革阻力的关键。)\n\n09. \"Flow efficiency is the ratio of active work time to total lead time. Most teams are shocked to find it is below 10%.\" (流程效率是实际工作时间与总前置时间的比率。大多数团队惊讶地发现这个比率低于 10%。)\n\n10. \"Expedite class should account for no more than 5% of your total work. If it is higher, you have a deeper systemic problem.\" (紧急类别不应超过你总工作量的 5%。如果高于这个比例，你有更深层次的系统性问题。)\n\n11. \"Kanban is not about doing more with less. It's about doing the right things faster.\" (Kanban 不是关于用更少的资源做更多的事。而是关于更快地做正确的事。)\n\n12. \"The cumulative flow diagram is the single most valuable metric in a Kanban system.\" (累积流图是 Kanban 系统中最有价值的单一指标。)\n\n13. \"Don't optimize for utilization. Optimize for flow. A 100% utilized system has zero slack and zero capacity to deal with variability.\" (不要优化利用率。优化流动。一个 100% 利用率的系统没有缓冲、没有处理变异性的能力。)\n\n14. \"The bottlenecks reveal themselves when WIP limits are respected. Ignore the limits, and the bottlenecks hide.\" (当你尊重 WIP 限制时，瓶颈会自我暴露。忽视限制，瓶颈就会隐藏起来。)\n\n15. \"Leadership is not about having all the answers. It's about asking the right questions and creating the conditions for the system to improve itself.\" (领导力不是拥有所有答案。而是提出正确的问题，为系统自我改进创造条件。)"
+      },
+      {
+        "level": 1,
+        "title": "第八层: 更新日志",
+        "content": "| 版本 | 时间 | 更新内容 |\n|------|------|----------|\n| v1.0 | 2026-05-19 | 初版创建: 基于 David J. Anderson《Kanban: Successful Evolutionary Change》整理完整看板方法论，覆盖六项核心实践、三个基础原则、看板设计要素(含 WIP 限制逻辑/服务类别)、五层展开(个人/团队/管理/组织/企业)、三大正面案例与三大反面案例、五大误区辨析、三层应用清单、Kanban vs Scrum 对比表、量化分析工具(CFD/Little定律/控制图)及 15 条原书金句 |"
+      }
+    ],
+    "updates": [
+      {
+        "date": "2026-05-19",
+        "note": "v1.0: 新增 David J. Anderson《Kanban: Successful Evolutionary Change》看板方法方法论——六项核心实践 x WIP 限制管理 x 服务类别 x 量化分析工具 x 渐进式变革路径 x 应用清单"
+      }
+    ]
+  }
+}

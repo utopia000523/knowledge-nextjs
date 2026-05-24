@@ -1,0 +1,80 @@
+{
+  "id": "Simon-Wardley-Wardley-Mapping-战略地图方法论",
+  "category": "技术",
+  "title": "Simon Wardley《Wardley Mapping》战略地图方法论",
+  "keywords": [
+    "Simon Wardley",
+    "Wardley Mapping",
+    "战略地图",
+    "Value Chain",
+    "Evolution",
+    "Doctrine",
+    "Climate",
+    "Gameplay"
+  ],
+  "summary": "**核心主题**：在业务战略中把“用户需求—能力依赖—演化阶段”画成地图，再结合 climate 与 doctrine 选择行动；战略不是套模板，而是先获得 situational awareness。",
+  "importance": 5,
+  "learned_at": "2026-05-16",
+  "source": "Simon Wardley 免费公开书与 Learn Wardley Mapping 公开介绍；Wardley Maps 官方 glossary（value chain / evolution stages / doctrine / gameplay）",
+  "content": {
+    "core_formula": "Wardley Mapping = 用户需求 x 价值链 x 演化 x 气候 x 原则\n\n战略判断 = 先看地图位置，再看外部规律，最后选择 gameplays。",
+    "layers": [
+      {
+        "level": 1,
+        "title": "第一层：概念定义",
+        "content": "根据 Learn Wardley Mapping 公开介绍，Wardley Mapping 是一种 visual approach to strategy：围绕 purpose、landscape、climate 与 doctrine 来做战略判断。它的起点不是 SWOT 或 OKR，而是把为用户创造价值所需的能力与依赖关系画出来。\n\n| 概念 | 定义 | 方法论意义 |\n|------|------|------------|\n| User Need | 用户真正需要被满足的结果 | 一切制图都从用户需求起步 |\n| Value Chain | 为满足用户需求所需的能力依赖链 | 帮助团队看见从前台到后台的结构 |\n| Evolution | 组件从 Genesis、Custom Built、Product 到 Commodity 的演化路径 | 决定不同位置该用何种方法与投入 |\n| Climate | 地图之外持续存在的外部规律与约束 | 帮助理解哪些变化会自然发生 |\n| Doctrine | 一组普适性的战略原则 | 训练组织形成更好的基本动作 |\n| Gameplay | 基于地图位置采取的具体竞争动作 | 把洞察转成可执行策略 |\n\n一句话理解：Wardley Mapping 不是再加一个分析框架，而是把战略对象画出来，让团队先拥有共同地形感。"
+      },
+      {
+        "level": 1,
+        "title": "第二层：子维度拆解",
+        "content": "### 维度一：价值链\nWardley Maps 官方 glossary 强调，它不是活动链，而是 chain of dependencies that delivers value to a user。\n\n### 维度二：演化\n官方 glossary 给出四阶段：Genesis、Custom Built、Product、Commodity。\n\n### 维度三：原则\ndoctrine 强调 situational awareness、user needs、transparency、challenge assumptions。\n\n### 维度四：动作\ngameplay 是情境化竞争动作，如标准化、开源、利用惯性、打破对手价值链、加速商品化等。\n\n### 维度五：领导\n先有地图与原则，再做领导动作。\n\n| 维度 | 核心问题 | 典型误区 |\n|------|----------|----------|\n| 价值链 | 我们靠哪些能力满足用户 | 只看组织结构，不看依赖结构 |\n| 演化 | 每个组件处在什么成熟度 | 把所有组件一视同仁 |\n| 原则 | 团队是否按同一地形语言工作 | 先争论方法，不先画图 |\n| 动作 | 我们应采取什么竞争动作 | 背战术清单，不看位置 |\n| 领导 | 如何在不确定环境中做选择 | 没地图就强行拍板 |"
+      },
+      {
+        "level": 2,
+        "title": "2.1 最小制图步骤",
+        "content": "Step 1 写出用户和用户需求。\nStep 2 追问为满足这个需求需要哪些能力。\nStep 3 继续向下展开依赖，形成 value chain。\nStep 4 把每个能力放在演化轴上。\nStep 5 观察哪些能力已商品化，哪些仍需差异化。\nStep 6 结合 climate 和 doctrine 选择 gameplay。\n\n最常见的错误是从组织部门开始画，而不是从用户需求开始画。"
+      },
+      {
+        "level": 2,
+        "title": "2.2 核心模型：演化轴的战略含义",
+        "content": "| 演化阶段 | 特征 | 更适合的方法 | 典型管理动作 |\n|----------|------|--------------|--------------|\n| Genesis | 不确定、探索、试验 | 探索式、研究式、小赌注 | 快速试验、感知机会 |\n| Custom Built | 针对特定需求定制 | 工程化、协作式 | 强调学习与适配 |\n| Product | 开始标准化、可比较 | 产品管理、规模化 | 提升效率与一致性 |\n| Commodity | 高标准化、低差异 | 自动化、外包、平台化 | 降成本、取公用能力 |\n\n关键洞察：不同演化位置不应使用同一种管理方法。对 Genesis 区域过早流程化，会扼杀探索；对 Commodity 区域继续手工定制，会浪费组织能力。"
+      },
+      {
+        "level": 2,
+        "title": "2.3 Doctrine：原则先于战术",
+        "content": "公开 doctrine 资料反复强调若干共识：Know your users、Challenge assumptions、Use a common language、Be transparent、Use appropriate methods。其含义不是做个价值观海报，而是先保证团队看到的是同一张图，再保证不同组件用不同方法，最后才进入战术动作。"
+      },
+      {
+        "level": 1,
+        "title": "第三层：正反案例",
+        "content": "### 正面案例A：平台团队识别该自建还是该购买\n通过画出从用户功能到后台能力的依赖链，团队发现某项基础设施已处于 commodity 阶段，于是停止重复造轮子。\n\n### 正面案例B：产品团队识别真正的差异化位置\n地图画完后发现真正瓶颈在数据流、集成能力、运营反馈机制。\n\n### 反面案例A：没有地图，只有部门视角\n各自优化本部门，却没人能解释整条价值链怎样为用户创造价值。\n\n### 反面案例B：对 commodity 区域持续定制开发\n导致成本高、稳定性差、速度慢。\n\n### 反面案例C：把 Wardley Mapping 当万能模板\n地图画完并不自动给答案；如果没有 climate 判断和 gameplay 选择，地图只会停留在认知层。"
+      },
+      {
+        "level": 1,
+        "title": "第四层：应用清单",
+        "content": "### 个人层\n- [ ] 从用户需求而不是我的部门职责开始描述问题。\n- [ ] 每次提战略建议前，先问这项能力位于演化轴哪里。\n- [ ] 区分哪些能力该差异化，哪些该商品化。\n\n### 团队层\n- [ ] 评审时先展示用户需求与依赖链。\n- [ ] 对每个核心能力标注演化阶段与 owner。\n- [ ] 对 Genesis 区域允许探索，对 Commodity 区域追求自动化与成本效率。\n- [ ] 战术讨论前先统一地图语言。\n\n### 组织层\n- [ ] 用 Wardley Map 识别重复造轮子的区域。\n- [ ] 把战略争论从谁声音大转成地图位置是否支持此动作。\n- [ ] 建立 climate、doctrine、gameplay 的常规复盘机制。"
+      },
+      {
+        "level": 1,
+        "title": "第五层：原书金句 / 方法金句",
+        "content": "1. Strategy starts with situational awareness.\n2. A value chain in Wardley Mapping is the chain of dependencies that delivers value to a user.\n3. Everything evolves.\n4. Doctrine gives you principles; gameplay gives you moves.\n5. Do not use one method everywhere: the map tells you where different methods belong.\n\n中文提炼：没有地形感，就没有战略感；演化决定方法，位置决定动作；不是所有能力都值得差异化。"
+      },
+      {
+        "level": 1,
+        "title": "六、更新日志",
+        "content": "| 日期 | 版本 | 更新内容 |\n|------|------|----------|\n| 2026-05-16 | v1.0 | 初始创建：基于 Simon Wardley 公开书与 Wardley Maps、Learn Wardley Mapping 官方资料，整理价值链、演化阶段、doctrine、gameplay 与最小制图步骤。 |"
+      },
+      {
+        "level": 1,
+        "title": "七、参考文献",
+        "content": "1. Learn Wardley Mapping - Introduction\n2. Wardley Maps Glossary - Value Chain\n3. Wardley Maps Glossary - Evolution Stages\n4. Wardley Maps Glossary - Doctrine\n5. Wardley Maps Glossary - Gameplay\n6. Simon Wardley free book / public materials"
+      }
+    ],
+    "updates": [
+      {
+        "date": "2026-05-16",
+        "note": "初始创建：新增 Simon Wardley《Wardley Mapping》战略地图方法论文档，收录价值链、演化阶段、doctrine、gameplay、正反案例与应用清单。"
+      }
+    ]
+  }
+}

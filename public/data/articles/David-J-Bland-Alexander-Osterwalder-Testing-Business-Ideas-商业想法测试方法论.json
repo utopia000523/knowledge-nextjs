@@ -1,0 +1,71 @@
+{
+  "id": "David-J-Bland-Alexander-Osterwalder-Testing-Business-Ideas-商业想法测试方法论",
+  "category": "创业",
+  "title": "David J. Bland & Alexander Osterwalder《Testing Business Ideas》商业想法测试方法论",
+  "keywords": [
+    "Testing Business Ideas",
+    "David J. Bland",
+    "Alexander Osterwalder",
+    "Assumption Mapping",
+    "Desirability",
+    "Feasibility",
+    "Viability",
+    "Experiment Library",
+    "Evidence-based innovation"
+  ],
+  "summary": "核心主题：不要先凭热情把产品做出来，再让市场宣判；应该先把商业假设拆开，按 desirability / feasibility / viability 排序，用最小成本实验逐步把猜测变成证据。",
+  "importance": 5,
+  "learned_at": "2026-05-18",
+  "source": "David J. Bland & Alexander Osterwalder《Testing Business Ideas: A Field Guide for Rapid Experimentation》(Wiley, 2019)；Wiley 官方书页；Strategyzer《Testing Business Ideas》公开书介、书摘与作者资料；Open Library 公开书目数据。",
+  "content": {
+    "core_formula": "创新成功率 ≈ 正确问题 × 正确客户 × 正确证据 × 正确实验顺序\n\n测试优先级 = 假设重要性 × 不确定性 × 失败代价 / 测试成本\n\n证据增量 = 学到的新信息 ÷ 花掉的时间与现金",
+    "layers": [
+      {
+        "level": 1,
+        "title": "第一层：概念定义",
+        "content": "### 作者与来源背景\n- **David J. Bland**：Strategyzer 合作伙伴、Precoil 创始人，长期帮助创业公司与成熟企业用 lean startup、design thinking 与 business model innovation 验证新业务。\n- **Alexander Osterwalder**：Business Model Canvas / Value Proposition Canvas 体系代表作者，《Business Model Generation》《Value Proposition Design》作者。\n- **Wiley 官方书页**将本书描述为一本 practical guide to effective business model testing，强调它不是讲空泛创新，而是提供可操作实验库。\n\n### 核心命题\n《Testing Business Ideas》最重要的转向是：**先验证，再扩大；先找证据，再加投入。**\n\n| 概念 | 定义 | 方法含义 | 常见误区 |\n|------|------|----------|----------|\n| Business Idea Testing | 对商业想法中的关键假设进行系统验证 | 把“我觉得”变成“我已验证” | 把测试理解成上线后再观察 |\n| Assumption Mapping | 把假设按重要性与证据水平排序 | 先测最关键、最不确定的假设 | 先测最容易做的，不测最危险的 |\n| Desirability | 客户是否真的想要、愿意改变行为 | 先验证问题与价值主张 | 把点击或点赞误当真实需求 |\n| Feasibility | 团队是否真能交付解决方案 | 关注能力、技术、资源与交付约束 | 只看 demo 成功，不看规模化难度 |\n| Viability | 业务是否能持续赚钱或自我维持 | 验证支付、成本、毛利、渠道等 | 有人用就以为业务成立 |\n| Experiment Library | 按成本、速度、证据强度组织的实验库 | 让团队按风险设计实验路线 | 只会做一种“用户访谈” |\n\n一句话理解：**商业想法不是靠信心赢，而是靠证据活下来。**"
+      },
+      {
+        "level": 1,
+        "title": "第二层：核心模型",
+        "content": "书中的主线可以压缩为一条证据管道：\n\n```text\n商业想法 → 拆成假设 → 假设映射排序 → 选择实验 → 收集证据 → 更新判断 → 放大/转向/停止\n```\n\n其治理逻辑不是“把所有东西一次性论证清楚”，而是：\n1. 先识别最可能让项目失败的假设；\n2. 用最便宜、最快速、最有区分度的实验先验证；\n3. 随着证据增强，再进入更重的投入。\n\n这让创新从线性开发流程，变成**逐步降低不确定性的学习流程**。"
+      },
+      {
+        "level": 1,
+        "title": "第三层：核心公式 / 决策模板",
+        "content": "### 公式1：测试优先级\n```\n测试优先级 = 业务影响 × 不确定性 × 失败代价 / 测试成本\n```\n高影响、低证据、失败后代价大的假设，应最先测试。\n\n### 公式2：证据强度判断\n```\n证据质量 = 行为数据权重 > 自报态度权重 > 团队内部意见\n```\n真实购买、真实预约、真实留资，通常比“用户说会买”更强。\n\n### 公式3：实验效率\n```\n实验效率 = 获得的关键结论 / 时间成本 / 现金成本\n```\n好的实验不是最复杂，而是最快排除错误路径。\n\n### 公式4：继续 / 转向 / 停止\n```\n若关键假设被支持 -> 放大投入\n若关键假设部分成立 -> 转向设计或细分人群\n若关键假设被否定 -> 及时停止，保护资本\n```"
+      },
+      {
+        "level": 1,
+        "title": "第四层：子维度拆解——从假设到证据的五个动作",
+        "content": "### 动作一：把想法拆成可检验假设\n不要讨论“这个产品是不是好想法”，而要拆成：谁有这个问题、问题有多痛、客户现在怎么解决、愿不愿付钱、我们是否能交付。\n\n### 动作二：按 desirability / feasibility / viability 三镜头分类\nStrategyzer 对本书的公开摘要反复强调三镜头：客户想不想要、团队做不做得到、业务算不算得过来。三者缺一不可。\n\n### 动作三：做 assumption mapping\n把假设放进“重要性 × 证据水平”矩阵。优先处理高影响、低证据的假设，而不是先做容易的工作。\n\n### 动作四：匹配实验类型\n- 发现型实验：访谈、观察、问题验证\n- 兴趣型实验：落地页、广告测试、预注册\n- 交易型实验：预售、报价、付费意向、试点签约\n- 可行性实验：原型、人工后台服务、技术验证\n\n### 动作五：把实验结果写回决策\n实验不是做完就结束，必须回答：继续加码、改变方案，还是停止投入。\n\n| 子维度 | 关键问题 | 好做法 | 坏做法 |\n|------|----------|--------|--------|\n| 假设拆解 | 我们到底在赌什么？ | 把关键假设显性化 | 用模糊愿景代替假设 |\n| 风险排序 | 先测什么？ | 先测高风险假设 | 先做最舒服的实验 |\n| 实验设计 | 哪个实验最划算？ | 低成本、快反馈、强区分度 | 上来就开发完整产品 |\n| 证据判断 | 什么算通过？ | 预先定义阈值 | 做完后主观解释 |\n| 决策闭环 | 学到了什么？ | 明确继续/转向/停止 | 收集数据但不改变决策 |"
+      },
+      {
+        "level": 1,
+        "title": "第五层：正反案例",
+        "content": "### 正面案例A：落地页先于完整开发\n团队想做一款针对中小商家的 AI 报表工具，没有先开发复杂系统，而是先做落地页、演示视频与预约表单测试价值主张。结果发现真正高响应的人群并非“所有店主”，而是“已有多平台投放、数据分散的运营负责人”。\n**启示**：测试不是确认自己原来就对，而是更快找到真正的细分客户。\n\n### 正面案例B：预售验证支付意愿\n某硬件团队在模具投入前，先用样机、报价单与小批量预售验证付费意愿。虽然订单量不大，但足以证明目标用户愿意为核心价值付费。\n**启示**：比起“你会买吗”，真实下单更接近 viability 证据。\n\n### 正面案例C：人工后台先验证服务逻辑\n团队先用 concierge / wizard-of-oz 方式人工完成后台服务，验证用户是否愿意持续使用，再决定是否做自动化系统。\n**启示**：先验证价值流，再自动化流程。\n\n### 反面案例A：把访谈当确认偏见工具\n团队提问方式全是“如果我们做这个你会不会喜欢”，最终得到很多礼貌性正反馈，产品上线却没人用。\n**教训**：访谈要挖真实行为，不要诱导未来态度。\n\n### 反面案例B：点击很多，付款很少\n广告点击率很好，团队误以为需求成立；但进入付费、预约或签约阶段时转化极低。\n**教训**：兴趣证据不等于交易证据。\n\n### 反面案例C：太早追求完美产品\n在核心假设未验证时就投入完整研发、品牌包装与复杂功能，最后只是更昂贵地证明方向错误。\n**教训**：错误方向上执行力越强，浪费越大。"
+      },
+      {
+        "level": 1,
+        "title": "第六层：应用清单——个人 / 团队 / 组织",
+        "content": "### 个人层（创业者 / 产品负责人）\n- [ ] 用一句话写出：这个想法最可能死在哪个假设上。\n- [ ] 把假设区分为 desirability / feasibility / viability。\n- [ ] 每周至少设计一个能增加关键证据的小实验。\n- [ ] 在做功能前，先定义通过阈值与放弃阈值。\n\n### 团队层\n- [ ] 建立 assumption mapping 看板，公开当前最高风险假设。\n- [ ] 为不同实验标注成本、周期、证据强度。\n- [ ] 每次实验后必须输出：结论、证据、下一步动作。\n- [ ] 禁止把“团队很努力”当作继续投入的理由。\n\n### 组织层\n- [ ] 把创新评审从“做了多少功能”改成“消除了多少关键不确定性”。\n- [ ] 对探索项目设置学习指标，而不只看收入指标。\n- [ ] 在大额投资前，要求至少一条客户证据、一条交易证据、一条可行性证据。\n- [ ] 鼓励早停错误项目，把资本留给高证据方向。\n\n### 落地口诀\n```text\n先找假设，再找证据\n先做实验，再做系统\n先证真问题，再证解法\n先证交易，再放大投入\n```"
+      },
+      {
+        "level": 1,
+        "title": "第七层：原书金句 / 公开表述提炼",
+        "content": "1. **Testing business ideas dramatically reduces risk and increases the likelihood of success.**\n2. **Map your assumptions before you test your ideas.**\n3. **What matters is not your idea, but the evidence behind it.**\n4. **Test the most critical assumptions first.**\n5. **Use the fastest and cheapest experiment that can produce credible evidence.**\n\n**中文提炼**：\n- 创意本身不值钱，被证据支持的创意才值钱。\n- 真正危险的不是实验失败，而是从不实验。\n- 创新不是一路推进，而是一路排除错误。"
+      },
+      {
+        "level": 1,
+        "title": "八、更新日志",
+        "content": "| 版本 | 时间 | 更新内容 |\n|------|------|----------|\n| v1.0 | 2026-05-18 | 新增：基于 Wiley 官方书页、Strategyzer 公开书介/书摘与 Open Library 书目数据，收录《Testing Business Ideas》商业想法测试方法论，整理概念定义、核心模型、五个动作、正反案例、应用清单与关键引语。 |"
+      }
+    ],
+    "updates": [
+      {
+        "date": "2026-05-18",
+        "note": "初版创建：收录《Testing Business Ideas》商业想法测试方法论。"
+      }
+    ]
+  }
+}

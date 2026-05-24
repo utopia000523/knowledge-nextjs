@@ -1,0 +1,195 @@
+{
+  "id": "GoF-Design-Patterns-四人帮设计模式-软件架构奠基方法论",
+  "category": "产品设计",
+  "title": "GoF《设计模式》完整方法论",
+  "keywords": [
+    "GoF",
+    "设计模式",
+    "完整方法论"
+  ],
+  "summary": "**书籍信息**",
+  "importance": 5,
+  "learned_at": "2026-05-10",
+  "source": "GoF《设计模式》完整方法论",
+  "content": {
+    "core_formula": "Pattern Selection = Problem × Context × Forces → Solution\n\n问题：你要解决什么设计难题？\n语境：当前系统的约束条件（语言、平台、性能要求）\n力度：相互竞争的设计约束（灵活性vs效率、简洁vs完整）\n解决方案：平衡力度后选择的模式",
+    "layers": [
+      {
+        "level": 2,
+        "title": "引言与基础",
+        "content": "| 章节 | 内容 | 核心洞见 |\n|------|------|----------|\n| 第1章 | 引言 | 设计模式概念、为何需要模式 |\n| 第2章 | 案例研究：设计文档编辑器 | 模式应用的完整案例 |\n| 第3章 | 创建型模式 | 5种对象创建模式 |\n| 第4章 | 结构型模式 | 7种组合结构模式 |\n| 第5章 | 行为型模式 | 10种交互与算法模式 |\n| 第6章 | 结论 | 模式选择与组合指南 |"
+      },
+      {
+        "level": 2,
+        "title": "23种设计模式总览",
+        "content": "#### 一、创建型模式（Creational Patterns）- 5种\n| 模式 | 意图 | 关键问题 | 嵌入式适用度 |\n|------|------|----------|--------------|\n| **Factory Method** | 定义创建对象的接口，让子类决定实例化哪个类 | 对象创建与使用分离 | ⭐⭐⭐⭐⭐ |\n| **Abstract Factory** | 创建相关对象家族的接口，无需指定具体类 | 多产品系列创建 | ⭐⭐⭐⭐ |\n| **Builder** | 将复杂对象的构建与表示分离 | 分步骤构建复杂对象 | ⭐⭐⭐⭐⭐ |\n| **Prototype** | 通过复制已有对象创建新对象 | 动态创建、避免类爆炸 | ⭐⭐⭐ |\n| **Singleton** | 确保类只有一个实例 | 全局访问点、资源管理 | ⭐⭐⭐⭐⭐ |\n#### 二、结构型模式（Structural Patterns）- 7种\n| 模式 | 意图 | 关键问题 | 嵌入式适用度 |\n|------|------|----------|--------------|\n| **Adapter** | 将类的接口转换成客户期望的接口 | 接口不兼容问题 | ⭐⭐⭐⭐⭐ |\n| **Bridge** | 将抽象与实现分离，使两者独立变化 | 避免永久绑定 | ⭐⭐⭐⭐ |\n| **Composite** | 将对象组合成树形结构表示\"部分-整体\"层次 | 统一处理简单/复杂元素 | ⭐⭐⭐ |\n| **Decorator** | 动态给对象添加职责 | 灵活扩展功能 | ⭐⭐⭐⭐ |\n| **Facade** | 为子系统提供统一高层接口 | 简化复杂系统访问 | ⭐⭐⭐⭐⭐ |\n| **Flyweight** | 共享细粒度对象，减少内存占用 | 大量相似对象 | ⭐⭐⭐⭐⭐ |\n| **Proxy** | 为对象提供代理以控制访问 | 远程/虚拟/保护代理 | ⭐⭐⭐⭐ |\n#### 三、行为型模式（Behavioral Patterns）- 10种\n| 模式 | 意图 | 关键问题 | 嵌入式适用度 |\n|------|------|----------|--------------|\n| **Chain of Responsibility** | 将请求沿链传递，直到被处理 | 解耦发送者与处理者 | ⭐⭐⭐ |\n| **Command** | 将请求封装为对象 | 参数化请求、队列、日志 | ⭐⭐⭐⭐⭐ |\n| **Interpreter** | 为语言定义文法及解释器 | 文法规则解释 | ⭐⭐ |\n| **Iterator** | 提供顺序访问聚合元素的方法 | 隐藏内部结构 | ⭐⭐⭐⭐ |\n| **Mediator** | 用中介对象封装对象间交互 | 集中化通信 | ⭐⭐⭐ |\n| **Memento** | 捕获并恢复对象内部状态 | 状态保存与恢复 | ⭐⭐⭐ |\n| **Observer** | 定义对象间一对多依赖 | 状态变化通知 | ⭐⭐⭐⭐⭐ |\n| **State** | 允许对象在状态改变时改变行为 | 状态驱动的行为 | ⭐⭐⭐⭐⭐ |\n| **Strategy** | 定义算法家族，使可互相替换 | 算法选择灵活性 | ⭐⭐⭐⭐⭐ |\n| **Template Method** | 定义算法骨架，细节由子类实现 | 算法复用 | ⭐⭐⭐⭐⭐ |\n| **Visitor** | 分离数据结构与操作 | 扩展操作而不修改结构 | ⭐⭐⭐ |"
+      },
+      {
+        "level": 2,
+        "title": "公式一：模式选择公式",
+        "content": "```\nPattern Selection = Problem × Context × Forces → Solution\n问题：你要解决什么设计难题？\n语境：当前系统的约束条件（语言、平台、性能要求）\n力度：相互竞争的设计约束（灵活性vs效率、简洁vs完整）\n解决方案：平衡力度后选择的模式\n```\n**解读**：模式不是万能钥匙，选择模式需要分析问题、语境和力度三要素。"
+      },
+      {
+        "level": 2,
+        "title": "公式二：组合复用公式",
+        "content": "```\nReuse Ratio = Patterns × Application × Abstraction Level\n高复用 = 恰当模式 × 恰当应用 × 恰当抽象层\n低复用 = 过度设计 或 设计不足\n判断标准：\n- 抽象层过高 → 灵活但复杂\n- 抽象层过低 → 简单但僵化\n```"
+      },
+      {
+        "level": 2,
+        "title": "公式三：设计原则公式（SOLID）",
+        "content": "```\nQuality Design = S + O + L + I + D\nS = Single Responsibility Principle（单一职责）\n    → 一个类只做一件事\nO = Open/Closed Principle（开闭原则）\n    → 对扩展开放，对修改关闭\nL = Liskov Substitution Principle（里氏替换）\n    → 子类可替换父类\nI = Interface Segregation Principle（接口隔离）\n    → 多个专用接口优于一个通用接口\nD = Dependency Inversion Principle（依赖倒置）\n    → 依赖抽象而非具体实现\n```"
+      },
+      {
+        "level": 2,
+        "title": "公式四：耦合控制公式",
+        "content": "```\nCoupling = Dependency Direction × Dependency Strength\n优质设计：\n├── 高层依赖低层抽象 → 依赖倒置\n├── 横向依赖通过中介 → Mediator/Facade\n└── 变化依赖稳定 → 开闭原则\n劣质设计：\n├── 具体类之间直接依赖 → 紧耦合\n├── 双向依赖 → 循环依赖\n└── 变化依赖变化 → 维护困难\n```"
+      },
+      {
+        "level": 2,
+        "title": "公式五：灵活性-复杂度权衡公式",
+        "content": "```\nFlexibility ∝ Complexity\n权衡关系：\n├── 更灵活 → 更复杂（更多类、接口、抽象层）\n├── 更简单 → 更僵化（直接实现、硬编码）\n└── 最佳点 → 需求复杂度匹配设计复杂度\n决策原则：\n├── 需求明确稳定 → 简单设计\n├── 需求变化预期 → 恰当模式\n└── 过度灵活 → 反模式（YAGNI）\n```"
+      },
+      {
+        "level": 2,
+        "title": "维度一：模式层次分类",
+        "content": "| 层次 | 定义 | 适用范围 | 示例 |\n|------|------|----------|------|\n| **惯用法（Idiom）** | 语言特定低级模式 | 单一编程语言 | C++引用计数、Python上下文管理器 |\n| **设计模式（Design Pattern）** | 中级可复用方案 | 跨语言应用 | GoF 23种模式 |\n| **架构模式（Architectural Pattern）** | 高级系统组织方案 | 整个应用架构 | MVC、微服务、事件驱动 |"
+      },
+      {
+        "level": 2,
+        "title": "维度二：创建型模式深度解析",
+        "content": "| 模式 | 核心价值 | 典型场景 | 反模式警示 |\n|------|----------|----------|------------|\n| **Factory Method** | 延迟创建决策到运行时 | 插件系统、驱动加载 | 简单对象不需要工厂 |\n| **Abstract Factory** | 产品家族一致性保证 | 跨平台UI组件、协议栈层 | 单一产品不需要抽象工厂 |\n| **Builder** | 分步构建复杂对象 | 配置解析、协议帧组装 | 简单对象用构造器 |\n| **Prototype** | 克隆替代创建 | 状态快照、消息模板 | 深拷贝代价高时慎用 |\n| **Singleton** | 全局唯一实例 | 设备驱动、日志系统 | 过度使用导致全局状态泛滥 |"
+      },
+      {
+        "level": 2,
+        "title": "维度三：结构型模式深度解析",
+        "content": "| 模式 | 核心价值 | 典型场景 | 反模式警示 |\n|------|----------|----------|------------|\n| **Adapter** | 接口兼容转换 | 遗留系统集成、协议转换 | 相同接口不需要适配 |\n| **Bridge** | 抽象实现解耦 | 跨平台驱动、协议抽象层 | 固定绑定时过度设计 |\n| **Composite** | 统一树形结构处理 | 配置树、设备树 | 非树形结构不适用 |\n| **Decorator** | 动态职责叠加 | 功能扩展、权限包装 | 静态继承更清晰时过度设计 |\n| **Facade** | 简化子系统访问 | SDK接口封装、API简化 | 子系统本身简单时不需要 |\n| **Flyweight** | 共享细粒度对象 | 字符渲染、连接池 | 对象差异大时不适用 |\n| **Proxy** | 控制对象访问 | 远程访问、延迟加载、权限控制 | 直接访问更高效时过度设计 |"
+      },
+      {
+        "level": 2,
+        "title": "维度四：行为型模式深度解析",
+        "content": "| 模式 | 核心价值 | 典型场景 | 反模式警示 |\n|------|----------|----------|------------|\n| **Chain of Responsibility** | 解耦请求处理 | 日志级别处理、事件分发 | 处理器数量少时过度设计 |\n| **Command** | 请求对象化 | 任务队列、宏命令、撤销 | 简单调用不需要封装 |\n| **Interpreter** | 文法解释执行 | 配置解析、脚本引擎 | 标准解析器存在时不需要 |\n| **Iterator** | 隐藏遍历细节 | 容器遍历 | 简单数组直接遍历更清晰 |\n| **Mediator** | 集中交互控制 | UI组件通信 | 组件数量少时过度设计 |\n| **Memento** | 状态保存恢复 | 编辑器撤销、游戏存档 | 状态简单时不需要 |\n| **Observer** | 状态变化通知 | 事件系统、消息订阅 | 观察者过多导致性能问题 |\n| **State** | 状态驱动行为 | 协议状态机、设备状态管理 | 状态数量少时用if/switch |\n| **Strategy** | 算法可替换 | 算法选择、策略配置 | 算法固定时不需要 |\n| **Template Method** | 算法骨架复用 | 框架设计、流程标准化 | 算法变化大时用Strategy |\n| **Visitor** | 操作与结构分离 | 编译器、数据结构遍历 | 结构变化频繁时不适用 |"
+      },
+      {
+        "level": 2,
+        "title": "维度五：嵌入式系统模式选择指南",
+        "content": "| 嵌入式场景 | 推荐模式组合 | 原因 |\n|------------|--------------|------|\n| **设备驱动框架** | Factory Method + Singleton + Adapter | 设备类型多样、驱动生命周期管理、接口适配 |\n| **协议栈实现** | State + Builder + Observer | 状态机驱动、帧组装、事件通知 |\n| **任务调度系统** | Command + Strategy + Template Method | 任务对象化、调度策略、执行模板 |\n| **内存池管理** | Flyweight + Singleton | 对象共享、唯一池管理 |\n| **配置管理** | Builder + Facade + Prototype | 配置构建、接口简化、模板克隆 |\n| **日志系统** | Singleton + Chain of Responsibility + Observer | 全局日志、级别处理、订阅通知 |\n| **消息队列** | Command + Iterator + Mediator | 消息封装、队列遍历、组件通信 |\n| **资源管理** | Singleton + Proxy + Facade | 全局资源、访问控制、简化接口 |"
+      },
+      {
+        "level": 2,
+        "title": "正案例一：嵌入式设备驱动框架",
+        "content": "**场景**：嵌入式系统，需要支持多种通信设备（UART、SPI、I2C、CAN）\n**问题**：\n- 设备类型不断增加\n- 需要统一管理设备生命周期\n- 应用层不关心具体设备类型\n**方案组合**：\n```\n├── Abstract Factory（创建设备驱动实例）\n│   └── DeviceDriverFactory::createUARTDriver()\n│   └── DeviceDriverFactory::createSPIDriver()\n│\n├── Singleton（设备管理器唯一实例）\n│   └── DeviceManager::getInstance()\n│\n├── Adapter（统一设备接口）\n│   └── UARTAdapter implements IDevice\n│   └── SPIAdapter implements IDevice\n│\n└── Observer（设备状态通知）\n│   └── DeviceManager.attach(listener)\n│   └── Device.notifyStateChanged()\n```\n**效果**：\n- 新增设备类型只需添加工厂方法和适配器\n- 应用层通过IDevice接口统一访问\n- 设备状态变化自动通知监听者\n- 符合开闭原则：对扩展开放，对修改关闭"
+      },
+      {
+        "level": 2,
+        "title": "正案例二：协议状态机设计",
+        "content": "**场景**：实现一个通信协议栈（如TCP或自定义协议）\n**问题**：\n- 协议有多个状态（连接、等待、传输、关闭）\n- 不同状态下行为不同\n- 状态转换规则复杂\n**方案**：State模式 + Observer模式\n```c\n// 状态接口\ntypedef struct IProtocolState {\n    void (*handlePacket)(IProtocolState* self, Packet* pkt);\n    void (*handleTimeout)(IProtocolState* self);\n    IProtocolState* (*nextState)(IProtocolState* self);\n} IProtocolState;\n// 具体状态实现\nIProtocolState ConnectedState = { ... };\nIProtocolState WaitingState = { ... };\nIProtocolState TransmitState = { ... };\n// 上下文\ntypedef struct ProtocolContext {\n    IProtocolState* currentState;\n    ObserverList listeners;\n} ProtocolContext;\nvoid changeState(ProtocolContext* ctx, IProtocolState* newState) {\n    ctx->currentState = newState;\n    notifyObservers(&ctx->listeners, STATE_CHANGED);\n}\n```\n**效果**：\n- 每个状态独立实现，易于维护\n- 新增状态只需添加新状态类\n- 状态变化自动通知上层\n- 避免复杂if/switch嵌套"
+      },
+      {
+        "level": 2,
+        "title": "正案例三：任务队列系统",
+        "content": "**场景**：嵌入式系统后台任务处理\n**问题**：\n- 任务类型多样（日志写入、数据上传、配置同步）\n- 需要队列调度执行\n- 支持取消、撤销操作\n**方案**：Command模式 + Strategy模式\n```c\n// 命令接口\ntypedef struct ICommand {\n    void (*execute)(ICommand* self);\n    void (*undo)(ICommand* self);\n    int priority;\n} ICommand;\n// 具体命令\nICommand LogWriteCommand = { ... };\nICommand DataUploadCommand = { ... };\n// 任务队列\ntypedef struct TaskQueue {\n    ICommand* commands[MAX_TASKS];\n    IScheduleStrategy* scheduler;  // Strategy模式\n} TaskQueue;\nvoid processQueue(TaskQueue* queue) {\n    ICommand* cmd = queue->scheduler->selectNext(queue);\n    cmd->execute(cmd);\n}\n```\n**效果**：\n- 任务封装为对象，可队列、优先级排序\n- 支持撤销操作\n- 调度策略可替换（FIFO、优先级、 deadline）\n- 新任务类型只需添加新命令类"
+      },
+      {
+        "level": 2,
+        "title": "反案例一：过度设计-Singleton滥用",
+        "content": "**场景**：小型嵌入式应用\n**错误**：所有类都设计为Singleton\n```c\n// 错误示例：过度使用Singleton\nSingleton* ConfigManager = getInstance();\nSingleton* LogManager = getInstance();\nSingleton* DataManager = getInstance();\nSingleton* NetworkManager = getInstance();\nSingleton* TimerManager = getInstance();\nSingleton* UIManager = getInstance();  // ...到处都是全局状态\n```\n**问题**：\n- 全局状态泛滥，难以追踪依赖\n- 隐藏耦合，测试困难\n- 违背单一职责（每个Singleton承担太多）\n**正确做法**：\n- 只对真正需要全局唯一的类使用Singleton（如设备驱动、日志）\n- 其他类通过参数传递依赖\n- 使用依赖注入而非全局访问"
+      },
+      {
+        "level": 2,
+        "title": "反案例二：设计不足-直接依赖具体类",
+        "content": "**场景**：需要更换底层硬件驱动\n**错误**：应用层直接依赖具体驱动类\n```c\n// 错误示例：直接依赖具体类\nvoid sendPacket(UARTDriver* uart, Packet* pkt) {\n    uart->write(pkt->data);  // 直接调用UART方法\n}\n// 问题：换成SPI时，所有调用点都要修改\nvoid sendPacket(SPIDriver* spi, Packet* pkt) {\n    spi->transfer(pkt->data);  // 方法名可能也不同\n}\n```\n**正确做法**：Adapter模式 + Factory Method\n```c\n// 统一接口\ntypedef struct IDevice {\n    void (*write)(IData* self, uint8_t* data, size_t len);\n} IDevice;\n// 应用层依赖抽象\nvoid sendPacket(IDevice* device, Packet* pkt) {\n    device->write(device, pkt->data, pkt->len);\n}\n// 工厂创建具体实现\nIDevice* device = DeviceFactory::create(\"UART\");\n```"
+      },
+      {
+        "level": 2,
+        "title": "反案例三：模式误用-用继承替代组合",
+        "content": "**场景**：扩展类功能\n**错误**：用继承层级堆叠功能\n```c\n// 错误示例：继承层级过深\nclass BaseDevice { ... };\nclass LoggingDevice extends BaseDevice { ... };\nclass BufferedDevice extends LoggingDevice { ... };\nclass ThreadSafeDevice extends BufferedDevice { ... };\nclass TimeoutDevice extends ThreadSafeDevice { ... };\n// 继承链5层，维护困难，功能耦合\n```\n**正确做法**：Decorator模式\n```c\n// 基础类\nclass BaseDevice implements IDevice { ... };\n// 装饰器基类\nclass DeviceDecorator implements IDevice {\n    IDevice* wrapped;\n}\n// 具体装饰器（可组合）\nclass LoggingDecorator extends DeviceDecorator { ... };\nclass BufferedDecorator extends DeviceDecorator { ... };\nclass ThreadSafeDecorator extends DeviceDecorator { ... };\n// 组合使用\nIDevice* device = new ThreadSafeDecorator(\n    new BufferedDecorator(\n        new LoggingDecorator(\n            new BaseDevice()\n        )\n    )\n);\n```"
+      },
+      {
+        "level": 2,
+        "title": "关于设计原则",
+        "content": "> **\"设计模式是典型问题的典型解决方案，不是万能钥匙。\"**\n> — GoF原书\n> **\"模式不是发明，是发现——它们在优秀设计中反复出现。\"**\n> — GoF\n> **\"对扩展开放，对修改关闭——这是设计模式的核心精神。\"**\n> — 开闭原则\n> **\"依赖抽象而非具体实现——这是解耦的根本。\"**\n> — 依赖倒置原则"
+      },
+      {
+        "level": 2,
+        "title": "关于模式选择",
+        "content": "> **\"不要为了使用模式而使用模式。\"**\n> — 设计模式警示\n> **\"简单设计优于过度设计——YAGNI（你不会需要它）\"**\n> — 敏捷开发原则\n> **\"先用最简单的设计，当变化发生时再引入模式。\"**\n> — 重构优先原则\n> **\"模式的目的是降低变化成本，而非增加初始复杂度。\"**\n> — 模式经济学"
+      },
+      {
+        "level": 2,
+        "title": "关于组合与继承",
+        "content": "> **\"组合优于继承——组合更灵活，继承更僵化。\"**\n> — 设计模式原则\n> **\"继承是白箱复用（可见父类细节），组合是黑箱复用（隐藏实现）。\"**\n> — GoF\n> **\"Decorator模式展示了组合如何替代继承扩展功能。\"**\n> — GoF"
+      },
+      {
+        "level": 2,
+        "title": "关于接口与抽象",
+        "content": "> **\"接口隔离优于一个大接口——多个专用接口更清晰。\"**\n> — 接口隔离原则\n> **\"Facade不封装子系统，只是简化访问——子系统仍可直接使用。\"**\n> — GoF\n> **\"Adapter让接口兼容，不改变功能——它是接口转换器，不是功能增强器。\"**\n> — GoF"
+      },
+      {
+        "level": 2,
+        "title": "一、嵌入式系统模式速查表",
+        "content": "| 问题场景 | 首选模式 | 次选模式 | 避免做法 |\n|----------|----------|----------|----------|\n| 设备驱动管理 | Factory Method + Adapter | Abstract Factory | 硬编码设备类型 |\n| 全局资源管理 | Singleton | Facade | 全局变量 |\n| 协议状态管理 | State | Template Method | 大量if/switch |\n| 任务队列 | Command | Strategy | 函数指针数组 |\n| 内存池优化 | Flyweight | Prototype | 每次new/delete |\n| 事件通知 | Observer | Mediator | 直接调用 |\n| 配置构建 | Builder | Prototype | 构造函数参数过多 |\n| 复杂子系统 | Facade | Bridge | 应用层直接依赖子系统 |\n| 算法选择 | Strategy | Template Method | 算法硬编码 |\n| 功能扩展 | Decorator | Bridge | 继承层级叠加 |"
+      },
+      {
+        "level": 2,
+        "title": "二、模式组合指南",
+        "content": "```\n创建型组合：\n├── Abstract Factory + Factory Method → 产品家族创建\n├── Builder + Singleton → 复杂对象全局管理\n└── Prototype + Factory Method → 克隆式创建\n结构型组合：\n├── Adapter + Facade → 遗留系统简化封装\n├── Bridge + Adapter → 多平台抽象层\n├── Decorator + Proxy → 功能扩展+访问控制\n└── Composite + Visitor → 树形结构遍历\n行为型组合：\n├── State + Observer → 状态变化通知\n├── Command + Strategy → 任务对象化+调度策略\n├── Iterator + Visitor → 数据结构遍历+操作\n└── Template Method + Strategy → 骨架固定+算法可变\n```"
+      },
+      {
+        "level": 2,
+        "title": "三、模式决策流程图",
+        "content": "```\nStep 1: 问题识别\n├── \"我遇到了什么设计难题？\"\n├── 创建对象？→ 考虑创建型模式\n├── 组合结构？→ 考虑结构型模式\n└── 交互行为？→ 考虑行为型模式\nStep 2: 语境分析\n├── 语言特性（C不支持继承，需要用组合）\n├── 性能约束（Flyweight减少内存，但增加查找）\n├── 团队熟悉度（不熟悉的模式增加沟通成本）\n└── 变化预期（预期变化决定模式必要性）\nStep 3: 力度权衡\n├── 灵活性vs效率 → 选择平衡点\n├── 简洁vs完整 → 需求复杂度匹配\n└── 变化成本vs引入成本 → ROI评估\nStep 4: 模式选择\n├── 查阅模式目录\n├── 匹配问题场景\n└── 评估组合方案\nStep 5: 实现验证\n├── 先实现最简单版本\n├── 测试验证\n└── 按需引入模式\n```"
+      },
+      {
+        "level": 2,
+        "title": "四、嵌入式C语言模式实现技巧",
+        "content": "| 模式 | C实现技巧 | 关键结构 |\n|------|----------|----------|\n| **Factory Method** | 函数指针+注册表 | `typedef IDevice* (*Creator)(void);` |\n| **Singleton** | 静态全局变量+初始化保护 | `static Device* instance = NULL;` |\n| **Adapter** | 统一接口函数指针 | `typedef struct { void (*write)(...); } IDevice;` |\n| **State** | 状态函数指针切换 | `ctx->state = newState; ctx->state->handle(ctx);` |\n| **Command** | 函数指针封装 | `typedef struct { void (*execute)(void* ctx); } Command;` |\n| **Observer** | 回调函数列表 | `typedef void (*Callback)(Event* e);` |\n| **Strategy** | 算法函数指针 | `typedef int (*Algorithm)(Data* d);` |\n| **Decorator** | 包装结构体链 | `Decorator wraps IDevice;` |"
+      },
+      {
+        "level": 2,
+        "title": "五、模式引入时机判断",
+        "content": "```\n何时引入模式？\n├── 变化已发生 → 引入应对变化\n├── 变化可预期 → 预先设计\n└── 变化不可能 → 简单设计\n变化信号：\n├── 相同修改出现三次 → \"三次法则\"\n├── 新需求反复打破设计 → 开闭原则违背\n├── 代码耦合导致修改困难 → 需要解耦模式\n└── 继承层级过深 → 需要组合替代\n何时不引入模式？\n├── 项目小且短期 → 简单设计\n├── 团队不熟悉 → 先学习再应用\n├── 性能极限约束 → 减少抽象层\n└── 需求明确稳定 → 不需要灵活性\n```"
+      },
+      {
+        "level": 2,
+        "title": "六、代码审查模式检查表",
+        "content": "```\n□ 是否有超过3层的继承链？（考虑Decorator替代）\n□ 是否有大量if/switch判断状态？（考虑State替代）\n□ 是否有全局变量过多？（考虑Singleton或依赖注入）\n□ 是否有构造函数参数超过5个？（考虑Builder）\n□ 是否有类承担多个职责？（考虑单一职责拆分）\n□ 是否有高层直接依赖低层具体类？（考虑Adapter/依赖倒置）\n□ 是否有相同代码在多处出现？（考虑Template Method）\n□ 是否有状态变化需要通知多处？（考虑Observer）\n□ 是否有算法硬编码无法替换？（考虑Strategy）\n□ 是否有创建对象逻辑分散？（考虑Factory Method）\n```"
+      },
+      {
+        "level": 2,
+        "title": "与SOLID原则的关系",
+        "content": "| SOLID原则 | 支持的模式 | 模式作用 |\n|-----------|------------|----------|\n| **单一职责** | Facade、Mediator | 集中管理，职责分离 |\n| **开闭原则** | Strategy、State、Observer | 扩展行为不修改代码 |\n| **里氏替换** | Template Method、Strategy | 子类替换父类 |\n| **接口隔离** | Adapter、Bridge | 多个小接口优于大接口 |\n| **依赖倒置** | Factory Method、Abstract Factory | 依赖抽象而非具体 |"
+      },
+      {
+        "level": 2,
+        "title": "与敏捷开发的关系",
+        "content": "| 敏捷原则 | 模式应用 | 平衡点 |\n|----------|----------|--------|\n| **YAGNI** | 变化发生后再引入模式 | 避免过度设计 |\n| **持续重构** | 模式是重构目标 | 重构导向模式 |\n| **简单设计** | 先简单，按需复杂 | 变化驱动设计 |\n| **测试驱动** | 模式提高可测试性 | 解耦便于测试 |"
+      },
+      {
+        "level": 2,
+        "title": "与Clean Architecture的关系",
+        "content": "| Clean Architecture层 | 适用模式 | 原因 |\n|----------------------|----------|------|\n| **实体层** | 无模式（最简单） | 核心业务逻辑稳定 |\n| **用例层** | Strategy、Command | 业务规则变化 |\n| **接口适配层** | Adapter、Facade | 外部系统适配 |\n| **框架层** | Factory、Singleton | 技术框架创建 |"
+      },
+      {
+        "level": 1,
+        "title": "📅 更新日志",
+        "content": "| 日期 | 版本 | 更新内容 |\n|------|------|----------|\n| 2026-05-07 | v1.0 | 初版创建，完整方法论框架，包含嵌入式系统应用指南 |"
+      },
+      {
+        "level": 2,
+        "title": "同主题推荐书目",
+        "content": "| 书名 | 作者 | 关系 |\n|------|------|------|\n| 《Head First设计模式》 | Freeman | GoF的通俗讲解版 |\n| 《设计模式解析》 | Shalloway | 模式思维培养 |\n| 《Clean Architecture》 | Martin | 模式在架构中的应用 |\n| 《架构整洁之道》 | Martin | 模式与架构原则 |\n| 《重构》 | Fowler | 重构导向模式 |\n| 《敏捷软件开发》 | Martin | 模式在敏捷中的应用 |"
+      },
+      {
+        "level": 2,
+        "title": "嵌入式设计模式扩展",
+        "content": "| 书名/资源 | 内容 |\n|----------|------|\n| 《嵌入式C语言设计模式》 | Michael J. Pont |\n| 《嵌入式系统设计模式》 | Michael Barr |\n| QP框架（Quantum Leaps） | 状态机框架实现 |\n| FreeRTOS设计 | 任务队列、信号量模式 |\n**方法论核心一句话**：\n> **设计模式是典型问题的典型解决方案，选择模式的关键是分析问题、语境和力度，按需引入而非过度设计，组合优于继承，依赖抽象而非具体。**\n*本方法论文档基于GoF《设计模式：可复用面向对象软件的基础》核心思想整理，特别强调嵌入式系统应用场景，适用于软件架构设计、嵌入式开发、代码重构等场景。*"
+      }
+    ],
+    "updates": [
+      {
+        "date": "2026-05-10",
+        "note": "从智慧库导入"
+      }
+    ]
+  }
+}

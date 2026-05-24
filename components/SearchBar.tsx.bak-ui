@@ -1,0 +1,28 @@
+'use client';
+
+import { useState } from 'react';
+
+interface SearchBarProps {
+  onSearch: (query: string) => void;
+}
+
+export default function SearchBar({ onSearch }: SearchBarProps) {
+  const [query, setQuery] = useState('');
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setQuery(e.target.value);
+    onSearch(e.target.value);
+  };
+
+  return (
+    <div className="mb-6">
+      <input
+        type="text"
+        placeholder="搜索关键词、标题、摘要..."
+        value={query}
+        onChange={handleChange}
+        className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-indigo-500/50 focus:bg-white/10 transition-all"
+      />
+    </div>
+  );
+}

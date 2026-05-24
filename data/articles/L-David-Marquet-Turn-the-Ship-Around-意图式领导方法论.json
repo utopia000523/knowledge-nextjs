@@ -1,0 +1,75 @@
+{
+  "id": "L-David-Marquet-Turn-the-Ship-Around-意图式领导方法论",
+  "category": "项目管理",
+  "title": "L. David Marquet《Turn the Ship Around!》意图式领导（Leader-Leader）方法论",
+  "keywords": [
+    "L. David Marquet",
+    "Turn the Ship Around",
+    "Intent-Based Leadership",
+    "Leader-Leader",
+    "Control",
+    "Competence",
+    "Clarity",
+    "I intend to"
+  ],
+  "summary": "**核心主题**：把传统“领导者思考、下属执行”的 leader-follower 模式，转向“人人理解意图、具备能力、承担控制权”的 leader-leader 模式，让组织在高复杂、高风险环境中仍能提升判断质量、责任感与长期绩效。",
+  "importance": 5,
+  "learned_at": "2026-05-16",
+  "source": "L. David Marquet《Turn the Ship Around!: A True Story of Turning Followers into Leaders》(2013)；Penguin Random House 公开书介；David Marquet 官方图书介绍与 Intent-Based Leadership 公开摘要",
+  "content": {
+    "core_formula": "领导力杠杆 = 控制权下放 × 能力（Competence） × 清晰度（Clarity）\n\n意图式表达 = 我打算做X + 理由/目标 + 风险检查 + 所需协同\n\n组织升级方向：Leader-Follower → Leader-Leader",
+    "layers": [
+      {
+        "level": 1,
+        "title": "第一层：概念定义",
+        "content": "**作者与背景**：L. David Marquet 曾任美国海军核潜艇舰长。他在接管 USS Santa Fe 时，面对的是士气低、绩效差、留任率低的团队。公开书介资料与作者自述都强调，一个关键转折是：当他下达了一个本舰根本无法执行的命令时，军官下意识准备照做。这暴露出传统 leader-follower 模式的根本风险——人们习惯服从，而不是思考。\n\n| 概念 | 定义 | 方法论意义 | 常见误区 |\n|------|------|------------|----------|\n| Leader-Follower | 领导者决定、下属执行的传统模式 | 适合低复杂、低判断要求场景 | 误以为高压与明确命令一定更高效 |\n| Leader-Leader | 让更多人拥有判断权、责任感与行动权 | 适合复杂、高变化、高专业要求场景 | 误以为等于“没人负责”或完全放任 |\n| Intent-Based Leadership | 通过“表达意图”替代“请求许可”来提升思考与 ownership | 让下属从被动执行转向主动判断 | 只学一句“I intend to”而不补能力和清晰度 |\n| Control | 把决策与行动控制权尽量下沉到最接近信息的人 | 提升速度与责任感 | 把 control 等同于随意授权 |\n| Competence | 承担控制权所需的专业能力与训练水平 | 没有能力，授权只会制造风险 | 以为 empowerment 可以替代训练 |\n| Clarity | 对使命、边界、原则、优先级的共同理解 | 保证分布式决策仍朝同一方向 | 以为口号式愿景就足够清晰 |\n| “I intend to …” | 用意图表达替代请示表达的沟通机制 | 强迫说话者先完成思考 | 变成形式化话术而非思考机制 |\n\n**核心判断**：Marquet 的方法并不是“多给员工自由”这么简单，而是构建一个前提明确的系统：**给控制权，但只在能力与清晰度足够的条件下给。**"
+      },
+      {
+        "level": 1,
+        "title": "第二层：核心公式 / 模型",
+        "content": "```\n组织判断质量 ≈ 控制权下放程度 × 能力成熟度 × 目标清晰度\n\n授权失败的常见原因：\n1. 给了控制，没有给能力\n2. 给了控制，没有给清晰边界\n3. 给了口号式愿景，但没有给机制\n\nI intend to 句式：\n我打算做 ______，因为 ______，风险检查 ______，需要协同 ______。\n```\n\n### 三元支柱\n1. **Control**：让最靠近信息的人做决定；\n2. **Competence**：通过训练、认证、学习和复盘提升能力；\n3. **Clarity**：反复讲清目标、原则、边界与成功标准。\n\n### 组织迁移公式\n```\nLeader-Follower 组织 = 上层思考 + 下层执行 + 信息上收 + 决策上移\nLeader-Leader 组织 = 多点思考 + 责任下沉 + 信息就地处理 + 意图对齐\n```\n\n### 方法论金线\n> Give control, create leaders, and embed clarity so decisions improve rather than scatter."
+      },
+      {
+        "level": 1,
+        "title": "第三层：子维度拆解",
+        "content": "### 维度一：把“请求许可”改成“表达意图”\n传统组织中，下属常说“我能不能做这个？”；Marquet 更希望听到“我打算这么做，因为……”。区别在于：前者把思考上推，后者把思考留在现场。\n\n### 维度二：把控制下沉给最接近事实的人\n一线通常更接近真实情况、更快接收到反馈。若所有决策都要层层上报，组织就会在信息传输中变慢、失真、失责。\n\n### 维度三：用能力建设为下放兜底\nLeader-Leader 不是盲目放权。作者强调，要通过资格认证、训练、交叉学习、重复演练，让团队成员配得上更多控制权。\n\n### 维度四：用清晰度避免分散化\n当控制权下放后，如果目标、原则、边界不清，组织会走向多头混乱。所以必须持续重复 mission、标准、优先级和约束。\n\n### 维度五：用机制而非口号固化行为\n例如固定使用 “I intend to” 句式、让会议从汇报变成判断说明、把授权边界写清楚、把培训与复盘制度化。\n\n| 子维度 | 核心问题 | 正确动作 | 错误动作 |\n|--------|----------|----------|----------|\n| 表达意图 | 你有没有先完成思考 | 先给方案与判断，再求校准 | 把问题原样上抛 |\n| 控制下沉 | 谁最接近事实 | 让现场做现场决策 | 所有决定都往上等批示 |\n| 能力建设 | 团队是否配得上控制权 | 训练、认证、演练、复盘 | 只讲 empowerment 不讲训练 |\n| 清晰度 | 大家是否知道为什么而战 | 重复目标、边界、原则 | 用抽象口号代替清晰规则 |\n| 机制固化 | 好行为能否复现 | 句式、流程、节奏、仪式化 | 只靠领导个人魅力推动 |"
+      },
+      {
+        "level": 1,
+        "title": "第四层：从 leader-follower 到 leader-leader 的迁移路径",
+        "content": "### 步骤一：识别服从型组织的危险信号\n- 命令被执行，但没人确认是否合理；\n- 一线遇到问题第一反应是“请示”；\n- 上级越来越忙，下级越来越依赖；\n- 决策慢、责任弱、复盘浅。\n\n### 步骤二：先改变语言，再改变责任\n“I intend to …” 不是礼貌表达，而是重新定义责任边界：说话者必须先完成事实判断、方案形成、风险思考。\n\n### 步骤三：在小范围逐步下放控制\n不是一夜之间彻底授权，而是在风险可控的场景中逐步扩大决策权，并伴随训练与复盘。\n\n### 步骤四：把能力建设做成制度\n培训、认证、角色轮换、模拟演练、复盘机制，都是让控制权下放可持续的基础设施。\n\n### 步骤五：用清晰度维持方向一致\n如果团队理解不了“为什么”“什么不能碰”“什么优先”，分布式决策就会变成分布式混乱。\n\n```\n迁移口诀：\n先改语言，再改责任；\n先给边界，再给控制；\n先练能力，再扩授权；\n先建机制，再谈文化。\n```"
+      },
+      {
+        "level": 1,
+        "title": "第五层：正反案例",
+        "content": "### 正面案例A：USS Santa Fe 的转型逻辑\n公开书介与作者材料强调，Santa Fe 从舰队表现落后到显著提升，核心不只是舰长变强，而是更多成员开始主动思考、承担责任并理解任务意图。组织变强，不再依赖单点英雄。\n\n### 正面案例B：高专业团队中的意图表达\n在研发、运维、医疗、网络、安全等高专业环境里，最接近问题的人往往最早知道该怎么处理。若他们只负责上报而不负责判断，组织速度和质量都会受损。意图式领导的价值在这类环境中尤其大。\n\n### 正面案例C：管理者不再做“答题器”\n当团队成员带着“我打算这样做，因为……”来沟通时，管理者的角色从替大家做决定，变成校准方向、识别盲点、提升判断质量。\n\n### 反面案例A：假授权\n嘴上说 empowerment，实际仍要求所有细节审批。结果团队学会了表演主动，实质仍是被动等待。\n\n### 反面案例B：无能力的放权\n把控制权丢给没有训练、没有上下文、没有标准的人，最后只会强化“还是领导来定吧”的旧文化。\n\n### 反面案例C：无清晰度的自主\n如果团队不知道真正目标，只会造成每个人都很主动，但方向并不一致。Leader-Leader 不是多中心冲突，而是多中心对齐。"
+      },
+      {
+        "level": 1,
+        "title": "第六层：应用清单",
+        "content": "### 个人层\n- [ ] 沟通时先说“我打算……”而不是“我该怎么办？”\n- [ ] 提方案时同步说明原因、风险、备选项。\n- [ ] 每次争取更多控制权前，先补齐能力缺口。\n\n### 团队层\n- [ ] 例会优先讨论判断依据，而不只是状态汇报。\n- [ ] 对高频场景建立清晰边界：哪些可自主、哪些需升级。\n- [ ] 用复盘提升 competence，而不是只追责。\n- [ ] 把目标、原则、优先级重复到新人也能复述。\n\n### 组织层\n- [ ] 减少“所有问题都找老板”的流程设计。\n- [ ] 把培训、认证、角色轮换纳入授权体系。\n- [ ] 把管理者绩效从“管了多少事”转向“培养了多少领导者”。\n- [ ] 用控制、能力、清晰度三维度审视每一次授权失败。\n\n### 一页检查表\n```\n如果团队总在等命令：检查 control 是否过度集中；\n如果授权后频繁出错：检查 competence 是否不足；\n如果大家都很忙却方向散：检查 clarity 是否不足。\n```"
+      },
+      {
+        "level": 1,
+        "title": "第七层：原书金句（基于公开书介与作者公开表达）",
+        "content": "1. **Move authority to the information, not information to authority.**\n2. **Give control, not take control.**\n3. **Use “I intend to …” to turn passive followers into active leaders.**\n4. **Control without competence is chaos; control with competence and clarity creates leaders.**\n5. **Your legacy is not what you accomplished, but what your people can accomplish without you.**\n\n中文提炼：\n- 把权力移向信息，而不是把信息层层送向权力。\n- 真正强的领导，不是掌控一切，而是让更多人能独立做对。\n- 领导力的终极产出不是追随者，而是新的领导者。"
+      },
+      {
+        "level": 1,
+        "title": "第八层：更新日志",
+        "content": "| 日期 | 版本 | 更新内容 |\n|------|------|----------|\n| 2026-05-16 | v1.0 | 初始创建：基于《Turn the Ship Around!》、Penguin Random House 公开书介与 David Marquet 官方资料，整理 leader-follower 与 leader-leader 对比、control/competence/clarity 三元模型、I intend to 机制、迁移路径、正反案例、应用清单与关键引语。 |"
+      },
+      {
+        "level": 1,
+        "title": "第九层：参考文献",
+        "content": "1. **L. David Marquet** - *Turn the Ship Around!: A True Story of Turning Followers into Leaders* (2013)\n2. **Penguin Random House** - 图书公开书介：Santa Fe 从最差到最佳、挑战传统 leader-follower 模式\n3. **David Marquet 官方图书介绍** - Intent-Based Leadership、turning followers into leaders 的公开说明\n4. **公开方法摘要资料** - 关于 control, competence, clarity 与 “I intend to” 的公开总结\n\n> **一句话总结**：\n> \n> **意图式领导 = 控制权下放 × 能力建设 × 清晰方向**。\n> \n> 当组织不再把“思考”集中在少数上级身上，而是让更多靠近现场的人在清晰边界内主动判断，绩效、责任感与可持续领导力才会一起上升。"
+      }
+    ],
+    "updates": [
+      {
+        "date": "2026-05-16",
+        "note": "初始创建：收录《Turn the Ship Around!》意图式领导方法论，覆盖概念定义、leader-leader 三元模型、迁移路径、正反案例、应用清单与原书金句。"
+      }
+    ]
+  }
+}

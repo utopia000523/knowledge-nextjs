@@ -1,0 +1,140 @@
+{
+  "id": "QP框架-事件驱动嵌入式架构方法论",
+  "category": "技术",
+  "title": "QP框架-事件驱动嵌入式架构方法论",
+  "keywords": [
+    "QP",
+    "框架",
+    "事件驱动嵌入式架构方法论"
+  ],
+  "summary": "Practical UML Statecharts in C/C++ - Event-Driven Architecture for Embedded Systems",
+  "importance": 5,
+  "learned_at": "2026-05-10",
+  "source": "QP框架",
+  "content": {
+    "core_formula": "第一部分  基础概念\n  第1章  嵌入式系统的量子革命 - 事件驱动范式\n  第2章  有限状态机基础 - FSM理论与实践\n  第3章  层次状态机(HSM) - UML Statecharts精要\n\n第二部分  QP框架核心\n  第4章  事件驱动架构 - Active Object模型\n  第5章  QP框架设计 - 事件队列、调度器、时钟\n  第6章  状态机实现 - QEP状态机处理器\n\n第三部分  并发与调度\n  第7章  Active Object并发模型 - Actor模式\n  第8章  内核集成 - QV/QK/QXK内核\n  第9章  RTOS移植 - 与传统RTOS协同\n\n第四部分  高级主题\n  第10章 事件驱动设计模式 - 发布-订阅、命令模式\n  第11章 软件追踪 - QS追踪系统\n  第12章 模型驱动开发 - QM工具与代码生成\n\n附录\n  附录A  MISRA-C合规性\n  附录B  安全关键系统应用\n  附录C  性能基准测试",
+    "layers": [
+      {
+        "level": 1,
+        "title": "一、原书大纲",
+        "content": "```\n第一部分  基础概念\n  第1章  嵌入式系统的量子革命 - 事件驱动范式\n  第2章  有限状态机基础 - FSM理论与实践\n  第3章  层次状态机(HSM) - UML Statecharts精要\n第二部分  QP框架核心\n  第4章  事件驱动架构 - Active Object模型\n  第5章  QP框架设计 - 事件队列、调度器、时钟\n  第6章  状态机实现 - QEP状态机处理器\n第三部分  并发与调度\n  第7章  Active Object并发模型 - Actor模式\n  第8章  内核集成 - QV/QK/QXK内核\n  第9章  RTOS移植 - 与传统RTOS协同\n第四部分  高级主题\n  第10章 事件驱动设计模式 - 发布-订阅、命令模式\n  第11章 软件追踪 - QS追踪系统\n  第12章 模型驱动开发 - QM工具与代码生成\n附录\n  附录A  MISRA-C合规性\n  附录B  安全关键系统应用\n  附录C  性能基准测试\n```"
+      },
+      {
+        "level": 2,
+        "title": "事件驱动架构核心公式",
+        "content": "```\n事件驱动系统 = Active Objects + Event Queues + Hierarchical State Machines + Run-to-Completion\n系统响应性 = 事件处理时间 + 事件队列深度 + 调度延迟\n并发安全性 = 无共享状态 + 异步事件交换 + RTC执行模式\n架构复杂度 = Σ(Active Objects) × Σ(State Machines per AO) × Σ(Transitions)\n```"
+      },
+      {
+        "level": 2,
+        "title": "状态机效率公式",
+        "content": "```\n状态机性能 = 状态查找时间 + 转换执行时间 + 动作执行时间\nHSM优势 = 行为复用率 + 状态继承深度 - 重复代码量\n状态查找效率：\n- Switch-Case FSM: O(n) 状态数量线性查找\n- 表驱动FSM: O(1) 状态索引直接查找\n- HSM继承查找: O(h) 层级深度，平均更优\n```"
+      },
+      {
+        "level": 2,
+        "title": "Active Object并发公式",
+        "content": "```\nActive Object模型 = 封装线程 + 事件队列 + 状态机 + RTC处理\n吞吐量 = EventRate × ProcessingCapacity\n队列深度 = max(BurstSize, AverageRate × MaxLatency)\n响应时间 = QueueWait + RTCProcessingTime\n```"
+      },
+      {
+        "level": 2,
+        "title": "实时性评估公式",
+        "content": "```\n最坏响应时间(WCRT) = MaxEventQueueDepth × MaxRTCStepTime + SchedulingLatency\n可调度性条件（Rate Monotonic）：\nΣ(Ui) ≤ n(2^(1/n) - 1)\nUi = Ci/Ti (任务利用率 = 计算时间/周期)\nQV内核（非抢占）优势：\n- 无任务切换开销\n- 无优先级反转\n- WCRT确定性强\n```"
+      },
+      {
+        "level": 2,
+        "title": "3.1 事件驱动架构 (Event-Driven Architecture)",
+        "content": "#### 核心概念对比\n```\n┌─────────────────────────────────────────────────────────────────────┐\n│              传统RTOS vs 事件驱动Active Object                        │\n├─────────────────────────────────────────────────────────────────────┤\n│  传统RTOS           │  Active Object模型                              │\n├─────────────────────────────────────────────────────────────────────┤\n│  共享状态并发       │  无共享状态（Shared-Nothing）                    │\n│  互斥锁/信号量      │  异步事件通信                                    │\n│  阻塞调用          │  非阻塞（Non-Blocking）                          │\n│  条件变量等待       │  事件队列接收                                    │\n│  复杂同步逻辑       │  状态机驱动                                      │\n│  优先级反转风险     │  无优先级反转                                    │\n│  死锁可能          │  无死锁（事件单向流动）                           │\n│  难以分析          │  可形式化验证                                    │\n└─────────────────────────────────────────────────────────────────────┘\n```\n#### 控制流反转 (Inversion of Control)\n```\n传统阻塞模式：\nThread → wait(semaphore) → 被阻塞 → 等待资源 → 获取 → 处理 → loop\n事件驱动模式（IoC）：\nFramework → dispatch(event) → ActiveObject.handle(event) → RTC完成 → Framework继续\n           ↑\n           控制权在框架，Active Object被动响应\n```\n**关键差异**：\n- 传统：线程主动等待（阻塞），扩展性差\n- 事件驱动：框架控制流程，AO被动响应事件，扩展性强"
+      },
+      {
+        "level": 2,
+        "title": "3.2 Active Object设计模式",
+        "content": "#### Active Object核心结构\n```c\n// Active Object 结构定义\ntypedef struct {\n    // 事件队列（线程安全）\n    QEQueue eventQueue;\n    // 状态机（行为定义）\n    QHsm stateMachine;\n    // 线程/任务关联\n    QActive *thread;\n    // 优先级（调度依据）\n    uint8_t priority;\n} ActiveObject;\n// Active Object 生命周期\n// 1. 初始化：构造AO，注册到框架\n// 2. 运行：从队列取事件，RTC处理\n// 3. 终止：注销AO，释放资源\n```\n#### Active Object 三大特性\n| 特性 | 定义 | 实现方式 |\n|------|------|----------|\n| **封装(Encapsulation)** | 数据与行为绑定，私有属性不共享 | 结构体+私有成员 |\n| **异步通信(Asynchronous)** | 通过事件队列通信，不阻塞 | QEQueue + POST操作 |\n| **RTC执行(Run-to-Completion)** | 一次处理一个事件，完成后再处理下一个 | 事件循环+状态机 |\n#### Active Object 设计原则\n```\n┌─────────────────────────────────────────────────────────────────────┐\n│                    Active Object 设计黄金法则                         │\n├─────────────────────────────────────────────────────────────────────┤\n│  1. 数据隔离：每个AO的私有数据不与其他AO共享                          │\n│  2. 事件驱动：所有AO间通信通过异步事件完成                            │\n│  3. RTC执行：每个事件处理完成后才能处理下一个                          │\n│  4. 无阻塞：AO不应阻塞等待资源，而是通过事件请求                       │\n│  5. 状态机：用HSM定义AO的行为逻辑                                     │\n└─────────────────────────────────────────────────────────────────────┘\n```"
+      },
+      {
+        "level": 2,
+        "title": "3.3 层次状态机 (Hierarchical State Machine - HSM)",
+        "content": "#### HSM vs 传统FSM对比\n```\n传统FSM（Flat FSM）：\n┌─────┐  event1  ┌─────┐  event2  ┌─────┐\n│  A  │ ───────→ │  B  │ ───────→ │  C  │\n└─────┘          └─────┘          └─────┘\n问题：状态多时转换复杂，行为重复\n层次状态机（HSM）：\n          ┌──────────────┐\n          │   SuperState │\n          │  (共享行为)   │\n          │ entry: init  │\n          │ exit: cleanup│\n          └──────────────┘\n              ↑    ↑    ↑\n         ┌────┴┐ ┌─┴──┐ ┌─┴──┐\n         │  A  │ │ B  │ │ C  │\n         │(差) │ │(差)│ │(差)│\n         └─────┘ └────┘ └────┘\n优势：子状态继承父状态行为，避免重复\n```\n#### HSM 核心机制\n| 机制 | 作用 | 示例 |\n|------|------|------|\n| **状态嵌套** | 子状态继承父状态转换 | B继承A的timeout处理 |\n| **入口动作(entry)** | 进入状态时执行 | 初始化资源 |\n| **出口动作(exit)** | 离开状态时执行 | 释放资源 |\n| **内部转换** | 不改变状态的响应 | 忽略某事件 |\n| **转换到历史** | 返回上次活跃子状态 | 恢复中断状态 |\n#### HSM 实现模式\n```c\n// HSM 状态机处理器 (QEP)\ntypedef struct {\n    QStateHandler state;  // 当前状态处理器\n    QStateHandler source; // 转换源状态\n    // 状态层级追踪\n} QHsm;\n// 状态处理器返回值\ntypedef enum {\n    Q_RET_HANDLED,    // 事件已处理，状态不变\n    Q_RET_IGNORED,    // 事件被忽略\n    Q_RET_TRANS,      // 状态转换\n    Q_RET_SUPER,      // 事件传给父状态处理\n    Q_RET_UNHANDLED   // 事件未处理\n} QStateRet;\n// 状态处理函数签名\nQState Handler(QHsm *me, QEvent const *e);\n// 转换序列执行\nvoid QHsm_dispatch(QHsm *me, QEvent const *e) {\n    // 1. 从当前状态开始查找处理者\n    // 2. 如果返回SUPER，向上查找父状态\n    // 3. 如果返回TRANS，执行转换序列：\n    //    - 从源到目标的exit动作（向上）\n    //    - 从源到共同的LCA（最近共同祖先）\n    //    - 从LCA到目标的entry动作（向下）\n}\n```\n#### 状态机设计模式\n| 模式 | 适用场景 | 特点 |\n|------|----------|------|\n| **状态继承** | 多子状态共享行为 | 父状态定义共性 |\n| **历史状态** | 暂停/恢复场景 | 记住上次活跃子状态 |\n| **并行状态** | 多模块独立运行 | 多状态机并行 |\n| **延迟事件** | 定时触发 | 自发送事件 |\n| **监护条件** | 条件转换 | guard条件判断 |"
+      },
+      {
+        "level": 2,
+        "title": "3.4 事件系统",
+        "content": "#### 事件结构定义\n```c\n// QP事件基类\ntypedef struct {\n    QSignal sig;        // 事件信号（标识符）\n    uint8_t poolId;     // 内存池ID（动态事件）\n    uint8_t refCount;   // 引用计数（共享事件）\n} QEvent;\n// 扩展事件（携带参数）\ntypedef struct {\n    QEvent super;       // 基类\n    // 参数...\n    uint32_t param1;\n    void* param2;\n} CustomEvent;\n// 事件信号定义\nenum Signals {\n    TIMEOUT_SIG = 1,    // 定时器事件\n    DATA_READY_SIG,     // 数据就绪\n    COMMAND_SIG,        // 命令事件\n    ERROR_SIG,          // 错误事件\n    // 用户定义信号...\n    USER_SIG_START = 100\n};\n```\n#### 事件发布机制\n```\n┌─────────────────────────────────────────────────────────────────────┐\n│                    事件发布-订阅模型                                  │\n├─────────────────────────────────────────────────────────────────────┤\n│                                                                     │\n│  Publisher AO ────┐                                                 │\n│                   │                                                 │\n│                   │   ┌────────────────┐                            │\n│                   ├──→│  Event Broker  │───→ Subscriber AO 1        │\n│                   │   │  (QP Framework)│                            │\n│  Publisher AO ────┘   └────────────────┘───→ Subscriber AO 2        │\n│                                              │                      │\n│                                              └─→ Subscriber AO 3    │\n│                                                                     │\n│  发布方式：                                                         │\n│  1. 直接发布：QActive_post(targetAO, event)                        │\n│  2. 广播发布：QP_publish(event) → 所有订阅者                        │\n│  3. 订阅机制：QActive_subscribe(sig, ao)                           │\n└─────────────────────────────────────────────────────────────────────┘\n```\n#### 事件内存管理\n| 管理方式 | 适用场景 | 特点 |\n|----------|----------|------|\n| **静态事件** | 固定信号，无参数 | ROM分配，无释放 |\n| **动态事件** | 需携带参数 | 内存池分配，引用计数 |\n| **临时事件** | 单次使用 |栈分配，立即处理 |\n```c\n// 动态事件使用\nQEvent *e = QNew(AppEvent_pool, DATA_EVENT_SIG);\ne->param = value;\nQActive_post(target, e);  // 引用计数+1\n// 事件处理完成后自动释放（引用计数归零）\n```"
+      },
+      {
+        "level": 2,
+        "title": "3.5 内核选择",
+        "content": "#### QP 内核家族\n| 内核 | 类型 | 特点 | 适用场景 |\n|------|------|------|----------|\n| **QV** | 非抢占式协作 | 无任务切换，确定性最强 | 简单系统，硬实时 |\n| **QK** | 抢占式非阻塞 | 优先级调度，无阻塞 | 中等复杂，高响应 |\n| **QXK** | 抢占式双模式 | 支持阻塞调用，兼容传统RTOS | 复杂系统，渐进迁移 |\n| **RTOS移植** | 传统RTOS | FreeRTOS/uCOS等 | 已有RTOS项目 |\n#### QV内核（非抢占式）\n```c\n// QV内核调度循环\nvoid QV_run(void) {\n    while (running) {\n        // 找最高优先级有事件的AO\n        QActive *highest = findHighestPriorityAO();\n        if (highest) {\n            // 取事件\n            QEvent *e = QEQueue_get(&highest->queue);\n            // RTC执行（非抢占）\n            QHsm_dispatch(&highest->stateMachine, e);\n            // 完成后继续找下一个\n        }\n    }\n}\n// 优势：\n// - 无任务切换开销\n// - 无优先级反转\n// - WCRT可精确计算\n// - 代码简单，易于验证\n```\n#### QK内核（抢占式）\n```c\n// QK内核调度\nvoid QK_run(void) {\n    while (running) {\n        // 当前运行的AO\n        QActive *curr = currentAO();\n        // 找更高优先级有事件的AO\n        QActive *next = findHigherPriorityAO(curr);\n        if (next && next->priority > curr->priority) {\n            // 抢占切换\n            QK_activate(next);  // 保存上下文，切换\n        }\n        // 处理当前事件\n        dispatch_event();\n    }\n}\n// 优势：\n// - 高优先级事件快速响应\n// - 仍无优先级反转（RTC模式）\n// - 无阻塞，避免死锁\n```"
+      },
+      {
+        "level": 2,
+        "title": "3.6 软件追踪 (QS - Software Tracing)",
+        "content": "#### QS追踪系统\n```c\n// QS追踪配置\nvoid QS_init(void) {\n    QS_initBuf(buffer, size);   // 初始化缓冲\n    QS_filterOn(QS_ALL_RECORDS); // 开启追踪\n}\n// 关键追踪点\nQS_BEGIN(AO_RECEIVE, ao)\n    QS_OBJ(ao);              // AO对象\n    QS_SIG(e->sig);          // 事件信号\n    QS_EQC(ao->queue.count); // 队列深度\nQS_END()\n// 应用场景：\n// 1. 调试：追踪事件流、状态转换\n// 2. 性能分析：事件处理时间、队列深度\n// 3. 系统监控：实时状态可视化\n// 4. 测试：自动化测试验证\n```\n#### 追踪数据输出\n```\n追踪数据格式：\n┌─────────────────────────────────────────────────────────────────────┐\n│  Timestamp │ RecordID │ Object │ Signal │ Parameters               │\n├─────────────────────────────────────────────────────────────────────┤\n│  1000ms    │ AO_RECEIVE│ Motor │ START │ {speed: 100}              │\n│  1005ms    │ STATE_TRANS│ Motor │ Running │ from: Idle              │\n│  1050ms    │ AO_POST    │ Sensor │ DATA │ to: Controller           │\n└─────────────────────────────────────────────────────────────────────┘\n分析工具：QTools/QSPY\n- 实时显示\n- 时序图生成\n- 性能统计\n```"
+      },
+      {
+        "level": 2,
+        "title": "3.7 模型驱动开发 (QM工具)",
+        "content": "#### QM (QP Modeler) 特性\n```\n┌─────────────────────────────────────────────────────────────────────┐\n│                    QM 模型驱动开发流程                                │\n├─────────────────────────────────────────────────────────────────────┤\n│                                                                     │\n│  ┌─────────────┐     ┌─────────────┐     ┌─────────────┐            │\n│  │  状态图设计  │ ──→ │  模型配置   │ ──→ │ 代码生成    │            │\n│  │  (图形编辑) │     │ (物理设计)  │     │ (C/C++)    │            │\n│  └─────────────┘     └─────────────┘     └─────────────┘            │\n│         ↑                                        │                  │\n│         │                                        ↓                  │\n│  ┌─────────────┐     ┌─────────────┐     ┌─────────────┐            │\n│  │  验证测试   │ ←── │  编译运行   │ ←── │ 代码集成    │            │\n│  │  (QUTest)  │     │             │     │             │            │\n│  └─────────────┘     └─────────────┘     └─────────────┘            │\n│                                                                     │\n│  特点：                                                             │\n│  - 正向工程：模型→代码，无反向                                       │\n│  - 物理设计：生成代码的文件结构可配置                                │\n│  - 可追溯性：状态图与代码完全对应                                    │\n│  - 低仪式感：直接映射，无中间层                                      │\n└─────────────────────────────────────────────────────────────────────┘\n```\n#### QM代码生成优势\n| 特性 | 传统工具 | QM工具 |\n|------|----------|--------|\n| **复杂性** | 高仪式感，多层模型 | 低仪式感，直接映射 |\n| **代码控制** | 生成后需手动调整 | 物理设计内置，输出可控 |\n| **状态图编辑** | 自动调整布局 | 用户完全控制布局 |\n| **语言支持** | 多语言中间层 | 直接生成C/C++ |\n| **追溯性** | 模型代码分离 | 双向导航，完全对应 |"
+      },
+      {
+        "level": 2,
+        "title": "✅ 正面案例：医疗设备控制器",
+        "content": "**背景：某胰岛素泵控制器，安全关键系统，需要形式化验证**\n**设计方案**：\n```\n系统架构：\n┌─────────────────────────────────────────────────────────────────────┐\n│                    Active Object 划分                                │\n├─────────────────────────────────────────────────────────────────────┤\n│  AO_PumpControl (高优先级)                                           │\n│  - 状态机：Idle → Priming → Delivering → Alarm → Recovery           │\n│  - 事件：BUTTON_PRESS, DOSE_COMMAND, SENSOR_ALARM, TIMEOUT          │\n│  - RTC处理：确保剂量计算完整执行                                      │\n│                                                                     │\n│  AO_SensorManager (中优先级)                                         │\n│  - 状态机：Monitoring → Calibrating → Error                         │\n│  - 事件：SENSOR_DATA, CALIBRATE, ERROR_SIG                          │\n│  - 发布数据事件给 PumpControl                                        │\n│                                                                     │\n│  AO_UserInterface (低优先级)                                         │\n│  - 状态机：Display → Menu → Alert                                    │\n│  - 事件：UI_UPDATE, BUTTON, ALERT_SIG                               │\n│  - 与用户交互，不阻塞控制                                             │\n└─────────────────────────────────────────────────────────────────────┘\n关键设计决策：\n1. QV内核（非抢占）→ 确定性响应，无优先级反转\n2. 无共享数据 → 每个AO独立状态，事件通信\n3. HSM状态机 → 状态继承，行为清晰\n4. QS追踪 → 实时监控，故障分析\n5. QM代码生成 → 状态图与代码一致，验证可追溯\n状态机设计：\n                    ┌────────────────────┐\n                    │      PumpAO        │\n                    │   (root state)     │\n                    │ entry: init_hardware│\n                    │ exit: safe_shutdown │\n                    └────────┬───────────┘\n                             │\n        ┌────────────────────┼────────────────────┐\n        │                    │                    │\n   ┌────┴────┐          ┌────┴────┐          ┌────┴────┐\n   │  Idle   │          │Primed   │          │ Deliver │\n   │entry:   │───dose──→│entry:   │───start──→│entry:   │\n   │clear    │          │check    │          │calc_dose│\n   │exit:    │          │exit:    │          │exit:    │\n   │lock     │          │unlock   │          │stop_motor│\n   └─────────┘          └─────────┘          └─────────┘\n        ↑                    ↑                    ↑\n        │                    │                    │\n   alarm_event           alarm_event          alarm_event\n        │                    │                    │\n        └────────────────────┴────────────────────┘\n                             │\n                       ┌─────┴─────┐\n                       │  Alarm    │\n                       │entry:stop │\n                       │send_alert │\n                       │exit:reset │\n                       └───────────┘\n可靠性措施：\n- 每个RTC步骤可形式化验证\n- 状态转换有入口/出口动作（资源管理）\n- Alarm状态是所有状态的共同子状态\n- QS追踪可事后分析故障序列\n```\n**结果**：\n- 通过IEC 62304医疗软件认证\n- 最坏响应时间可精确计算\n- 形式化验证覆盖率100%\n- MTBF > 100,000小时"
+      },
+      {
+        "level": 2,
+        "title": "✅ 正面案例：IoT网关设备",
+        "content": "**背景：某工业IoT网关，需要处理多协议、高并发、低功耗**\n**设计方案**：\n```\nActive Object架构：\nAO_ModbusHandler    - Modbus协议处理（中优先级）\nAO_MqttClient       - MQTT通信（低优先级）\nAO_DataProcessor    - 数据聚合（中优先级）\nAO_PowerManager     - 电源管理（高优先级）\nAO_WatchdogMonitor  - 系统监控（最高优先级）\n事件流设计：\n传感器 → ModbusAO → DataProcessorAO → MqttAO → 云平台\n                ↓\n            PowerManagerAO（功耗策略调整）\n状态机示例 - PowerManagerAO：\n                    ┌────────────────────┐\n                    │   PowerManager     │\n                    └────────┬───────────┘\n                             │\n        ┌────────────────────┼────────────────────┐\n        │                    │                    │\n   ┌────┴────┐          ┌────┴────┐          ┌────┴────┐\n   │ Active  │          │ Idle    │          │ Sleep   │\n   │全功能   │──idle_evt→│待机     │──sleep_evt→│低功耗   │\n   │entry:   │          │entry:   │          │entry:   │\n   │enable_  │          │reduce_  │          │disable_ │\n   │all      │          │clock    │          │peripheral│\n   │exit:    │          │exit:    │          │exit:    │\n   │save_ctx │          │restore  │          │init     │\n   └─────────┘          └─────────┘          └─────────┘\n功耗优化：\n- Active: 50mA（全功能）\n- Idle: 10mA（待机）\n- Sleep: 0.5mA（低功耗）\n事件驱动优势：\n- 无阻塞：各AO异步处理，不阻塞\n- 可扩展：新增协议只需新增AO\n- 可测试：每个AO独立测试\n```\n**结果**：\n- 平均功耗降低40%\n- 协议处理吞吐量提升30%\n- 新协议接入只需新增AO，不影响现有代码\n- 长期运行稳定（72h测试无异常）"
+      },
+      {
+        "level": 2,
+        "title": "❌ 反面案例：传统RTOS设计的物联网设备",
+        "content": "**背景：某WiFi智能设备，频繁死机、响应慢**\n**问题设计**：\n```c\n// 问题1：共享状态并发\ntypedef struct {\n    int state;\n    char buffer[1024];  // 多任务共享\n} SharedData;\nSharedData g_data;  // 全局共享\nvoid Task1() {\n    mutex_lock(&g_mutex);\n    g_data.state = 1;  // 修改共享状态\n    process(g_data.buffer);\n    mutex_unlock(&g_mutex);  // 长时间持有锁\n}\nvoid Task2() {\n    mutex_lock(&g_mutex);  // 等待锁，阻塞\n    // 等待中无法响应其他事件\n}\n// 问题2：阻塞调用\nvoid Task3() {\n    while(1) {\n        wait_semaphore(&data_ready);  // 阻塞等待\n        process_data();               // 处理时间长\n        // 等待期间无法响应紧急事件\n    }\n}\n// 问题3：优先级反转\n// 高优先级任务等待低优先级持有的锁\n// 低优先级被中优先级抢占 → 高优先级等待更久\n```\n**后果**：\n- 死锁风险：环形锁依赖\n- 优先级反转：高优先级任务被阻塞\n- 响应不确定：阻塞时间不可预测\n- 扩展困难：新增功能需修改多处共享状态\n**改进方案（QP框架重构）**：\n```c\n// Active Object设计\ntypedef struct {\n    QActive super;  // 继承QP框架\n    QEQueue queue;  // 事件队列\n    // 私有数据（不共享）\n    int private_state;\n    char private_buffer[256];\n} AO_Controller;\n// 状态机处理\nQState AO_Controller_handler(AO_Controller *me, QEvent *e) {\n    switch (e->sig) {\n        case DATA_READY_SIG:\n            // RTC处理，不阻塞\n            process_data(me);\n            return Q_RET_HANDLED;\n        case EMERGENCY_SIG:\n            // 立即响应，无阻塞等待\n            handle_emergency(me);\n            return Q_RET_TRANS;  // 状态转换\n    }\n    return Q_RET_SUPER;  // 传给父状态\n}\n// 通信：异步事件\nvoid AO_Sensor_post_data(AO_Controller *target, SensorData *data) {\n    DataEvent *e = QNew(DataEvent_pool, DATA_READY_SIG);\n    e->data = *data;\n    QActive_post(target, (QEvent*)e);  // 异步发送\n}\n```\n**重构后效果**：\n- 无死锁：异步事件通信\n- 无优先级反转：RTC模式\n- 响应确定：WCRT可计算\n- 扩展容易：新增AO即可"
+      },
+      {
+        "level": 2,
+        "title": "📋 产品经理视角检查清单",
+        "content": "#### 需求阶段\n- [ ] 系统并发模型选择：事件驱动 vs 传统RTOS，依据是什么\n- [ ] Active Object划分：哪些功能需要独立AO\n- [ ] 状态机需求：哪些模块需要状态机管理\n- [ ] 实时性要求：WCRT目标，可调度性分析\n- [ ] 安全等级：是否需要形式化验证支持\n#### 架构评审\n- [ ] Active Object数量：是否合理（建议≤10）\n- [ ] 事件定义：信号是否完整，参数设计是否合理\n- [ ] 状态机复杂度：状态层级是否合理（≤3层）\n- [ ] 内核选择：QV/QK/QXK依据\n- [ ] 通信设计：事件流是否清晰，订阅关系是否明确\n#### 可靠性检查\n- [ ] RTC执行：是否确保每个事件处理完整\n- [ ] 无阻塞：是否避免阻塞调用\n- [ ] 状态覆盖：每个状态的事件响应是否完整\n- [ ] 异常处理：是否有Alarm/Error状态\n- [ ] QS追踪：是否配置关键追踪点\n#### 测试验证\n- [ ] 状态机覆盖率测试：所有状态和转换\n- [ ] 事件队列压力测试：满队列处理\n- [ ] WCRT测量验证\n- [ ] 长期稳定性测试\n- [ ] QUTest自动化测试"
+      },
+      {
+        "level": 2,
+        "title": "🛠️ 工程师实施清单",
+        "content": "#### 框架集成\n- [ ] QP框架移植：选择内核、配置参数\n- [ ] 事件内存池：大小、数量配置\n- [ ] QS追踪系统：缓冲、过滤配置\n- [ ] QM工具配置：代码生成规则\n#### Active Object开发\n- [ ] AO结构定义：私有数据、事件队列\n- [ ] 状态机实现：状态处理器、转换逻辑\n- [ ] 事件订阅：订阅需要的事件信号\n- [ ] 优先级分配：依据紧急性和重要性\n#### 状态机设计\n- [ ] 状态层次设计：父子状态关系\n- [ ] 入口/出口动作：资源管理动作\n- [ ] 转换条件：监护条件设计\n- [ ] 历史状态：是否需要恢复机制\n#### 调试测试\n- [ ] QS追踪启用：关键事件追踪\n- [ ] QSPY工具配置：实时监控\n- [ ] QUTest测试编写：状态机测试\n- [ ] WCRT测量：最坏情况响应时间"
+      },
+      {
+        "level": 1,
+        "title": "六、金句摘录",
+        "content": "> \"Active Object是并发编程的最佳实践——无共享状态、异步通信、RTC执行。\" — Miro Samek\n> \"事件驱动架构让控制流反转，框架调度，对象响应——这是扩展性的关键。\"\n> \"层次状态机让复杂行为变得简单——子状态继承父状态，避免重复代码。\"\n> \"RTC（Run-to-Completion）是事件驱动的心脏——一次处理一个事件，保证完整性。\"\n> \"传统RTOS的互斥锁是并发问题的根源——阻塞、优先级反转、死锁。\"\n> \"QV内核的非抢占式调度是最确定性的——无任务切换开销，WCRT可精确计算。\"\n> \"软件追踪是嵌入式调试的革命——看不见的系统，通过追踪变得可见。\"\n> \"QM模型驱动开发让设计与代码一致——状态图就是代码，代码就是状态图。\"\n> \"在事件驱动系统中，不需要等待，只需要响应——这是响应性的本质。\"\n> \"无阻塞架构是实时系统的基石——阻塞是延迟和不可预测性的根源。\""
+      },
+      {
+        "level": 2,
+        "title": "内核选择指南",
+        "content": "| 系统复杂度 | 实时性要求 | 推荐内核 |\n|------------|------------|----------|\n| 简单（≤3 AO） | 硬实时 | QV |\n| 中等（≤10 AO） | 高响应 | QK |\n| 复杂（>10 AO） | 需兼容传统代码 | QXK |\n| 已有RTOS项目 | 渐进迁移 | RTOS移植 |"
+      },
+      {
+        "level": 2,
+        "title": "Active Object设计模板",
+        "content": "```c\n// Active Object 定义模板\ntypedef struct {\n    QActive super;              // QP基类\n    // 私有数据成员\n    uint32_t private_param;\n    // 状态机状态（可选，由QP管理）\n} MyAO;\n// 状态处理器\nQState MyAO_initial(MyAO *me, QEvent const *e) {\n    // 初始化逻辑\n    return Q_TRAN(&MyAO_idle);  // 转换到初始状态\n}\nQState MyAO_idle(MyAO *me, QEvent const *e) {\n    switch (e->sig) {\n        case Q_ENTRY_SIG:\n            // 入口动作\n            return Q_RET_HANDLED;\n        case Q_EXIT_SIG:\n            // 出口动作\n            return Q_RET_HANDLED;\n        case START_SIG:\n            return Q_TRAN(&MyAO_running);\n    }\n    return Q_SUPER(&MyAO_top);  // 传给父状态\n}\n// 注册AO\nvoid MyAO_ctor(MyAO *me) {\n    QActive_ctor(&me->super, (QStateHandler)&MyAO_initial);\n}\n```"
+      },
+      {
+        "level": 2,
+        "title": "事件定义模板",
+        "content": "```c\n// 事件信号定义\nenum MySignals {\n    // 系统保留信号\n    Q_ENTRY_SIG = 1,\n    Q_EXIT_SIG,\n    Q_INIT_SIG,\n    // 用户信号\n    START_SIG = 100,\n    STOP_SIG,\n    DATA_SIG,\n    TIMEOUT_SIG,\n    ERROR_SIG\n};\n// 携带参数的事件\ntypedef struct {\n    QEvent super;\n    uint32_t value;\n} ValueEvent;\n```"
+      },
+      {
+        "level": 2,
+        "title": "QS追踪配置",
+        "content": "```c\n// 追踪初始化\nvoid QS_setup(void) {\n    static uint8_t qsBuf[2048];\n    QS_initBuf(qsBuf, sizeof(qsBuf));\n    // 过滤配置\n    QS_filterOn(QS_ALL_RECORDS);\n    QS_filterOff(QS_QEP_TRAN);  // 关闭特定记录\n}\n// 追踪点定义\nQS_BEGIN(ID_CUSTOM, ao)\n    QS_OBJ(ao);\n    QS_U32(value);\nQS_END()\n```"
+      },
+      {
+        "level": 1,
+        "title": "更新日志",
+        "content": "| 日期 | 版本 | 更新内容 |\n|------|------|----------|\n| 2026-04-27 | v1.0 | 初版创建，基于QP框架官方文档和Miro Samek著作整理 |\n> 📌 **方法论标签**: #事件驱动架构 #ActiveObject #层次状态机 #QP框架 #嵌入式并发 #实时系统 #HSM #RTC执行 #无阻塞架构\n> 🎯 **适用角色**: 嵌入式开发工程师、IoT架构师、固件产品经理、实时系统开发者、安全关键系统工程师\n> 🔗 **相关文档**: Michael Barr-嵌入式系统设计模式方法论、Elecia White-嵌入式系统设计艺术方法论\n*本文档整理自Quantum Leaps官方文档、Miro Samek《Practical UML Statecharts in C/C++》第二版、以及state-machine.com技术文章。*"
+      }
+    ],
+    "updates": [
+      {
+        "date": "2026-05-10",
+        "note": "从智慧库导入"
+      }
+    ]
+  }
+}

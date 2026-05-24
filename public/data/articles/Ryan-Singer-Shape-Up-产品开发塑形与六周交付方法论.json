@@ -1,0 +1,131 @@
+{
+  "id": "Ryan-Singer-Shape-Up-产品开发塑形与六周交付方法论",
+  "category": "产品设计",
+  "title": "Ryan Singer《Shape Up》产品开发塑形与六周交付方法论",
+  "keywords": [
+    "Shape Up",
+    "Ryan Singer",
+    "六周周期",
+    "Appetite",
+    "Shaping",
+    "Betting Table",
+    "Pitch",
+    "Breadboarding",
+    "Fat Marker Sketches"
+  ],
+  "summary": "**核心主题**: 六周交付周期 × Appetite替代估时 × 先塑形后下注 × Betting Table资源决策 × 固定时间可变范围 × 让小团队在边界内自主交付",
+  "importance": 5,
+  "learned_at": "2026-05-13",
+  "source": "Ryan Singer《Shape Up: Stop Running in Circles and Ship Work that Matters》(Basecamp公开方法论) 及公开书介/摘要资料",
+  "content": {
+    "core_formula": "Shape Up = Appetite（先定投入上限） + Shaping（先塑形） + Pitch（可下注提案） + Betting Table（项目下注） + 6-week Build（团队自主交付） + Cool-down（吸收与整理）",
+    "layers": [
+      {
+        "level": 1,
+        "title": "第一层：概念定义",
+        "content": "**作者背景**：Ryan Singer 是 Basecamp 前产品策略负责人，长期负责把产品构想转成团队可落地的工作单元。《Shape Up》是 Basecamp 在产品开发中沉淀出的公开方法论，目标不是“更忙地管理待办”，而是让小团队在有限时间内真正交付有边界的成果。\n\n**书籍/方法论信息**：\n- 名称：*Shape Up: Stop Running in Circles and Ship Work that Matters*\n- 核心组织：Basecamp\n- 典型场景：产品团队、设计/工程协作、创新项目、内部工具开发\n- 核心问题：为什么团队总在 backlog、估时、碎片需求与中途插单中原地打转？\n\n**核心概念详解**：\n\n| 概念 | 英文名 | 定义 | 方法论意义 |\n|------|--------|------|------------|\n| **Appetite** | Appetite | 不是估算要多久，而是先决定愿意投入多久 | 用预算约束设计，而不是让估时失控 |\n| **Shaping** | Shaping | 在开工前把问题、边界、主方案与风险先塑形 | 避免团队在施工期边做边找方向 |\n| **Pitch** | Pitch | 可供下注的项目提案，说明问题、方案、收益、边界与风险 | 让资源分配有清晰输入 |\n| **Betting Table** | Betting Table | 高层/负责人定期选择本周期要做的少数项目 | 用“下注”替代承诺式排期 |\n| **Breadboarding** | Breadboarding | 用低保真结构图描述界面/流程关系 | 帮团队看清结构而不陷入细节 |\n| **Fat Marker Sketches** | Fat Marker Sketches | 粗线条草图，强调方向与边界，不给伪精确感 | 让设计保持 rough but clear |\n| **Rabbit Holes** | Rabbit Holes | 施工中容易吞噬时间的技术/交互黑洞 | 先识别风险，必要时明确 out of bounds |\n| **No-gos** | No-gos | 明确这次不做什么 | 防范围膨胀 |\n| **Circuit Breaker** | Circuit Breaker | 到了周期上限必须停，不能无限拖长 | 通过时间约束倒逼范围切割 |\n| **Cool-down** | Cool-down | 每轮交付后留出整理、修补、研究、塑形时间 | 防止团队永远满负荷冲刺 |\n\n**核心公式详解**：\n```\n交付质量 = 清晰边界 × 小团队专注度 × 时间盒纪律 × 风险预塑形\n\nShape Up 成功条件：\n成功交付 ≈ 先定 Appetite + 方案已塑形 + 团队中途少被打断 + 范围可裁剪\n\n失败高发条件：\n失败 ≈ 需求模糊 + 无限 backlog + 边做边找方向 + 中途不断插单\n```"
+      },
+      {
+        "level": 1,
+        "title": "第二层：子维度拆解",
+        "content": "### 维度一：时间预算先行（Appetite）\nShape Up 最反直觉的一点，是**先给时间预算，再倒推方案**。不是问“这个需求需要几周”，而是问“我们愿意给它 2 周还是 6 周，这决定了该做成什么样”。\n\n### 维度二：塑形而非排任务（Shaping）\nShaping 不是写完整 PRD，也不是拆一堆 ticket，而是把问题、解决方向、边界、主要风险先做成一个“足够清晰、但仍给团队保留自主空间”的方案。\n\n### 维度三：下注而非承诺（Betting）\nBetting Table 的逻辑是：每个周期只选少数值得下注的项目。没有被选中的，不是失败，只是暂不下注。这样比无限堆积 backlog 更诚实。\n\n### 维度四：固定时间、可变范围\n六周不是保证做完所有想法，而是保证团队在一个稳定节奏里交出“最重要、已塑形、可落地”的部分。\n\n### 维度五：团队自主交付\n一旦下注，团队获得一个完整的时间盒和明确边界；管理层不再把他们切碎到每日指挥。\n\n| 维度 | 核心问题 | 方法动作 | 常见误区 |\n|------|----------|----------|----------|\n| **Appetite** | 我们愿意投入多久？ | 先定 2 周 / 6 周预算 | 把预算当估时结果 |\n| **Shaping** | 方案是否足够成形？ | 先边界、再细节 | 边做边想 |\n| **Betting** | 这一轮最值得押什么？ | 少选、选重 | 什么都想做 |\n| **Building** | 团队能否自主完成？ | 给边界、少打断 | 过程中过度遥控 |\n| **Cool-down** | 何时消化、修补、总结？ | 留整理窗口 | 无休止连轴冲刺 |"
+      },
+      {
+        "level": 2,
+        "title": "核心模型：Shape Up 六段式循环",
+        "content": "```\n原始想法\n   ↓\nShaping（界定问题、边界、主方案、风险）\n   ↓\nPitch（写成可下注提案）\n   ↓\nBetting Table（选择本周期要押的项目）\n   ↓\nBuild 6 Weeks（小团队专注施工、范围可裁剪）\n   ↓\nCool-down（修补、吸收、塑形下一轮）\n```\n\n**这套循环的关键不是快，而是避免团队在未成形的工作上反复空转。**"
+      },
+      {
+        "level": 2,
+        "title": "Shaping 的三大属性：Rough / Solved / Bounded",
+        "content": "| 属性 | 含义 | 为什么重要 |\n|------|------|------------|\n| **Rough** | 粗而不糙，避免过早精细化 | 给实现团队保留创造空间 |\n| **Solved** | 主要方向和关键难点已被预处理 | 防止团队开工后才发现根本不会做 |\n| **Bounded** | 明确范围、取舍和不做项 | 防止周期内无限膨胀 |\n\n**好 Shape 的标准**：不是细节写得多，而是团队一拿到就知道：\n1. 为什么做；\n2. 大致怎么做；\n3. 什么不做；\n4. 哪些地方最危险。"
+      },
+      {
+        "level": 2,
+        "title": "Shaping 工具：Breadboarding 与 Fat Marker Sketches",
+        "content": "### Breadboarding\n用于描述页面/模块之间的关系、入口、返回、状态切换，强调结构连线而不是视觉细节。它适合讨论：流程通不通、信息如何穿过系统、哪里可能断。\n\n### Fat Marker Sketches\n故意使用粗线框、少细节草图，让讨论聚焦在大方向：这里要不要有入口、这个对象是不是核心、这个步骤能不能取消。\n\n| 工具 | 最适合回答的问题 | 不适合做什么 |\n|------|------------------|--------------|\n| **Breadboarding** | 系统关系、路径、结构边界 | 视觉稿定稿 |\n| **Fat Marker Sketches** | 交互方向、布局优先级 | 像素级评审 |\n\n**方法论意义**：\n> 在真正值得下注前，方案应当先被结构化地想清楚，而不是被漂亮地画清楚。"
+      },
+      {
+        "level": 2,
+        "title": "Pitch 的标准结构",
+        "content": "根据公开摘要，Shape Up 的 pitch 不是需求列表，而是一个可以让决策者下注的说明书。\n\n典型结构包括：\n1. **Problem**：当前用户或业务卡在哪里；\n2. **Appetite**：愿意投入 2 周还是 6 周；\n3. **Solution**：大致解法与结构草图；\n4. **Rabbit Holes**：已知风险与黑洞；\n5. **No-gos**：本轮明确不做什么；\n6. **Expected Impact**：为什么值得押这一轮资源。\n\n```\n好的 Pitch = 业务问题清晰 + 投入边界明确 + 方案成形 + 风险已暴露 + 不做项写明\n```\n\n**差 Pitch 的典型表现**：\n- 只有愿景，没有边界；\n- 只有任务列表，没有关键取舍；\n- 只有用户需要，没有投入上限。"
+      },
+      {
+        "level": 2,
+        "title": "Betting Table：为什么要用下注替代排期",
+        "content": "Shape Up 认为，传统排期常制造一种虚假确定性：好像所有项目都会被做、都会按时做、都会被完整做完。Betting Table 更诚实：\n\n- **资源是稀缺的**，所以只能选少数项目；\n- **每次只押一轮**，避免远期承诺压死团队；\n- **不做 backlog 幻觉管理**，未下注不等于承诺未兑现。\n\n| 排期思维 | 下注思维 |\n|----------|----------|\n| 先排满未来 | 只决定当前一轮 |\n| 假装都能做 | 承认只能做少数 |\n| 用 deadline 逼团队 | 用 appetite 倒逼方案 |\n| 任务堆积为 backlog | 提案等待被下注或被放弃 |\n\n**这不是降低规划，而是提升资源决策的真实性。**"
+      },
+      {
+        "level": 2,
+        "title": "六周周期与 Cool-down 的节奏设计",
+        "content": "公开摘要反复提到 Shape Up 的节奏：**六周施工 + 两周左右整理/塑形/修补窗口**。六周足够做出真正有分量的成果，又不会长到让范围失控。\n\nCool-down 的价值：\n- 吸收上轮遗留；\n- 修小问题和技术债；\n- 准备下一轮 pitches；\n- 避免团队永远冲刺。\n\n**节奏设计原则**：\n1. 周期足够长，能完成完整问题；\n2. 周期足够短，能形成压力边界；\n3. 周期之间必须有呼吸空间。"
+      },
+      {
+        "level": 2,
+        "title": "Circuit Breaker：固定时间、可变范围",
+        "content": "Shape Up 最硬的一条纪律是：**时间盒到点就停，不能把超出的部分自动拖进下一轮继续做。**\n\n这意味着：\n- 团队必须优先交付最核心部分；\n- 发现超出 appetite 时，要切范围，不是加人加班；\n- 未完成的残片不能理所当然进入下轮，除非重新塑形并重新下注。\n\n```\n如果范围 > 时间预算：\n  优先切边缘功能\n  而不是延长周期\n```\n\n**真正的好处**：组织被迫学习做少但做成，而不是承诺很多、拖很久。"
+      },
+      {
+        "level": 2,
+        "title": "正面案例：Shape Up 适用的三类项目",
+        "content": "### 案例A：中等规模功能交付\n适合用户路径明确、价值明显，但实现方案需要跨设计与工程协作的功能。通过 appetite + shaping，可在六周内完成高价值主路径。\n\n### 案例B：内部工具效率改造\n问题通常清晰、受众集中、反馈快。先用 breadboarding 看清流程，再下注一个最关键瓶颈，容易见效。\n\n### 案例C：复杂改版中的范围切割\n当团队面对整个体验都想重做时，Shape Up 会强迫先划出一个值得下注的切片，而不是整体推倒重来。\n\n**共通成功因素**：\n- 问题够真实；\n- 方案够成形；\n- 团队够专注；\n- 范围可裁。"
+      },
+      {
+        "level": 2,
+        "title": "反面案例：三种常见失效方式",
+        "content": "### 反面案例A：把 appetite 当估时\n团队嘴上说先定六周，实际上仍试图把所有想法塞进去，最后六周只是另一种 deadline。\n\n### 反面案例B：没有 shaping，直接开工\n问题、边界、风险都没想清，就把工作拆成任务推进，结果工程期变成探索期。\n\n### 反面案例C：中途持续插单\n虽然说押了六周，但团队被 bug、老板需求、紧急事项不断拉走，下注失去意义。\n\n**失效本质**：\n> 组织表面采纳了 Shape Up 的术语，却没有采纳它最关键的边界纪律。"
+      },
+      {
+        "level": 1,
+        "title": "概念定义（补充）：为什么 Shape Up 反对传统 Backlog 中心主义",
+        "content": "Shape Up 并不否认记录想法的价值，但它反对把 backlog 误当作未来一定会做的承诺池。在传统模式中，团队容易把 backlog 越堆越长，形成以下幻觉：\n\n1. 记下来的都很重要；\n2. 重要的迟早会做；\n3. 只要继续排优先级，组织就在前进。\n\nShape Up 的替代做法是：\n- 原始想法先进入 shaping 轨道，而不是直接排队；\n- 只有被塑形成 pitch 的项目，才有资格进入 Betting Table；\n- 没被下注的项目，不默认继续占据团队心理负担。\n\n**一句话总结**：\n> Shape Up 管理的不是待办库存，而是值得被下注的机会。"
+      },
+      {
+        "level": 1,
+        "title": "子维度拆解（补充）：Shaper 的四项核心职责",
+        "content": "### 维度一：压缩问题\n把模糊的大问题压缩成一个能在固定 appetite 内解决的切片。\n\n### 维度二：预处理风险\n在项目进施工前先暴露 rabbit holes，而不是把风险甩给执行团队。\n\n### 维度三：给边界不给细节控制\nShaper 不是替团队写完实现方案，而是写清往哪里走、不要去哪里。\n\n### 维度四：保持机会成本意识\n任何被下注的项目，都意味着别的项目本轮不做，因此必须持续问：这件事值得占用一个六周名额吗？\n\n| Shaper 做什么 | Shaper 不做什么 |\n|---------------|------------------|\n| 切范围、设边界、画结构 | 替团队拆完所有任务 |\n| 暴露风险与 no-gos | 假装方案无风险 |\n| 让提案可下注 | 让提案看起来很完整 |\n| 对机会成本负责 | 把一切都丢进 backlog |"
+      },
+      {
+        "level": 1,
+        "title": "正反案例（补充）：AI 产品、SaaS 与硬件团队如何套用 Shape Up",
+        "content": "### 正面案例A：AI Copilot 功能落地\n团队不要一开始就追求全场景智能助手，而应先选一个高频工作流，用六周 appetite 定义一个可交付的最小协作回路，例如总结会议 + 生成行动项。\n\n### 正面案例B：SaaS 权限系统改造\n权限重构往往容易无限扩大。Shape Up 要求先界定哪类角色、哪条关键权限链路、哪类 no-gos，本轮只押最关键切片。\n\n### 正面案例C：硬件配套 App 新手引导\n利用 breadboarding 先理顺配网、授权、失败恢复、设备发现，再用粗草图锁定关键分支，避免在视觉细节上过早消耗。\n\n### 反面案例A：把平台化当成六周项目\n范围天生过大，最终只能不断延长。\n\n### 反面案例B：所有 bug 都被当成中断\n团队没有保护施工周期，结果下注失去可信度。\n\n### 反面案例C：只学形式，不学边界\n开了 betting meeting、写了 pitch，但依旧用 backlog、估时、插单三件套在运行。"
+      },
+      {
+        "level": 1,
+        "title": "应用清单：个人 / 团队 / 组织三级落地",
+        "content": "### 个人层\n- [ ] 每拿到一个想法，先问：这是 2 周 appetite 还是 6 周 appetite？\n- [ ] 不再直接写大而全 PRD，先写问题、边界、no-gos。\n- [ ] 识别 rabbit holes，提前暴露技术或流程黑洞。\n\n### 团队层\n- [ ] 评审项目时先看是否成形，而不是先问工期。\n- [ ] 一旦下注，尽量保护团队不被日常事务打碎。\n- [ ] 周期中优先切范围，不优先加复杂度。\n- [ ] 结束后留 cool-down 做总结、修补与下一轮 shaping。\n\n### 组织层\n- [ ] 建立固定 cadence 的 Betting Table，而不是全年一次排满。\n- [ ] 明确谁有资格做 shaping，谁负责下注。\n- [ ] 减少 backlog 作为承诺池的心理负担。\n- [ ] 对未完成残片要求重新塑形、重新下注，而不是自动延续。\n\n### Shape Up 实践口诀\n```\n先定投入，再定方案；\n先塑形，再开工；\n先下注少数，再保护团队；\n先切范围，再谈延期。\n```"
+      },
+      {
+        "level": 1,
+        "title": "原书金句（整理）",
+        "content": "1. \"Start with an appetite, end with a design.\"\n2. \"Shaped work is rough, solved, and bounded.\"\n3. \"It’s not really a bet if the team gets interrupted the whole time.\"\n4. \"Fixed time, variable scope.\"\n5. \"Don’t carry scraps of old work forward automatically.\"\n\n中文提炼：\n- 先有投入边界，再有方案。\n- 好的塑形是粗的、解过的、有边界的。\n- 如果团队不断被打断，那根本不算下注。\n- 时间固定，范围可裁。\n- 上轮残片不是理所当然的下轮任务。"
+      },
+      {
+        "level": 1,
+        "title": "与 Scrum / Kanban 的关系",
+        "content": "| 维度 | Shape Up | Scrum / Kanban 常见实践 |\n|------|----------|---------------------------|\n| **规划单位** | Pitch / Bet | Story / Ticket / Backlog item |\n| **节奏** | 6 周交付 + cool-down | 1-2 周 sprint 或持续流动 |\n| **范围观** | 固定时间、可变范围 | 常见是范围较固定、速度波动 |\n| **前置工作** | 强调 shaping | 常见把探索带进 sprint |\n| **资源决策** | Betting Table 下注 | Product backlog 排序 |\n\n**不是谁替代谁，而是适用问题不同**：\n- 如果团队最痛的是项目成形前就开工、永远被待办拖着走，Shape Up 很有帮助；\n- 如果团队主要做持续流的运维、支持、细碎优化，纯 Shape Up 可能不如 Kanban 灵活。"
+      },
+      {
+        "level": 1,
+        "title": "总结：Shape Up 的真正价值",
+        "content": "Shape Up 表面上讲的是六周周期、pitch、betting table，但更深层的价值是把组织从三种慢性失效里拉出来：\n\n1. **Backlog 麻痹**：什么都记着，但什么都做不成；\n2. **估时幻觉**：把不确定工作假装成可精确排期；\n3. **中途打碎**：团队从未真正拥有一段完整专注时间。\n\n因此，Shape Up 并不是一个更优雅的项目模板，而是一套围绕边界、节奏、机会成本与团队专注重建开发系统的方法。\n\n```\nShape Up 的本质：\n让未成形的工作先成形；\n让值得做的事被明确下注；\n让小团队在稳定边界内真正交付。\n```"
+      },
+      {
+        "level": 1,
+        "title": "更新日志",
+        "content": "| 日期 | 内容 |\n|------|------|\n| 2026-05-13 | 初版创建：基于 Ryan Singer《Shape Up》及公开摘要资料，整理 Appetite、Shaping、Pitch、Betting Table、六周周期、Cool-down、Breadboarding/Fat Marker Sketches、Circuit Breaker 等核心方法，补充正反案例、Scrum/Kanban 对比与个人/团队/组织应用清单。 |"
+      },
+      {
+        "level": 1,
+        "title": "参考资源",
+        "content": "- Ryan Singer, *Shape Up: Stop Running in Circles and Ship Work that Matters*（Basecamp公开方法论）\n- 公开章节/摘要线索：六周周期、rough/solved/bounded、appetite、betting table、breadboarding、fat marker sketches\n- 关联阅读：Basecamp 产品开发实践、精益产品开发、固定时间可变范围的交付思路\n\n> **一句话复盘**：Shape Up 最难学的不是画草图或开会，而是接受我们只能押少数事情，而且必须在边界内做成。"
+      }
+    ],
+    "updates": [
+      {
+        "date": "2026-05-13",
+        "note": "初版创建：新增《Shape Up》方法论文档，整理 Appetite、Shaping、Pitch、Betting Table、六周交付与 Cool-down 节奏，并补充 Breadboarding/Fat Marker Sketches、反 backlog 思维、正反案例与团队落地清单。"
+      }
+    ]
+  }
+}

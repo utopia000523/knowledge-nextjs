@@ -1,0 +1,216 @@
+{
+  "id": "Prompt-Engineering-Guide-提示工程完整方法论",
+  "category": "产品设计",
+  "title": "Prompt Engineering Guide - 提示工程完整方法论",
+  "keywords": [
+    "Prompt",
+    "Engineering",
+    "Guide",
+    "提示工程完整方法论"
+  ],
+  "summary": "**作者**: DAIR.AI 团队 (OpenAI & DeepLearning.AI 合作)",
+  "importance": 4,
+  "learned_at": "2026-05-10",
+  "source": "Prompt Engineering Guide",
+  "content": {
+    "core_formula": "Part 1: 提示工程基础\n├── 1.1 什么是提示工程\n├── 1.2 LLM参数设置 (Temperature, Top-P, Max Length等)\n├── 1.3 提示设计基本原则\n└── 1.4 常见应用示例\n\nPart 2: 核心提示技术\n├── 2.1 Zero-Shot Prompting (零样本提示)\n├── 2.2 Few-Shot Prompting (少样本提示)\n├── 2.3 Chain-of-Thought (思维链)\n├── 2.4 Zero-Shot CoT (零样本思维链)\n├── 2.5 Auto-CoT (自动思维链)\n└── 2.6 Self-Consistency (自一致性)\n\nPart 3: 高级技术与应用\n├── 3.1 Retrieval Augmented Generation (RAG)\n├── 3.2 Function Calling (函数调用)\n├── 3.3 Multimodal Prompting (多模态提示)\n├── 3.4 Graph Prompting (图提示)\n└── 3.5 System Messages (系统消息控制)\n\nPart 4: 模型特定指南\n├── 4.1 GPT-4 提示技巧\n├── 4.2 ChatGPT 提示技巧\n├── 4.3 Claude 提示技巧\n└── 4.4 LLaMA 提示技巧\n\nPart 5: 风险与安全\n├── 5.1 Prompt Injection (提示注入)\n├── 5.2 Hallucination (幻觉)\n├── 5.3 Bias & Fairness (偏见与公平)\n└── 5.4 防护措施与最佳实践",
+    "layers": [
+      {
+        "level": 1,
+        "title": "一、原书大纲",
+        "content": "```\nPart 1: 提示工程基础\n├── 1.1 什么是提示工程\n├── 1.2 LLM参数设置 (Temperature, Top-P, Max Length等)\n├── 1.3 提示设计基本原则\n└── 1.4 常见应用示例\nPart 2: 核心提示技术\n├── 2.1 Zero-Shot Prompting (零样本提示)\n├── 2.2 Few-Shot Prompting (少样本提示)\n├── 2.3 Chain-of-Thought (思维链)\n├── 2.4 Zero-Shot CoT (零样本思维链)\n├── 2.5 Auto-CoT (自动思维链)\n└── 2.6 Self-Consistency (自一致性)\nPart 3: 高级技术与应用\n├── 3.1 Retrieval Augmented Generation (RAG)\n├── 3.2 Function Calling (函数调用)\n├── 3.3 Multimodal Prompting (多模态提示)\n├── 3.4 Graph Prompting (图提示)\n└── 3.5 System Messages (系统消息控制)\nPart 4: 模型特定指南\n├── 4.1 GPT-4 提示技巧\n├── 4.2 ChatGPT 提示技巧\n├── 4.3 Claude 提示技巧\n└── 4.4 LLaMA 提示技巧\nPart 5: 风险与安全\n├── 5.1 Prompt Injection (提示注入)\n├── 5.2 Hallucination (幻觉)\n├── 5.3 Bias & Fairness (偏见与公平)\n└── 5.4 防护措施与最佳实践\n```"
+      },
+      {
+        "level": 2,
+        "title": "公式1: 提示工程效能公式",
+        "content": "```\n提示效能 = (任务明确度 × 上下文丰富度 × 格式规范性) / 复杂度系数\n```\n**解读**:\n- 任务明确度: 指令是否清晰、具体、可执行\n- 上下文丰富度: 是否提供足够背景信息和示例\n- 格式规范性: 是否使用分隔符、结构化格式\n- 复杂度系数: 任务本身的难度等级"
+      },
+      {
+        "level": 2,
+        "title": "公式2: 思维链效能公式",
+        "content": "```\n推理准确率 = 基础准确率 × (1 + CoT提升系数)\nCoT提升系数 = 步骤拆解数 × 逻辑链完整性 × 示例质量\n```"
+      },
+      {
+        "level": 2,
+        "title": "公式3: Few-Shot优化公式",
+        "content": "```\n最佳示例数 = min(任务复杂度 × 2, 上下文窗口限制 / 平均示例长度)\n示例质量权重 > 示例数量权重\n```"
+      },
+      {
+        "level": 2,
+        "title": "3.1 Zero-Shot Prompting (零样本提示)",
+        "content": "**定义**: 不提供任何示例，直接用指令完成任务\n**适用场景**:\n- 简单分类任务 (情感分析、主题分类)\n- 通用知识问答\n- 格式转换 (文本→JSON)\n**关键要素**:\n```\n零样本提示 = 指令动词 + 任务描述 + 输出格式要求\n```\n**示例**:\n```\nPrompt: \"将以下文本分类为正面、负面或中性情感\"\nText: \"这款产品使用体验非常好\"\nOutput: 正面\n```\n**优势**: 快速、简洁，适合简单任务\n**局限**: 复杂推理任务准确率低"
+      },
+      {
+        "level": 2,
+        "title": "3.2 Few-Shot Prompting (少样本提示)",
+        "content": "**定义**: 提供1-多个示例，引导模型理解任务模式\n**核心发现** (Min et al. 2022):\n1. **标签空间重要**: 即使标签随机，格式正确也能有效\n2. **格式比内容关键**: 一致的格式比正确的标签更重要\n3. **分布匹配**: 标签分布应接近真实分布\n**最佳实践**:\n| 示例数 | 适用场景 | 注意事项 |\n|--------|----------|----------|\n| 1-shot | 简单模式匹配 | 确保格式一致 |\n| 3-5 shot | 中等复杂度任务 | 覆盖不同类别 |\n| 10+ shot | 复杂推理任务 | 注意上下文窗口 |\n**示例**:\n```\nPrompt:\n\"奇妙的\" -> 正面\n\"无聊的\" -> 负面\n\"普通的\" -> 中性\n\"令人失望的\" -> \nOutput: 负面\n```\n**局限**: 对需要多步推理的任务仍不够可靠 → 需要CoT"
+      },
+      {
+        "level": 2,
+        "title": "3.3 Chain-of-Thought (思维链)",
+        "content": "**定义**: Wei et al. (2022) 提出，通过中间推理步骤提升复杂任务准确率\n**核心机制**:\n```\n复杂问题 → 拆解为子步骤 → 每步骤推理 → 综合得出结论\n```\n**适用场景**:\n- 数学推理\n- 逻辑推理\n- 多步骤决策\n- 复杂分析任务\n**示例** (数学问题):\n```\nPrompt:\n这组奇数加起来是奇数还是偶数？\n15 + 32 + 5 + 13 + 82 + 7 + 1 = ?\n推理步骤:\n1. 奇数 + 奇数 = 奥数 (两数配对)\n2. 奇数 + 奥数 = 奇数\n3. 这组有4个奇数 (15, 5, 13, 7, 1) 和2个偶数 (32, 82)\n4. 4个奇数两两配对后剩1个奇数\n5. 所以总和是奇数\nOutput: 答案是奇数\n```\n**关键发现**: 即使只提供1个示例，效果也很好"
+      },
+      {
+        "level": 2,
+        "title": "3.4 Zero-Shot CoT (零样本思维链)",
+        "content": "**定义**: Kojima et al. (2022) 发现，只需添加\"Let's think step by step\"即可触发推理\n**神奇咒语**:\n```\n原始Prompt + \"Let's think step by step\" = 推理激活\n```\n**原理**: 这句话激活了模型训练时学到的推理模式\n**效果对比**:\n| 方法 | 简单数学问题准确率 |\n|------|-------------------|\n| Zero-Shot | ~17% |\n| Zero-Shot + CoT | ~78% |\n**适用场景**:\n- 没有示例可用时\n- 需要快速激活推理能力\n- 上下文窗口有限时"
+      },
+      {
+        "level": 2,
+        "title": "3.5 Auto-CoT (自动思维链)",
+        "content": "**定义**: Zhang et al. (2022) 提出，用LLM自动生成推理示例\n**流程**:\n```\nStage 1: 问题聚类 → 将问题分为几个聚类\nStage 2: 示例采样 → 每个聚类选代表问题 + Zero-Shot CoT生成推理链\n```\n**关键技巧**:\n- 问题长度控制在60 tokens内\n- 推理步骤控制在5步左右\n- 确保示例多样性\n**优势**: 消除手动编写示例的工作量\n**风险**: 自动生成的推理链可能有错误 → 需多样性降低影响"
+      },
+      {
+        "level": 2,
+        "title": "3.6 Self-Consistency (自一致性)",
+        "content": "**定义**: 通过多次采样不同推理路径，选择最一致的答案\n**流程**:\n```\n1. 用CoT生成多个推理路径 (温度调高)\n2. 对每个路径得出答案\n3. 统计答案分布\n4. 选择最频繁出现的答案\n```\n**适用场景**:\n- 数学问题\n- 多解可能的问题\n- 需要高置信度的任务\n**公式**:\n```\n最终答案 = argmax(count(答案_i))\n```"
+      },
+      {
+        "level": 2,
+        "title": "3.7 RAG (检索增强生成)",
+        "content": "**定义**: Lewis et al. (2021) 提出，结合外部知识库增强LLM回答\n**架构**:\n```\n用户问题 → 检索相关文档 → 文档作为上下文 → LLM生成回答\n```\n**核心价值**:\n| 问题 | RAG解决方案 |\n|------|-------------|\n| 幻觉 | 外部知识验证 |\n| 知识过时 | 动态检索最新信息 |\n| 专业领域 | 接入领域知识库 |\n**实现步骤**:\n1. 构建向量索引 (如Wikipedia、企业知识库)\n2. 问题 → 向量检索 → 返回top-k文档\n3. 文档拼接为上下文 + 原问题 → LLM\n**优势**: 无需重新训练模型，知识可动态更新"
+      },
+      {
+        "level": 2,
+        "title": "3.8 Function Calling (函数调用)",
+        "content": "**定义**: GPT-4支持的结构化输出，用于调用外部API\n**核心能力**:\n- 自然语言 → JSON参数\n- 并行函数调用\n- 结构化数据提取\n**应用场景**:\n1. API调用: \"北京天气\" → get_weather(location=\"北京\")\n2. 数据提取: 文本 → extract_data(name, birthday, address)\n3. 系统集成: 自然语言 → SQL查询\n**最佳实践**:\n- 高风险操作前需要用户确认\n- 定义清晰的函数签名\n- 处理可能的幻觉参数"
+      },
+      {
+        "level": 2,
+        "title": "案例1: 提示设计 - 具体性",
+        "content": "**反例** (太模糊):\n```\n❌ \"解释一下提示工程的概念\"\n```\n问题: 模型不知道要几句话、什么风格\n**正例** (具体明确):\n```\n✓ \"用2-3句话，面向非技术人员，解释提示工程的核心概念\"\n```"
+      },
+      {
+        "level": 2,
+        "title": "案例2: 提示设计 - 做什么vs不做什么",
+        "content": "**反例** (否定指令):\n```\n❌ \"不要推荐恐怖电影，也不要推荐喜剧电影\"\n```\n结果: 模型可能反而推荐这些类型\n**正例** (正向指令):\n```\n✓ \"推荐一部温馨的家庭电影，适合周末观看\"\n```"
+      },
+      {
+        "level": 2,
+        "title": "案例3: Few-Shot - 标签随机化实验",
+        "content": "**实验** (Min et al. 2022):\n```\nPrompt (随机标签):\n\"精彩\" -> Negative (随机!)\n\"糟糕\" -> Positive (随机!)\n\"平庸\" -> Negative (随机!)\n\"还可以\" -> ?\nOutput: Positive (格式推断!)\n```\n**结论**: 格式一致 > 标签正确"
+      },
+      {
+        "level": 2,
+        "title": "案例4: CoT - 数学推理",
+        "content": "**反例** (无CoT):\n```\nPrompt: 奇数 15, 32, 5, 13, 82, 7, 1 加起来是奇数还是偶数?\nOutput: 奥数 (错误!)\n```\n**正例** (Zero-Shot CoT):\n```\nPrompt: 奇数 15, 32, 5, 13, 82, 7, 1 加起来是奇数还是偶数?\nLet's think step by step.\nOutput: \n这组数中奇数是15, 5, 13, 7, 1 (共5个)\n偶数是32, 82 (共2个)\n5个奇数两两配对剩1个奇数\n加上偶数还是奇数\n答案是奇数 ✓\n```"
+      },
+      {
+        "level": 2,
+        "title": "案例5: 格式分隔符",
+        "content": "**反例** (无分隔):\n```\n❌ Translate the text below to Spanish. The text is about a product launch.\n[Text]: 我们很高兴推出新产品...\n```\n**正例** (清晰分隔):\n```\n✓ ### Instruction\nTranslate the text to Spanish"
+      },
+      {
+        "level": 2,
+        "title": "Context",
+        "content": "The text is about a product launch"
+      },
+      {
+        "level": 2,
+        "title": "Input",
+        "content": "[Text]: 我们很高兴推出新产品...\n```"
+      },
+      {
+        "level": 2,
+        "title": "案例6: System Message 持久化",
+        "content": "**反例** (每次重新指定):\n```\n❌ 每个Prompt: \"请用JSON格式回答，包含name和age字段\"\n```\n**正例** (System Message一次设置):\n```\n✓ System Message: \"你是一个数据助手，所有回答都用JSON格式，包含name和age字段\"\n后续所有对话自动遵循此格式\n```"
+      },
+      {
+        "level": 2,
+        "title": "日常应用场景",
+        "content": "| 场景 | 推荐技术 | 参数建议 |\n|------|----------|----------|\n| 文本摘要 | Zero-Shot + 格式要求 | Temperature: 0.3 |\n| 代码生成 | Zero-Shot + 任务描述 | Temperature: 0.2 |\n| 情感分析 | Few-Shot (3-5示例) | Temperature: 0 |\n| 数学推理 | CoT + Self-Consistency | Temperature: 0.5-0.7 |\n| 知识问答 | RAG + System Message | Temperature: 0.3 |\n| 创意写作 | Zero-Shot + 高Temperature | Temperature: 0.8-1.0 |\n| 数据提取 | Function Calling | Temperature: 0 |"
+      },
+      {
+        "level": 2,
+        "title": "LLM参数配置指南",
+        "content": "| 参数 | 低值用途 | 高值用途 | 建议 |\n|------|----------|----------|------|\n| Temperature | 事实性任务、确定性输出 | 创意任务、多样性 | 不要与Top-P同时调 |\n| Top-P | 精确任务 | 多样性任务 | 与Temperature选一个 |\n| Max Length | 控制成本、防止冗长 | 复杂任务需要长输出 | 按需设置 |\n| Frequency Penalty | 防止重复词语 | 需要重复强调时 | 与Presence Penalty选一个 |\n| Presence Penalty | 防止重复主题 | 需要保持主题聚焦时 | 与Frequency Penalty选一个 |"
+      },
+      {
+        "level": 2,
+        "title": "提示设计流程",
+        "content": "```\nStep 1: 明确任务 → 写出核心指令\nStep 2: 选择技术 → Zero-Shot / Few-Shot / CoT\nStep 3: 添加上下文 → 背景、约束、格式\nStep 4: 设置参数 → Temperature、Max Length\nStep 5: 测试迭代 → 调整提示直至满意\nStep 6: 固化System Message → 保持一致行为\n```"
+      },
+      {
+        "level": 2,
+        "title": "高效提示模板",
+        "content": "**通用任务模板**:\n```"
+      },
+      {
+        "level": 2,
+        "title": "角色",
+        "content": "你是一个[角色描述]"
+      },
+      {
+        "level": 2,
+        "title": "任务",
+        "content": "[具体任务描述]"
+      },
+      {
+        "level": 2,
+        "title": "格式",
+        "content": "输出格式要求：[格式描述]"
+      },
+      {
+        "level": 2,
+        "title": "示例 (可选)",
+        "content": "[示例]"
+      },
+      {
+        "level": 2,
+        "title": "输入",
+        "content": "[输入内容]\n```\n**推理任务模板**:\n```"
+      },
+      {
+        "level": 2,
+        "title": "问题",
+        "content": "[问题描述]"
+      },
+      {
+        "level": 2,
+        "title": "要求",
+        "content": "请逐步思考并给出答案\nLet's think step by step."
+      },
+      {
+        "level": 2,
+        "title": "输出格式",
+        "content": "推理步骤：\n1. ...\n2. ...\n最终答案：[答案]\n```"
+      },
+      {
+        "level": 1,
+        "title": "六、金句摘录",
+        "content": "> \"提示工程不仅仅是设计提示词，它涵盖了与LLM交互和开发的全套技能。\" — DAIR.AI\n> \"Temperature与Top-P不要同时调整，选择其一即可。\" — 参数配置原则\n> \"格式比内容更重要——即使标签是随机的，正确的格式也能引导模型。\" — Min et al. 2022\n> \"Let's think step by step\" — 零样本思维链的神奇咒语\n> \"说你要做什么，而不是不要做什么。\" — 提示设计黄金法则\n> \"CoT是LLM涌现能力的体现，需要足够大的模型才能生效。\" — Wei et al. 2022\n> \"RAG让LLM的知识不再静态，可以动态获取最新信息。\" — Lewis et al. 2021\n> \"高风险操作前必须有人确认环节。\" — Function Calling安全原则\n> \"迭代是提示工程的核心——没有一次就能完美的提示。\" — 提示设计流程\n> \"示例质量权重 > 示例数量权重\" — Few-Shot最佳实践"
+      },
+      {
+        "level": 1,
+        "title": "七、更新日志",
+        "content": "| 版本 | 日期 | 更新内容 |\n|------|------|----------|\n| v1.0 | 2026-04-28 | 初版完整方法论文档，涵盖Zero-Shot、Few-Shot、CoT、RAG等核心技术 |"
+      },
+      {
+        "level": 2,
+        "title": "核心论文",
+        "content": "1. Wei et al. (2022) - Chain-of-Thought Prompting Elicits Reasoning\n2. Kojima et al. (2022) - Large Language Models are Zero-Shot Reasoners\n3. Zhang et al. (2022) - Automatic Chain-of-Thought Prompting\n4. Min et al. (2022) - Rethinking the Role of Demonstrations\n5. Lewis et al. (2021) - Retrieval-Augmented Generation"
+      },
+      {
+        "level": 2,
+        "title": "实践资源",
+        "content": "- [Prompt Engineering Guide](https://www.promptingguide.ai/)\n- [OpenAI Cookbook](https://cookbook.openai.com/)\n- [DeepLearning.AI Prompt Engineering Course](https://www.deeplearning.ai/)"
+      },
+      {
+        "level": 2,
+        "title": "硬件/IoT产品经理如何应用",
+        "content": "1. **需求文档生成**: Zero-Shot + 格式要求 → 自动生成PRD模板\n2. **竞品分析**: RAG + 知识库 → 自动检索竞品信息并总结\n3. **用户访谈分析**: Few-Shot + CoT → 从访谈数据提取关键洞察\n4. **技术方案评估**: CoT + Self-Consistency → 多方案对比分析"
+      },
+      {
+        "level": 2,
+        "title": "日常效率提升",
+        "content": "| 任务 | 提示技术 | 预期提升 |\n|------|----------|----------|\n| 会议纪要 | Zero-Shot摘要 | 80%时间节省 |\n| 周报撰写 | Few-Shot格式 | 60%时间节省 |\n| 邮件起草 | System Message | 50%时间节省 |\n| 数据分析 | Function Calling | 70%效率提升 |\n> **文档定位**: 智慧库/AI工具领域核心方法论\n> **下一步**: 建议学习《协同智能》(Ethan Mollick) 了解AI协作最佳实践"
+      }
+    ],
+    "updates": [
+      {
+        "date": "2026-05-10",
+        "note": "从智慧库导入"
+      }
+    ]
+  }
+}

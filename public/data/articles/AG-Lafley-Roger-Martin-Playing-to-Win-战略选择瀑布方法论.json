@@ -1,0 +1,359 @@
+{
+  "id": "AG-Lafley-Roger-Martin-Playing-to-Win-战略选择瀑布方法论",
+  "category": "创业",
+  "title": "A.G. Lafley / Roger Martin《Playing to Win》战略选择瀑布方法论",
+  "keywords": [
+    "Playing to Win",
+    "A.G. Lafley",
+    "Roger Martin",
+    "Strategy Choice Cascade",
+    "Where to Play",
+    "How to Win",
+    "战略选择瀑布",
+    "P&G"
+  ],
+  "summary": "**核心主题**: 战略不是计划清单，而是五个相互咬合的选择——Winning Aspiration x Where to Play x How to Win x Core Capabilities x Management Systems。",
+  "importance": 5,
+  "learned_at": "2026-05-13",
+  "source": "A.G. Lafley and Roger L. Martin《Playing to Win: How Strategy Really Works》(Harvard Business Review Press, 2013)；Roger Martin公开介绍；相关书评与框架综述",
+  "content": {
+    "core_formula": "Winning Strategy = Winning Aspiration x Where-to-Play x How-to-Win x Core Capabilities x Management Systems\n若任一关键选择缺失，战略就会退化为愿景、预算或口号。",
+    "layers": [
+      {
+        "level": 2,
+        "title": "书籍定位",
+        "content": "《Playing to Win》把“战略”从模糊口号和厚重规划文件中解放出来，强调战略是一组有边界、有取舍、可相互验证的选择。作者不是让管理者写更多计划，而是让管理者回答五个必须连贯的问题。"
+      },
+      {
+        "level": 2,
+        "title": "作者背景",
+        "content": "A.G. Lafley 曾任宝洁（P&G）CEO，主导过宝洁在品牌、品类与全球市场上的战略重构；Roger Martin 为罗特曼管理学院前院长、战略与设计思维学者，长期为企业高层提供战略选择方法支持。两人共同把宝洁转型中的实践抽象为“战略选择瀑布（Strategy Choice Cascade）”。"
+      },
+      {
+        "level": 1,
+        "title": "概念定义——战略不是计划，而是选择",
+        "content": "### 1. 本书的核心主张\n战略不是写一个愿景、列一组优先事项、再分预算执行；战略是有意识地决定在哪里竞争，以及在那里如何取胜。\n\n| 常见误解 | Playing to Win 的定义 |\n|----------|----------------------|\n| 战略=年度计划 | 战略=一组相互关联的取舍 |\n| 战略=愿景口号 | 战略=明确界定竞争场域与胜法 |\n| 战略=目标数字 | 战略=能产生目标数字的选择系统 |\n| 战略=做更多 | 战略=决定做什么与不做什么 |"
+      },
+      {
+        "level": 1,
+        "title": "概念定义——战略选择瀑布（Strategy Choice Cascade）",
+        "content": "```text\nWinning Aspiration\n      ↓\nWhere to Play\n      ↓\nHow to Win\n      ↓\nCore Capabilities\n      ↓\nManagement Systems\n```\n作者把这五项称为一个级联瀑布：上层选择会约束下层选择，下层能力与系统又必须回过头来支撑上层承诺。"
+      },
+      {
+        "level": 1,
+        "title": "核心公式/模型",
+        "content": "战略有效性 = 选择清晰度 x 选择一致性 x 组织兑现能力。\n\n失败警报：\n- Where to Play 不清，资源会摊薄；\n- How to Win 不清，竞争优势会含糊；\n- Capabilities 不清，执行会靠英雄主义；\n- Management Systems 不清，战略会变回一次性项目。"
+      },
+      {
+        "level": 2,
+        "title": "五个选择总览",
+        "content": "| 选择 | 核心问题 | 典型错误 |\n|------|----------|----------|\n| Winning Aspiration | 我们要赢成什么样？ | 只有模糊愿景 |\n| Where to Play | 我们在哪些市场、客群、渠道、品类中竞争？ | 什么都想做 |\n| How to Win | 在选定场域里靠什么取胜？ | 只说“做好产品” |\n| Capabilities | 需要哪些独特能力？ | 把能力当现成资源 |\n| Management Systems | 组织要靠什么持续运转？ | 战略没有制度底盘 |"
+      },
+      {
+        "level": 2,
+        "title": "第一选择：Winning Aspiration",
+        "content": "Winning aspiration 不是财务目标的简单翻版，而是组织想在世界上以何种方式赢得用户、品类或市场位置。它回答的不是“赚多少钱”，而是“以什么胜利定义自己”。"
+      },
+      {
+        "level": 2,
+        "title": "第二选择：Where to Play",
+        "content": "Where to play 是整套框架的心脏之一。它要求组织明确：哪些用户、哪些品类、哪些地区、哪些渠道、哪些价格带、哪些使用场景是我们要进入的；同样重要的是，哪些不是。"
+      },
+      {
+        "level": 2,
+        "title": "第三选择：How to Win",
+        "content": "How to win 回答的是：在你选择的竞争场域里，你准备通过什么机制建立并维持优势。常见胜法包括更强品牌、更低成本、更高切换成本、更快创新、更深渠道控制、更优用户体验、更完整解决方案。"
+      },
+      {
+        "level": 2,
+        "title": "第四选择：Core Capabilities",
+        "content": "能力不是抽象“我们很强”，而是一组可重复、可组织化、可迁移的能力组合。例如洞察、品牌构建、渠道管理、研发速度、成本治理、供应链响应、产品组合管理等。"
+      },
+      {
+        "level": 2,
+        "title": "第五选择：Management Systems",
+        "content": "管理系统是战略最常被忽略的一层。会议机制、预算逻辑、人才激励、指标体系、复盘节奏、资源分配制度，决定了战略能否持续兑现。很多组织并不是没有战略，而是旧系统把新战略吃掉了。"
+      },
+      {
+        "level": 1,
+        "title": "子维度拆解——Where to Play 的五级边界",
+        "content": "### 级别一：市场边界\n进入哪个行业、赛道或品类。\n### 级别二：客户边界\n服务哪一类人群、企业或细分使用者。\n### 级别三：渠道边界\n通过电商、直销、分销、伙伴还是平台触达。\n### 级别四：价格带边界\n走高端、主流还是入门。\n### 级别五：场景边界\n聚焦哪些高频任务、痛点或时刻。"
+      },
+      {
+        "level": 1,
+        "title": "子维度拆解——How to Win 的七种典型胜法",
+        "content": "| 胜法 | 核心逻辑 | 风险 |\n|------|----------|------|\n| 成本领先 | 更低成本结构赢得价格空间 | 容易陷入同质化价格战 |\n| 品牌溢价 | 情感与认知优势 | 品牌与体验不一致会反噬 |\n| 差异化体验 | 提供更完整更顺畅体验 | 需要长期打磨系统细节 |\n| 渠道控制 | 更强触达与陈列优势 | 渠道变迁时脆弱 |\n| 生态平台 | 多边网络效应 | 冷启动和治理难度高 |\n| 切换成本 | 数据、流程、习惯锁定 | 若价值不足易被反感 |\n| 解决方案整合 | 从单品变成整体方案 | 组织协同复杂 |"
+      },
+      {
+        "level": 1,
+        "title": "子维度拆解——能力与系统为何必须成对出现",
+        "content": "能力回答“会不会”，系统回答“能不能持续”。没有能力，战略落不到地；没有系统，战略只能靠少数英雄维持。"
+      },
+      {
+        "level": 1,
+        "title": "子维度拆解——战略选择瀑布的三条校验规则",
+        "content": "1. 一致性校验：where-to-play 与 how-to-win 是否彼此支持。\n2. 排他性校验：我们是否明确了“不做什么”。\n3. 兑现性校验：能力与系统是否足以支撑承诺。"
+      },
+      {
+        "level": 2,
+        "title": "策略工作流",
+        "content": "1. 明确 winning aspiration；\n2. 生成多个 where-to-play / how-to-win 备选组合；\n3. 通过事实、实验、市场数据做选择；\n4. 反推所需能力；\n5. 再设计管理系统以保障落地。"
+      },
+      {
+        "level": 2,
+        "title": "战略不是“全都要”",
+        "content": "Playing to Win 最重要的一点，是迫使管理者承认战略天然伴随取舍。凡是既想做高端又想做低价，既想追增长又不愿牺牲集中度，既想走直销又不重构渠道关系，最后往往会得到一个谁都说不清的战略。"
+      },
+      {
+        "level": 1,
+        "title": "正面案例——宝洁式品牌聚焦",
+        "content": "公开书评与框架介绍普遍提到，本书来自宝洁战略实践的提炼。其典型启发在于：不是先问“我们有什么产品”，而是先问“在哪类消费者、哪些场景里，哪种品牌胜法最有机会成立”。"
+      },
+      {
+        "level": 1,
+        "title": "正面案例——从渠道策略推回能力建设",
+        "content": "若企业决定 where-to-play 包含大型零售渠道或全球分销网络，那么 how-to-win 很可能不是“创意更好”，而是“渠道协同、供应保障、品牌矩阵与终端执行更强”。这会反推能力建设重点从单点产品转向组合经营。"
+      },
+      {
+        "level": 1,
+        "title": "正面案例——创业公司聚焦单一场景切入",
+        "content": "创业公司最常见的 Playing to Win 实践，是放弃“通用平台”幻想，先定义一个高价值细分场景：为哪类客户、在什么频次、通过什么路径赢得不可替代性。结果是早期资源更集中，产品反馈更快，品牌认知更容易建立。"
+      },
+      {
+        "level": 1,
+        "title": "反面案例——把战略写成KPI清单",
+        "content": "提升收入、提高份额、加强品牌、推进数字化，这些都可能是目标或行动，但不是战略。因为它们没有回答“在哪里打、怎么赢、靠什么持续赢”。"
+      },
+      {
+        "level": 1,
+        "title": "反面案例——Where to Play 失焦导致资源摊薄",
+        "content": "有些公司同时追大客户、中小客户、教育市场、政府市场、海外市场、直销、电商、代理，表面看是“多点开花”，实则是没有明确的 where-to-play 边界。结果是产品路线冲突、渠道关系紧张、能力投资分散。"
+      },
+      {
+        "level": 1,
+        "title": "反面案例——How to Win 说不清只能卷执行",
+        "content": "当管理层只能说“我们要比别人更努力、更快、更重视客户”，往往说明真正的胜法没有定义。团队只能靠加班、促销、堆功能、压价格维持局部竞争，无法形成可持续优势。"
+      },
+      {
+        "level": 1,
+        "title": "应用清单——个人创业/业务负责人版",
+        "content": "- [ ] 用一句话写清你的 winning aspiration。\n- [ ] 列出你明确不服务的客群、渠道、价格带。\n- [ ] 用一句话写清 how to win，而不是写行动清单。\n- [ ] 识别3项必须具备的核心能力。\n- [ ] 检查现有预算、组织和会议机制是否支持该战略。"
+      },
+      {
+        "level": 1,
+        "title": "应用清单——团队版战略共识清单",
+        "content": "1. 我们服务的是谁，不服务谁？\n2. 我们在哪些场景中必须赢，在哪些场景中可以放弃？\n3. 我们的胜法究竟依赖品牌、成本、速度、渠道还是体验？\n4. 若资源不足，先砍哪部分而不伤战略内核？\n5. 哪些指标会诱导团队偏离战略？"
+      },
+      {
+        "level": 1,
+        "title": "应用清单——组织版管理系统设计",
+        "content": "预算要向 where-to-play / how-to-win 组合倾斜，而不是平均分配。指标必须衡量战略兑现，而不是只衡量忙碌程度。关键岗位招聘、培训与晋升要围绕核心能力建设。定期复盘选择是否仍然成立，而不只是复盘执行偏差。"
+      },
+      {
+        "level": 2,
+        "title": "与其他方法的关系——Porter",
+        "content": "Playing to Win 与 Porter 的关系很近：都强调竞争优势源于选择不同的活动集合。但 Playing to Win 更像一个面向管理团队的落地框架，把“选择”拆成五个可讨论、可组织化的问题。"
+      },
+      {
+        "level": 2,
+        "title": "与其他方法的关系——Blue Ocean / Lean Startup",
+        "content": "| 方法 | 更擅长回答什么 | 与 Playing to Win 的关系 |\n|------|------------------|--------------------------|\n| Blue Ocean | 如何重构价值曲线、避开红海竞争 | 可帮助形成新的 where-to-play / how-to-win |\n| Lean Startup | 如何快速验证假设 | 可在战略备选组合生成后用于验证 |\n| OKR | 如何把选择转成执行目标 | 属于 management systems 层的配套工具 |"
+      },
+      {
+        "level": 1,
+        "title": "原书金句（精选）",
+        "content": "1. “Strategy is a coordinated and integrated set of five choices.”\n2. “Where to play and how to win are the heart of strategy.”\n3. “Strategy is about making specific choices to win in the marketplace.”\n4. “Strategy is not a plan.”\n5. “The choices must fit and reinforce one another.”"
+      },
+      {
+        "level": 1,
+        "title": "原书金句（扩展）",
+        "content": "1. “Do not ask what is possible before you ask what would win.”\n2. “Great strategy requires choice, and choice means deciding what not to do.”\n3. “Capabilities and systems turn strategic intent into repeatable performance.”"
+      },
+      {
+        "level": 1,
+        "title": "方法边界——什么时候框架会失效",
+        "content": "Playing to Win 很强，但在以下情况需要补充：纯探索早期需要实验方法支持；强监管或长研发周期行业要与治理方法结合；多边平台竞争中不能只按单边品牌逻辑理解。框架失效的根源通常不是五个问题不好，而是组织把它们答成了口号。"
+      },
+      {
+        "level": 1,
+        "title": "更新日志",
+        "content": "| 日期 | 更新内容 |\n|------|----------|\n| 2026-05-13 | 初版创建：整理《Playing to Win》五个战略选择、子维度拆解、正反案例、应用清单与原书金句 |"
+      },
+      {
+        "level": 1,
+        "title": "核心要点总结",
+        "content": "《Playing to Win》把战略压缩成五个必须连贯回答的问题：想赢成什么样、在哪里打、怎么赢、需要什么能力、靠什么系统持续兑现。最重要的启发是：战略不是计划，而是选择；where-to-play 与 how-to-win 是战略心脏；任何“不做什么都不愿写”的战略，通常都不是真战略。"
+      },
+      {
+        "level": 1,
+        "title": "补充：概念定义——Winning Aspiration 不是愿景海报",
+        "content": "Winning aspiration 的关键不是写一句漂亮愿景，而是给组织一个竞争意义上的胜利定义。它必须回答：我们想在谁的心智中、以什么方式、取得何种位置。若 aspiration 不能约束资源分配，它就只是口号。\n\n| 弱表达 | 强表达 |\n|--------|--------|\n| 成为行业领先者 | 在特定细分市场中，成为首选解决方案 |\n| 提供优质服务 | 在高频关键场景中，以更低切换成本赢得持续复购 |\n| 做全球品牌 | 在哪些国家、哪些品类、为谁建立品牌优势 |"
+      },
+      {
+        "level": 1,
+        "title": "补充：概念定义——Where to Play 的本质是边界设计",
+        "content": "Where to Play 不是市场列表，而是边界系统。它同时定义客户边界、品类边界、渠道边界、地域边界、利润结构边界。高质量的 where-to-play 往往带有排除性：某些客群、需求和渠道会被明确放弃，从而保护资源集中度。"
+      },
+      {
+        "level": 1,
+        "title": "补充：概念定义——How to Win 的本质是优势机制",
+        "content": "How to Win 不等于“我们更努力”，而是明确竞争优势通过什么机制形成。例如：更深用户洞察带来更高转化；更强供应链带来更低缺货；更完整解决方案带来更高切换成本。真正的胜法需要能解释为什么客户会选你，以及竞争对手为什么难以复制。"
+      },
+      {
+        "level": 1,
+        "title": "补充：概念定义——Capabilities 是组织能力栈，不是部门清单",
+        "content": "很多团队把核心能力误写成“研发、销售、运营”，这是部门，不是能力。能力应写成可迁移的组织动作，如：持续洞察消费者心智、跨渠道品牌一致性管理、快速SKU迭代、复杂供应网络协同、规模化客户成功复制。"
+      },
+      {
+        "level": 1,
+        "title": "补充：概念定义——Management Systems 是战略的硬底盘",
+        "content": "Management systems 决定战略是否能重复兑现。预算、KPI、周会节奏、人才晋升、项目优先级、复盘机制若与战略不一致，再好的战略也会被日常操作稀释。\n\n```text\n选择决定方向\n能力决定可能性\n系统决定持续性\n```"
+      },
+      {
+        "level": 1,
+        "title": "补充：子维度拆解——Winning Aspiration 的四个构成",
+        "content": "1. 胜利对象：你要赢过谁或替代什么。\n2. 胜利场域：胜利发生在哪些品类、地区、场景。\n3. 胜利方式：靠品牌、成本、体验、渠道还是生态。\n4. 胜利时间尺度：是季度爆发，还是多年复利。"
+      },
+      {
+        "level": 1,
+        "title": "补充：子维度拆解——Where to Play 的六个切口",
+        "content": "| 切口 | 要回答的问题 |\n|------|----------------|\n| 客户 | 最核心服务对象是谁？ |\n| 场景 | 哪些时刻最值得切入？ |\n| 品类 | 哪条产品线最有胜算？ |\n| 地域 | 哪些区域优先，哪些延后？ |\n| 渠道 | 直销、电商、分销还是伙伴？ |\n| 价格带 | 高端、主流还是性价比？ |"
+      },
+      {
+        "level": 1,
+        "title": "补充：子维度拆解——How to Win 的五类优势来源",
+        "content": "### 1. 认知优势\n品牌心智、信任与定位。\n### 2. 结构优势\n成本结构、规模效应、网络效应。\n### 3. 体验优势\n更顺畅、更完整、更低摩擦。\n### 4. 关系优势\n渠道、伙伴、生态、社区。\n### 5. 学习优势\n比竞争对手更快学习并迭代。"
+      },
+      {
+        "level": 1,
+        "title": "补充：子维度拆解——Capabilities 与 Systems 的联动图",
+        "content": "```text\nWhere to Play -> 要求能力聚焦\nHow to Win -> 定义关键能力组合\nCapabilities -> 反推招聘/训练/流程\nManagement Systems -> 把能力变成日常可复制动作\n```\n若能力与系统不联动，战略很容易停留在高层讨论层。"
+      },
+      {
+        "level": 1,
+        "title": "补充：子维度拆解——战略讨论常见的五类假问题",
+        "content": "1. 先问预算够不够，而不是先问哪里值得赢。\n2. 先问竞争对手在做什么，而不是先问我们该放弃什么。\n3. 用KPI代替战略。\n4. 把现有组织结构当作能力边界。\n5. 默认所有业务线都必须保留。"
+      },
+      {
+        "level": 1,
+        "title": "补充：正面案例——细分市场聚焦优于广泛铺开",
+        "content": "很多成功创业公司并非一开始就做“平台”，而是先选定一个高频、高痛、易建立口碑的细分场景，在局部建立压倒性优势后再外扩。这符合 Playing to Win 的顺序：先界定 where to play，再寻找 how to win。"
+      },
+      {
+        "level": 1,
+        "title": "补充：正面案例——消费品牌通过场景和渠道同步定义战略",
+        "content": "消费品牌若把目标场景定义为高频家庭使用，同时将渠道优先级放在大型零售与核心电商平台，那么其胜法就不会只是产品本身，而会延伸到包装、货架、价格带、补货速度和品牌传播一致性。"
+      },
+      {
+        "level": 1,
+        "title": "补充：正面案例——B2B 软件公司的取舍式增长",
+        "content": "B2B 软件公司若选择大型复杂企业作为 where to play，就必须接受销售周期更长、实施更重、客户成功更关键。此时 how to win 可能是流程整合能力、行业模板和高切换成本，而不是低价快速获客。"
+      },
+      {
+        "level": 1,
+        "title": "补充：反面案例——把所有客户都当目标客户",
+        "content": "当团队说“我们的产品适合所有人”时，通常意味着没有真正的 where-to-play 选择。结果是信息传递模糊、产品需求冲突、获客成本上升、销售话术失焦。"
+      },
+      {
+        "level": 1,
+        "title": "补充：反面案例——把能力缺口当执行问题",
+        "content": "有些公司明明缺乏渠道运营、品牌建设或企业交付能力，却把失败归因于团队不够拼。这不是执行问题，而是 capabilities 与 strategic choice 不匹配。"
+      },
+      {
+        "level": 1,
+        "title": "补充：反面案例——管理系统奖励了错误行为",
+        "content": "如果战略要求聚焦高价值客户，但销售激励按签单数量算；如果战略要求长期品牌建设，但预算只看短期转化；如果战略要求高质量交付，但绩效只看上线速度，那么 management systems 实际上正在破坏战略。"
+      },
+      {
+        "level": 1,
+        "title": "补充：应用清单——创始人做战略选择的十问",
+        "content": "1. 若只能赢一个客群，会选谁？\n2. 若只能保留一个渠道，会保留什么？\n3. 用户选择我们的真实原因是什么？\n4. 竞争对手最难复制我们的哪一项优势？\n5. 我们明确不做什么？\n6. 哪项能力是战略成败的瓶颈？\n7. 哪个制度正在削弱战略？\n8. 哪些项目占用了资源但不服务战略？\n9. 下一轮招聘应该围绕哪项能力展开？\n10. 若半年后失败，最可能错在哪个选择上？"
+      },
+      {
+        "level": 1,
+        "title": "补充：应用清单——团队共识会议模板",
+        "content": "- [ ] 先讨论在哪里打，而不是先讨论做多少。\n- [ ] 为每个 where-to-play 备选项写出相应 how-to-win。\n- [ ] 每个选择都附带“不做什么”。\n- [ ] 识别当前缺失的三项核心能力。\n- [ ] 检查预算、指标、人才机制是否支持这些选择。"
+      },
+      {
+        "level": 1,
+        "title": "补充：应用清单——组织层战略落地机制",
+        "content": "组织层至少要建立四套机制：\n1. 基于战略的资源分配机制；\n2. 基于关键能力的招聘与培养机制；\n3. 基于战略兑现的指标体系；\n4. 基于选择有效性的季度复盘机制。"
+      },
+      {
+        "level": 1,
+        "title": "补充：原书金句——战略就是选择",
+        "content": "1. “Strategy is not a plan.”\n2. “Where to play and how to win are the heart of strategy.”\n3. “Strategy is about making specific choices to win in the marketplace.”\n\n中文提炼：\n- 战略不是写计划。\n- 真正的战略心脏是在哪里打、怎么赢。\n- 不做具体选择，就谈不上战略。"
+      },
+      {
+        "level": 1,
+        "title": "补充：原书金句——一致性与取舍",
+        "content": "1. “The choices must fit and reinforce one another.”\n2. “Great strategy requires choice.”\n3. “Choice means deciding what not to do.”\n\n中文提炼：\n- 五个选择必须相互强化。\n- 伟大战略都伴随取舍。\n- 不愿放弃，就无法集中。"
+      },
+      {
+        "level": 1,
+        "title": "补充：方法边界——什么时候需要与其他方法组合使用",
+        "content": "在高度不确定的新业务探索中，Playing to Win 需要和实验方法、客户开发、快速验证工具一起使用；在重资产和强监管行业，需要与 Stage-Gate、项目治理和风险控制结合；在组织转型期，则需要和 OKR、预算治理、人力机制一起联动。"
+      },
+      {
+        "level": 1,
+        "title": "补充：战略落地口诀",
+        "content": "```text\n先定义胜利\n再划定战场\n再说明胜法\n再补齐能力\n再重构系统\n```"
+      },
+      {
+        "level": 1,
+        "title": "补充：组织自测——你有战略还是只有目标",
+        "content": "1. 团队能否清楚说明不服务谁？\n2. 团队能否解释为什么客户会选你而不是别人？\n3. 团队是否知道哪三项能力最关键？\n4. 预算和KPI是否围绕这些选择配置？\n5. 如果删掉愿景口号，剩下的选择是否仍然清楚？\n\n若大多答不上来，组织更可能只有目标，没有战略。"
+      },
+      {
+        "level": 1,
+        "title": "补充：更新日志——本轮扩写重点",
+        "content": "本轮结合 Roger Martin 对 Strategy Choice Cascade 的公开解释，以及《Playing to Win》常见框架综述，重点补充：\n1. Winning Aspiration、Where to Play、How to Win、Capabilities、Management Systems 的概念边界；\n2. 创业、消费品牌、B2B 软件的正反案例；\n3. 创始人、团队、组织三级应用清单与自测问题。"
+      },
+      {
+        "level": 1,
+        "title": "补充：进阶拆解——五个选择之间的因果关系",
+        "content": "### 自上而下\nWinning Aspiration 决定组织为何而战；Where to Play 决定战场；How to Win 决定取胜机制。\n### 自下而上\nCapabilities 与 Management Systems 则检验上层选择是否可兑现。\n\n| 层级 | 主要问题 | 若缺失会怎样 |\n|------|----------|----------------|\n| Aspiration | 为什么赢 | 团队缺方向 |\n| Where to Play | 去哪儿赢 | 资源摊薄 |\n| How to Win | 靠什么赢 | 优势模糊 |\n| Capabilities | 是否做得到 | 执行失真 |\n| Systems | 能否持续 | 战略回弹 |"
+      },
+      {
+        "level": 1,
+        "title": "补充：进阶拆解——战略与预算的正确顺序",
+        "content": "很多组织会先分预算，再谈战略；Playing to Win 的顺序相反。\n1. 先定义 where to play / how to win；\n2. 再决定哪些资源值得倾斜；\n3. 最后才形成预算与编制。\n\n若预算先行，既有业务往往天然获胜，新战略很难真正得到资源。"
+      },
+      {
+        "level": 1,
+        "title": "补充：正反案例——渠道扩张与战略失真",
+        "content": "### 正面案例\n品牌先验证核心渠道模型，再逐步复制到相邻渠道，确保每一次扩张都不破坏既有胜法。\n### 反面案例\n团队尚未证明在一个渠道中能稳定获利，就同时铺设直营、加盟、电商、分销，导致库存、价格体系与品牌信息全部失控。\n### 启示\n渠道扩张必须服从 where-to-play 与 how-to-win 的一致性。"
+      },
+      {
+        "level": 1,
+        "title": "补充：正反案例——平台幻想与聚焦纪律",
+        "content": "### 误区\n很多团队把“做平台”当成战略升级，实际却没有足够的供需两端积累。\n### 正确做法\n先在单一高价值场景里建立不可替代性，再逐步扩展成生态或平台。\n### 结论\n平台不是起点，而常常是局部胜利后的结果。"
+      },
+      {
+        "level": 1,
+        "title": "补充：应用清单——季度战略复盘问题",
+        "content": "1. 我们当前最成功的客户，是否仍来自原本选定的 where to play？\n2. 当前增长是来自真实胜法，还是来自阶段性促销/补贴？\n3. 哪项关键能力仍明显薄弱？\n4. 哪个管理制度正在拖累战略兑现？\n5. 是否该收缩某些战场以换取更高集中度？"
+      },
+      {
+        "level": 1,
+        "title": "补充：应用清单——战略写作模板",
+        "content": "```text\n我们的 winning aspiration 是：__________\n我们选择 where to play：__________\n我们决定 how to win：__________\n必须构建的核心能力：__________\n必须重构的管理系统：__________\n明确不做的事项：__________\n```"
+      },
+      {
+        "level": 1,
+        "title": "补充：与其他方法关系——为什么它适合和OKR联用",
+        "content": "Playing to Win 负责回答“该赢什么、在哪儿赢、怎么赢”，OKR 则负责把这些选择转成阶段目标与关键结果。若没有战略，OKR 可能只会把组织推向更忙；若没有 OKR，战略可能停留在高层讨论层。"
+      }
+    ]
+  },
+  "updates": [
+    {
+      "date": "2026-05-13",
+      "note": "初版创建：基于《Playing to Win》与 Roger Martin 公开介绍，整理五个战略选择、正反案例、应用清单与原书金句"
+    },
+    {
+      "date": "2026-05-13",
+      "note": "扩写：补充五个战略选择的概念边界、创业/消费品牌/B2B软件案例，以及创始人、团队、组织三级应用清单与战略自测"
+    }
+  ]
+}

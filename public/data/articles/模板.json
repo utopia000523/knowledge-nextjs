@@ -1,0 +1,53 @@
+{
+  "id": "模板",
+  "category": "其他",
+  "title": "[方法名称]",
+  "keywords": [
+    "方法名称"
+  ],
+  "summary": "核心逻辑描述（公式、步骤、原则）",
+  "importance": 2,
+  "learned_at": "2026-05-10",
+  "source": "",
+  "content": {
+    "core_formula": "",
+    "layers": [
+      {
+        "level": 1,
+        "title": "公式/方法",
+        "content": "> 核心逻辑描述（公式、步骤、原则）"
+      },
+      {
+        "level": 1,
+        "title": "示例",
+        "content": "**场景**：\n**应用**：\n**结果**："
+      },
+      {
+        "level": 1,
+        "title": "来源",
+        "content": "- **书籍**：《书名》\n- **作者**：\n- **章节**："
+      },
+      {
+        "level": 1,
+        "title": "适用场景",
+        "content": "- \n-"
+      },
+      {
+        "level": 1,
+        "title": "注意事项",
+        "content": "- \n-"
+      },
+      {
+        "level": 1,
+        "title": "相关方法",
+        "content": "- \n*创建于 YYYY-MM-DD*"
+      }
+    ],
+    "updates": [
+      {
+        "date": "2026-05-10",
+        "note": "从智慧库导入"
+      }
+    ]
+  }
+}

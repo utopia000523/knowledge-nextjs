@@ -1,0 +1,62 @@
+{
+  "id": "Ken-Schwaber-Scrum敏捷项目管理方法论",
+  "category": "项目管理",
+  "title": "Ken Schwaber《Scrum敏捷项目管理》方法论",
+  "keywords": [
+    "Scrum",
+    "敏捷项目管理",
+    "Ken Schwaber",
+    "Sprint",
+    "敏捷开发"
+  ],
+  "summary": "**核心主题**：敏捷项目管理框架 - 3个角色 × 5个事件 × 3个工件 × Scrum价值观",
+  "importance": 5,
+  "learned_at": "2026-05-10",
+  "source": "Ken Schwaber《Agile Project Management with Scrum》",
+  "content": {
+    "core_formula": "Scrum成功 = 透明性 × 检查 × 适应\n敏捷交付 = Sprint周期 × 持续改进 × 团队自组织",
+    "layers": [
+      {
+        "level": 1,
+        "title": "一、书籍概览",
+        "content": "**书籍信息**：\n- **书名**：Agile Project Management with Scrum\n- **作者**：Ken Schwaber（Scrum创始人之一）\n- **合著者**：Jeff Sutherland（Scrum创始人之一）\n- **版本**：2004年首版，持续更新\n- **地位**：Scrum敏捷项目管理的经典著作\n\n**Scrum发展历程**：\n- **1995年**：Ken Schwaber和Jeff Sutherland首次提出Scrum\n- **2001年**：敏捷宣言发布，Scrum成为敏捷方法论之一\n- **2010年**：Scrum Guide正式发布\n- **2020年**：Scrum Guide最新版发布\n\n**Scrum核心价值**：\n- 轻量级敏捷框架\n- 迭代增量交付\n- 持续改进\n- 团队自组织\n\n**适用领域**：软件开发、产品开发、项目管理、创新项目"
+      },
+      {
+        "level": 1,
+        "title": "二、核心概念定义",
+        "content": "**Scrum框架**：\n```\nScrum框架 = 3个角色 + 5个事件 + 3个工件 + Scrum价值观\n```\n\n**Scrum价值观**：\n| 价值观 | 定义 | 实践意义 |\n|--------|------|----------|\n| **承诺** | 致力于达成Sprint目标 | 团队对目标的共同承诺 |\n| **专注** | 聚焦Sprint工作 | 不分心，专注交付 |\n| **开放** | 透明展示工作进展 | 信息公开，无隐藏 |\n| **尊重** | 尊重团队成员能力 | 信任团队，尊重专业性 |\n| **勇气** | 敢于挑战困难工作 | 勇于承担，勇于改变 |\n\n**Scrum三大支柱**：\n| 支柱 | 定义 | 实现方式 |\n|--------|------|----------|\n| **透明性** | 工作进展对所有人可见 | 信息板、每日站会、Sprint评审 |\n| **检查** | 定期检查工作进展和产品 | Sprint评审、Sprint回顾 |\n| **适应** | 发现偏差立即调整 | Sprint回顾改进、每日站会调整 |\n\n**Scrum三个角色**：\n| 角色 | 职责 | 关键活动 |\n|--------|------|----------|\n| **Product Owner** | 产品负责人，管理产品待办列表 | 定义需求、优先级排序、验收 |\n| **Scrum Master** | Scrum教练，确保Scrum流程执行 | 移除障碍、指导团队、保护流程 |\n| **Development Team** | 开发团队，自组织交付 | Sprint计划、设计、开发、测试 |\n\n**Scrum五个事件**：\n| 事件 | 时间 | 目的 |\n|--------|------|----------|\n| **Sprint** | 1-4周 | 迭代周期，交付增量 |\n| **Sprint Planning** | 8小时（4周Sprint） | 规划Sprint工作 |\n| **Daily Scrum** | 15分钟 | 每日检查进展、调整计划 |\n| **Sprint Review** | 4小时（4周Sprint） | 展示增量、获取反馈 |\n| **Sprint Retrospective** | 3小时（4周Sprint） | 回顾改进、行动计划 |\n\n**Scrum三个工件**：\n| 工件 | 定义 | 负责人 |\n|--------|------|----------|\n| **Product Backlog** | 产品待办列表，所有需求清单 | Product Owner |\n| **Sprint Backlog** | Sprint待办列表，Sprint工作清单 | Development Team |\n| **Increment** | 增量，Sprint交付的可用产品 | Development Team |"
+      },
+      {
+        "level": 1,
+        "title": "三、核心方法论详解",
+        "content": "#### 3.1 Sprint周期管理\n**Sprint定义**：\n```\nSprint = 固定时间盒（1-4周） + 固定范围 + 固定质量标准\n```\n\n**Sprint特点**：\n- **时间固定**：Sprint长度不变，不延长\n- **范围灵活**：可调整范围，不调整时间\n- **质量固定**：必须满足质量标准\n\n**Sprint流程**：\n```\nSprint Planning → Sprint执行 → Daily Scrum → Sprint Review → Sprint Retrospective\n```\n\n#### 3.2 Product Backlog管理\n**Product Backlog特性**：\n- **有序性**：优先级排序，顶部最重要\n- **动态性**：持续更新，适应变化\n- **明细性**：顶部详细，底部粗略\n\n**Product Backlog优先级因素**：\n| 因素 | 权重 |\n|--------|----------|\n| **业务价值** | 40% |\n| **风险** | 20% |\n| **依赖关系** | 20% |\n| **紧急程度** | 10% |\n| **技术复杂度** | 10% |\n\n#### 3.3 Sprint Planning\n**Sprint Planning议程**：\n```\n第一部分（2小时）：\n- Product Owner介绍Sprint目标\n- 团队讨论Product Backlog优先级\n- 确定Sprint范围\n\n第二部分（2小时）：\n- 团队分解任务\n- 制定Sprint Backlog\n- 确认Sprint计划\n```\n\n**Sprint Planning产出**：\n- **Sprint目标**：Sprint要达成的目标\n- **Sprint Backlog**：Sprint工作清单\n\n#### 3.4 Daily Scrum\n**Daily Scrum议程**（15分钟）：\n```\n每个团队成员回答三个问题：\n1. 昨天完成了什么？\n2. 今天计划做什么？\n3. 有什么障碍？\n```\n\n**Daily Scrum目的**：\n- 检查Sprint进展\n- 识别障碍\n- 调整当日计划\n- 团队同步信息\n\n#### 3.5 Sprint Review\n**Sprint Review议程**（4小时）：\n```\n第一部分（2小时）：\n- 团队展示增量\n- Product Owner验收\n- 相关方反馈\n\n第二部分（2小时）：\n- Product Backlog更新\n- 下Sprint范围讨论\n- 相关方参与优先级调整\n```\n\n#### 3.6 Sprint Retrospective\n**Sprint Retrospective议程**（3小时）：\n```\n第一部分：回顾\n- Sprint做得好的\n- Sprint有问题\n- 改进想法\n\n第二部分：分析\n- 根因分析\n- 改进优先级排序\n\n第三部分：行动\n- 制定改进计划\n- 确认下Sprint改进项\n```\n\n**改进目标**：\n- 每Sprint至少1项改进\n- 改进可执行、可测量"
+      },
+      {
+        "level": 1,
+        "title": "四、应用清单",
+        "content": "#### 4.1 Scrum实施清单\n**团队组建**：\n- [ ] 确定Product Owner\n- [ ] 确定Scrum Master\n- [ ] 组建Development Team（3-9人）\n- [ ] 团队跨职能（设计、开发、测试）\n- [ ] 团队自组织（无子团队）\n\n**流程建立**：\n- [ ] 建立Product Backlog\n- [ ] 确定Sprint长度（1-4周）\n- [ ] 制定Sprint Planning流程\n- [ ] 制定Daily Scrum时间\n- [ ] 制定Sprint Review流程\n- [ ] 制定Sprint Retrospective流程\n\n**工具准备**：\n- [ ] 信息板（物理或电子）\n- [ ] Product Backlog管理工具\n- [ ] Sprint Backlog管理工具\n- [ ] 团队协作工具\n\n#### 4.2 Scrum Master职责清单\n**流程保障**：\n- [ ] 确保5个事件按时召开\n- [ ] 确保事件时间盒控制\n- [ ] 确保Scrum价值观贯彻\n- [ ] 确保透明性、检查、适应执行\n\n**障碍移除**：\n- [ ] 识别团队障碍\n- [ ] 移除团队障碍\n- [ ] 保护团队不受干扰\n- [ ] 协调外部依赖\n\n**团队指导**：\n- [ ] 指导Product Owner\n- [ ] 指导Development Team\n- [ ] 指导Scrum价值观理解\n- [ ] 指导Scrum实践改进\n\n#### 4.3 Product Owner职责清单\n**Product Backlog管理**：\n- [ ] 定义Product Backlog项\n- [ ] 优先级排序\n- [ ] 明确需求细节\n- [ ] 接收团队估算\n\n**Sprint参与**：\n- [ ] 参与Sprint Planning\n- [ ] 参与Sprint Review\n- [ ] 验收Increment\n- [ ] 更新Product Backlog\n\n**相关方管理**：\n- [ ] 收集相关方需求\n- [ ] 沟通产品进展\n- [ ] 管理相关方期望\n- [ ] 协调相关方优先级"
+      },
+      {
+        "level": 1,
+        "title": "五、原书金句精选",
+        "content": "**Ken Schwaber《Scrum敏捷项目管理》核心金句**：\n\n1. **\"Scrum是一个框架，不是方法论。框架提供结构，方法论提供步骤。\"**\n\n2. **\"Scrum的三大支柱：透明性、检查、适应。没有透明性，就无法检查；没有检查，就无法适应。\"**\n\n3. **\"Scrum不解决问题，它暴露问题。团队必须自己解决问题。\"**\n\n4. **\"Sprint是时间盒，不是时间估算。时间盒固定，范围灵活。\"**\n\n5. **\"Product Backlog是动态的。它不是静态文档，而是持续演化的活文档。\"**\n\n6. **\"Scrum Master不是项目经理。Scrum Master服务团队，不管理团队。\"**\n\n7. **\"Development Team是自组织的。他们决定如何完成工作，不被他人分配工作。\"**\n\n8. **\"Daily Scrum是团队同步会议，不是汇报会议。团队对团队同步，不是对Scrum Master汇报。\"**\n\n9. **\"Sprint Review是演示会议，不是汇报会议。展示增量，获取反馈。\"**\n\n10. **\"Sprint Retrospective是改进会议，不是批评会议。聚焦改进，不聚焦责备。\"**\n\n**Scrum价值观金句**：\n\n1. **\"承诺：团队共同承诺达成Sprint目标。\"**\n\n2. **\"专注：团队专注Sprint工作，不分心。\"**\n\n3. **\"开放：工作进展开放透明，无隐藏。\"**\n\n4. **\"尊重：尊重团队成员能力和贡献。\"**\n\n5. **\"勇气：勇于挑战困难，勇于改变。\"**"
+      },
+      {
+        "level": 1,
+        "title": "六、与其他方法论对比",
+        "content": "**Scrum vs 传统瀑布**：\n| 对比维度 | Scrum | 传统瀑布 |\n|----------|-------|----------|\n| **交付方式** | 迭代增量交付 | 一次性交付 |\n| **需求方式** | 需求演化，渐进明细 | 需求冻结，一次性定义 |\n| **规划方式** | Sprint规划，迭代规划 | 一次性规划，前期详细规划 |\n| **变更方式** | 变易变更，拥抱变化 | 变难变更，抵制变化 |\n| **团队方式** | 自组织团队 | 分配任务，层级管理 |\n| **进度方式** | 持续交付，持续反馈 | 阶段性检查，一次性验收 |\n| **适用场景** | 需求不确定项目 | 需求确定项目 |\n\n**Scrum vs Kanban**：\n| 对比维度 | Scrum | Kanban |\n|----------|-------|----------|\n| **迭代方式** | 固定Sprint周期 | 持续流，无固定周期 |\n| **批量方式** | Sprint批量交付 | 单件流，持续交付 |\n| **规划方式** | Sprint Planning | 持续规划，无Planning事件 |\n| **角色定义** | 3个角色固定 | 角色灵活，无固定角色 |\n| **适用场景** | 项目型工作 | 运维型工作 |\n\n**Scrum vs XP**：\n| 对比维度 | Scrum | XP |\n|----------|-------|----------|\n| **方法论类型** | 管理框架 | 技术实践 |\n| **工程实践** | 无固定工程实践 | 固定工程实践（TDD、结对编程等） |\n| **适用范围** | 项目管理 | 软件开发 |\n| **互补关系** | Scrum管理框架+XP技术实践 | |"
+      },
+      {
+        "level": 1,
+        "title": "七、更新日志",
+        "content": "| 日期 | 更新内容 |\n|------|----------|\n| 2026-05-10 | 初版创建，完整Scrum敏捷项目管理方法论 |\n| 2026-05-10 | 完整Scrum框架：3角色、5事件、3工件、Scrum价值观 |\n| 2026-05-10 | 完整Sprint周期管理、Product Backlog管理、事件详解 |\n| 2026-05-10 | 完整应用清单（团队组建、流程建立、职责清单） |\n| 2026-05-10 | 完整原书金句精选、与其他方法论对比 |\n| - | 待补充：Scrum在不同规模组织应用、Scrum案例分析 |\n\n**方法论来源**：\n- Ken Schwaber《Agile Project Management with Scrum》(2004)\n- Jeff Sutherland & Ken Schwaber《Scrum Guide》(2020)\n- Scrum官方网站：scrumguides.org\n\n**适用领域**：软件开发、产品开发、项目管理、创新项目\n\n**核心价值**：\n- 轻量级敏捷框架\n- 迭代增量交付\n- 持续改进\n- 团队自组织\n\n**关键洞察**：\n- Scrum暴露问题，不解决问题\n- Sprint时间盒固定，范围灵活\n- Scrum Master服务团队，不管理团队\n- Daily Scrum是团队同步，不是汇报"
+      }
+    ],
+    "updates": [
+      {
+        "date": "2026-05-10",
+        "note": "收录新书：Ken Schwaber《Scrum敏捷项目管理》方法论"
+      }
+    ]
+  }
+}

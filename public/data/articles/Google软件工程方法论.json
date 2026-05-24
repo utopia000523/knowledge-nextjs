@@ -1,0 +1,217 @@
+{
+  "id": "Google软件工程方法论",
+  "category": "技术",
+  "title": "《Software Engineering at Google》方法论文档",
+  "keywords": [
+    "Software",
+    "Engineering",
+    "at",
+    "Google",
+    "方法论文档"
+  ],
+  "summary": "书籍：Software Engineering at Google: Lessons Learned from Programming Over Time",
+  "importance": 4,
+  "learned_at": "2026-05-10",
+  "source": "《Software Engineering at Google》方法论文档",
+  "content": {
+    "core_formula": "寿命预期 → 维护策略\n几分钟 → 不需要维护\n几个月 → 可能需要小修补\n几十年 → 必须规划升级路径",
+    "layers": [
+      {
+        "level": 2,
+        "title": "第一部分：论点（Thesis）",
+        "content": "- **第1章：什么是软件工程？**\n  - 时间与变化（Time and Change）\n  - Hyrum定律（Hyrum's Law）\n  - 规模与效率（Scale and Efficiency）\n  - 权衡与成本（Trade-offs and Costs）\n  - 软件工程 vs 编程的区别"
+      },
+      {
+        "level": 2,
+        "title": "第二部分：文化（Culture）",
+        "content": "- **第2章：如何在团队中工作**\n  - 天才神话（The Genius Myth）\n  - 隐藏的危害（Hiding Considered Harmful）\n  - 公车因子（Bus Factor）\n  - 谦逊、尊重、信任三大支柱\n- **第3章：知识分享**\n  - 心理安全（Psychological Safety）\n  - 导师制（Mentorship）\n  - 可读性流程（Readability Process）\n- **第4章：公平工程（Engineering for Equity）**\n- **第5章：如何领导团队**\n  - 工程经理 vs 技术主管\n  - 反模式与正向模式\n- **第6章：大规模领导**\n  - 持续决策（Always Be Deciding）\n  - 持续离开（Always Be Leaving）\n- **第7章：测量工程生产力**\n  - Goals-Signals-Metrics框架"
+      },
+      {
+        "level": 2,
+        "title": "第三部分：流程（Processes）",
+        "content": "- **第8章：样式指南和规则**\n- **第9章：代码审查（Code Review）**\n  - 代码审查流程\n  - LGTM机制\n  - 最佳实践\n- **第10章：文档**\n  - 文档类型分类\n  - WHO/WHAT/WHEN/WHERE/WHY\n- **第11章：测试概述**\n  - Beyoncé规则\n  - 测试大小与范围\n- **第12章：单元测试**\n  - DAMP vs DRY原则\n  - 测试行为而非方法\n- **第13章：测试替身（Test Doubles）**\n  - Faking vs Stubbing vs Mocking\n- **第14章：大型测试**\n- **第15章：弃用（Deprecation）**"
+      },
+      {
+        "level": 2,
+        "title": "第四部分：工具（Tools）",
+        "content": "- **第16章：版本控制和分支管理**\n  - 单一版本规则（One-Version Rule）\n  - Monorepo策略\n- **第17章：代码搜索**\n- **第18章：构建系统和构建哲学**\n  - 基于工件的构建系统\n  - 1:1:1规则\n- **第19章：Critique代码审查工具**\n- **第20章：静态分析**\n  - Tricorder平台\n- **第21章：依赖管理**\n  - SemVer的局限性\n  - Live at Head策略\n- **第22章：大规模变更（LSC）**\n- **第23章：持续集成（CI）**\n- **第24章：持续交付（CD）**\n- **第25章：计算即服务（CaaS）**"
+      },
+      {
+        "level": 2,
+        "title": "1. Hyrum定律（海勒姆定律）",
+        "content": "> **With a sufficient number of users of an API, it does not matter what you promise in the contract: all observable behaviors of your system will be depended on by somebody.**\n> \n> 当API有足够多的用户时，合约中承诺什么已不重要：所有可观察到的系统行为都会被某人依赖。\n**含义**：\n- API的隐性依赖不可避免\n- 即使未明文承诺的行为，用户也可能依赖\n- 改变API时需考虑所有可观察行为的影响\n**应用场景**：\n- API设计时预留灵活性\n- 升级依赖时评估隐性依赖风险\n- 文档化所有行为（包括未承诺的）"
+      },
+      {
+        "level": 2,
+        "title": "2. Beyoncé规则",
+        "content": "> **\"If you liked it, you should have put a CI test on it.\"**\n> \n> 如果你喜欢它，就应该给它加上CI测试。\n**含义**：\n- 基础设施变更导致的问题，如果CI未检测到，不是基础设施团队的责任\n- 所有重要行为都必须有CI测试覆盖\n**应用场景**：\n- 关键功能必须有自动化测试\n- 升级前验证测试覆盖\n- 避免\"隐性期望\"导致的升级失败"
+      },
+      {
+        "level": 2,
+        "title": "3. 软件工程定义公式",
+        "content": "> **Software engineering is programming integrated over time.**\n> \n> 软件工程是\"随时间积分\"的编程。\n**核心区分**：\n- **编程**：一次性开发，不考虑长期维护\n- **软件工程**：考虑时间跨度、变化应对、规模化\n**时间维度影响**：\n```\n寿命预期 → 维护策略\n几分钟 → 不需要维护\n几个月 → 可能需要小修补\n几十年 → 必须规划升级路径\n```"
+      },
+      {
+        "level": 2,
+        "title": "4. 可持续性公式",
+        "content": "> **Your project is sustainable if, for the expected life span of your software, you are capable of reacting to whatever valuable change comes along.**\n> \n> 项目可持续 = 在预期寿命内，有能力响应任何有价值的变化。\n**关键要素**：\n- 预期寿命评估\n- 变化响应能力\n- 升级成本控制"
+      },
+      {
+        "level": 2,
+        "title": "5. 权衡成本公式",
+        "content": "**成本 = 财务成本 + 资源成本 + 人员成本 + 交易成本 + 机会成本 + 社会成本**\n**决策原则**：\n- 必须做（法规/客户要求）\n- 或者是最佳选项（基于当前证据）\n- 绝不是\"我说了算\""
+      },
+      {
+        "level": 2,
+        "title": "6. 左移原则（Shifting Left）",
+        "content": "> **Finding problems earlier in the developer workflow reduces costs.**\n> \n> 在开发流程中越早发现问题，成本越低。\n```\n时间线：设计 → 实现 → 审查 → 测试 → 提交 → Canary → 生产\n成本：  低 ← ← ← ← ← ← ← ← ← ← ← ← ← ← ← ← ← ← ← ← 高\n```"
+      },
+      {
+        "level": 2,
+        "title": "7. Goals-Signals-Metrics框架（GSM）",
+        "content": "```\nGoal（目标） → Signal（信号） → Metric（指标）\n   ↓              ↓              ↓\n  期望结果      可观察变化      可测量数值\n```\n**示例**：\n- Goal：工程师生产力高\n- Signal：代码审查响应快\n- Metric：审查等待时间（小时）"
+      },
+      {
+        "level": 2,
+        "title": "3.1 时间与变化",
+        "content": "| 维度 | 短期编程 | 长期软件工程 |\n|------|----------|--------------|\n| 寿命预期 | 小时/天 | 年/十年 |\n| 升级需求 | 无 | 必须 |\n| 依赖管理 | 锁定 | 活态 |\n| 测试覆盖 | 可选 | 必须 |\n| 文档要求 | 无 | 必须 |\n**变化应对策略**：\n- **渐进式升级**：频繁小升级比一次性大升级成本低\n- **专家执行**：专家执行变更比用户自行处理更高效\n- **自动化**：CI/CD减少人工干预"
+      },
+      {
+        "level": 2,
+        "title": "3.2 规模与效率",
+        "content": "| 维度 | 小团队 | 大规模组织 |\n|------|--------|------------|\n| 代码库 | 单项目 | Monorepo |\n| 版本控制 | 多分支 | 单一版本 |\n| 代码审查 | 可选 | 强制 |\n| 依赖管理 | 手动 | 自动化 |\n| 知识传播 | 直接沟通 | 共享平台 |\n**规模化关键**：\n- **自动化替代人工**：策略随规模增长成本不变\n- **专家知识共享**：一个专家影响多人\n- **统一标准**：降低协调成本"
+      },
+      {
+        "level": 2,
+        "title": "3.3 团队协作三大支柱",
+        "content": "| 支柱 | 定义 | 行为表现 |\n|------|------|----------|\n| **谦逊（Humility）** | 认识自身局限 | 承认错误、接受建议 |\n| **尊重（Respect）** | 重视他人贡献 | 专业反馈、不贬低 |\n| **信任（Trust）** | 相信他人能力 | 放手决策、委托任务 |\n**应用场景**：\n- 代码审查：专业反馈而非人身攻击\n- 决策讨论：尊重不同观点\n- 任务分配：信任他人完成"
+      },
+      {
+        "level": 2,
+        "title": "3.4 代码审查角色分工",
+        "content": "| 角色 | 职责 | 权限 |\n|------|------|------|\n| **作者** | 编写代码、回应反馈 | 提交变更 |\n| **审查者** | 检查正确性、理解性 | LGTM标记 |\n| **代码Owner** | 目录管理权限 | Approve标记 |\n| **可读性审查者** | 语言风格规范 | Readability标记 |"
+      },
+      {
+        "level": 2,
+        "title": "3.5 测试金字塔",
+        "content": "```\n        ┌─────────────┐\n        │  大型测试   │  ← 低频、高成本、高保真\n        │  (端到端)   │\n        ├─────────────┤\n        │  中型测试   │  ← 集成测试\n        │  (集成)     │\n        ├─────────────┤\n        │  小型测试   │  ← 高频、低成本、单元测试\n        │  (单元)     │\n        └─────────────┘\n```"
+      },
+      {
+        "level": 2,
+        "title": "4.1 Hyrum定律案例",
+        "content": "**正面：Hash排序依赖**\n- 问题：用户依赖Python字典迭代顺序\n- 教训：即使未承诺的行为也会被依赖\n- 解决：随机化顺序、明确文档化\n**反面：避免过度依赖**\n- 正确：依赖明文承诺的API行为\n- 错误：依赖隐性实现细节\n- 风险：升级时隐性依赖导致崩溃"
+      },
+      {
+        "level": 2,
+        "title": "4.2 代码审查案例",
+        "content": "**正面：小变更审查**\n- 单次变更200行以内\n- 聚焦单一问题\n- 24小时内响应\n**反面：大型变更**\n- 万行代码一次性提交\n- 多功能混在一起\n- 审查周期数周\n- 结果：难以理解、难以回滚"
+      },
+      {
+        "level": 2,
+        "title": "4.3 升级策略案例",
+        "content": "**正面：渐进式编译器升级**\n- Google 2006年编译器升级（痛苦）\n- 建立：每两周升级一次\n- 结果：升级成本从数月降至数天\n**反面：延迟升级**\n- 五年未升级编译器\n- 隐性依赖积累\n- 结果：一次性升级代价巨大\n- 安全漏洞无法修复"
+      },
+      {
+        "level": 2,
+        "title": "4.4 团队协作案例",
+        "content": "**正面：开放协作**\n- 早期分享想法\n- 多人审查代码\n- 知识广泛传播\n**反面：天才神话**\n- 独自开发数月\n- 隐藏代码直到\"完美\"\n- 结果：方向错误、难以维护"
+      },
+      {
+        "level": 2,
+        "title": "4.5 依赖管理案例",
+        "content": "**正面：Live at Head**\n- 直接依赖最新版本\n- 自动化测试覆盖\n- 升级成本分散\n**反面：SemVer过度依赖**\n- 依赖版本号承诺\n- 实际兼容性问题\n- Diamond Dependency冲突"
+      },
+      {
+        "level": 2,
+        "title": "5.1 API设计清单",
+        "content": "- [ ] 明文定义所有可观察行为\n- [ ] 文档化隐性行为\n- [ ] 预留版本演进空间\n- [ ] 避免可变全局状态\n- [ ] 考虑Hyrum定律影响"
+      },
+      {
+        "level": 2,
+        "title": "5.2 代码审查清单",
+        "content": "- [ ] 变更是否小于200行\n- [ ] 描述是否清晰完整\n- [ ] 测试是否覆盖关键功能\n- [ ] 24小时内提供反馈\n- [ ] 聚焦单一问题"
+      },
+      {
+        "level": 2,
+        "title": "5.3 升级准备清单",
+        "content": "- [ ] CI测试覆盖是否充分\n- [ ] 是否有专家执行升级\n- [ ] 升级是否分阶段进行\n- [ ] 是否有回滚机制\n- [ ] 是否有沟通计划"
+      },
+      {
+        "level": 2,
+        "title": "5.4 团队协作清单",
+        "content": "- [ ] 是否定期分享进展\n- [ ] 是否建立公车因子（多人了解关键代码）\n- [ ] 是否有心理安全环境\n- [ ] 是否进行无责事后复盘\n- [ ] 是否培养专家知识共享"
+      },
+      {
+        "level": 2,
+        "title": "5.5 测试策略清单",
+        "content": "- [ ] Beyoncé规则：关键行为是否有CI测试\n- [ ] 单元测试：测试行为而非方法\n- [ ] DAMP原则：描述性胜过抽象\n- [ ] 测试是否稳定（不随实现变化失败）\n- [ ] 是否有左移策略"
+      },
+      {
+        "level": 2,
+        "title": "5.6 文档编写清单",
+        "content": "- [ ] 目标受众是谁\n- [ ] 文档类型：参考/教程/设计/概念\n- [ ] WHO/WHAT/WHEN/WHERE/WHY\n- [ ] 是否与代码同步更新\n- [ ] 是否有审查流程"
+      },
+      {
+        "level": 2,
+        "title": "关于软件工程本质",
+        "content": "> \"Software engineering is programming integrated over time.\"\n> 软件工程是\"随时间积分\"的编程。\n> \"Cubes aren't squares, distance isn't velocity. Software engineering isn't programming.\"\n> 立方体不是正方形，距离不是速度。软件工程不是编程。\n> \"Nothing is built on stone; all is built on sand, but we must build as if the sand were stone.\"\n> —— Jorge Luis Borges\n> 没有什么建在石头上，一切建在沙上，但我们必须把沙当作石头来建造。"
+      },
+      {
+        "level": 2,
+        "title": "关于Hyrum定律",
+        "content": "> \"Given enough time and enough users, even the most innocuous change will break something.\"\n> 给予足够时间和用户，即使最无害的改变也会破坏某些东西。\n> \"Just because entropy never decreases doesn't mean we shouldn't try to be efficient. Just because Hyrum's Law will apply when maintaining software doesn't mean we can't plan for it.\"\n> 熵永不减少不代表我们不追求效率。Hyrum定律适用不代表我们不规划应对。"
+      },
+      {
+        "level": 2,
+        "title": "关于权衡与决策",
+        "content": "> \"Decisions should not be 'We are doing this because I said so.'\"\n> 决策不应是\"我说了算\"。\n> \"There is rarely a one-size-fits-all solution in software engineering.\"\n> 软件工程中很少有万能方案。"
+      },
+      {
+        "level": 2,
+        "title": "关于团队协作",
+        "content": "> \"The whole is always greater than the sum of its parts.\"\n> 整体永远大于部分之和。\n> \"You are not your code.\"\n> 你不是你的代码。\n> \"Failure is an option.\"\n> 失败是一个选项。"
+      },
+      {
+        "level": 2,
+        "title": "关于代码审查",
+        "content": "> \"If you liked it, you should have put a CI test on it.\"\n> 如果你喜欢它，就应该给它加上CI测试。\n> \"Code will be read many more times than it is written.\"\n> 代码被阅读的次数远多于被编写的次数。"
+      },
+      {
+        "level": 2,
+        "title": "关于天才神话",
+        "content": "> \"It's programming if 'clever' is a compliment, but it's software engineering if 'clever' is an accusation.\"\n> 如果\"聪明\"是赞美，那是编程；如果\"聪明\"是指控，那是软件工程。\n> \"Most of the work at Google doesn't require genius-level intellect, but 100% of the work requires a minimal level of social skills.\"\n> Google大部分工作不需要天才智力，但100%工作需要基本的社交技能。"
+      },
+      {
+        "level": 2,
+        "title": "关于测试",
+        "content": "> \"Strive for unchanging tests.\"\n> 追求不变的测试。\n> \"Test via public APIs, test state, not interactions.\"\n> 通过公共API测试，测试状态而非交互。"
+      },
+      {
+        "level": 2,
+        "title": "关于可维护性",
+        "content": "> \"A proper postmortem should always contain an explanation of what was learned and what is going to change.\"\n> 正确的事后复盘必须包含学到了什么、将要改变什么。"
+      },
+      {
+        "level": 1,
+        "title": "七、关键概念速查",
+        "content": "| 概念 | 英文 | 简要定义 |\n|------|------|----------|\n| Hyrum定律 | Hyrum's Law | API隐性依赖不可避免 |\n| Beyoncé规则 | Beyoncé Rule | 重要行为必须有CI测试 |\n| 左移 | Shifting Left | 问题发现越早成本越低 |\n| 公车因子 | Bus Factor | 关键人员流失导致项目崩溃的风险 |\n| LGTM | Looks Good To Me | 代码审查通过标记 |\n| 可读性 | Readability | 语言风格规范认证 |\n| 单一版本 | One-Version Rule | 禁止多版本并存 |\n| Monorepo | Monorepo | 单一代码仓库策略 |\n| Live at Head | Live at Head | 始终使用最新版本 |"
+      },
+      {
+        "level": 1,
+        "title": "八、更新日志",
+        "content": "| 日期 | 版本 | 内容 |\n|------|------|------|\n| 2026-05-06 | v1.0 | 初始版本，基于免费在线版本整理 |"
+      },
+      {
+        "level": 1,
+        "title": "九、延伸资源",
+        "content": "- **免费在线版本**：https://abseil.io/resources/swe-book\n- **O'Reilly购买**：https://www.oreilly.com/library/view/software-engineering-at/9781492082710/\n- **Google Abseil库**：https://abseil.io（配套C++库）\n- **相关书籍**：《Site Reliability Engineering》（Google SRE书）\n**适用场景**：\n- 硬件产品经理理解代码质量管理\n- 建立团队工程文化\n- 设计API和依赖管理策略\n- 规划长期可维护项目\n**核心收获**：\n软件工程的核心不是代码，而是**时间、规模、权衡**三要素的管理。编程解决\"能否运行\"，软件工程解决\"能否持续\"。"
+      }
+    ],
+    "updates": [
+      {
+        "date": "2026-05-10",
+        "note": "从智慧库导入"
+      }
+    ]
+  }
+}

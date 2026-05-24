@@ -1,0 +1,197 @@
+{
+  "id": "Eric-Evans-Domain-Driven-Design-DDD-领域驱动设计完整方法论",
+  "category": "产品设计",
+  "title": "Eric Evans《Domain-Driven Design: Tackling Complexity in the Heart of Software》领域驱动设计完整方法论",
+  "keywords": [
+    "Eric",
+    "Evans",
+    "Domain",
+    "Driven",
+    "Design"
+  ],
+  "summary": "**学习时间**: 2026-05-05 15:11 UTC",
+  "importance": 5,
+  "learned_at": "2026-05-10",
+  "source": "Eric Evans《Domain",
+  "content": {
+    "core_formula": "DDD价值 = UbiquitousLanguage × BoundedContext² × AggregatePattern",
+    "layers": [
+      {
+        "level": 2,
+        "title": "Part I: Putting the Domain Model to Work",
+        "content": "1. Crunching a Domain Model — 领域模型提炼\n2. Communication and the Use of Language — 交流与语言使用\n3. Binding Model and Implementation — 模型与实现的绑定"
+      },
+      {
+        "level": 2,
+        "title": "Part II: The Model Elements",
+        "content": "4. Isolating the Domain — 隔离领域层\n5. A Model Expressed in Software — 软件中的模型表达\n6. The Life Cycle of a Domain Object — 领域对象的生命周期\n7. Using the Language: An Extended Example — 语言使用扩展案例"
+      },
+      {
+        "level": 2,
+        "title": "Part III: Refactoring Toward Deeper Insight",
+        "content": "8. Breakthroughs — 突破\n9. Making Implicit Concepts Explicit — 显化隐含概念\n10. Supple Design — 柔性设计\n11. Applying Analysis Patterns — 应用分析模式\n12. Relating Design Patterns to the Model — 设计模式与模型关系\n13. Refactoring Toward Deeper Insight — 向深层洞察重构"
+      },
+      {
+        "level": 2,
+        "title": "Part IV: Strategic Design (战略设计)",
+        "content": "14. Maintaining Model Integrity — 维护模型完整性\n15. Distillation — 蒸馏\n16. Large-Scale Structure — 大规模结构\n17. Bringing the Strategy Together — 整合策略"
+      },
+      {
+        "level": 2,
+        "title": "DDD 价值公式",
+        "content": "```\nDDD价值 = UbiquitousLanguage × BoundedContext² × AggregatePattern\n```"
+      },
+      {
+        "level": 2,
+        "title": "复杂度驾驭公式",
+        "content": "```\n复杂度驾驭 = 限界上下文划分 × 聚合边界 × 上下文映射策略\n```"
+      },
+      {
+        "level": 2,
+        "title": "模型质量公式",
+        "content": "```\n模型质量 = 语言统一度 × 实现一致性 × 深层洞察密度\n```"
+      },
+      {
+        "level": 2,
+        "title": "3.1 战略设计层 (Strategic Design)",
+        "content": "#### 🔹 Bounded Context (限界上下文)\n**定义**: 明确的边界范围，内部有统一的模型和语言\n**核心洞察**:\n> \"Total unification of the domain model for a large system will not be feasible or cost-effective\" — 大型系统的完全统一模型不可行或不划算\n**识别信号**:\n- 不同团队使用不同词汇描述相同概念（polysemes 多义词）\n- 同一词在不同部门有微妙含义差异（如\"Meter\"在电力公司）\n- 需要不同的模型来满足不同业务场景\n**边界划分因素**:\n| 因素 | 说明 | 示例 |\n|------|------|------|\n| 团队文化 | 语言差异触发边界 | 销售团队vs支持团队对\"客户\"的定义 |\n| 组织结构 | 康威定律映射 | 不同部门对应不同上下文 |\n| 技术边界 | 表示方式差异 | 内存模型vs数据库模型 |\n| 业务边界 | 核心概念差异 | 订单上下文vs库存上下文 |\n#### 🔹 Context Map (上下文映射)\n**定义**: 不同限界上下文之间关系的可视化文档\n**关系模式**:\n| 模式 | 方向 | 关系描述 | 适用场景 |\n|------|------|----------|----------|\n| **Shared Kernel** | 双向 | 共享子集模型 | 两个团队紧密协作，核心概念重叠 |\n| **Customer/Supplier** | 下游→上游 |下游需求驱动上游变更 | 下游有议价权 |\n| **Conformist** | 下游→上游 | 下游顺应上游模型 | 上游不响应下游需求，下游无法改变上游 |\n| **Anticorruption Layer** | 下游→上游 | 防腐层隔离转换 | 上游模型不适合下游，需要翻译 |\n| **Open Host Service** | 上游→下游 | 开放主机服务 | 上游提供标准化API |\n| **Published Language** | 双向 | 公布语言 | 使用标准协议/格式交换 |\n| **Separate Ways** | 无 | 分道扬镳 | 集成成本高于收益，各自独立 |\n| **Big Ball of Mud** | 混乱 | 大泥球 | 无明确边界，避免此模式 |\n#### 🔹 Distillation (蒸馏)\n**定义**: 从复杂领域中提取核心价值\n**蒸馏模式**:\n- **Core Domain** — 核心领域，系统真正的竞争优势\n- **Generic Subdomains** — 通用子领域，可外包或复用\n- **Domain Vision Statement** — 领域愿景声明，描述核心价值\n- **Highlighted Core** — 突出核心，让核心可见\n- **Cohesive Mechanisms** — 内聚机制，封装复杂算法\n- **Segregated Core** — 分离核心，隔离通用组件\n- **Abstracted Core** — 抽象核心，高层视角审视"
+      },
+      {
+        "level": 2,
+        "title": "3.2 战术设计层 (Tactical Design)",
+        "content": "#### 🔹 Evans Classification (Evans 分类法)\n**三大对象类型**:\n| 类型 | 定义 | 关键特征 | 示例 |\n|------|------|----------|------|\n| **Entity (实体)** | 有跨时间、跨表示的身份标识 | 身份ID，状态可变，相等性基于ID | Customer, Order, Account |\n| **Value Object (值对象)** | 属性组合决定相等性，无身份 | 不可变，相等性基于属性，可替换 | Date, Money, Address, Range |\n| **Service (服务)** | 独立的领域操作 | 无状态，行为导向，不属于任何实体 | PaymentService, TranslationService |\n**Entity vs Value Object 决策树**:\n```\n是否需要追踪生命周期？ → Entity\n是否状态可变有意义？ → Entity\n是否相等性基于属性？ → Value Object\n是否可以自由替换？ → Value Object\n```\n#### 🔹 Aggregate (聚合)\n**定义**: 作为单一单元处理的领域对象簇\n**核心规则**:\n1. **Aggregate Root (聚合根)** — 外部引用的唯一入口\n2. **边界内一致性** — 聚合内对象在事务结束时必须一致\n3. **事务不跨聚合** — 一个事务只修改一个聚合\n4. **引用规则** — 外部只能引用根，内部对象通过根访问\n**聚合设计原则**:\n```\n聚合大小 = 最小化一致性边界\n聚合根职责 = 控制内部对象访问 + 保证整体完整性\n```\n**常见聚合示例**:\n- Order + OrderItems（订单聚合）\n- ClinicVisit + Procedures（门诊访问聚合）\n- Playlist + Tracks（播放列表聚合）\n#### 🔹 Repository (仓库)\n**定义**: 聚合的持久化和重建机制\n**核心契约**:\n```java\n// 仓库只对聚合根提供\ninterface OrderRepository {\n    Order findById(OrderId id);\n    void save(Order order);\n    void delete(Order order);\n    // 不提供对OrderItem的直接查询\n}\n```\n#### 🔹 Factory (工厂)\n**定义**: 复杂对象创建的封装机制\n**使用场景**:\n- 聚合创建逻辑复杂\n- 创建需要多个步骤\n- 创建涉及规则验证"
+      },
+      {
+        "level": 2,
+        "title": "3.3 统一语言层",
+        "content": "#### 🔹 Ubiquitous Language (统一语言)\n**定义**: 开发者与领域专家共享的、基于模型的严谨语言\n**核心原则**:\n```\n统一语言 = 领域术语 + 模型概念 + 代码命名\n```\n**实践方法**:\n| 层面 | 实践 | 示例 |\n|------|------|------|\n| 对话 | 使用领域术语而非技术术语 | \"订单已发货\"而非\"status=2\" |\n| 代码 | 类名、方法名反映领域概念 | `Order.ship()`而非`Order.updateStatus()` |\n| 文档 | 保持术语一致性 | 需求文档、代码注释术语统一 |\n| 测试 | 测试名使用领域语言 | `test_order_can_be_shipped()` |\n**语言演化**:\n> \"The language (and model) should evolve as the team's understanding of the domain grows\" — 语言随理解深化而演化"
+      },
+      {
+        "level": 2,
+        "title": "4.1 Anemic Domain Model (贫血领域模型) — 反模式",
+        "content": "**识别**:\n- 领域对象只有getter/setter\n- 业务逻辑在Service层\n- 对象间缺乏关系表达\n**危害**:\n- 模型失去表达能力\n- 业务逻辑分散难以维护\n- 无法发挥DDD价值\n**修复**:\n```\n贫血对象 → 添加业务方法 → Entity/Value Object\n分散Service → 重构到领域对象 → 面向对象设计\n```"
+      },
+      {
+        "level": 2,
+        "title": "4.2 Supple Design (柔性设计)",
+        "content": "**定义**: 易于修改、深入表达意图的设计\n**特征**:\n- 操作名称表达意图（Intention-Revealing Interfaces）\n- 副作用明确（Side-Effect-Free Functions）\n- 断言明确（Assertions）\n- 概念闭环（Conceptual Contours）\n- 独立操作（Standalone Classes）\n- 闭包操作（Closure of Operations）\n- 声明式设计（Declarative Design）"
+      },
+      {
+        "level": 2,
+        "title": "4.3 Domain Events (领域事件)",
+        "content": "**定义**: 领域中发生的有意义的事情\n**特征**:\n- 过去时态命名（OrderPlaced, PaymentCompleted）\n- 不可变\n- 携带时间戳和事件ID\n- 携带相关实体引用\n**用途**:\n- 跨聚合通信\n- 跨上下文集成\n- 事件溯源（Event Sourcing）\n- 业务流程追踪"
+      },
+      {
+        "level": 2,
+        "title": "✅ 正面案例：订单系统DDD设计",
+        "content": "**Bounded Context划分**:\n```\n┌─────────────────┐   ┌─────────────────┐   ┌─────────────────┐\n│  Order Context  │   │ Inventory Context│   │ Payment Context │\n│  ───────────────│   │ ─────────────────│   │ ────────────────│\n│  Order Aggregate│   │ Product Aggregate│   │ Payment Aggregate│\n│  OrderItem      │   │ StockLevel       │   │ Transaction     │\n│  Customer       │   │ Warehouse        │   │ Account         │\n└─────────────────┘   └─────────────────┘   └─────────────────┘\n        ↓                     ↓                      ↓\n    OrderPlaced         InventoryUpdated       PaymentCompleted\n        └──────────────────────┴──────────────────────┘\n                        Domain Events\n```\n**Order Aggregate设计**:\n```java\n// 聚合根\nclass Order {\n    private OrderId id;           // Entity身份\n    private CustomerId customerId;\n    private List<OrderItem> items; // 内部对象\n    private OrderStatus status;\n    // 业务方法（不暴露setter）\n    public void addItem(Product product, int quantity) {\n        if (status != OrderStatus.DRAFT) {\n            throw new OrderCannotBeModifiedException();\n        }\n        items.add(new OrderItem(product, quantity));\n    }\n    public void place() {\n        if (items.isEmpty()) {\n            throw new OrderMustHaveItemsException();\n        }\n        status = OrderStatus.PLACED;\n        // 发布领域事件\n        DomainEvents.publish(new OrderPlaced(this.id));\n    }\n}\n// 值对象\nclass OrderItem {\n    private ProductId productId;\n    private Money price;\n    private int quantity;\n    // 不可变，相等性基于属性\n}\n```"
+      },
+      {
+        "level": 2,
+        "title": "❌ 反面案例：贫血模型错误",
+        "content": "```java\n// 错误：贫血实体\nclass Order {\n    private String id;\n    private String status;\n    private List<OrderItem> items;\n    // 只有getter/setter，无业务方法\n}\n// 错误：业务逻辑在Service层\nclass OrderService {\n    public void addItem(Order order, Product product, int qty) {\n        order.getItems().add(new OrderItem(product, qty));\n    }\n    public void placeOrder(Order order) {\n        if (order.getItems().isEmpty()) {\n            throw new RuntimeException(\"Order must have items\");\n        }\n        order.setStatus(\"PLACED\");\n        orderRepository.save(order);\n    }\n}\n// 问题：Order不保护自己的完整性，逻辑分散\n```"
+      },
+      {
+        "level": 2,
+        "title": "6.1 硬件产品领域的限界上下文",
+        "content": "**典型划分**:\n```\n┌──────────────────┐  ┌──────────────────┐  ┌──────────────────┐\n│  Product Context │  │  Firmware Context │  │ Manufacturing    │\n│  ────────────────│  │ ──────────────────│  │    Context       │\n│  ProductSpec     │  │ FirmwareBuild     │  │ ─────────────────│\n│  FeatureSet      │  │ DriverModule      │  │ ProductionBatch  │\n│  SKU             │  │ Bootloader        │  │ QualityCheck     │\n│  BOM             │  │ OTAUpdate         │  │ TestResult       │\n└──────────────────┘  └──────────────────┘  └──────────────────┘\n        ↓                      ↓                      ↓\n  ProductApproved        FirmwareReleased        BatchCompleted\n        └────────────────────────┴──────────────────────────┘\n                       Event-Driven Integration\n```"
+      },
+      {
+        "level": 2,
+        "title": "6.2 硬件产品聚合设计",
+        "content": "**Product Aggregate**:\n```\nProduct (聚合根)\n  ├── ProductId (值对象)\n  ├── ProductSpec (值对象)\n  ├── FeatureSet (实体集合)\n  ├── BOM (值对象 - 物料清单)\n  └── Status (值对象)\n规则：Product修改需保证BOM与FeatureSet一致性\n```\n**Firmware Aggregate**:\n```\nFirmwareBuild (聚合根)\n  ├── BuildId (值对象)\n  ├── Version (值对象)\n  ├── DriverModules (实体集合)\n  ├── Bootloader (值对象)\n  └── CompatibilityMatrix (值对象)\n规则：发布需保证所有模块测试通过\n```"
+      },
+      {
+        "level": 2,
+        "title": "6.3 康威定律逆向应用",
+        "content": "**DDD与Team Topologies联动**:\n| DDD概念 | Team Topologies映射 | 实践 |\n|---------|---------------------|------|\n| Bounded Context | 团队边界 | 一个限界上下文对应一个流对齐团队 |\n| Context Map | 交互模式 | Shared Kernel → Collaboration |\n| Core Domain | Stream-aligned团队 | 核心领域由端到端团队负责 |\n| Generic Subdomain | Platform/复杂子系统 | 通用功能由平台团队提供 |"
+      },
+      {
+        "level": 2,
+        "title": "6.4 SD-WAN领域DDD示例",
+        "content": "**限界上下文划分**:\n```\n┌─────────────────┐  ┌─────────────────┐  ┌─────────────────┐\n│ Network Context │  │ Security Context │  │ Controller      │\n│ ────────────────│  │ ─────────────────│  │   Context       │\n│ Tunnel          │  │ FirewallPolicy   │  │ ────────────────│\n│ Route           │  │ Certificate      │  │ SiteConfig      │\n│ DeviceConfig    │  │ AccessRule       │  │ Topology        │\n└─────────────────┘  └─────────────────┘  │ Provisioning    │\n        ↓                     ↓            └─────────────────┘\n  TunnelEstablished   PolicyApplied               ↓\n        └──────────────────────┴─────────── DeviceProvisioned\n```"
+      },
+      {
+        "level": 2,
+        "title": "7.1 项目启动阶段",
+        "content": "| 步骤 | 活动 | 输出 |\n|------|------|------|\n| 1 | 领域探索 | 事件风暴Event Storming图 |\n| 2 | 识别核心领域 | Core Domain识别清单 |\n| 3 | 划分限界上下文 | Bounded Context图 |\n| 4 | 定义上下文关系 | Context Map |\n| 5 | 建立统一语言 | Glossary词汇表 |"
+      },
+      {
+        "level": 2,
+        "title": "7.2 设计阶段",
+        "content": "| 步骤 | 活动 | 输出 |\n|------|------|------|\n| 6 | 聚合识别 | Aggregate设计文档 |\n| 7 | Entity/Value Object划分 | Evans Classification表 |\n| 8 | Repository设计 | Repository接口契约 |\n| 9 | Domain Event定义 | Event清单 |\n| 10 | 柔性设计检查 | Supple Design检查表 |"
+      },
+      {
+        "level": 2,
+        "title": "7.3 实现阶段",
+        "content": "| 步骤 | 活动 | 输出 |\n|------|------|------|\n| 11 | 领域层实现 | Domain代码 |\n| 12 | 防腐层实现 | Anticorruption Layer |\n| 13 | 集成测试 | 跨上下文集成测试 |\n| 14 | 语言一致性检查 | 代码-文档术语对照 |"
+      },
+      {
+        "level": 2,
+        "title": "7.4 持续演进",
+        "content": "| 步骤 | 活动 | 输出 |\n|------|------|------|\n| 15 | 模型重构 | 向深层洞察重构 |\n| 16 | 边界调整 | 上下文边界演化 |\n| 17 | 语言更新 | 词汇表迭代 |\n| 18 | 蒸馏优化 | Core Domain聚焦 |"
+      },
+      {
+        "level": 2,
+        "title": "Eric Evans 原句",
+        "content": "> \"Domain-Driven Design is an approach to software development that centers the development on programming a domain model that has a rich understanding of the processes and rules of a domain.\"\n> \"Total unification of the domain model for a large system will not be feasible or cost-effective.\"\n> \"By using the model-based language pervasively and not being satisfied until it flows, we approach a model that is complete and comprehensible.\"\n> \"The language (and model) should evolve as the team's understanding of the domain grows.\""
+      },
+      {
+        "level": 2,
+        "title": "Martin Fowler 解读",
+        "content": "> \"Bounded Context is a central pattern in Domain-Driven Design. It is the focus of DDD's strategic design section.\"\n> \"DDD deals with large models by dividing them into different Bounded Contexts and being explicit about their interrelationships.\"\n> \"Eric Evans's great contribution was developing a vocabulary to talk about this approach, identifying key conceptual elements.\""
+      },
+      {
+        "level": 2,
+        "title": "DDD + Team Topologies",
+        "content": "- 一个限界上下文 = 一个流对齐团队\n- Anticorruption Layer = Platform团队提供的转换服务\n- Context Map = 团队交互模式图"
+      },
+      {
+        "level": 2,
+        "title": "DDD + Clean Architecture",
+        "content": "- Domain Layer = DDD核心领域\n- Application Layer = Application Service\n- Interface Layer = Anticorruption Layer"
+      },
+      {
+        "level": 2,
+        "title": "DDD + Event Storming",
+        "content": "- Event Storming输出 = DDD设计输入\n- 事件图 → 聚合识别\n- 痛点图 → Core Domain聚焦"
+      },
+      {
+        "level": 2,
+        "title": "DDD + Microservices",
+        "content": "- 一个限界上下文 = 一个微服务\n- Context Map = 服务间集成模式\n- Domain Event = 服务间通信"
+      },
+      {
+        "level": 1,
+        "title": "十、常见误区与纠正",
+        "content": "| 误区 | 正解 |\n|------|------|\n| \"DDD只适用于大型系统\" | 从核心领域开始，逐步扩展 |\n| \"需要完美模型才能编码\" | 模型随理解深化演化，迭代改进 |\n| \"所有对象必须是Entity或Value Object\" | Service也是合法的领域元素 |\n| \"聚合必须很小\" | 聚合大小取决于一致性边界需求 |\n| \"统一语言需要一开始完美\" | 语言随项目进展持续改进 |\n| \"DDD必须用OO语言\" | 核心概念适用于函数式、过程式 |"
+      },
+      {
+        "level": 2,
+        "title": "原著",
+        "content": "- Eric Evans《Domain-Driven Design》(2003) — 经典蓝皮书"
+      },
+      {
+        "level": 2,
+        "title": "进阶",
+        "content": "- Vaughn Vernon《Implementing Domain-Driven Design》(2013) — 实践导向红皮书\n- Martin Fowler bliki DDD系列 — 简明解读"
+      },
+      {
+        "level": 2,
+        "title": "工具",
+        "content": "- Event Storming Workshop — Alberto Brandolini\n- Context Mapper — 上下文建模工具"
+      },
+      {
+        "level": 1,
+        "title": "更新日志",
+        "content": "| 时间 | 版本 | 更新内容 |\n|------|------|----------|\n| 2026-05-05 | v1.0 | 首次完整方法论文档创建 |\n**学习总结**: DDD提供了一套完整的领域复杂度驾驭方法论，从战略层的限界上下文划分、上下文映射，到战术层的聚合、实体、值对象设计，再到统一语言的建立与演化。对于硬件/IoT产品经理，理解DDD有助于与软件团队有效协作，明确团队边界与模型边界的关系，识别核心领域资源投入方向，建立跨团队的领域术语共识。核心实践：先画Context Map再写代码，核心领域优先投入，聚合边界最小化，语言持续演化。"
+      }
+    ],
+    "updates": [
+      {
+        "date": "2026-05-10",
+        "note": "从智慧库导入"
+      }
+    ]
+  }
+}

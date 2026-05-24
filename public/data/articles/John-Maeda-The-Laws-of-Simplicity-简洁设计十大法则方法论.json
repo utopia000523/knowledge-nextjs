@@ -1,0 +1,110 @@
+{
+  "id": "John-Maeda-The-Laws-of-Simplicity-简洁设计十大法则方法论",
+  "category": "产品设计",
+  "title": "John Maeda《The Laws of Simplicity》简洁设计十大法则方法论",
+  "keywords": [
+    "John Maeda",
+    "The Laws of Simplicity",
+    "简洁设计",
+    "十大法则",
+    "SHE框架",
+    "少即是多",
+    "Simplify",
+    "Hide",
+    "Embed",
+    "简洁设计方法论"
+  ],
+  "summary": "**核心主题**: 简洁不是削减功能，而是通过 Reduce/Organize/Time/Learn/Differences/Context/Emotion/Trust/Failure/The One 十大法则，系统化地把复杂性从用户侧转移到系统侧，让技术变得可理解、可接近、可愉悦。",
+  "importance": 5,
+  "learned_at": "2026-05-19",
+  "source": "John Maeda《The Laws of Simplicity: Design, Technology, Business, Life》(2006, MIT Press)；John Maeda, 'A Simple Analysis of Simplicity', 2006-2007 MIT Media Lab 公开系列文章",
+  "content": {
+    "core_formula": "### 核心公式：简洁 = (Reduce × Organize × Time × Learn) / Complexity\n\n即：\n**简洁 = 减少显现元素 × 有序组织 × 时间效率 × 学习可及性 / 系统内在复杂性**\n\n分子四项每提高一倍，用户感知到的简洁度提升 16 倍（乘积效应）；\n分母每降低一倍（即技术团队吸收更多复杂度），用户感知简洁度也翻倍。\n\n### SHE 高阶框架\n**公式：Simplicity = Simplify (Reduce + Organize) + Hide (Context + Trust) + Embed (Learn + Emotion)**\n\nSHE 是 Maeda 对十法则的三重归纳：\n- **S - Simplify**: 减少可见元素，有序组织——直接降低表层复杂度\n- **H - Hide**: 利用上下文和信任把复杂性藏起来——让用户不需要面对\n- **E - Embed**: 让学习自然发生、让情感体验深嵌入产品——让用户爱上简洁\n\n### 简洁投资回报公式\n**简洁 ROI = 用户满意度提升 × 学习成本降低 × 支持成本降低 — 工程复杂度投入**\n\n简洁不是免费策略——前期需要大量工程投入来隐藏复杂性，但长期回报远超投入。",
+    "layers": [
+      {
+        "level": 1,
+        "title": "Why Now — 为什么 2006 年的这本书今天依然重要？",
+        "content": "### 时代背景\n2006 年，John Maeda 在 MIT Media Lab 担任教授期间完成此书。当时 iPhone 尚未发布（2007），智能设备正在从\"功能机\"向\"体验机\"跃迁。Maeda 要回答一个根本问题：**当技术能力指数增长，为什么用户反而感到更焦虑？**\n\n### 今天的意义\n| 2006年的挑战 | 2026年的挑战 |\n|---|---|\n| 手机功能越来越多 | AI 能力无限扩展，产品边界模糊 |\n| 网页越来越臃肿 | 每个产品都想做“超级应用” |\n| 遥控器按键过多 | 智能家居/汽车中控/办公软件同时爆炸 |\n| 软件版本越来越复杂 | AI 生成内容/Agent 自主决策带来不可预测性 |\n\n**Maeda 的预言**：技术越复杂，简洁越稀缺——也越值钱。\n\n### 核心命题\n> **简洁不是目标，是一种手段——让技术在人类生活中变得可用、可理解、可信任。**\n\n简洁不是\"砍功能\"，而是：\n1. 把复杂性转移到系统侧（工程承担复杂度）\n2. 让用户只面对他们需要的\n3. 让学习曲线变得几乎不可察觉\n4. 让每一次交互都产生信任与愉悦",
+        "sub_dimensions": []
+      },
+      {
+        "level": 2,
+        "title": "概念全景表",
+        "content": "| 概念 | 定义 | 典型表现 | 设计含义 |\n|------|------|----------|----------|\n| **Simplicity** | 用户感知到的\"不费力\"——不是功能少，而是认知负担低 | 打开即用，无需看说明书 | 设计目标不是最小功能集，而是最小认知负载 |\n| **Complexity** | 系统需要处理的状态数和用户需要理解的信息量 | 15级菜单 vs. 3级菜单 | 系统复杂不等于产品复杂——优秀的设计吸收系统复杂度 |\n| **SHE** | Simplify / Hide / Embed 三层策略框架 | 苹果的 Home 键就是 Embed 的经典 | 从外到内的三层：先减，再藏，最后内化 |\n| **The One** | 每件事都有一个\"核心简洁点\" | iPhone 的全屏+Home键 | 找到那个\"1\"，其他都可以围绕它组织 |\n| **CRI（Cognitive Reduction Index）** | 认知减负指数 = 用户完成任务所需的步骤数 / 完成任务所需的思维切换次数 | 步骤少但思维切换多 ≠ 简洁 | 要同时优化操作次数和注意力的连续性 |\n\n### 方法全景图\n```text\n                           用户感知到的简洁\n                                  ↑\n                      ┌───────────┴───────────┐\n                      │      SHE 框架         │\n                      ├───────────┬───────────┤\n                      │ Simplify  │   Hide    │\n                      │ (减+组)   │  (上下文+  │\n                      │           │   信任)   │\n                      ├───────────┴───────────┤\n                      │      Embed (学+情)    │\n                      └───────────────────────┘\n                              ↑\n                      ┌───────┴───────┐\n                      │  十大法则系统  │\n                      └───────────────┘\n```",
+        "sub_dimensions": []
+      },
+      {
+        "level": 3,
+        "title": "第一组：Simplify — 直接降低表层复杂度（Law 1-2）",
+        "content": "### Law 1: Reduce（减少）\n> \"The simplest way to achieve simplicity is through thoughtful reduction.\"\n\n**核心**：不是\"砍掉不需要的\"，而是\"首先想清楚什么才是真正需要的\"。\n\n| 子维度 | 定义 | 设计策略 |\n|--------|------|----------|\n| **减法思维** | 问\"删掉这个用户还能完成任务吗？\" | 每次添加新功能前，先删除一个已有功能 |\n| **优先级分层** | 功能分 P0/P1/P2，P0 功能是 80% 用户 80% 时间使用的 | Airbnb 的搜索→浏览→预订，核心路径仅3步 |\n| **默认最优** | 提供最合理的默认值，用户无需调整也能获得 80% 好体验 | Google 搜索首页只有一个框 |\n| **渐进式披露** | 从少到多展示选项，根据用户行为自动展开 | iPhone 设置中的\"高级\"选项默认折叠 |\n\n**反面案例**：微软 Office 2007 Ribbon 菜单——虽然初衷是减少层级，但初次见面时信息密度反而更高。\n\n### Law 2: Organize（组织）\n> \"Organization makes a system of many appear fewer.\"\n\n**核心**：当无法进一步减少时，通过合理分类和层次让大量内容变得有序。\n\n| 子维度 | 定义 | 设计策略 |\n|--------|------|----------|\n| **分块（Chunking）** | 将信息按7±2原则分组 | 手机通讯录按首字母分块 |\n| **层级（Depth vs. Breadth）** | 宽坦树（breadth-first）或深层树（depth-first） | 网站导航3层以内为佳 |\n| **排序（Ordering）** | 按频率、重要性、时间等维度排序 | 最近使用排在前面 |\n| **分类（Categorization）** | 按用户心智模型分类而非技术分类 | 支付宝的\"扫一扫\"放在首页而非\"更多工具\" |\n\n**正面案例**：亚马逊的\"一键下单\"——用 Organize 把几十步购物流程压缩为一次点击。\n\n### 第一组工具：Reduce-Organize 矩阵\n| | 高组织度 | 低组织度 |\n|---|---|---|\n| **高减少度** | ★ 极致简洁（苹果） | 功能太少的困惑 |\n| **低减少度** | 组织良好的复杂（Wikipedia） | ✗ 混乱（最差） |\n\n好的设计要么减少到极致，要么把复杂的组织到极致。\n两者都做不到的设计一定糟糕。",
+        "sub_dimensions": []
+      },
+      {
+        "level": 3,
+        "title": "第二组：Hide & Embed — 隐藏复杂性与内化体验（Law 3-6 和 Law 7-8）",
+        "content": "### Law 3: Time（时间）\n> \"Savings in time feel like simplicity.\"\n\n| 子维度 | 解释 | 应用 |\n|--------|------|------|\n| **等待感的消除** | 让用户感受不到等待 | 进度条、骨架屏、即时反馈 |\n| **批处理** | 把多次操作合为一次 | iPhone \"隔空投送\"一次选中多张照片 |\n| **预加载** | 提前加载用户大概率需要的 | 地图 app 预加载常去地点 |\n| **异步化** | 用户不需要同步等待的结果走后台 | 文件上传后让用户继续工作 |\n\n### Law 4: Learn（学习）\n> \"Knowledge makes everything simpler.\"\n\n**核心**：用户一旦学会如何操作，再复杂的系统也变简单。设计的目标是让学习过程最短。\n\n| 子维度 | 解释 | 应用 |\n|--------|------|------|\n| **熟悉的模式** | 利用用户已有的知识迁移 | 购物车图标沿用了20年 |\n| **一致的语言** | 相同的词表示相同的意思 | 同一产品内\"保存\"永远代表同一个操作 |\n| **即时反馈** | 每次操作都有明确的结果 | 按钮按下立刻有视觉/触觉反馈 |\n| **学习曲线管理** | 新手到专家的平滑过渡 | Photoshop 的\"基础\"和\"专家\"工作区 |\n\n### Law 5: Differences（差异）\n> \"Simplicity and complexity need each other.\"\n\n**核心**：没有复杂，就没有简洁感——简洁是一种\"相对于复杂\"的感知。\n\n- 纯白色背景是简洁的，但完全无装饰会让用户迷失\n- 合理的视觉层次（标题大、正文小、标注灰）本身就是一种差异\n- **关键在于控制对比度的比例**：80% 熟悉 + 20% 惊喜\n\n### Law 6: Context（上下文）\n> \"What lies in the periphery of simplicity is definitely not peripheral.\"\n\n**核心**：用户对简洁的感知高度依赖于使用场景和设备。\n\n| 场景 | 适合的设计 | 不适合的设计 |\n|------|-----------|-------------|\n| 驾驶中 | 语音控制、大按钮 | 多层次菜单、小按钮 |\n| 办公桌前 | 键盘快捷键、多窗口 | 全屏沉浸模式 |\n| 移动中 | 单手操作、快速返回 | 需要双手的复杂操作 |\n\n### Law 7: Emotion（情感）\n> \"More emotions are better than less.\"\n\n**核心**：情感连接让用户忽略技术复杂性。\n\n| 情感设计类型 | 解释 | 案例 |\n|-------------|------|------|\n| 愉悦（Pleasure） | 使用本身就是奖赏 | iPhone 滚动的惯性动画 |\n| 惊喜（Surprise） | 超出预期的微小互动 | Google Doodle |\n| 美（Beauty） | 视觉上让人舒服 | 无印良品的设计哲学 |\n\n### Law 8: Trust（信任）\n> \"In simplicity we trust.\"\n\n**核心**：用户为什么会接受\"隐藏\"——因为信任。\n\n- 信任需要时间来建立，但一次错误就摧毁\n- 透明度增加信任——告诉用户系统在做什么\n- 可撤销性增加信任——\"撤销发送\"按钮\n\n### 第二组工具：SHE 自检表\n| 维度 | 检查问题 |\n|------|----------|\n| **Simplify** | 我还能砍掉什么而不损害核心体验？ |\n| **Hide** | 哪些复杂性用户不需要看到？我如何藏好它？ |\n| **Embed** | 用户需要花多少精力学习？我能让学习自然发生吗？ |\n| **Trust** | 用户相信隐藏的部分会正常工作吗？如果不信任，为什么？ |\n| **Emotion** | 这个交互让我感觉好还是烦躁？ |",
+        "sub_dimensions": []
+      },
+      {
+        "level": 3,
+        "title": "第三组：超越法则 — Failure, The One 与高阶思维（Law 9-10）",
+        "content": "### Law 9: Failure（失败）\n> \"Some things can never be made simple.\"\n\n**核心**：承认某些复杂性是无法消除的——人类生活本就复杂，有些领域天然需要高认知投入。\n\n**接受无法简化的复杂性**：\n- 法律的条款、医学的诊断、财务规划——这些领域的\"复杂性\"不是设计失败，而是领域本质\n- 在这些领域，设计的目标不是\"消除复杂\"，而是\"帮助用户在复杂中航行\"\n- 优秀的指引、清晰的路径管理、合理的默认值仍然重要\n\n**失败的价值**：\n- 承认失败是简洁设计的必要条件——不是所有产品都需要面向所有人\n- 限制使用场景本身就是一种简洁策略\n\n### Law 10: The One（终极核心）\n> \"Simplicity is about subtracting the obvious, and adding the meaningful.\"\n\n**核心**：每个产品、每个界面、每次交互都应该有一个\"一\"——一个用户可以牢牢抓住的核心。\n\n| 案例 | 他们的\"The One\" |\n|------|-----------------|\n| iPod | 转轮 + 屏幕（一个操作核心+一个信息核心） |\n| iPhone | 全触屏（所有交互围绕屏幕展开） |\n| Google 搜索 | 一个输入框 |\n| Twitter | 140 字符的限制 |\n| Airbnb | 搜索+预订（一个闭环） |\n\n**如何找到你的\"The One\"**：\n1. 列出你的产品所有功能\n2. 问：哪一个功能被删除后，整个产品就不成立了？\n3. 问：用户最常说的\"这个产品就是用来做___的\"，空格里填什么？\n4. 围绕它重新组织所有其他功能\n\n### 简洁设计成熟度模型\n| 级别 | 名称 | 特征 | 例子 |\n|------|------|------|------|\n| L1 | 功能堆积 | 把所有功能都放出来，用户自己选 | 早期 Windows 控制面板 |\n| L2 | 有序整理 | 分类、分组、排序 | iOS 设置 app |\n| L3 | 明智减少 | 砍掉低频功能，聚焦核心 | Instagram 只做照片分享 |\n| L4 | 智能隐藏 | 用上下文和信任隐藏复杂性 | Google 搜索的高级语法 |\n| L5 | 体验内化 | 用户根本感觉不到\"设计\"的存在 | 特斯拉中控屏 |",
+        "sub_dimensions": []
+      },
+      {
+        "level": 3,
+        "title": "深度案例：三条完整产品线",
+        "content": "### 案例一：苹果 iPod 转轮 — The Law of The One 的完美体现\n\n**背景**：2001 年，MP3 播放器市场已有数十款产品，全部用按钮 + 菜单滚动音乐。问题：几百首歌怎么快速选？\n\n**Maeda 框架应用**：\n| 法则 | 应用 |\n|------|------|\n| Reduce | 砍掉所有功能按键，只保留一个转轮 + 一个播放/暂停 |\n| Organize | 歌曲→专辑→艺术家→播放列表，清晰的四层浏览 |\n| The One | 转轮——用手指的旋转替代上下按键的反复按压 |\n| Embed | 学习只需 10 秒——\"转它就对了\" |\n\n**结果**：iPod 成为音乐播放器的黄金标准，简洁设计的教科书级案例。\n\n### 案例二：Google 搜索首页 — Reduce 的极致\n\n**背景**：1990 年代末的门户网站（Yahoo!、Lycos）首页布满分类、新闻、广告、天气…\n\n**Maeda 框架应用**：\n| 法则 | 应用 |\n|------|------|\n| Reduce | 首页只有一个 Logo + 一个输入框 + 两个按钮 |\n| Time | 搜索结果毫秒返回，消除等待感 |\n| Context | 搜索需要专注——页面越空，用户越聚焦 |\n| Trust | 用户相信 Google 会找到最好的结果 |\n| The One | 搜索框——界面中绝对的核心 |\n\n**结果**：“Google 主页的空白是一种设计宣言”。\n\n### 案例三：无印良品 — 文化层面的简洁哲学\n\n**背景**：无印良品（Muji）不是科技公司，但其产品哲学与 Maeda 十法则高度一致。\n\n| 法则 | 应用 |\n|------|------|\n| Reduce | 无 Logo、无装饰、无多余包装 |\n| Organize | 收纳系列的模块化设计 |\n| Differences | 在极简中通过材质和比例创造差异 |\n| Emotion | 朴素、安静、质感——情感的设计 |\n| The One | \"这样就好\"——不是最好，但刚刚好 |\n\n**启示**：简洁设计法则跨越产品类别和行业，具有普适性。",
+        "sub_dimensions": []
+      },
+      {
+        "level": 3,
+        "title": "七大常见误区与纠正",
+        "content": "### 误区 1：简洁 = 功能少\n**纠正**：简洁 ≠ 功能少。一个功能很少但操作混乱的产品（如早期的 Android 设置菜单）并不简洁。简洁是**认知负担小**，不是功能少。\n\n### 误区 2：简洁 = 极简主义视觉风格\n**纠正**：视觉极简（白底+大留白）可以增加简洁感，但不是简洁的全部。一个界面可以视觉丰富但认知友好（如游戏界面）。\n\n### 误区 3：所有复杂性都是坏的\n**纠正**：有些复杂性是\"好复杂\"——用户愿意花时间学习，因为回报高（如 Photoshop）。Design 的目标不是消除所有复杂，而是**消除无意义的复杂**。\n\n### 误区 4：用户永远想要更简洁\n**纠正**：用户说不清楚自己想要什么。他们可能需要更多功能（更多的控制权），只是不想要更多的**学习成本**和**操作负担**。\n\n### 误区 5：简洁是一次性的设计阶段\n**纠正**：简洁是**持续的过程**。功能不断添加，简洁需要持续维护和削减。Google 的首页也经历过增加链接→又删除的过程。\n\n### 误区 6：工程师也可以做简洁设计\n**纠正**：工程师倾向于暴露功能的极限（\"用户应该能配置一切\"），而设计师倾向于保护用户的注意力。两者需要协作。\n\n### 误区 7：简洁设计不需要用户研究\n**纠正**：什么是\"简洁\"]依赖于用户的理解水平、使用场景和文化背景。不研究用户，所谓的\"简洁\"只是设计师的自我投射。",
+        "sub_dimensions": []
+      },
+      {
+        "level": 4,
+        "title": "实战模板与工具",
+        "content": "### 工具 1：简洁设计画布\n| 维度 | 问题 | 当前状态 | 改进计划 |\n|------|------|----------|----------|\n| Reduce | 当前界面中 80% 用户 80% 时间使用哪些元素？ | | |\n| Organize | 信息分组是否匹配用户心智模型？ | | |\n| Time | 关键操作需要几秒完成？等待时间如何消除？ | | |\n| Learn | 新用户首次完成核心任务需要几步？ | | |\n| Context | 不同使用场景下哪些元素可以隐藏？ | | |\n| Emotion | 哪些交互让用户感到愉悦？哪些感到烦躁？ | | |\n| Trust | 用户相信隐藏的部分能正常工作吗？ | | |\n| The One | 产品的核心交互是什么？所有功能围绕它展开吗？ | | |\n\n### 工具 2：简洁优先级矩阵\n```\n                        高用户价值\n                            ↑\n      Keep (保留)     │    Improve (优化简洁)\n      ───────────────┼──────────────────\n      功能A(核心)     │   功能D(虽重要但难学)\n      功能B(高频)     │   功能E(配置复杂)\n                      │\n──────────────────────┼──────────────────\n      Remove (删除)   │    Hide (隐藏)\n      功能C(无人用)   │   功能F(高级用户才需要)\n      功能D(冗余)     │   功能G(一次性配置)\n                            ↓\n                        低用户价值\n```\n\n### 工具 3：30 天简洁化改造计划\n| 阶段 | 时间 | 行动 |\n|------|------|------|\n| **第1周：审计** | Day 1-7 | ① 统计当前界面的元素数量 ② 列出所有功能和设置项 ③ 分析用户行为数据找到低使用率功能 ④ 用户测试：新用户完成核心任务的时间和跳出率 |\n| **第2周：Reduce** | Day 8-14 | ① 删除使用率低于 5% 的功能 ② 合并功能入口 ③ 设置最优默认值 ④ 建立\"新功能替换旧功能\"机制 |\n| **第3周：Organize & Hide** | Day 15-21 | ① 重构信息架构 ② 高级功能折叠到\"更多\" ③ 设计上下文感知界面 ④ 建立渐进式披露机制 |\n| **第4周：测试与迭代** | Day 22-30 | ① A/B 测试新旧版本对比 ② 用户满意度调研 ③ 监控支持工单变化 ④ 输出简洁设计准则文档 |\n\n### 工具 4：简洁设计评审清单\n- [ ] 核心路径上的点击/触摸次数 ≤ 3\n- [ ] 新用户 30 秒内能完成核心任务\n- [ ] 最常用功能在首页直接可见\n- [ ] 每个界面的操作选项 ≤ 7 ± 2\n- [ ] 有清晰的视觉层次（大小、颜色、间距）\n- [ ] 所有按钮/链接有明确的反馈\n- [ ] 错误提示有解决方案而非仅报错\n- [ ] 搜索框在所有页面位置一致\n- [ ] 没有\"隐藏功能\"——如果隐藏了，用户应该能预期到它的存在\n- [ ] 设置页面默认值对 80% 用户已经最优",
+        "sub_dimensions": []
+      },
+      {
+        "level": 3,
+        "title": "方法论对比矩阵",
+        "content": "| 方法论 | 核心目标 | 适用场景 | 与 Maeda 十法则互补点 | 冲突点 |\n|--------|----------|----------|----------------------|--------|\n| **Maeda 十法则** | 认知简洁 | 所有产品设计 |——|——|\n| **Krug 可用性** | 不让用户思考 | Web/App界面 | 共享 Reduce 精神 | Krug 更偏可用性测试，Maeda 更偏设计哲学 |\n| **Norman 设计心理学** | 示能/意符/映射 | 物理+数字产品 | 共享 Context/Emotion | Norman 更关注认知科学基础，Maeda 更关注简洁策略 |\n| **苹果 HIG** | 平台一致性 | iOS/macOS 设计 | 共享 Learn/Organize | 苹果 HIG 更具体，Maeda 更抽象通用 |\n| **Google Material Design** | 隐喻一致性 | 跨平台 UI | 共享 Organize/Context | Material 强调纸张隐喻，Maeda 不限定视觉语言 |\n| **Dieter Rams 十原则** | 好设计十原则 | 工业设计 | 高度重叠（创新/有用/美学/易懂/诚实/持久/彻底/环保/少即是多） | Rams 更偏工业设计，Maeda 更偏数字产品 |\n| **渐进式披露** | 由浅入深展示信息 | 复杂界面 | 共享 Reduce/Organize | 渐进式披露是具体策略，Maeda 是高层框架 |\n\n### 适用边界\nMaeda 的十法则在以下场景效果最好：\n- 用户以消费者为主（非专业工具）\n- 领域复杂性可控（非法律/医学/金融核心流程）\n- 团队有设计文化和支持\n\n以下场景需要谨慎：\n- 专业工具需要暴露大量控制项（Photoshop、Final Cut Pro）\n- 合规性要求展示所有选项（金融、医疗法规场景）\n- 不同用户群体对\"简洁\"定义差异极大",
+        "sub_dimensions": []
+      },
+      {
+        "level": 3,
+        "title": "原书金句",
+        "content": "1. \"The simplest way to achieve simplicity is through thoughtful reduction.\"\n   — 达成简洁最简单的方法是经过深思熟虑的减少。\n\n2. \"Organization makes a system of many appear fewer.\"\n   — 组织让看似很多的东西显得很少。\n\n3. \"Savings in time feel like simplicity.\"\n   — 时间上的节省让人感到简洁。\n\n4. \"Knowledge makes everything simpler.\"\n   — 知识让一切变简单。\n\n5. \"Simplicity and complexity need each other.\"\n   — 简洁和复杂彼此需要。\n\n6. \"What lies in the periphery of simplicity is definitely not peripheral.\"\n   — 简洁的边缘绝不边缘。\n\n7. \"More emotions are better than less.\"\n   — 情感越多越好。\n\n8. \"In simplicity we trust.\"\n   — 简洁，所以信任。\n\n9. \"Some things can never be made simple.\"\n   — 有些东西永远无法变得简单。\n\n10. \"Simplicity is about subtracting the obvious, and adding the meaningful.\"\n    — 简洁是减去明显的，加上有意义的。\n\n11. \"Technology has made the simple complex. It's our job to make it simple again.\"\n    — 技术让简单变复杂，我们的工作是让它重新变简单。\n\n12. \"The simplest things can bring the richest experiences.\"\n    — 最简单的事物带来最丰富的体验。\n\n13. \"Design is about creating the conditions for an experience, not the experience itself.\"\n    — 设计是创造体验的条件，而非体验本身。\n\n14. \"When in doubt, just take the next logical step. The simplest path you can imagine.\"\n    — 不确定时，走最合乎逻辑的一步——你能想到的最简单的路径。\n\n15. \"In the complexity of the modern world, the simple stands out.\"\n    — 在复杂的现代世界中，简洁引人注目。",
+        "sub_dimensions": []
+      },
+      {
+        "level": 3,
+        "title": "AI 时代的新解读",
+        "content": "### Maeda 十法测在 AI 产品中的特殊意义\n\n2025-2026 年，AI 产品面临一个 Maeda 在 2006 年就预言过的困境：**能力无限，但简洁稀缺**。\n\n| AI 产品挑战 | Maeda 法则的解决方向 |\n|-------------|---------------------|\n| 用户不知道 AI 能做什么 | Law 1 Reduce + Law 6 Context：不要让用户\"发现\"能力，要在正确场景主动呈现 |\n| AI 输出的不可预测性 | Law 8 Trust：建立用户对 AI 输出的信任 |\n| Prompt 工程的学习成本 | Law 4 Learn + Law 2 Organize：自然语言界面就是最好的 Learn |\n| Agent 自主决策的恐惧 | Law 9 Failure + Law 8 Trust：接受 Agent 会犯错，但设计优雅的退路 |\n| 功能膨胀（每天都在加新能力） | Law 1 Reduce + Law 10 The One：每个 AI 产品只做好\"一件事\" |\n\n### 实践案例：ChatGPT 的简洁设计\nChatGPT 的成功部分归因于 Maeda 法则的隐式应用：\n- Reduce：一个输入框\n- The One：对话（而非功能列表）\n- Learn：自然语言交互（用户已经会说话）\n- Embed：没有说明书\n\n### AI 时代新增法则？\n基于 Maeda 的框架，可补充两个 AI 时代的简洁维度：\n- **Control（可控性）**：用户需要控制 AI 行为的感觉\n- **Explainability（可解释性）**：AI 的决策路径应可被用户理解",
+        "sub_dimensions": []
+      },
+      {
+        "level": 3,
+        "title": "更新日志",
+        "content": "- 2026-05-19：新建方法论文档\n  - 核心公式：简洁 = (Reduce × Organize × Time × Learn) / Complexity\n  - SHE 框架：Simplify + Hide + Embed 三层策略\n  - 十大法则完整拆解（3组：Simplify/隐藏与内化/超越法则）\n  - 3 个深度案例（iPod/Google/无印良品）\n  - 7 大常见误区与纠正\n  - 4 套工具模板（设计画布/优先级矩阵/30天计划/评审清单）\n  - 7 种方法论对比矩阵\n  - AI 时代特殊意义分析\n  - 15 条原书金句"
+      }
+    ],
+    "updates": [
+      {
+        "date": "2026-05-19",
+        "note": "新建：收录《The Laws of Simplicity》简洁设计十大法则方法论，包含核心公式、SHE框架、十法则拆解、3个深度案例、7大误区、4套工具模板、方法论对比矩阵"
+      }
+    ],
+    "formula_expressions": [],
+    "case_studies": [],
+    "common_mistakes": [],
+    "tool_templates": [],
+    "quotes": [],
+    "changelog": []
+  },
+  "schema_version": "1.0"
+}

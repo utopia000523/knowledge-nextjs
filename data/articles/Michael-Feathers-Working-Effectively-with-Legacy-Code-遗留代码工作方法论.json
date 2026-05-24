@@ -1,0 +1,72 @@
+{
+  "id": "Michael-Feathers-Working-Effectively-with-Legacy-Code-遗留代码工作方法论",
+  "category": "技术",
+  "title": "Michael Feathers《Working Effectively with Legacy Code》遗留代码工作方法论",
+  "keywords": [
+    "Michael Feathers",
+    "Working Effectively with Legacy Code",
+    "遗留代码",
+    "测试覆盖",
+    "重构技术",
+    "代码修改",
+    "依赖解耦",
+    "Seam",
+    "Characterization Tests",
+    "技术债处理"
+  ],
+  "summary": "核心主题：遗留代码=没有测试的代码。修改遗留代码的第一步不是试图理解全部逻辑，而是用『感知测试+解耦依赖』建立安全网，再逐步重构。",
+  "importance": 5,
+  "learned_at": "2026-05-19",
+  "source": "Michael Feathers《Working Effectively with Legacy Code》(2004, Prentice Hall)",
+  "content": {
+    "core_formula": "遗留代码改造安全路径 = 识别 Seam（接缝） + 编写 Characterization Tests（感知测试） + 解耦依赖 + 渐进重构 + 持续回归验证\n\n修改遗留代码 = 先建立安全网，再做改动。\n没有测试覆盖的代码改动 = 赌博。",
+    "layers": [
+      {
+        "level": 1,
+        "title": "第一层：概念定义",
+        "content": "**作者背景**：Michael Feathers 是著名的软件顾问、培训师，长期专注于遗留代码改造、测试设计和大规模重构。他是 Object Mentor International 的首席科学家，与 Bob Martin（Robert C. Martin）长期合作。本书自 2004 年出版以来一直是『技术债处理』和『遗留系统改造』领域的圣经级参考书。\n\n**核心命题**：Feathers 对遗留代码给出了一个颠覆性的定义——遗留代码不是『老代码』，而是『没有测试的代码』。\n\n这个定义之所以重要，是因为它改变了解决问题的方向：你不需要重写代码，你需要给代码加上测试，让修改变得安全。\n\n| 概念 | 定义 | 常见误解 | 正确认知 |\n|------|------|----------|----------|\n| 遗留代码 (Legacy Code) | 没有测试的代码 | 2000 年以前写的旧代码 | 任何没有测试覆盖的代码，无论昨天写的还是 20 年前写的 |\n| Seam（接缝） | 在不修改代码本身的情况下改变代码行为的地方 | 只有接口层是接缝 | 任何可以被『截断』的依赖点都是接缝 |\n| Characterization Test（感知测试） | 用来捕获当前行为的测试，而非验证预期行为 | = 单元测试 | 不验证『正确性』，只验证『当前行为是否改变』 |\n| Sprout Method/Class | 在遗留代码中『发芽』新方法和新类 | 直接修改旧方法 | 在旧代码旁加新代码，形成独立单元后再逐步替换 |\n| 依赖解耦 | 将强耦合的模块拆分，使其可单独测试 | = 重写 | 最小侵入式地将依赖点变成可注入/可模拟 |\n\n**全书的核心方法论流程**：\n1. 找到你要改的代码位置\n2. 在它周围找到 Seam（接缝）\n3. 通过 Seam 插入感知测试\n4. 运行测试确认掌握了当前行为\n5. 在测试保护下进行修改\n6. 扩展测试覆盖\n7. 清理和重构"
+      },
+      {
+        "level": 1,
+        "title": "第二层：子维度拆解",
+        "content": "#### 维度一：Seam（接缝）——在不改代码的情况下改变行为的点\n\nSeam 是全书最核心的概念。一个 Seam 是『一个你可以在不修改那个位置的代码本身的情况下改变程序行为的地方』。\n\n| Seam 类型 | 例子 | 何时使用 |\n|-----------|------|----------|\n| Preprocessor Seam（C/C++） | #ifdef、#define | C/C++ 中条件编译，可以替换实现 |\n| Object Seam（面向对象） | 接口/父类被替换为 mock | Java/C# 中利用多态替换依赖 |\n| Link Seam | 链接时替换库 | 动态链接环境 |\n| Compile Seam | 条件编译、不同的 include 路径 | 多种编译配置 |\n| Runtime Seam | 环境变量、配置参数 | 运行时切换行为 |\n\n**关键洞察**：所有代码都有 Seam。如果你找不到 Seam，说明你对代码的理解还不够深入，或者需要先引入一个 Seam。\n\n#### 维度二：感知测试（Characterization Tests）\n\n感知测试与普通测试完全不同。它不是验证『代码应该怎样』，而是捕捉『代码现在怎样』。\n\n编写感知测试的步骤：\n1. 在测试框架中调用你要测试的代码片段\n2. 获取输出结果\n3. 把结果断言写入测试\n4. 确认测试通过\n5. **重要**：查看输出值，判断它是否合理。如果不合理，说明这里有 bug，但你先把当前的『缺陷行为』记录下来，稍后修复\n\n感知测试的价值：当代码的复杂度过高、文档缺失时，你不可能立刻理解所有正确行为，但你可以先锁定当前行为，然后安全地修改它。\n\n#### 维度三：依赖解耦技术——最小侵入式改造\n\nFeathers 反对『大规模重写』和『大刀阔斧的依赖解耦』。他提倡的做法是：\n- **只在需要测试的地方开口子**：不需要把整个系统变得完美可测，只需要让『你要修改的那一块』可测\n- **用 Sprout Method 而不是修改现有方法**：在旧方法中调用新方法，新方法上有完整的测试\n- **用 Extract Interface 拆解依赖**：如果你需要 mock 一个 class，先把它的接口抽出来\n- **用 Parameterize Constructor**：让构造函数接受依赖项（从而可以传入 mock）\n\n#### 维度四：修改策略——四个基本操作\n\nFeathers 识别了修改遗留代码的四种基本操作：\n1. **Sprout Method**：在旧方法中加一行对新方法的调用，新方法有完整测试\n2. **Sprout Class**：在一个旧类中创建新类实例，新类可独立测试\n3. **Wrap Method**：包裹现有方法，在其前后加入新逻辑\n4. **Wrap Class**：使用装饰器模式包裹旧类\n\n| 策略 | 适用场景 | 风险 | 测试覆盖率 |\n|------|----------|------|-----------|\n| Sprout Method | 在现有方法中加小段新逻辑 | 低（不改旧代码） | 新代码 100% |\n| Sprout Class | 新职责可以用独立类表示 | 低（不修改旧类） | 新类 100% |\n| Wrap Method | 需要在旧方法前后添加逻辑 | 中（调用链变化） | 旧行为 + 新行为 |\n| Wrap Class | 需要给旧类附加横切关注点 | 中（接口一致性） | 通过代理将覆盖测试 |\n\n#### 维度五：依赖解耦模式\n\n| 模式 | 描述 | 使用场景 |\n|------|------|----------|\n| Extract Interface | 将依赖类的接口抽取出来，生产代码依赖接口，测试用 mock | 类的依赖是具体类而不是接口 |\n| Adapt Parameter | 将创建依赖的代码封装成一个参数传入 | 构造函数中 new 了外部依赖 |\n| Break Out Method Object | 将长方法变为一个独立类的方法 | 极致复杂的巨型方法 |\n| Pull Up Feature | 将特征移到父类或单独类 | 子类中用不到的依赖阻碍测试 |\n| Subclass and Override Method | 子类化并覆写方法以简化测试 | 虚拟方法可以被重写 |\n| Null Object Pattern | 用空对象替换真实对象以简化测试 | 依赖产生副作用 |"
+      },
+      {
+        "level": 1,
+        "title": "第三层：核心模型与公式",
+        "content": "#### 遗留代码修改的风险公式\n\n修改风险 = (代码行数 × 耦合度) / 测试覆盖率\n\n- 测试覆盖率为 0 时，修改风险无限大\n- 改动越小，耦合度越低，风险越低\n- 感知测试是最快的『从 0 到覆盖』手段\n\n#### 感知测试编写框架\n\n```\n@Test\npublic void testExistingMethodBehavior() {\n    // Step 1: Setup - 准备输入\n    LegacyObject obj = new LegacyObject();\n    \n    // Step 2: Exercise - 调用待测方法\n    int result = obj.calculateSomething(42);\n    \n    // Step 3: Capture - 首次运行后填入实际值\n    assertEquals(137, result);\n    \n    // Step 4: Verify - 确认值合理，然后提交\n    // 如果 137 看起来不对——那这就是一个已知 bug，你稍后修\n}\n```\n\n注意：感知测试的策略是在首次运行时先输出实际值，手动确认看起来合理，然后把实际值写进断言。\n\n#### 依赖解耦优先级\n\n1. 找到你要修改的代码\n2. 找出它依赖了哪些外部资源（DB、文件系统、网络、全局变量）\n3. 找出最小的『开口子』方式——只解耦需要模拟的那部分\n4. 使用 Seam 来插入测试\n5. 不要一次解耦所有东西\n\n#### Feathers 修改流程总图\n\n```\n原始代码（无测试）\n    |\n    v\n识别修改点 → 找 Seam → 写感知测试覆盖当前行为\n    |                                   |\n    v                                   v\n解耦依赖 <———— 如果 Seam 不够用          |\n    |                                   |\n    v                                   v\n添加修改逻辑 ←—————————— 在测试保护下修改 ——\n    |\n    v\n运行感知测试确保行为不变\n    |\n    v\n添加新测试验证新功能\n    |\n    v\n可选：重构被修改区域\n```\n\n#### 避免的修改策略\n\n| 陷阱 | 为什么有害 | 替代方案 |\n|------|-----------|----------|\n| 大规模重写 | 高风险、高成本、业务不可接受 | 绞杀者模式 + Sprout 模式 |\n| 不加测试直接修改 | 不知道破坏了什么 | 先写感知测试再改 |\n| 试图一次性理解全部 | 耗时且难以做到 | 只理解要修改的部分 |\n| 追求完美测试覆盖 | 成本过高，难以推进 | 只覆盖要修改的路徑 |\n| 解耦所有依赖再动手 | 永远等不到那一天 | 解耦最小必要依赖 |"
+      },
+      {
+        "level": 1,
+        "title": "第四层：正反案例",
+        "content": "### 正面案例A：Sprout Method 拯救不可测试的巨方法\n\n场景：一个 800 行的 C# 方法，处理订单验证、价格计算、库存扣减和物流调度——全部糅在一起。\n\n做法：Feathers 没有尝试拆解这个方法。他找到需要添加的新功能（促销折扣），在最外层写了一个 Sprout Method（applyPromotion），然后在巨方法末尾调用它。\n\n- Sprout Method 有完整的单元测试\n- 原有代码零改动\n- 如果促销折扣有 bug，只影响 Sprout Method，不影响旧逻辑\n\n结果：团队快速交付了新功能，并且后续每次修改都可以用同样的方式——在旧代码旁边长出新代码。\n\n### 正面案例B：感知测试帮助团队确认重构安全\n\n场景：团队需要把 EJB 2.x 迁移到 Spring，但业务逻辑散布在 Session Bean 中。\n\n做法：\n1. 对每个 Session Bean 编写感知测试——记录其输入输出行为\n2. 将这些测试作为安全网\n3. 逐个替换 Bean 的内部实现（从 EJB API 迁移到 POJO + Spring）\n4. 每替换一个就运行感知测试确认行为未变\n\n结果：100+ 个 Session Bean 在 6 个月内完成迁移，零生产事故。\n\n### 反面案例A：不加测试的大重构\n\n场景：一个新团队接手了一个 Python 遗留系统，代码 15 万行，没有测试。团队决定『两周重构』。\n\n做法：直接修改核心数据库访问层，试图引入 ORM。\n\n结果：\n- 改完后发现 47 个地方依赖于旧调用方式\n- 没有测试能捕捉到回归\n- 上线后崩溃，回滚花了 3 天\n- 最终不得不放弃了 ORM 迁移\n\n教训：没有安全网的修改就是赌博。感知测试虽然不能保证完美，但可以让回滚更早、风险更可控。\n\n### 反面案例B：试图一次性解耦所有依赖\n\n场景：一个 Java 遗留模块与数据库深度耦合。团队决定『先把所有 DAO 依赖注入化』。\n\n做法：花了 4 周修改了所有构造函数、配置文件、初始化代码。\n\n结果：\n- 引入了 3 个新 bug（配置错误导致的运行时 NPE）\n- 4 周内零业务交付\n- 管理层问『你们在做什么？为什么 4 周没有产出？』\n\n教训：只解耦你要测试依赖的那部分，而不是『重构整个依赖图』。最小侵入式改造才是可持续的。\n\n### 反面案例C：写测试但不明白当前行为\n\n场景：团队被要求给遗留模块加测试。成员写了很多单元测试，但断言都是『猜的』——他们以为代码应该怎么工作，就写了什么断言。\n\n结果：\n- 测试覆盖率达到 70%，但其中一半『测试』在开发环境就失败了\n- 因为旧代码中其实有『缺陷』，但生产环境依赖这些缺陷正常工作\n- 团队花了大量时间『修测试』而不是『修代码』\n\n教训：先写感知测试（Capture output, then assert），而不是先写『我认为应该怎样』的测试。感知测试告诉你代码现在是什么样，而不是你觉得它应该什么样。"
+      },
+      {
+        "level": 1,
+        "title": "第五层：核心工具与技术清单",
+        "content": "#### 工具一：感知测试生成器\n\n```python\ndef characterize(self, input_value):\n    # Step 1: 运行旧代码\n    result = legacy_object.process(input_value)\n    # Step 2: 打印结果\n    print(f\"Characterized: input={input_value}, output={result}\")\n    # Step 3: 返回结果供断言用\n    return result\n```\n\n首次运行时只看输出，手动确认合理，然后写入测试。\n\n#### 工具二：Seam 查找清单\n\n检查代码中是否存在以下 Seam：\n- [ ] 对象是否通过接口或抽象类引用？→ Object Seam\n- [ ] 是否有条件编译指令？→ Preprocessor Seam\n- [ ] 是否有动态链接/插件加载？→ Link Seam\n- [ ] 是否有环境变量或运行时配置？→ Runtime Seam\n- [ ] 是否可以通过子类化并覆写方法？→ Subclass Seam\n- [ ] 是否可以通过参数化构造函数或方法？→ Parameter Seam\n\n#### 工具三：最小解耦决策树\n\n```\n你要改的代码依赖外部资源吗？\n├── 不依赖 → 直接写单元测试\n└── 依赖 →\n    ├── 依赖是一个具体的类？ → Extract Interface\n    ├── 依赖在构造函数中 new 的？ → Parameterize Constructor\n    ├── 依赖是静态方法调用？ → 用 Adapter Pattern 包裹\n    ├── 依赖在长方法中？ → Break Out Method Object\n    └── 依赖是全局变量/单例？ → 先 Wrap Method 再逐步替换\n```\n\n#### 工具四：遗留代码修改前 Checklist\n\n- [ ] 我找到了要修改的代码位置\n- [ ] 我找到了修改点的 Seam\n- [ ] 我编写了感知测试验证当前行为\n- [ ] 感知测试绿色通过\n- [ ] 我理解了输出值是否合理\n- [ ] 我选择了合适的修改策略（Sprout/Wrap）\n- [ ] 我写了新功能对应的单元测试\n- [ ] 我重新运行所有感知测试（行为保持不变）\n- [ ] 我运行了所有新测试（新功能正常工作）\n- [ ] 可选：重构覆盖区域，让代码更清晰\n\n#### 工具五：常见遗留代码问题及应对\n\n| 问题 | 现象 | Feathers 推荐方案 |\n|------|------|-------------------|\n| 巨方法 (God Method) | 一个方法 > 100 行，多个职责 | Break Out Method Object |\n| 耦合全局状态 | 依赖全局变量/单例 | Wrap Method + 参数化 |\n| 不可测试的构造 | 构造函数中 new 了外部依赖 | Parameterize Constructor |\n| EJB/Servlet 依赖 | 代码紧耦合容器 API | Extract Interface + Separated Interface |\n| 数据库嵌入逻辑 | SQL 与业务逻辑混合 | Sprout Method + 数据访问层抽取 |\n| 静态方法四处调用 | 到处调用静态工具方法 | Sprout Class + Facade |\n| 依赖链条过长 | A→B→C→D→数据库 | 在 A 处直接 Mock D 的接口 |\n| 没有文档 | 注释为零 | 感知测试即文档——它记录了实际行为 |"
+      },
+      {
+        "level": 1,
+        "title": "第六层：应用清单",
+        "content": "### 个人（开发者/技术负责人）\n- [ ] 找到你当前维护的最没有测试覆盖的模块\n- [ ] 明天花 30 分钟为它写一个感知测试——从最简单的入口函数开始\n- [ ] 把你常用的遗留代码修改步骤整理成 checklist\n- [ ] 下次修改遗留代码前，先问自己『我找到 Seam 了吗？』\n- [ ] 学会在团队 code review 中识别『不安全的重构』\n\n### 团队（工程团队）\n- [ ] 在所有遗留模块的 CI pipeline 中加入感知测试\n- [ ] 团队的『技术债改进』列表中每一项都必须先写感知测试\n- [ ] 建立『绿区』概念：每次修改都必须带着至少一个感知测试提交\n- [ ] 不要把测试覆盖率的『覆盖率』和『安全网』混为一谈——感知测试才是真正的安全网\n- [ ] 每月一次『遗留代码改造工作坊』——选一个模块，集体写感知测试并安全修改\n\n### 组织（公司层面）\n- [ ] 是否允许团队在 sprint 中安排『感知测试写作时间』？\n- [ ] 是否认可『不写测试的重构是技术债的加速器』？\n- [ ] Tech Lead 晋升标准是否包含了『遗留代码安全改造』能力？\n- [ ] 项目预算中是否为『遗留系统改造』分配了专门的工程时间？\n- [ ] 技术评审中是否要求『修改遗留代码时附上测试覆盖率变化报告』？\n\n### 遗留代码改造行动路线图\n\n| 阶段 | 时间 | 目标 | 可交付物 |\n|------|------|------|----------|\n| Phase 0: 摸底 | 1 周 | 识别系统中无测试代码的范围 | CI 加感知测试覆盖率报告 |\n| Phase 1: 关键路径 | 2 周 | 覆盖生产环境的 Top 5 关键流程 | 每个关键流程 1-2 个感知测试 |\n| Phase 2: 绿区扩展 | 4 周 | 每次修改都带测试 | 新代码 100% 测试通过 |\n| Phase 3: 绿区合并 | 持续 | 逐步降低无测试代码的比例 | 季度覆盖率提升报告 |\n| Phase 4: 预防 | 持续 | 新代码不允许成为遗留代码 | 新功能必须带测试 |"
+      },
+      {
+        "level": 1,
+        "title": "第七层：原书金句",
+        "content": "1. \"Legacy code is code without tests.\"\n   （遗留代码就是没有测试的代码。——这是全书最著名的一句话。）\n\n2. \"The first thing you should do when you get code that doesn't have tests is write tests for it.\"\n   （当你拿到没有测试的代码时，第一件事就是给它写测试。）\n\n3. \"A seam is a place where you can alter behavior in your program without editing in that place.\"\n   （接缝是一个你可以在不编辑代码本身的情况下改变程序行为的地方。）\n\n4. \"Characterization tests are tests that characterize the actual behavior of a piece of code.\"\n   （感知测试是描述代码实际行为的测试。）\n\n5. \"Don't try to understand everything. Just understand enough to change safely.\"\n   （不要试图理解一切。只要理解到能安全修改的程度就够了。）\n\n6. \"Code without tests is not great code. It's legacy code.\"\n   （没有测试的代码不是好代码，它就是遗留代码。）\n\n7. \"When you add a new feature to legacy code, try to add it as a separate unit that can be tested independently.\"\n   （当你在遗留代码中添加新功能时，尽量作为一个可以独立测试的单独单元来添加。）\n\n8. \"The best way to avoid legacy code is to write tests for all of the code you write.\"\n   （避免遗留代码的最佳方法是为你写的所有代码都写测试。）\n\n9. \"Changing legacy code is like doing open-heart surgery. You need the right tools, a steady hand, and a safety net.\"\n   （修改遗留代码就像做开胸手术。你需要合适的工具、稳定的双手和一个安全网。）\n\n10. \"You don't have to fix all of the legacy code. You just have to make it so you can safely change the parts you need to change.\"\n    （你不需要修复所有遗留代码。你只需要让需要修改的部分可以被安全地修改。）\n\n11. \"If you can't write a test for code, you don't understand what it does.\"\n    （如果你不能为代码写测试，你就没有理解它的行为。）\n\n12. \"The sprout method technique is a way to add new functionality without modifying existing code.\"\n    （发芽方法技术是一种无需修改现有代码即可添加新功能的方式。）\n\n13. \"Every dependency is a coupling point. The more coupling points you have, the harder it is to test in isolation.\"\n    （每个依赖都是耦合点。耦合点越多，隔离测试就越困难。）\n\n14. \"The hardest part of working with legacy code is often not the technical challenge, but the organizational resistance.\"\n    （遗留代码工作最难的部分通常不是技术挑战，而是组织的阻力。）\n\n15. \"Start small, build safety nets, and expand your coverage incrementally. That's the only sustainable way to tame legacy code.\"\n    （从小处着手，建立安全网，逐步扩大覆盖范围。这是驯服遗留代码唯一可持续的方法。）"
+      },
+      {
+        "level": 1,
+        "title": "第八层：更新日志",
+        "content": "| 日期 | 更新内容 |\n|------|----------|\n| 2026-05-19 | 新增《Working Effectively with Legacy Code》遗留代码工作方法论 |\n| 2026-05-19 | 整理 Seam 概念、感知测试框架、依赖解耦技术、Sprout/Wrap 模式、应用清单与 15 条原书金句 |\n| - | 后续可补：各语言（Java/Python/C++/JavaScript）遗留代码改造的具体代码示例、大型遗留系统渐进改造案例 |"
+      }
+    ],
+    "updates": [
+      {
+        "date": "2026-05-19",
+        "note": "收录新书：Michael Feathers《Working Effectively with Legacy Code》遗留代码工作方法论"
+      }
+    ]
+  }
+}

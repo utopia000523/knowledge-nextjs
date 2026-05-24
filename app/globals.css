@@ -1,26 +1,330 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --kb-bg: #07111f;
+  --kb-surface: rgba(9, 17, 34, 0.72);
+  --kb-surface-strong: rgba(10, 18, 37, 0.92);
+  --kb-border: rgba(148, 163, 184, 0.12);
+  --kb-text-main: #f8fafc;
+  --kb-text-muted: #94a3b8;
+  --kb-indigo: #818cf8;
+  --kb-cyan: #38bdf8;
+  --kb-shadow: 0 24px 80px rgba(2, 8, 23, 0.45);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+* {
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  background:
+    radial-gradient(circle at top, rgba(79, 70, 229, 0.16), transparent 28%),
+    radial-gradient(circle at bottom right, rgba(14, 165, 233, 0.14), transparent 24%),
+    linear-gradient(180deg, #07111f 0%, #08101d 38%, #0b1324 100%);
+  color: var(--kb-text-main);
+  min-height: 100vh;
+}
+
+::selection {
+  background: rgba(129, 140, 248, 0.35);
+  color: white;
+}
+
+.kb-shell {
+  isolation: isolate;
+}
+
+.kb-grid {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  opacity: 0.35;
+  background-image:
+    linear-gradient(rgba(148, 163, 184, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.08) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(circle at center, black, transparent 82%);
+  pointer-events: none;
+}
+
+.kb-orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(80px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.kb-orb-primary {
+  top: 120px;
+  right: 8%;
+  height: 260px;
+  width: 260px;
+  background: rgba(99, 102, 241, 0.18);
+}
+
+.kb-orb-secondary {
+  left: 24%;
+  bottom: 10%;
+  height: 320px;
+  width: 320px;
+  background: rgba(34, 211, 238, 0.12);
+}
+
+.kb-panel {
+  position: relative;
+  border: 1px solid var(--kb-border);
+  border-radius: 28px;
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.82), rgba(7, 12, 24, 0.72));
+  backdrop-filter: blur(24px);
+  box-shadow: var(--kb-shadow);
+}
+
+.kb-stat-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 76px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
+  padding: 0.65rem 0.8rem;
+  backdrop-filter: blur(18px);
+}
+
+.kb-stat-label {
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(226, 232, 240, 0.6);
+}
+
+.kb-stat-value {
+  margin-top: 0.35rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.kb-stat-foot {
+  margin-top: 0.2rem;
+  font-size: 0.68rem;
+  color: rgba(191, 219, 254, 0.72);
+}
+
+/* 自定义滚动条 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.26);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(129, 140, 248, 0.45);
+}
+
+/* Markdown prose 样式 */
+.prose {
+  line-height: 1.8;
+}
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4 {
+  scroll-margin-top: 96px;
+}
+
+.prose h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1rem;
+  margin-top: 1.6rem;
+}
+
+.prose h2 {
+  font-size: 1.28rem;
+  font-weight: 600;
+  color: #c7d2fe;
+  margin-bottom: 0.75rem;
+  margin-top: 1.3rem;
+}
+
+.prose h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #bfdbfe;
+  margin-bottom: 0.55rem;
+  margin-top: 1rem;
+}
+
+.prose h4 {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #d8b4fe;
+  margin-bottom: 0.5rem;
+  margin-top: 0.8rem;
+}
+
+.prose p,
+.prose ul,
+.prose ol,
+.prose li,
+.prose td {
+  color: #d7e1ee;
+}
+
+.prose p {
+  margin-bottom: 0.9rem;
+}
+
+.prose ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 0.9rem;
+}
+
+.prose ol {
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+  margin-bottom: 0.9rem;
+}
+
+.prose li {
+  margin-bottom: 0.3rem;
+}
+
+.prose strong {
+  color: #fde68a;
+  font-weight: 600;
+}
+
+.prose em {
+  color: #bfdbfe;
+}
+
+.prose code {
+  background: rgba(99, 102, 241, 0.16);
+  padding: 0.15rem 0.42rem;
+  border-radius: 0.4rem;
+  font-size: 0.875em;
+  color: #d8b4fe;
+}
+
+.prose pre {
+  background: rgba(2, 6, 23, 0.72);
+  border: 1px solid rgba(148, 163, 184, 0.14);
+  padding: 1rem;
+  border-radius: 0.9rem;
+  overflow-x: auto;
+  margin-bottom: 1rem;
+}
+
+.prose pre code {
+  background: none;
+  padding: 0;
+  color: #e8e8e8;
+}
+
+.prose blockquote {
+  border-left: 3px solid rgba(129, 140, 248, 0.7);
+  background: rgba(15, 23, 42, 0.4);
+  padding: 0.9rem 1rem;
+  border-radius: 0.9rem;
+  color: #cbd5e1;
+  margin-bottom: 1rem;
+}
+
+.prose a {
+  color: #93c5fd;
+  text-decoration: underline;
+  text-decoration-color: rgba(147, 197, 253, 0.45);
+}
+
+.prose hr {
+  border-color: rgba(255, 255, 255, 0.08);
+  margin: 1.5rem 0;
+}
+
+.prose table {
+  width: 100%;
+  min-width: 640px;
+  border-collapse: collapse;
+  margin-bottom: 0;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  background: rgba(15, 23, 42, 0.5);
+}
+
+.kb-table-wrap {
+  margin-bottom: 1rem;
+  overflow-x: auto;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+  background: rgba(2, 6, 23, 0.35);
+}
+
+.kb-markdown .kb-table-wrap + * {
+  margin-top: 1rem;
+}
+
+.kb-mermaid {
+  margin-bottom: 1rem;
+  overflow-x: auto;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+  background: rgba(2, 6, 23, 0.5);
+  padding: 1rem;
+}
+
+.kb-mermaid svg {
+  display: block;
+  min-width: 640px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.kb-mermaid-fallback {
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.prose th {
+  background: rgba(99, 102, 241, 0.18);
+  padding: 0.7rem;
+  text-align: left;
+  color: #c7d2fe;
+}
+
+.prose td {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 0.7rem;
+}
+
+@media (max-width: 1280px) {
+  .kb-orb-primary,
+  .kb-orb-secondary {
+    opacity: 0.65;
+  }
+}
+
+@media (max-width: 1024px) {
+  body {
+    background-attachment: fixed;
+  }
 }

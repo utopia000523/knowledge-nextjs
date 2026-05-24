@@ -1,0 +1,329 @@
+'use client';
+
+import { useEffect, useState } from 'react';
+import { marked } from 'marked';
+
+interface Article {
+  id: string;
+  category: string;
+  title: string;
+  keywords: string[];
+  summary: string;
+  importance: number;
+  learned_at: string;
+  source: string;
+  file: string;
+}
+
+interface ArticleDetailProps {
+  article: Article;
+  onClose: () => void;
+}
+
+// 读后感管理
+function getReviews(): Record<string, { content: string; wordCount: number; createdAt: string }> {
+  const stored = localStorage.getItem('knowledge_reviews');
+  return stored ? JSON.parse(stored) : {};
+}
+
+function saveReviews(reviews: Record<string, any>) {
+  localStorage.setItem('knowledge_reviews', JSON.stringify(reviews));
+}
+
+function countWords(text: string): number {
+  if (!text) return 0;
+  const chinese = (text.match(/[\u4e00-\u9fa5]/g) || []).length;
+  const english = text.replace(/[\u4e00-\u9fa5]/g, '').split(/\s+/).filter(w => w.length > 0).length;
+  return chinese + english;
+}
+
+// 从内容中提取目录结构
+function extractTOC(content: any): { key: string; title: string; level: number }[] {
+  const toc: { key: string; title: string; level: number }[] = [];
+  
+  if (!content || typeof content !== 'object') return toc;
+  
+  if (content.layers && Array.isArray(content.layers)) {
+    content.layers.forEach((item: any, idx: number) => {
+      if (item.title) {
+        toc.push({ key: `layer-${idx}`, title: item.title, level: item.level || 1 });
+      }
+    });
+  }
+  
+  Object.entries(content).forEach(([key, value], idx) => {
+    if (key !== 'layers' && key !== 'updates') {
+      const title = typeof value === 'string' && value.length < 50 
+        ? value 
+        : formatKey(key);
+      toc.push({ key: `section-${key}`, title, level: 1 });
+    }
+  });
+  
+  return toc;
+}
+
+function formatKey(key: string): string {
+  return key.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+}
+
+// 渲染内容
+function renderContent(obj: any, depth: number = 0): React.ReactNode {
+  if (!obj) return null;
+  
+  if (typeof obj === 'string') {
+    // 渲染 markdown
+    const html = marked.parse(obj) as string;
+    return (
+      <div 
+        className="text-gray-300 leading-relaxed mb-2 prose prose-invert prose-sm max-w-none"
+        dangerouslySetInnerHTML={{ __html: html }}
+      />
+    );
+  }
+  
+  if (Array.isArray(obj)) {
+    if (obj[0] && obj[0].title && obj[0].level !== undefined) {
+      return (
+        <div className="space-y-4">
+          {obj.map((item, idx) => (
+            <div key={idx} id={`layer-${idx}`} className="mb-4">
+              <h4 className={`font-semibold mb-2 ${
+                item.level === 1 ? 'text-lg text-white' :
+                item.level === 2 ? 'text-base text-indigo-300' :
+                'text-sm text-purple-300'
+              }`}>
+                {item.title}
+              </h4>
+              {renderContent(item.content, depth + 1)}
+            </div>
+          ))}
+        </div>
+      );
+    }
+    
+    return (
+      <ul className="list-disc list-inside text-gray-300 mb-2 pl-4">
+        {obj.map((item, idx) => (
+          <li key={idx} className="mb-1">{renderContent(item, depth + 1)}</li>
+        ))}
+      </ul>
+    );
+  }
+  
+  if (typeof obj === 'object') {
+    return (
+      <div className="mb-4">
+        {Object.entries(obj).map(([key, value], idx) => (
+          <div key={idx} id={`section-${key}`} className="mb-3">
+            <h4 className="text-indigo-300 font-semibold mb-2">{formatKey(key)}</h4>
+            {renderContent(value, depth + 1)}
+          </div>
+        ))}
+      </div>
+    );
+  }
+  
+  return null;
+}
+
+export default function ArticleDetail({ article, onClose }: ArticleDetailProps) {
+  const [content, setContent] = useState<any>(null);
+  const [loading, setLoading] = useState(true);
+  const [activeSection, setActiveSection] = useState<string | null>(null);
+  const [showReviewEditor, setShowReviewEditor] = useState(false);
+  const [reviewContent, setReviewContent] = useState('');
+  const [reviews, setReviews] = useState<Record<string, any>>({});
+  const [hasReview, setHasReview] = useState(false);
+
+  useEffect(() => {
+    document.body.style.overflow = 'hidden';
+    return () => { document.body.style.overflow = ''; };
+  }, []);
+
+  // 加载内容和读后感
+  useEffect(() => {
+    const loadedReviews = getReviews();
+    setReviews(loadedReviews);
+    setHasReview(Boolean(loadedReviews[article.id]));
+    setReviewContent(loadedReviews[article.id]?.content || '');
+    
+    const loadContent = async () => {
+      try {
+        const res = await fetch(`/data/${article.file}`);
+        if (res.ok) {
+          const data = await res.json();
+          setContent(data.content || data.methodology || data);
+        }
+      } catch (e) {
+        setContent(article.summary);
+      }
+      setLoading(false);
+    };
+    loadContent();
+  }, [article]);
+
+  const tocItems = extractTOC(content);
+
+  const scrollToSection = (key: string) => {
+    setActiveSection(key);
+    const el = document.getElementById(key);
+    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
+  const importanceStars = (rating: number) => {
+    const full = Math.floor(rating);
+    const half = rating - full >= 0.5;
+    return '★'.repeat(full) + (half ? '☆' : '') + '☆'.repeat(5 - full - (half ? 1 : 0));
+  };
+
+  // 保存读后感
+  const saveReview = () => {
+    const wordCount = countWords(reviewContent);
+    const newReviews = {
+      ...reviews,
+      [article.id]: {
+        content: reviewContent,
+        wordCount,
+        createdAt: new Date().toISOString()
+      }
+    };
+    setReviews(newReviews);
+    saveReviews(newReviews);
+    setHasReview(Boolean(reviewContent));
+    setShowReviewEditor(false);
+  };
+
+  // 删除读后感
+  const deleteReview = () => {
+    const newReviews = { ...reviews };
+    delete newReviews[article.id];
+    setReviews(newReviews);
+    saveReviews(newReviews);
+    setHasReview(false);
+    setReviewContent('');
+    setShowReviewEditor(false);
+  };
+
+  useEffect(() => {
+    const handleEsc = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') onClose();
+    };
+    window.addEventListener('keydown', handleEsc);
+    return () => window.removeEventListener('keydown', handleEsc);
+  }, [onClose]);
+
+  const wordCount = countWords(reviewContent);
+
+  return (
+    <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-8 overflow-hidden"
+      onClick={(e) => { if (e.target === e.currentTarget) onClose(); }}>
+      
+      <div className="max-w-5xl w-full bg-[rgba(15,20,35,0.95)] rounded-2xl border border-white/10 max-h-[90vh] relative flex">
+        {/* 目录 */}
+        {tocItems.length > 0 && (
+          <div className="w-[180px] bg-black/30 border-r border-white/10 p-4 overflow-y-auto shrink-0">
+            <h3 className="text-xs font-semibold text-gray-500 mb-3 uppercase">目录</h3>
+            <div className="space-y-1">
+              {tocItems.map((item) => (
+                <button
+                  key={item.key}
+                  onClick={() => scrollToSection(item.key)}
+                  className={`w-full text-left px-3 py-2 rounded text-sm transition-all ${
+                    activeSection === item.key
+                      ? 'bg-indigo-500/30 text-indigo-300'
+                      : 'text-gray-400 hover:bg-white/10 hover:text-white'
+                  }`}
+                >
+                  {item.title}
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* 内容 */}
+        <div className="flex-1 p-6 overflow-y-auto relative">
+          <button onClick={onClose} className="absolute top-4 right-4 text-gray-400 hover:text-white text-xl">✕</button>
+          
+          <h2 className="text-xl font-bold text-white mb-4 pr-8">{article.title}</h2>
+
+          <div className="flex flex-wrap gap-2 mb-4 text-sm">
+            <span className="px-2 py-1 rounded bg-yellow-500/20 text-yellow-400">{importanceStars(article.importance)}</span>
+            <span className="px-2 py-1 rounded bg-indigo-500/20 text-indigo-300">📁 {article.category}</span>
+            <span className="px-2 py-1 rounded bg-gray-700/50 text-gray-400">📅 {article.learned_at}</span>
+            {hasReview && <span className="px-2 py-1 rounded bg-green-500/20 text-green-400">📝已写读后感</span>}
+          </div>
+
+          {/* 读后感按钮 */}
+          <button
+            onClick={() => setShowReviewEditor(true)}
+            className={`mb-4 text-sm px-4 py-2 rounded transition-all ${
+              hasReview 
+                ? 'bg-green-500/20 text-green-400 hover:bg-green-500/30' 
+                : 'bg-indigo-500/20 text-indigo-300 hover:bg-indigo-500/30'
+            }`}
+          >
+            {hasReview ? '查看/编辑读后感' : '写读后感'}
+          </button>
+
+          <div className="flex flex-wrap gap-2 mb-6">
+            {article.keywords.map((kw, idx) => (
+              <span key={idx} className="px-2 py-1 rounded bg-purple-500/20 text-purple-300 text-xs">{kw}</span>
+            ))}
+          </div>
+
+          <div className="mb-6">
+            {loading ? <p className="text-gray-400">加载中...</p> : renderContent(content)}
+          </div>
+
+          <div className="text-xs text-gray-500 pt-4 border-t border-white/10">
+            来源: {article.source}
+          </div>
+        </div>
+      </div>
+
+      {/* 读后感编辑器弹窗 */}
+      {showReviewEditor && (
+        <div className="fixed inset-0 bg-black/90 z-[60] flex items-center justify-center p-8">
+          <div className="max-w-2xl w-full bg-[rgba(15,20,35,0.95)] rounded-2xl border border-white/10 p-6">
+            <h3 className="text-lg font-bold text-white mb-4">读后感 - {article.title}</h3>
+            
+            <textarea
+              value={reviewContent}
+              onChange={(e) => setReviewContent(e.target.value)}
+              className="w-full h-[300px] p-4 rounded-lg bg-black/30 border border-white/10 text-gray-300 resize-none focus:border-indigo-500/50 focus:outline-none"
+              placeholder="写下你的读后感..."
+            />
+            
+            <div className="flex justify-between items-center mt-4">
+              <span className="text-sm text-gray-500">字数: {wordCount}</span>
+              <div className="flex gap-2">
+                {hasReview && (
+                  <button
+                    onClick={deleteReview}
+                    className="px-4 py-2 rounded bg-red-500/20 text-red-400 hover:bg-red-500/30 text-sm"
+                  >
+                    删除
+                  </button>
+                )}
+                <button
+                  onClick={() => setShowReviewEditor(false)}
+                  className="px-4 py-2 rounded bg-gray-700/50 text-gray-400 hover:bg-gray-700 text-sm"
+                >
+                  取消
+                </button>
+                <button
+                  onClick={saveReview}
+                  className="px-4 py-2 rounded bg-indigo-500/30 text-indigo-300 hover:bg-indigo-500/40 text-sm"
+                >
+                  保存
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}

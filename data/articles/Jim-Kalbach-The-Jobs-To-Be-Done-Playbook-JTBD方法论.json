@@ -1,0 +1,89 @@
+{
+  "id": "Jim-Kalbach-The-Jobs-To-Be-Done-Playbook-JTBD方法论",
+  "category": "产品设计",
+  "title": "Jim Kalbach《The Jobs To Be Done Playbook》JTBD方法论",
+  "keywords": [
+    "Jobs To Be Done",
+    "JTBD",
+    "Jim Kalbach",
+    "Job Map",
+    "Desired Outcomes",
+    "Job Stories",
+    "Customer Progress"
+  ],
+  "summary": "**核心主题**：以客户想完成什么进展为中心 × Job Map × Desired Outcomes × Job Stories × 用需求而非功能来驱动产品设计与增长。",
+  "importance": 5,
+  "learned_at": "2026-05-13",
+  "source": "Jim Kalbach《The Jobs To Be Done Playbook: Align Your Markets, Organization, and Strategy Around Customer Needs》(2020)",
+  "content": {
+    "core_formula": "增长质量 = 选对客户进展（Job） × 看清任务步骤（Job Map） × 识别成功标准（Desired Outcomes） × 写成可执行叙述（Job Stories） × 让产品与团队围绕需求而非功能对齐\n\nJTBD 关注的不是用户是谁，而是用户试图取得什么进展，以及在什么情境下会雇用一个产品。",
+    "layers": [
+      {
+        "level": 1,
+        "title": "概念定义",
+        "content": "**《The Jobs To Be Done Playbook》试图把常被讲得很抽象的 JTBD，重新整理成一套团队可操作的工作方法。** Product School 对 Jim Kalbach 的访谈强调：JTBD 帮助团队不只解决一个表面问题，而是先判断真正该解决的问题是什么；Rosenfeld Media 对本书的介绍则强调，Kalbach 试图把 JTBD 与用户体验、策略和跨团队协作连接起来。\n\n| 概念 | 英文 | 定义 | 方法论意义 |\n|------|------|------|------------|\n| **工作待完成** | Jobs to Be Done | 客户想在特定情境下完成的进展、任务或改变 | 需求研究的真正对象不是人群标签，而是进展需求 |\n| **雇用/解雇** | Hire / Fire | 客户会雇用某个产品来完成任务，也会在不再适配时解雇它 | 竞争对手不仅是同类产品，也可能是替代方案或旧习惯 |\n| **Job Map** | Job Map | 把客户完成某项任务的全过程拆成若干步骤 | 帮团队发现流程摩擦点与机会点 |\n| **Desired Outcomes** | 期望结果 | 客户判断这件事做得好不好的成功标准 | 帮团队把模糊需求变成可排序、可验证的结果指标 |\n| **Job Story** | 工作叙事 | 当……我想……以便…… | 把触发情境、动机和期待结果写清楚 |\n| **Customer Progress** | 客户进展 | 客户从现状走向更好状态的迁移 | 解释为什么用户会改变行为、切换工具或付费 |\n\n**一句话定义**：\n> JTBD 不是研究客户喜欢什么功能，而是研究客户在什么情境下，想通过什么手段，让自己向前推进一步。"
+      },
+      {
+        "level": 1,
+        "title": "核心模型：从 Job 到产品决策",
+        "content": "```text\n情境（When）\n→ 目标进展（Job）\n→ 任务步骤（Job Map）\n→ 期望结果（Desired Outcomes）\n→ 解决方案设计（Product / Service / Process）\n→ 采用与切换（Hire / Fire）\n```\n\n**五个判断问题**：\n1. 客户到底想完成哪件事？\n2. 这件事是在哪种情境下发生的？\n3. 客户完成它时会经历哪些步骤？\n4. 每一步最在意的成功标准是什么？\n5. 现有产品、替代品和手工流程分别哪里做得不好？"
+      },
+      {
+        "level": 1,
+        "title": "子维度拆解：JTBD 的五个工作层",
+        "content": "| 子维度 | 关键问题 | 常用方法 | 常见误区 |\n|--------|----------|----------|----------|\n| **Job Definition** | 客户真正想完成什么进展？ | 深访、复盘触发事件、替代方案分析 | 把想要某功能误当成 Job |\n| **Job Map** | 客户完成这项任务有哪些步骤？ | 任务流程拆解、旅程对照、摩擦点标注 | 只画公司流程，不画客户任务流程 |\n| **Desired Outcomes** | 用户如何定义做得更快、更稳、更省？ | 结果语句、重要性与满意度排序 | 只收集意见，不收集结果标准 |\n| **Job Stories** | 什么情境会触发需求？ | When... I want to... so I can... | 写成泛泛 Persona 口号 |\n| **Portfolio Alignment** | 市场、产品、销售、成功团队是否围绕同一 Job 工作？ | 统一词汇、分段策略、胜负理由回放 | 每个部门都从自己的流程看客户 |\n\n**核心提醒**：JTBD 不是单一访谈技巧，而是一种让市场、产品与组织围绕客户进展统一语言的框架。"
+      },
+      {
+        "level": 2,
+        "title": "维度一：Job Definition —— 先定义进展，不先定义功能",
+        "content": "客户说“我需要一个仪表盘”，往往只是方案语言；背后的 Job 可能是“我想更快发现异常并决定先处理哪里”。\n\n**判断标准**：\n- 好的 Job 与特定功能解耦；\n- 好的 Job 可跨产品、跨替代方案比较；\n- 好的 Job 能解释为何客户会从旧方式切换到新方式。\n\n**转译示例**：\n- 需求表述：我要 AI 周报生成功能。\n- JTBD 表述：当我周一要向老板汇报时，我想快速整理上周关键变化，以便在 10 分钟内形成可信更新。"
+      },
+      {
+        "level": 2,
+        "title": "维度二：Job Map —— 不是用户旅程，而是任务完成路径",
+        "content": "Kalbach 强调 JTBD 的地图关注客户完成任务的步骤，而不是企业内部接触点。一个通用 Job Map 常可拆为：\n```text\nDefine → Locate → Prepare → Confirm → Execute → Monitor → Modify → Conclude\n```\n\n**价值**：\n- 能发现产品之外的机会，如教育、支持、流程自动化；\n- 能看见需求并不只发生在使用时，还发生在准备、确认、监控和收尾阶段；\n- 能帮助不同部门围绕同一任务步骤协作。"
+      },
+      {
+        "level": 2,
+        "title": "维度三：Desired Outcomes —— 从喜欢不喜欢转向结果好不好",
+        "content": "结果语句通常围绕时间、概率、波动、努力、风险、可预测性。\n\n**典型结果表达**：\n- 最小化完成任务所需时间；\n- 降低关键步骤出错概率；\n- 减少等待、返工和切换成本；\n- 提高结果可预测性与可见性。\n\n**实用公式**：\n```text\n机会度 = 结果的重要性 × 当前不满意度\n```\n若某结果非常重要，但现有解决方案满意度很低，就意味着产品机会较大。"
+      },
+      {
+        "level": 2,
+        "title": "维度四：Job Stories —— 让需求回到触发情境",
+        "content": "Job Story 常用模板：\n```text\nWhen ...\nI want to ...\nSo I can ...\n```\n它比 Persona 更强调触发器与行为动机。\n\n**示例**：\n- 当我在月末做复盘但数据来自多个系统时，\n- 我想先自动汇总异常波动并标出原因假设，\n- 这样我就能把时间花在判断和决策上，而不是整理表格。\n\n**优势**：\n- 适合需求梳理、文案、实验、优先级讨论；\n- 可直接连接产品场景与验收标准。"
+      },
+      {
+        "level": 2,
+        "title": "维度五：组织对齐 —— 用 Job 统一市场、产品与增长",
+        "content": "Rosenfeld Media 对本书的介绍强调，本书不只是访谈手册，而是帮助组织围绕客户需求来对齐市场与策略。\n\n**组织层常见断裂**：\n- 市场团队讲人群；\n- 产品团队讲功能；\n- 销售团队讲异议；\n- 客服团队讲工单；\n- 客户成功团队讲续费。\n\nJTBD 的价值在于把这些碎片重新翻译为：客户试图完成什么进展，哪里被卡住，什么结果最重要。"
+      },
+      {
+        "level": 1,
+        "title": "正反案例",
+        "content": "### 正面案例A：SaaS 报表产品\n团队原本不断追加图表功能，但增长停滞。改用 JTBD 访谈后发现，客户真正的 Job 不是做更漂亮的图，而是在固定汇报场景下快速判断异常并说明原因。于是团队优先做异常摘要、归因提示与汇报模板，试用转付费提升。\n\n### 正面案例B：在线教育产品\n客户表面上说要更多题库，但 Job Map 显示最痛苦步骤是确认自己薄弱点和规划下一小时学什么。产品改做诊断、路径推荐与阶段反馈后，留存优于单纯扩题。\n\n### 正面案例C：企业服务定位\n销售团队总把产品卖成功能清单。用 Job Stories 改写话术后，能围绕触发情境讲清楚什么时候你会需要它，销售转化更稳定。\n\n### 反面案例A：把 Persona 当需求本身\n知道用户是 28 岁运营经理，并不能自动推出她现在要完成什么任务。人口属性不是决策单位。\n\n### 反面案例B：只做访谈摘录，不做 Job Map\n团队收集很多原话，却没有把任务步骤结构化，结果洞察无法进入优先级。\n\n### 反面案例C：把 JTBD 变成口号\n说我们以客户任务为中心，但 roadmap 仍按内部想做的功能排，组织并未真正改变。"
+      },
+      {
+        "level": 1,
+        "title": "应用清单",
+        "content": "### 个人研究者/产品经理\n- [ ] 我记录的是功能诉求，还是背后的 Job？\n- [ ] 我能否说清该 Job 的触发情境？\n- [ ] 我是否画出了客户完成任务的步骤，而不只是点击路径？\n- [ ] 我收集到的是观点，还是结果标准？\n- [ ] 我写出的需求能否转成 Job Story？\n\n### 团队协作层\n- [ ] 访谈纪要是否被整理成 Job Map 与 Desired Outcomes？\n- [ ] roadmap 是否围绕最重要且最不满意的结果项排序？\n- [ ] 销售、成功、产品是否共享同一份 Job 语言？\n- [ ] 需求评审时是否先讨论进展目标，再讨论功能方案？\n\n### 组织层\n- [ ] 细分市场是否基于任务情境，而不只是行业或规模？\n- [ ] 品牌定位是否能回答客户为什么在此刻雇用你？\n- [ ] 客户成功与续费策略是否围绕客户持续完成 Job 的能力构建？\n- [ ] 是否定期复盘客户雇用或解雇原因，更新价值主张？"
+      },
+      {
+        "level": 1,
+        "title": "原书金句",
+        "content": "1. **Customers don’t simply buy products or services; they pull them into their lives to make progress.**  \n   —— 客户并不只是购买产品或服务，而是把它拉进自己的生活以获得进展。\n2. **Jobs to be done is not about your company; it is about the customer’s process.**  \n   —— JTBD 关注的不是你的公司流程，而是客户完成任务的过程。\n3. **Job maps focus on the customer’s objective and process independent of products, brands, or technology.**  \n   —— Job Map 聚焦客户目标与过程，而不是产品、品牌或技术本身。\n4. **Desired outcomes give us a way to measure what better means for the customer.**  \n   —— 期望结果让团队能真正衡量：对客户来说，更好到底是什么意思。\n5. **The real power of JTBD is creating a shared language around customer needs.**  \n   —— JTBD 的真正力量，在于为组织建立一套围绕客户需求的共同语言。"
+      },
+      {
+        "level": 1,
+        "title": "更新日志",
+        "content": "| 日期 | 更新内容 |\n|------|----------|\n| 2026-05-13 | 新增《The Jobs To Be Done Playbook》JTBD方法论：整理概念定义、Job Map、Desired Outcomes、Job Stories、正反案例、应用清单与原书金句 |"
+      }
+    ],
+    "updates": [
+      {
+        "date": "2026-05-13",
+        "note": "新建：收录 Jim Kalbach《The Jobs To Be Done Playbook》，整理 JTBD 概念定义、Job Map、Desired Outcomes、Job Stories、组织对齐、案例、应用清单和金句"
+      }
+    ]
+  }
+}
