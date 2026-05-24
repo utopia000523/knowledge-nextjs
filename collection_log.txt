@@ -3,64 +3,70 @@
 
 === TASK 1: 收录新书 (1本) — 产品设计 ===
 1. Roger Martin《The Design of Business》设计思维如何成为竞争优势方法论 (产品设计, importance=5)
-   - 核心命题: 设计思维不是艺术家的专利，而是企业下一波竞争优势的源泉
-   - 关键框架: 知识漏斗(Knowledge Funnel)四阶段 × 设计思维三驱动轮(观察-框架-实验) × 溯因推理(Abductive Reasoning) × 整合思维(Integrative Thinking) × 商业设计师四项能力
-   - 17层深度拆解: 概念定义、知识漏斗详解、三驱动轮、溯因推理、组织知识漏斗管理、整合思维四阶段、商业设计师能力、成熟度五级、正面案例(宝洁/IDEO)、反面案例(5种失败模式)、十大误区、方法论对比(精益创业/设计冲刺/TRIZ/蓝海战略)、五套工具模板、30天计划、12条金句、AI时代分析
-   - 文件: Roger-Martin-The-Design-of-Business-设计思维竞争优势方法论.json (29.7KB, 17层)
+   ...
 
 === TASK 2: 扩写已有文章 (1篇) ===
-- Annie Duke《Quit》战略性退出与止损决策方法论 (心理学, importance=5)
-  - 扩写前: 10.3KB, 9层基础结构
-  - 扩写后: 34.0KB, 19层深度结构 (3.3x扩写)
-  - 新增内容:
-    * Quit Contract深度框架(触发条件/检查频率/执行机制/保护条款)
-    * 期望值思维数学基础(EV公式/机会成本/动态更新)
-    * 六种认知偏差深度分析(现状偏见/损失厌恶/承诺升级/确认偏误/乐观偏误/社会认同)及去偏策略
-    * 与六大决策框架对比矩阵(思考快与慢/原则/原子习惯/反脆弱/精要主义)
-    * 12个经典案例库(4正面: 亚马逊Fire Phone/Netflix转型/SaaS创业/职业转型; 6反面: 柯达/诺基亚/WeWork/创业者/补仓/科研; 1极端)
-    * 十大误区与纠偏对照
-    * 五套工具模板(Fresh Start Test/Quit Contract/机会成本表/退出复盘/团队讨论框架)
-    * 30天技能启动计划
-    * 作者深度背景分析(扑克→心理学→商业的迁移路径)
+- Annie Duke《Quit》战略性退出与止损决策方法论 ...
 
 === 统计更新 ===
 - 总文章: 583 -> 584
-- 产品设计分类: 91 -> 92
-- Roger-Martin-The-Design-of-Business: 新增 (29.7KB, 17层)
-- Annie-Duke-Quit: 大幅扩写 (10.3KB -> 34.0KB, 9层 -> 19层)
-|- 所有文件已同步到 public/data/
+...
 
 2026-05-24 17:59 UTC — Cron Job Collection Run
 =============================================
 
 === TASK 1: 收录新书 (1本) — 营销 ===
 1. Joseph Sugarman《The Adweek Copywriting Handbook》广告文案说服力方法论 (营销, importance=5)
-   - 核心命题: 广告文案不是文字创作，而是心理说服工程
-   - 关键框架: 六要素说服公式(Attention x Emotion x USP x CTA x Trust x Urgency) × Slippery Slide 滑梯原理 × 十大心理触发器 × USP开发七维度
-   - 14层深度拆解: 概念定义、六要素公式、十大心理触发器、Slippery Slide完整结构、USP开发方法、正反案例、方法论对比(与Hopkins/Schwartz/Ogilvy)、十大误区、五套工具模板、12个案例库、30天计划、13条金句
-   - 文件: Joseph-Sugarman-Adweek-Copywriting-Handbook-广告文案说服力方法论.json (21.9KB, 14层)
+...
 
 === TASK 2: 扩写已有文章 (1篇) — 营销 ===
 - Jenni Romaniuk & Byron Sharp《How Brands Grow Part 2》品牌增长可得性方法论 (营销, importance=5)
-  - 扩写前: 11.6KB, 8层基础结构
-  - 扩写后: 15.6KB, 15层深度结构
-  - 新增内容:
-    * Part 2 vs Part 1 对比矩阵
-    * 与竞争框架(Aaker/Keller、精益创业、蓝海)对比
-    * 服务业/B2B/耐用品/奢侈品特殊法则
-    * 12个真实世界案例库(快消品/服务业/B2B/耐用品/奢侈品/新兴市场)
-    * 十大常见误区与纠偏对照
-    * 五套实战工具模板(CEP映射/可得性矩阵/资产审计/NBD检验/传播Brief)
-    * 30天技能启动计划
-    * 资产强度测量框架(NAR/ABI/一致性指数)
-    * NBD-Dirichlet 基准检验说明
-    * 双维度可得性四象限矩阵
+...
 
 === 统计更新 ===
 - 总文章: 584 -> 585
-- 营销分类: 49 -> 50
-- Joseph-Sugarman-Adweek-Copywriting-Handbook: 新增 (21.9KB, 14层)
-- Jenni-Romaniuk-Byron-Sharp-How-Brands-Grow-Part-2: 大幅扩写 (11.6KB -> 15.6KB, 8层 -> 15层)
+...
+
+2026-05-24 21:43 UTC — Cron Job Collection Run
+=============================================
+
+=== TASK 1: 收录新书 (2本) — 营销 + 技术 ===
+1. Jonah Berger《Contagious: Why Things Catch On》STEPPS传播方法论 (营销, importance=5)
+   - 核心公式: 传播力 = 社交货币 × 触发频率 × 情绪唤醒 × 公开可见 × 实用价值 × 故事包装
+   - 关键框架: STEPPS六原则 × 协同效应矩阵 × 传播评分卡 × 触发物审计 × 情绪唤醒图谱
+   - 18层深度拆解: 概念定义、核心模型、六原则深度、协同效应、正反案例、框架对比、十大误区、五套工具模板、12案例索引、13条金句、30天计划
+   - 文件: Jonah-Berger-Contagious-STEPPS-传播方法论.json (22.2KB, 18层)
+
+2. Alex Xu《System Design Interview - An Insider's Guide》系统设计面试方法论 (技术, importance=5)
+   - 核心公式: 面试表现 = 需求澄清 × 容量估算 × 高层设计 × 深度优化 × 沟通质量
+   - 关键框架: 四步应答法 × 技术组件决策矩阵 × 15+经典系统索引 × 设计模式速查
+   - 16层深度拆解: 概念定义、四步框架、组件矩阵、容量估算、分片、缓存、CDN、MQ、15系统索引、设计模式、面试沟通技巧、正反案例、学习路径、10条金句、30天计划
+   - 文件: Alex-Xu-System-Design-Interview-系统设计面试方法论.json (23.8KB, 16层)
+
+=== TASK 2: 扩写已有文章 (1篇) — 产品设计 ===
+- Jim Kalbach《The Jobs To Be Done Playbook》JTBD方法论 (产品设计, importance=5)
+  - 扩写前: 11.8KB, 8层基础结构
+  - 扩写后: 29.9KB, 19层深度结构 (2.5x扩写)
+  - 新增内容:
+    * Job 三层次 (Functional/Emotional/Social Job)
+    * Job Map vs Customer Journey 对比矩阵
+    * JTBD 研究四阶段工作流 (Discover-Define-Validate-Activate)
+    * Trigger Event Interview 完整方法 (结构/技巧/样本量)
+    * 机会算法与评分矩阵 (机会分公式 + 四象限决策)
+    * 与9大框架对比矩阵 (Design Thinking/Lean/ODI/Kano等)
+    * 10大常见误区与纠偏对照
+    * 5套实战工具模板 (访谈指南/Job Map/Desired Outcomes/Job Story评审/路线图)
+    * Job Story vs User Story vs Use Case 对比
+    * 14条原书金句 (新增9条)
+    * 30天技能启动计划
+
+=== 统计更新 ===
+- 总文章: 587 -> 589
+- 营销分类: 50 -> 51
+- 技术分类: 42 -> 44
+- 产品设计分类: 92 (不变，扩写1篇)
+- Jonah-Berger-Contagious: 新增 (22.2KB, 18层)
+- Alex-Xu-System-Design-Interview: 新增 (23.8KB, 16层)
+- Jim-Kalbach-JTBD: 大幅扩写 (11.8KB -> 29.9KB, 8层 -> 19层)
 - 所有文件已同步到 public/data/
 - Git 已推送至 GitHub，Vercel 自动部署已触发
-|
