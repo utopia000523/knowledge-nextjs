@@ -24,21 +24,33 @@ interface Article {
 }
 
 function getReadStatus(): Record<string, boolean> {
-  const stored = localStorage.getItem('knowledge_read_status');
-  return stored ? JSON.parse(stored) : {};
+  try {
+    const stored = localStorage.getItem('knowledge_read_status');
+    return stored ? JSON.parse(stored) : {};
+  } catch {
+    return {};
+  }
 }
 
 function saveReadStatus(status: Record<string, boolean>) {
-  localStorage.setItem('knowledge_read_status', JSON.stringify(status));
+  try {
+    localStorage.setItem('knowledge_read_status', JSON.stringify(status));
+  } catch {}
 }
 
 function getUiSettings() {
-  const stored = localStorage.getItem('knowledge_ui_settings');
-  return stored ? JSON.parse(stored) : { enableCursorEffect: true };
+  try {
+    const stored = localStorage.getItem('knowledge_ui_settings');
+    return stored ? JSON.parse(stored) : { enableCursorEffect: true };
+  } catch {
+    return { enableCursorEffect: true };
+  }
 }
 
 function saveUiSettings(settings: { enableCursorEffect: boolean }) {
-  localStorage.setItem('knowledge_ui_settings', JSON.stringify(settings));
+  try {
+    localStorage.setItem('knowledge_ui_settings', JSON.stringify(settings));
+  } catch {}
 }
 
 export default function Home() {
@@ -53,15 +65,34 @@ export default function Home() {
     return getReadStatus();
   });
   const [enableCursorEffect, setEnableCursorEffect] = useState(() => {
-    if (typeof window === 'undefined') return true;
-    return getUiSettings().enableCursorEffect;
+    if (typeof window === 'undefined') return false;
+    return window.matchMedia('(min-width: 1024px)').matches && getUiSettings().enableCursorEffect;
   });
 
   useEffect(() => {
+    const desktopQuery = window.matchMedia('(min-width: 1024px)');
+    const applyCursorPreference = () => {
+      setEnableCursorEffect(desktopQuery.matches && getUiSettings().enableCursorEffect);
+    };
+
+    if (desktopQuery.addEventListener) {
+      desktopQuery.addEventListener('change', applyCursorPreference);
+    } else {
+      desktopQuery.addListener(applyCursorPreference);
+    }
+
     fetch('/data/index.json')
       .then((r) => r.json())
       .then((d) => setData(d))
       .catch(() => {});
+
+    return () => {
+      if (desktopQuery.removeEventListener) {
+        desktopQuery.removeEventListener('change', applyCursorPreference);
+      } else {
+        desktopQuery.removeListener(applyCursorPreference);
+      }
+    };
   }, []);
 
   const categoryCounts = useMemo(() => {
@@ -96,7 +127,7 @@ export default function Home() {
       if (aRead === bRead) return b.importance - a.importance;
       return aRead ? 1 : -1;
     });
-  }, [activeCategory, searchQuery, readStatus]);
+  }, [activeCategory, data, searchQuery, readStatus]);
 
   const toggleRead = (articleId: string) => {
     const newStatus = { ...readStatus, [articleId]: !readStatus[articleId] };
