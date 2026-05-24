@@ -1,12 +1,11 @@
 'use client';
 
 import dynamic from 'next/dynamic';
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import Sidebar from '@/components/Sidebar';
 import SearchBar from '@/components/SearchBar';
 import CardList from '@/components/CardList';
 import ArticleDetail from '@/components/ArticleDetail';
-import data from '@/data/index.json';
 
 const SplashCursor = dynamic(() => import('@/components/animations/SplashCursor'), {
   ssr: false,
@@ -43,6 +42,7 @@ function saveUiSettings(settings: { enableCursorEffect: boolean }) {
 }
 
 export default function Home() {
+  const [data, setData] = useState<{ categories: string[]; articles: Article[] } | null>(null);
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedArticle, setSelectedArticle] = useState<Article | null>(null);
@@ -57,20 +57,27 @@ export default function Home() {
     return getUiSettings().enableCursorEffect;
   });
 
+  useEffect(() => {
+    fetch('/data/index.json')
+      .then((r) => r.json())
+      .then((d) => setData(d))
+      .catch(() => {});
+  }, []);
+
   const categoryCounts = useMemo(() => {
     const counts: Record<string, number> = {};
-    data.articles.forEach((article) => {
+    (data?.articles ?? []).forEach((article) => {
       counts[article.category] = (counts[article.category] || 0) + 1;
     });
     return counts;
-  }, []);
+  }, [data]);
 
   const readCount = useMemo(() => {
     return Object.keys(readStatus).filter((id) => readStatus[id]).length;
   }, [readStatus]);
 
   const filteredArticles = useMemo(() => {
-    let articles = data.articles;
+    let articles = data?.articles ?? [];
     if (activeCategory) {
       articles = articles.filter((article) => article.category === activeCategory);
     }
@@ -106,7 +113,18 @@ export default function Home() {
     saveUiSettings({ enableCursorEffect: nextValue });
   };
 
-  const completionRate = data.articles.length === 0 ? 0 : Math.round((readCount / data.articles.length) * 100);
+  const completionRate = (data?.articles?.length ?? 0) === 0 ? 0 : Math.round((readCount / (data?.articles?.length ?? 1)) * 100);
+
+  if (!data) {
+    return (
+      <div className="flex min-h-screen items-center justify-center bg-[#07111f] text-slate-400">
+        <div className="text-center">
+          <div className="mb-4 text-4xl">📚</div>
+          <p>加载知识库中...</p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="kb-shell relative min-h-screen overflow-hidden text-white">

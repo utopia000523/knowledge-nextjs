@@ -28,4 +28,39 @@
 - 产品设计分类: 91 -> 92
 - Roger-Martin-The-Design-of-Business: 新增 (29.7KB, 17层)
 - Annie-Duke-Quit: 大幅扩写 (10.3KB -> 34.0KB, 9层 -> 19层)
+|- 所有文件已同步到 public/data/
+
+2026-05-24 17:59 UTC — Cron Job Collection Run
+=============================================
+
+=== TASK 1: 收录新书 (1本) — 营销 ===
+1. Joseph Sugarman《The Adweek Copywriting Handbook》广告文案说服力方法论 (营销, importance=5)
+   - 核心命题: 广告文案不是文字创作，而是心理说服工程
+   - 关键框架: 六要素说服公式(Attention x Emotion x USP x CTA x Trust x Urgency) × Slippery Slide 滑梯原理 × 十大心理触发器 × USP开发七维度
+   - 14层深度拆解: 概念定义、六要素公式、十大心理触发器、Slippery Slide完整结构、USP开发方法、正反案例、方法论对比(与Hopkins/Schwartz/Ogilvy)、十大误区、五套工具模板、12个案例库、30天计划、13条金句
+   - 文件: Joseph-Sugarman-Adweek-Copywriting-Handbook-广告文案说服力方法论.json (21.9KB, 14层)
+
+=== TASK 2: 扩写已有文章 (1篇) — 营销 ===
+- Jenni Romaniuk & Byron Sharp《How Brands Grow Part 2》品牌增长可得性方法论 (营销, importance=5)
+  - 扩写前: 11.6KB, 8层基础结构
+  - 扩写后: 15.6KB, 15层深度结构
+  - 新增内容:
+    * Part 2 vs Part 1 对比矩阵
+    * 与竞争框架(Aaker/Keller、精益创业、蓝海)对比
+    * 服务业/B2B/耐用品/奢侈品特殊法则
+    * 12个真实世界案例库(快消品/服务业/B2B/耐用品/奢侈品/新兴市场)
+    * 十大常见误区与纠偏对照
+    * 五套实战工具模板(CEP映射/可得性矩阵/资产审计/NBD检验/传播Brief)
+    * 30天技能启动计划
+    * 资产强度测量框架(NAR/ABI/一致性指数)
+    * NBD-Dirichlet 基准检验说明
+    * 双维度可得性四象限矩阵
+
+=== 统计更新 ===
+- 总文章: 584 -> 585
+- 营销分类: 49 -> 50
+- Joseph-Sugarman-Adweek-Copywriting-Handbook: 新增 (21.9KB, 14层)
+- Jenni-Romaniuk-Byron-Sharp-How-Brands-Grow-Part-2: 大幅扩写 (11.6KB -> 15.6KB, 8层 -> 15层)
 - 所有文件已同步到 public/data/
+- Git 已推送至 GitHub，Vercel 自动部署已触发
+|
