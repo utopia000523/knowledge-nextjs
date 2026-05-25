@@ -70,3 +70,48 @@
 - Jim-Kalbach-JTBD: 大幅扩写 (11.8KB -> 29.9KB, 8层 -> 19层)
 - 所有文件已同步到 public/data/
 - Git 已推送至 GitHub，Vercel 自动部署已触发
+
+2026-05-24 23:00 UTC — Cron Job Collection Run
+=============================================
+
+=== TASK 1: 收录新书 (2本) — 心理学 ===
+1. Daniel Kahneman《Thinking, Fast and Slow》双系统决策与认知偏见方法论 (心理学, importance=5)
+   - 核心公式: 决策质量 = System 2 介入时机 × (环境可预测性 - 认知偏见)
+   - 关键框架: 双系统理论 × 三种启发式 × 前景理论 × 峰终定律 × 认知偏见系统分类
+   - 5层深度拆解: 概念定义与学科基础、认知偏见系统分类、正反案例与实证研究、应用清单与决策改善、原书金句与延伸阅读
+   - 文件: Daniel-Kahneman-Thinking-Fast-and-Slow-双系统决策与认知偏见方法论.json (28.6KB, 5层)
+   - 内容亮点: System 1/2 深度定义、20+ 认知偏见分类表、前景理论四重模式、Linda问题实证、Milgram实验、事前验尸技术、12项决策检查清单、30天训练计划
+
+2. Robert Cialdini《Influence: The Psychology of Persuasion》影响力-说服心理学六原理方法论 (心理学, importance=5)
+   - 核心公式: 说服力 = 互惠 × 承诺一致 × 社会认同 × 喜好 × 权威 × 稀缺
+   - 关键框架: 自动响应模式 × 六原理运作机制 × 道德说服标准 × 防守策略
+   - 5层深度拆解: 概念定义与学科基础、六大原理深度拆解、正反案例与实证研究、应用清单、原书金句与延伸阅读
+   - 文件: Robert-Cialdini-Influence-影响力-说服心理学六原理方法论.json (27.2KB, 5层)
+   - 内容亮点: 三年田野调查背景、Tupperware派对深度分析、Moonies案例、Milgram/Stanford实验、道德与操纵区分、30天影响力计划
+
+=== TASK 2: 扩写已有文章 (1篇) — 营销 ===
+- Seth Godin《This Is Marketing》现代营销方法论 (营销, importance=5)
+  - 扩写前: 18.3KB, 7层浅层结构 (70行)
+  - 扩写后: 29.7KB, 5层深度结构 (475行)
+  - 新增内容:
+    * 作者完整背景与思想脉络时间线
+    * 核心概念系统化定义 (SVM、许可营销、地位归属、部落)
+    * 五大模块深度拆解 (每个含对比表格和自检清单)
+    * 四层价值创造模型 (功能/体验/情感/身份)
+    * 许可营销五层递进模型
+    * 地位博弈三类型 (归属/优越/反抗)
+    * 部落四要素定义
+    * 正反案例 8 个 (新增: Segway/Webvan/苹果1984/Airbnb/品牌自恋)
+    * 30天启动计划
+    * 方法论对比矩阵与适用边界分析
+    * 15条原书金句 (新增5条)
+
+=== 统计更新 ===
+- 总文章: 589 -> 593 (新增2本，扩写1篇)
+- 心理学分类: 160 -> 162
+- 营销分类: 51 (不变，扩写1篇)
+- Daniel-Kahneman-Thinking-Fast-and-Slow: 新增 (28.6KB, 5层)
+- Robert-Cialdini-Influence: 新增 (27.2KB, 5层)
+- Seth-Godin-This-Is-Marketing: 大幅扩写 (18.3KB -> 29.7KB, 70行 -> 475行)
+- 所有文件已同步到 public/data/
+- Git 已推送至 GitHub，Vercel 自动部署已触发
