@@ -4691,10 +4691,10 @@
         "定价策略",
         "用户心理学"
       ],
-      "summary": "产品经理七大核心技能框架 × 用户心智模型理解 × 设计直觉性界面 × 定价策略开发 × 增长与影响力 × 数据驱动决策 × 产品经济学管理",
+      "summary": "核心主题：世界级 PM 不是单点能力最强，而是把用户心理、直觉设计、定价、增长、数据、经济学与沟通协同成一个决策系统——既能面试答题，也能在真实组织里做出持续创造价值的产品判断。",
       "importance": 5,
-      "learned_at": "2026-05-12",
-      "source": "Neel Mehta, Parth Detroja & Aditya Agashe《Product Management's Sacred Seven: The Skills Required to Crush Product Manager Interviews and be a World-Class PM》",
+      "learned_at": "2026-06-01",
+      "source": "Neel Mehta, Parth Detroja and Aditya Agashe《Product Management's Sacred Seven: The Skills Required to Crush Product Manager Interviews and be a World-Class PM》；结合现有馆藏条目中的公开书名信息，对原文档重构为七技能 operating system。",
       "file": "articles/Neel-Mehta-Parth-Detroja-Aditya-Agashe-Product-Managements-Sacred-Seven-PM七大技能方法论.json"
     },
     {
@@ -10023,15 +10023,37 @@
       "learned_at": "2026-05-10",
       "source": "鲁道夫·阿恩海姆",
       "file": "articles/鲁道夫·阿恩海姆-视觉思维方法论.json"
+    },
+    {
+      "id": "Stephen-Wendel-Designing-for-Behavior-Change-行为改变设计方法论",
+      "category": "产品设计",
+      "title": "Stephen Wendel《Designing for Behavior Change》行为改变设计方法论",
+      "keywords": [
+        "Stephen Wendel",
+        "Designing for Behavior Change",
+        "Behavior Change Design",
+        "BJ Fogg",
+        "Behavioral Economics",
+        "Motivation",
+        "Ability",
+        "Prompt",
+        "User-Centered System Design",
+        "行为改变设计"
+      ],
+      "summary": "核心主题：把心理学与行为经济学转译为可执行的产品设计流程——先界定目标行为，再拆解决策路径、动机、能力、提示、摩擦与反馈，用小步实验把“想改变用户”变成“可验证地改变行为”。",
+      "importance": 5,
+      "learned_at": "2026-06-01",
+      "source": "本轮按要求先尝试 web_search，但外部服务连续返回 432 无法使用；改用 Open Library 搜索/作品/版本元数据、Internet Archive 详情页公开元数据（标题、年份、出版社、主题、页数）进行交叉校验。可验证信息包括：Stephen Wendel；书名《Designing for behavior change : applying psychology and behavioral economics》；2013；O’Reilly；355 pages；subjects 为 Human-computer interaction 与 User-centered system design。",
+      "file": "articles/Stephen-Wendel-Designing-for-Behavior-Change-行为改变设计方法论.json"
     }
   ],
   "SUMMARY": {
-    "total_articles": 601,
+    "total_articles": 602,
     "last_updated": "2026-06-01",
     "by_category": {
       "其他": 1,
       "创业": 93,
-      "产品设计": 98,
+      "产品设计": 99,
       "心理学": 162,
       "营销": 53,
       "项目管理": 71,

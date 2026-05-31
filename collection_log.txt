@@ -360,3 +360,24 @@
 - 营销分类: 53 (扩写1篇)
 - 新增: Dave-Gray-Sunni-Brown-James-Macanufo-Gamestorming-协作式共创工作坊方法论.json
 - 扩写: Marty-Neumeier-The-Brand-Gap-品牌桥接五纪律方法论.json
+
+
+2026-05-31 22:04 UTC — Cron Job Collection Run
+=============================================
+
+=== TASK 1: 收录新书 (1本) — 产品设计 ===
+1. Stephen Wendel《Designing for Behavior Change》行为改变设计方法论 (产品设计, importance=5)
+   - 核心公式: 行为改变效果 = 明确目标行为 × 正确情境切入 × 动机强度 × 执行能力 × 及时提示 × 反馈闭环 × 伦理边界
+   - 关键框架: 结果目标 -> 关键行为 -> 行为路径 -> 机制诊断 -> 干预设计 -> 行为测量 -> 伦理迭代
+   - 来源说明: 已先尝试 web_search，但外部服务连续返回 432；改用 Open Library 搜索/作品/版本元数据与 Internet Archive 公开详情页交叉校验
+   - 文件: Stephen-Wendel-Designing-for-Behavior-Change-行为改变设计方法论.json (73 行, 16426 bytes)
+
+=== TASK 2: 扩写已有文章 (1篇) — 产品设计 ===
+- Neel Mehta, Parth Detroja & Aditya Agashe《Product Management's Sacred Seven》PM七大技能方法论 (产品设计, importance=5)
+  - 扩写前: 61 行, 17834 bytes
+  - 扩写后: 99 行, 15523 bytes
+  - 扩写内容:
+    * 重构为七技能 operating system
+    * 补充用户心理 -> 体验 -> 定价 -> 增长 -> 数据 -> 经济学 -> 沟通的统一链路
+    * 新增功能经济学评审卡、增长漏斗诊断表、跨部门对齐摘要、面试与在岗决策映射
+    * 增补十大误区、模板与更新日志
