@@ -426,3 +426,4 @@
 - 写入后已通过 curl 验证 public/data/index.json 可访问
 - 写入后已通过 curl 验证 public/data/articles/Donald-Miller-Building-a-StoryBrand.json 可访问
 - 写入后已通过 curl 验证 public/data/articles/Al-Ries-Jack-Trout-The-22-Immutable-Laws-of-Marketing-营销不变法则方法论.json 可访问
+- 已执行 python3 ~/.hermes/scripts/git_push_knowledge.py，输出为 committed + pushed to origin/main
