@@ -9863,10 +9863,11 @@
       "category": "产品设计",
       "title": "Michele Hansen《Deploy Empathy》客户访谈方法论",
       "keywords": [
-        "Deploy Empathy",
         "Michele Hansen",
+        "Deploy Empathy",
         "customer interviews",
         "客户访谈",
+        "产品研究",
         "用户研究",
         "continuous discovery",
         "SaaS",
@@ -9879,13 +9880,35 @@
       "learned_at": "2026-05-31",
       "source": "Michele Hansen《Deploy Empathy: A Practical Guide to Interviewing Customers》(2021)；Deploy Empathy 官网公开书介；Open Library 书目数据。",
       "file": "articles/Michele-Hansen-Deploy-Empathy-客户访谈方法论.json"
+    },
+    {
+      "id": "Laura-Klein-Build-Better-Products-用户中心产品构建方法论",
+      "category": "产品设计",
+      "title": "Laura Klein《Build Better Products》用户中心产品构建方法论",
+      "keywords": [
+        "Laura Klein",
+        "Build Better Products",
+        "User-Centered Product Design",
+        "Product Strategy",
+        "Product Discovery",
+        "Product Analytics",
+        "Assumption Testing",
+        "MVP",
+        "Empathy",
+        "Outcome-Driven Product"
+      ],
+      "summary": "核心主题：把战略、同理心、原型验证、可用性测试与行为数据接成一条产品学习链，用持续验证替代功能堆砌，用用户结果与业务结果共同定义‘更好的产品’。",
+      "importance": 5,
+      "learned_at": "2026-06-01",
+      "source": "DuckDuckGo 搜索结果摘要（Rosenfeld Media / Amazon / Google Books 一致书介）；Google Books《Build Better Products: A Modern Approach to Building Successful User-Centered Products》公开书页；Open Library 书目；UXmatters 公开样章《Measure Better》。",
+      "file": "articles/Laura-Klein-Build-Better-Products-用户中心产品构建方法论.json"
     }
   ],
   "SUMMARY": {
-    "total_articles": 594,
-    "last_updated": "2026-05-31",
+    "total_articles": 595,
+    "last_updated": "2026-06-01",
     "by_category": {
-      "产品设计": 93,
+      "产品设计": 94,
       "其他": 1,
       "创业": 93,
       "心理学": 162,

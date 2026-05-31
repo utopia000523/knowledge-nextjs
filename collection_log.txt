@@ -172,3 +172,37 @@
 - 心理学分类: 162 (扩写1篇)
 - 新增: Michele-Hansen-Deploy-Empathy-客户访谈方法论.json
 - 扩写: Angela-Duckworth-Grit-坚毅力方法论.json
+
+2026-05-31 17:20 UTC — Cron Job Collection Run
+=============================================
+
+=== TASK 1: 收录新书 (1本) — 产品设计 ===
+1. Laura Klein《Build Better Products》用户中心产品构建方法论 (产品设计, importance=5)
+   - 核心公式: 更好的产品 = 明确目标用户 x 清晰问题假设 x 可验证方案原型 x 真实用户反馈 x 行为数据度量 x 持续迭代速度
+   - 关键框架: 六步产品学习回路 x 假设分层表 x 最小可测试方案选择矩阵 x 结果指标树 x 实验复盘卡
+   - 内容亮点: 基于 Google Books / Open Library / UXmatters 公开样章，提炼 strategy x empathy x design x analytics 主线，并补充模板、案例、方法对照与公开引文
+   - 文件: Laura-Klein-Build-Better-Products-用户中心产品构建方法论.json
+
+=== TASK 2: 扩写已有文章 (1篇) — 营销 ===
+- Madhavan Ramanujam & Georg Tacke《Monetizing Innovation》定价驱动创新方法论 (营销, importance=5)
+  - 扩写前: 12.5KB, 71行
+  - 扩写后: 重构为 9 层系统结构，新增 WTP/细分/打包/收费模型/价格治理完整链路与落地清单
+  - 扩写内容:
+    * 九条规则的统一顺序重写
+    * WTP、细分、版本打包、收费模型、价值沟通、价格治理六维深拆
+    * Porsche Cayenne 案例的通用化迁移
+    * 创新失败五大误区与产品团队实战清单
+    * 与精益创业 / 价值主张设计 / PMF 的关系说明
+
+=== 验证与同步 ===
+- 扩写前已使用 curl 验证 public/data/articles/Madhavan-Ramanujam-Georg-Tacke-Monetizing-Innovation-定价驱动创新方法论.json 可访问
+- 写入后已执行 cp 同步到 public/data/
+- 写入后已使用 curl 验证 public/data/articles/Laura-Klein-Build-Better-Products-用户中心产品构建方法论.json 可访问
+- 写入后已使用 curl 验证 public/data/articles/Madhavan-Ramanujam-Georg-Tacke-Monetizing-Innovation-定价驱动创新方法论.json 可访问
+
+=== 统计更新 ===
+- 总文章: 594 -> 595
+- 产品设计分类: 93 -> 94
+- 营销分类: 51 (扩写1篇)
+- 新增: Laura-Klein-Build-Better-Products-用户中心产品构建方法论.json
+- 扩写: Madhavan-Ramanujam-Georg-Tacke-Monetizing-Innovation-定价驱动创新方法论.json
