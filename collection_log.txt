@@ -349,6 +349,10 @@
 - 扩写前已通过 curl 验证 public/data/articles/Marty-Neumeier-The-Brand-Gap-品牌桥接五纪律方法论.json 可访问
 - 已执行 cp 同步 data/index.json -> public/data/index.json
 - 已执行 cp 同步 data/articles/* -> public/data/articles/
+- 写入后已通过 curl 验证 public/data/index.json 可访问
+- 写入后已通过 curl 验证 public/data/articles/Dave-Gray-Sunni-Brown-James-Macanufo-Gamestorming-协作式共创工作坊方法论.json 可访问
+- 写入后已通过 curl 验证 public/data/articles/Marty-Neumeier-The-Brand-Gap-品牌桥接五纪律方法论.json 可访问
+- 已执行 python3 ~/.hermes/scripts/git_push_knowledge.py，输出为 committed + pushed to origin/main
 
 === 统计更新 ===
 - 总文章: 600 -> 601
