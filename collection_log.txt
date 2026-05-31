@@ -427,3 +427,21 @@
 - 写入后已通过 curl 验证 public/data/articles/Donald-Miller-Building-a-StoryBrand.json 可访问
 - 写入后已通过 curl 验证 public/data/articles/Al-Ries-Jack-Trout-The-22-Immutable-Laws-of-Marketing-营销不变法则方法论.json 可访问
 - 已执行 python3 ~/.hermes/scripts/git_push_knowledge.py，输出为 committed + pushed to origin/main
+
+2026-05-31 23:37 UTC — Cron Job Collection Run
+=============================================
+
+=== TASK 1: 收录新书 (1本) — 创业 ===
+1. David Riemer《Get Your Startup Story Straight》创业叙事框架方法论 (创业, importance=4)
+   - 核心公式: 创业叙事说服力 = 问题强度 x 目标客户清晰度 x 解决方案差异性 x 证据可信度 x 商业可行性 x 创始人匹配度 x 时机紧迫感
+   - 关键框架: 七模块叙事骨架 x 五类受众适配 x Startup Story 模板 x 10页 deck 骨架 x Ask 设计
+   - 文件: David-Riemer-Get-Your-Startup-Story-Straight-startup-storytelling-methodology.json
+
+=== TASK 2: 扩写已有文章 (1篇) — 营销 ===
+- Seth Godin《This Is Marketing》现代营销方法论 (营销, importance=5)
+  - 扩写内容: 新增营销误区诊断矩阵、B2B/B2C/内容品牌适配、团队运营指标仪表板、90天执行剧本
+
+=== 统计更新 ===
+- 已新增创业文章 1 篇
+- 已扩写营销文章 1 篇
+- 所有文件待同步到 public/data/ 并推送 GitHub

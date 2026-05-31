@@ -180,6 +180,30 @@
       "file": "articles/Al-Ramden-Play-Bigger-类别设计-品类王者方法论.json"
     },
     {
+      "id": "Al-Ries-Jack-Trout-The-22-Immutable-Laws-of-Marketing-营销不变法则方法论",
+      "category": "营销",
+      "title": "Al Ries & Jack Trout《The 22 Immutable Laws of Marketing》营销不变法则方法论",
+      "keywords": [
+        "Al Ries",
+        "Jack Trout",
+        "The 22 Immutable Laws of Marketing",
+        "营销不变法则",
+        "Positioning",
+        "Category Leadership",
+        "Mindshare",
+        "Brand Focus",
+        "Marketing Strategy",
+        "Perception Battle",
+        "Law of Leadership",
+        "Law of Category"
+      ],
+      "summary": "核心主题：营销不是产品参数竞赛，而是品类定义、心智占位与战略取舍的竞争。Ries 与 Trout 用 22 条“法则”反复强调：先占据心智，再扩张产品；先赢得品类定义，再争夺市场份额；先聚焦，再增长。",
+      "importance": 5,
+      "learned_at": "2026-06-01",
+      "source": "Open Library 书目元数据：本书首版于 1993 年，副标题为 ‘violate them at your own risk’；HarperCollins 产品页元数据确认书名与 Harper Business 版本；本次基于 22 条法则的公开目录级表述与 Ries / Trout 一贯定位理论整理为可执行方法。",
+      "file": "articles/Al-Ries-Jack-Trout-The-22-Immutable-Laws-of-Marketing-营销不变法则方法论.json"
+    },
+    {
       "id": "Alan Cooper-About Face交互设计精髓方法论",
       "category": "产品设计",
       "title": "About Face 4：交互设计精髓 方法论文",
@@ -1820,6 +1844,24 @@
       "learned_at": "2026-05-19",
       "source": "David Ogilvy《Ogilvy on Advertising》(1983) - 奥美广告创始人的毕生经验总结",
       "file": "articles/David-Ogilvy-Ogilvy-on-Advertising-广告大师奥格威方法论.json"
+    },
+    {
+      "id": "David-Riemer-Get-Your-Startup-Story-Straight-startup-storytelling-methodology",
+      "category": "创业",
+      "title": "David Riemer《Get Your Startup Story Straight》创业叙事框架方法论",
+      "keywords": [
+        "David Riemer",
+        "Get Your Startup Story Straight",
+        "Startup Story",
+        "创业叙事",
+        "Pitch Framework",
+        "Storytelling for Startups"
+      ],
+      "summary": "核心主题：把问题、客户、解决方案、证据与行动号召组织成统一的创业叙事系统，让投资人、客户与团队快速理解为什么是这个问题、为什么是你、为什么是现在。",
+      "importance": 4,
+      "learned_at": "2026-06-01",
+      "source": "Open Library 书目检索与版本元数据：David Riemer《Get Your Startup Story Straight: The Definitive Storytelling Framework for Innovators and Entrepreneurs》(River Grove Books, 2022).",
+      "file": "articles/David-Riemer-Get-Your-Startup-Story-Straight-startup-storytelling-methodology.json"
     },
     {
       "id": "David-Schonthal-Loran-Nordgren-The-Human-Element-心理摩擦力-行为设计方法论",
@@ -6048,6 +6090,28 @@
       "file": "articles/Stephen-Robbins-组织行为学-Organizational-Behavior-团队管理方法论.json"
     },
     {
+      "id": "Stephen-Wendel-Designing-for-Behavior-Change-行为改变设计方法论",
+      "category": "产品设计",
+      "title": "Stephen Wendel《Designing for Behavior Change》行为改变设计方法论",
+      "keywords": [
+        "Stephen Wendel",
+        "Designing for Behavior Change",
+        "Behavior Change Design",
+        "BJ Fogg",
+        "Behavioral Economics",
+        "Motivation",
+        "Ability",
+        "Prompt",
+        "User-Centered System Design",
+        "行为改变设计"
+      ],
+      "summary": "核心主题：把心理学与行为经济学转译为可执行的产品设计流程——先界定目标行为，再拆解决策路径、动机、能力、提示、摩擦与反馈，用小步实验把“想改变用户”变成“可验证地改变行为”。",
+      "importance": 5,
+      "learned_at": "2026-06-01",
+      "source": "本轮按要求先尝试 web_search，但外部服务连续返回 432 无法使用；改用 Open Library 搜索/作品/版本元数据、Internet Archive 详情页公开元数据（标题、年份、出版社、主题、页数）进行交叉校验。可验证信息包括：Stephen Wendel；书名《Designing for behavior change : applying psychology and behavioral economics》；2013；O’Reilly；355 pages；subjects 为 Human-computer interaction 与 User-centered system design。",
+      "file": "articles/Stephen-Wendel-Designing-for-Behavior-Change-行为改变设计方法论.json"
+    },
+    {
       "id": "Steve Blank-创业者手册方法论",
       "category": "创业",
       "title": "Steve Blank《创业者手册》方法论文档",
@@ -10023,52 +10087,6 @@
       "learned_at": "2026-05-10",
       "source": "鲁道夫·阿恩海姆",
       "file": "articles/鲁道夫·阿恩海姆-视觉思维方法论.json"
-    },
-    {
-      "id": "Stephen-Wendel-Designing-for-Behavior-Change-行为改变设计方法论",
-      "category": "产品设计",
-      "title": "Stephen Wendel《Designing for Behavior Change》行为改变设计方法论",
-      "keywords": [
-        "Stephen Wendel",
-        "Designing for Behavior Change",
-        "Behavior Change Design",
-        "BJ Fogg",
-        "Behavioral Economics",
-        "Motivation",
-        "Ability",
-        "Prompt",
-        "User-Centered System Design",
-        "行为改变设计"
-      ],
-      "summary": "核心主题：把心理学与行为经济学转译为可执行的产品设计流程——先界定目标行为，再拆解决策路径、动机、能力、提示、摩擦与反馈，用小步实验把“想改变用户”变成“可验证地改变行为”。",
-      "importance": 5,
-      "learned_at": "2026-06-01",
-      "source": "本轮按要求先尝试 web_search，但外部服务连续返回 432 无法使用；改用 Open Library 搜索/作品/版本元数据、Internet Archive 详情页公开元数据（标题、年份、出版社、主题、页数）进行交叉校验。可验证信息包括：Stephen Wendel；书名《Designing for behavior change : applying psychology and behavioral economics》；2013；O’Reilly；355 pages；subjects 为 Human-computer interaction 与 User-centered system design。",
-      "file": "articles/Stephen-Wendel-Designing-for-Behavior-Change-行为改变设计方法论.json"
-    },
-    {
-      "id": "Al-Ries-Jack-Trout-The-22-Immutable-Laws-of-Marketing-营销不变法则方法论",
-      "category": "营销",
-      "title": "Al Ries & Jack Trout《The 22 Immutable Laws of Marketing》营销不变法则方法论",
-      "keywords": [
-        "Al Ries",
-        "Jack Trout",
-        "The 22 Immutable Laws of Marketing",
-        "营销不变法则",
-        "Positioning",
-        "Category Leadership",
-        "Mindshare",
-        "Brand Focus",
-        "Marketing Strategy",
-        "Perception Battle",
-        "Law of Leadership",
-        "Law of Category"
-      ],
-      "summary": "核心主题：营销不是产品参数竞赛，而是品类定义、心智占位与战略取舍的竞争。Ries 与 Trout 用 22 条“法则”反复强调：先占据心智，再扩张产品；先赢得品类定义，再争夺市场份额；先聚焦，再增长。",
-      "importance": 5,
-      "learned_at": "2026-06-01",
-      "source": "Open Library 书目元数据：本书首版于 1993 年，副标题为 ‘violate them at your own risk’；HarperCollins 产品页元数据确认书名与 Harper Business 版本；本次基于 22 条法则的公开目录级表述与 Ries / Trout 一贯定位理论整理为可执行方法。",
-      "file": "articles/Al-Ries-Jack-Trout-The-22-Immutable-Laws-of-Marketing-营销不变法则方法论.json"
     }
   ],
   "SUMMARY": {
