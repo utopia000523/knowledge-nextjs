@@ -381,3 +381,19 @@
     * 补充用户心理 -> 体验 -> 定价 -> 增长 -> 数据 -> 经济学 -> 沟通的统一链路
     * 新增功能经济学评审卡、增长漏斗诊断表、跨部门对齐摘要、面试与在岗决策映射
     * 增补十大误区、模板与更新日志
+
+=== 验证与同步 ===
+- 扩写前已通过 curl 验证 public/data/articles/Neel-Mehta-Parth-Detroja-Aditya-Agashe-Product-Managements-Sacred-Seven-PM七大技能方法论.json 可访问
+- 已执行 cp 同步 data/index.json -> public/data/index.json
+- 已执行 cp 同步 data/articles/* -> public/data/articles/
+- 写入后已通过 JSON 校验验证 data/ 与 public/data/ 下 index/new/expanded 三个文件均有效
+- 写入后已通过 curl 验证 public/data/index.json 可访问
+- 写入后已通过 curl 验证 public/data/articles/Stephen-Wendel-Designing-for-Behavior-Change-行为改变设计方法论.json 可访问
+- 写入后已通过 curl 验证 public/data/articles/Neel-Mehta-Parth-Detroja-Aditya-Agashe-Product-Managements-Sacred-Seven-PM七大技能方法论.json 可访问
+- 已执行 python3 ~/.hermes/scripts/git_push_knowledge.py，输出为 committed + pushed to origin/main
+
+=== 统计更新 ===
+- 总文章: 601 -> 602
+- 产品设计分类: 98 -> 99
+- 新增: Stephen-Wendel-Designing-for-Behavior-Change-行为改变设计方法论.json
+- 扩写: Neel-Mehta-Parth-Detroja-Aditya-Agashe-Product-Managements-Sacred-Seven-PM七大技能方法论.json
