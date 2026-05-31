@@ -397,3 +397,32 @@
 - 产品设计分类: 98 -> 99
 - 新增: Stephen-Wendel-Designing-for-Behavior-Change-行为改变设计方法论.json
 - 扩写: Neel-Mehta-Parth-Detroja-Aditya-Agashe-Product-Managements-Sacred-Seven-PM七大技能方法论.json
+
+2026-05-31 22:50 UTC — Cron Job Collection Run
+=============================================
+
+=== TASK 1: 收录新书 (1本) — 营销 ===
+1. Al Ries & Jack Trout《The 22 Immutable Laws of Marketing》营销不变法则方法论 (营销, importance=5)
+   - 核心公式: 营销成效 = 品类领先权 × 心智清晰度 × 聚焦程度 × 命名力量 × 长期一致性
+   - 关键框架: 22 条法则 -> 五大模块（先占位 / 先聚焦 / 先命名 / 先尊重现实 / 先守边界）
+   - 来源说明: 已按要求先尝试 web_search，但外部服务连续返回 432；改用 Open Library 书目元数据与 HarperCollins 产品页元数据交叉校验
+   - 文件: Al-Ries-Jack-Trout-The-22-Immutable-Laws-of-Marketing-营销不变法则方法论.json (16780 bytes)
+
+=== TASK 2: 扩写已有文章 (1篇) — 营销 ===
+- Donald Miller《Building a StoryBrand》SB7品牌叙事方法论 (营销, importance=5)
+  - 扩写前: 73 行, 19436 bytes
+  - 扩写后: 73 行, 20624 bytes
+  - 扩写内容:
+    * 升级为“战略-触点-分受众-实验-组织协同”完整 StoryBrand 操作系统
+    * 新增消息架构系统、漏斗阶段脚本、角色化叙事版本
+    * 新增三种典型改写示例（SaaS / 咨询 / 招聘）
+    * 新增内容矩阵映射、工作坊模板、周度实施节奏与更完整诊断框架
+
+=== 验证与同步 ===
+- 扩写前已通过 curl 验证 public/data/articles/Donald-Miller-Building-a-StoryBrand.json 可访问
+- 已执行 cp 同步 data/index.json -> public/data/index.json
+- 已执行 cp 同步 data/articles/* -> public/data/articles/
+- 写入后已通过 JSON 校验验证 public/data 下 index/new/expanded 三个文件均有效
+- 写入后已通过 curl 验证 public/data/index.json 可访问
+- 写入后已通过 curl 验证 public/data/articles/Donald-Miller-Building-a-StoryBrand.json 可访问
+- 写入后已通过 curl 验证 public/data/articles/Al-Ries-Jack-Trout-The-22-Immutable-Laws-of-Marketing-营销不变法则方法论.json 可访问

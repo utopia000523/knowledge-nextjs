@@ -10045,17 +10045,41 @@
       "learned_at": "2026-06-01",
       "source": "本轮按要求先尝试 web_search，但外部服务连续返回 432 无法使用；改用 Open Library 搜索/作品/版本元数据、Internet Archive 详情页公开元数据（标题、年份、出版社、主题、页数）进行交叉校验。可验证信息包括：Stephen Wendel；书名《Designing for behavior change : applying psychology and behavioral economics》；2013；O’Reilly；355 pages；subjects 为 Human-computer interaction 与 User-centered system design。",
       "file": "articles/Stephen-Wendel-Designing-for-Behavior-Change-行为改变设计方法论.json"
+    },
+    {
+      "id": "Al-Ries-Jack-Trout-The-22-Immutable-Laws-of-Marketing-营销不变法则方法论",
+      "category": "营销",
+      "title": "Al Ries & Jack Trout《The 22 Immutable Laws of Marketing》营销不变法则方法论",
+      "keywords": [
+        "Al Ries",
+        "Jack Trout",
+        "The 22 Immutable Laws of Marketing",
+        "营销不变法则",
+        "Positioning",
+        "Category Leadership",
+        "Mindshare",
+        "Brand Focus",
+        "Marketing Strategy",
+        "Perception Battle",
+        "Law of Leadership",
+        "Law of Category"
+      ],
+      "summary": "核心主题：营销不是产品参数竞赛，而是品类定义、心智占位与战略取舍的竞争。Ries 与 Trout 用 22 条“法则”反复强调：先占据心智，再扩张产品；先赢得品类定义，再争夺市场份额；先聚焦，再增长。",
+      "importance": 5,
+      "learned_at": "2026-06-01",
+      "source": "Open Library 书目元数据：本书首版于 1993 年，副标题为 ‘violate them at your own risk’；HarperCollins 产品页元数据确认书名与 Harper Business 版本；本次基于 22 条法则的公开目录级表述与 Ries / Trout 一贯定位理论整理为可执行方法。",
+      "file": "articles/Al-Ries-Jack-Trout-The-22-Immutable-Laws-of-Marketing-营销不变法则方法论.json"
     }
   ],
   "SUMMARY": {
-    "total_articles": 602,
+    "total_articles": 603,
     "last_updated": "2026-06-01",
     "by_category": {
       "其他": 1,
       "创业": 93,
       "产品设计": 99,
       "心理学": 162,
-      "营销": 53,
+      "营销": 54,
       "项目管理": 71,
       "技术": 43,
       "理财": 64,
