@@ -239,3 +239,36 @@
 - 产品设计分类: 94 (扩写1篇)
 - 新增: Marty-Neumeier-Zag-品牌激进差异化方法论.json
 - 扩写: Michele-Hansen-Deploy-Empathy-客户访谈方法论.json
+
+2026-05-31 18:47 UTC — Cron Job Collection Run
+=============================================
+
+=== TASK 1: 收录新书 (1本) — 营销 ===
+1. Marty Neumeier《The Brand Gap》品牌桥接五纪律方法论 (营销, importance=5)
+   - 核心公式: 强品牌 = 清晰差异化 x 跨团队协作 x 有意义创新 x 持续验证 x 长期培养
+   - 关键框架: 五纪律（Differentiate / Collaborate / Innovate / Validate / Cultivate）x 品牌桥接矩阵 x 触点审计表 x 五纪律评分卡
+   - 内容规模: 338 行（解码后），五层系统结构 + 金句/更新日志
+   - 来源说明: 官方书页公开副标题与 five disciplines 描述 + Open Library 书目元数据；本轮 web_search 因外部 432 错误不可用，已用终端 curl 取官方网页作替代核验
+
+=== TASK 2: 扩写已有文章 (1篇) — 营销 ===
+- Donald Miller《Building a StoryBrand》SB7品牌叙事方法论 (营销, importance=5)
+  - 扩写后规模: 381 行（解码后）
+  - 新增内容:
+    * SB7 七要素统一重写（Hero / Problem / Guide / Plan / CTA / Failure / Success）
+    * 首页结构、邮件漏斗、销售开场三类落地模板
+    * CTA 优化表、问题三层提炼法、首页评分卡、30 天执行计划
+    * 方法边界与常见误区整理
+
+=== 验证与同步 ===
+- 扩写前已通过 curl 验证 public/data/articles/Donald-Miller-Building-a-StoryBrand.json 可访问
+- 已执行 cp 同步 data/index.json -> public/data/index.json
+- 已执行 cp 同步 data/articles/* -> public/data/articles/
+- 已通过 curl 验证 public/data/articles/Marty-Neumeier-The-Brand-Gap-品牌桥接五纪律方法论.json 可访问
+- 已通过 curl 验证 public/data/articles/Donald-Miller-Building-a-StoryBrand.json 可访问
+- 已通过 curl 验证 public/data/index.json 可访问
+
+=== 统计更新 ===
+- 总文章: 597 -> 598
+- 营销分类: 52 -> 53
+- 新增: Marty-Neumeier-The-Brand-Gap-品牌桥接五纪律方法论.json
+- 扩写: Donald-Miller-Building-a-StoryBrand.json
