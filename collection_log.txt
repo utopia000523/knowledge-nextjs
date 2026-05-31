@@ -331,3 +331,28 @@
 - 产品设计分类: 94 -> 95
 - 新增: Marc-Stickdorn-This-is-Service-Design-Doing-服务设计落地方法论.json
 - 扩写: Steve-Portigal-Interviewing-Users-How-to-Uncover-Compelling-Insights.json
+
+2026-06-01 21:00 UTC - Cron Job Collection Run
+=============================================
+
+=== TASK 1: 收录新书 (1本) - 产品设计 ===
+1. Dave Gray、Sunni Brown、James Macanufo《Gamestorming》协作式共创工作坊方法论
+   - 核心公式: 高质量共创 = 明确问题 framing x 安全参与氛围 x 外化思考速度 x 发散数量 x 收敛判断标准 x 可视化共享记忆 x 后续行动闭环
+   - 关键框架: Opening x Exploring x Converging x Committing 四段节奏 x 核心游戏族谱 x 主持人工作流
+   - 来源说明: web_search 连续返回 432，改用 Gamestorming 官网、Dave Gray 官方页与 Open Library 元数据交叉核验
+
+=== TASK 2: 扩写已有文章 (1篇) - 营销 ===
+- Marty Neumeier《The Brand Gap》品牌桥接五纪律方法论 (营销, importance=5)
+  - 扩写方向: 五纪律深拆、品牌桥接矩阵、触点治理、品牌审计工具箱、30 天执行计划
+
+=== 验证与同步 ===
+- 扩写前已通过 curl 验证 public/data/articles/Marty-Neumeier-The-Brand-Gap-品牌桥接五纪律方法论.json 可访问
+- 已执行 cp 同步 data/index.json -> public/data/index.json
+- 已执行 cp 同步 data/articles/* -> public/data/articles/
+
+=== 统计更新 ===
+- 总文章: 600 -> 601
+- 产品设计分类: 97 -> 98
+- 营销分类: 53 (扩写1篇)
+- 新增: Dave-Gray-Sunni-Brown-James-Macanufo-Gamestorming-协作式共创工作坊方法论.json
+- 扩写: Marty-Neumeier-The-Brand-Gap-品牌桥接五纪律方法论.json
