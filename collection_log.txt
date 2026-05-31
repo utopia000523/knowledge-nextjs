@@ -272,3 +272,37 @@
 - 营销分类: 52 -> 53
 - 新增: Marty-Neumeier-The-Brand-Gap-品牌桥接五纪律方法论.json
 - 扩写: Donald-Miller-Building-a-StoryBrand.json
+
+2026-05-31 19:31 UTC — Cron Job Collection Run
+=============================================
+
+=== TASK 1: 收录新书 (1本) — 产品设计 ===
+1. Steve Portigal《Interviewing Users》用户访谈洞察方法论 (产品设计, importance=5)
+   - 核心公式: 高质量用户访谈 = 明确业务问题 × 合适受访者 × 真实语境 × 非引导式提问 × 深度追问 × 可靠记录 × 系统化综合 × 组织影响力
+   - 关键框架: 业务问题驱动 x 受访者招募矩阵 x 情境访谈 x 分析综合 x 研究影响力 x ResearchOps
+   - 内容规模: 489 行（解码后），五层系统结构 + 工具模板 / 金句 / 更新日志
+   - 来源说明: web_search 因外部 432 错误失败；改用 Steve Portigal 官方书页、Open Library 书目数据与 DuckDuckGo 可见摘要片段交叉核验
+
+=== TASK 2: 扩写已有文章 (1篇) — 营销 ===
+- Donald Miller《Building a StoryBrand》SB7品牌叙事方法论 (营销, importance=5)
+  - 扩写后规模: 471 行（解码后）
+  - 新增内容:
+    * 从“信息过载”视角重写 StoryBrand 的问题意识
+    * 增补多触点统一叙事：首页 / 销售 / 邮件 / 视频 / 提案
+    * 增加首页评分卡、用户复述测试、A/B 实验优先级
+    * 补充模板、30天执行计划与方法边界
+
+=== 验证与同步 ===
+- 扩写前已通过 curl 验证 public/data/articles/Donald-Miller-Building-a-StoryBrand.json 可访问
+- 已执行 cp 同步 data/index.json -> public/data/index.json
+- 已执行 cp 同步 data/articles/* -> public/data/articles/
+- 已通过 curl 验证 public/data/articles/Steve-Portigal-Interviewing-Users-How-to-Uncover-Compelling-Insights.json 可访问
+- 已通过 curl 验证 public/data/articles/Donald-Miller-Building-a-StoryBrand.json 可访问
+- 已通过 curl 验证 public/data/index.json 可访问
+
+=== 统计更新 ===
+- 总文章: 598 -> 599
+- 产品设计分类: 95 -> 96
+- 营销分类: 53 (扩写1篇)
+- 新增: Steve-Portigal-Interviewing-Users-How-to-Uncover-Compelling-Insights.json
+- 扩写: Donald-Miller-Building-a-StoryBrand.json

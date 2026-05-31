@@ -9949,6 +9949,28 @@
       "learned_at": "2026-05-10",
       "source": "麦肯锡《估值：衡量和管理公司价值》方法论",
       "file": "articles/Tim-Koller-McKinsey-Valuation-企业估值方法论.json"
+    },
+    {
+      "id": "Steve-Portigal-Interviewing-Users-How-to-Uncover-Compelling-Insights",
+      "category": "产品设计",
+      "title": "Steve Portigal《Interviewing Users》用户访谈洞察方法论",
+      "keywords": [
+        "Steve Portigal",
+        "Interviewing Users",
+        "用户访谈",
+        "research interviews",
+        "contextual inquiry",
+        "user research",
+        "analysis and synthesis",
+        "ResearchOps",
+        "洞察",
+        "产品发现"
+      ],
+      "summary": "核心主题：访谈不是把问题表问完，而是围绕业务目标进入真实语境、建立信任、追问行为细节、捕捉矛盾与情绪，并通过记录—分析—综合—传播把零散对话转成可执行洞察。",
+      "importance": 5,
+      "learned_at": "2026-05-31",
+      "source": "Steve Portigal 官方书页《Interviewing Users: How to Uncover Compelling Insights (2nd edition)》公开介绍；Open Library 书目数据（Steve Portigal，first_publish_year=2013）；DuckDuckGo 可见公开摘要片段用于交叉核验。",
+      "file": "articles/Steve-Portigal-Interviewing-Users-How-to-Uncover-Compelling-Insights.json"
     }
   ],
   "SUMMARY": {
