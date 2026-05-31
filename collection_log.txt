@@ -138,3 +138,37 @@
 - 心理学分类: 162 (扩写 1 篇)
 - 所有文件已同步到 public/data/
 - Git 推送与部署触发：待本次脚本执行
+
+2026-05-31 16:32 UTC — Cron Job Collection Run
+=============================================
+
+=== TASK 1: 收录新书 (1本) — 产品设计 ===
+1. Michele Hansen《Deploy Empathy》客户访谈方法论 (产品设计, importance=5)
+   - 核心公式: 客户洞察质量 = 明确学习目标 × 正确受访者 × 具体经历提问 × 安静倾听 × 时间线复盘 × 洞察转决策能力
+   - 关键框架: 六步访谈飞轮 × 受访者选择矩阵 × 购买/采用时间线 × 洞察到业务动作映射
+   - 内容亮点: 具体经历提问、流失/成交/潜客访谈策略、时间线拆解、十个常见误区、五套工具模板、30天训练计划
+   - 文件: Michele-Hansen-Deploy-Empathy-客户访谈方法论.json (18.8KB, 119行)
+
+=== TASK 2: 扩写已有文章 (1篇) — 心理学 ===
+- Angela Duckworth《Grit》坚毅力方法论文 (心理学, importance=5)
+  - 扩写前: 18.7KB, 57行
+  - 扩写后: 18.7KB, 133行
+  - 扩写内容:
+    * 成就公式与 Grit 双轴模型重写
+    * 四大心理资产（兴趣/练习/目的/希望）系统化展开
+    * 目标层级体系、Grit Scale 边界、关键实证研究
+    * 与韧性/自律/心流/成长心态的对比
+    * 十大误区纠偏、个人/团队应用、五套工具模板、30天计划
+
+=== 验证与同步 ===
+- 扩写前已使用 curl 验证 public/data/articles/Angela-Duckworth-Grit-坚毅力方法论.json 可访问
+- 写入后已执行 cp 同步到 public/data/
+- 写入后已使用 curl 验证 public/data/articles/Michele-Hansen-Deploy-Empathy-客户访谈方法论.json 可访问
+- 写入后已使用 curl 验证 public/data/articles/Angela-Duckworth-Grit-坚毅力方法论.json 可访问
+
+=== 统计更新 ===
+- 总文章: 594 -> 595
+- 产品设计分类: 93 -> 94
+- 心理学分类: 162 (扩写1篇)
+- 新增: Michele-Hansen-Deploy-Empathy-客户访谈方法论.json
+- 扩写: Angela-Duckworth-Grit-坚毅力方法论.json
