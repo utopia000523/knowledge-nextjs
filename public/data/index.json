@@ -4139,7 +4139,7 @@
     {
       "id": "Mihaly-Csikszentmihalyi-Flow-心流最优体验方法论",
       "category": "心理学",
-      "title": "Mihaly Csikszentmihalyi《Flow》心流最优体验方法论",
+      "title": "Mihaly Csikszentmihalyi《Flow: The Psychology of Optimal Experience》心流最优体验方法论",
       "keywords": [
         "Flow",
         "心流",
@@ -4148,12 +4148,18 @@
         "沉浸",
         "专注力",
         "内在动机",
-        "积极心理学"
+        "创造力",
+        "积极心理学",
+        "高峰体验",
+        "深度工作",
+        "挑战技能平衡",
+        "Autotelic",
+        "注意力"
       ],
-      "summary": "核心命题：幸福来自于对心流体验的追求。心流九要素 × 挑战-技能平衡模型 × 自为目的人格 × 日常心流设计 × 积极心理学奠基之作",
+      "summary": "核心命题：幸福不是被动获得，而是通过结构化投入获得的最优体验。核心框架：心流质量 = 目标清晰度 x 即时反馈 x 挑战-技能匹配 x 注意力完整度 x 自为目的人格。此次扩写围绕心流九要素、注意力机制、工作与学习中的应用、常见误区与训练方案进行了系统补强。",
       "importance": 5,
-      "learned_at": "2026-05-19",
-      "source": "Mihaly Csikszentmihalyi《Flow: The Psychology of Optimal Experience》(1990)",
+      "learned_at": "2026-05-31",
+      "source": "Mihaly Csikszentmihalyi《Flow: The Psychology of Optimal Experience》(1990)；《Finding Flow》(1997)；《Creativity》(1996)。",
       "file": "articles/Mihaly-Csikszentmihalyi-Flow-心流最优体验方法论.json"
     },
     {
@@ -9825,17 +9831,43 @@
       "learned_at": "2026-05-24",
       "source": "Robert B. Cialdini《Influence: The Psychology of Persuasion》(1984, 2007 Revised Edition) — HarperBusiness",
       "file": "articles/Robert-Cialdini-Influence-影响力-说服心理学六原理方法论.json"
+    },
+    {
+      "id": "Erika-Hall-Just-Enough-Research-研究驱动产品设计方法论",
+      "category": "产品设计",
+      "title": "Erika Hall《Just Enough Research》研究驱动产品设计方法论",
+      "keywords": [
+        "Erika Hall",
+        "Just Enough Research",
+        "用户研究",
+        "研究方法",
+        "产品设计研究",
+        "Research Ops",
+        "Survey Design",
+        "Interview",
+        "Competitive Research",
+        "Synthesis",
+        "Evidence-based Design",
+        "Bias",
+        "Research Ethics",
+        "Focus Group"
+      ],
+      "summary": "核心主题：用“足够但不过度”的研究，把产品决策从拍脑袋变成基于证据的判断。核心框架：研究价值 = 正确问题 x 合适方法 x 偏差控制 x 发现综合 x 决策落地。基于 A Book Apart 第二版介绍页与 OpenLibrary 书目信息整理。",
+      "importance": 5,
+      "learned_at": "2026-05-31",
+      "source": "Erika Hall《Just Enough Research, Second Edition》(A Book Apart, 2019)；A Book Apart 产品页；OpenLibrary 书目信息。",
+      "file": "articles/Erika-Hall-Just-Enough-Research-研究驱动产品设计方法论.json"
     }
   ],
   "SUMMARY": {
-    "total_articles": 591,
-    "last_updated": "2026-05-24",
+    "total_articles": 594,
+    "last_updated": "2026-05-31",
     "by_category": {
-      "产品设计": 92,
+      "产品设计": 93,
       "其他": 1,
-      "创业": 91,
+      "创业": 93,
       "心理学": 162,
-      "技术": 44,
+      "技术": 43,
       "理财": 64,
       "营销": 51,
       "雅思": 16,
