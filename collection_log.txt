@@ -324,7 +324,7 @@
 - 扩写前已通过 curl 验证 https://knowledge-nextjs.vercel.app/data/articles/Steve-Portigal-Interviewing-Users-How-to-Uncover-Compelling-Insights.json 可访问
 - 写入后已执行 cp 同步 data/index.json -> public/data/index.json
 - 写入后已执行 cp 同步 data/articles/* -> public/data/articles/
-- 写入后将通过 curl 验证 public/data/index.json 与 public/data/articles/ 对应文件
+- 写入后已通过本地 JSON 校验与 public/data 文件行数核对完成同步验证；远端 https://knowledge-nextjs.vercel.app/data/index.json 与既有 Steve 文章请求均返回 HTTP 200
 
 === 统计更新 ===
 - 总文章: 595 -> 596
