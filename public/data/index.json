@@ -9971,13 +9971,35 @@
       "learned_at": "2026-05-31",
       "source": "Steve Portigal 官方书页《Interviewing Users: How to Uncover Compelling Insights (2nd edition)》公开介绍；Open Library 书目数据（Steve Portigal，first_publish_year=2013）；DuckDuckGo 可见公开摘要片段用于交叉核验。",
       "file": "articles/Steve-Portigal-Interviewing-Users-How-to-Uncover-Compelling-Insights.json"
+    },
+    {
+      "id": "Marc-Stickdorn-This-is-Service-Design-Doing-服务设计落地方法论",
+      "category": "产品设计",
+      "title": "Marc Stickdorn 等《This is Service Design Doing》服务设计落地方法论",
+      "keywords": [
+        "This is Service Design Doing",
+        "Marc Stickdorn",
+        "service design",
+        "服务设计",
+        "service blueprint",
+        "customer journey",
+        "ecosystem map",
+        "prototyping",
+        "orchestration",
+        "facilitation"
+      ],
+      "summary": "核心主题：把服务设计从做几张旅程图升级为跨团队落地系统——以价值共创、前台后台联动、原型先行、迭代治理和组织嵌入为主线，将研究、洞察、蓝图、原型、实施与度量连成一条连续服务改进链。",
+      "importance": 5,
+      "learned_at": "2026-06-01",
+      "source": "This is Service Design Doing 官网公开书介与 Method Library 页面；Open Library 书目数据（Marc Stickdorn，first_publish_year=2018）。",
+      "file": "articles/Marc-Stickdorn-This-is-Service-Design-Doing-服务设计落地方法论.json"
     }
   ],
   "SUMMARY": {
-    "total_articles": 595,
+    "total_articles": 596,
     "last_updated": "2026-06-01",
     "by_category": {
-      "产品设计": 94,
+      "产品设计": 95,
       "其他": 1,
       "创业": 93,
       "心理学": 162,

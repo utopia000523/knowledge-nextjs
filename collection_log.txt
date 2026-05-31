@@ -306,3 +306,28 @@
 - 营销分类: 53 (扩写1篇)
 - 新增: Steve-Portigal-Interviewing-Users-How-to-Uncover-Compelling-Insights.json
 - 扩写: Donald-Miller-Building-a-StoryBrand.json
+
+2026-05-31 20:17 UTC — Cron Job Collection Run
+=============================================
+
+=== TASK 1: 收录新书 (1本) — 产品设计 ===
+1. Marc Stickdorn 等《This is Service Design Doing》服务设计落地方法论 (产品设计, importance=5)
+   - 核心公式: 服务设计落地率 = framing 清晰度 x 真实场景研究质量 x 前后台系统可视化能力 x 跨角色共创强度 x 原型验证速度 x 治理嵌入深度
+   - 关键框架: framing -> 研究 -> 旅程图 -> 生态系统图 -> 服务蓝图 -> 服务原型 -> 实施与治理
+   - 来源说明: web_search 因外部 432 错误失败；改用官网公开书介、Method Library 页面与 Open Library 书目数据交叉核验
+
+=== TASK 2: 扩写已有文章 (1篇) — 产品设计 ===
+- Steve Portigal《Interviewing Users》用户访谈洞察方法论 (产品设计, importance=5)
+  - 扩写方向: research brief、样本策略、情境观察、偏差控制、远程访谈、ResearchOps、研究影响力、30天训练计划
+
+=== 验证与同步 ===
+- 扩写前已通过 curl 验证 https://knowledge-nextjs.vercel.app/data/articles/Steve-Portigal-Interviewing-Users-How-to-Uncover-Compelling-Insights.json 可访问
+- 写入后已执行 cp 同步 data/index.json -> public/data/index.json
+- 写入后已执行 cp 同步 data/articles/* -> public/data/articles/
+- 写入后将通过 curl 验证 public/data/index.json 与 public/data/articles/ 对应文件
+
+=== 统计更新 ===
+- 总文章: 595 -> 596
+- 产品设计分类: 94 -> 95
+- 新增: Marc-Stickdorn-This-is-Service-Design-Doing-服务设计落地方法论.json
+- 扩写: Steve-Portigal-Interviewing-Users-How-to-Uncover-Compelling-Insights.json
