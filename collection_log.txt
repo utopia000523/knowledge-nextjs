@@ -206,3 +206,36 @@
 - 营销分类: 51 (扩写1篇)
 - 新增: Laura-Klein-Build-Better-Products-用户中心产品构建方法论.json
 - 扩写: Madhavan-Ramanujam-Georg-Tacke-Monetizing-Innovation-定价驱动创新方法论.json
+
+2026-05-31 18:11 UTC — Cron Job Collection Run
+=============================================
+
+=== TASK 1: 收录新书 (1本) — 营销 ===
+1. Marty Neumeier《Zag》品牌激进差异化方法论 (营销, importance=5)
+   - 核心公式: 品牌势能 = 清晰目标用户 x 激进差异化 x 选择性放弃 x 一致化品牌体验 x 持续创新速度
+   - 关键框架: Zig vs Zag 审计表 x 聚焦与放弃清单 x 品牌承诺模板 x 触点一致性检查表 x 差异化评分卡
+   - 内容亮点: 基于 Marty Neumeier 官方书页公开介绍与 Open Library 书目信息，整理 out-position / out-maneuver / out-design 三位一体逻辑，并补充差异化方向、误区、工具模板与30天执行计划
+   - 文件: Marty-Neumeier-Zag-品牌激进差异化方法论.json
+
+=== TASK 2: 扩写已有文章 (1篇) — 产品设计 ===
+- Michele Hansen《Deploy Empathy》客户访谈方法论 (产品设计, importance=5)
+  - 扩写前: 18.8KB, 118行
+  - 扩写后: 23.7KB, 157行
+  - 扩写内容:
+    * 从基础版重构为八步访谈闭环
+    * 新增购买 / 流失 / 未激活三类关键访谈场景
+    * 补充 JTBD、Sales Discovery、Continuous Discovery 的关系
+    * 增加客户语言库、访谈节奏设计、误区纠偏与五套模板
+
+=== 验证与同步 ===
+- 扩写前已使用 curl 验证 public/data/articles/Michele-Hansen-Deploy-Empathy-客户访谈方法论.json 可访问
+- 写入后已执行 cp 同步到 public/data/
+- 写入后已使用 curl 验证 public/data/articles/Marty-Neumeier-Zag-品牌激进差异化方法论.json 可访问
+- 写入后已使用 curl 验证 public/data/articles/Michele-Hansen-Deploy-Empathy-客户访谈方法论.json 可访问
+
+=== 统计更新 ===
+- 总文章: 596 -> 597
+- 营销分类: 51 -> 52
+- 产品设计分类: 94 (扩写1篇)
+- 新增: Marty-Neumeier-Zag-品牌激进差异化方法论.json
+- 扩写: Michele-Hansen-Deploy-Empathy-客户访谈方法论.json

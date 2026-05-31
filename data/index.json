@@ -13,6 +13,25 @@
   ],
   "articles": [
     {
+      "id": "Marty-Neumeier-Zag-品牌激进差异化方法论",
+      "category": "营销",
+      "title": "Marty Neumeier《Zag》品牌激进差异化方法论",
+      "keywords": [
+        "Marty Neumeier",
+        "Zag",
+        "radical differentiation",
+        "品牌差异化",
+        "品牌定位",
+        "品牌战略",
+        "high-performance brands"
+      ],
+      "summary": "**核心主题**: 在同质化与信息过载时代，品牌增长不是更努力地跟随市场，而是通过激进差异化重新定义竞争坐标——选择性放弃、清晰定位、极致聚焦、一致体验与持续创新共同构成“zag”。",
+      "importance": 5,
+      "learned_at": "2026-05-31",
+      "source": "Marty Neumeier《Zag: The Number One Strategy of High-Performance Brands》(2006)；Marty Neumeier 官方书页公开介绍；Open Library 书目元数据。",
+      "file": "articles/Marty-Neumeier-Zag-品牌激进差异化方法论.json"
+    },
+    {
       "id": "AG-Lafley-Roger-Martin-Playing-to-Win-战略选择瀑布方法论",
       "category": "创业",
       "title": "A.G. Lafley / Roger Martin《Playing to Win》战略选择瀑布方法论",
