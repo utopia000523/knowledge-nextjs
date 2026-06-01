@@ -592,3 +592,30 @@
 - 总文章: 609 -> 610
 - 项目管理分类: 71 -> 72
 - 营销分类: 54 (扩写1篇)
+
+
+2026-06-01 04:06 UTC — Cron Job Collection Run
+=============================================
+
+=== TASK 1: 收录新书 (1本) — 营销 ===
+1. John E. Kennedy《Reason Why Advertising》理由型广告与纸上销售方法论 (营销, importance=5)
+   - 核心公式: 广告产出 = 可成交受众匹配度 x 购买理由清晰度 x 证据可信度 x 诉求具体性 x 测试反馈速度
+   - 关键框架: Salesmanship in Print x 理由型广告五步工作流 x 证据矩阵 x 测试维度表
+   - 文件: John-E-Kennedy-Reason-Why-Advertising-理由型广告与纸上销售方法论.json (541 行, 21387 bytes)
+   - 来源说明: 已按要求先使用 web_search 检索，再结合公开书目摘要与可验证公开引述整理。
+
+=== TASK 2: 扩写已有文章 (1篇) — 产品设计 ===
+- Indi Young《Mental Models》心智模型研究与设计策略方法论 (产品设计, importance=5)
+  - 扩写后规模: 551 行, 24790 bytes
+  - 新增内容:
+    * Mental Model / Tower / Skyline / Support Structure 定义系统
+    * Thinking Styles 与 skyline 分群
+    * 质量标准、适用边界、组织落地与 30 天实践计划
+    * 引入 Indi 官网公开表述作为可验证来源
+
+=== 统计更新 ===
+- 总文章: 610 -> 611
+- 营销分类: 54 -> 55
+- 产品设计分类: 103 (扩写1篇)
+- 新增: John-E-Kennedy-Reason-Why-Advertising-理由型广告与纸上销售方法论.json
+- 扩写: Indi-Young-Mental-Models-心智模型研究与设计策略方法论.json

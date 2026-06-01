@@ -5,6 +5,7 @@
   "keywords": [
     "Indi Young",
     "Mental Models",
+    "Mental Model Skyline",
     "Design Strategy",
     "Human Behavior",
     "Task Analysis",
@@ -12,81 +13,538 @@
     "Audience Thinking",
     "UX Research",
     "Opportunity Map",
-    "Persona Alternative"
+    "Persona Alternative",
+    "Problem Space"
   ],
-  "summary": "核心主题：不是从界面元素出发设计产品，而是先重建用户在真实生活中的思考路径、动机链条与任务全景，再据此发现机会窗口、重排优先级并统一设计战略。",
+  "summary": "核心主题：不是先想界面怎么组织，而是先重建人们在真实情境中的思考顺序、顾虑、判断规则与任务塔，再用心智模型天际线对照现有支撑结构，找出缺口、重叠与战略机会。",
   "importance": 5,
   "learned_at": "2026-06-01",
-  "source": "来源综合：Rosenfeld Media 书页公开描述（gives you the tools to help you grasp, and design for, those reasons / practical set of techniques for task analysis）；Goodreads 与 Target 的公开书目信息（2008, Rosenfeld Media, 约 299 页）；Indi Young 官网示例页关于 Mental Model Diagram / skylines 的公开说明。",
+  "source": "来源综合：Rosenfeld Media 公开书目信息与书介摘要（task analysis / aligning design strategy with human behavior）；Indi Young 官网 Method 页面关于 problem space research、mental model skyline、support people’s cognition 的公开描述；Opportunity Maps 课程页关于 skylines / thinking styles / gaps and weaknesses 的公开说明。",
   "file": "articles/Indi-Young-Mental-Models-心智模型研究与设计策略方法论.json",
   "content": {
-    "core_formula": "设计战略洞察 = 深度行为访谈 × 思维与动机抽取 × 任务塔归纳 × 心智模型图谱 × 支撑结构映射 × 机会识别\n\n一句话压缩：\n先理解人脑里正在发生什么，再决定屏幕上应该出现什么。",
+    "core_formula": {
+      "name": "心智模型战略公式",
+      "equation": "设计战略洞察 = 深度行为访谈 x 思维与动机抽取 x 任务塔归纳 x Mental Model Skyline x 支撑结构映射 x 机会重排",
+      "compressed_statement": "先理解人脑里发生了什么，再决定屏幕上应该出现什么。",
+      "first_principles": [
+        "用户不是按组织架构、功能模块或菜单树来思考世界。",
+        "行为背后总有判断逻辑、顾虑、目标与个人规则；如果只看点击与任务流，就会漏掉真正的决策结构。",
+        "设计的上游任务不是画界面，而是重建人们怎样定义问题、怎样判断下一步、怎样解释进展。",
+        "当组织的支撑结构与用户的思考结构错位时，体验摩擦、教育成本和路线图浪费都会上升。"
+      ]
+    },
     "layers": [
       {
         "level": 1,
-        "title": "第一层：Mental Models 的出发点——为什么用户不会按功能模块思考",
-        "content": "Indi Young 这本书最重要的提醒是：组织按部门、功能、流程图来切世界，但用户通常按自己的目标、顾虑、判断顺序和生活上下文来思考。于是产品团队自以为“信息结构清楚”，用户却仍然迷失。\n\nRosenfeld Media 的公开描述指出，这本书帮助团队 **grasp, and design for, those reasons**——这里的 reasons，不只是任务步骤，而是人们采取行动背后的动机、判断与心理路径。\n\n因此，Mental Models 不是又一个 UI 技巧库，而是一个把研究结果转成设计战略的桥梁。"
+        "title": "第一层：Mental Models 的出发点——为什么“功能视角”总会让产品偏掉",
+        "overview": [
+          "Indi Young 的核心提醒是：组织会按部门、能力、数据库字段和流程图切世界，但用户通常按自己的目标、情境、担忧与判断路径来切世界。",
+          "所以团队常觉得“信息架构已经很清楚”，用户却仍然迷路，因为两者用的不是同一张地图。",
+          "Mental Models 的真正作用，不是多做一张研究图，而是逼迫组织从内部结构切换到人的认知结构。"
+        ],
+        "public_clues": [
+          "Rosenfeld Media 公开书介强调：本书帮助团队 grasp, and design for, those reasons，并把方法定位为 practical set of techniques for task analysis。",
+          "Indi 官网 Method 页面强调从 problem space 开始，询问人们如何 mentally approach a goal, intent, or purpose。",
+          "这说明它关注的不只是任务步骤，而是人们为什么这么想、这样想意味着什么。"
+        ],
+        "one_sentence_answer": "如果你按系统结构设计，而不是按人的思考结构设计，产品就会越来越像组织内部，而不是越来越像用户的解决路径。"
       },
       {
         "level": 2,
-        "title": "第二层：什么是心智模型——从“用户说了什么”走向“用户如何组织世界”",
-        "content": "| 概念 | 含义 | 对设计意味着什么 |\n|------|------|------------------|\n| Mental Model | 人们理解某类活动、目标与关系的内部组织方式 | 设计必须贴近这种组织方式 |\n| Task Tower / Thinking Tower | 用户在追求目标时的思考与动作层级 | 功能应服务于塔的关键节点 |\n| Support Structure | 现有产品、服务、内容在支撑这些任务时的布局 | 用于找缺口、重叠与机会 |\n| Skyline | 不同受众在心智模型中的共同/差异轮廓 | 用于分群与优先级判断 |\n\n这套方法关心的不是“用户是否喜欢这个按钮”，而是“用户在做这件事时，脑内顺序是怎样展开的”。"
+        "title": "第二层：关键定义——Mental Model、Tower、Skyline、Support Structure 分别是什么",
+        "definitions": [
+          {
+            "term": "Mental Model",
+            "definition": "人们围绕某个目标、情境或问题，如何组织理解、判断和行动的内部结构。",
+            "design_meaning": "不是研究“他们点哪里”，而是研究“他们如何解释世界与决定下一步”。"
+          },
+          {
+            "term": "Mental Model Tower",
+            "definition": "把相近的思考、判断、顾虑、动作片段沿着目标层级堆叠起来形成的任务塔。",
+            "design_meaning": "塔让团队看到认知活动的层级，而不只是零散摘录。"
+          },
+          {
+            "term": "Mental Model Skyline",
+            "definition": "多座任务塔形成的整体天际线，用来观察一个目标域中人们的认知全景。",
+            "design_meaning": "天际线让组织能俯瞰全局，识别哪些区域被支持、哪些区域被忽视。"
+          },
+          {
+            "term": "Support Structure",
+            "definition": "组织现有的产品、内容、服务、流程、团队与工具，对这些认知活动的支撑布局。",
+            "design_meaning": "把现有能力映射到塔下方，才能看见缺口与重叠。"
+          },
+          {
+            "term": "Thinking Styles / Skyline Variants",
+            "definition": "不同人群面对相同目标时，采用的不同思考方式与路径。",
+            "design_meaning": "分群的重点从 demographic labels 转向 cognitive patterns。"
+          }
+        ]
       },
       {
         "level": 3,
-        "title": "第三层：研究输入——用深度访谈收集行为、语言、判断与情绪线索",
-        "content": "Mental Models 的素材主要来自高质量深度访谈，而不是问卷快照。访谈关注的不只是任务流程，还包括：\n- 人们如何定义问题；\n- 他们怎样判断下一步；\n- 哪些担忧或期待在驱动选择；\n- 哪些外部限制改变了路径。\n\n优秀访谈问题通常聚焦：\n- 你在什么情况下开始做这件事？\n- 当时最先想到的是什么？\n- 你为什么先做 A 而不是 B？\n- 哪一步最不确定？\n- 你希望避免什么？\n\n因此，这是一种比传统需求收集更深的研究：它不是采集 feature requests，而是在采集 cognition patterns。"
+        "title": "第三层：为什么它比 Persona 更上游——从“是谁”走向“怎么想”",
+        "comparison": [
+          {
+            "method": "Persona",
+            "best_at": "回答“我们在服务谁”。",
+            "blind_spot": "容易停留在角色标签、职责和人口属性。",
+            "mental_model_upgrade": "继续向下追问：同一个角色的人会不会用完全不同方式思考同一件事？"
+          },
+          {
+            "method": "Journey Map",
+            "best_at": "回答“经历了哪些触点”。",
+            "blind_spot": "容易过度线性，忽略内在判断结构。",
+            "mental_model_upgrade": "把触点背后的认知活动挖出来。"
+          },
+          {
+            "method": "JTBD",
+            "best_at": "回答“试图完成什么工作”。",
+            "blind_spot": "常在 hurried context 中退回功能规格，且较少展开 thinking style 差异。",
+            "mental_model_upgrade": "不仅问要完成什么，还问怎样理解、怎样权衡、怎样感受。"
+          }
+        ],
+        "takeaway": "Mental Models 不是替代所有方法，而是作为更上游的认知结构底图，为 persona、journey、JTBD、内容策略和信息架构提供更深依据。"
       },
       {
         "level": 4,
-        "title": "第四层：从原始访谈到塔结构——如何抽取“思考单元”",
-        "content": "原始访谈里会混杂事实、故事、判断、情绪与抱怨。方法论中的关键动作，是把这些内容拆成可归纳的思考单元，然后沿着目标层级组织。\n\n可把它理解为四步：\n1. 找到用户在做判断时说出的关键句；\n2. 提取句子中的意图、顾虑与动作；\n3. 把相近内容聚成任务塔；\n4. 用更高层目标串联多个塔。\n\n最终得到的不是一次用户旅程，而是一张“人们通常如何思考这类问题”的地图。"
+        "title": "第四层：研究输入——要收集的不是需求，而是判断与解释",
+        "input_principles": [
+          "访谈重点不是功能许愿单，而是人们如何开始、如何判断、如何改变主意、如何定义成功。",
+          "好的原始材料同时包含行为、解释、顾虑、情绪、个人规则和环境约束。",
+          "如果只问“你想要什么功能”，你拿到的是解决方案碎片，不是认知结构。"
+        ],
+        "interview_targets": [
+          "触发事件：什么情况下会开始这件事？",
+          "目标与成功标准：做成了意味着什么？",
+          "判断顺序：为什么先做 A 再做 B？",
+          "疑虑与担忧：哪一步最不确定？",
+          "替代路径：你还考虑过什么方式？",
+          "情绪与身份：你想避免被怎样看待？"
+        ],
+        "sample_questions": [
+          "最近一次遇到这个问题是什么时候？",
+          "当时你最先想到的是什么？",
+          "你怎么知道该先做哪一步？",
+          "哪些信息会让你更安心？",
+          "在哪个时刻你会停止、犹豫或改道？"
+        ]
       },
       {
         "level": 5,
-        "title": "第五层：Mental Model Diagram——机会识别为什么会更清楚",
-        "content": "当任务塔被整理出来后，再把现有产品能力、内容、服务流程映射到这些塔上，就能看见非常清晰的三类区域：\n- **支撑过强**：组织投入很多，但用户并不以此为中心；\n- **支撑不足**：用户高度在意，但方案薄弱；\n- **完全缺口**：用户脑中有一段重要思维/任务，产品根本没覆盖。\n\n这正是 Mental Models 最强的战略价值：它不仅帮助你解释用户，还帮助你解释**为什么某些 roadmap 应该被重排**。"
+        "title": "第五层：数据处理——从原句到思考单元，不要把访谈直接变成功能清单",
+        "processing_steps": [
+          {
+            "step": 1,
+            "name": "拆原句",
+            "description": "把受访者表达切成最小思考单元，而不是按主题直接贴墙。"
+          },
+          {
+            "step": 2,
+            "name": "辨识意图",
+            "description": "区分这句话是在表达目标、判断、动作、担忧、原则还是情绪。"
+          },
+          {
+            "step": 3,
+            "name": "抽象上卷",
+            "description": "把若干细节归到更高层目的与思考节点。"
+          },
+          {
+            "step": 4,
+            "name": "形成塔结构",
+            "description": "把相关思维活动按层级堆叠，构成任务塔。"
+          },
+          {
+            "step": 5,
+            "name": "交叉比对",
+            "description": "对比不同受访者间的共性塔与差异塔。"
+          }
+        ],
+        "quality_bar": [
+          "记录动作不够，还要记录为什么这么做。",
+          "记录抱怨不够，还要知道抱怨指向哪个认知障碍。",
+          "记录任务不够，还要知道任务之间的上位关系。"
+        ]
       },
       {
         "level": 6,
-        "title": "第六层：与 Persona / Journey Map 的区别——它更像“认知地图”",
-        "content": "| 方法 | 擅长回答 | 局限 |\n|------|----------|------|\n| Persona | 我们在为谁设计 | 容易停留在人口统计或标签化 |\n| Journey Map | 用户经历了哪些接触点 | 容易过度线性，弱化思考逻辑 |\n| JTBD | 用户想完成什么工作 | 对情绪与判断细节展开较少 |\n| Mental Models | 用户如何组织这个世界、为什么这样判断 | 研究与分析成本更高 |\n\n因此，Mental Models 常被用作上游战略工具，再与 Persona、Journey、JTBD 等结合。它不是替代所有方法，而是为其他方法提供更深层结构。"
+        "title": "第六层：塔结构——从零散素材到认知层级",
+        "tower_levels": [
+          {
+            "layer": "高层目的",
+            "question": "我究竟想达成什么更大的结果？",
+            "design_use": "决定产品主导航、信息架构与价值主张的主轴。"
+          },
+          {
+            "layer": "中层判断",
+            "question": "我接下来该判断什么、比较什么、确认什么？",
+            "design_use": "决定解释内容、辅助决策与引导节点。"
+          },
+          {
+            "layer": "底层动作",
+            "question": "我具体要执行什么步骤？",
+            "design_use": "决定界面流程、字段、按钮与操作顺序。"
+          }
+        ],
+        "insight": "很多团队一上来就设计底层动作，但真正决定用户是否顺畅的，往往是中层判断没有被支持。"
       },
       {
         "level": 7,
-        "title": "第七层：Skyline 与分群——不是按人口属性，而是按思维模式切人群",
-        "content": "Indi Young 后续公开内容常继续发展 skyline / thinking styles 思路。它启发我们：用户分群不必总按年龄、行业、职位来切，更关键的是他们处理同类问题时是否采用相近的认知路径。\n\n例如在同一产品里，可能存在：\n- 极度求稳型：先搜集证据再行动；\n- 快速试错型：先尝试后修正；\n- 委托协作型：先确认他人意见再决定。\n\n如果这些模式差异大，统一界面和统一教育路径就会失效。Mental Models 的高级用法，就是让产品识别不同 skyline 并针对性支撑。"
+        "title": "第七层：Mental Model Skyline——为什么天际线视角能暴露战略问题",
+        "skyline_value": [
+          "把大量任务塔放到同一视图中，可以看到一个目标领域的认知全景，而不是单个流程截面。",
+          "天际线之上是人的思考结构，之下可以叠加组织现有支撑结构，于是缺口会被看得很清楚。",
+          "Opportunity Maps 课程页公开描述强调：可以在 towers 上方/周围叠加其他研究，并看到 gaps and weaknesses。"
+        ],
+        "what_to_look_for": [
+          "哪些高频认知区域几乎没有支撑？",
+          "哪些区域组织投入过度，但用户并不重视？",
+          "哪些支撑只服务一种 thinking style，却误以为覆盖了所有人？",
+          "哪些塔是未来战略最值得扩张的机会窗口？"
+        ],
+        "managerial_meaning": "Skyline 让路线图讨论从“再加什么功能”变成“先支持哪段关键认知”。"
       },
       {
         "level": 8,
-        "title": "第八层：如何把方法落到产品设计——从洞察到信息架构、内容与流程",
-        "content": "研究做完后，最重要的问题是：这些塔如何影响设计？\n\n| 输出对象 | 应用方式 |\n|----------|----------|\n| 信息架构 | 让导航按用户目标组织，而不是按内部部门组织 |\n| 内容策略 | 补足用户在高不确定节点需要的解释与 reassurance |\n| 功能优先级 | 优先建设支撑不足但高重要的任务塔 |\n| 服务流程 | 在关键判断点插入人工或自动帮助 |\n| 路线图 | 从“想做哪些功能”转成“先支撑哪段关键思维” |\n\n这使得 Mental Models 成为产品、设计、内容、服务团队都能共享的策略底图。"
+        "title": "第八层：Support Structure Mapping——把产品、内容、服务压到塔下面",
+        "mapping_layers": [
+          {
+            "layer": "产品界面",
+            "examples": [
+              "导航结构",
+              "关键流程",
+              "搜索与筛选",
+              "设置与反馈"
+            ]
+          },
+          {
+            "layer": "内容系统",
+            "examples": [
+              "帮助中心",
+              "解释型文案",
+              "案例",
+              "教育内容"
+            ]
+          },
+          {
+            "layer": "人工服务",
+            "examples": [
+              "客服",
+              "顾问",
+              "培训",
+              "社区支持"
+            ]
+          },
+          {
+            "layer": "组织流程",
+            "examples": [
+              "审批与交付",
+              "通知与跟进",
+              "异常处理",
+              "售后机制"
+            ]
+          }
+        ],
+        "three_outcomes": [
+          "支撑过强：内部投入很重，但用户价值感低。",
+          "支撑不足：用户高度在意，但方案很薄。",
+          "完全缺口：用户脑中有重要塔，组织根本没接住。"
+        ]
       },
       {
         "level": 9,
-        "title": "第九层：常见误区——为什么很多团队画不出真正有用的心智模型",
-        "content": "1. **把观点按主题贴墙就叫心智模型**：那只是 affinity map。\n2. **只记录动作，不记录判断**：会退化成流程图。\n3. **过早把用户塞进既有分类**：会错过新的认知模式。\n4. **只看共性，不看差异 skyline**：导致“一刀切”设计。\n5. **研究结果不映射现有支撑结构**：看得到人，看不到战略缺口。\n\n真正的难点不在作图，而在于：你是否真的愿意让用户的认知世界重排你的内部结构。"
+        "title": "第九层：Thinking Styles——真正有用的分群不是人群标签，而是认知模式",
+        "style_examples": [
+          {
+            "style": "求稳验证型",
+            "signals": [
+              "先收集证据再行动",
+              "偏好对比与证明",
+              "害怕高风险决策"
+            ],
+            "design_implication": "需要更多解释、对比、证明与可逆选项。"
+          },
+          {
+            "style": "快速试错型",
+            "signals": [
+              "先尝试后修正",
+              "偏好低门槛探索",
+              "容忍不完整信息"
+            ],
+            "design_implication": "需要快速开始、低摩擦反馈与可撤销机制。"
+          },
+          {
+            "style": "协作征询型",
+            "signals": [
+              "习惯寻求他人意见",
+              "重视共识",
+              "容易受角色关系影响"
+            ],
+            "design_implication": "需要分享、协作、讨论与审批支持。"
+          }
+        ],
+        "why_it_matters": "同一个 persona 可能内部存在多种 thinking style；如果不识别这些差异，统一流程只会照顾到最像团队自己的那一类人。"
       },
       {
         "level": 10,
-        "title": "第十层：实战模板——从访谈到图谱的最小工作包",
-        "content": "### 模板1：访谈提纲\n- 触发情境\n- 目标与成功标准\n- 首次判断\n- 替代方案\n- 顾虑与阻力\n- 收尾与复盘\n\n### 模板2：思考单元抽取卡\n- 原句\n- 目标\n- 判断\n- 动作\n- 情绪/担忧\n\n### 模板3：任务塔归纳表\n- 上层目标\n- 中层判断\n- 下层动作\n\n### 模板4：支撑结构映射表\n- 当前页面/功能/服务\n- 支撑到哪一段塔\n- 强/弱/缺口\n\n### 模板5：机会优先级表\n- 用户重要性\n- 当前支撑弱度\n- 战略相关性\n- 实施难度"
+        "title": "第十层：从洞察到设计——Mental Models 如何影响 IA、内容、流程与路线图",
+        "design_targets": [
+          {
+            "target": "信息架构",
+            "translation": "让导航按用户目标与判断顺序组织，而不是按内部部门组织。"
+          },
+          {
+            "target": "内容策略",
+            "translation": "把解释、 reassurance、比较材料放到高不确定节点。"
+          },
+          {
+            "target": "功能优先级",
+            "translation": "先建设支撑不足但高重要的塔。"
+          },
+          {
+            "target": "服务流程",
+            "translation": "在关键判断点插入人工支持或自动辅助。"
+          },
+          {
+            "target": "产品路线图",
+            "translation": "从 feature backlog 转向 cognition support backlog。"
+          }
+        ],
+        "bridge_sentence": "Mental Models 最强的地方，在于它不是停在研究报告，而是直接改变战略排序逻辑。"
       },
       {
         "level": 11,
-        "title": "第十一层：原书金句与适用边界",
-        "content": "### 公开页面金句\n1. **“Mental Models gives you the tools to help you grasp, and design for, those reasons.”**\n2. **“Mental Models offers a practical set of techniques for task analysis in the early stage of design thinking and strategic design planning.”**\n3. **“It offers both a high level overview of the value of Mental Models for executives and leaders, as well as a detailed step-by-step guide to the technique for practitioners.”**\n\n### 适用边界\n- 适合复杂决策、高认知负荷、跨渠道服务设计；\n- 对极低参与、极简单任务场景，未必需要完整图谱；\n- 需要较强研究与归纳能力，小团队可先做轻量版塔结构。"
+        "title": "第十一层：与 JTBD、服务蓝图、持续发现的关系",
+        "relations": [
+          {
+            "framework": "JTBD",
+            "how_it_connects": "都从问题空间切入，都反对直接问功能。",
+            "difference": "Mental Models 更强调 thinking style、内在判断与广义认知活动；JTBD 更常聚焦进展、情境和替代品。"
+          },
+          {
+            "framework": "Service Blueprint",
+            "how_it_connects": "都关心前台与后台如何支撑价值交付。",
+            "difference": "Service Blueprint 更偏服务运作映射；Mental Models 更偏认知结构映射。"
+          },
+          {
+            "framework": "Continuous Discovery",
+            "how_it_connects": "都重视持续接触客户、持续学习。",
+            "difference": "Continuous Discovery 偏节奏与决策习惯；Mental Models 偏深度认知框架构建。"
+          }
+        ],
+        "practical_rule": "如果你已经有持续研究机制，Mental Models 可以作为“高价值深挖专题”的上游框架，而不必每个问题都画完整天际线。"
       },
       {
         "level": 12,
-        "title": "第十二层：更新日志",
-        "content": "| 日期 | 更新内容 |\n|------|----------|\n| 2026-06-01 | 初次收录：整理心智模型定义、任务塔、支撑结构映射、skyline 分群、与 persona / journey / JTBD 的关系。 |"
+        "title": "第十二层：质量标准——什么样的心智模型图谱才算真的有用",
+        "quality_criteria": [
+          "能解释为什么用户会觉得系统难用，而不是只罗列难用点。",
+          "能指出哪些路线图项应该推迟，哪些应该提前。",
+          "能被产品、设计、研究、内容、服务多角色共同使用。",
+          "能清楚区分共性塔与 thinking style 差异。",
+          "能映射到现实支撑结构，而不只是停在研究洞察层。"
+        ],
+        "failure_signals": [
+          "图很漂亮，但无法指导优先级。",
+          "全是主题聚类，没有层级结构。",
+          "只有动作，没有判断与顾虑。",
+          "没有把现有产品/服务压到塔下验证。"
+        ]
+      },
+      {
+        "level": 13,
+        "title": "第十三层：常见误区——为什么很多团队做不出真正的 Mental Models",
+        "mistakes": [
+          {
+            "mistake": "把观点按主题贴墙就叫心智模型",
+            "why_wrong": "那更像 affinity map，还没有形成认知层级。",
+            "fix": "继续上卷为塔，明确目标—判断—动作关系。"
+          },
+          {
+            "mistake": "只记录动作，不记录判断",
+            "why_wrong": "会退化成流程图，失去认知深度。",
+            "fix": "在每个关键动作前追问“为什么做这一步”。"
+          },
+          {
+            "mistake": "过早把用户塞进既有角色标签",
+            "why_wrong": "会错过新的 thinking style。",
+            "fix": "先从认知模式分群，再看角色特征。"
+          },
+          {
+            "mistake": "只看共性，不看 skyline 差异",
+            "why_wrong": "会做出只适合平均用户的解决方案。",
+            "fix": "识别少数但高价值/高风险的思维路径。"
+          },
+          {
+            "mistake": "研究结果不映射现有支撑结构",
+            "why_wrong": "看得到人，看不到战略机会。",
+            "fix": "把内容、功能、服务、流程逐层压到塔下。"
+          }
+        ]
+      },
+      {
+        "level": 14,
+        "title": "第十四层：适用边界——什么场景值得做重型 Mental Model 研究",
+        "best_for": [
+          "复杂决策链路：金融、医疗、B2B、教育、企业软件、跨渠道服务。",
+          "高认知负荷：用户需要理解、比较、评估、协调多方。",
+          "组织要做战略重排：信息架构重构、产品线整合、服务转型。"
+        ],
+        "less_necessary_for": [
+          "极低参与、极简单的一步式任务。",
+          "只需快速验证某个局部 UI 假设的情境。",
+          "资源不足且问题极窄的小迭代。"
+        ],
+        "lightweight_option": "小团队可先做轻量版：聚焦单一目标域，画 3-5 座核心塔，并只映射最关键支撑结构。"
+      },
+      {
+        "level": 15,
+        "title": "第十五层：实战模板——从访谈到机会地图的最小工作包",
+        "templates": [
+          {
+            "name": "模板1：访谈提纲",
+            "items": [
+              "触发情境",
+              "目标与成功定义",
+              "首次判断",
+              "替代方案",
+              "顾虑与阻力",
+              "收尾与复盘"
+            ]
+          },
+          {
+            "name": "模板2：思考单元抽取卡",
+            "items": [
+              "原句",
+              "目标",
+              "判断",
+              "动作",
+              "情绪/担忧",
+              "外部约束"
+            ]
+          },
+          {
+            "name": "模板3：任务塔归纳表",
+            "items": [
+              "上层目标",
+              "中层判断",
+              "下层动作",
+              "证据片段",
+              "频率"
+            ]
+          },
+          {
+            "name": "模板4：支撑结构映射表",
+            "items": [
+              "当前页面/功能/服务",
+              "支撑到哪段塔",
+              "强/弱/缺口",
+              "风险与机会"
+            ]
+          },
+          {
+            "name": "模板5：机会优先级表",
+            "items": [
+              "用户重要性",
+              "支撑弱度",
+              "战略相关性",
+              "实施难度",
+              "优先级结论"
+            ]
+          }
+        ]
+      },
+      {
+        "level": 16,
+        "title": "第十六层：组织落地——如何让心智模型不止停在研究团队",
+        "stakeholder_moves": [
+          "先用一张高层 skyline 给高管展示“我们服务的其实不是内部流程，而是人的认知进展”。",
+          "把若干关键塔映射到当前功能/内容/服务，直接展示支撑不足和过度投入。",
+          "用 thinking styles 说明为什么一个统一流程无法照顾关键差异。",
+          "把心智模型输出嵌入产品规划、内容规划、服务培训与设计评审。"
+        ],
+        "operating_rhythm": [
+          "季度：选一个高价值目标域做深度 mental model 研究。",
+          "月度：把塔上的缺口转成机会 backlog。",
+          "周度：在功能评审时检查“这项变更到底支撑了哪段认知”。"
+        ]
+      },
+      {
+        "level": 17,
+        "title": "第十七层：原书金句与公开页面表述",
+        "quotes": [
+          "Mental Models gives you the tools to help you grasp, and design for, those reasons.",
+          "Mental Models offers a practical set of techniques for task analysis in the early stage of design thinking and strategic design planning.",
+          "Start in the problem space – Ask a variety of people how they mentally approach a goal, intent, or purpose.",
+          "The mental model skyline shows where an org’s capabilities support people’s cognition, and where it does not.",
+          "You’ll see how to find gaps and weaknesses, measure progress, and even create scenarios for different thinking styles."
+        ],
+        "interpretation": "这些公开表述共同指向同一个主题：Mental Models 的重点不是界面小修小补，而是以人的认知为中心重构设计战略。"
+      },
+      {
+        "level": 18,
+        "title": "第十八层：30 天实践计划",
+        "plan": [
+          {
+            "week": "第1周",
+            "focus": "界定目标域与问题空间",
+            "actions": [
+              "选择一个高认知负荷任务域",
+              "列出假设最多的关键问题",
+              "招募 6-8 位代表性受访者"
+            ]
+          },
+          {
+            "week": "第2周",
+            "focus": "深访与思考单元抽取",
+            "actions": [
+              "完成深度访谈",
+              "逐句拆解判断、动作与顾虑",
+              "建立原始思考单元库"
+            ]
+          },
+          {
+            "week": "第3周",
+            "focus": "搭建任务塔与 skyline",
+            "actions": [
+              "归纳高层目标与中层判断",
+              "标出共性塔与差异塔",
+              "初步识别 thinking styles"
+            ]
+          },
+          {
+            "week": "第4周",
+            "focus": "映射支撑结构与重排优先级",
+            "actions": [
+              "把现有功能/内容/服务压到塔下",
+              "标出支撑不足与过度投入区域",
+              "输出 3-5 个高优先级机会项"
+            ]
+          }
+        ]
+      },
+      {
+        "level": 19,
+        "title": "第十九层：更新日志",
+        "changelog": [
+          {
+            "date": "2026-06-01",
+            "change": "初次收录：整理 Mental Models、任务塔、支撑结构映射、skyline 分群、与 persona / journey / JTBD 的关系。"
+          },
+          {
+            "date": "2026-06-01",
+            "change": "扩写：重构为 19 层系统结构，新增 public 页面可验证表述、thinking styles、组织落地、质量标准、适用边界与 30 天实践计划。"
+          }
+        ]
       }
     ],
     "updates": [
       {
         "date": "2026-06-01",
         "note": "创建：收录《Mental Models》，补充任务塔、支撑结构映射、skyline 分群与设计战略迁移。"
+      },
+      {
+        "date": "2026-06-01",
+        "note": "扩写：从 12 层基础版重构为 19 层系统版，增加定义系统、thinking styles、组织落地、金句与 30 天计划。"
       }
     ]
   }

@@ -2960,6 +2960,7 @@
       "keywords": [
         "Indi Young",
         "Mental Models",
+        "Mental Model Skyline",
         "Design Strategy",
         "Human Behavior",
         "Task Analysis",
@@ -2967,12 +2968,13 @@
         "Audience Thinking",
         "UX Research",
         "Opportunity Map",
-        "Persona Alternative"
+        "Persona Alternative",
+        "Problem Space"
       ],
-      "summary": "核心主题：不是从界面元素出发设计产品，而是先重建用户在真实生活中的思考路径、动机链条与任务全景，再据此发现机会窗口、重排优先级并统一设计战略。",
+      "summary": "核心主题：不是先想界面怎么组织，而是先重建人们在真实情境中的思考顺序、顾虑、判断规则与任务塔，再用心智模型天际线对照现有支撑结构，找出缺口、重叠与战略机会。",
       "importance": 5,
       "learned_at": "2026-06-01",
-      "source": "来源综合：Rosenfeld Media 书页公开描述（gives you the tools to help you grasp, and design for, those reasons / practical set of techniques for task analysis）；Goodreads 与 Target 的公开书目信息（2008, Rosenfeld Media, 约 299 页）；Indi Young 官网示例页关于 Mental Model Diagram / skylines 的公开说明。",
+      "source": "来源综合：Rosenfeld Media 公开书目信息与书介摘要（task analysis / aligning design strategy with human behavior）；Indi Young 官网 Method 页面关于 problem space research、mental model skyline、support people’s cognition 的公开描述；Opportunity Maps 课程页关于 skylines / thinking styles / gaps and weaknesses 的公开说明。",
       "file": "articles/Indi-Young-Mental-Models-心智模型研究与设计策略方法论.json"
     },
     {
@@ -3458,6 +3460,28 @@
       "learned_at": "2026-05-10",
       "source": "John Doerr《Measure What Matters》OKR目标管理执行方法论",
       "file": "articles/John-Doerr-Measure-What-Matters-OKR目标管理执行方法论.json"
+    },
+    {
+      "id": "John-E-Kennedy-Reason-Why-Advertising-理由型广告与纸上销售方法论",
+      "category": "营销",
+      "title": "John E. Kennedy《Reason Why Advertising》理由型广告与纸上销售方法论",
+      "keywords": [
+        "John E. Kennedy",
+        "Reason Why Advertising",
+        "Salesmanship in Print",
+        "Reason Why Copy",
+        "Direct Response",
+        "Claude Hopkins",
+        "Scientific Advertising",
+        "广告文案",
+        "营销方法论",
+        "纸上销售"
+      ],
+      "summary": "核心主题：广告不是抽象曝光，而是可验证的纸上销售。Kennedy 用“理由型广告”把广告从印象派表达推进到可测试、可证明、可归因的说服系统：先锁定可成交人群，再给出足够具体的购买理由，再用结果而非审美评判广告。",
+      "importance": 5,
+      "learned_at": "2026-06-01",
+      "source": "本次先按要求使用 web_search 检索；公开结果提供 Google Books/Amazon/Goodreads 书目与摘要，以及 Breakthrough Marketing Secrets 对 Kennedy 核心定义“Advertising is salesmanship in print.” 的公开引述。交叉整理为可执行方法框架。",
+      "file": "articles/John-E-Kennedy-Reason-Why-Advertising-理由型广告与纸上销售方法论.json"
     },
     {
       "id": "John-Maeda-The-Laws-of-Simplicity-简洁设计十大法则方法论",
