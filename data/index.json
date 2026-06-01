@@ -10311,6 +10311,31 @@
       "learned_at": "2026-05-10",
       "source": "鲁道夫·阿恩海姆",
       "file": "articles/鲁道夫·阿恩海姆-视觉思维方法论.json"
+    },
+    {
+      "id": "Jeremy-Utley-Perry-Klebahn-Ideaflow-创意产能与创新流水线方法论",
+      "category": "产品设计",
+      "title": "Jeremy Utley & Perry Klebahn《Ideaflow》创意产能与创新流水线方法论",
+      "keywords": [
+        "Jeremy Utley",
+        "Perry Klebahn",
+        "Ideaflow",
+        "IdeaFlow",
+        "Stanford d.school",
+        "idea quota",
+        "innovation pipeline",
+        "creative confidence",
+        "idea generation",
+        "rapid testing",
+        "design thinking",
+        "创意产能",
+        "创新流水线"
+      ],
+      "summary": "核心主题：创意不是偶发灵感，而是可度量、可训练、可批量生产并用现实测试筛选的产能系统。Ideaflow 把“想法数量”拉到台前：先提高单位时间内的可测试想法数量，再用真实世界反馈淘汰坏想法、放大好想法。",
+      "importance": 5,
+      "learned_at": "2026-06-01",
+      "source": "本次按要求先用 web_search 检索；公开结果显示 Penguin Random House 书页将 Ideaflow 定义为“the number of ideas you or your team can generate in a set amount of time”，并介绍作者为 Stanford d.school 背景；Jeremy Utley 官网进一步强调“generate and test new ideas”与 idea quota、measure your ideaflow 等实践。基于这些公开资料整理为方法论文档。",
+      "file": "articles/Jeremy-Utley-Perry-Klebahn-Ideaflow-创意产能与创新流水线方法论.json"
     }
   ],
   "SUMMARY": {

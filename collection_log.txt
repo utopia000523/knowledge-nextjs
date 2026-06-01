@@ -671,3 +671,37 @@
 - 所有文件已同步到 public/data/
 - curl 验证：Creative Confidence / Agile Retrospectives / index.json 均返回 200 OK
 - Git 已推送至 GitHub，Vercel 自动部署已触发
+
+2026-06-01 14:17 CST — Cron Job Collection Run
+=============================================
+
+=== TASK 1: 收录新书 (1本) — 产品设计 ===
+1. Jeremy Utley & Perry Klebahn《Ideaflow》创意产能与创新流水线方法论 (产品设计, importance=5)
+   - 核心公式: 创新结果 = 单位时间创意数量 × 创意多样性 × 测试速度 × 反馈质量 × 连续投入周期
+   - 关键框架: Idea Quota × 五段创意流水线 × 输入管理 × 现实测试 × 团队 Ideaflow 评分卡
+   - 来源说明: 已按要求先用 web_search 检索；基于 Penguin Random House 书页对 Ideaflow 的定义、Stanford d.school 作者背景，以及 Jeremy Utley 官网关于 measure your ideaflow / generate and test new ideas 的公开描述整理
+   - 文件: Jeremy-Utley-Perry-Klebahn-Ideaflow-创意产能与创新流水线方法论.json (421 行, 16.6KB)
+
+=== TASK 2: 扩写已有文章 (1篇) — 心理学 ===
+- Daniel Kahneman《Thinking, Fast and Slow》双系统决策与认知偏见方法论 (心理学, importance=5)
+  - 扩写前: 67 行, 28.6KB
+  - 扩写后: 456 行, 19.4KB
+  - 扩写内容:
+    * 重构为 15 层系统版结构
+    * 新增 WYSIATI、前景理论、经验自我/记忆自我、过度自信、规划谬误与外部视角
+    * 新增个人去偏、团队去偏、决策日志、Premortem 与 30 天训练计划
+
+=== 验证与同步 ===
+- 扩写前已使用 curl 验证 public/data/articles/Daniel-Kahneman-Thinking-Fast-and-Slow-双系统决策与认知偏见方法论.json 可访问
+- 已执行 cp 同步 data/index.json -> public/data/index.json
+- 已执行 cp 同步 data/articles/* -> public/data/articles/
+- 写入后已使用 curl 验证 public/data/index.json 可访问
+- 写入后已使用 curl 验证 public/data/articles/Jeremy-Utley-Perry-Klebahn-Ideaflow-创意产能与创新流水线方法论.json 可访问
+- 写入后已使用 curl 验证 public/data/articles/Daniel-Kahneman-Thinking-Fast-and-Slow-双系统决策与认知偏见方法论.json 可访问
+
+=== 统计更新 ===
+- 总文章: 613 -> 614
+- 产品设计分类: 103 -> 104
+- 心理学分类: 162 (扩写1篇)
+- 新增: Jeremy-Utley-Perry-Klebahn-Ideaflow-创意产能与创新流水线方法论.json
+- 扩写: Daniel-Kahneman-Thinking-Fast-and-Slow-双系统决策与认知偏见方法论.json
