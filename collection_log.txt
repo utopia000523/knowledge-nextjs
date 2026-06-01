@@ -497,3 +497,37 @@
 - 营销分类: 54 (扩写1篇)
 - 新增: Yao-Lu-et-al-ReAct-推理行动协同方法论.json
 - 扩写: Al-Ries-Jack-Trout-The-22-Immutable-Laws-of-Marketing-营销不变法则方法论.json
+
+2026-06-01 01:56 UTC — Cron Job Collection Run
+=============================================
+
+=== TASK 1: 收录新书 (1本) — 产品设计 ===
+1. Stephanie Marsh《User Research》用户研究方法论
+   - 核心公式: 高质量用户研究 = 正确业务问题 x 合适研究对象 x 方法匹配度 x 非偏置执行 x 高质量综合 x 决策传播力 x ResearchOps 支撑
+   - 关键框架: 问题定义 -> 假设拆解 -> 方法选择 -> 招募准备 -> 现场执行 -> 综合传播 -> ResearchOps
+   - 来源说明: 已按要求先执行 web_search；基于 Barnes & Noble / Amazon 公开书介、Open Library 版本元数据，以及 Target / O’Reilly 搜索摘要中的方法清单交叉整理
+   - 文件: Stephanie-Marsh-User-Research-用户研究方法论.json
+
+=== TASK 2: 扩写已有文章 (1篇) — 产品设计 ===
+- Laura Klein《Build Better Products》用户中心产品构建方法论 (产品设计, importance=5)
+  - 扩写前: 72 行, 14592 bytes
+  - 扩写后: 99 行, 18609 bytes
+  - 扩写内容:
+    * 从六步产品学习回路扩展为 12 层系统结构
+    * 新增“双结果标准”（用户结果 x 业务结果）
+    * 新增假设分层、最小可测试方案矩阵、指标树与团队 operating model
+    * 补充正反案例模式、五套工具模板、30天执行计划与公开引语归档
+
+=== 验证与同步 ===
+- 扩写前已使用 curl 验证 public/data/articles/Laura-Klein-Build-Better-Products-用户中心产品构建方法论.json 可访问
+- 已执行 cp 同步 data/index.json -> public/data/index.json
+- 已执行 cp 同步 data/articles/* -> public/data/articles/
+- 写入后已使用 curl 验证 public/data/index.json 可访问
+- 写入后已使用 curl 验证 public/data/articles/Stephanie-Marsh-User-Research-用户研究方法论.json 可访问
+- 写入后已使用 curl 验证 public/data/articles/Laura-Klein-Build-Better-Products-用户中心产品构建方法论.json 可访问
+
+=== 统计更新 ===
+- 总文章: 606 -> 607
+- 产品设计分类: 100 -> 101
+- 新增: Stephanie-Marsh-User-Research-用户研究方法论.json
+- 扩写: Laura-Klein-Build-Better-Products-用户中心产品构建方法论.json

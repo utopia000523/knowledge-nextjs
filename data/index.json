@@ -3051,11 +3051,12 @@
         "Empathy",
         "Outcome-Driven Product"
       ],
-      "summary": "核心主题：把战略、同理心、原型验证、可用性测试与行为数据接成一条产品学习链，用持续验证替代功能堆砌，用用户结果与业务结果共同定义‘更好的产品’。",
+      "summary": "核心主题：把产品战略、用户研究、原型测试、最小可行验证与行为数据度量接成统一学习系统，让团队不再用“按时交付功能”冒充“创造了用户价值”。",
       "importance": 5,
       "learned_at": "2026-06-01",
-      "source": "DuckDuckGo 搜索结果摘要（Rosenfeld Media / Amazon / Google Books 一致书介）；Google Books《Build Better Products: A Modern Approach to Building Successful User-Centered Products》公开书页；Open Library 书目；UXmatters 公开样章《Measure Better》。",
-      "file": "articles/Laura-Klein-Build-Better-Products-用户中心产品构建方法论.json"
+      "source": "公开书介与样章来源：Google Books《Build Better Products》公开书页、Rosenfeld Media / Goodreads 一致书介摘要、UXmatters 公开样章《Measure Better》、以及本轮 web_search 对公开页面标题与描述的补充核验。",
+      "file": "articles/Laura-Klein-Build-Better-Products-用户中心产品构建方法论.json",
+      "expanded_at": "2026-06-01"
     },
     {
       "id": "Liz-Wiseman-Multipliers-乘数效应领导力方法论",
@@ -4790,6 +4791,30 @@
       "learned_at": "2026-05-17",
       "source": "Penguin Random House《Team of Teams》官方书页；McChrystal Group Team of Teams 官方框架介绍（Trust / Common Purpose / Shared Consciousness / Empowered Execution）。",
       "file": "articles/Stanley-McChrystal-Team-of-Teams-复杂世界团队网络方法论.json"
+    },
+    {
+      "id": "Stephanie-Marsh-User-Research-用户研究方法论",
+      "category": "产品设计",
+      "title": "Stephanie Marsh《User Research》用户研究方法论",
+      "keywords": [
+        "Stephanie Marsh",
+        "User Research",
+        "UX Research",
+        "User Research Ops",
+        "Interviewing",
+        "Usability Testing",
+        "Card Sorting",
+        "Tree Testing",
+        "Surveys",
+        "A/B Testing",
+        "Research Synthesis",
+        "Research Repository"
+      ],
+      "summary": "核心主题：把用户研究从“偶尔做一次访谈”升级为一套贯穿问题定义、方法选择、样本招募、执行、综合、传播与研究运营的持续系统，让产品决策从意见竞争转向证据驱动。",
+      "importance": 5,
+      "learned_at": "2026-06-01",
+      "source": "本轮按要求先使用 web_search 搜索产品设计/用户研究方法论书籍；基于 Barnes & Noble 与 Amazon 对《User Research》的公开书介、Open Library 版本元数据（含 2022 初版与 2025 第二版/376 页记录）、以及 Target / O’Reilly 搜索结果可见摘要中的方法清单（face-to-face user testing / card sorting / surveys / A/B testing）整理。",
+      "file": "articles/Stephanie-Marsh-User-Research-用户研究方法论.json"
     },
     {
       "id": "Stephen-Bungay-The-Art-of-Action-任务式指挥与战略执行方法论",
@@ -10141,16 +10166,16 @@
     }
   ],
   "SUMMARY": {
-    "total_articles": 603,
+    "total_articles": 607,
     "last_updated": "2026-06-01",
     "by_category": {
       "其他": 1,
-      "创业": 93,
-      "产品设计": 99,
+      "创业": 94,
+      "产品设计": 101,
       "心理学": 162,
       "营销": 54,
       "项目管理": 71,
-      "技术": 43,
+      "技术": 44,
       "理财": 64,
       "雅思": 16
     }
