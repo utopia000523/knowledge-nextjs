@@ -6103,12 +6103,15 @@
         "Ability",
         "Prompt",
         "User-Centered System Design",
-        "行为改变设计"
+        "行为改变设计",
+        "习惯设计",
+        "nudges",
+        "产品干预"
       ],
-      "summary": "核心主题：把心理学与行为经济学转译为可执行的产品设计流程——先界定目标行为，再拆解决策路径、动机、能力、提示、摩擦与反馈，用小步实验把“想改变用户”变成“可验证地改变行为”。",
+      "summary": "核心主题：行为改变不是靠更大声地说服用户，而是把目标结果拆成关键行为、情境、摩擦、动机、提示与反馈，再用实验和伦理边界把正确行为变得更容易发生、更值得重复。",
       "importance": 5,
       "learned_at": "2026-06-01",
-      "source": "本轮按要求先尝试 web_search，但外部服务连续返回 432 无法使用；改用 Open Library 搜索/作品/版本元数据、Internet Archive 详情页公开元数据（标题、年份、出版社、主题、页数）进行交叉校验。可验证信息包括：Stephen Wendel；书名《Designing for behavior change : applying psychology and behavioral economics》；2013；O’Reilly；355 pages；subjects 为 Human-computer interaction 与 User-centered system design。",
+      "source": "扩写版延续既有核验路径：本轮已按要求先尝试 web_search，但外部服务返回 432 无法使用；继续以 Open Library 公开元数据（Stephen Wendel；Designing for behavior change；2013；O'Reilly；human-computer interaction / user-centered system design）与 Internet Archive 公开元数据为基础，并结合行为设计、行为经济学与产品设计通用知识重组为可执行框架。",
       "file": "articles/Stephen-Wendel-Designing-for-Behavior-Change-行为改变设计方法论.json"
     },
     {
@@ -6341,6 +6344,30 @@
       "learned_at": "2026-05-10",
       "source": "《人件》(Peopleware)",
       "file": "articles/Tom-DeMarco-Timothy-Lister-人件-Peopleware-软件团队管理方法论.json"
+    },
+    {
+      "id": "Tom-Greever-Articulating-Design-Decisions-设计沟通与利益相关者说服方法论",
+      "category": "产品设计",
+      "title": "Tom Greever《Articulating Design Decisions》设计沟通与利益相关者说服方法论",
+      "keywords": [
+        "Tom Greever",
+        "Articulating Design Decisions",
+        "design communication",
+        "stakeholder management",
+        "UX presentation",
+        "design critique",
+        "stakeholder empathy",
+        "产品设计",
+        "设计沟通",
+        "利益相关者",
+        "方案评审",
+        "说服"
+      ],
+      "summary": "核心主题：好设计不只靠作品本身胜出，还要靠设计师把问题、约束、取舍与证据讲清楚；设计影响力 = 问题定义清晰度 x 利益相关者共情 x 方案叙事结构 x 证据质量 x 异议处理能力 x 会后推进闭环。",
+      "importance": 5,
+      "learned_at": "2026-06-01",
+      "source": "本轮已按要求先尝试 web_search 搜索 Articulating Design Decisions Tom Greever，但外部服务返回 432 无法使用；改用 Open Library 公开书目元数据（Tom Greever；title=Articulating Design Decisions；first_publish_year=2015）与 Tom Greever 官方 workshop 页面公开描述交叉核验。该页面可直接核验到：本书被描述为 best-selling book from O'Reilly；主题围绕 communicate with stakeholders / principles, tactics, and actionable methods for presenting design / understand stakeholder perspectives and how to empathize with them。",
+      "file": "articles/Tom-Greever-Articulating-Design-Decisions-设计沟通与利益相关者说服方法论.json"
     },
     {
       "id": "Tom-Kelley-David-Kelley-Creative-Confidence-创意信心方法论",

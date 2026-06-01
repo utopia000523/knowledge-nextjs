@@ -445,3 +445,23 @@
 - 已新增创业文章 1 篇
 - 已扩写营销文章 1 篇
 - 所有文件待同步到 public/data/ 并推送 GitHub
+
+
+2026-06-01 00:20 UTC — Cron Job Collection Run
+=============================================
+
+=== TASK 1: 收录新书 (1本) — 产品设计 ===
+1. Tom Greever《Articulating Design Decisions》设计沟通与利益相关者说服方法论
+   - 核心公式: 设计影响力 = 问题定义清晰度 x 利益相关者共情 x 方案叙事结构 x 证据质量 x 异议处理能力 x 会后推进闭环
+   - 关键框架: 准备 x 呈现 x 讨论 x 跟进 四步沟通闭环 + 利益相关者地图 + 呈现脚本 + 异议处理
+   - 来源说明: 已先尝试 web_search，但外部服务返回 432；改用 Open Library 公开书目元数据与 Tom Greever 官方页面公开描述交叉核验
+
+=== TASK 2: 扩写已有文章 (1篇) — 产品设计 ===
+- Stephen Wendel《Designing for Behavior Change》行为改变设计方法论 (产品设计, importance=5)
+  - 扩写方向: 行为选择、机制诊断、干预杠杆、全生命周期、实验方法、五类案例、伦理边界
+
+=== 统计更新 ===
+- 总文章: 604 -> 605
+- 产品设计分类: 已新增 1 篇，扩写 1 篇
+- 新增: Tom-Greever-Articulating-Design-Decisions-设计沟通与利益相关者说服方法论.json
+- 扩写: Stephen-Wendel-Designing-for-Behavior-Change-行为改变设计方法论.json
