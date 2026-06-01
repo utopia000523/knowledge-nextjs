@@ -619,3 +619,26 @@
 - 产品设计分类: 103 (扩写1篇)
 - 新增: John-E-Kennedy-Reason-Why-Advertising-理由型广告与纸上销售方法论.json
 - 扩写: Indi-Young-Mental-Models-心智模型研究与设计策略方法论.json
+
+2026-06-01 04:51 UTC — Cron Job Collection Run
+=============================================
+
+=== TASK 1: 收录新书 (1本) — 营销 ===
+1. Gerald Zaltman《Zaltman Metaphor Elicitation Technique》深层隐喻消费者洞察方法论
+   - 核心公式: 深层消费者洞察 = 图像唤起 x 隐喻提取 x 无意识联想挖掘 x 深度访谈质量 x 模式综合能力 x 战略转译能力
+   - 关键框架: 图片式深访八步法 x Deep Metaphors x 心智地图 x 品牌/产品/传播转译
+   - 文件: Gerald-Zaltman-Zaltman-Metaphor-Elicitation-Technique-深层隐喻消费者洞察方法论.json
+
+=== TASK 2: 扩写已有文章 (1篇) — 营销 ===
+- Donald Miller《Building a StoryBrand》SB7品牌叙事方法论
+  - 扩写前: 91 行, 20.6KB
+  - 扩写后: 待统计
+  - 扩写内容: 新增三层问题模型、消息架构、多触点落地、分受众版本、实验评分卡与执行模板
+
+=== 验证与同步（补记） ===
+- 已执行 cp 同步到 public/data/
+- curl 验证通过: public/data/articles/Donald-Miller-Building-a-StoryBrand.json
+- curl 验证通过: public/data/articles/Gerald-Zaltman-Zaltman-Metaphor-Elicitation-Technique-深层隐喻消费者洞察方法论.json
+- StoryBrand 扩写后: 231 行, 15.5KB, 14 layers
+- ZMET 新文: 196 行, 15.7KB, 12 layers
+

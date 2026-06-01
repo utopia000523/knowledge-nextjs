@@ -1915,12 +1915,17 @@
         "营销信息清晰度",
         "品牌文案",
         "叙事营销",
-        "过渡CTA"
+        "过渡CTA",
+        "homepage messaging",
+        "sales narrative",
+        "message clarity",
+        "brand script",
+        "marketing funnel"
       ],
-      "summary": "核心主题：客户不是来理解你的品牌有多厉害，而是想快速判断这是否能帮我解决问题。StoryBrand 把高转化信息压缩为 SB7：客户是英雄、品牌是指南、问题要分层、计划要降认知负担、CTA 要明确、失败与成功画面要让行动变得必然。",
+      "summary": "核心主题：StoryBrand 不是“给品牌讲故事”，而是用客户英雄视角，把定位、信息架构、页面文案、销售开场、邮件序列与产品内引导统一成一个低认知负担的行动系统。",
       "importance": 5,
       "learned_at": "2026-05-31",
-      "source": "Donald Miller《Building a StoryBrand: Clarify Your Message So Customers Will Listen》(2017)；现有知识库初稿；本次基于 SB7 常见公开框架表述与原文件内容重构扩写。",
+      "source": "Donald Miller《Building a StoryBrand: Clarify Your Message So Customers Will Listen》(2017)；StoryBrand 公开 SB7 框架表述；既有知识库版本；本次扩写继续将其升级为“定位 x 叙事 x 触点 x 实验 x 组织协同”的完整应用方法。",
       "file": "articles/Donald-Miller-Building-a-StoryBrand.json"
     },
     {
@@ -10259,6 +10264,28 @@
       "learned_at": "2026-05-10",
       "source": "鲁道夫·阿恩海姆",
       "file": "articles/鲁道夫·阿恩海姆-视觉思维方法论.json"
+    },
+    {
+      "id": "Gerald-Zaltman-Zaltman-Metaphor-Elicitation-Technique-深层隐喻消费者洞察方法论",
+      "category": "营销",
+      "title": "Gerald Zaltman《Zaltman Metaphor Elicitation Technique》深层隐喻消费者洞察方法论",
+      "keywords": [
+        "Gerald Zaltman",
+        "ZMET",
+        "Zaltman Metaphor Elicitation Technique",
+        "Deep Metaphors",
+        "Consumer Psychology",
+        "Qualitative Research",
+        "Marketing Research",
+        "隐喻研究",
+        "消费者洞察",
+        "品牌策略"
+      ],
+      "summary": "核心主题：用图片、隐喻、深度访谈与心智地图，挖出消费者无法直接说清却持续支配选择的无意识结构，把“用户说了什么”升级为“用户到底如何感知世界、组织意义与做出决定”。",
+      "importance": 5,
+      "learned_at": "2026-06-01",
+      "source": "Vibrant Publishers 公开产品页将本书描述为 uncovering deep consumer insights 的消费者洞察工具；Olson Zaltman 官方 ZMET 页面说明其为揭示消费者无意识 thoughts / feelings / needs / desires 的定性研究方法，并强调 Deep Metaphors、trained interviewer、Mind of the Market Lab at Harvard Business School 等关键表述；本次据此整理为可执行方法论文。",
+      "file": "articles/Gerald-Zaltman-Zaltman-Metaphor-Elicitation-Technique-深层隐喻消费者洞察方法论.json"
     }
   ],
   "SUMMARY": {
