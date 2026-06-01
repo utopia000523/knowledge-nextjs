@@ -465,3 +465,35 @@
 - 产品设计分类: 已新增 1 篇，扩写 1 篇
 - 新增: Tom-Greever-Articulating-Design-Decisions-设计沟通与利益相关者说服方法论.json
 - 扩写: Stephen-Wendel-Designing-for-Behavior-Change-行为改变设计方法论.json
+
+2026-06-01 00:00 UTC — Cron Job Collection Run
+=============================================
+
+=== TASK 1: 收录新书 (1本) — 技术 ===
+1. Yao Lu et al.《ReAct: Synergizing Reasoning and Acting in Language Models》推理-行动协同方法论 (技术, importance=5)
+   - 核心公式: 任务表现 = 推理质量 x 动作可执行性 x 观察反馈利用率 x 轨迹可修正性
+   - 关键框架: Thought x Action x Observation 闭环 x 代理设计七步法 x 调试评分卡
+   - 内容亮点: 基于 arXiv 摘要页、arXiv API 与项目页公开说明，整理 ReAct 在 HotpotQA / Fever / ALFWorld / WebShop 的方法意义，补充代理设计、失败模式、风控与可复用模板
+   - 文件: Yao-Lu-et-al-ReAct-推理行动协同方法论.json (400行)
+
+=== TASK 2: 扩写已有文章 (1篇) — 营销 ===
+- Al Ries & Jack Trout《The 22 Immutable Laws of Marketing》营销不变法则方法论 (营销, importance=5)
+  - 扩写后: 373行
+  - 新增内容:
+    * 22 条法则的六大模块重组
+    * 从占位 -> 选词 -> 牺牲 -> 对立叙事 -> 一致性守位的战略流水线
+    * 创业 / B2B / 消费品牌 / 内容业务 / 个人品牌应用
+    * 扩张稀释审计、第二名策略画布、趋势 vs 时尚检查表
+    * 与 Positioning / Obviously Awesome / Blue Ocean / This Is Marketing / The Brand Gap 的对照
+
+=== 验证与同步 ===
+- 扩写前已使用 curl 验证 public/data/articles/Al-Ries-Jack-Trout-The-22-Immutable-Laws-of-Marketing-营销不变法则方法论.json 可访问
+- 写入后已同步到 public/data/
+- index.json 与全部 articles 已同步到 public/data/
+
+=== 统计更新 ===
+- 总文章: 605 -> 606
+- 技术分类: 43 -> 44
+- 营销分类: 54 (扩写1篇)
+- 新增: Yao-Lu-et-al-ReAct-推理行动协同方法论.json
+- 扩写: Al-Ries-Jack-Trout-The-22-Immutable-Laws-of-Marketing-营销不变法则方法论.json
