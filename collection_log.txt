@@ -531,3 +531,36 @@
 - 产品设计分类: 100 -> 101
 - 新增: Stephanie-Marsh-User-Research-用户研究方法论.json
 - 扩写: Laura-Klein-Build-Better-Products-用户中心产品构建方法论.json
+
+2026-06-01 02:31 UTC - Cron Job Collection Run
+=============================================
+
+=== TASK 1: 收录新书 (2本) - 产品设计 ===
+1. Tomer Sharon《Validating Product Ideas》精益用户研究验证方法论
+   - 核心公式: 验证质量 = 关键假设清晰度 x 目标受众匹配度 x 最小可行证据设计 x 行为信号强度 x 学习速度
+   - 关键框架: 假设分层 x Fake Door x Concierge MVP x 证据强弱排序 x 每周验证节奏
+   - 来源说明: Rosenfeld Media 公开书介 + UXmatters 样章《Do People Want the Product?》 + Apple Books / B&N 书目信息
+
+2. Indi Young《Mental Models》心智模型研究与设计策略方法论
+   - 核心公式: 设计战略洞察 = 深度行为访谈 x 思维与动机抽取 x 任务塔归纳 x 心智模型图谱 x 支撑结构映射 x 机会识别
+   - 关键框架: 任务塔 x Support Structure Mapping x Skyline 分群 x Persona/Journey/JTBD 对照
+   - 来源说明: Rosenfeld Media 公开书介 + Goodreads / Target 书目信息 + Indi Young 官网示例页
+
+=== TASK 2: 扩写已有文章 (1篇) - 产品设计 ===
+- Bruce McCarthy & Melissa Appel《Aligned》利益相关者管理方法论 (产品设计, importance=5)
+  - 扩写方向: 路线图叙事、buy-in 机制、困难利益相关者分型、对齐节奏、冲突标准化处理与模板工具箱
+
+=== 验证与同步 ===
+- 扩写前已通过 curl 验证 public/data/articles/Bruce-McCarthy-Melissa-Appel-Aligned-Stakeholder-Management-利益相关者管理方法论.json 可访问
+- 写入后已执行 cp 同步 data/index.json -> public/data/index.json
+- 写入后已执行 cp 同步 data/articles/* -> public/data/articles/
+- 写入后已通过 curl 验证 public/data/articles/Tomer-Sharon-Validating-Product-Ideas-精益用户研究验证方法论.json 可访问
+- 写入后已通过 curl 验证 public/data/articles/Indi-Young-Mental-Models-心智模型研究与设计策略方法论.json 可访问
+- 写入后已通过 curl 验证 public/data/articles/Bruce-McCarthy-Melissa-Appel-Aligned-Stakeholder-Management-利益相关者管理方法论.json 可访问
+
+=== 统计更新 ===
+- 总文章: 607 -> 609
+- 产品设计分类: 101 -> 103
+- 新增: Tomer-Sharon-Validating-Product-Ideas-精益用户研究验证方法论.json
+- 新增: Indi-Young-Mental-Models-心智模型研究与设计策略方法论.json
+- 扩写: Bruce-McCarthy-Melissa-Appel-Aligned-Stakeholder-Management-利益相关者管理方法论.json
