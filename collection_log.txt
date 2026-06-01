@@ -668,4 +668,6 @@
 - 总文章: 612 -> 613
 - 项目管理分类: 72 -> 73
 - 产品设计分类: 103 (扩写1篇)
-- 所有文件待同步到 public/data/ 并 git 推送
+- 所有文件已同步到 public/data/
+- curl 验证：Creative Confidence / Agile Retrospectives / index.json 均返回 200 OK
+- Git 已推送至 GitHub，Vercel 自动部署已触发
