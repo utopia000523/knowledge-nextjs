@@ -564,3 +564,31 @@
 - 新增: Tomer-Sharon-Validating-Product-Ideas-精益用户研究验证方法论.json
 - 新增: Indi-Young-Mental-Models-心智模型研究与设计策略方法论.json
 - 扩写: Bruce-McCarthy-Melissa-Appel-Aligned-Stakeholder-Management-利益相关者管理方法论.json
+
+
+2026-06-01 11:10 CST — Cron Job Collection Run
+=============================================
+
+=== TASK 1: 收录新书 (1本) — 项目管理 ===
+1. Scott Berkun《Making Things Happen》项目落地与项目领导方法论 (项目管理, importance=5)
+   - 核心公式: 项目落地成功 = 问题定义清晰度 × 决策质量 × 沟通节奏 × 风险前置能力 × 领导者可信度
+   - 关键框架: 十二步项目推进闭环 × 范围取舍矩阵 × 决策权澄清 × 风险前置 × 复盘系统
+   - 内容亮点: 基于 Open Library / O'Reilly / Scott Berkun 官网公开资料，整理项目定义、范围、里程碑、会议、风险、变更、领导、模板与30天计划
+   - 文件: Scott-Berkun-Making-Things-Happen-项目落地与项目领导方法论.json
+
+=== TASK 2: 扩写已有文章 (1篇) — 营销 ===
+- David Ogilvy《Ogilvy on Advertising》广告大师奥格威方法论 (营销, importance=5)
+  - 扩写前: 81 行，聚焦调研/品牌/文案/案例的基础结构
+  - 扩写后: 重构为系统化版本，新增十变量广告系统、视觉与版式、媒介适配、直效与品牌并重、组织管理、自检清单、模板与30天改造计划
+
+=== 验证与同步 ===
+- 扩写前已使用 curl 验证 public/data/articles/David-Ogilvy-Ogilvy-on-Advertising-广告大师奥格威方法论.json 可访问
+- 已执行 cp 同步 data/index.json -> public/data/index.json
+- 已执行 cp 同步 data/articles/* -> public/data/articles/
+- 写入后已使用 curl 验证 public/data/articles/Scott-Berkun-Making-Things-Happen-项目落地与项目领导方法论.json 可访问
+- 写入后已使用 curl 验证 public/data/articles/David-Ogilvy-Ogilvy-on-Advertising-广告大师奥格威方法论.json 可访问
+
+=== 统计更新 ===
+- 总文章: 609 -> 610
+- 项目管理分类: 71 -> 72
+- 营销分类: 54 (扩写1篇)

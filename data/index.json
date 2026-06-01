@@ -1844,10 +1844,10 @@
         "Ogilvy and Mather",
         "奥美广告"
       ],
-      "summary": "**核心主题**: 广告是调研驱动的销售科学 x 品牌形象是长期投资 x 大创意打破平庸 x 文案的具体性法则 x 尊重消费者智力 x 高管亲自参与广告创作",
+      "summary": "核心主题：广告是调研驱动的销售活动，品牌形象是长期复利资产；大创意、具体文案、媒介适配、管理者标准与消费者尊重，共同决定广告是否真正卖货并沉淀品牌。",
       "importance": 5,
       "learned_at": "2026-05-19",
-      "source": "David Ogilvy《Ogilvy on Advertising》(1983) - 奥美广告创始人的毕生经验总结",
+      "source": "David Ogilvy《Ogilvy on Advertising》(1983)；Penguin Random House 公开书介将其定义为 all aspects of advertising 的 candid and indispensable primer；Ogilvy 官网 75 Quotations 页面与公开品牌资料。",
       "file": "articles/David-Ogilvy-Ogilvy-on-Advertising-广告大师奥格威方法论.json"
     },
     {
@@ -5855,6 +5855,29 @@
       "learned_at": "2026-05-18",
       "source": "Scott Berinato《Good Charts: The HBR Guide to Making Smarter, More Persuasive Data Visualizations》(Harvard Business Review Press, 2019)；Scott Berinato 公开图书介绍；HBR Press 公开书介与作者公开访谈摘要。",
       "file": "articles/Scott-Berinato-Good-Charts-数据可视化沟通方法论.json"
+    },
+    {
+      "id": "Scott-Berkun-Making-Things-Happen-项目落地与项目领导方法论",
+      "category": "项目管理",
+      "title": "Scott Berkun《Making Things Happen》项目落地与项目领导方法论",
+      "keywords": [
+        "Scott Berkun",
+        "Making Things Happen",
+        "Mastering Project Management",
+        "project management",
+        "项目管理",
+        "项目领导",
+        "决策",
+        "沟通",
+        "风险管理",
+        "会议管理",
+        "领导力"
+      ],
+      "summary": "核心主题：项目不是靠模板推进，而是靠问题定义、决策质量、沟通节奏、风险前置与领导者对人性的理解来落地。Berkun 将项目管理写成一套兼顾计划、判断、沟通与领导的实战方法。",
+      "importance": 5,
+      "learned_at": "2026-06-01",
+      "source": "Open Library 书目元数据：Making Things Happen: Mastering Project Management，Scott Berkun，首版 2008；O'Reilly 书页公开书介：field-tested philosophies and strategies for defining, leading, and managing projects，并说明作者曾任 Internet Explorer、Windows、MSN 项目负责人；Scott Berkun 官网图书页。",
+      "file": "articles/Scott-Berkun-Making-Things-Happen-项目落地与项目领导方法论.json"
     },
     {
       "id": "Scott-Berkun-项目管理艺术-The-Art-of-Project-Management方法论",
