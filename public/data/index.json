@@ -2291,6 +2291,31 @@
       "file": "articles/Erin-Meyer-The-Culture-Map-跨文化协作与管理方法论.json"
     },
     {
+      "id": "Esther-Derby-Diana-Larsen-Agile-Retrospectives-敏捷回顾方法论",
+      "category": "项目管理",
+      "title": "Esther Derby & Diana Larsen《Agile Retrospectives: Making Good Teams Great》敏捷回顾方法论",
+      "keywords": [
+        "Agile Retrospectives",
+        "Esther Derby",
+        "Diana Larsen",
+        "Sprint Retrospective",
+        "敏捷回顾",
+        "迭代复盘",
+        "团队改进",
+        "持续改进",
+        "Set the Stage",
+        "Gather Data",
+        "Generate Insights",
+        "Decide What to Do",
+        "Close the Retrospective"
+      ],
+      "summary": "**核心主题**：回顾会不是抱怨会，而是把团队经验转化为下一轮行为改变的学习系统——安全开场 × 事实收集 × 洞察生成 × 行动承诺 × 跟踪闭环。",
+      "importance": 5,
+      "learned_at": "2026-06-01",
+      "source": "Pragmatic Bookshelf 书页《Agile Retrospectives: Making Good Teams Great》(Esther Derby, Diana Larsen, 2006)；ACM Guide Books 书目元数据；Agile Alliance 图书介绍页公开文案。",
+      "file": "articles/Esther-Derby-Diana-Larsen-Agile-Retrospectives-敏捷回顾方法论.json"
+    },
+    {
       "id": "Ethan Mollick-协同智能方法论",
       "category": "心理学",
       "title": "Ethan Mollick - 协同智能（Co-Intelligence）方法论",
@@ -2673,6 +2698,28 @@
       "learned_at": "2026-05-13",
       "source": "Georgiana Laudi & Claire Suellentrop《Forget the Funnel: A Customer-Led Approach for Driving Predictable Recurring Revenue》(2023)",
       "file": "articles/Georgiana-Laudi-Claire-Suellentrop-Forget-the-Funnel-客户驱动增长方法论.json"
+    },
+    {
+      "id": "Gerald-Zaltman-Zaltman-Metaphor-Elicitation-Technique-深层隐喻消费者洞察方法论",
+      "category": "营销",
+      "title": "Gerald Zaltman《Zaltman Metaphor Elicitation Technique》深层隐喻消费者洞察方法论",
+      "keywords": [
+        "Gerald Zaltman",
+        "ZMET",
+        "Zaltman Metaphor Elicitation Technique",
+        "Deep Metaphors",
+        "Consumer Psychology",
+        "Qualitative Research",
+        "Marketing Research",
+        "隐喻研究",
+        "消费者洞察",
+        "品牌策略"
+      ],
+      "summary": "核心主题：用图片、隐喻、深度访谈与心智地图，挖出消费者无法直接说清却持续支配选择的无意识结构，把“用户说了什么”升级为“用户到底如何感知世界、组织意义与做出决定”。",
+      "importance": 5,
+      "learned_at": "2026-06-01",
+      "source": "Vibrant Publishers 公开产品页将本书描述为 uncovering deep consumer insights 的消费者洞察工具；Olson Zaltman 官方 ZMET 页面说明其为揭示消费者无意识 thoughts / feelings / needs / desires 的定性研究方法，并强调 Deep Metaphors、trained interviewer、Mind of the Market Lab at Harvard Business School 等关键表述；本次据此整理为可执行方法论文。",
+      "file": "articles/Gerald-Zaltman-Zaltman-Metaphor-Elicitation-Technique-深层隐喻消费者洞察方法论.json"
     },
     {
       "id": "GoF-Design-Patterns-四人帮设计模式-软件架构奠基方法论",
@@ -6485,10 +6532,10 @@
         "David Kelley",
         "设计思维"
       ],
-      "summary": "**核心主题**: 创意信心释放 × 设计思维 × 克服恐惧 × 拥抱失败 × 创意文化 × 创新潜能",
+      "summary": "**核心主题**：创意信心不是天赋自信，而是用同理心、实验、原型与支持性环境，把“我不是创意型的人”改写成“我可以通过行动长出创造力”。",
       "importance": 5,
-      "learned_at": "2026-05-11",
-      "source": "Tom Kelley & David Kelley《Creative Confidence: Unleashing the Creative Potential Within Us All》(2013)",
+      "learned_at": "2026-06-01",
+      "source": "CreativeConfidence.com 官方书页；IDEO Design Thinking 资源页《Creative Confidence》；Open Library 书目数据；David Kelley 2012 TED 演讲《How to build your creative confidence》。",
       "file": "articles/Tom-Kelley-David-Kelley-Creative-Confidence-创意信心方法论.json"
     },
     {
@@ -10264,28 +10311,6 @@
       "learned_at": "2026-05-10",
       "source": "鲁道夫·阿恩海姆",
       "file": "articles/鲁道夫·阿恩海姆-视觉思维方法论.json"
-    },
-    {
-      "id": "Gerald-Zaltman-Zaltman-Metaphor-Elicitation-Technique-深层隐喻消费者洞察方法论",
-      "category": "营销",
-      "title": "Gerald Zaltman《Zaltman Metaphor Elicitation Technique》深层隐喻消费者洞察方法论",
-      "keywords": [
-        "Gerald Zaltman",
-        "ZMET",
-        "Zaltman Metaphor Elicitation Technique",
-        "Deep Metaphors",
-        "Consumer Psychology",
-        "Qualitative Research",
-        "Marketing Research",
-        "隐喻研究",
-        "消费者洞察",
-        "品牌策略"
-      ],
-      "summary": "核心主题：用图片、隐喻、深度访谈与心智地图，挖出消费者无法直接说清却持续支配选择的无意识结构，把“用户说了什么”升级为“用户到底如何感知世界、组织意义与做出决定”。",
-      "importance": 5,
-      "learned_at": "2026-06-01",
-      "source": "Vibrant Publishers 公开产品页将本书描述为 uncovering deep consumer insights 的消费者洞察工具；Olson Zaltman 官方 ZMET 页面说明其为揭示消费者无意识 thoughts / feelings / needs / desires 的定性研究方法，并强调 Deep Metaphors、trained interviewer、Mind of the Market Lab at Harvard Business School 等关键表述；本次据此整理为可执行方法论文。",
-      "file": "articles/Gerald-Zaltman-Zaltman-Metaphor-Elicitation-Technique-深层隐喻消费者洞察方法论.json"
     }
   ],
   "SUMMARY": {

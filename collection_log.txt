@@ -642,3 +642,30 @@
 - StoryBrand 扩写后: 231 行, 15.5KB, 14 layers
 - ZMET 新文: 196 行, 15.7KB, 12 layers
 
+
+
+2026-06-01 05:26 UTC — Cron Job Collection Run
+=============================================
+
+=== TASK 1: 收录新书 (1本) — 项目管理 ===
+1. Esther Derby & Diana Larsen《Agile Retrospectives: Making Good Teams Great》敏捷回顾方法论 (项目管理, importance=5)
+   - 核心公式: 回顾会价值 = 心理安全 × 事实质量 × 洞察深度 × 行动聚焦 × 跟踪执行
+   - 关键框架: 五步回顾骨架 × Prime Directive × 行动实验 × 引导者角色 × 回顾脚本模板
+   - 内容亮点: Set the Stage / Gather Data / Generate Insights / Decide What to Do / Close the Retrospective、远程团队适配、工具模板与公开引文
+   - 文件: Esther-Derby-Diana-Larsen-Agile-Retrospectives-敏捷回顾方法论.json (141行)
+
+=== TASK 2: 扩写已有文章 (1篇) — 产品设计 ===
+- Tom Kelley & David Kelley《Creative Confidence》创意信心方法论 (产品设计, importance=5)
+  - 扩写后: 128行
+  - 新增内容:
+    * 六步创意信心路径与创意恐惧来源重写
+    * 设计思维作为创意信心练习容器
+    * 小实验逻辑、同理心转移、原型思维、限制催化
+    * 与成长型思维 / 自我效能感 / 心理安全的关系
+    * 30天训练计划与团队工作坊模板
+
+=== 统计更新 ===
+- 总文章: 612 -> 613
+- 项目管理分类: 72 -> 73
+- 产品设计分类: 103 (扩写1篇)
+- 所有文件待同步到 public/data/ 并 git 推送
